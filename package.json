@@ -6,6 +6,7 @@
   "scripts": {
     "validate": "npx tsx scripts/validate.ts",
     "build": "npx tsx scripts/build-artifacts.ts",
+    "health-check": "npx tsx scripts/health-check.ts",
     "test": "npm run validate"
   },
   "keywords": [
