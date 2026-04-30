@@ -1,0 +1,2875 @@
+{
+  "generatedAt": "2026-04-30T04:50:10.504Z",
+  "source": "src/data/rssSuggestions.ts + src/data/countrySuggestions.ts",
+  "stats": {
+    "feeds": 214,
+    "duplicateIds": 0,
+    "duplicateUrls": 0
+  },
+  "warnings": {
+    "duplicateIds": [],
+    "duplicateUrls": []
+  },
+  "feeds": [
+    {
+      "id": "npr-d6bccb16",
+      "name": "NPR World",
+      "publisher": "NPR",
+      "url": "https://feeds.npr.org/1004/rss.xml",
+      "language": "en",
+      "countries": [],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "al-jazeera-ecd16e1e",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "language": "en",
+      "countries": [],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-new-york-times-9ef86906",
+      "name": "NYT World",
+      "publisher": "The New York Times",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "language": "en",
+      "countries": [],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "bbc-news-world-6a9ff31b",
+      "name": "BBC News World",
+      "publisher": "BBC News World",
+      "url": "http://feeds.bbci.co.uk/news/world/rss.xml",
+      "language": "en",
+      "countries": [],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "reuters-world-10fab0cc",
+      "name": "Reuters World",
+      "publisher": "Reuters World",
+      "url": "https://www.reuters.com/arc/outboundfeeds/v1/rss/category/world/",
+      "language": "en",
+      "countries": [],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "united-nations-news-b0e48c4e",
+      "name": "United Nations News",
+      "publisher": "United Nations News",
+      "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "language": "en",
+      "countries": [],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "bbc-3f05af4b",
+      "name": "BBC World",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "language": "en",
+      "countries": [],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "new-york-times-02951f34",
+      "name": "New York Times",
+      "publisher": "New York Times",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "fox-news-2a69efeb",
+      "name": "Fox News",
+      "publisher": "Fox News",
+      "url": "https://feeds.foxnews.com/foxnews/latest",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "npr-3e088378",
+      "name": "NPR News",
+      "publisher": "NPR",
+      "url": "https://feeds.npr.org/1001/rss.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "wall-street-journal-0c6c512e",
+      "name": "Wall Street Journal",
+      "publisher": "Wall Street Journal",
+      "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-guardian-ebe3f1d5",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "url": "https://www.theguardian.com/world/rss",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "daily-mail-4a12363d",
+      "name": "Daily Mail",
+      "publisher": "Daily Mail",
+      "url": "https://www.dailymail.co.uk/articles.rss",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "sky-news-e1e43675",
+      "name": "Sky News",
+      "publisher": "Sky News",
+      "url": "https://feeds.skynews.com/feeds/rss/home.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "global-news-2e21ce61",
+      "name": "Global News",
+      "publisher": "Global News",
+      "url": "https://globalnews.ca/feed/",
+      "language": "en",
+      "countries": [
+        "CA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "abc-news-158fcc48",
+      "name": "ABC News",
+      "publisher": "ABC News",
+      "url": "https://www.abc.net.au/news/feed/51120/rss.xml",
+      "language": "en",
+      "countries": [
+        "AU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-japan-times-1c3e4f26",
+      "name": "The Japan Times",
+      "publisher": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/feed/",
+      "language": "en",
+      "countries": [
+        "JP"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "g1-11fa6d52",
+      "name": "G1 (Globo)",
+      "publisher": "G1",
+      "url": "https://g1.globo.com/rss/g1/",
+      "language": "pt",
+      "countries": [
+        "BR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vanguard-news-108776b9",
+      "name": "Vanguard News",
+      "publisher": "Vanguard News",
+      "url": "https://www.vanguardngr.com/category/national-news/feed/",
+      "language": "en",
+      "countries": [
+        "NG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "news24-1933bbdf",
+      "name": "News24",
+      "publisher": "News24",
+      "url": "http://feeds.news24.com/articles/news24/TopStories/rss",
+      "language": "en",
+      "countries": [
+        "ZA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "france-24-e1f73e0e",
+      "name": "France 24",
+      "publisher": "France 24",
+      "url": "https://www.france24.com/en/rss",
+      "language": "en",
+      "countries": [
+        "FR"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "le-monde-fc3ded1a",
+      "name": "Le Monde",
+      "publisher": "Le Monde",
+      "url": "https://www.lemonde.fr/en/rss/une.xml",
+      "language": "en",
+      "countries": [
+        "FR"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "deutsche-welle-7c0d50d2",
+      "name": "Deutsche Welle (EN)",
+      "publisher": "Deutsche Welle",
+      "url": "https://rss.dw.com/rdf/rss-en-all",
+      "language": "en",
+      "countries": [
+        "DE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "der-spiegel-2bcc7bc8",
+      "name": "Der Spiegel",
+      "publisher": "Der Spiegel",
+      "url": "https://www.spiegel.de/international/index.rss",
+      "language": "en",
+      "countries": [
+        "DE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-hindu-a7a1378f",
+      "name": "The Hindu",
+      "publisher": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/feeder/default.rss",
+      "language": "en",
+      "countries": [
+        "IN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "sydney-morning-herald-89449064",
+      "name": "Sydney Morning Herald",
+      "publisher": "Sydney Morning Herald",
+      "url": "https://www.smh.com.au/rss/feed.xml",
+      "language": "en",
+      "countries": [
+        "AU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "news-com-au-dbb4cf0d",
+      "name": "News.com.au",
+      "publisher": "News.com.au",
+      "url": "https://www.news.com.au/content-feeds/latest-news-world/",
+      "language": "en",
+      "countries": [
+        "AU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "der-spiegel-7e6cdbaf",
+      "name": "Der Spiegel",
+      "publisher": "Der Spiegel",
+      "url": "https://www.spiegel.de/schlagzeilen/index.rss",
+      "language": "de",
+      "countries": [
+        "DE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "tagesschau-68a09f16",
+      "name": "Tagesschau",
+      "publisher": "Tagesschau",
+      "url": "https://www.tagesschau.de/xml/rss2",
+      "language": "de",
+      "countries": [
+        "DE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "die-zeit-8957d1a5",
+      "name": "Die Zeit",
+      "publisher": "Die Zeit",
+      "url": "https://newsfeed.zeit.de/index",
+      "language": "de",
+      "countries": [
+        "DE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "en",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "perspective": "regional",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-japan-times-49acef46",
+      "name": "The Japan Times",
+      "publisher": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/feed",
+      "language": "en",
+      "countries": [
+        "JP"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "asahi-shimbun-de3a6e68",
+      "name": "Asahi Shimbun",
+      "publisher": "Asahi Shimbun",
+      "url": "https://rss.asahi.com/rss/asahi/newsheadlines.rdf",
+      "language": "en",
+      "countries": [
+        "JP"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "times-of-india-96815df8",
+      "name": "Times of India",
+      "publisher": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+      "language": "en",
+      "countries": [
+        "IN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "rt-news-b3b74514",
+      "name": "RT News",
+      "publisher": "RT News",
+      "url": "https://rt.com/rss/news/",
+      "language": "en",
+      "countries": [
+        "RU"
+      ],
+      "category": "world",
+      "perspective": "state-affiliated",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "tass-d931bcff",
+      "name": "TASS",
+      "publisher": "TASS",
+      "url": "https://tass.com/rss/v2.xml",
+      "language": "en",
+      "countries": [
+        "RU"
+      ],
+      "category": "world",
+      "perspective": "state-affiliated",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-moscow-times-349ba18f",
+      "name": "The Moscow Times",
+      "publisher": "The Moscow Times",
+      "url": "https://themoscowtimes.com/rss/news",
+      "language": "en",
+      "countries": [
+        "RU"
+      ],
+      "category": "world",
+      "perspective": "independent-exile",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "scmp-china-846d3d21",
+      "name": "SCMP China",
+      "publisher": "SCMP China",
+      "url": "https://www.scmp.com/rss/91/feed",
+      "language": "en",
+      "countries": [
+        "CN"
+      ],
+      "category": "world",
+      "perspective": "independent",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "china-daily-3df43fe7",
+      "name": "China Daily",
+      "publisher": "China Daily",
+      "url": "https://www.chinadaily.com.cn/rss/china_rss.xml",
+      "language": "en",
+      "countries": [
+        "CN"
+      ],
+      "category": "world",
+      "perspective": "state-affiliated",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "daily-nk-55b1eed9",
+      "name": "Daily NK",
+      "publisher": "Daily NK",
+      "url": "https://www.dailynk.com/english/feed/",
+      "language": "en",
+      "countries": [
+        "KP"
+      ],
+      "category": "world",
+      "perspective": "independent-exile",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "nk-news-9a6d9273",
+      "name": "NK News",
+      "publisher": "NK News",
+      "url": "https://www.nknews.org/feed/",
+      "language": "en",
+      "countries": [
+        "KP"
+      ],
+      "category": "world",
+      "perspective": "independent",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "tehran-times-100d939c",
+      "name": "Tehran Times",
+      "publisher": "Tehran Times",
+      "url": "https://www.tehrantimes.com/rss",
+      "language": "en",
+      "countries": [
+        "IR"
+      ],
+      "category": "world",
+      "perspective": "state-affiliated",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mehr-news-3af01666",
+      "name": "Mehr News",
+      "publisher": "Mehr News",
+      "url": "https://en.mehrnews.com/rss",
+      "language": "en",
+      "countries": [
+        "IR"
+      ],
+      "category": "world",
+      "perspective": "state-affiliated",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "perspective": "regional",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-guardian-8fe8409b",
+      "name": "The Guardian - Iran",
+      "publisher": "The Guardian",
+      "url": "https://www.theguardian.com/world/iran/rss",
+      "language": "en",
+      "countries": [
+        "IR"
+      ],
+      "category": "world",
+      "perspective": "independent",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "jerusalem-post-0b17825c",
+      "name": "Jerusalem Post",
+      "publisher": "Jerusalem Post",
+      "url": "https://www.jpost.com/rss/rssfeedsheadlines.aspx",
+      "language": "en",
+      "countries": [
+        "IL"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "perspective": "aggregator",
+      "mediaType": "aggregator",
+      "format": "rdf"
+    },
+    {
+      "id": "news24-e7e4e356",
+      "name": "News24",
+      "publisher": "News24",
+      "url": "https://feeds.news24.com/articles/news24/TopStories/rss",
+      "language": "en",
+      "countries": [
+        "ZA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mercopress-75406b7a",
+      "name": "MercoPress",
+      "publisher": "MercoPress",
+      "url": "https://en.mercopress.com/rss",
+      "language": "en",
+      "countries": [
+        "AR",
+        "BR",
+        "UY",
+        "PY",
+        "CL",
+        "BO",
+        "PE",
+        "EC",
+        "CO",
+        "VE",
+        "GY",
+        "SR"
+      ],
+      "category": "world",
+      "perspective": "regional",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mexico-news-daily-e1f5f185",
+      "name": "Mexico News Daily",
+      "publisher": "Mexico News Daily",
+      "url": "https://mexiconewsdaily.com/feed/",
+      "language": "en",
+      "countries": [
+        "MX"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-rio-times-ec8ed07a",
+      "name": "The Rio Times",
+      "publisher": "The Rio Times",
+      "url": "https://www.riotimesonline.com/feed/",
+      "language": "en",
+      "countries": [
+        "BR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "buenos-aires-times-3e5b28df",
+      "name": "Buenos Aires Times",
+      "publisher": "Buenos Aires Times",
+      "url": "https://www.batimes.com.ar/feed",
+      "language": "en",
+      "countries": [
+        "AR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "sbs-news-b737fcec",
+      "name": "SBS News",
+      "publisher": "SBS News",
+      "url": "https://www.sbs.com.au/news/feed",
+      "language": "en",
+      "countries": [
+        "AU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "rnz-pacific-5f172e7b",
+      "name": "RNZ Pacific",
+      "publisher": "RNZ Pacific",
+      "url": "https://www.rnz.co.nz/rss/pacific.xml",
+      "language": "en",
+      "countries": [
+        "NZ"
+      ],
+      "category": "world",
+      "perspective": "regional",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "rnz-national-95e71c83",
+      "name": "RNZ National",
+      "publisher": "RNZ National",
+      "url": "https://www.rnz.co.nz/rss/national.xml",
+      "language": "en",
+      "countries": [
+        "NZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "wired-e8034180",
+      "name": "WIRED",
+      "publisher": "WIRED",
+      "url": "https://www.wired.com/feed/rss",
+      "language": "en",
+      "countries": [],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "ars-technica-09cc00c5",
+      "name": "Ars Technica",
+      "publisher": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "language": "en",
+      "countries": [],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mit-technology-review-19ef1c77",
+      "name": "MIT Technology Review",
+      "publisher": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/feed/",
+      "language": "en",
+      "countries": [],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-verge-e8d31cec",
+      "name": "The Verge",
+      "publisher": "The Verge",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "language": "en",
+      "countries": [],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "techcrunch-2ef05e31",
+      "name": "TechCrunch",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/feed/",
+      "language": "en",
+      "countries": [],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "bloomberg-markets-03c4eab0",
+      "name": "Bloomberg Markets",
+      "publisher": "Bloomberg Markets",
+      "url": "https://feeds.bloomberg.com/markets/news.rss",
+      "language": "en",
+      "countries": [],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "propublica-5b32fc6c",
+      "name": "ProPublica",
+      "publisher": "ProPublica",
+      "url": "https://www.propublica.org/rss/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-intercept-cc6c2f48",
+      "name": "The Intercept",
+      "publisher": "The Intercept",
+      "url": "https://theintercept.com/feed/",
+      "language": "en",
+      "countries": [],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "bellingcat-98c3c305",
+      "name": "Bellingcat",
+      "publisher": "Bellingcat",
+      "url": "https://www.bellingcat.com/feed/",
+      "language": "en",
+      "countries": [],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "clarin-a3f5b97c",
+      "name": "Clarin",
+      "publisher": "Clarin",
+      "url": "https://www.clarin.com/rss/lo-ultimo/",
+      "language": "es",
+      "countries": [
+        "AR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "uol-not-cias-a51f4337",
+      "name": "UOL Notícias",
+      "publisher": "UOL Notícias",
+      "url": "http://rss.home.uol.com.br/index.xml",
+      "language": "pt",
+      "countries": [
+        "BR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "shorouk-1be484b3",
+      "name": "Shorouk",
+      "publisher": "Shorouk",
+      "url": "http://www.shorouknews.com/columns/rss/",
+      "language": "ar",
+      "countries": [
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "tabnak-b30db155",
+      "name": "Tabnak",
+      "publisher": "Tabnak",
+      "url": "https://www.tabnak.ir/fa/rss/allnews",
+      "language": "fa",
+      "countries": [
+        "IR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "okezone-com-c1492079",
+      "name": "okezone.com",
+      "publisher": "okezone.com",
+      "url": "http://sindikasi.okezone.com/index.php/rss/0/RSS2.0",
+      "language": "id",
+      "countries": [
+        "ID"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "orient-daily-75e5c96f",
+      "name": "Orient Daily",
+      "publisher": "Orient Daily",
+      "url": "http://feeds.feedburner.com/123greetings-daily-rss",
+      "language": "en",
+      "countries": [
+        "HK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "reforma-com-4ee63d5f",
+      "name": "Reforma.com",
+      "publisher": "Reforma.com",
+      "url": "http://www.reforma.com/rss/portada.xml",
+      "language": "es",
+      "countries": [
+        "MX"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "sana-3d39c5fb",
+      "name": "SANA",
+      "publisher": "SANA",
+      "url": "http://www.sana.sy/tr/?feed=rss2",
+      "language": "ar",
+      "countries": [
+        "SY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "news-sanook-com-5bf6fe8c",
+      "name": "news.sanook.com",
+      "publisher": "news.sanook.com",
+      "url": "http://rssfeeds.sanook.com/rss/feeds/sanook/news.crime.xml",
+      "language": "th",
+      "countries": [
+        "TH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vatan-f4febb20",
+      "name": "Vatan",
+      "publisher": "Vatan",
+      "url": "http://www.gazetevatan.com/rss/gundem.xml",
+      "language": "tr",
+      "countries": [
+        "TR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vnexpress-business-982a1f04",
+      "name": "VnExpress Business",
+      "publisher": "VnExpress Business",
+      "url": "http://vnexpress.net/rss/kinh-doanh.rss",
+      "language": "vi",
+      "countries": [
+        "VN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "donga-sports-23035e23",
+      "name": "Donga Sports",
+      "publisher": "Donga Sports",
+      "url": "http://rss.donga.com/sports.xml",
+      "language": "ko",
+      "countries": [
+        "KR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-new-republic-6746a13e",
+      "name": "The New Republic",
+      "publisher": "The New Republic",
+      "url": "http://www.newrepublic.com/rss.xml",
+      "language": "en",
+      "countries": [],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vox-7a56ec3c",
+      "name": "Vox",
+      "publisher": "Vox",
+      "url": "https://www.vox.com/rss/index.xml",
+      "language": "en",
+      "countries": [],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "android-developers-a6106c0a",
+      "name": "Android Developers",
+      "publisher": "Android Developers",
+      "url": "https://www.youtube.com/feeds/videos.xml?user=androiddevelopers",
+      "language": "en",
+      "countries": [],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "expressen-b6d68045",
+      "name": "Expressen",
+      "publisher": "Expressen",
+      "url": "http://www.expressen.se/rss/nyheter",
+      "language": "sv",
+      "countries": [
+        "SE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-new-paper-89d71e99",
+      "name": "The New Paper",
+      "publisher": "The New Paper",
+      "url": "http://www.tnp.sg/rss.xml",
+      "language": "en",
+      "countries": [
+        "SG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "daily-express-edc53d4b",
+      "name": "Daily Express",
+      "publisher": "Daily Express",
+      "url": "http://feeds.feedburner.com/daily-express-news-showbiz",
+      "language": "ur",
+      "countries": [
+        "PK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "nbc-news-08d85777",
+      "name": "NBC News",
+      "publisher": "NBC News",
+      "url": "http://feeds.nbcnews.com/feeds/topstories",
+      "language": "en",
+      "countries": [],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "azadi-radio-pashto-63895036",
+      "name": "Azadi Radio Pashto",
+      "publisher": "Azadi Radio Pashto",
+      "url": "http://pa.azadiradio.org/api/epiqq",
+      "language": "en",
+      "countries": [
+        "AF"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "news-am-9d0bfeac",
+      "name": "News.am",
+      "publisher": "News.am",
+      "url": "http://news.am/eng/rss/",
+      "language": "en",
+      "countries": [
+        "AM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mercopress-argentina-bc195222",
+      "name": "MercoPress Argentina",
+      "publisher": "MercoPress Argentina",
+      "url": "https://en.mercopress.com/rss/argentina",
+      "language": "en",
+      "countries": [
+        "AR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "krone-at-115e395e",
+      "name": "Krone.at",
+      "publisher": "Krone.at",
+      "url": "http://www.krone.at/Nachrichten/rss.html",
+      "language": "en",
+      "countries": [
+        "AT"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "abc-a97fa181",
+      "name": "ABC",
+      "publisher": "ABC",
+      "url": "http://www.abc.net.au/news/feed/46182/rss.xml",
+      "language": "en",
+      "countries": [
+        "AU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "day-az-19d2d7f0",
+      "name": "Day.az",
+      "publisher": "Day.az",
+      "url": "http://news.day.az/rss/all.rss",
+      "language": "en",
+      "countries": [
+        "AZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "dnevnik-ba-68e60b22",
+      "name": "Dnevnik.ba",
+      "publisher": "Dnevnik.ba",
+      "url": "http://www.dnevnik.ba/rss.xml",
+      "language": "en",
+      "countries": [
+        "BA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "nation-news-2c189d51",
+      "name": "Nation News",
+      "publisher": "Nation News",
+      "url": "http://www.nationnews.com/feed/rss",
+      "language": "en",
+      "countries": [
+        "BB"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "kalerkantho-com-b415de52",
+      "name": "Kalerkantho.com",
+      "publisher": "Kalerkantho.com",
+      "url": "http://www.kalerkantho.com/rss.xml",
+      "language": "en",
+      "countries": [
+        "BD"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "la-libre-e535c244",
+      "name": "La Libre",
+      "publisher": "La Libre",
+      "url": "https://www.lalibre.be/rss",
+      "language": "en",
+      "countries": [
+        "BE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "dnes-dir-bg-1913434a",
+      "name": "Dnes Dir.bg",
+      "publisher": "Dnes Dir.bg",
+      "url": "http://dnes.dir.bg/support/cat_rss.php",
+      "language": "en",
+      "countries": [
+        "BG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "iwacu-affe9968",
+      "name": "IWACU",
+      "publisher": "IWACU",
+      "url": "http://www.iwacu-burundi.org/feed/",
+      "language": "en",
+      "countries": [
+        "BI"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "bernews-da96a2c6",
+      "name": "Bernews",
+      "publisher": "Bernews",
+      "url": "http://bernews.com/tag/rory-field/feed/",
+      "language": "en",
+      "countries": [
+        "BM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "la-raz-n-ff3875ae",
+      "name": "La Razón",
+      "publisher": "La Razón",
+      "url": "https://larazon.bo/feed/",
+      "language": "en",
+      "countries": [
+        "BO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "g1-globo-8d0acbd4",
+      "name": "G1 Globo",
+      "publisher": "G1 Globo",
+      "url": "https://g1.globo.com/dynamo/rss2.xml",
+      "language": "pt",
+      "countries": [
+        "BR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "bahamas-press-d2c9ebd3",
+      "name": "Bahamas Press",
+      "publisher": "Bahamas Press",
+      "url": "http://bahamaspress.com/feed/",
+      "language": "en",
+      "countries": [
+        "BS"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "nasha-niva-414a3072",
+      "name": "Nasha Niva",
+      "publisher": "Nasha Niva",
+      "url": "http://nn.by/?c=rss-all&lang=en",
+      "language": "en",
+      "countries": [
+        "BY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "cbc-news-064838cc",
+      "name": "CBC News",
+      "publisher": "CBC News",
+      "url": "https://www.cbc.ca/cmlink/rss-topstories",
+      "language": "en",
+      "countries": [
+        "CA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "congo-planet-2cb570dc",
+      "name": "Congo Planet",
+      "publisher": "Congo Planet",
+      "url": "http://www.congoplanet.com/feeds/rss_congo_africa.xml",
+      "language": "en",
+      "countries": [
+        "CD"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "tages-anzeiger-5ce4888f",
+      "name": "Tages Anzeiger",
+      "publisher": "Tages Anzeiger",
+      "url": "http://www.tagesanzeiger.ch/rss.html",
+      "language": "en",
+      "countries": [
+        "CH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "biobiochile-3fea126e",
+      "name": "BioBioChile",
+      "publisher": "BioBioChile",
+      "url": "https://feeds.feedburner.com/radiobiobio/NNeJ",
+      "language": "es",
+      "countries": [
+        "CL"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "santiago-times-8e41411f",
+      "name": "Santiago Times",
+      "publisher": "Santiago Times",
+      "url": "https://santiagotimes.cl/feed",
+      "language": "en",
+      "countries": [
+        "CL"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "south-china-morning-post-e55a65bc",
+      "name": "South China Morning Post",
+      "publisher": "South China Morning Post",
+      "url": "https://www.scmp.com/rss/4/feed",
+      "language": "en",
+      "countries": [
+        "CN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "el-colombiano-2bc910a9",
+      "name": "El Colombiano",
+      "publisher": "El Colombiano",
+      "url": "http://www.elcolombiano.com/rss/inicio.xml",
+      "language": "es",
+      "countries": [
+        "CO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "colombia-reports-b99a35bc",
+      "name": "Colombia Reports",
+      "publisher": "Colombia Reports",
+      "url": "https://colombiareports.com/feed",
+      "language": "en",
+      "countries": [
+        "CO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "el-financiero-8302247f",
+      "name": "El Financiero",
+      "publisher": "El Financiero",
+      "url": "http://www.elfinancierocr.com/rss/",
+      "language": "en",
+      "countries": [
+        "CR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "cubanet-f763845e",
+      "name": "CubaNet",
+      "publisher": "CubaNet",
+      "url": "http://www.cubanet.org/feed/",
+      "language": "en",
+      "countries": [
+        "CU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "sigma-live-c5a2ac04",
+      "name": "Sigma Live",
+      "publisher": "Sigma Live",
+      "url": "http://www.sigmalive.com/rss",
+      "language": "en",
+      "countries": [
+        "CY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "novinky-cz-70ca2807",
+      "name": "Novinky.cz",
+      "publisher": "Novinky.cz",
+      "url": "http://www.novinky.cz/rss/",
+      "language": "en",
+      "countries": [
+        "CZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "die-welt-bdd27309",
+      "name": "DIE WELT",
+      "publisher": "DIE WELT",
+      "url": "http://www.welt.de/?service=Rss",
+      "language": "en",
+      "countries": [
+        "DE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "la-nacion-7503d963",
+      "name": "La Nacion",
+      "publisher": "La Nacion",
+      "url": "http://www.nacion.com/rss/",
+      "language": "es",
+      "countries": [
+        "CR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "borsen-f0ec3a22",
+      "name": "Borsen.",
+      "publisher": "Borsen.",
+      "url": "http://borsen.dk/rss/",
+      "language": "en",
+      "countries": [
+        "DK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "dominica-news-6137b690",
+      "name": "Dominica News",
+      "publisher": "Dominica News",
+      "url": "http://dominicanewsonline.com/news/feed/",
+      "language": "en",
+      "countries": [
+        "DM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "almomento-net-281b0532",
+      "name": "Almomento.net",
+      "publisher": "Almomento.net",
+      "url": "http://almomento.net/feed/",
+      "language": "en",
+      "countries": [
+        "DO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "algerie360-com-e9ede278",
+      "name": "Algerie360.com",
+      "publisher": "Algerie360.com",
+      "url": "http://www.algerie360.com/feed/",
+      "language": "en",
+      "countries": [
+        "DZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "el-comercio-69bf7e73",
+      "name": "El Comercio",
+      "publisher": "El Comercio",
+      "url": "https://www.elcomercio.com/feed/",
+      "language": "en",
+      "countries": [
+        "EC"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "postimees-9580dc13",
+      "name": "Postimees",
+      "publisher": "Postimees",
+      "url": "http://www.postimees.ee/rss/",
+      "language": "en",
+      "countries": [
+        "EE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "daily-news-egypt-98182a83",
+      "name": "Daily News Egypt",
+      "publisher": "Daily News Egypt",
+      "url": "https://www.dailynewsegypt.com/feed",
+      "language": "en",
+      "countries": [
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "asmarino-independent-e0181d41",
+      "name": "Asmarino Independent",
+      "publisher": "Asmarino Independent",
+      "url": "http://asmarino.com/?format=feed&type=rss",
+      "language": "en",
+      "countries": [
+        "ER"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "el-pais-617dc1de",
+      "name": "EL PAIS",
+      "publisher": "EL PAIS",
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+      "language": "en",
+      "countries": [
+        "ES"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "voa-b6f7956e",
+      "name": "VOA",
+      "publisher": "VOA",
+      "url": "http://amharic.voanews.com/podcast/",
+      "language": "en",
+      "countries": [
+        "ET"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "iltalehti-fi-8ebadb91",
+      "name": "Iltalehti.fi",
+      "publisher": "Iltalehti.fi",
+      "url": "http://www.iltalehti.fi/rss/uutiset.xml",
+      "language": "en",
+      "countries": [
+        "FI"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "fbc-news-10cdbefd",
+      "name": "FBC News",
+      "publisher": "FBC News",
+      "url": "https://fbcnews.com.fj/feed",
+      "language": "en",
+      "countries": [
+        "FJ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "kvf-faroe-islands-0c0ca6d5",
+      "name": "KVF Faroe Islands",
+      "publisher": "KVF Faroe Islands",
+      "url": "https://kvf.fo/rss",
+      "language": "en",
+      "countries": [
+        "FO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "infos-gabon-99930956",
+      "name": "Infos Gabon",
+      "publisher": "Infos Gabon",
+      "url": "http://fr.infosgabon.com/feed/",
+      "language": "en",
+      "countries": [
+        "GA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "bbc-0a2d7d7a",
+      "name": "BBC",
+      "publisher": "BBC",
+      "url": "http://feeds.bbci.co.uk/news/rss.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "ghana-mma-a1b18cfd",
+      "name": "Ghana MMA",
+      "publisher": "Ghana MMA",
+      "url": "http://www.ghanamma.com/category/business/feed/",
+      "language": "en",
+      "countries": [
+        "GH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "gibraltar-chronicle-4d9e0c14",
+      "name": "Gibraltar Chronicle",
+      "publisher": "Gibraltar Chronicle",
+      "url": "https://www.chronicle.gi/feed/",
+      "language": "en",
+      "countries": [
+        "GI"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "point-c85c24e3",
+      "name": "Point",
+      "publisher": "Point",
+      "url": "http://thepoint.gm/posts/rss/xml",
+      "language": "en",
+      "countries": [
+        "GM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "guineenews-d34b3ea0",
+      "name": "Guineenews",
+      "publisher": "Guineenews",
+      "url": "http://guineenews.org/feed/",
+      "language": "en",
+      "countries": [
+        "GN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "in-gr-0b923e1f",
+      "name": "in.gr",
+      "publisher": "in.gr",
+      "url": "http://rss.in.gr/Netvolution.Site.Engine.PageHandler.axd?rid=2&pid=250&la=1&si=1",
+      "language": "en",
+      "countries": [
+        "GR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "prensa-libre-2555cfc1",
+      "name": "Prensa Libre",
+      "publisher": "Prensa Libre",
+      "url": "https://www.prensalibre.com/feed",
+      "language": "es",
+      "countries": [
+        "GT"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "kaieteur-news-64f614fe",
+      "name": "Kaieteur News",
+      "publisher": "Kaieteur News",
+      "url": "http://www.kaieteurnewsonline.com/feed/",
+      "language": "en",
+      "countries": [
+        "GY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "hong-kong-free-press-5e45b072",
+      "name": "Hong Kong Free Press",
+      "publisher": "Hong Kong Free Press",
+      "url": "https://hongkongfp.com/feed/",
+      "language": "en",
+      "countries": [
+        "HK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "24sata-hr-629a3986",
+      "name": "24sata.hr",
+      "publisher": "24sata.hr",
+      "url": "http://www.24sata.hr/feeds/news.xml",
+      "language": "en",
+      "countries": [
+        "HR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "haiti-libre-6a742fcd",
+      "name": "Haiti Libre",
+      "publisher": "Haiti Libre",
+      "url": "http://www.haitilibre.com/rss-flash-en.xml",
+      "language": "en",
+      "countries": [
+        "HT"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "index-d93ff4bc",
+      "name": "Index",
+      "publisher": "Index",
+      "url": "http://index.hu/24ora/rss",
+      "language": "en",
+      "countries": [
+        "HU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "irish-independent-bb1e3229",
+      "name": "Irish Independent",
+      "publisher": "Irish Independent",
+      "url": "http://www.independent.ie/irish-news/rss",
+      "language": "en",
+      "countries": [
+        "IE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "ynet-aa480431",
+      "name": "Ynet",
+      "publisher": "Ynet",
+      "url": "http://www.ynet.co.il/Integration/StoryRss3082.xml",
+      "language": "en",
+      "countries": [
+        "IL"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "3fm-dd33aaf9",
+      "name": "3FM",
+      "publisher": "3FM",
+      "url": "http://www.three.fm/news/isle-of-man-news/feed.xml",
+      "language": "en",
+      "countries": [
+        "IM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "times-of-india-top-stories-07e2361c",
+      "name": "Times of India - Top Stories",
+      "publisher": "Times of India - Top Stories",
+      "url": "http://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+      "language": "en",
+      "countries": [
+        "IN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "ahewar-org-e0c08e67",
+      "name": "Ahewar.org",
+      "publisher": "Ahewar.org",
+      "url": "http://www.ahewar.org/rss/default.asp?lt=7",
+      "language": "en",
+      "countries": [
+        "IQ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "irna-news-34bf5372",
+      "name": "IRNA News",
+      "publisher": "IRNA News",
+      "url": "https://en.irna.ir/rss",
+      "language": "en",
+      "countries": [
+        "IR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "visir-8ad84bc3",
+      "name": "Visir",
+      "publisher": "Visir",
+      "url": "http://www.visir.is/apps/pbcs.dll/section?Category=FRETTIR&Template=rss&mime=xml",
+      "language": "en",
+      "countries": [
+        "IS"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "la-repubblica-ed4b824e",
+      "name": "La Repubblica",
+      "publisher": "La Repubblica",
+      "url": "http://www.repubblica.it/rss/homepage/rss2.0.xml",
+      "language": "en",
+      "countries": [
+        "IT"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-jamaica-star-d4fd8f52",
+      "name": "The Jamaica Star",
+      "publisher": "The Jamaica Star",
+      "url": "http://jamaica-star.com/feed/news.xml",
+      "language": "en",
+      "countries": [
+        "JM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "jordan-zad-b6bc625c",
+      "name": "Jordan Zad",
+      "publisher": "Jordan Zad",
+      "url": "http://www.jordanzad.com/rss.php?type=main",
+      "language": "en",
+      "countries": [
+        "JO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "nhk-4c3d8382",
+      "name": "NHK",
+      "publisher": "NHK",
+      "url": "http://www.nhk.or.jp/rj/podcast/rss/english.xml",
+      "language": "en",
+      "countries": [
+        "JP"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "standard-media-40f83369",
+      "name": "Standard Media",
+      "publisher": "Standard Media",
+      "url": "http://www.standardmedia.co.ke/rss/business.php",
+      "language": "en",
+      "countries": [
+        "KE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "akipress-cfc5c143",
+      "name": "AKIpress",
+      "publisher": "AKIpress",
+      "url": "http://www.akipress.com/rss/en.rss",
+      "language": "en",
+      "countries": [
+        "KG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "rfi-khmer-c876ba43",
+      "name": "RFI Khmer",
+      "publisher": "RFI Khmer",
+      "url": "http://www.khmer.rfi.fr/cambodia/rss",
+      "language": "en",
+      "countries": [
+        "KH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "ziz-0702db50",
+      "name": "ZIZ",
+      "publisher": "ZIZ",
+      "url": "http://zizonline.com/feed/",
+      "language": "en",
+      "countries": [
+        "KN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "cayman-news-service-5319e5ee",
+      "name": "Cayman News Service",
+      "publisher": "Cayman News Service",
+      "url": "https://caymannewsservice.com/feed/",
+      "language": "en",
+      "countries": [
+        "KY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "tengri-news-0e6ec970",
+      "name": "Tengri News",
+      "publisher": "Tengri News",
+      "url": "http://tengrinews.kz/news.rss",
+      "language": "en",
+      "countries": [
+        "KZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "lbc-group-b220aee7",
+      "name": "LBC Group",
+      "publisher": "LBC Group",
+      "url": "https://www.lbcgroup.tv/rss/news/en",
+      "language": "en",
+      "countries": [
+        "LB"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "lanka-hot-news-8fe6d903",
+      "name": "Lanka Hot News",
+      "publisher": "Lanka Hot News",
+      "url": "http://www.lankahotnews.net/feeds/posts/default?alt=rss",
+      "language": "en",
+      "countries": [
+        "LK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "delfi-43e415f3",
+      "name": "DELFI",
+      "publisher": "DELFI",
+      "url": "http://www.delfi.lt/rss/feeds/lithuania.xml",
+      "language": "en",
+      "countries": [
+        "LT"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "rtl-1b7f8ad0",
+      "name": "RTL",
+      "publisher": "RTL",
+      "url": "http://rtl.lu/rss/headlines/",
+      "language": "en",
+      "countries": [
+        "LU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "delfi-d53fc8ed",
+      "name": "DELFI",
+      "publisher": "DELFI",
+      "url": "http://www.delfi.lv/rss.php",
+      "language": "en",
+      "countries": [
+        "LV"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "hespress-62913d28",
+      "name": "Hespress",
+      "publisher": "Hespress",
+      "url": "http://www.hespress.com/feed/index.rss",
+      "language": "en",
+      "countries": [
+        "MA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "point-6a33f6d2",
+      "name": "Point",
+      "publisher": "Point",
+      "url": "http://point.md/ru/rss/novosti/",
+      "language": "en",
+      "countries": [
+        "MD"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vijesti-6ba159a3",
+      "name": "Vijesti",
+      "publisher": "Vijesti",
+      "url": "https://www.vijesti.me/rss",
+      "language": "en",
+      "countries": [
+        "ME"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "madagascar-tribune-0f2f25aa",
+      "name": "Madagascar Tribune",
+      "publisher": "Madagascar Tribune",
+      "url": "http://www.madagascar-tribune.com/spip.php?page=backend",
+      "language": "en",
+      "countries": [
+        "MG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "kajgana-34ee9243",
+      "name": "Kajgana",
+      "publisher": "Kajgana",
+      "url": "http://kajgana.com/rss.xml",
+      "language": "en",
+      "countries": [
+        "MK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "journaldumali-com-abe4771a",
+      "name": "JournalDuMali.com",
+      "publisher": "JournalDuMali.com",
+      "url": "http://www.journaldumali.com/rss/",
+      "language": "en",
+      "countries": [
+        "ML"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "myanmar-gazette-news-media-forum-network-32c2a47e",
+      "name": "Myanmar Gazette News Media Forum Network",
+      "publisher": "Myanmar Gazette News Media Forum Network",
+      "url": "http://myanmargazette.net/feed",
+      "language": "en",
+      "countries": [
+        "MM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "bolod-mn-6c63ca39",
+      "name": "Bolod.mn",
+      "publisher": "Bolod.mn",
+      "url": "http://www.bolod.mn/feed.php",
+      "language": "en",
+      "countries": [
+        "MN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "france-antilles-martinique-471b3214",
+      "name": "France-Antilles Martinique",
+      "publisher": "France-Antilles Martinique",
+      "url": "http://www.martinique.franceantilles.fr/rss/lea_Une.xml",
+      "language": "en",
+      "countries": [
+        "MQ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "malta-today-1fd96b88",
+      "name": "Malta Today",
+      "publisher": "Malta Today",
+      "url": "http://www.maltatoday.com.mt/rss/",
+      "language": "en",
+      "countries": [
+        "MT"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "maurice-info-f9d950e8",
+      "name": "Maurice Info",
+      "publisher": "Maurice Info",
+      "url": "https://maurice-info.mu/feed",
+      "language": "fr",
+      "countries": [
+        "MU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "sun-mv-6688cb2d",
+      "name": "Sun.mv",
+      "publisher": "Sun.mv",
+      "url": "http://sun.mv/feed/",
+      "language": "en",
+      "countries": [
+        "MV"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "nyasa-times-70efa8ae",
+      "name": "Nyasa Times",
+      "publisher": "Nyasa Times",
+      "url": "http://www.nyasatimes.com/feed/",
+      "language": "en",
+      "countries": [
+        "MW"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-star-malaysia-93032655",
+      "name": "The Star Malaysia",
+      "publisher": "The Star Malaysia",
+      "url": "https://www.thestar.com.my/rss/news/nation/",
+      "language": "en",
+      "countries": [
+        "MY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-namibian-1002b655",
+      "name": "The Namibian",
+      "publisher": "The Namibian",
+      "url": "https://www.namibian.com.na/feed/",
+      "language": "en",
+      "countries": [
+        "NA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "premium-times-83c369c6",
+      "name": "Premium Times",
+      "publisher": "Premium Times",
+      "url": "https://www.premiumtimesng.com/feed",
+      "language": "en",
+      "countries": [
+        "NG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "la-nueva-radio-ya-40dbe60e",
+      "name": "La Nueva Radio YA",
+      "publisher": "La Nueva Radio YA",
+      "url": "http://nuevaya.com.ni/feed/",
+      "language": "en",
+      "countries": [
+        "NI"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "nu-nl-b80230aa",
+      "name": "nu.nl",
+      "publisher": "nu.nl",
+      "url": "http://www.nu.nl/feeds/rss/algemeen.rss",
+      "language": "en",
+      "countries": [
+        "NL"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vg-nett-6174cf0d",
+      "name": "VG Nett",
+      "publisher": "VG Nett",
+      "url": "http://www.vg.no/rss/feed/?limit=10&format=rss&categories=&keywords=",
+      "language": "en",
+      "countries": [
+        "NO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "onlinekhabar-com-075424bb",
+      "name": "onlinekhabar.com",
+      "publisher": "onlinekhabar.com",
+      "url": "http://www.onlinekhabar.com/feed/",
+      "language": "en",
+      "countries": [
+        "NP"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "nz-herald-3c694a12",
+      "name": "NZ Herald",
+      "publisher": "NZ Herald",
+      "url": "http://rss.nzherald.co.nz/rss/xml/nzhrsscid_000000001.xml",
+      "language": "en",
+      "countries": [
+        "NZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "central-america-data-3f3fbd8b",
+      "name": "Central America Data",
+      "publisher": "Central America Data",
+      "url": "http://www.odditysoftware.com/database_feed_Central+America+Geocode+Data.htm",
+      "language": "en",
+      "countries": [
+        "PA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "el-comercio-per-c0d60a60",
+      "name": "El Comercio Perú",
+      "publisher": "El Comercio Perú",
+      "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
+      "language": "en",
+      "countries": [
+        "PE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "tahiti-infos-64e2c50b",
+      "name": "Tahiti Infos",
+      "publisher": "Tahiti Infos",
+      "url": "http://www.tahiti-infos.com/xml/syndication.rss",
+      "language": "en",
+      "countries": [
+        "PF"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "philstar-headlines-b5f0dd03",
+      "name": "Philstar Headlines",
+      "publisher": "Philstar Headlines",
+      "url": "https://www.philstar.com/rss/headlines",
+      "language": "en",
+      "countries": [
+        "PH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "gazeta-pl-8a4934cd",
+      "name": "Gazeta.pl",
+      "publisher": "Gazeta.pl",
+      "url": "http://rss.gazeta.pl/pub/rss/wiadomosci.xml",
+      "language": "en",
+      "countries": [
+        "PL"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "noti-uno-630-am-7b37529e",
+      "name": "Noti Uno 630 AM",
+      "publisher": "Noti Uno 630 AM",
+      "url": "http://estrella51.blogspot.com/feeds/posts/default?alt=rss",
+      "language": "en",
+      "countries": [
+        "PR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "expresso-9bcf73a1",
+      "name": "Expresso",
+      "publisher": "Expresso",
+      "url": "https://rss.impresa.pt/feed/latest/expresso.rss?type=ARTICLE,VIDEO,GALLERY,STREAM,PLAYLIST,EVENT,NEWSLETTER&limit=20&pubsubhub=true",
+      "language": "en",
+      "countries": [
+        "PT"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "abc-color-150e388a",
+      "name": "ABC Color",
+      "publisher": "ABC Color",
+      "url": "https://www.abc.com.py/arc/outboundfeeds/rss/nacionales/",
+      "language": "es",
+      "countries": [
+        "PY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "adevarul-ro-7832868f",
+      "name": "adevarul.ro",
+      "publisher": "adevarul.ro",
+      "url": "http://adevarul.ro/rss/",
+      "language": "en",
+      "countries": [
+        "RO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "blic-8d1ebbbc",
+      "name": "Blic",
+      "publisher": "Blic",
+      "url": "http://www.blic.rs/rss/danasnje-vesti",
+      "language": "en",
+      "countries": [
+        "RS"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "ria-novosti-78ca4795",
+      "name": "RIA Novosti",
+      "publisher": "RIA Novosti",
+      "url": "https://ria.ru/export/rss2/index.xml",
+      "language": "en",
+      "countries": [
+        "RU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "solomon-times-d9ea069d",
+      "name": "Solomon Times",
+      "publisher": "Solomon Times",
+      "url": "http://www.solomontimes.com/rss/latest-news.xml",
+      "language": "en",
+      "countries": [
+        "SB"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-straits-times-48618888",
+      "name": "The Straits Times",
+      "publisher": "The Straits Times",
+      "url": "https://www.straitstimes.com/news/world/rss.xml",
+      "language": "en",
+      "countries": [
+        "SG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "planet-siol-net-32ed4384",
+      "name": "Planet Siol.net",
+      "publisher": "Planet Siol.net",
+      "url": "http://www.siol.net/rss.aspx?path=SiOL.Net",
+      "language": "en",
+      "countries": [
+        "SI"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "aktuality-sk-11904f56",
+      "name": "Aktuality.sk",
+      "publisher": "Aktuality.sk",
+      "url": "http://www.aktuality.sk/rss/",
+      "language": "en",
+      "countries": [
+        "SK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "giornale-sm-1e0abcdc",
+      "name": "Giornale.sm",
+      "publisher": "Giornale.sm",
+      "url": "http://giornalesm.com/feed/",
+      "language": "en",
+      "countries": [
+        "SM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "leral-net-ed1a2c18",
+      "name": "leral.net",
+      "publisher": "leral.net",
+      "url": "http://www.leral.net/xml/syndication.rss",
+      "language": "en",
+      "countries": [
+        "SN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "jowhar-com-bddf086d",
+      "name": "Jowhar.com",
+      "publisher": "Jowhar.com",
+      "url": "http://www.jowhar.com/?feed=rss2&author=1",
+      "language": "en",
+      "countries": [
+        "SO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "starnieuws-601638b5",
+      "name": "Starnieuws",
+      "publisher": "Starnieuws",
+      "url": "http://www.starnieuws.com/rss/starnieuws.rss",
+      "language": "en",
+      "countries": [
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "leaders-com-tn-d5f2e2f8",
+      "name": "leaders.com.tn",
+      "publisher": "leaders.com.tn",
+      "url": "http://www.leaders.com.tn/rss",
+      "language": "en",
+      "countries": [
+        "TN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "daily-news-91c8d08a",
+      "name": "Daily News",
+      "publisher": "Daily News",
+      "url": "https://dailynews.co.tz/category/tanzania/feed",
+      "language": "en",
+      "countries": [
+        "TZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "gazeta-ua-884b9280",
+      "name": "Gazeta.ua",
+      "publisher": "Gazeta.ua",
+      "url": "http://gazeta.ua/ru/rss",
+      "language": "en",
+      "countries": [
+        "UA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "espn-b1ff08c3",
+      "name": "ESPN",
+      "publisher": "ESPN",
+      "url": "http://sports.espn.go.com/espn/rss/news",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "el-observador-121f3682",
+      "name": "El Observador",
+      "publisher": "El Observador",
+      "url": "https://www.elobservador.com.uy/rss/pages/ultimo-momento.xml",
+      "language": "en",
+      "countries": [
+        "UY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "gazeta-uz-42bf059e",
+      "name": "Gazeta.uz",
+      "publisher": "Gazeta.uz",
+      "url": "http://www.gazeta.uz/rss/",
+      "language": "en",
+      "countries": [
+        "UZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vnexpress-international-1de9faa5",
+      "name": "VNExpress International",
+      "publisher": "VNExpress International",
+      "url": "https://vnexpress.net/rss/tin-moi-nhat.rss",
+      "language": "en",
+      "countries": [
+        "VN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "samoa-news-84a44f4a",
+      "name": "Samoa News",
+      "publisher": "Samoa News",
+      "url": "http://www.samoanews.com/?q=rss.xml&quicktabs_3=0",
+      "language": "en",
+      "countries": [
+        "WS"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "zeri-info-81b3c094",
+      "name": "ZERI.info",
+      "publisher": "ZERI.info",
+      "url": "https://zeri.info/rss/zerat",
+      "language": "en",
+      "countries": [
+        "XK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mareb-press-4e621f90",
+      "name": "Mareb Press",
+      "publisher": "Mareb Press",
+      "url": "https://marebpress.net/news_rss.php",
+      "language": "en",
+      "countries": [
+        "YE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mail-guardian-eac78b61",
+      "name": "Mail & Guardian",
+      "publisher": "Mail & Guardian",
+      "url": "https://mg.co.za/feed/",
+      "language": "en",
+      "countries": [
+        "ZA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "tumfweko-97b6f24e",
+      "name": "Tumfweko",
+      "publisher": "Tumfweko",
+      "url": "http://tumfweko.com/feed/",
+      "language": "en",
+      "countries": [
+        "ZM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ]
+}

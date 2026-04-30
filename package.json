@@ -1,0 +1,23 @@
+{
+  "name": "giti-rss-registry",
+  "version": "1.0.0",
+  "description": "Curated global news feed registry for Giti",
+  "type": "module",
+  "scripts": {
+    "validate": "npx tsx scripts/validate.ts",
+    "build": "npx tsx scripts/build-artifacts.ts",
+    "test": "npm run validate"
+  },
+  "keywords": [
+    "rss",
+    "news",
+    "registry",
+    "giti"
+  ],
+  "author": "Giti Team",
+  "license": "MIT",
+  "devDependencies": {
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  }
+}
