@@ -2,7 +2,34 @@
 
 Thanks for helping improve the registry.
 
-## What to submit
+## How to Add a Feed
+
+1.  **Fork the repository** and create a new branch.
+2.  **Add your feed** to `data/feeds.json`.
+3.  **Run validation** locally:
+    ```bash
+    npm install
+    npm test
+    ```
+4.  **Submit a Pull Request**.
+
+### Example Entry
+Add the following object to the `feeds` array in `data/feeds.json`:
+
+```json
+{
+  "id": "slug-name-hash",
+  "name": "Feed Name",
+  "publisher": "Publisher Name",
+  "url": "https://example.com/rss.xml",
+  "language": "en",
+  "countries": ["US"],
+  "category": "world",
+  "perspective": "independent"
+}
+```
+*Note: If you don't know the ID, you can use a descriptive slug; a maintainer will help finalize the stable ID.*
+
 
 For each feed addition/update, include:
 

@@ -81,26 +81,8 @@ npm run build
 
 ## Contribution
 
-Please read `CONTRIBUTING.md` before opening PRs.
-
-For feed additions/changes, include:
-
-- publisher
-- homepage
-- feed URL
-- language
-- country/countries
-- category
-- official/non-official signal
-- evidence that feed is active
-
-## Editorial principles
-
-- prefer canonical/official feeds when available
-- avoid comment/tag/reply feeds
-- avoid duplicate section feeds unless clearly distinct
-- apply perspective labels only with defensible rationale
+We welcome community contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for a step-by-step guide on how to add or update feeds.
 
 ## License
 
-Choose one before launch (recommended: `MIT` for broad reuse or `ODbL-1.0` for data-share reciprocity, depending on your policy preference).
+This project is licensed under the [MIT License](LICENSE).

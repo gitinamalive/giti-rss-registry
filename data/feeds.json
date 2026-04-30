@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T04:50:10.504Z",
+  "generatedAt": "2026-04-30T05:16:24.126Z",
   "source": "src/data/rssSuggestions.ts + src/data/countrySuggestions.ts",
   "stats": {
     "feeds": 214,
@@ -136,7 +136,7 @@
       "countries": [
         "US"
       ],
-      "category": "finance",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -149,7 +149,7 @@
       "countries": [
         "GB"
       ],
-      "category": "europe",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -162,7 +162,7 @@
       "countries": [
         "GB"
       ],
-      "category": "europe",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -175,7 +175,7 @@
       "countries": [
         "GB"
       ],
-      "category": "europe",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -266,7 +266,7 @@
       "countries": [
         "FR"
       ],
-      "category": "europe",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -279,7 +279,7 @@
       "countries": [
         "FR"
       ],
-      "category": "europe",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -292,7 +292,7 @@
       "countries": [
         "DE"
       ],
-      "category": "europe",
+      "category": "world",
       "mediaType": "digital",
       "format": "rdf"
     },
@@ -305,7 +305,7 @@
       "countries": [
         "DE"
       ],
-      "category": "europe",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -357,7 +357,7 @@
       "countries": [
         "DE"
       ],
-      "category": "europe",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -370,7 +370,7 @@
       "countries": [
         "DE"
       ],
-      "category": "europe",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -383,7 +383,7 @@
       "countries": [
         "DE"
       ],
-      "category": "europe",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -424,8 +424,7 @@
         "LU",
         "NO"
       ],
-      "category": "europe",
-      "perspective": "regional",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -478,7 +477,6 @@
         "RU"
       ],
       "category": "world",
-      "perspective": "state-affiliated",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -492,7 +490,6 @@
         "RU"
       ],
       "category": "world",
-      "perspective": "state-affiliated",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -506,7 +503,6 @@
         "RU"
       ],
       "category": "world",
-      "perspective": "independent-exile",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -520,7 +516,6 @@
         "CN"
       ],
       "category": "world",
-      "perspective": "independent",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -534,7 +529,6 @@
         "CN"
       ],
       "category": "world",
-      "perspective": "state-affiliated",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -548,7 +542,6 @@
         "KP"
       ],
       "category": "world",
-      "perspective": "independent-exile",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -562,7 +555,6 @@
         "KP"
       ],
       "category": "world",
-      "perspective": "independent",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -576,7 +568,6 @@
         "IR"
       ],
       "category": "world",
-      "perspective": "state-affiliated",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -590,7 +581,6 @@
         "IR"
       ],
       "category": "world",
-      "perspective": "state-affiliated",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -618,7 +608,6 @@
         "EG"
       ],
       "category": "world",
-      "perspective": "regional",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -632,7 +621,6 @@
         "IR"
       ],
       "category": "world",
-      "perspective": "independent",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -707,8 +695,7 @@
         "EG"
       ],
       "category": "world",
-      "perspective": "aggregator",
-      "mediaType": "aggregator",
+      "mediaType": "digital",
       "format": "rdf"
     },
     {
@@ -745,7 +732,6 @@
         "SR"
       ],
       "category": "world",
-      "perspective": "regional",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -811,7 +797,6 @@
         "NZ"
       ],
       "category": "world",
-      "perspective": "regional",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -835,7 +820,7 @@
       "url": "https://www.wired.com/feed/rss",
       "language": "en",
       "countries": [],
-      "category": "technology",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -846,7 +831,7 @@
       "url": "https://feeds.arstechnica.com/arstechnica/index",
       "language": "en",
       "countries": [],
-      "category": "technology",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -857,7 +842,7 @@
       "url": "https://www.technologyreview.com/feed/",
       "language": "en",
       "countries": [],
-      "category": "technology",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -868,7 +853,7 @@
       "url": "https://www.theverge.com/rss/index.xml",
       "language": "en",
       "countries": [],
-      "category": "technology",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -879,7 +864,7 @@
       "url": "https://techcrunch.com/feed/",
       "language": "en",
       "countries": [],
-      "category": "technology",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -890,7 +875,7 @@
       "url": "https://feeds.bloomberg.com/markets/news.rss",
       "language": "en",
       "countries": [],
-      "category": "finance",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -903,7 +888,7 @@
       "countries": [
         "US"
       ],
-      "category": "investigative",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -914,7 +899,7 @@
       "url": "https://theintercept.com/feed/",
       "language": "en",
       "countries": [],
-      "category": "investigative",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -925,7 +910,7 @@
       "url": "https://www.bellingcat.com/feed/",
       "language": "en",
       "countries": [],
-      "category": "investigative",
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     },
