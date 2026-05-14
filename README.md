@@ -38,17 +38,12 @@ See `schema/` and `src/types.ts` for canonical definitions.
 ```text
 giti-rss-registry/
   data/
-    sources/
-    approved-categories.json
+    feeds.json
   schema/
-  src/
-    index.ts
-    types.ts
-    opml.ts
+    schema.md
   scripts/
-    build.ts
+    build-artifacts.ts
     validate.ts
-    health-check.ts
   dist/
     feeds.json
     feeds.csv
