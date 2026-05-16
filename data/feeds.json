@@ -1492,19 +1492,6 @@
       "format": "rss"
     },
     {
-      "id": "cubanet-f763845e",
-      "name": "CubaNet",
-      "publisher": "CubaNet",
-      "url": "http://www.cubanet.org/feed/",
-      "language": "en",
-      "countries": [
-        "CU"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
       "id": "sigma-live-c5a2ac04",
       "name": "Sigma Live",
       "publisher": "Sigma Live",
@@ -2051,19 +2038,6 @@
       "format": "rss"
     },
     {
-      "id": "akipress-cfc5c143",
-      "name": "AKIpress",
-      "publisher": "AKIpress",
-      "url": "http://www.akipress.com/rss/en.rss",
-      "language": "en",
-      "countries": [
-        "KG"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
       "id": "rfi-khmer-c876ba43",
       "name": "RFI Khmer",
       "publisher": "RFI Khmer",
@@ -2110,19 +2084,6 @@
       "language": "en",
       "countries": [
         "KZ"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
-      "id": "lbc-group-b220aee7",
-      "name": "LBC Group",
-      "publisher": "LBC Group",
-      "url": "https://www.lbcgroup.tv/rss/news/en",
-      "language": "en",
-      "countries": [
-        "LB"
       ],
       "category": "world",
       "mediaType": "digital",
@@ -2259,32 +2220,6 @@
       "format": "rss"
     },
     {
-      "id": "myanmar-gazette-news-media-forum-network-32c2a47e",
-      "name": "Myanmar Gazette News Media Forum Network",
-      "publisher": "Myanmar Gazette News Media Forum Network",
-      "url": "http://myanmargazette.net/feed",
-      "language": "en",
-      "countries": [
-        "MM"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
-      "id": "bolod-mn-6c63ca39",
-      "name": "Bolod.mn",
-      "publisher": "Bolod.mn",
-      "url": "http://www.bolod.mn/feed.php",
-      "language": "en",
-      "countries": [
-        "MN"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
       "id": "france-antilles-martinique-471b3214",
       "name": "France-Antilles Martinique",
       "publisher": "France-Antilles Martinique",
@@ -2292,19 +2227,6 @@
       "language": "en",
       "countries": [
         "MQ"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
-      "id": "malta-today-1fd96b88",
-      "name": "Malta Today",
-      "publisher": "Malta Today",
-      "url": "http://www.maltatoday.com.mt/rss/",
-      "language": "en",
-      "countries": [
-        "MT"
       ],
       "category": "world",
       "mediaType": "digital",
@@ -2344,19 +2266,6 @@
       "language": "en",
       "countries": [
         "MW"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
-      "id": "the-star-malaysia-93032655",
-      "name": "The Star Malaysia",
-      "publisher": "The Star Malaysia",
-      "url": "https://www.thestar.com.my/rss/news/nation/",
-      "language": "en",
-      "countries": [
-        "MY"
       ],
       "category": "world",
       "mediaType": "digital",
@@ -2792,19 +2701,6 @@
       "format": "rss"
     },
     {
-      "id": "samoa-news-84a44f4a",
-      "name": "Samoa News",
-      "publisher": "Samoa News",
-      "url": "http://www.samoanews.com/?q=rss.xml&quicktabs_3=0",
-      "language": "en",
-      "countries": [
-        "WS"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
       "id": "zeri-info-81b3c094",
       "name": "ZERI.info",
       "publisher": "ZERI.info",
@@ -2851,6 +2747,45 @@
       "language": "en",
       "countries": [
         "ZM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "durov-telegram-7f8a9b1c",
+      "name": "Du Rov's Channel",
+      "publisher": "Telegram",
+      "url": "https://rsshub.app/telegram/channel/durov",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mkbhd-youtube-5e4d3c2b",
+      "name": "MKBHD",
+      "publisher": "YouTube",
+      "url": "https://rsshub.app/youtube/user/marquesbrownlee",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "github-trending-1a2b3c4d",
+      "name": "GitHub Trending",
+      "publisher": "GitHub",
+      "url": "https://rsshub.app/github/trending/daily/any",
+      "language": "en",
+      "countries": [
+        "US"
       ],
       "category": "world",
       "mediaType": "digital",
