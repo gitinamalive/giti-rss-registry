@@ -1,4 +1,5 @@
 # giti-rss-registry
+[https://github.com/gitinamalive/giti-rss-registry](https://github.com/gitinamalive/giti-rss-registry)
 
 A curated, community-maintained RSS/news-feed registry extracted from Giti and published as a reusable public dataset.
 

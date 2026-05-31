@@ -19,3 +19,5 @@ jobs:
         run: npm install
       - name: Run validation
         run: npm test
+      - name: Verify build artifact generation
+        run: npm run build

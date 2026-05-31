@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Curated global news feed registry for Giti",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitinamalive/giti-rss-registry.git"
+  },
   "scripts": {
     "validate": "npx tsx scripts/validate.ts",
     "build": "npx tsx scripts/build-artifacts.ts",

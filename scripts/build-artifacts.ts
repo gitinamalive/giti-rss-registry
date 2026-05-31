@@ -6,14 +6,19 @@ interface FeedEntry {
     name: string;
     publisher: string;
     url: string;
+    homepage?: string;
     language: string;
     countries: string[];
+    region?: string;
     category: string;
+    tags?: string[];
     perspective?: string;
     mediaType?: string;
     format?: string;
     official?: boolean;
     active?: boolean;
+    lastCheckedAt?: string;
+    lastItemPublishedAt?: string;
     healthScore?: number;
     notes?: string;
 }
@@ -33,8 +38,15 @@ interface BootstrapPayload {
     feeds: FeedEntry[];
 }
 
-const bootstrapPath = resolve('data/feeds.json');
-const distPath = resolve('dist');
+const args = process.argv.slice(2);
+const fileArg = args.findIndex(arg => arg === '--file');
+const outArg = args.findIndex(arg => arg === '--out');
+
+const filePath = fileArg !== -1 && args[fileArg + 1] ? args[fileArg + 1] : 'data/feeds.json';
+const outPath = outArg !== -1 && args[outArg + 1] ? args[outArg + 1] : 'dist';
+
+const bootstrapPath = resolve(filePath);
+const distPath = resolve(outPath);
 const opmlPath = resolve(distPath, 'opml');
 
 function escapeCsv(value: unknown): string {
@@ -45,7 +57,8 @@ function escapeCsv(value: unknown): string {
     return raw;
 }
 
-function escapeXml(value: string): string {
+function escapeXml(value: string | null | undefined): string {
+    if (!value) return '';
     return value.replace(/[&<>'"]/g, (char) => {
         switch (char) {
             case '&': return '&amp;';
@@ -78,11 +91,12 @@ function buildIndex(feeds: FeedEntry[], selector: (entry: FeedEntry) => string[]
         });
     });
 
+    const collator = new Intl.Collator('en', { sensitivity: 'base' });
     Object.keys(grouped).forEach((key) => {
-        grouped[key] = grouped[key].sort((a, b) => a.name.localeCompare(b.name));
+        grouped[key] = grouped[key].sort((a, b) => collator.compare(a.name, b.name));
     });
 
-    return Object.fromEntries(Object.entries(grouped).sort(([a], [b]) => a.localeCompare(b)));
+    return Object.fromEntries(Object.entries(grouped).sort(([a], [b]) => collator.compare(a, b)));
 }
 
 async function writeJson(relativePath: string, value: unknown): Promise<void> {
@@ -93,6 +107,7 @@ async function writeJson(relativePath: string, value: unknown): Promise<void> {
 
 function generateOpml(title: string, feeds: FeedEntry[]): string {
     const timestamp = new Date().toUTCString();
+    const collator = new Intl.Collator('en', { sensitivity: 'base' });
     const lines: string[] = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<opml version="2.0">',
@@ -105,7 +120,7 @@ function generateOpml(title: string, feeds: FeedEntry[]): string {
 
     feeds
         .slice()
-        .sort((a, b) => a.name.localeCompare(b.name))
+        .sort((a, b) => collator.compare(a.name, b.name))
         .forEach((feed) => {
             lines.push(
                 `    <outline type="rss" text="${escapeXml(feed.name)}" title="${escapeXml(feed.name)}" xmlUrl="${escapeXml(feed.url)}" />`
@@ -138,22 +153,27 @@ async function main(): Promise<void> {
     await writeJson('feeds.json', feeds);
 
     const csvHeader = [
-        'id', 'name', 'publisher', 'url', 'language', 'countries', 'category',
-        'perspective', 'mediaType', 'format', 'official', 'active', 'healthScore', 'notes'
+        'id', 'name', 'publisher', 'url', 'homepage', 'language', 'countries', 'region', 'category', 'tags',
+        'perspective', 'mediaType', 'format', 'official', 'active', 'lastCheckedAt', 'lastItemPublishedAt', 'healthScore', 'notes'
     ].join(',');
     const csvRows = feeds.map((feed) => [
         feed.id,
         feed.name,
         feed.publisher,
         feed.url,
+        feed.homepage ?? '',
         feed.language,
-        feed.countries.join('|'),
+        (feed.countries || []).join('|'),
+        feed.region ?? '',
         feed.category,
+        (feed.tags || []).join('|'),
         feed.perspective ?? '',
         feed.mediaType ?? '',
         feed.format ?? '',
         feed.official ?? '',
         feed.active ?? '',
+        feed.lastCheckedAt ?? '',
+        feed.lastItemPublishedAt ?? '',
         feed.healthScore ?? '',
         feed.notes ?? ''
     ].map(escapeCsv).join(','));
@@ -166,13 +186,13 @@ async function main(): Promise<void> {
 
     await writeOpml('all.opml', 'Giti RSS Registry — All Feeds', feeds);
 
-    await Promise.all(Object.entries(byCountry).map(([country, entries]) =>
-        writeOpml(`countries/${toFileSafeSegment(country)}.opml`, `Giti RSS Registry — Country: ${country}`, entries)
-    ));
+    for (const [country, entries] of Object.entries(byCountry)) {
+        await writeOpml(`countries/${toFileSafeSegment(country)}.opml`, `Giti RSS Registry — Country: ${country}`, entries);
+    }
 
-    await Promise.all(Object.entries(byCategory).map(([category, entries]) =>
-        writeOpml(`categories/${toFileSafeSegment(category)}.opml`, `Giti RSS Registry — Category: ${category}`, entries)
-    ));
+    for (const [category, entries] of Object.entries(byCategory)) {
+        await writeOpml(`categories/${toFileSafeSegment(category)}.opml`, `Giti RSS Registry — Category: ${category}`, entries);
+    }
 
     process.stdout.write(
         `Generated registry artifacts in ${distPath} (feeds: ${feeds.length}, countries: ${Object.keys(byCountry).length}, categories: ${Object.keys(byCategory).length}).\n`
@@ -180,7 +200,6 @@ async function main(): Promise<void> {
 }
 
 main().catch((error: unknown) => {
-    const message = error instanceof Error ? error.message : String(error);
-    console.error(`[build-artifacts] Failed: ${message}`);
+    console.error(`[build-artifacts] Failed:`, error);
     process.exitCode = 1;
 });

@@ -28,12 +28,21 @@ interface FeedEntry {
     name: string;
     publisher: string;
     url: string;
+    homepage?: string;
     language: string;
     countries: string[];
+    region?: string;
     category: FeedCategory;
+    tags?: string[];
     perspective?: Perspective;
     mediaType?: MediaType;
     format?: FeedFormat;
+    official?: boolean;
+    active?: boolean;
+    lastCheckedAt?: string;
+    lastItemPublishedAt?: string;
+    healthScore?: number;
+    notes?: string;
 }
 
 interface BootstrapPayload {
@@ -80,6 +89,22 @@ function isValidUrl(value: string): boolean {
     }
 }
 
+function isPublicHostname(value: string): boolean {
+    try {
+        const host = new URL(value).hostname.toLowerCase();
+        return !(
+            host === 'localhost' ||
+            host.startsWith('127.') ||
+            host.startsWith('10.') ||
+            host.startsWith('192.168.') ||
+            host.match(/^172\.(1[6-9]|2[0-9]|3[0-1])\./) ||
+            host.startsWith('169.254.')
+        );
+    } catch {
+        return false;
+    }
+}
+
 function isLanguageCode(value: string): boolean {
     return /^[a-z]{2,3}(?:-[a-z0-9]{2,8})*$/i.test(value);
 }
@@ -89,7 +114,10 @@ function isIsoCountryCode(value: string): boolean {
 }
 
 async function main(): Promise<void> {
-    const path = resolve('data/feeds.json');
+    const args = process.argv.slice(2);
+    const fileArg = args.findIndex(arg => arg === '--file');
+    const filePath = fileArg !== -1 && args[fileArg + 1] ? args[fileArg + 1] : 'data/feeds.json';
+    const path = resolve(filePath);
     const raw = await readFile(path, 'utf8');
     const payload = JSON.parse(raw) as BootstrapPayload;
 
@@ -100,8 +128,8 @@ async function main(): Promise<void> {
         throw new Error('Invalid payload: feeds is not an array.');
     }
 
-    const idDuplicates = findDuplicates(payload.feeds.map((f) => f.id));
-    const urlDuplicates = findDuplicates(payload.feeds.map((f) => f.url));
+    const idDuplicates = findDuplicates(payload.feeds.map((f) => f.id).filter(Boolean));
+    const urlDuplicates = findDuplicates(payload.feeds.map((f) => f.url).filter(Boolean));
 
     if (idDuplicates.length > 0) {
         errors.push(`Duplicate ids detected: ${idDuplicates.slice(0, 10).join(', ')}`);
@@ -122,7 +150,11 @@ async function main(): Promise<void> {
         if (!Array.isArray(feed.countries)) errors.push(`${prefix}.countries must be an array`);
         if (!feed.category?.trim()) errors.push(`${prefix}.category is required`);
 
-        if (feed.url && !isValidUrl(feed.url)) errors.push(`${prefix}.url is not valid http/https URL`);
+        if (feed.url && !isValidUrl(feed.url)) {
+            errors.push(`${prefix}.url is not valid http/https URL`);
+        } else if (feed.url && !isPublicHostname(feed.url)) {
+            errors.push(`${prefix}.url host is not a public interface (potential SSRF)`);
+        }
         if (feed.url?.startsWith('http://')) warnings.push(`${prefix}.url uses http (consider https)`);
 
         if (feed.language && !isLanguageCode(feed.language)) {
@@ -171,7 +203,6 @@ async function main(): Promise<void> {
 }
 
 main().catch((error: unknown) => {
-    const message = error instanceof Error ? error.message : String(error);
-    console.error(`[validate] Failed: ${message}`);
+    console.error(`[validate] Failed:`, error);
     process.exitCode = 1;
 });
