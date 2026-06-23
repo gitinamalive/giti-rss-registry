@@ -1,4 +1,9 @@
 node_modules
-dist
 .DS_Store
 *.log
+# Generated proposal files from one-time scripts
+data/feeds.proposed.json
+# Planning artifacts
+giti-rss-registry-research-report-*.md
+# OS junk
+Thumbs.db

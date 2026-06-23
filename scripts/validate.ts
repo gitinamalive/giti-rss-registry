@@ -1,74 +1,12 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-
-type FeedFormat = 'rss' | 'atom' | 'jsonfeed' | 'rdf';
-type MediaType = 'print' | 'tv' | 'radio' | 'digital' | 'wire' | 'aggregator';
-type Perspective =
-    | 'independent'
-    | 'state-affiliated'
-    | 'independent-exile'
-    | 'regional'
-    | 'state-monitor'
-    | 'aggregator';
-type FeedCategory =
-    | 'world'
-    | 'us'
-    | 'europe'
-    | 'technology'
-    | 'ai'
-    | 'space'
-    | 'finance'
-    | 'science'
-    | 'climate'
-    | 'politics'
-    | 'investigative';
-
-interface FeedEntry {
-    id: string;
-    name: string;
-    publisher: string;
-    url: string;
-    homepage?: string;
-    language: string;
-    countries: string[];
-    region?: string;
-    category: FeedCategory;
-    tags?: string[];
-    perspective?: Perspective;
-    mediaType?: MediaType;
-    format?: FeedFormat;
-    official?: boolean;
-    active?: boolean;
-    lastCheckedAt?: string;
-    lastItemPublishedAt?: string;
-    healthScore?: number;
-    notes?: string;
-}
-
-interface BootstrapPayload {
-    generatedAt: string;
-    source: string;
-    stats: {
-        feeds: number;
-        duplicateIds: number;
-        duplicateUrls: number;
-    };
-    warnings: {
-        duplicateIds: string[];
-        duplicateUrls: string[];
-    };
-    feeds: FeedEntry[];
-}
-
-const allowedCategories = new Set<FeedCategory>([
-    'world', 'us', 'europe', 'technology', 'ai', 'space', 'finance', 'science', 'climate', 'politics', 'investigative'
-]);
-
-const allowedFormats = new Set<FeedFormat>(['rss', 'atom', 'jsonfeed', 'rdf']);
-const allowedMediaTypes = new Set<MediaType>(['print', 'tv', 'radio', 'digital', 'wire', 'aggregator']);
-const allowedPerspectives = new Set<Perspective>([
-    'independent', 'state-affiliated', 'independent-exile', 'regional', 'state-monitor', 'aggregator'
-]);
+import {
+    type BootstrapPayload,
+    allowedCategories,
+    allowedFormats,
+    allowedMediaTypes,
+    allowedPerspectives,
+} from '../src/types.ts';
 
 function findDuplicates(values: string[]): string[] {
     const seen = new Set<string>();
@@ -91,15 +29,36 @@ function isValidUrl(value: string): boolean {
 
 function isPublicHostname(value: string): boolean {
     try {
-        const host = new URL(value).hostname.toLowerCase();
-        return !(
+        const parsed = new URL(value);
+
+        // Credentialed URLs should never appear in the registry
+        if (parsed.username || parsed.password) return false;
+
+        const host = parsed.hostname.toLowerCase();
+
+        // IPv4 private / loopback / link-local / unspecified
+        if (
             host === 'localhost' ||
+            host === '0.0.0.0' ||
             host.startsWith('127.') ||
             host.startsWith('10.') ||
             host.startsWith('192.168.') ||
             host.match(/^172\.(1[6-9]|2[0-9]|3[0-1])\./) ||
             host.startsWith('169.254.')
-        );
+        )
+            return false;
+
+        // IPv6 loopback / ULA / link-local
+        if (
+            host === '::1' ||
+            host === '[::1]' ||
+            host.startsWith('fc') ||
+            host.startsWith('fd') ||
+            host.startsWith('fe80:')
+        )
+            return false;
+
+        return true;
     } catch {
         return false;
     }
@@ -167,6 +126,9 @@ async function main(): Promise<void> {
                     errors.push(`${prefix}.countries has invalid ISO code: ${country}`);
                 }
             });
+            if (feed.countries.length === 0) {
+                warnings.push(`${prefix}.countries is empty — feed will be excluded from by-country.json and country OPML`);
+            }
         }
 
         if (feed.category && !allowedCategories.has(feed.category)) {
@@ -186,7 +148,90 @@ async function main(): Promise<void> {
         }
     });
 
+    // Integrity assertions on declared stats vs. computed reality
+    if (payload.stats.feeds !== payload.feeds.length) {
+        errors.push(
+            `stats.feeds declares ${payload.stats.feeds} but feeds array has ${payload.feeds.length} entries`
+        );
+    }
+    if (payload.stats.duplicateIds !== idDuplicates.length) {
+        errors.push(
+            `stats.duplicateIds declares ${payload.stats.duplicateIds} but found ${idDuplicates.length} (${idDuplicates.join(', ') || 'none'})`
+        );
+    }
+    if (payload.stats.duplicateUrls !== urlDuplicates.length) {
+        errors.push(
+            `stats.duplicateUrls declares ${payload.stats.duplicateUrls} but found ${urlDuplicates.length} (${urlDuplicates.join(', ') || 'none'})`
+        );
+    }
+
+    // Validate warnings arrays match recomputed duplicates
+    const declaredIdWarnings = new Set(payload.warnings?.duplicateIds || []);
+    const declaredUrlWarnings = new Set(payload.warnings?.duplicateUrls || []);
+    const actualIdSet = new Set(idDuplicates);
+    const actualUrlSet = new Set(urlDuplicates);
+
+    const missingIdWarnings = idDuplicates.filter((id) => !declaredIdWarnings.has(id));
+    const extraIdWarnings = (payload.warnings?.duplicateIds || []).filter(
+        (id) => !actualIdSet.has(id)
+    );
+    const missingUrlWarnings = urlDuplicates.filter((url) => !declaredUrlWarnings.has(url));
+    const extraUrlWarnings = (payload.warnings?.duplicateUrls || []).filter(
+        (url) => !actualUrlSet.has(url)
+    );
+
+    if (missingIdWarnings.length > 0) {
+        errors.push(
+            `warnings.duplicateIds is missing ${missingIdWarnings.length} actual duplicate(s): ${missingIdWarnings.join(', ')}`
+        );
+    }
+    if (extraIdWarnings.length > 0) {
+        errors.push(
+            `warnings.duplicateIds contains ${extraIdWarnings.length} non-duplicate(s): ${extraIdWarnings.join(', ')}`
+        );
+    }
+    if (missingUrlWarnings.length > 0) {
+        errors.push(
+            `warnings.duplicateUrls is missing ${missingUrlWarnings.length} actual duplicate(s): ${missingUrlWarnings.join(', ')}`
+        );
+    }
+    if (extraUrlWarnings.length > 0) {
+        errors.push(
+            `warnings.duplicateUrls contains ${extraUrlWarnings.length} non-duplicate(s): ${extraUrlWarnings.join(', ')}`
+        );
+    }
+
+    // Validate generatedAt is a parseable ISO date and not stale
+    if (payload.generatedAt) {
+        const parsed = new Date(payload.generatedAt);
+        if (isNaN(parsed.getTime())) {
+            errors.push(`generatedAt is not a valid ISO-8601 date: ${payload.generatedAt}`);
+        } else if (parsed.toISOString() !== payload.generatedAt) {
+            errors.push(
+                `generatedAt is not in canonical ISO-8601 format: ${payload.generatedAt} (expected ${parsed.toISOString()})`
+            );
+        } else {
+            const ageDays = (Date.now() - parsed.getTime()) / (1000 * 60 * 60 * 24);
+            if (ageDays > 365) {
+                errors.push(
+                    `generatedAt is ${ageDays.toFixed(0)} days old — bootstrap is stale (>365 days)`
+                );
+            }
+        }
+    }
+
+    // Warn on duplicate display names (may be legitimate distinct editions)
+    const nameDuplicates = findDuplicates(payload.feeds.map((f) => f.name).filter(Boolean));
+    if (nameDuplicates.length > 0) {
+        nameDuplicates.forEach((name) => {
+            warnings.push(
+                `Duplicate display name "${name}" — if distinct editions, label variation in the name per CONTRIBUTING.md`
+            );
+        });
+    }
+
     process.stdout.write(`Validated ${payload.feeds.length} feeds.\n`);
+    process.stdout.write(`Errors: ${errors.length}\n`);
     process.stdout.write(`Warnings: ${warnings.length}\n`);
     if (warnings.length > 0) {
         process.stdout.write(`- Sample warnings: ${warnings.slice(0, 10).join(' | ')}\n`);

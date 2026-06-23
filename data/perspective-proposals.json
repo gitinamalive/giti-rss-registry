@@ -1,0 +1,149 @@
+[
+  {
+    "id": "irna-news-34bf5372",
+    "perspective": "state-affiliated",
+    "rationale": "Official state news agency of the Islamic Republic of Iran. Operates under the Ministry of Culture and Islamic Guidance, which appoints its leadership. State Media Monitor reports 80%+ of budget sourced from government.",
+    "sources": [
+      "https://statemediamonitor.com/2025/07/islamic-republic-news-agency-irna/",
+      "https://rsf.org/en/country/iran",
+      "https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency"
+    ]
+  },
+  {
+    "id": "tehran-times-100d939c",
+    "perspective": "state-affiliated",
+    "rationale": "English-language outlet under the Islamic Ideology Dissemination Organization (IIDO), a state body that supervises multiple Iranian state-linked media. State Media Monitor classifies it as state-controlled.",
+    "sources": [
+      "https://statemediamonitor.com/category/globalliststatemedia/mena/middle-east/iran/",
+      "https://rsf.org/en/country/iran"
+    ]
+  },
+  {
+    "id": "mehr-news-3af01666",
+    "perspective": "state-affiliated",
+    "rationale": "Mehr News Agency is under the Islamic Ideology Dissemination Organization (IIDO), an Iranian state body. State Media Monitor classifies both Tehran Times and Mehr News under IIDO oversight.",
+    "sources": [
+      "https://statemediamonitor.com/category/globalliststatemedia/mena/middle-east/iran/",
+      "https://rsf.org/en/country/iran"
+    ]
+  },
+  {
+    "id": "rt-news-b3b74514",
+    "perspective": "state-affiliated",
+    "rationale": "Russian state-funded international broadcaster. US State Dept (2024): 'de facto arm of Russia's intelligence apparatus.' Sanctioned by US, UK, EU, Canada. Banned globally by Meta and YouTube. Parent company TV-Novosti designated under E.O. 14024.",
+    "sources": [
+      "https://apnews.com/article/russia-putin-trump-sanctions-harris-rt-f7e3ff262fdf24695048cffe2529b937",
+      "https://2021-2025.state.gov/alerting-the-world-to-rts-global-covert-activities/",
+      "https://www.nbcnews.com/news/us-news/meta-bans-rt-russian-disinformation-rcna171402"
+    ]
+  },
+  {
+    "id": "tass-d931bcff",
+    "perspective": "state-affiliated",
+    "rationale": "Russian state news agency (TASS). Founded in 1904, government-owned and directly reflects Kremlin positions. Primary source of official Russian government statements and state narratives.",
+    "sources": [
+      "https://rsf.org/en/country/russia",
+      "https://en.wikipedia.org/wiki/TASS"
+    ]
+  },
+  {
+    "id": "sana-3d39c5fb",
+    "perspective": "state-affiliated",
+    "rationale": "Syrian Arab News Agency (SANA) is the official state news agency of the Syrian Arab Republic. State-run and controlled by the Syrian Ministry of Information.",
+    "sources": [
+      "https://rsf.org/en/country/syria",
+      "https://en.wikipedia.org/wiki/Syrian_Arab_News_Agency"
+    ]
+  },
+  {
+    "id": "china-daily-3df43fe7",
+    "perspective": "state-affiliated",
+    "rationale": "State-owned English-language newspaper of the Chinese government. Published by the Publicity Department of the Chinese Communist Party. RSF ranks China among the most restrictive media environments globally.",
+    "sources": [
+      "https://rsf.org/en/country/china",
+      "https://en.wikipedia.org/wiki/China_Daily"
+    ]
+  },
+  {
+    "id": "the-moscow-times-349ba18f",
+    "perspective": "independent-exile",
+    "rationale": "Independent Russian-language media relocated to the Netherlands after Russia's 2022 censorship laws imposing 15-year sentences for 'discrediting' the military. Declared 'undesirable organization' by Russian prosecutor general (July 2024), criminalizing cooperation. Reuters: 'one of the only Russia-based publications in English to maintain editorial independence.'",
+    "sources": [
+      "https://www.reuters.com/world/europe/russia-declares-independent-news-site-moscow-times-undesirable-2024-07-10/",
+      "https://www.themoscowtimes.com/2022/02/28/russia-blocks-number-of-independent-and-ukrainian-media-outlets-a76649"
+    ]
+  },
+  {
+    "id": "azadi-radio-pashto-63895036",
+    "perspective": "independent-exile",
+    "rationale": "Radio Free Europe / Radio Liberty's Afghan Pashto-language service. RFE/RL is funded by the U.S. Agency for Global Media but operates with editorial independence under the International Broadcasting Act. Provides news to Afghanistan from abroad since Taliban restrictions on independent media.",
+    "sources": [
+      "https://pressroom.rferl.org/about-rferl",
+      "https://en.wikipedia.org/wiki/Radio_Free_Europe/Radio_Liberty"
+    ]
+  },
+  {
+    "id": "daily-nk-55b1eed9",
+    "perspective": "state-monitor",
+    "rationale": "Seoul-based online newspaper specializing in North Korea reporting through a network of citizen reporters inside the DPRK. NED-funded but editorially independent per its Journalism Ethics Charter. Foreign Policy Research Institute scholar describes it as an 'indispensable outlet' for North Korea coverage.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Daily_NK",
+      "https://www.dailynk.com/english/how-we-report/",
+      "https://grokipedia.com/page/Daily_NK"
+    ]
+  },
+  {
+    "id": "nk-news-9a6d9273",
+    "perspective": "state-monitor",
+    "rationale": "U.S.-based independent publication providing expert analysis and news on North Korea. Specialized in monitoring DPRK political, economic, and military developments. Cited by major outlets including Washington Post, BBC, and academic research.",
+    "sources": [
+      "https://www.nknews.org/",
+      "https://en.wikipedia.org/wiki/Daily_NK"
+    ]
+  },
+  {
+    "id": "hong-kong-free-press-5e45b072",
+    "perspective": "independent",
+    "rationale": "Hong Kong-based non-profit, JTI-certified news outlet. No shareholders or share capital — run directly by journalistic staff. Journalism Trust Initiative certified in 2025 after 130-point external audit. SOPA award winner. Publishes annual financial transparency reports.",
+    "sources": [
+      "https://hongkongfp.com/about/",
+      "https://en.wikipedia.org/wiki/Hong_Kong_Free_Press"
+    ]
+  },
+  {
+    "id": "the-guardian-8fe8409b",
+    "perspective": "independent",
+    "rationale": "Part of Guardian Media Group, owned by the Scott Trust — a structure designed to protect editorial independence in perpetuity. No shareholders, no proprietor. RSF ranks UK press environment as 'satisfactory' (24/180).",
+    "sources": [
+      "https://rsf.org/en/country/united-kingdom",
+      "https://www.theguardian.com/the-scott-trust"
+    ]
+  },
+  {
+    "id": "bellingcat-98c3c305",
+    "perspective": "independent",
+    "rationale": "Independent investigative collective based in the Netherlands. Specializes in open-source intelligence and fact-checking. Funded by grants and public donations. Multiple award-winning investigations including MH17, Skripal poisoning, and Syrian chemical weapons.",
+    "sources": [
+      "https://www.bellingcat.com/about/",
+      "https://en.wikipedia.org/wiki/Bellingcat"
+    ]
+  },
+  {
+    "id": "the-intercept-cc6c2f48",
+    "perspective": "independent",
+    "rationale": "Independent non-profit investigative journalism outlet founded by Glenn Greenwald, Laura Poitras, and Jeremy Scahill. Pulitzer Prize-winning reporting (NSA surveillance/Snowden). Funded by First Look Media, a non-profit organization.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Intercept",
+      "https://theintercept.com/about/"
+    ]
+  },
+  {
+    "id": "bbc-news-middle-east-966b1f9c",
+    "perspective": "regional",
+    "rationale": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.",
+    "sources": [
+      "https://rsf.org/en/country/united-kingdom",
+      "https://www.bbc.com/aboutthebbc/governance/charter"
+    ]
+  }
+]

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-04-30T05:16:24.126Z",
-  "source": "src/data/rssSuggestions.ts + src/data/countrySuggestions.ts",
+  "generatedAt": "2026-06-23T00:46:49.949Z",
+  "source": "public-rss-registry/data/feeds.json (hand-curated)",
   "stats": {
-    "feeds": 214,
+    "feeds": 217,
     "duplicateIds": 0,
     "duplicateUrls": 0
   },
@@ -17,8 +17,10 @@
       "publisher": "NPR",
       "url": "https://feeds.npr.org/1004/rss.xml",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -28,7 +30,9 @@
       "publisher": "Al Jazeera",
       "url": "https://www.aljazeera.com/xml/rss/all.xml",
       "language": "en",
-      "countries": [],
+      "countries": [
+        "QA"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -39,19 +43,10 @@
       "publisher": "The New York Times",
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
       "language": "en",
-      "countries": [],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
-      "id": "bbc-news-world-6a9ff31b",
-      "name": "BBC News World",
-      "publisher": "BBC News World",
-      "url": "http://feeds.bbci.co.uk/news/world/rss.xml",
-      "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -61,7 +56,9 @@
       "publisher": "Reuters World",
       "url": "https://www.reuters.com/arc/outboundfeeds/v1/rss/category/world/",
       "language": "en",
-      "countries": [],
+      "countries": [
+        "GB"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -72,8 +69,10 @@
       "publisher": "United Nations News",
       "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -83,8 +82,10 @@
       "publisher": "BBC",
       "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "GB"
+      ],
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -97,7 +98,7 @@
       "countries": [
         "US"
       ],
-      "category": "world",
+      "category": "us",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -110,7 +111,7 @@
       "countries": [
         "US"
       ],
-      "category": "world",
+      "category": "us",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -123,7 +124,7 @@
       "countries": [
         "US"
       ],
-      "category": "world",
+      "category": "us",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -136,7 +137,7 @@
       "countries": [
         "US"
       ],
-      "category": "world",
+      "category": "finance",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -149,7 +150,7 @@
       "countries": [
         "GB"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -162,7 +163,7 @@
       "countries": [
         "GB"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -175,7 +176,7 @@
       "countries": [
         "GB"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -245,19 +246,6 @@
       "format": "rss"
     },
     {
-      "id": "news24-1933bbdf",
-      "name": "News24",
-      "publisher": "News24",
-      "url": "http://feeds.news24.com/articles/news24/TopStories/rss",
-      "language": "en",
-      "countries": [
-        "ZA"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
       "id": "france-24-e1f73e0e",
       "name": "France 24",
       "publisher": "France 24",
@@ -266,7 +254,7 @@
       "countries": [
         "FR"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -275,11 +263,11 @@
       "name": "Le Monde",
       "publisher": "Le Monde",
       "url": "https://www.lemonde.fr/en/rss/une.xml",
-      "language": "en",
+      "language": "fr",
       "countries": [
         "FR"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -288,24 +276,24 @@
       "name": "Deutsche Welle (EN)",
       "publisher": "Deutsche Welle",
       "url": "https://rss.dw.com/rdf/rss-en-all",
-      "language": "en",
+      "language": "de",
       "countries": [
         "DE"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rdf"
     },
     {
       "id": "der-spiegel-2bcc7bc8",
-      "name": "Der Spiegel",
+      "name": "Der Spiegel — International",
       "publisher": "Der Spiegel",
       "url": "https://www.spiegel.de/international/index.rss",
       "language": "en",
       "countries": [
         "DE"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -350,14 +338,14 @@
     },
     {
       "id": "der-spiegel-7e6cdbaf",
-      "name": "Der Spiegel",
+      "name": "Der Spiegel — Schlagzeilen",
       "publisher": "Der Spiegel",
       "url": "https://www.spiegel.de/schlagzeilen/index.rss",
       "language": "de",
       "countries": [
         "DE"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -370,7 +358,7 @@
       "countries": [
         "DE"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -383,7 +371,7 @@
       "countries": [
         "DE"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -392,7 +380,7 @@
       "name": "Euronews",
       "publisher": "Euronews",
       "url": "https://www.euronews.com/rss?format=xml",
-      "language": "en",
+      "language": "fr",
       "countries": [
         "FR",
         "DE",
@@ -424,13 +412,13 @@
         "LU",
         "NO"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
     {
       "id": "the-japan-times-49acef46",
-      "name": "The Japan Times",
+      "name": "The Japan Times — Feed",
       "publisher": "The Japan Times",
       "url": "https://www.japantimes.co.jp/feed",
       "language": "en",
@@ -478,7 +466,9 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "Russian state-funded international broadcaster. US State Dept (2024): 'de facto arm of Russia's intelligence apparatus.' Sanctioned by US, UK, EU, Canada. Banned globally by Meta and YouTube. Parent company TV-Novosti designated under E.O. 14024.\n\nSources:\n  [1] https://apnews.com/article/russia-putin-trump-sanctions-harris-rt-f7e3ff262fdf24695048cffe2529b937\n  [2] https://2021-2025.state.gov/alerting-the-world-to-rts-global-covert-activities/\n  [3] https://www.nbcnews.com/news/us-news/meta-bans-rt-russian-disinformation-rcna171402"
     },
     {
       "id": "tass-d931bcff",
@@ -491,7 +481,9 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "Russian state news agency (TASS). Founded in 1904, government-owned and directly reflects Kremlin positions. Primary source of official Russian government statements and state narratives.\n\nSources:\n  [1] https://rsf.org/en/country/russia\n  [2] https://en.wikipedia.org/wiki/TASS"
     },
     {
       "id": "the-moscow-times-349ba18f",
@@ -504,7 +496,9 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "independent-exile",
+      "notes": "Independent Russian-language media relocated to the Netherlands after Russia's 2022 censorship laws imposing 15-year sentences for 'discrediting' the military. Declared 'undesirable organization' by Russian prosecutor general (July 2024), criminalizing cooperation. Reuters: 'one of the only Russia-based publications in English to maintain editorial independence.'\n\nSources:\n  [1] https://www.reuters.com/world/europe/russia-declares-independent-news-site-moscow-times-undesirable-2024-07-10/\n  [2] https://www.themoscowtimes.com/2022/02/28/russia-blocks-number-of-independent-and-ukrainian-media-outlets-a76649"
     },
     {
       "id": "scmp-china-846d3d21",
@@ -530,7 +524,9 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "State-owned English-language newspaper of the Chinese government. Published by the Publicity Department of the Chinese Communist Party. RSF ranks China among the most restrictive media environments globally.\n\nSources:\n  [1] https://rsf.org/en/country/china\n  [2] https://en.wikipedia.org/wiki/China_Daily"
     },
     {
       "id": "daily-nk-55b1eed9",
@@ -543,7 +539,9 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "state-monitor",
+      "notes": "Seoul-based online newspaper specializing in North Korea reporting through a network of citizen reporters inside the DPRK. NED-funded but editorially independent per its Journalism Ethics Charter. Foreign Policy Research Institute scholar describes it as an 'indispensable outlet' for North Korea coverage.\n\nSources:\n  [1] https://en.wikipedia.org/wiki/Daily_NK\n  [2] https://www.dailynk.com/english/how-we-report/\n  [3] https://grokipedia.com/page/Daily_NK"
     },
     {
       "id": "nk-news-9a6d9273",
@@ -556,7 +554,9 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "state-monitor",
+      "notes": "U.S.-based independent publication providing expert analysis and news on North Korea. Specialized in monitoring DPRK political, economic, and military developments. Cited by major outlets including Washington Post, BBC, and academic research.\n\nSources:\n  [1] https://www.nknews.org/\n  [2] https://en.wikipedia.org/wiki/Daily_NK"
     },
     {
       "id": "tehran-times-100d939c",
@@ -569,7 +569,9 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "English-language outlet under the Islamic Ideology Dissemination Organization (IIDO), a state body that supervises multiple Iranian state-linked media. State Media Monitor classifies it as state-controlled.\n\nSources:\n  [1] https://statemediamonitor.com/category/globalliststatemedia/mena/middle-east/iran/\n  [2] https://rsf.org/en/country/iran"
     },
     {
       "id": "mehr-news-3af01666",
@@ -582,7 +584,9 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "Mehr News Agency is under the Islamic Ideology Dissemination Organization (IIDO), an Iranian state body. State Media Monitor classifies both Tehran Times and Mehr News under IIDO oversight.\n\nSources:\n  [1] https://statemediamonitor.com/category/globalliststatemedia/mena/middle-east/iran/\n  [2] https://rsf.org/en/country/iran"
     },
     {
       "id": "bbc-news-middle-east-966b1f9c",
@@ -609,7 +613,9 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
     },
     {
       "id": "the-guardian-8fe8409b",
@@ -622,7 +628,9 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "independent",
+      "notes": "Part of Guardian Media Group, owned by the Scott Trust — a structure designed to protect editorial independence in perpetuity. No shareholders, no proprietor. RSF ranks UK press environment as 'satisfactory' (24/180).\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.theguardian.com/the-scott-trust"
     },
     {
       "id": "jerusalem-post-0b17825c",
@@ -819,8 +827,10 @@
       "publisher": "WIRED",
       "url": "https://www.wired.com/feed/rss",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -830,8 +840,10 @@
       "publisher": "Ars Technica",
       "url": "https://feeds.arstechnica.com/arstechnica/index",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -841,8 +853,10 @@
       "publisher": "MIT Technology Review",
       "url": "https://www.technologyreview.com/feed/",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -852,8 +866,10 @@
       "publisher": "The Verge",
       "url": "https://www.theverge.com/rss/index.xml",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -863,8 +879,10 @@
       "publisher": "TechCrunch",
       "url": "https://techcrunch.com/feed/",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -874,8 +892,10 @@
       "publisher": "Bloomberg Markets",
       "url": "https://feeds.bloomberg.com/markets/news.rss",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "finance",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -888,7 +908,7 @@
       "countries": [
         "US"
       ],
-      "category": "world",
+      "category": "investigative",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -898,10 +918,14 @@
       "publisher": "The Intercept",
       "url": "https://theintercept.com/feed/",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "investigative",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "independent",
+      "notes": "Independent non-profit investigative journalism outlet founded by Glenn Greenwald, Laura Poitras, and Jeremy Scahill. Pulitzer Prize-winning reporting (NSA surveillance/Snowden). Funded by First Look Media, a non-profit organization.\n\nSources:\n  [1] https://en.wikipedia.org/wiki/The_Intercept\n  [2] https://theintercept.com/about/"
     },
     {
       "id": "bellingcat-98c3c305",
@@ -909,10 +933,14 @@
       "publisher": "Bellingcat",
       "url": "https://www.bellingcat.com/feed/",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "NL"
+      ],
+      "category": "investigative",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "independent",
+      "notes": "Independent investigative collective based in the Netherlands. Specializes in open-source intelligence and fact-checking. Funded by grants and public donations. Multiple award-winning investigations including MH17, Skripal poisoning, and Syrian chemical weapons.\n\nSources:\n  [1] https://www.bellingcat.com/about/\n  [2] https://en.wikipedia.org/wiki/Bellingcat"
     },
     {
       "id": "clarin-a3f5b97c",
@@ -931,7 +959,7 @@
       "id": "uol-not-cias-a51f4337",
       "name": "UOL Notícias",
       "publisher": "UOL Notícias",
-      "url": "http://rss.home.uol.com.br/index.xml",
+      "url": "https://rss.home.uol.com.br/index.xml",
       "language": "pt",
       "countries": [
         "BR"
@@ -944,7 +972,7 @@
       "id": "shorouk-1be484b3",
       "name": "Shorouk",
       "publisher": "Shorouk",
-      "url": "http://www.shorouknews.com/columns/rss/",
+      "url": "https://www.shorouknews.com/columns/rss/",
       "language": "ar",
       "countries": [
         "EG"
@@ -970,7 +998,7 @@
       "id": "okezone-com-c1492079",
       "name": "okezone.com",
       "publisher": "okezone.com",
-      "url": "http://sindikasi.okezone.com/index.php/rss/0/RSS2.0",
+      "url": "https://sindikasi.okezone.com/index.php/rss/0/RSS2.0",
       "language": "id",
       "countries": [
         "ID"
@@ -983,7 +1011,7 @@
       "id": "orient-daily-75e5c96f",
       "name": "Orient Daily",
       "publisher": "Orient Daily",
-      "url": "http://feeds.feedburner.com/123greetings-daily-rss",
+      "url": "https://feeds.feedburner.com/123greetings-daily-rss",
       "language": "en",
       "countries": [
         "HK"
@@ -996,7 +1024,7 @@
       "id": "reforma-com-4ee63d5f",
       "name": "Reforma.com",
       "publisher": "Reforma.com",
-      "url": "http://www.reforma.com/rss/portada.xml",
+      "url": "https://www.reforma.com/rss/portada.xml",
       "language": "es",
       "countries": [
         "MX"
@@ -1009,20 +1037,22 @@
       "id": "sana-3d39c5fb",
       "name": "SANA",
       "publisher": "SANA",
-      "url": "http://www.sana.sy/tr/?feed=rss2",
+      "url": "https://www.sana.sy/tr/?feed=rss2",
       "language": "ar",
       "countries": [
         "SY"
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "Syrian Arab News Agency (SANA) is the official state news agency of the Syrian Arab Republic. State-run and controlled by the Syrian Ministry of Information.\n\nSources:\n  [1] https://rsf.org/en/country/syria\n  [2] https://en.wikipedia.org/wiki/Syrian_Arab_News_Agency"
     },
     {
       "id": "news-sanook-com-5bf6fe8c",
       "name": "news.sanook.com",
       "publisher": "news.sanook.com",
-      "url": "http://rssfeeds.sanook.com/rss/feeds/sanook/news.crime.xml",
+      "url": "https://rssfeeds.sanook.com/rss/feeds/sanook/news.crime.xml",
       "language": "th",
       "countries": [
         "TH"
@@ -1035,7 +1065,7 @@
       "id": "vatan-f4febb20",
       "name": "Vatan",
       "publisher": "Vatan",
-      "url": "http://www.gazetevatan.com/rss/gundem.xml",
+      "url": "https://www.gazetevatan.com/rss/gundem.xml",
       "language": "tr",
       "countries": [
         "TR"
@@ -1053,7 +1083,7 @@
       "countries": [
         "VN"
       ],
-      "category": "world",
+      "category": "finance",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1061,7 +1091,7 @@
       "id": "donga-sports-23035e23",
       "name": "Donga Sports",
       "publisher": "Donga Sports",
-      "url": "http://rss.donga.com/sports.xml",
+      "url": "https://rss.donga.com/sports.xml",
       "language": "ko",
       "countries": [
         "KR"
@@ -1074,10 +1104,12 @@
       "id": "the-new-republic-6746a13e",
       "name": "The New Republic",
       "publisher": "The New Republic",
-      "url": "http://www.newrepublic.com/rss.xml",
+      "url": "https://www.newrepublic.com/rss.xml",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1087,8 +1119,10 @@
       "publisher": "Vox",
       "url": "https://www.vox.com/rss/index.xml",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1098,8 +1132,10 @@
       "publisher": "Android Developers",
       "url": "https://www.youtube.com/feeds/videos.xml?user=androiddevelopers",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1107,12 +1143,12 @@
       "id": "expressen-b6d68045",
       "name": "Expressen",
       "publisher": "Expressen",
-      "url": "http://www.expressen.se/rss/nyheter",
+      "url": "https://www.expressen.se/rss/nyheter",
       "language": "sv",
       "countries": [
         "SE"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1120,7 +1156,7 @@
       "id": "the-new-paper-89d71e99",
       "name": "The New Paper",
       "publisher": "The New Paper",
-      "url": "http://www.tnp.sg/rss.xml",
+      "url": "https://www.tnp.sg/rss.xml",
       "language": "en",
       "countries": [
         "SG"
@@ -1133,7 +1169,7 @@
       "id": "daily-express-edc53d4b",
       "name": "Daily Express",
       "publisher": "Daily Express",
-      "url": "http://feeds.feedburner.com/daily-express-news-showbiz",
+      "url": "https://feeds.feedburner.com/daily-express-news-showbiz",
       "language": "ur",
       "countries": [
         "PK"
@@ -1146,10 +1182,12 @@
       "id": "nbc-news-08d85777",
       "name": "NBC News",
       "publisher": "NBC News",
-      "url": "http://feeds.nbcnews.com/feeds/topstories",
+      "url": "https://feeds.nbcnews.com/feeds/topstories",
       "language": "en",
-      "countries": [],
-      "category": "world",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1157,20 +1195,22 @@
       "id": "azadi-radio-pashto-63895036",
       "name": "Azadi Radio Pashto",
       "publisher": "Azadi Radio Pashto",
-      "url": "http://pa.azadiradio.org/api/epiqq",
+      "url": "https://pa.azadiradio.org/api/epiqq",
       "language": "en",
       "countries": [
         "AF"
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "independent-exile",
+      "notes": "Radio Free Europe / Radio Liberty's Afghan Pashto-language service. RFE/RL is funded by the U.S. Agency for Global Media but operates with editorial independence under the International Broadcasting Act. Provides news to Afghanistan from abroad since Taliban restrictions on independent media.\n\nSources:\n  [1] https://pressroom.rferl.org/about-rferl\n  [2] https://en.wikipedia.org/wiki/Radio_Free_Europe/Radio_Liberty"
     },
     {
       "id": "news-am-9d0bfeac",
       "name": "News.am",
       "publisher": "News.am",
-      "url": "http://news.am/eng/rss/",
+      "url": "https://news.am/eng/rss/",
       "language": "en",
       "countries": [
         "AM"
@@ -1196,12 +1236,12 @@
       "id": "krone-at-115e395e",
       "name": "Krone.at",
       "publisher": "Krone.at",
-      "url": "http://www.krone.at/Nachrichten/rss.html",
-      "language": "en",
+      "url": "https://www.krone.at/Nachrichten/rss.html",
+      "language": "de",
       "countries": [
         "AT"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1209,7 +1249,7 @@
       "id": "abc-a97fa181",
       "name": "ABC",
       "publisher": "ABC",
-      "url": "http://www.abc.net.au/news/feed/46182/rss.xml",
+      "url": "https://www.abc.net.au/news/feed/46182/rss.xml",
       "language": "en",
       "countries": [
         "AU"
@@ -1222,7 +1262,7 @@
       "id": "day-az-19d2d7f0",
       "name": "Day.az",
       "publisher": "Day.az",
-      "url": "http://news.day.az/rss/all.rss",
+      "url": "https://news.day.az/rss/all.rss",
       "language": "en",
       "countries": [
         "AZ"
@@ -1235,7 +1275,7 @@
       "id": "dnevnik-ba-68e60b22",
       "name": "Dnevnik.ba",
       "publisher": "Dnevnik.ba",
-      "url": "http://www.dnevnik.ba/rss.xml",
+      "url": "https://www.dnevnik.ba/rss.xml",
       "language": "en",
       "countries": [
         "BA"
@@ -1248,7 +1288,7 @@
       "id": "nation-news-2c189d51",
       "name": "Nation News",
       "publisher": "Nation News",
-      "url": "http://www.nationnews.com/feed/rss",
+      "url": "https://www.nationnews.com/feed/rss",
       "language": "en",
       "countries": [
         "BB"
@@ -1275,11 +1315,11 @@
       "name": "La Libre",
       "publisher": "La Libre",
       "url": "https://www.lalibre.be/rss",
-      "language": "en",
+      "language": "fr",
       "countries": [
         "BE"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1288,11 +1328,11 @@
       "name": "Dnes Dir.bg",
       "publisher": "Dnes Dir.bg",
       "url": "http://dnes.dir.bg/support/cat_rss.php",
-      "language": "en",
+      "language": "bg",
       "countries": [
         "BG"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1300,7 +1340,7 @@
       "id": "iwacu-affe9968",
       "name": "IWACU",
       "publisher": "IWACU",
-      "url": "http://www.iwacu-burundi.org/feed/",
+      "url": "https://www.iwacu-burundi.org/feed/",
       "language": "en",
       "countries": [
         "BI"
@@ -1313,7 +1353,7 @@
       "id": "bernews-da96a2c6",
       "name": "Bernews",
       "publisher": "Bernews",
-      "url": "http://bernews.com/tag/rory-field/feed/",
+      "url": "https://bernews.com/tag/rory-field/feed/",
       "language": "en",
       "countries": [
         "BM"
@@ -1352,7 +1392,7 @@
       "id": "bahamas-press-d2c9ebd3",
       "name": "Bahamas Press",
       "publisher": "Bahamas Press",
-      "url": "http://bahamaspress.com/feed/",
+      "url": "https://bahamaspress.com/feed/",
       "language": "en",
       "countries": [
         "BS"
@@ -1365,7 +1405,7 @@
       "id": "nasha-niva-414a3072",
       "name": "Nasha Niva",
       "publisher": "Nasha Niva",
-      "url": "http://nn.by/?c=rss-all&lang=en",
+      "url": "https://nn.by/?c=rss-all&lang=en",
       "language": "en",
       "countries": [
         "BY"
@@ -1391,7 +1431,7 @@
       "id": "congo-planet-2cb570dc",
       "name": "Congo Planet",
       "publisher": "Congo Planet",
-      "url": "http://www.congoplanet.com/feeds/rss_congo_africa.xml",
+      "url": "https://www.congoplanet.com/feeds/rss_congo_africa.xml",
       "language": "en",
       "countries": [
         "CD"
@@ -1404,12 +1444,12 @@
       "id": "tages-anzeiger-5ce4888f",
       "name": "Tages Anzeiger",
       "publisher": "Tages Anzeiger",
-      "url": "http://www.tagesanzeiger.ch/rss.html",
-      "language": "en",
+      "url": "https://www.tagesanzeiger.ch/rss.html",
+      "language": "de",
       "countries": [
         "CH"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1456,7 +1496,7 @@
       "id": "el-colombiano-2bc910a9",
       "name": "El Colombiano",
       "publisher": "El Colombiano",
-      "url": "http://www.elcolombiano.com/rss/inicio.xml",
+      "url": "https://www.elcolombiano.com/rss/inicio.xml",
       "language": "es",
       "countries": [
         "CO"
@@ -1482,7 +1522,7 @@
       "id": "el-financiero-8302247f",
       "name": "El Financiero",
       "publisher": "El Financiero",
-      "url": "http://www.elfinancierocr.com/rss/",
+      "url": "https://www.elfinancierocr.com/rss/",
       "language": "en",
       "countries": [
         "CR"
@@ -1496,11 +1536,11 @@
       "name": "Sigma Live",
       "publisher": "Sigma Live",
       "url": "http://www.sigmalive.com/rss",
-      "language": "en",
+      "language": "el",
       "countries": [
         "CY"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1508,12 +1548,12 @@
       "id": "novinky-cz-70ca2807",
       "name": "Novinky.cz",
       "publisher": "Novinky.cz",
-      "url": "http://www.novinky.cz/rss/",
-      "language": "en",
+      "url": "https://www.novinky.cz/rss/",
+      "language": "cs",
       "countries": [
         "CZ"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1521,12 +1561,12 @@
       "id": "die-welt-bdd27309",
       "name": "DIE WELT",
       "publisher": "DIE WELT",
-      "url": "http://www.welt.de/?service=Rss",
-      "language": "en",
+      "url": "https://www.welt.de/?service=Rss",
+      "language": "de",
       "countries": [
         "DE"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1534,7 +1574,7 @@
       "id": "la-nacion-7503d963",
       "name": "La Nacion",
       "publisher": "La Nacion",
-      "url": "http://www.nacion.com/rss/",
+      "url": "https://www.nacion.com/rss/",
       "language": "es",
       "countries": [
         "CR"
@@ -1547,12 +1587,12 @@
       "id": "borsen-f0ec3a22",
       "name": "Borsen.",
       "publisher": "Borsen.",
-      "url": "http://borsen.dk/rss/",
-      "language": "en",
+      "url": "https://borsen.dk/rss/",
+      "language": "da",
       "countries": [
         "DK"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1560,7 +1600,7 @@
       "id": "dominica-news-6137b690",
       "name": "Dominica News",
       "publisher": "Dominica News",
-      "url": "http://dominicanewsonline.com/news/feed/",
+      "url": "https://dominicanewsonline.com/news/feed/",
       "language": "en",
       "countries": [
         "DM"
@@ -1573,7 +1613,7 @@
       "id": "almomento-net-281b0532",
       "name": "Almomento.net",
       "publisher": "Almomento.net",
-      "url": "http://almomento.net/feed/",
+      "url": "https://almomento.net/feed/",
       "language": "en",
       "countries": [
         "DO"
@@ -1586,7 +1626,7 @@
       "id": "algerie360-com-e9ede278",
       "name": "Algerie360.com",
       "publisher": "Algerie360.com",
-      "url": "http://www.algerie360.com/feed/",
+      "url": "https://www.algerie360.com/feed/",
       "language": "en",
       "countries": [
         "DZ"
@@ -1612,12 +1652,12 @@
       "id": "postimees-9580dc13",
       "name": "Postimees",
       "publisher": "Postimees",
-      "url": "http://www.postimees.ee/rss/",
-      "language": "en",
+      "url": "https://www.postimees.ee/rss/",
+      "language": "et",
       "countries": [
         "EE"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1638,7 +1678,7 @@
       "id": "asmarino-independent-e0181d41",
       "name": "Asmarino Independent",
       "publisher": "Asmarino Independent",
-      "url": "http://asmarino.com/?format=feed&type=rss",
+      "url": "https://asmarino.com/?format=feed&type=rss",
       "language": "en",
       "countries": [
         "ER"
@@ -1652,11 +1692,11 @@
       "name": "EL PAIS",
       "publisher": "EL PAIS",
       "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
-      "language": "en",
+      "language": "es",
       "countries": [
         "ES"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1664,7 +1704,7 @@
       "id": "voa-b6f7956e",
       "name": "VOA",
       "publisher": "VOA",
-      "url": "http://amharic.voanews.com/podcast/",
+      "url": "https://amharic.voanews.com/podcast/",
       "language": "en",
       "countries": [
         "ET"
@@ -1677,12 +1717,12 @@
       "id": "iltalehti-fi-8ebadb91",
       "name": "Iltalehti.fi",
       "publisher": "Iltalehti.fi",
-      "url": "http://www.iltalehti.fi/rss/uutiset.xml",
-      "language": "en",
+      "url": "https://www.iltalehti.fi/rss/uutiset.xml",
+      "language": "fi",
       "countries": [
         "FI"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1716,7 +1756,7 @@
       "id": "infos-gabon-99930956",
       "name": "Infos Gabon",
       "publisher": "Infos Gabon",
-      "url": "http://fr.infosgabon.com/feed/",
+      "url": "https://fr.infosgabon.com/feed/",
       "language": "en",
       "countries": [
         "GA"
@@ -1729,12 +1769,12 @@
       "id": "bbc-0a2d7d7a",
       "name": "BBC",
       "publisher": "BBC",
-      "url": "http://feeds.bbci.co.uk/news/rss.xml",
+      "url": "https://feeds.bbci.co.uk/news/rss.xml",
       "language": "en",
       "countries": [
         "GB"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1742,7 +1782,7 @@
       "id": "ghana-mma-a1b18cfd",
       "name": "Ghana MMA",
       "publisher": "Ghana MMA",
-      "url": "http://www.ghanamma.com/category/business/feed/",
+      "url": "https://www.ghanamma.com/category/business/feed/",
       "language": "en",
       "countries": [
         "GH"
@@ -1766,9 +1806,9 @@
     },
     {
       "id": "point-c85c24e3",
-      "name": "Point",
+      "name": "Point — The Gambia",
       "publisher": "Point",
-      "url": "http://thepoint.gm/posts/rss/xml",
+      "url": "https://thepoint.gm/posts/rss/xml",
       "language": "en",
       "countries": [
         "GM"
@@ -1781,7 +1821,7 @@
       "id": "guineenews-d34b3ea0",
       "name": "Guineenews",
       "publisher": "Guineenews",
-      "url": "http://guineenews.org/feed/",
+      "url": "https://guineenews.org/feed/",
       "language": "en",
       "countries": [
         "GN"
@@ -1795,11 +1835,11 @@
       "name": "in.gr",
       "publisher": "in.gr",
       "url": "http://rss.in.gr/Netvolution.Site.Engine.PageHandler.axd?rid=2&pid=250&la=1&si=1",
-      "language": "en",
+      "language": "el",
       "countries": [
         "GR"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1820,7 +1860,7 @@
       "id": "kaieteur-news-64f614fe",
       "name": "Kaieteur News",
       "publisher": "Kaieteur News",
-      "url": "http://www.kaieteurnewsonline.com/feed/",
+      "url": "https://www.kaieteurnewsonline.com/feed/",
       "language": "en",
       "countries": [
         "GY"
@@ -1840,18 +1880,20 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "independent",
+      "notes": "Hong Kong-based non-profit, JTI-certified news outlet. No shareholders or share capital — run directly by journalistic staff. Journalism Trust Initiative certified in 2025 after 130-point external audit. SOPA award winner. Publishes annual financial transparency reports.\n\nSources:\n  [1] https://hongkongfp.com/about/\n  [2] https://en.wikipedia.org/wiki/Hong_Kong_Free_Press"
     },
     {
       "id": "24sata-hr-629a3986",
       "name": "24sata.hr",
       "publisher": "24sata.hr",
-      "url": "http://www.24sata.hr/feeds/news.xml",
-      "language": "en",
+      "url": "https://www.24sata.hr/feeds/news.xml",
+      "language": "hr",
       "countries": [
         "HR"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1859,7 +1901,7 @@
       "id": "haiti-libre-6a742fcd",
       "name": "Haiti Libre",
       "publisher": "Haiti Libre",
-      "url": "http://www.haitilibre.com/rss-flash-en.xml",
+      "url": "https://www.haitilibre.com/rss-flash-en.xml",
       "language": "en",
       "countries": [
         "HT"
@@ -1872,12 +1914,12 @@
       "id": "index-d93ff4bc",
       "name": "Index",
       "publisher": "Index",
-      "url": "http://index.hu/24ora/rss",
-      "language": "en",
+      "url": "https://index.hu/24ora/rss",
+      "language": "hu",
       "countries": [
         "HU"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1885,12 +1927,12 @@
       "id": "irish-independent-bb1e3229",
       "name": "Irish Independent",
       "publisher": "Irish Independent",
-      "url": "http://www.independent.ie/irish-news/rss",
+      "url": "https://www.independent.ie/irish-news/rss",
       "language": "en",
       "countries": [
         "IE"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1898,7 +1940,7 @@
       "id": "ynet-aa480431",
       "name": "Ynet",
       "publisher": "Ynet",
-      "url": "http://www.ynet.co.il/Integration/StoryRss3082.xml",
+      "url": "https://www.ynet.co.il/Integration/StoryRss3082.xml",
       "language": "en",
       "countries": [
         "IL"
@@ -1911,7 +1953,7 @@
       "id": "3fm-dd33aaf9",
       "name": "3FM",
       "publisher": "3FM",
-      "url": "http://www.three.fm/news/isle-of-man-news/feed.xml",
+      "url": "https://www.three.fm/news/isle-of-man-news/feed.xml",
       "language": "en",
       "countries": [
         "IM"
@@ -1921,23 +1963,10 @@
       "format": "rss"
     },
     {
-      "id": "times-of-india-top-stories-07e2361c",
-      "name": "Times of India - Top Stories",
-      "publisher": "Times of India - Top Stories",
-      "url": "http://timesofindia.indiatimes.com/rssfeedstopstories.cms",
-      "language": "en",
-      "countries": [
-        "IN"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
       "id": "ahewar-org-e0c08e67",
       "name": "Ahewar.org",
       "publisher": "Ahewar.org",
-      "url": "http://www.ahewar.org/rss/default.asp?lt=7",
+      "url": "https://www.ahewar.org/rss/default.asp?lt=7",
       "language": "en",
       "countries": [
         "IQ"
@@ -1957,14 +1986,16 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "Official state news agency of the Islamic Republic of Iran. Operates under the Ministry of Culture and Islamic Guidance, which appoints its leadership. State Media Monitor reports 80%+ of budget sourced from government.\n\nSources:\n  [1] https://statemediamonitor.com/2025/07/islamic-republic-news-agency-irna/\n  [2] https://rsf.org/en/country/iran\n  [3] https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency"
     },
     {
       "id": "visir-8ad84bc3",
       "name": "Visir",
       "publisher": "Visir",
-      "url": "http://www.visir.is/apps/pbcs.dll/section?Category=FRETTIR&Template=rss&mime=xml",
-      "language": "en",
+      "url": "https://www.visir.is/apps/pbcs.dll/section?Category=FRETTIR&Template=rss&mime=xml",
+      "language": "is",
       "countries": [
         "IS"
       ],
@@ -1976,12 +2007,12 @@
       "id": "la-repubblica-ed4b824e",
       "name": "La Repubblica",
       "publisher": "La Repubblica",
-      "url": "http://www.repubblica.it/rss/homepage/rss2.0.xml",
-      "language": "en",
+      "url": "https://www.repubblica.it/rss/homepage/rss2.0.xml",
+      "language": "it",
       "countries": [
         "IT"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -2002,7 +2033,7 @@
       "id": "jordan-zad-b6bc625c",
       "name": "Jordan Zad",
       "publisher": "Jordan Zad",
-      "url": "http://www.jordanzad.com/rss.php?type=main",
+      "url": "https://www.jordanzad.com/rss.php?type=main",
       "language": "en",
       "countries": [
         "JO"
@@ -2015,7 +2046,7 @@
       "id": "nhk-4c3d8382",
       "name": "NHK",
       "publisher": "NHK",
-      "url": "http://www.nhk.or.jp/rj/podcast/rss/english.xml",
+      "url": "https://www.nhk.or.jp/rj/podcast/rss/english.xml",
       "language": "en",
       "countries": [
         "JP"
@@ -2028,7 +2059,7 @@
       "id": "standard-media-40f83369",
       "name": "Standard Media",
       "publisher": "Standard Media",
-      "url": "http://www.standardmedia.co.ke/rss/business.php",
+      "url": "https://www.standardmedia.co.ke/rss/business.php",
       "language": "en",
       "countries": [
         "KE"
@@ -2041,7 +2072,7 @@
       "id": "rfi-khmer-c876ba43",
       "name": "RFI Khmer",
       "publisher": "RFI Khmer",
-      "url": "http://www.khmer.rfi.fr/cambodia/rss",
+      "url": "https://www.khmer.rfi.fr/cambodia/rss",
       "language": "en",
       "countries": [
         "KH"
@@ -2054,7 +2085,7 @@
       "id": "ziz-0702db50",
       "name": "ZIZ",
       "publisher": "ZIZ",
-      "url": "http://zizonline.com/feed/",
+      "url": "https://zizonline.com/feed/",
       "language": "en",
       "countries": [
         "KN"
@@ -2080,7 +2111,7 @@
       "id": "tengri-news-0e6ec970",
       "name": "Tengri News",
       "publisher": "Tengri News",
-      "url": "http://tengrinews.kz/news.rss",
+      "url": "https://tengrinews.kz/news.rss",
       "language": "en",
       "countries": [
         "KZ"
@@ -2093,7 +2124,7 @@
       "id": "lanka-hot-news-8fe6d903",
       "name": "Lanka Hot News",
       "publisher": "Lanka Hot News",
-      "url": "http://www.lankahotnews.net/feeds/posts/default?alt=rss",
+      "url": "https://www.lankahotnews.net/feeds/posts/default?alt=rss",
       "language": "en",
       "countries": [
         "LK"
@@ -2104,14 +2135,14 @@
     },
     {
       "id": "delfi-43e415f3",
-      "name": "DELFI",
+      "name": "DELFI — Lithuania",
       "publisher": "DELFI",
-      "url": "http://www.delfi.lt/rss/feeds/lithuania.xml",
-      "language": "en",
+      "url": "https://www.delfi.lt/rss/feeds/lithuania.xml",
+      "language": "lt",
       "countries": [
         "LT"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -2119,25 +2150,25 @@
       "id": "rtl-1b7f8ad0",
       "name": "RTL",
       "publisher": "RTL",
-      "url": "http://rtl.lu/rss/headlines/",
-      "language": "en",
+      "url": "https://rtl.lu/rss/headlines/",
+      "language": "lb",
       "countries": [
         "LU"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
     {
       "id": "delfi-d53fc8ed",
-      "name": "DELFI",
+      "name": "DELFI — Latvia",
       "publisher": "DELFI",
-      "url": "http://www.delfi.lv/rss.php",
-      "language": "en",
+      "url": "https://www.delfi.lv/rss.php",
+      "language": "lv",
       "countries": [
         "LV"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -2145,7 +2176,7 @@
       "id": "hespress-62913d28",
       "name": "Hespress",
       "publisher": "Hespress",
-      "url": "http://www.hespress.com/feed/index.rss",
+      "url": "https://www.hespress.com/feed/index.rss",
       "language": "en",
       "countries": [
         "MA"
@@ -2156,9 +2187,9 @@
     },
     {
       "id": "point-6a33f6d2",
-      "name": "Point",
+      "name": "Point — Moldova",
       "publisher": "Point",
-      "url": "http://point.md/ru/rss/novosti/",
+      "url": "https://point.md/ru/rss/novosti/",
       "language": "en",
       "countries": [
         "MD"
@@ -2184,7 +2215,7 @@
       "id": "madagascar-tribune-0f2f25aa",
       "name": "Madagascar Tribune",
       "publisher": "Madagascar Tribune",
-      "url": "http://www.madagascar-tribune.com/spip.php?page=backend",
+      "url": "https://www.madagascar-tribune.com/spip.php?page=backend",
       "language": "en",
       "countries": [
         "MG"
@@ -2197,7 +2228,7 @@
       "id": "kajgana-34ee9243",
       "name": "Kajgana",
       "publisher": "Kajgana",
-      "url": "http://kajgana.com/rss.xml",
+      "url": "https://kajgana.com/rss.xml",
       "language": "en",
       "countries": [
         "MK"
@@ -2210,7 +2241,7 @@
       "id": "journaldumali-com-abe4771a",
       "name": "JournalDuMali.com",
       "publisher": "JournalDuMali.com",
-      "url": "http://www.journaldumali.com/rss/",
+      "url": "https://www.journaldumali.com/rss/",
       "language": "en",
       "countries": [
         "ML"
@@ -2223,7 +2254,7 @@
       "id": "france-antilles-martinique-471b3214",
       "name": "France-Antilles Martinique",
       "publisher": "France-Antilles Martinique",
-      "url": "http://www.martinique.franceantilles.fr/rss/lea_Une.xml",
+      "url": "https://www.martinique.franceantilles.fr/rss/lea_Une.xml",
       "language": "en",
       "countries": [
         "MQ"
@@ -2249,7 +2280,7 @@
       "id": "sun-mv-6688cb2d",
       "name": "Sun.mv",
       "publisher": "Sun.mv",
-      "url": "http://sun.mv/feed/",
+      "url": "https://sun.mv/feed/",
       "language": "en",
       "countries": [
         "MV"
@@ -2262,7 +2293,7 @@
       "id": "nyasa-times-70efa8ae",
       "name": "Nyasa Times",
       "publisher": "Nyasa Times",
-      "url": "http://www.nyasatimes.com/feed/",
+      "url": "https://www.nyasatimes.com/feed/",
       "language": "en",
       "countries": [
         "MW"
@@ -2301,7 +2332,7 @@
       "id": "la-nueva-radio-ya-40dbe60e",
       "name": "La Nueva Radio YA",
       "publisher": "La Nueva Radio YA",
-      "url": "http://nuevaya.com.ni/feed/",
+      "url": "https://nuevaya.com.ni/feed/",
       "language": "en",
       "countries": [
         "NI"
@@ -2314,12 +2345,12 @@
       "id": "nu-nl-b80230aa",
       "name": "nu.nl",
       "publisher": "nu.nl",
-      "url": "http://www.nu.nl/feeds/rss/algemeen.rss",
-      "language": "en",
+      "url": "https://www.nu.nl/feeds/rss/algemeen.rss",
+      "language": "nl",
       "countries": [
         "NL"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -2327,12 +2358,12 @@
       "id": "vg-nett-6174cf0d",
       "name": "VG Nett",
       "publisher": "VG Nett",
-      "url": "http://www.vg.no/rss/feed/?limit=10&format=rss&categories=&keywords=",
-      "language": "en",
+      "url": "https://www.vg.no/rss/feed/?limit=10&format=rss&categories=&keywords=",
+      "language": "no",
       "countries": [
         "NO"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -2340,7 +2371,7 @@
       "id": "onlinekhabar-com-075424bb",
       "name": "onlinekhabar.com",
       "publisher": "onlinekhabar.com",
-      "url": "http://www.onlinekhabar.com/feed/",
+      "url": "https://www.onlinekhabar.com/feed/",
       "language": "en",
       "countries": [
         "NP"
@@ -2353,7 +2384,7 @@
       "id": "nz-herald-3c694a12",
       "name": "NZ Herald",
       "publisher": "NZ Herald",
-      "url": "http://rss.nzherald.co.nz/rss/xml/nzhrsscid_000000001.xml",
+      "url": "https://rss.nzherald.co.nz/rss/xml/nzhrsscid_000000001.xml",
       "language": "en",
       "countries": [
         "NZ"
@@ -2366,7 +2397,7 @@
       "id": "central-america-data-3f3fbd8b",
       "name": "Central America Data",
       "publisher": "Central America Data",
-      "url": "http://www.odditysoftware.com/database_feed_Central+America+Geocode+Data.htm",
+      "url": "https://www.odditysoftware.com/database_feed_Central+America+Geocode+Data.htm",
       "language": "en",
       "countries": [
         "PA"
@@ -2392,7 +2423,7 @@
       "id": "tahiti-infos-64e2c50b",
       "name": "Tahiti Infos",
       "publisher": "Tahiti Infos",
-      "url": "http://www.tahiti-infos.com/xml/syndication.rss",
+      "url": "https://www.tahiti-infos.com/xml/syndication.rss",
       "language": "en",
       "countries": [
         "PF"
@@ -2418,12 +2449,12 @@
       "id": "gazeta-pl-8a4934cd",
       "name": "Gazeta.pl",
       "publisher": "Gazeta.pl",
-      "url": "http://rss.gazeta.pl/pub/rss/wiadomosci.xml",
-      "language": "en",
+      "url": "https://rss.gazeta.pl/pub/rss/wiadomosci.xml",
+      "language": "pl",
       "countries": [
         "PL"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -2431,7 +2462,7 @@
       "id": "noti-uno-630-am-7b37529e",
       "name": "Noti Uno 630 AM",
       "publisher": "Noti Uno 630 AM",
-      "url": "http://estrella51.blogspot.com/feeds/posts/default?alt=rss",
+      "url": "https://estrella51.blogspot.com/feeds/posts/default?alt=rss",
       "language": "en",
       "countries": [
         "PR"
@@ -2445,11 +2476,11 @@
       "name": "Expresso",
       "publisher": "Expresso",
       "url": "https://rss.impresa.pt/feed/latest/expresso.rss?type=ARTICLE,VIDEO,GALLERY,STREAM,PLAYLIST,EVENT,NEWSLETTER&limit=20&pubsubhub=true",
-      "language": "en",
+      "language": "pt",
       "countries": [
         "PT"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -2470,12 +2501,12 @@
       "id": "adevarul-ro-7832868f",
       "name": "adevarul.ro",
       "publisher": "adevarul.ro",
-      "url": "http://adevarul.ro/rss/",
-      "language": "en",
+      "url": "https://adevarul.ro/rss/",
+      "language": "ro",
       "countries": [
         "RO"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -2483,7 +2514,7 @@
       "id": "blic-8d1ebbbc",
       "name": "Blic",
       "publisher": "Blic",
-      "url": "http://www.blic.rs/rss/danasnje-vesti",
+      "url": "https://www.blic.rs/rss/danasnje-vesti",
       "language": "en",
       "countries": [
         "RS"
@@ -2509,7 +2540,7 @@
       "id": "solomon-times-d9ea069d",
       "name": "Solomon Times",
       "publisher": "Solomon Times",
-      "url": "http://www.solomontimes.com/rss/latest-news.xml",
+      "url": "https://www.solomontimes.com/rss/latest-news.xml",
       "language": "en",
       "countries": [
         "SB"
@@ -2535,12 +2566,12 @@
       "id": "planet-siol-net-32ed4384",
       "name": "Planet Siol.net",
       "publisher": "Planet Siol.net",
-      "url": "http://www.siol.net/rss.aspx?path=SiOL.Net",
-      "language": "en",
+      "url": "https://www.siol.net/rss.aspx?path=SiOL.Net",
+      "language": "sl",
       "countries": [
         "SI"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -2548,12 +2579,12 @@
       "id": "aktuality-sk-11904f56",
       "name": "Aktuality.sk",
       "publisher": "Aktuality.sk",
-      "url": "http://www.aktuality.sk/rss/",
-      "language": "en",
+      "url": "https://www.aktuality.sk/rss/",
+      "language": "sk",
       "countries": [
         "SK"
       ],
-      "category": "world",
+      "category": "europe",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -2561,7 +2592,7 @@
       "id": "giornale-sm-1e0abcdc",
       "name": "Giornale.sm",
       "publisher": "Giornale.sm",
-      "url": "http://giornalesm.com/feed/",
+      "url": "https://giornalesm.com/feed/",
       "language": "en",
       "countries": [
         "SM"
@@ -2574,7 +2605,7 @@
       "id": "leral-net-ed1a2c18",
       "name": "leral.net",
       "publisher": "leral.net",
-      "url": "http://www.leral.net/xml/syndication.rss",
+      "url": "https://www.leral.net/xml/syndication.rss",
       "language": "en",
       "countries": [
         "SN"
@@ -2587,7 +2618,7 @@
       "id": "jowhar-com-bddf086d",
       "name": "Jowhar.com",
       "publisher": "Jowhar.com",
-      "url": "http://www.jowhar.com/?feed=rss2&author=1",
+      "url": "https://www.jowhar.com/?feed=rss2&author=1",
       "language": "en",
       "countries": [
         "SO"
@@ -2600,7 +2631,7 @@
       "id": "starnieuws-601638b5",
       "name": "Starnieuws",
       "publisher": "Starnieuws",
-      "url": "http://www.starnieuws.com/rss/starnieuws.rss",
+      "url": "https://www.starnieuws.com/rss/starnieuws.rss",
       "language": "en",
       "countries": [
         "SR"
@@ -2613,7 +2644,7 @@
       "id": "leaders-com-tn-d5f2e2f8",
       "name": "leaders.com.tn",
       "publisher": "leaders.com.tn",
-      "url": "http://www.leaders.com.tn/rss",
+      "url": "https://www.leaders.com.tn/rss",
       "language": "en",
       "countries": [
         "TN"
@@ -2639,7 +2670,7 @@
       "id": "gazeta-ua-884b9280",
       "name": "Gazeta.ua",
       "publisher": "Gazeta.ua",
-      "url": "http://gazeta.ua/ru/rss",
+      "url": "https://gazeta.ua/ru/rss",
       "language": "en",
       "countries": [
         "UA"
@@ -2652,12 +2683,12 @@
       "id": "espn-b1ff08c3",
       "name": "ESPN",
       "publisher": "ESPN",
-      "url": "http://sports.espn.go.com/espn/rss/news",
+      "url": "https://sports.espn.go.com/espn/rss/news",
       "language": "en",
       "countries": [
         "US"
       ],
-      "category": "world",
+      "category": "us",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -2678,7 +2709,7 @@
       "id": "gazeta-uz-42bf059e",
       "name": "Gazeta.uz",
       "publisher": "Gazeta.uz",
-      "url": "http://www.gazeta.uz/rss/",
+      "url": "https://www.gazeta.uz/rss/",
       "language": "en",
       "countries": [
         "UZ"
@@ -2743,7 +2774,7 @@
       "id": "tumfweko-97b6f24e",
       "name": "Tumfweko",
       "publisher": "Tumfweko",
-      "url": "http://tumfweko.com/feed/",
+      "url": "https://tumfweko.com/feed/",
       "language": "en",
       "countries": [
         "ZM"
@@ -2761,7 +2792,7 @@
       "countries": [
         "US"
       ],
-      "category": "world",
+      "category": "us",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -2774,7 +2805,7 @@
       "countries": [
         "US"
       ],
-      "category": "world",
+      "category": "technology",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -2787,9 +2818,174 @@
       "countries": [
         "US"
       ],
-      "category": "world",
+      "category": "technology",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "bbc-science-environment-a97faa0a",
+      "name": "BBC Science & Environment",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.bbc.com/news/science_and_environment",
+      "description": "BBC News science and environment coverage"
+    },
+    {
+      "id": "sciencedaily-top-news-693abd6a",
+      "name": "ScienceDaily Top News",
+      "publisher": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/rss/all.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.sciencedaily.com",
+      "description": "Breaking science news and articles on global warming, extrasolar planets, stem cells, nanotechnology, evolution — from the world's leading universities and research organizations"
+    },
+    {
+      "id": "carbon-brief-e0c7ff98",
+      "name": "Carbon Brief",
+      "publisher": "Carbon Brief",
+      "url": "https://www.carbonbrief.org/feed/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "climate",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.carbonbrief.org",
+      "description": "A data-driven climate journalism blog that explains global warming through clear analysis of climate science, energy, and policy"
+    },
+    {
+      "id": "africanews-754d5800",
+      "name": "Africanews",
+      "publisher": "Africanews",
+      "url": "https://www.africanews.com/feed/rss",
+      "language": "en",
+      "countries": [
+        "CG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.africanews.com",
+      "description": "Pan-African news in English and French, part of the Euronews network"
+    },
+    {
+      "id": "latin-america-reports-1ce2fbd0",
+      "name": "Latin America Reports",
+      "publisher": "Latin America Reports",
+      "url": "https://latinamericareports.com/feed/",
+      "language": "en",
+      "countries": [
+        "PE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://latinamericareports.com",
+      "description": "On-the-ground reporting contextualizing Latin America's role in global affairs"
+    },
+    {
+      "id": "nsf-news-0534e5d2",
+      "name": "NSF News",
+      "publisher": "National Science Foundation",
+      "url": "https://www.nsf.gov/rss/rss_www_news.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.nsf.gov/news",
+      "description": "Latest articles about U.S. National Science Foundation discoveries and funding"
+    },
+    {
+      "id": "nasa-breaking-news-bcd83ac3",
+      "name": "NASA Breaking News",
+      "publisher": "NASA",
+      "url": "https://www.nasa.gov/news-release/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.nasa.gov/news/releases/",
+      "description": "NASA press releases and breaking news on space exploration, science, and technology"
+    },
+    {
+      "id": "phys-org-ff4c7ba3",
+      "name": "Phys.org",
+      "publisher": "Phys.org",
+      "url": "https://phys.org/rss-feed/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://phys.org",
+      "description": "Daily science news on research developments, technological breakthroughs and the latest scientific innovations"
+    },
+    {
+      "id": "new-scientist-9a506e18",
+      "name": "New Scientist",
+      "publisher": "New Scientist",
+      "url": "https://www.newscientist.com/feed/home",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.newscientist.com",
+      "description": "Science news and long reads from expert journalists, covering science, technology, health and the environment"
+    },
+    {
+      "id": "ansa-english-48611228",
+      "name": "ANSA English",
+      "publisher": "ANSA",
+      "url": "https://www.ansa.it/english/english_rss.xml",
+      "language": "en",
+      "countries": [
+        "IT"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.ansa.it/english",
+      "description": "Latest news from Italy and international politics, business, science, technology, lifestyle, and sports from ANSA"
+    },
+    {
+      "id": "bbc-sport-7e17260f",
+      "name": "BBC Sport",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/sport/rss.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "sports",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.bbc.com/sport",
+      "description": "BBC Sport — live scores, match reports, analysis, and sports news"
     }
   ]
 }
