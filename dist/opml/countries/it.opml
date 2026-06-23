@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: IT</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="ANSA English" title="ANSA English" xmlUrl="https://www.ansa.it/english/english_rss.xml" />
+    <outline type="rss" text="Euronews" title="Euronews" xmlUrl="https://www.euronews.com/rss?format=xml" />
+    <outline type="rss" text="La Repubblica" title="La Repubblica" xmlUrl="https://www.repubblica.it/rss/homepage/rss2.0.xml" />
+  </body>
+</opml>

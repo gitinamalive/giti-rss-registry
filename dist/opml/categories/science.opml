@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Category: science</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="BBC Science &amp; Environment" title="BBC Science &amp; Environment" xmlUrl="https://feeds.bbci.co.uk/news/science_and_environment/rss.xml" />
+    <outline type="rss" text="New Scientist" title="New Scientist" xmlUrl="https://www.newscientist.com/feed/home" />
+    <outline type="rss" text="Phys.org" title="Phys.org" xmlUrl="https://phys.org/rss-feed/" />
+  </body>
+</opml>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: IN</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="The Hindu" title="The Hindu" xmlUrl="https://www.thehindu.com/news/national/feeder/default.rss" />
+    <outline type="rss" text="Times of India" title="Times of India" xmlUrl="https://timesofindia.indiatimes.com/rssfeedstopstories.cms" />
+  </body>
+</opml>

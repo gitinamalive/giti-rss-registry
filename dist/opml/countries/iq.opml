@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: IQ</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="Ahewar.org" title="Ahewar.org" xmlUrl="https://www.ahewar.org/rss/default.asp?lt=7" />
+    <outline type="rss" text="BBC News - Middle East" title="BBC News - Middle East" xmlUrl="https://feeds.bbci.co.uk/news/world/middle_east/rss.xml" />
+  </body>
+</opml>

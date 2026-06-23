@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Category: health</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="CDC Newsroom" title="CDC Newsroom" xmlUrl="https://tools.cdc.gov/api/v2/resources/media/132608.rss" />
+    <outline type="rss" text="KFF Health News" title="KFF Health News" xmlUrl="https://kffhealthnews.org/feed/" />
+    <outline type="rss" text="Medical News Today" title="Medical News Today" xmlUrl="https://www.medicalnewstoday.com/newsfeeds-rss" />
+    <outline type="rss" text="MedPage Today" title="MedPage Today" xmlUrl="https://www.medpagetoday.com/rss/headlines.xml" />
+    <outline type="rss" text="NIH News Releases" title="NIH News Releases" xmlUrl="https://www.nih.gov/news-events/news-releases/feed.xml" />
+    <outline type="rss" text="NPR Health — Shots" title="NPR Health — Shots" xmlUrl="https://feeds.npr.org/1128/rss.xml" />
+    <outline type="rss" text="ScienceDaily — Health &amp; Medicine" title="ScienceDaily — Health &amp; Medicine" xmlUrl="https://www.sciencedaily.com/rss/health_medicine.xml" />
+    <outline type="rss" text="STAT News" title="STAT News" xmlUrl="https://www.statnews.com/feed/" />
+    <outline type="rss" text="The Lancet — Global Health" title="The Lancet — Global Health" xmlUrl="https://www.thelancet.com/rssfeed/lancet_global_health.xml" />
+    <outline type="rss" text="WHO News" title="WHO News" xmlUrl="https://www.who.int/rss-feeds/news-english.xml" />
+  </body>
+</opml>

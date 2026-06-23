@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: AU</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="ABC" title="ABC" xmlUrl="https://www.abc.net.au/news/feed/46182/rss.xml" />
+    <outline type="rss" text="ABC News" title="ABC News" xmlUrl="https://www.abc.net.au/news/feed/51120/rss.xml" />
+    <outline type="rss" text="News.com.au" title="News.com.au" xmlUrl="https://www.news.com.au/content-feeds/latest-news-world/" />
+    <outline type="rss" text="SBS News" title="SBS News" xmlUrl="https://www.sbs.com.au/news/feed" />
+    <outline type="rss" text="Sydney Morning Herald" title="Sydney Morning Herald" xmlUrl="https://www.smh.com.au/rss/feed.xml" />
+  </body>
+</opml>

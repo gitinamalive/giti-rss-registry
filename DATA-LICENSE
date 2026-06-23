@@ -1,0 +1,45 @@
+# Data License for the Giti RSS Registry
+
+## Curated Feed Metadata (feeds.json)
+
+The feed metadata in this repository — including feed IDs, names, publisher names,
+feed URLs, language tags, country assignments, category classifications, health
+scores, and all other editorial metadata — is dedicated to the public domain
+under the Creative Commons Zero (CC0) waiver.
+
+To the extent possible under law, the maintainers of the Giti RSS Registry have
+waived all copyright and related or neighboring rights to the feed metadata
+in this repository.
+
+CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/
+
+## Feed Content
+
+The feeds referenced in this registry are authored by and belong to their
+respective publishers. The registry does NOT redistribute feed content — it
+only provides pointers to publicly available RSS/Atom/JSONFeed endpoints.
+Each feed's content is governed by the publisher's own terms of service
+and/or copyright.
+
+## Trademarks
+
+All publisher names, feed names, and logos are trademarks of their respective
+owners. Inclusion in this registry does not imply endorsement by or affiliation
+with the referenced publishers.
+
+## Contributions
+
+By contributing to this repository, you agree to dedicate your contributions
+(feed metadata entries, schema updates, validation improvements, and all
+non-code data) to the public domain under the same CC0 waiver.
+
+## Attribution (Optional but Appreciated)
+
+If you use this registry in your own project, attribution is not required
+by license but is appreciated:
+
+    News source data from giti-rss-registry (https://github.com/gitinamalive/giti-rss-registry)
+
+## Last Updated
+
+2026-06-23

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: AR</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="Buenos Aires Times" title="Buenos Aires Times" xmlUrl="https://www.batimes.com.ar/feed" />
+    <outline type="rss" text="Clarin" title="Clarin" xmlUrl="https://www.clarin.com/rss/lo-ultimo/" />
+    <outline type="rss" text="MercoPress" title="MercoPress" xmlUrl="https://en.mercopress.com/rss" />
+    <outline type="rss" text="MercoPress Argentina" title="MercoPress Argentina" xmlUrl="https://en.mercopress.com/rss/argentina" />
+  </body>
+</opml>

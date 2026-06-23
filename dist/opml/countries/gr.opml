@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: GR</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="Euronews" title="Euronews" xmlUrl="https://www.euronews.com/rss?format=xml" />
+    <outline type="rss" text="in.gr" title="in.gr" xmlUrl="http://rss.in.gr/Netvolution.Site.Engine.PageHandler.axd?rid=2&amp;pid=250&amp;la=1&amp;si=1" />
+  </body>
+</opml>

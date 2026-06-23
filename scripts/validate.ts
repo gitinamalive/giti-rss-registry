@@ -1,4 +1,4 @@
-import { readFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import {
     type BootstrapPayload,
@@ -7,6 +7,34 @@ import {
     allowedMediaTypes,
     allowedPerspectives,
 } from '../src/types.ts';
+
+// ── ISO 3166-1 alpha-2 country codes ──────────────────────────────────────
+const ISO_3166_ALPHA2: ReadonlySet<string> = new Set([
+    'AD', 'AE', 'AF', 'AG', 'AI', 'AL', 'AM', 'AO', 'AQ', 'AR', 'AS', 'AT', 'AU',
+    'AW', 'AX', 'AZ', 'BA', 'BB', 'BD', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BL',
+    'BM', 'BN', 'BO', 'BQ', 'BR', 'BS', 'BT', 'BV', 'BW', 'BY', 'BZ', 'CA', 'CC',
+    'CD', 'CF', 'CG', 'CH', 'CI', 'CK', 'CL', 'CM', 'CN', 'CO', 'CR', 'CU', 'CV',
+    'CW', 'CX', 'CY', 'CZ', 'DE', 'DJ', 'DK', 'DM', 'DO', 'DZ', 'EC', 'EE', 'EG',
+    'EH', 'ER', 'ES', 'ET', 'FI', 'FJ', 'FK', 'FM', 'FO', 'FR', 'GA', 'GB', 'GD',
+    'GE', 'GF', 'GG', 'GH', 'GI', 'GL', 'GM', 'GN', 'GP', 'GQ', 'GR', 'GS', 'GT',
+    'GU', 'GW', 'GY', 'HK', 'HM', 'HN', 'HR', 'HT', 'HU', 'ID', 'IE', 'IL', 'IM',
+    'IN', 'IO', 'IQ', 'IR', 'IS', 'IT', 'JE', 'JM', 'JO', 'JP', 'KE', 'KG', 'KH',
+    'KI', 'KM', 'KN', 'KP', 'KR', 'KW', 'KY', 'KZ', 'LA', 'LB', 'LC', 'LI', 'LK',
+    'LR', 'LS', 'LT', 'LU', 'LV', 'LY', 'MA', 'MC', 'MD', 'ME', 'MF', 'MG', 'MH',
+    'MK', 'ML', 'MM', 'MN', 'MO', 'MP', 'MQ', 'MR', 'MS', 'MT', 'MU', 'MV', 'MW',
+    'MX', 'MY', 'MZ', 'NA', 'NC', 'NE', 'NF', 'NG', 'NI', 'NL', 'NO', 'NP', 'NR',
+    'NU', 'NZ', 'OM', 'PA', 'PE', 'PF', 'PG', 'PH', 'PK', 'PL', 'PM', 'PN', 'PR',
+    'PS', 'PT', 'PW', 'PY', 'QA', 'RE', 'RO', 'RS', 'RU', 'RW', 'SA', 'SB', 'SC',
+    'SD', 'SE', 'SG', 'SH', 'SI', 'SJ', 'SK', 'SL', 'SM', 'SN', 'SO', 'SR', 'SS',
+    'ST', 'SV', 'SX', 'SY', 'SZ', 'TC', 'TD', 'TF', 'TG', 'TH', 'TJ', 'TK', 'TL',
+    'TM', 'TN', 'TO', 'TR', 'TT', 'TV', 'TW', 'TZ', 'UA', 'UG', 'UM', 'US', 'UY',
+    'UZ', 'VA', 'VC', 'VE', 'VG', 'VI', 'VN', 'VU', 'WF', 'WS', 'YE', 'YT', 'ZA',
+    'ZM', 'ZW',
+]);
+
+// Widely recognized user-assigned ISO 3166-1 alpha-2 codes not in the official
+// standard but used in practice (e.g., XK for Kosovo by UNMIK, SWIFT, Deutsche Bundesbank).
+const WELL_KNOWN_NON_ISO_CODES: ReadonlySet<string> = new Set(['XK']);
 
 function findDuplicates(values: string[]): string[] {
     const seen = new Set<string>();
@@ -72,8 +100,66 @@ function isIsoCountryCode(value: string): boolean {
     return /^[A-Z]{2}$/.test(value);
 }
 
+function isValidIsoCountryCode(value: string): boolean {
+    return ISO_3166_ALPHA2.has(value) || WELL_KNOWN_NON_ISO_CODES.has(value);
+}
+
+function isValidIsoTimestamp(value: string): boolean {
+    // Must be canonical ISO-8601: YYYY-MM-DDTHH:mm:ss.sssZ
+    if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/.test(value)) return false;
+    const parsed = new Date(value);
+    if (isNaN(parsed.getTime())) return false;
+    return parsed.toISOString() === value;
+}
+
+/**
+ * Checks a URL for normalization issues:
+ * - Trailing slash when path is non-empty (fragile across servers)
+ * - Can be expanded in future for other URL hygiene checks
+ */
+function urlNormalizationIssues(value: string): string[] {
+    const issues: string[] = [];
+    try {
+        const parsed = new URL(value);
+        // Trailing slash on non-root paths (e.g. /feed/ vs /feed)
+        if (parsed.pathname.length > 1 && parsed.pathname.endsWith('/')) {
+            issues.push('URL path has trailing slash (may be fragile across server configs)');
+        }
+        // URL fragment — useless in RSS/Atom context
+        if (parsed.hash) {
+            issues.push('URL contains a fragment — fragments are ignored in HTTP requests');
+        }
+    } catch {
+        // Already caught by isValidUrl
+    }
+    return issues;
+}
+
+async function recomputeAndWrite(filePath: string, payload: BootstrapPayload): Promise<void> {
+    const feeds = payload.feeds;
+    const ids = feeds.map(f => f.id).filter(Boolean);
+    const urls = feeds.map(f => f.url).filter(Boolean);
+    const idDuplicates = findDuplicates(ids);
+    const urlDuplicates = findDuplicates(urls);
+
+    payload.stats = {
+        feeds: feeds.length,
+        duplicateIds: idDuplicates.length,
+        duplicateUrls: urlDuplicates.length,
+    };
+    payload.warnings = {
+        duplicateIds: idDuplicates,
+        duplicateUrls: urlDuplicates,
+    };
+    payload.generatedAt = new Date().toISOString();
+
+    await writeFile(resolve(filePath), JSON.stringify(payload, null, 2) + '\n', 'utf8');
+    process.stdout.write(`Updated stats, warnings, and generatedAt in ${filePath}.\n`);
+}
+
 async function main(): Promise<void> {
     const args = process.argv.slice(2);
+    const fixMode = args.includes('--fix');
     const fileArg = args.findIndex(arg => arg === '--file');
     const filePath = fileArg !== -1 && args[fileArg + 1] ? args[fileArg + 1] : 'data/feeds.json';
     const path = resolve(filePath);
@@ -116,14 +202,34 @@ async function main(): Promise<void> {
         }
         if (feed.url?.startsWith('http://')) warnings.push(`${prefix}.url uses http (consider https)`);
 
+        // URL normalization checks
+        if (feed.url && isValidUrl(feed.url)) {
+            const issues = urlNormalizationIssues(feed.url);
+            issues.forEach(issue => warnings.push(`${prefix}.url: ${issue}`));
+        }
+
+        if (feed.homepage && !isValidUrl(feed.homepage)) {
+            errors.push(`${prefix}.homepage is not a valid http/https URL`);
+        } else if (feed.homepage && !isPublicHostname(feed.homepage)) {
+            errors.push(`${prefix}.homepage host is not a public interface`);
+        }
+        if (feed.homepage?.startsWith('http://')) {
+            warnings.push(`${prefix}.homepage uses http (consider https)`);
+        }
+
         if (feed.language && !isLanguageCode(feed.language)) {
             errors.push(`${prefix}.language is not a valid language code`);
         }
 
         if (Array.isArray(feed.countries)) {
             feed.countries.forEach((country) => {
+                // Regex check (format)
                 if (!isIsoCountryCode(country)) {
-                    errors.push(`${prefix}.countries has invalid ISO code: ${country}`);
+                    errors.push(`${prefix}.countries has invalid ISO format: ${country}`);
+                }
+                // Set check (valid ISO 3166-1 alpha-2)
+                else if (!isValidIsoCountryCode(country)) {
+                    errors.push(`${prefix}.countries has unrecognized ISO-3166 alpha-2 code: ${country}`);
                 }
             });
             if (feed.countries.length === 0) {
@@ -146,7 +252,56 @@ async function main(): Promise<void> {
         if (feed.perspective && !allowedPerspectives.has(feed.perspective)) {
             errors.push(`${prefix}.perspective not allowed: ${feed.perspective}`);
         }
+
+        // healthScore range check (0-100)
+        if (feed.healthScore !== undefined && feed.healthScore !== null) {
+            if (typeof feed.healthScore !== 'number' || !Number.isFinite(feed.healthScore)) {
+                errors.push(`${prefix}.healthScore must be a finite number`);
+            } else if (feed.healthScore < 0 || feed.healthScore > 100) {
+                errors.push(`${prefix}.healthScore is ${feed.healthScore} — must be 0-100`);
+            }
+        }
+
+        // ISO timestamp validation for optional timestamp fields
+        if (feed.lastCheckedAt) {
+            if (!isValidIsoTimestamp(feed.lastCheckedAt)) {
+                errors.push(
+                    `${prefix}.lastCheckedAt "${feed.lastCheckedAt}" is not a valid canonical ISO-8601 timestamp`
+                );
+            }
+        }
+        if (feed.lastItemPublishedAt) {
+            if (!isValidIsoTimestamp(feed.lastItemPublishedAt)) {
+                errors.push(
+                    `${prefix}.lastItemPublishedAt "${feed.lastItemPublishedAt}" is not a valid canonical ISO-8601 timestamp`
+                );
+            }
+        }
+
+        // Cross-field: mediaType 'wire' should have at least 2 countries (typically)
+        if (feed.mediaType === 'wire' && Array.isArray(feed.countries) && feed.countries.length < 2) {
+            warnings.push(
+                `${prefix} is a wire service but has fewer than 2 countries — wire services typically serve multiple markets`
+            );
+        }
+
+        // Cross-field: 'description' should not be a single character or empty string after trim
+        if (feed.description !== undefined && feed.description !== null) {
+            if (feed.description.trim().length === 0) {
+                warnings.push(`${prefix}.description is present but empty — consider omitting or providing content`);
+            } else if (feed.description.trim().length < 10) {
+                warnings.push(`${prefix}.description is very short (< 10 chars) — consider expanding`);
+            }
+        }
     });
+
+    // Category coverage check — warn if a declared category has zero feeds
+    for (const cat of allowedCategories) {
+        const count = payload.feeds.filter(f => f.category === cat).length;
+        if (count === 0) {
+            warnings.push(`Category "${cat}" has zero feeds — consider sourcing or removing from allowed set`);
+        }
+    }
 
     // Integrity assertions on declared stats vs. computed reality
     if (payload.stats.feeds !== payload.feeds.length) {
@@ -213,7 +368,7 @@ async function main(): Promise<void> {
         } else {
             const ageDays = (Date.now() - parsed.getTime()) / (1000 * 60 * 60 * 24);
             if (ageDays > 365) {
-                errors.push(
+                warnings.push(
                     `generatedAt is ${ageDays.toFixed(0)} days old — bootstrap is stale (>365 days)`
                 );
             }
@@ -237,6 +392,12 @@ async function main(): Promise<void> {
         process.stdout.write(`- Sample warnings: ${warnings.slice(0, 10).join(' | ')}\n`);
     }
 
+    if (fixMode) {
+        await recomputeAndWrite(filePath, payload);
+        process.stdout.write('Validation passed after --fix.\n');
+        return;
+    }
+
     if (errors.length > 0) {
         process.stderr.write(`Validation failed with ${errors.length} error(s).\n`);
         process.stderr.write(`${errors.slice(0, 20).join('\n')}\n`);
@@ -251,3 +412,15 @@ main().catch((error: unknown) => {
     console.error(`[validate] Failed:`, error);
     process.exitCode = 1;
 });
+
+export {
+    findDuplicates,
+    isValidUrl,
+    isPublicHostname,
+    isLanguageCode,
+    isIsoCountryCode,
+    isValidIsoCountryCode,
+    isValidIsoTimestamp,
+    urlNormalizationIssues,
+    ISO_3166_ALPHA2,
+};

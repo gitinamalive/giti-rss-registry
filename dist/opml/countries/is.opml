@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: IS</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="Visir" title="Visir" xmlUrl="https://www.visir.is/apps/pbcs.dll/section?Category=FRETTIR&amp;Template=rss&amp;mime=xml" />
+  </body>
+</opml>

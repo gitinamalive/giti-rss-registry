@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Category: us</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="Du Rov&apos;s Channel" title="Du Rov&apos;s Channel" xmlUrl="https://rsshub.app/telegram/channel/durov" />
+    <outline type="rss" text="ESPN" title="ESPN" xmlUrl="https://sports.espn.go.com/espn/rss/news" />
+    <outline type="rss" text="Fox News" title="Fox News" xmlUrl="https://feeds.foxnews.com/foxnews/latest" />
+    <outline type="rss" text="NASA Breaking News" title="NASA Breaking News" xmlUrl="https://www.nasa.gov/news-release/feed/" />
+    <outline type="rss" text="NBC News" title="NBC News" xmlUrl="https://feeds.nbcnews.com/feeds/topstories" />
+    <outline type="rss" text="New York Times" title="New York Times" xmlUrl="https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" />
+    <outline type="rss" text="NPR News" title="NPR News" xmlUrl="https://feeds.npr.org/1001/rss.xml" />
+    <outline type="rss" text="NPR World" title="NPR World" xmlUrl="https://feeds.npr.org/1004/rss.xml" />
+    <outline type="rss" text="NSF News" title="NSF News" xmlUrl="https://www.nsf.gov/rss/rss_www_news.xml" />
+    <outline type="rss" text="NYT World" title="NYT World" xmlUrl="https://rss.nytimes.com/services/xml/rss/nyt/World.xml" />
+    <outline type="rss" text="ScienceDaily Top News" title="ScienceDaily Top News" xmlUrl="https://www.sciencedaily.com/rss/all.xml" />
+    <outline type="rss" text="The New Republic" title="The New Republic" xmlUrl="https://www.newrepublic.com/rss.xml" />
+    <outline type="rss" text="United Nations News" title="United Nations News" xmlUrl="https://news.un.org/feed/subscribe/en/news/all/rss.xml" />
+    <outline type="rss" text="Vox" title="Vox" xmlUrl="https://www.vox.com/rss/index.xml" />
+  </body>
+</opml>

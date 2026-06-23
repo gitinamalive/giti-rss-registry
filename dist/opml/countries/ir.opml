@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: IR</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="BBC News - Middle East" title="BBC News - Middle East" xmlUrl="https://feeds.bbci.co.uk/news/world/middle_east/rss.xml" />
+    <outline type="rss" text="IRNA News" title="IRNA News" xmlUrl="https://en.irna.ir/rss" />
+    <outline type="rss" text="Mehr News" title="Mehr News" xmlUrl="https://en.mehrnews.com/rss" />
+    <outline type="rss" text="Tabnak" title="Tabnak" xmlUrl="https://www.tabnak.ir/fa/rss/allnews" />
+    <outline type="rss" text="Tehran Times" title="Tehran Times" xmlUrl="https://www.tehrantimes.com/rss" />
+    <outline type="rss" text="The Guardian - Iran" title="The Guardian - Iran" xmlUrl="https://www.theguardian.com/world/iran/rss" />
+  </body>
+</opml>

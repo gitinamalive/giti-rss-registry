@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: NI</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="La Nueva Radio YA" title="La Nueva Radio YA" xmlUrl="https://nuevaya.com.ni/feed/" />
+  </body>
+</opml>

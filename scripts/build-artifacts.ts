@@ -116,7 +116,7 @@ function generateIndexHtml(feeds: FeedEntry[]): string {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Giti RSS Registry — ${feeds.length} Feeds</title>
+<title>Giti RSS Registry \u2014 ${feeds.length} Feeds</title>
 <style>
 :root{--bg:#f8f9fa;--card:#fff;--border:#dee2e6;--text:#212529;--muted:#6c757d;--link:#0d6efd;--green:#198754;--yellow:#fd7e14;--orange:#e8590c;--red:#dc3545;--radius:6px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -167,39 +167,39 @@ th,td{padding:.35rem .4rem}
 </head>
 <body>
 <header>
-<h1>📡 Giti RSS Registry <span class="badge">${feeds.length} feeds</span></h1>
-<div class="sub">Curated global news feed directory — filterable, sortable, open data</div>
+<h1>\u{1F4E1} Giti RSS Registry <span class="badge">${feeds.length} feeds</span></h1>
+<div class="sub">Curated global news feed directory \u2014 filterable, sortable, open data</div>
 </header>
 <div class="controls">
-<input type="search" id="search" placeholder="🔍  Search by name, publisher, description, or country…" aria-label="Search feeds">
+<input type="search" id="search" placeholder="\u{1F50D}  Search by name, publisher, description, or country\u2026" aria-label="Search feeds">
 <select id="filter-category" aria-label="Filter by category">
-<option value="">📂 All categories</option>
+<option value="">\u{1F4C2} All categories</option>
 ${catOpts}
 </select>
 <select id="filter-country" aria-label="Filter by country">
-<option value="">🌍 All countries</option>
+<option value="">\u{1F30D} All countries</option>
 ${countryOpts}
 </select>
 <select id="filter-language" aria-label="Filter by language">
-<option value="">🗣 All languages</option>
+<option value="">\u{1F5E3} All languages</option>
 ${langOpts}
 </select>
 <select id="filter-health" aria-label="Filter by health">
-<option value="">❤️ All health</option>
+<option value="">\u2764\uFE0F All health</option>
 <option value="100">Active (<7 days)</option>
-<option value="70">Stale (7–30 days)</option>
+<option value="70">Stale (7\u201330 days)</option>
 <option value="40">Very stale (>30 days)</option>
 <option value="0">Dead / unchecked</option>
 </select>
-<button class="btn btn-primary" id="export-csv" aria-label="Export filtered results as CSV">⬇ CSV</button>
-<button class="btn" id="reset-filters" aria-label="Reset all filters">↺ Reset</button>
+<button class="btn btn-primary" id="export-csv" aria-label="Export filtered results as CSV">\u2B07 CSV</button>
+<button class="btn" id="reset-filters" aria-label="Reset all filters">\u21BA Reset</button>
 </div>
 <div class="stats" id="stats"></div>
 <div class="table-wrap">
 <table id="feed-table" role="grid" aria-label="Feed registry">
 <thead>
 <tr>
-<th data-sort="name">Name <span class="sort-arrow">▼</span></th>
+<th data-sort="name">Name <span class="sort-arrow">\u25BC</span></th>
 <th data-sort="publisher">Publisher</th>
 <th data-sort="category">Category</th>
 <th data-sort="countries">Country</th>
@@ -212,9 +212,9 @@ ${langOpts}
 </table>
 </div>
 <footer>
-Generated ${new Date().toISOString().split('T')[0]} · 
-<a href="https://github.com/gitinamalive/giti/tree/develop/public-rss-registry">giti-rss-registry</a> · 
-MIT Licensed · <a href="feeds.json">Raw JSON</a> · <a href="feeds.csv">CSV</a> · <a href="opml/all.opml">OPML</a>
+Generated ${new Date().toISOString().split('T')[0]} \u00B7
+<a href="https://github.com/gitinamalive/giti-rss-registry">giti-rss-registry</a> \u00B7
+MIT Licensed \u00B7 <a href="feeds.json">Raw JSON</a> \u00B7 <a href="feeds.csv">CSV</a> \u00B7 <a href="opml/all.opml">OPML</a>
 </footer>
 <script>
 const ALL_FEEDS = ${feedsJson};
@@ -233,21 +233,21 @@ function render(feeds) {
     const score = f.healthScore ?? '';
     const scoreClass = score === 100 ? 'score-100' : score === 70 ? 'score-70' : score === 40 ? 'score-40' : score === 0 ? 'score-0' : '';
     const countries = (f.countries||[]).map(c => '<span class="country-tag">' + c + '</span>').join('');
-    const url = (f.url||'').substring(0, 80) + ((f.url||'').length > 80 ? '…' : '');
+    const url = (f.url||'').substring(0, 80) + ((f.url||'').length > 80 ? '\u2026' : '');
     return '<tr>' +
       '<td>' + (f.homepage ? '<a href="' + f.homepage + '" target="_blank" rel="noopener">' + esc(f.name) + '</a>' : esc(f.name)) + '</td>' +
       '<td>' + esc(f.publisher) + '</td>' +
       '<td>' + esc(f.category) + '</td>' +
       '<td>' + countries + '</td>' +
       '<td>' + esc(f.language) + '</td>' +
-      '<td>' + (scoreClass ? '<span class="score ' + scoreClass + '">' + score + '</span>' : '—') + '</td>' +
+      '<td>' + (scoreClass ? '<span class="score ' + scoreClass + '">' + score + '</span>' : '\u2014') + '</td>' +
       '<td class="url"><a href="' + escAttr(f.url) + '" target="_blank" rel="noopener" title="' + escAttr(f.url||'') + '">' + esc(url) + '</a></td>' +
       '</tr>';
   }).join('');
 }
 
-function esc(s) { return String(s||'').replace(/&/g,'&').replace(/</g,'<').replace(/>/g,'>').replace(/"/g,'"'); }
-function escAttr(s) { return String(s||'').replace(/&/g,'&').replace(/"/g,'"').replace(/'/g,'&#39;'); }
+function esc(s) { return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function escAttr(s) { return String(s??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
 
 function getFilters() {
   const search = ($('#search').value||'').toLowerCase();
@@ -309,11 +309,11 @@ $$('th[data-sort]').forEach(th => th.addEventListener('click', () => {
   const col = th.dataset.sort;
   if (col === sortCol) sortDir *= -1; else { sortCol = col; sortDir = 1; }
   $$('th .sort-arrow').forEach(a => a.textContent='');
-  th.querySelector('.sort-arrow').textContent = sortDir===1?'▼':'▲';
+  th.querySelector('.sort-arrow').textContent = sortDir===1?'\u25BC':'\u25B2';
   filterFeeds();
 }));
 render(ALL_FEEDS);
-</script>
+<\/script>
 </body>
 </html>`;
 }
@@ -335,7 +335,7 @@ async function main(): Promise<void> {
 
     const csvHeader = [
         'id', 'name', 'publisher', 'url', 'homepage', 'language', 'countries', 'region', 'category', 'tags',
-        'perspective', 'mediaType', 'format', 'official', 'active', 'lastCheckedAt', 'lastItemPublishedAt', 'healthScore', 'notes'
+        'perspective', 'mediaType', 'format', 'official', 'active', 'lastCheckedAt', 'lastItemPublishedAt', 'healthScore', 'notes', 'description'
     ].join(',');
     const csvRows = feeds.map((feed) => [
         feed.id,
@@ -356,7 +356,7 @@ async function main(): Promise<void> {
         feed.lastCheckedAt ?? '',
         feed.lastItemPublishedAt ?? '',
         feed.healthScore ?? '',
-        feed.notes ?? ''
+        feed.notes ?? '', feed.description ?? ''
     ].map(escapeCsv).join(','));
 
     await writeFile(resolve(distPath, 'feeds.csv'), `${csvHeader}\n${csvRows.join('\n')}\n`, 'utf8');
@@ -365,14 +365,14 @@ async function main(): Promise<void> {
     await writeJson('by-publisher.json', byPublisher);
     await writeJson('by-language.json', byLanguage);
 
-    await writeOpml('all.opml', 'Giti RSS Registry — All Feeds', feeds);
+    await writeOpml('all.opml', 'Giti RSS Registry \u2014 All Feeds', feeds);
 
     for (const [country, entries] of Object.entries(byCountry)) {
-        await writeOpml(`countries/${toFileSafeSegment(country)}.opml`, `Giti RSS Registry — Country: ${country}`, entries);
+        await writeOpml(`countries/${toFileSafeSegment(country)}.opml`, `Giti RSS Registry \u2014 Country: ${country}`, entries);
     }
 
     for (const [category, entries] of Object.entries(byCategory)) {
-        await writeOpml(`categories/${toFileSafeSegment(category)}.opml`, `Giti RSS Registry — Category: ${category}`, entries);
+        await writeOpml(`categories/${toFileSafeSegment(category)}.opml`, `Giti RSS Registry \u2014 Category: ${category}`, entries);
     }
 
     // Generate browsable HTML directory

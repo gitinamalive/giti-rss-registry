@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: FR</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="Euronews" title="Euronews" xmlUrl="https://www.euronews.com/rss?format=xml" />
+    <outline type="rss" text="France 24" title="France 24" xmlUrl="https://www.france24.com/en/rss" />
+    <outline type="rss" text="Le Monde" title="Le Monde" xmlUrl="https://www.lemonde.fr/en/rss/une.xml" />
+  </body>
+</opml>

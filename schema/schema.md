@@ -30,6 +30,7 @@ export interface FeedEntry {
   lastItemPublishedAt?: string; // ISO timestamp
   healthScore?: number; // 0..100
   notes?: string;
+  description?: string;
 }
 
 export type FeedFormat = 'rss' | 'atom' | 'jsonfeed' | 'rdf';
@@ -40,7 +41,8 @@ export type MediaType =
   | 'radio'
   | 'digital'
   | 'wire'
-  | 'aggregator';
+  | 'aggregator'
+  | 'broadcast';
 
 export type Perspective =
   | 'independent'
@@ -61,7 +63,11 @@ export type FeedCategory =
   | 'science'
   | 'climate'
   | 'politics'
-  | 'investigative';
+  | 'investigative'
+  | 'sports'
+  | 'entertainment'
+  | 'health'
+  | 'culture';
 ```
 
 ## Field requirements
@@ -120,50 +126,60 @@ Recommended bootstrap mapping:
 - `format`: infer heuristically from URL (`atom`, `jsonfeed`, `rdf`, else `rss`)
 - `mediaType`: default `digital`; set `aggregator` when perspective/category indicates aggregator behavior
 
-## Current population status (2026-06-22)
+## Current population status (2026-06-23)
+
+`description` is now declared on `FeedEntry` in `src/types.ts` and included in
+the server-side CSV output. ~33 feeds carry descriptions (the 20 added June 23
+plus 13 from earlier additions).
 
 The following optional fields are not yet populated in `data/feeds.json`:
 
 - `perspective` — reserved for future human-reviewed labeling
-- `homepage` — partially populated (13 feeds from 2026-06-22 addition)
-- `description` — partially populated (13 feeds from 2026-06-22 addition)
-- `official` — reserved
-- `active` — populated by automated health-check (`scripts/health-check.ts`)
-- `lastCheckedAt` — populated by automated health-check
-- `lastItemPublishedAt` — populated by automated health-check
-- `healthScore` — populated by automated health-check
 - `tags` — reserved
 - `region` — reserved
 - `notes` — reserved
+- `active`, `lastCheckedAt`, `lastItemPublishedAt`, `healthScore` — reserved
+  for automated health-check (`scripts/health-check.ts`, not yet wired to CI)
 
 Fields currently populated:
-- `mediaType` — predominantly `digital` (1 `broadcast`: France 24)
-- `format` — predominantly `rss` with a few `rdf` entries
+- `homepage` — ~33 feeds
+- `description` — ~33 feeds
+- `official` — OpenAI, DeepMind, WHO, and select public broadcasters
+- `mediaType` — `broadcast` (BBC, NPR, BBC Politics, NPR Politics/Health, DW, ABC AU, France 24);
+  `wire` (Reuters); `aggregator` (RealClearPolitics); rest `digital`
+- `format` — predominantly `rss` with a few `rdf`/`atom` entries
 
-Category distribution (post-2026-06-22 batch addition):
-- `world`: 127, `europe`: 52, `us`: 17, `technology`: 8,
-  `science`: 7, `finance`: 4, `investigative`: 3, `climate`: 1, `sports`: 1
-- `ai`, `space`, `politics`, `entertainment`, `health`, `culture` — 0 feeds each (no feeds yet assigned)
-- **Total feeds**: 217 (up from 206 after 11-feed batch addition)
+Category distribution (2026-06-23):
+- `world`: 143, `europe`: 41, `us`: 14, `ai`: 10, `technology`: 8,
+  `science`: 7, `politics`: 5, `health`: 5, `finance`: 3,
+  `investigative`: 3, `climate`: 1, `sports`: 1
+- `space`, `entertainment`, `culture` — 0 feeds each
+- **Total feeds**: 237 (up from 217 after 20-feed batch addition)
 
-### June 22, 2026 — 11 new feeds added
+### June 23, 2026 — 20 new feeds added
 
 | Feed | Category | Publisher | Country |
 |---|---|---|---|
-| BBC Science & Environment | science | BBC | GB |
-| ScienceDaily Top News | science | ScienceDaily | US |
-| Carbon Brief | climate | Carbon Brief | GB |
-| BBC Sport | sports | BBC | GB |
-| Africanews | world | Africanews | CG |
-| Latin America Reports | world | Latin America Reports | PE |
-| NSF News | science | NSF | US |
-| NASA Breaking News | science | NASA | US |
-| Phys.org | science | Phys.org | GB |
-| New Scientist | science | New Scientist | GB |
-| ANSA English | europe | ANSA | IT |
-
-These reflect the honest current state of the dataset and will change as the
-registry matures.
+| TechCrunch AI | ai | TechCrunch | US |
+| MIT Technology Review AI | ai | MIT | US |
+| VentureBeat AI | ai | VentureBeat | US |
+| OpenAI Blog | ai | OpenAI | US |
+| Google DeepMind Blog | ai | Google DeepMind | GB |
+| Hugging Face Blog | ai | Hugging Face | US |
+| MarkTechPost | ai | MarkTechPost | IN |
+| The Decoder | ai | The Decoder | DE |
+| Berkeley AI Research | ai | UC Berkeley | US |
+| The Keyword — AI | ai | Google | US |
+| The Hill | politics | The Hill | US |
+| NPR Politics | politics | NPR | US |
+| BBC Politics | politics | BBC | GB |
+| RealClearPolitics | politics | RealClearPolitics | US |
+| Roll Call | politics | Roll Call | US |
+| STAT News | health | STAT | US |
+| KFF Health News | health | KFF | US |
+| NPR Health (Shots) | health | NPR | US |
+| WHO News | health | WHO | CH |
+| ScienceDaily Health | health | ScienceDaily | US |
 
 ## Non-goals for schema v2
 

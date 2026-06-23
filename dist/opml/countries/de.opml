@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: DE</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="Der Spiegel — International" title="Der Spiegel — International" xmlUrl="https://www.spiegel.de/international/index.rss" />
+    <outline type="rss" text="Der Spiegel — Schlagzeilen" title="Der Spiegel — Schlagzeilen" xmlUrl="https://www.spiegel.de/schlagzeilen/index.rss" />
+    <outline type="rss" text="Deutsche Welle (EN)" title="Deutsche Welle (EN)" xmlUrl="https://rss.dw.com/rdf/rss-en-all" />
+    <outline type="rss" text="DIE WELT" title="DIE WELT" xmlUrl="https://www.welt.de/?service=Rss" />
+    <outline type="rss" text="Die Zeit" title="Die Zeit" xmlUrl="https://newsfeed.zeit.de/index" />
+    <outline type="rss" text="Euronews" title="Euronews" xmlUrl="https://www.euronews.com/rss?format=xml" />
+    <outline type="rss" text="Tagesschau" title="Tagesschau" xmlUrl="https://www.tagesschau.de/xml/rss2" />
+    <outline type="rss" text="The Decoder" title="The Decoder" xmlUrl="https://the-decoder.com/feed/" />
+  </body>
+</opml>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Category: ai</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="Berkeley AI Research Blog" title="Berkeley AI Research Blog" xmlUrl="https://bair.berkeley.edu/blog/feed.xml" />
+    <outline type="rss" text="Google — The Keyword: AI" title="Google — The Keyword: AI" xmlUrl="https://blog.google/technology/ai/rss/" />
+    <outline type="rss" text="Google DeepMind Blog" title="Google DeepMind Blog" xmlUrl="https://deepmind.google/blog/rss.xml" />
+    <outline type="rss" text="Hugging Face Blog" title="Hugging Face Blog" xmlUrl="https://huggingface.co/blog/feed.xml" />
+    <outline type="rss" text="MarkTechPost" title="MarkTechPost" xmlUrl="https://www.marktechpost.com/feed/" />
+    <outline type="rss" text="MIT Technology Review — AI" title="MIT Technology Review — AI" xmlUrl="https://www.technologyreview.com/topic/artificial-intelligence/feed/" />
+    <outline type="rss" text="OpenAI News" title="OpenAI News" xmlUrl="https://openai.com/news/rss.xml" />
+    <outline type="rss" text="TechCrunch — AI" title="TechCrunch — AI" xmlUrl="https://techcrunch.com/category/artificial-intelligence/feed/" />
+    <outline type="rss" text="The Decoder" title="The Decoder" xmlUrl="https://the-decoder.com/feed/" />
+    <outline type="rss" text="VentureBeat — AI" title="VentureBeat — AI" xmlUrl="https://venturebeat.com/category/ai/feed/" />
+  </body>
+</opml>

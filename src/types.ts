@@ -54,6 +54,7 @@ export interface FeedEntry {
   lastItemPublishedAt?: string;
   healthScore?: number;
   notes?: string;
+  description?: string;
 }
 
 export interface BootstrapPayload {

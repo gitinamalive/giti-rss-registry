@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Category: finance</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="Bloomberg Markets" title="Bloomberg Markets" xmlUrl="https://feeds.bloomberg.com/markets/news.rss" />
+    <outline type="rss" text="VnExpress Business" title="VnExpress Business" xmlUrl="http://vnexpress.net/rss/kinh-doanh.rss" />
+    <outline type="rss" text="Wall Street Journal" title="Wall Street Journal" xmlUrl="https://feeds.a.dj.com/rss/RSSWorldNews.xml" />
+  </body>
+</opml>

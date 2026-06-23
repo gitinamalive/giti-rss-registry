@@ -5,13 +5,17 @@ Thanks for helping improve the registry.
 ## How to Add a Feed
 
 1.  **Fork the repository** and create a new branch.
-2.  **Add your feed** to `data/feeds.json`.
-3.  **Run validation** locally:
+2.  **Add your feed** to the `feeds` array in `data/feeds.json`.
+3.  **Run validation with auto-fix** to update `stats`, `warnings`, and `generatedAt`:
     ```bash
     npm install
+    npm run validate -- --fix
+    ```
+4.  **Verify validation passes** without errors:
+    ```bash
     npm test
     ```
-4.  **Submit a Pull Request**.
+5.  **Submit a Pull Request**.
 
 ### Example Entry
 Add the following object to the `feeds` array in `data/feeds.json`:
