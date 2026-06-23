@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: RU</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="RIA Novosti" title="RIA Novosti" xmlUrl="https://ria.ru/export/rss2/index.xml" />
+    <outline type="rss" text="RT News" title="RT News" xmlUrl="https://rt.com/rss/news/" />
+    <outline type="rss" text="TASS" title="TASS" xmlUrl="https://tass.com/rss/v2.xml" />
+    <outline type="rss" text="The Moscow Times" title="The Moscow Times" xmlUrl="https://themoscowtimes.com/rss/news" />
+  </body>
+</opml>

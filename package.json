@@ -10,7 +10,9 @@
   "scripts": {
     "validate": "npx tsx scripts/validate.ts",
     "build": "npx tsx scripts/build-artifacts.ts",
-    "test": "npm run validate"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "keywords": [
     "rss",
@@ -21,7 +23,9 @@
   "author": "Giti Team",
   "license": "MIT",
   "devDependencies": {
+    "@vitest/coverage-v8": "^3.1.1",
     "tsx": "^4.7.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vitest": "^3.1.1"
   }
 }

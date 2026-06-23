@@ -1,0 +1,317 @@
+id,name,publisher,url,homepage,language,countries,region,category,tags,perspective,mediaType,format,official,active,lastCheckedAt,lastItemPublishedAt,healthScore,notes,description
+npr-d6bccb16,NPR World,NPR,https://feeds.npr.org/1004/rss.xml,,en,US,,us,,,digital,rss,,,,,,,
+al-jazeera-ecd16e1e,Al Jazeera,Al Jazeera,https://www.aljazeera.com/xml/rss/all.xml,,en,QA,,world,,,digital,rss,,,,,,,
+the-new-york-times-9ef86906,NYT World,The New York Times,https://rss.nytimes.com/services/xml/rss/nyt/World.xml,,en,US,,us,,,digital,rss,,,,,,,
+reuters-world-10fab0cc,Reuters World,Reuters World,https://www.reuters.com/arc/outboundfeeds/v1/rss/category/world/,,en,GB,,world,,,digital,rss,,,,,,,
+united-nations-news-b0e48c4e,United Nations News,United Nations News,https://news.un.org/feed/subscribe/en/news/all/rss.xml,,en,US,,us,,,digital,rss,,,,,,,
+bbc-3f05af4b,BBC World,BBC,https://feeds.bbci.co.uk/news/world/rss.xml,,en,GB,,europe,,,digital,rss,,,,,,,
+new-york-times-02951f34,New York Times,New York Times,https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml,,en,US,,us,,,digital,rss,,,,,,,
+fox-news-2a69efeb,Fox News,Fox News,https://feeds.foxnews.com/foxnews/latest,,en,US,,us,,,digital,rss,,,,,,,
+npr-3e088378,NPR News,NPR,https://feeds.npr.org/1001/rss.xml,,en,US,,us,,,digital,rss,,,,,,,
+wall-street-journal-0c6c512e,Wall Street Journal,Wall Street Journal,https://feeds.a.dj.com/rss/RSSWorldNews.xml,,en,US,,finance,,,digital,rss,,,,,,,
+the-guardian-ebe3f1d5,The Guardian,The Guardian,https://www.theguardian.com/world/rss,,en,GB,,europe,,,digital,rss,,,,,,,
+daily-mail-4a12363d,Daily Mail,Daily Mail,https://www.dailymail.co.uk/articles.rss,,en,GB,,europe,,,digital,rss,,,,,,,
+sky-news-e1e43675,Sky News,Sky News,https://feeds.skynews.com/feeds/rss/home.xml,,en,GB,,europe,,,digital,rss,,,,,,,
+global-news-2e21ce61,Global News,Global News,https://globalnews.ca/feed/,,en,CA,,world,,,digital,rss,,,,,,,
+abc-news-158fcc48,ABC News,ABC News,https://www.abc.net.au/news/feed/51120/rss.xml,,en,AU,,world,,,digital,rss,,,,,,,
+the-japan-times-1c3e4f26,The Japan Times,The Japan Times,https://www.japantimes.co.jp/feed/,,en,JP,,world,,,digital,rss,,,,,,,
+g1-11fa6d52,G1 (Globo),G1,https://g1.globo.com/rss/g1/,,pt,BR,,world,,,digital,rss,,,,,,,
+vanguard-news-108776b9,Vanguard News,Vanguard News,https://www.vanguardngr.com/category/national-news/feed/,,en,NG,,world,,,digital,rss,,,,,,,
+france-24-e1f73e0e,France 24,France 24,https://www.france24.com/en/rss,,en,FR,,europe,,,digital,rss,,,,,,,
+le-monde-fc3ded1a,Le Monde,Le Monde,https://www.lemonde.fr/en/rss/une.xml,,fr,FR,,europe,,,digital,rss,,,,,,,
+deutsche-welle-7c0d50d2,Deutsche Welle (EN),Deutsche Welle,https://rss.dw.com/rdf/rss-en-all,,de,DE,,europe,,,digital,rdf,,,,,,,
+der-spiegel-2bcc7bc8,Der Spiegel — International,Der Spiegel,https://www.spiegel.de/international/index.rss,,en,DE,,europe,,,digital,rss,,,,,,,
+the-hindu-a7a1378f,The Hindu,The Hindu,https://www.thehindu.com/news/national/feeder/default.rss,,en,IN,,world,,,digital,rss,,,,,,,
+sydney-morning-herald-89449064,Sydney Morning Herald,Sydney Morning Herald,https://www.smh.com.au/rss/feed.xml,,en,AU,,world,,,digital,rss,,,,,,,
+news-com-au-dbb4cf0d,News.com.au,News.com.au,https://www.news.com.au/content-feeds/latest-news-world/,,en,AU,,world,,,digital,rss,,,,,,,
+der-spiegel-7e6cdbaf,Der Spiegel — Schlagzeilen,Der Spiegel,https://www.spiegel.de/schlagzeilen/index.rss,,de,DE,,europe,,,digital,rss,,,,,,,
+tagesschau-68a09f16,Tagesschau,Tagesschau,https://www.tagesschau.de/xml/rss2,,de,DE,,europe,,,digital,rss,,,,,,,
+die-zeit-8957d1a5,Die Zeit,Die Zeit,https://newsfeed.zeit.de/index,,de,DE,,europe,,,digital,rss,,,,,,,
+euronews-698617a6,Euronews,Euronews,https://www.euronews.com/rss?format=xml,,fr,FR|DE|ES|IT|GB|PL|NL|BE|PT|GR|AT|HU|CZ|RO|BG|SE|DK|FI|IE|HR|SK|SI|LT|LV|EE|CY|MT|LU|NO,,europe,,,digital,rss,,,,,,,
+the-japan-times-49acef46,The Japan Times — Feed,The Japan Times,https://www.japantimes.co.jp/feed,,en,JP,,world,,,digital,rss,,,,,,,
+asahi-shimbun-de3a6e68,Asahi Shimbun,Asahi Shimbun,https://rss.asahi.com/rss/asahi/newsheadlines.rdf,,en,JP,,world,,,digital,rdf,,,,,,,
+times-of-india-96815df8,Times of India,Times of India,https://timesofindia.indiatimes.com/rssfeedstopstories.cms,,en,IN,,world,,,digital,rss,,,,,,,
+rt-news-b3b74514,RT News,RT News,https://rt.com/rss/news/,,en,RU,,world,,state-affiliated,digital,rss,,,,,,"Russian state-funded international broadcaster. US State Dept (2024): 'de facto arm of Russia's intelligence apparatus.' Sanctioned by US, UK, EU, Canada. Banned globally by Meta and YouTube. Parent company TV-Novosti designated under E.O. 14024.
+
+Sources:
+  [1] https://apnews.com/article/russia-putin-trump-sanctions-harris-rt-f7e3ff262fdf24695048cffe2529b937
+  [2] https://2021-2025.state.gov/alerting-the-world-to-rts-global-covert-activities/
+  [3] https://www.nbcnews.com/news/us-news/meta-bans-rt-russian-disinformation-rcna171402",
+tass-d931bcff,TASS,TASS,https://tass.com/rss/v2.xml,,en,RU,,world,,state-affiliated,digital,rss,,,,,,"Russian state news agency (TASS). Founded in 1904, government-owned and directly reflects Kremlin positions. Primary source of official Russian government statements and state narratives.
+
+Sources:
+  [1] https://rsf.org/en/country/russia
+  [2] https://en.wikipedia.org/wiki/TASS",
+the-moscow-times-349ba18f,The Moscow Times,The Moscow Times,https://themoscowtimes.com/rss/news,,en,RU,,world,,independent-exile,digital,rss,,,,,,"Independent Russian-language media relocated to the Netherlands after Russia's 2022 censorship laws imposing 15-year sentences for 'discrediting' the military. Declared 'undesirable organization' by Russian prosecutor general (July 2024), criminalizing cooperation. Reuters: 'one of the only Russia-based publications in English to maintain editorial independence.'
+
+Sources:
+  [1] https://www.reuters.com/world/europe/russia-declares-independent-news-site-moscow-times-undesirable-2024-07-10/
+  [2] https://www.themoscowtimes.com/2022/02/28/russia-blocks-number-of-independent-and-ukrainian-media-outlets-a76649",
+scmp-china-846d3d21,SCMP China,SCMP China,https://www.scmp.com/rss/91/feed,,en,CN,,world,,,digital,rss,,,,,,,
+china-daily-3df43fe7,China Daily,China Daily,https://www.chinadaily.com.cn/rss/china_rss.xml,,en,CN,,world,,state-affiliated,digital,rss,,,,,,"State-owned English-language newspaper of the Chinese government. Published by the Publicity Department of the Chinese Communist Party. RSF ranks China among the most restrictive media environments globally.
+
+Sources:
+  [1] https://rsf.org/en/country/china
+  [2] https://en.wikipedia.org/wiki/China_Daily",
+daily-nk-55b1eed9,Daily NK,Daily NK,https://www.dailynk.com/english/feed/,,en,KP,,world,,state-monitor,digital,rss,,,,,,"Seoul-based online newspaper specializing in North Korea reporting through a network of citizen reporters inside the DPRK. NED-funded but editorially independent per its Journalism Ethics Charter. Foreign Policy Research Institute scholar describes it as an 'indispensable outlet' for North Korea coverage.
+
+Sources:
+  [1] https://en.wikipedia.org/wiki/Daily_NK
+  [2] https://www.dailynk.com/english/how-we-report/
+  [3] https://grokipedia.com/page/Daily_NK",
+nk-news-9a6d9273,NK News,NK News,https://www.nknews.org/feed/,,en,KP,,world,,state-monitor,digital,rss,,,,,,"U.S.-based independent publication providing expert analysis and news on North Korea. Specialized in monitoring DPRK political, economic, and military developments. Cited by major outlets including Washington Post, BBC, and academic research.
+
+Sources:
+  [1] https://www.nknews.org/
+  [2] https://en.wikipedia.org/wiki/Daily_NK",
+tehran-times-100d939c,Tehran Times,Tehran Times,https://www.tehrantimes.com/rss,,en,IR,,world,,state-affiliated,digital,rss,,,,,,"English-language outlet under the Islamic Ideology Dissemination Organization (IIDO), a state body that supervises multiple Iranian state-linked media. State Media Monitor classifies it as state-controlled.
+
+Sources:
+  [1] https://statemediamonitor.com/category/globalliststatemedia/mena/middle-east/iran/
+  [2] https://rsf.org/en/country/iran",
+mehr-news-3af01666,Mehr News,Mehr News,https://en.mehrnews.com/rss,,en,IR,,world,,state-affiliated,digital,rss,,,,,,"Mehr News Agency is under the Islamic Ideology Dissemination Organization (IIDO), an Iranian state body. State Media Monitor classifies both Tehran Times and Mehr News under IIDO oversight.
+
+Sources:
+  [1] https://statemediamonitor.com/category/globalliststatemedia/mena/middle-east/iran/
+  [2] https://rsf.org/en/country/iran",
+bbc-news-middle-east-966b1f9c,BBC News - Middle East,BBC News - Middle East,https://feeds.bbci.co.uk/news/world/middle_east/rss.xml,,en,IL|IR|IQ|SA|AE|SY|JO|LB|YE|PS|BH|KW|OM|QA|EG,,world,,regional,digital,rss,,,,,,"BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.
+
+Sources:
+  [1] https://rsf.org/en/country/united-kingdom
+  [2] https://www.bbc.com/aboutthebbc/governance/charter",
+the-guardian-8fe8409b,The Guardian - Iran,The Guardian,https://www.theguardian.com/world/iran/rss,,en,IR,,world,,independent,digital,rss,,,,,,"Part of Guardian Media Group, owned by the Scott Trust — a structure designed to protect editorial independence in perpetuity. No shareholders, no proprietor. RSF ranks UK press environment as 'satisfactory' (24/180).
+
+Sources:
+  [1] https://rsf.org/en/country/united-kingdom
+  [2] https://www.theguardian.com/the-scott-trust",
+jerusalem-post-0b17825c,Jerusalem Post,Jerusalem Post,https://www.jpost.com/rss/rssfeedsheadlines.aspx,,en,IL,,world,,,digital,rss,,,,,,,
+allafrica-e4afdd7c,AllAfrica,AllAfrica,https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf,,en,ZA|NG|KE|ET|GH|TZ|UG|RW|SN|CI|CM|CD|AO|MZ|MG|ZW|ZM|MW|ML|BF|NE|TD|SD|SS|SO|ER|DJ|CF|CG|GA|GQ|BJ|TG|SL|LR|GN|GW|CV|GM|MR|LS|SZ|BW|NA|DZ|MA|TN|LY|EG,,world,,,digital,rdf,,,,,,,
+news24-e7e4e356,News24,News24,https://feeds.news24.com/articles/news24/TopStories/rss,,en,ZA,,world,,,digital,rss,,,,,,,
+mercopress-75406b7a,MercoPress,MercoPress,https://en.mercopress.com/rss,,en,AR|BR|UY|PY|CL|BO|PE|EC|CO|VE|GY|SR,,world,,,digital,rss,,,,,,,
+mexico-news-daily-e1f5f185,Mexico News Daily,Mexico News Daily,https://mexiconewsdaily.com/feed/,,en,MX,,world,,,digital,rss,,,,,,,
+the-rio-times-ec8ed07a,The Rio Times,The Rio Times,https://www.riotimesonline.com/feed/,,en,BR,,world,,,digital,rss,,,,,,,
+buenos-aires-times-3e5b28df,Buenos Aires Times,Buenos Aires Times,https://www.batimes.com.ar/feed,,en,AR,,world,,,digital,rss,,,,,,,
+sbs-news-b737fcec,SBS News,SBS News,https://www.sbs.com.au/news/feed,,en,AU,,world,,,digital,rss,,,,,,,
+rnz-pacific-5f172e7b,RNZ Pacific,RNZ Pacific,https://www.rnz.co.nz/rss/pacific.xml,,en,NZ,,world,,,digital,rss,,,,,,,
+rnz-national-95e71c83,RNZ National,RNZ National,https://www.rnz.co.nz/rss/national.xml,,en,NZ,,world,,,digital,rss,,,,,,,
+wired-e8034180,WIRED,WIRED,https://www.wired.com/feed/rss,,en,US,,technology,,,digital,rss,,,,,,,
+ars-technica-09cc00c5,Ars Technica,Ars Technica,https://feeds.arstechnica.com/arstechnica/index,,en,US,,technology,,,digital,rss,,,,,,,
+mit-technology-review-19ef1c77,MIT Technology Review,MIT Technology Review,https://www.technologyreview.com/feed/,,en,US,,technology,,,digital,rss,,,,,,,
+the-verge-e8d31cec,The Verge,The Verge,https://www.theverge.com/rss/index.xml,,en,US,,technology,,,digital,rss,,,,,,,
+techcrunch-2ef05e31,TechCrunch,TechCrunch,https://techcrunch.com/feed/,,en,US,,technology,,,digital,rss,,,,,,,
+bloomberg-markets-03c4eab0,Bloomberg Markets,Bloomberg Markets,https://feeds.bloomberg.com/markets/news.rss,,en,US,,finance,,,digital,rss,,,,,,,
+propublica-5b32fc6c,ProPublica,ProPublica,https://www.propublica.org/rss/,,en,US,,investigative,,,digital,rss,,,,,,,
+the-intercept-cc6c2f48,The Intercept,The Intercept,https://theintercept.com/feed/,,en,US,,investigative,,independent,digital,rss,,,,,,"Independent non-profit investigative journalism outlet founded by Glenn Greenwald, Laura Poitras, and Jeremy Scahill. Pulitzer Prize-winning reporting (NSA surveillance/Snowden). Funded by First Look Media, a non-profit organization.
+
+Sources:
+  [1] https://en.wikipedia.org/wiki/The_Intercept
+  [2] https://theintercept.com/about/",
+bellingcat-98c3c305,Bellingcat,Bellingcat,https://www.bellingcat.com/feed/,,en,NL,,investigative,,independent,digital,rss,,,,,,"Independent investigative collective based in the Netherlands. Specializes in open-source intelligence and fact-checking. Funded by grants and public donations. Multiple award-winning investigations including MH17, Skripal poisoning, and Syrian chemical weapons.
+
+Sources:
+  [1] https://www.bellingcat.com/about/
+  [2] https://en.wikipedia.org/wiki/Bellingcat",
+clarin-a3f5b97c,Clarin,Clarin,https://www.clarin.com/rss/lo-ultimo/,,es,AR,,world,,,digital,rss,,,,,,,
+uol-not-cias-a51f4337,UOL Notícias,UOL Notícias,https://rss.home.uol.com.br/index.xml,,pt,BR,,world,,,digital,rss,,,,,,,
+shorouk-1be484b3,Shorouk,Shorouk,https://www.shorouknews.com/columns/rss/,,ar,EG,,world,,,digital,rss,,,,,,,
+tabnak-b30db155,Tabnak,Tabnak,https://www.tabnak.ir/fa/rss/allnews,,fa,IR,,world,,,digital,rss,,,,,,,
+okezone-com-c1492079,okezone.com,okezone.com,https://sindikasi.okezone.com/index.php/rss/0/RSS2.0,,id,ID,,world,,,digital,rss,,,,,,,
+orient-daily-75e5c96f,Orient Daily,Orient Daily,https://feeds.feedburner.com/123greetings-daily-rss,,en,HK,,world,,,digital,rss,,,,,,,
+reforma-com-4ee63d5f,Reforma.com,Reforma.com,https://www.reforma.com/rss/portada.xml,,es,MX,,world,,,digital,rss,,,,,,,
+sana-3d39c5fb,SANA,SANA,https://www.sana.sy/tr/?feed=rss2,,ar,SY,,world,,state-affiliated,digital,rss,,,,,,"Syrian Arab News Agency (SANA) is the official state news agency of the Syrian Arab Republic. State-run and controlled by the Syrian Ministry of Information.
+
+Sources:
+  [1] https://rsf.org/en/country/syria
+  [2] https://en.wikipedia.org/wiki/Syrian_Arab_News_Agency",
+news-sanook-com-5bf6fe8c,news.sanook.com,news.sanook.com,https://rssfeeds.sanook.com/rss/feeds/sanook/news.crime.xml,,th,TH,,world,,,digital,rss,,,,,,,
+vatan-f4febb20,Vatan,Vatan,https://www.gazetevatan.com/rss/gundem.xml,,tr,TR,,world,,,digital,rss,,,,,,,
+vnexpress-business-982a1f04,VnExpress Business,VnExpress Business,http://vnexpress.net/rss/kinh-doanh.rss,,vi,VN,,finance,,,digital,rss,,,,,,,
+donga-sports-23035e23,Donga Sports,Donga Sports,https://rss.donga.com/sports.xml,,ko,KR,,world,,,digital,rss,,,,,,,
+the-new-republic-6746a13e,The New Republic,The New Republic,https://www.newrepublic.com/rss.xml,,en,US,,us,,,digital,rss,,,,,,,
+vox-7a56ec3c,Vox,Vox,https://www.vox.com/rss/index.xml,,en,US,,us,,,digital,rss,,,,,,,
+android-developers-a6106c0a,Android Developers,Android Developers,https://www.youtube.com/feeds/videos.xml?user=androiddevelopers,,en,US,,technology,,,digital,rss,,,,,,,
+expressen-b6d68045,Expressen,Expressen,https://www.expressen.se/rss/nyheter,,sv,SE,,europe,,,digital,rss,,,,,,,
+the-new-paper-89d71e99,The New Paper,The New Paper,https://www.tnp.sg/rss.xml,,en,SG,,world,,,digital,rss,,,,,,,
+daily-express-edc53d4b,Daily Express,Daily Express,https://feeds.feedburner.com/daily-express-news-showbiz,,ur,PK,,world,,,digital,rss,,,,,,,
+nbc-news-08d85777,NBC News,NBC News,https://feeds.nbcnews.com/feeds/topstories,,en,US,,us,,,digital,rss,,,,,,,
+azadi-radio-pashto-63895036,Azadi Radio Pashto,Azadi Radio Pashto,https://pa.azadiradio.org/api/epiqq,,en,AF,,world,,independent-exile,digital,rss,,,,,,"Radio Free Europe / Radio Liberty's Afghan Pashto-language service. RFE/RL is funded by the U.S. Agency for Global Media but operates with editorial independence under the International Broadcasting Act. Provides news to Afghanistan from abroad since Taliban restrictions on independent media.
+
+Sources:
+  [1] https://pressroom.rferl.org/about-rferl
+  [2] https://en.wikipedia.org/wiki/Radio_Free_Europe/Radio_Liberty",
+news-am-9d0bfeac,News.am,News.am,https://news.am/eng/rss/,,en,AM,,world,,,digital,rss,,,,,,,
+mercopress-argentina-bc195222,MercoPress Argentina,MercoPress Argentina,https://en.mercopress.com/rss/argentina,,en,AR,,world,,,digital,rss,,,,,,,
+krone-at-115e395e,Krone.at,Krone.at,https://www.krone.at/Nachrichten/rss.html,,de,AT,,europe,,,digital,rss,,,,,,,
+abc-a97fa181,ABC,ABC,https://www.abc.net.au/news/feed/46182/rss.xml,,en,AU,,world,,,digital,rss,,,,,,,
+day-az-19d2d7f0,Day.az,Day.az,https://news.day.az/rss/all.rss,,en,AZ,,world,,,digital,rss,,,,,,,
+dnevnik-ba-68e60b22,Dnevnik.ba,Dnevnik.ba,https://www.dnevnik.ba/rss.xml,,en,BA,,world,,,digital,rss,,,,,,,
+nation-news-2c189d51,Nation News,Nation News,https://www.nationnews.com/feed/rss,,en,BB,,world,,,digital,rss,,,,,,,
+kalerkantho-com-b415de52,Kalerkantho.com,Kalerkantho.com,http://www.kalerkantho.com/rss.xml,,en,BD,,world,,,digital,rss,,,,,,,
+la-libre-e535c244,La Libre,La Libre,https://www.lalibre.be/rss,,fr,BE,,europe,,,digital,rss,,,,,,,
+dnes-dir-bg-1913434a,Dnes Dir.bg,Dnes Dir.bg,http://dnes.dir.bg/support/cat_rss.php,,bg,BG,,europe,,,digital,rss,,,,,,,
+iwacu-affe9968,IWACU,IWACU,https://www.iwacu-burundi.org/feed/,,en,BI,,world,,,digital,rss,,,,,,,
+bernews-da96a2c6,Bernews,Bernews,https://bernews.com/tag/rory-field/feed/,,en,BM,,world,,,digital,rss,,,,,,,
+la-raz-n-ff3875ae,La Razón,La Razón,https://larazon.bo/feed/,,en,BO,,world,,,digital,rss,,,,,,,
+g1-globo-8d0acbd4,G1 Globo,G1 Globo,https://g1.globo.com/dynamo/rss2.xml,,pt,BR,,world,,,digital,rss,,,,,,,
+bahamas-press-d2c9ebd3,Bahamas Press,Bahamas Press,https://bahamaspress.com/feed/,,en,BS,,world,,,digital,rss,,,,,,,
+nasha-niva-414a3072,Nasha Niva,Nasha Niva,https://nn.by/?c=rss-all&lang=en,,en,BY,,world,,,digital,rss,,,,,,,
+cbc-news-064838cc,CBC News,CBC News,https://www.cbc.ca/cmlink/rss-topstories,,en,CA,,world,,,digital,rss,,,,,,,
+congo-planet-2cb570dc,Congo Planet,Congo Planet,https://www.congoplanet.com/feeds/rss_congo_africa.xml,,en,CD,,world,,,digital,rss,,,,,,,
+tages-anzeiger-5ce4888f,Tages Anzeiger,Tages Anzeiger,https://www.tagesanzeiger.ch/rss.html,,de,CH,,europe,,,digital,rss,,,,,,,
+biobiochile-3fea126e,BioBioChile,BioBioChile,https://feeds.feedburner.com/radiobiobio/NNeJ,,es,CL,,world,,,digital,rss,,,,,,,
+santiago-times-8e41411f,Santiago Times,Santiago Times,https://santiagotimes.cl/feed,,en,CL,,world,,,digital,rss,,,,,,,
+south-china-morning-post-e55a65bc,South China Morning Post,South China Morning Post,https://www.scmp.com/rss/4/feed,,en,CN,,world,,,digital,rss,,,,,,,
+el-colombiano-2bc910a9,El Colombiano,El Colombiano,https://www.elcolombiano.com/rss/inicio.xml,,es,CO,,world,,,digital,rss,,,,,,,
+colombia-reports-b99a35bc,Colombia Reports,Colombia Reports,https://colombiareports.com/feed,,en,CO,,world,,,digital,rss,,,,,,,
+el-financiero-8302247f,El Financiero,El Financiero,https://www.elfinancierocr.com/rss/,,en,CR,,world,,,digital,rss,,,,,,,
+sigma-live-c5a2ac04,Sigma Live,Sigma Live,http://www.sigmalive.com/rss,,el,CY,,europe,,,digital,rss,,,,,,,
+novinky-cz-70ca2807,Novinky.cz,Novinky.cz,https://www.novinky.cz/rss/,,cs,CZ,,europe,,,digital,rss,,,,,,,
+die-welt-bdd27309,DIE WELT,DIE WELT,https://www.welt.de/?service=Rss,,de,DE,,europe,,,digital,rss,,,,,,,
+la-nacion-7503d963,La Nacion,La Nacion,https://www.nacion.com/rss/,,es,CR,,world,,,digital,rss,,,,,,,
+borsen-f0ec3a22,Borsen.,Borsen.,https://borsen.dk/rss/,,da,DK,,europe,,,digital,rss,,,,,,,
+dominica-news-6137b690,Dominica News,Dominica News,https://dominicanewsonline.com/news/feed/,,en,DM,,world,,,digital,rss,,,,,,,
+almomento-net-281b0532,Almomento.net,Almomento.net,https://almomento.net/feed/,,en,DO,,world,,,digital,rss,,,,,,,
+algerie360-com-e9ede278,Algerie360.com,Algerie360.com,https://www.algerie360.com/feed/,,en,DZ,,world,,,digital,rss,,,,,,,
+el-comercio-69bf7e73,El Comercio,El Comercio,https://www.elcomercio.com/feed/,,en,EC,,world,,,digital,rss,,,,,,,
+postimees-9580dc13,Postimees,Postimees,https://www.postimees.ee/rss/,,et,EE,,europe,,,digital,rss,,,,,,,
+daily-news-egypt-98182a83,Daily News Egypt,Daily News Egypt,https://www.dailynewsegypt.com/feed,,en,EG,,world,,,digital,rss,,,,,,,
+asmarino-independent-e0181d41,Asmarino Independent,Asmarino Independent,https://asmarino.com/?format=feed&type=rss,,en,ER,,world,,,digital,rss,,,,,,,
+el-pais-617dc1de,EL PAIS,EL PAIS,https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada,,es,ES,,europe,,,digital,rss,,,,,,,
+voa-b6f7956e,VOA,VOA,https://amharic.voanews.com/podcast/,,en,ET,,world,,,digital,rss,,,,,,,
+iltalehti-fi-8ebadb91,Iltalehti.fi,Iltalehti.fi,https://www.iltalehti.fi/rss/uutiset.xml,,fi,FI,,europe,,,digital,rss,,,,,,,
+fbc-news-10cdbefd,FBC News,FBC News,https://fbcnews.com.fj/feed,,en,FJ,,world,,,digital,rss,,,,,,,
+kvf-faroe-islands-0c0ca6d5,KVF Faroe Islands,KVF Faroe Islands,https://kvf.fo/rss,,en,FO,,world,,,digital,rss,,,,,,,
+infos-gabon-99930956,Infos Gabon,Infos Gabon,https://fr.infosgabon.com/feed/,,en,GA,,world,,,digital,rss,,,,,,,
+bbc-0a2d7d7a,BBC,BBC,https://feeds.bbci.co.uk/news/rss.xml,,en,GB,,europe,,,digital,rss,,,,,,,
+ghana-mma-a1b18cfd,Ghana MMA,Ghana MMA,https://www.ghanamma.com/category/business/feed/,,en,GH,,world,,,digital,rss,,,,,,,
+gibraltar-chronicle-4d9e0c14,Gibraltar Chronicle,Gibraltar Chronicle,https://www.chronicle.gi/feed/,,en,GI,,world,,,digital,rss,,,,,,,
+point-c85c24e3,Point — The Gambia,Point,https://thepoint.gm/posts/rss/xml,,en,GM,,world,,,digital,rss,,,,,,,
+guineenews-d34b3ea0,Guineenews,Guineenews,https://guineenews.org/feed/,,en,GN,,world,,,digital,rss,,,,,,,
+in-gr-0b923e1f,in.gr,in.gr,http://rss.in.gr/Netvolution.Site.Engine.PageHandler.axd?rid=2&pid=250&la=1&si=1,,el,GR,,europe,,,digital,rss,,,,,,,
+prensa-libre-2555cfc1,Prensa Libre,Prensa Libre,https://www.prensalibre.com/feed,,es,GT,,world,,,digital,rss,,,,,,,
+kaieteur-news-64f614fe,Kaieteur News,Kaieteur News,https://www.kaieteurnewsonline.com/feed/,,en,GY,,world,,,digital,rss,,,,,,,
+hong-kong-free-press-5e45b072,Hong Kong Free Press,Hong Kong Free Press,https://hongkongfp.com/feed/,,en,HK,,world,,independent,digital,rss,,,,,,"Hong Kong-based non-profit, JTI-certified news outlet. No shareholders or share capital — run directly by journalistic staff. Journalism Trust Initiative certified in 2025 after 130-point external audit. SOPA award winner. Publishes annual financial transparency reports.
+
+Sources:
+  [1] https://hongkongfp.com/about/
+  [2] https://en.wikipedia.org/wiki/Hong_Kong_Free_Press",
+24sata-hr-629a3986,24sata.hr,24sata.hr,https://www.24sata.hr/feeds/news.xml,,hr,HR,,europe,,,digital,rss,,,,,,,
+haiti-libre-6a742fcd,Haiti Libre,Haiti Libre,https://www.haitilibre.com/rss-flash-en.xml,,en,HT,,world,,,digital,rss,,,,,,,
+index-d93ff4bc,Index,Index,https://index.hu/24ora/rss,,hu,HU,,europe,,,digital,rss,,,,,,,
+irish-independent-bb1e3229,Irish Independent,Irish Independent,https://www.independent.ie/irish-news/rss,,en,IE,,europe,,,digital,rss,,,,,,,
+ynet-aa480431,Ynet,Ynet,https://www.ynet.co.il/Integration/StoryRss3082.xml,,en,IL,,world,,,digital,rss,,,,,,,
+3fm-dd33aaf9,3FM,3FM,https://www.three.fm/news/isle-of-man-news/feed.xml,,en,IM,,world,,,digital,rss,,,,,,,
+ahewar-org-e0c08e67,Ahewar.org,Ahewar.org,https://www.ahewar.org/rss/default.asp?lt=7,,en,IQ,,world,,,digital,rss,,,,,,,
+irna-news-34bf5372,IRNA News,IRNA News,https://en.irna.ir/rss,,en,IR,,world,,state-affiliated,digital,rss,,,,,,"Official state news agency of the Islamic Republic of Iran. Operates under the Ministry of Culture and Islamic Guidance, which appoints its leadership. State Media Monitor reports 80%+ of budget sourced from government.
+
+Sources:
+  [1] https://statemediamonitor.com/2025/07/islamic-republic-news-agency-irna/
+  [2] https://rsf.org/en/country/iran
+  [3] https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency",
+visir-8ad84bc3,Visir,Visir,https://www.visir.is/apps/pbcs.dll/section?Category=FRETTIR&Template=rss&mime=xml,,is,IS,,world,,,digital,rss,,,,,,,
+la-repubblica-ed4b824e,La Repubblica,La Repubblica,https://www.repubblica.it/rss/homepage/rss2.0.xml,,it,IT,,europe,,,digital,rss,,,,,,,
+the-jamaica-star-d4fd8f52,The Jamaica Star,The Jamaica Star,http://jamaica-star.com/feed/news.xml,,en,JM,,world,,,digital,rss,,,,,,,
+jordan-zad-b6bc625c,Jordan Zad,Jordan Zad,https://www.jordanzad.com/rss.php?type=main,,en,JO,,world,,,digital,rss,,,,,,,
+nhk-4c3d8382,NHK,NHK,https://www.nhk.or.jp/rj/podcast/rss/english.xml,,en,JP,,world,,,digital,rss,,,,,,,
+standard-media-40f83369,Standard Media,Standard Media,https://www.standardmedia.co.ke/rss/business.php,,en,KE,,world,,,digital,rss,,,,,,,
+rfi-khmer-c876ba43,RFI Khmer,RFI Khmer,https://www.khmer.rfi.fr/cambodia/rss,,en,KH,,world,,,digital,rss,,,,,,,
+ziz-0702db50,ZIZ,ZIZ,https://zizonline.com/feed/,,en,KN,,world,,,digital,rss,,,,,,,
+cayman-news-service-5319e5ee,Cayman News Service,Cayman News Service,https://caymannewsservice.com/feed/,,en,KY,,world,,,digital,rss,,,,,,,
+tengri-news-0e6ec970,Tengri News,Tengri News,https://tengrinews.kz/news.rss,,en,KZ,,world,,,digital,rss,,,,,,,
+lanka-hot-news-8fe6d903,Lanka Hot News,Lanka Hot News,https://www.lankahotnews.net/feeds/posts/default?alt=rss,,en,LK,,world,,,digital,rss,,,,,,,
+delfi-43e415f3,DELFI — Lithuania,DELFI,https://www.delfi.lt/rss/feeds/lithuania.xml,,lt,LT,,europe,,,digital,rss,,,,,,,
+rtl-1b7f8ad0,RTL,RTL,https://rtl.lu/rss/headlines/,,lb,LU,,europe,,,digital,rss,,,,,,,
+delfi-d53fc8ed,DELFI — Latvia,DELFI,https://www.delfi.lv/rss.php,,lv,LV,,europe,,,digital,rss,,,,,,,
+hespress-62913d28,Hespress,Hespress,https://www.hespress.com/feed/index.rss,,en,MA,,world,,,digital,rss,,,,,,,
+point-6a33f6d2,Point — Moldova,Point,https://point.md/ru/rss/novosti/,,en,MD,,world,,,digital,rss,,,,,,,
+vijesti-6ba159a3,Vijesti,Vijesti,https://www.vijesti.me/rss,,en,ME,,world,,,digital,rss,,,,,,,
+madagascar-tribune-0f2f25aa,Madagascar Tribune,Madagascar Tribune,https://www.madagascar-tribune.com/spip.php?page=backend,,en,MG,,world,,,digital,rss,,,,,,,
+kajgana-34ee9243,Kajgana,Kajgana,https://kajgana.com/rss.xml,,en,MK,,world,,,digital,rss,,,,,,,
+journaldumali-com-abe4771a,JournalDuMali.com,JournalDuMali.com,https://www.journaldumali.com/rss/,,en,ML,,world,,,digital,rss,,,,,,,
+france-antilles-martinique-471b3214,France-Antilles Martinique,France-Antilles Martinique,https://www.martinique.franceantilles.fr/rss/lea_Une.xml,,en,MQ,,world,,,digital,rss,,,,,,,
+maurice-info-f9d950e8,Maurice Info,Maurice Info,https://maurice-info.mu/feed,,fr,MU,,world,,,digital,rss,,,,,,,
+sun-mv-6688cb2d,Sun.mv,Sun.mv,https://sun.mv/feed/,,en,MV,,world,,,digital,rss,,,,,,,
+nyasa-times-70efa8ae,Nyasa Times,Nyasa Times,https://www.nyasatimes.com/feed/,,en,MW,,world,,,digital,rss,,,,,,,
+the-namibian-1002b655,The Namibian,The Namibian,https://www.namibian.com.na/feed/,,en,NA,,world,,,digital,rss,,,,,,,
+premium-times-83c369c6,Premium Times,Premium Times,https://www.premiumtimesng.com/feed,,en,NG,,world,,,digital,rss,,,,,,,
+la-nueva-radio-ya-40dbe60e,La Nueva Radio YA,La Nueva Radio YA,https://nuevaya.com.ni/feed/,,en,NI,,world,,,digital,rss,,,,,,,
+nu-nl-b80230aa,nu.nl,nu.nl,https://www.nu.nl/feeds/rss/algemeen.rss,,nl,NL,,europe,,,digital,rss,,,,,,,
+vg-nett-6174cf0d,VG Nett,VG Nett,https://www.vg.no/rss/feed/?limit=10&format=rss&categories=&keywords=,,no,NO,,europe,,,digital,rss,,,,,,,
+onlinekhabar-com-075424bb,onlinekhabar.com,onlinekhabar.com,https://www.onlinekhabar.com/feed/,,en,NP,,world,,,digital,rss,,,,,,,
+nz-herald-3c694a12,NZ Herald,NZ Herald,https://rss.nzherald.co.nz/rss/xml/nzhrsscid_000000001.xml,,en,NZ,,world,,,digital,rss,,,,,,,
+central-america-data-3f3fbd8b,Central America Data,Central America Data,https://www.odditysoftware.com/database_feed_Central+America+Geocode+Data.htm,,en,PA,,world,,,digital,rss,,,,,,,
+el-comercio-per-c0d60a60,El Comercio Perú,El Comercio Perú,https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml,,en,PE,,world,,,digital,rss,,,,,,,
+tahiti-infos-64e2c50b,Tahiti Infos,Tahiti Infos,https://www.tahiti-infos.com/xml/syndication.rss,,en,PF,,world,,,digital,rss,,,,,,,
+philstar-headlines-b5f0dd03,Philstar Headlines,Philstar Headlines,https://www.philstar.com/rss/headlines,,en,PH,,world,,,digital,rss,,,,,,,
+gazeta-pl-8a4934cd,Gazeta.pl,Gazeta.pl,https://rss.gazeta.pl/pub/rss/wiadomosci.xml,,pl,PL,,europe,,,digital,rss,,,,,,,
+noti-uno-630-am-7b37529e,Noti Uno 630 AM,Noti Uno 630 AM,https://estrella51.blogspot.com/feeds/posts/default?alt=rss,,en,PR,,world,,,digital,rss,,,,,,,
+expresso-9bcf73a1,Expresso,Expresso,"https://rss.impresa.pt/feed/latest/expresso.rss?type=ARTICLE,VIDEO,GALLERY,STREAM,PLAYLIST,EVENT,NEWSLETTER&limit=20&pubsubhub=true",,pt,PT,,europe,,,digital,rss,,,,,,,
+abc-color-150e388a,ABC Color,ABC Color,https://www.abc.com.py/arc/outboundfeeds/rss/nacionales/,,es,PY,,world,,,digital,rss,,,,,,,
+adevarul-ro-7832868f,adevarul.ro,adevarul.ro,https://adevarul.ro/rss/,,ro,RO,,europe,,,digital,rss,,,,,,,
+blic-8d1ebbbc,Blic,Blic,https://www.blic.rs/rss/danasnje-vesti,,en,RS,,world,,,digital,rss,,,,,,,
+ria-novosti-78ca4795,RIA Novosti,RIA Novosti,https://ria.ru/export/rss2/index.xml,,en,RU,,world,,,digital,rss,,,,,,,
+solomon-times-d9ea069d,Solomon Times,Solomon Times,https://www.solomontimes.com/rss/latest-news.xml,,en,SB,,world,,,digital,rss,,,,,,,
+the-straits-times-48618888,The Straits Times,The Straits Times,https://www.straitstimes.com/news/world/rss.xml,,en,SG,,world,,,digital,rss,,,,,,,
+planet-siol-net-32ed4384,Planet Siol.net,Planet Siol.net,https://www.siol.net/rss.aspx?path=SiOL.Net,,sl,SI,,europe,,,digital,rss,,,,,,,
+aktuality-sk-11904f56,Aktuality.sk,Aktuality.sk,https://www.aktuality.sk/rss/,,sk,SK,,europe,,,digital,rss,,,,,,,
+giornale-sm-1e0abcdc,Giornale.sm,Giornale.sm,https://giornalesm.com/feed/,,en,SM,,world,,,digital,rss,,,,,,,
+leral-net-ed1a2c18,leral.net,leral.net,https://www.leral.net/xml/syndication.rss,,en,SN,,world,,,digital,rss,,,,,,,
+jowhar-com-bddf086d,Jowhar.com,Jowhar.com,https://www.jowhar.com/?feed=rss2&author=1,,en,SO,,world,,,digital,rss,,,,,,,
+starnieuws-601638b5,Starnieuws,Starnieuws,https://www.starnieuws.com/rss/starnieuws.rss,,en,SR,,world,,,digital,rss,,,,,,,
+leaders-com-tn-d5f2e2f8,leaders.com.tn,leaders.com.tn,https://www.leaders.com.tn/rss,,en,TN,,world,,,digital,rss,,,,,,,
+daily-news-91c8d08a,Daily News,Daily News,https://dailynews.co.tz/category/tanzania/feed,,en,TZ,,world,,,digital,rss,,,,,,,
+gazeta-ua-884b9280,Gazeta.ua,Gazeta.ua,https://gazeta.ua/ru/rss,,en,UA,,world,,,digital,rss,,,,,,,
+espn-b1ff08c3,ESPN,ESPN,https://sports.espn.go.com/espn/rss/news,,en,US,,us,,,digital,rss,,,,,,,
+el-observador-121f3682,El Observador,El Observador,https://www.elobservador.com.uy/rss/pages/ultimo-momento.xml,,en,UY,,world,,,digital,rss,,,,,,,
+gazeta-uz-42bf059e,Gazeta.uz,Gazeta.uz,https://www.gazeta.uz/rss/,,en,UZ,,world,,,digital,rss,,,,,,,
+vnexpress-international-1de9faa5,VNExpress International,VNExpress International,https://vnexpress.net/rss/tin-moi-nhat.rss,,en,VN,,world,,,digital,rss,,,,,,,
+zeri-info-81b3c094,ZERI.info,ZERI.info,https://zeri.info/rss/zerat,,en,XK,,world,,,digital,rss,,,,,,,
+mareb-press-4e621f90,Mareb Press,Mareb Press,https://marebpress.net/news_rss.php,,en,YE,,world,,,digital,rss,,,,,,,
+mail-guardian-eac78b61,Mail & Guardian,Mail & Guardian,https://mg.co.za/feed/,,en,ZA,,world,,,digital,rss,,,,,,,
+tumfweko-97b6f24e,Tumfweko,Tumfweko,https://tumfweko.com/feed/,,en,ZM,,world,,,digital,rss,,,,,,,
+durov-telegram-7f8a9b1c,Du Rov's Channel,Telegram,https://rsshub.app/telegram/channel/durov,,en,US,,us,,,digital,rss,,,,,,,
+mkbhd-youtube-5e4d3c2b,MKBHD,YouTube,https://rsshub.app/youtube/user/marquesbrownlee,,en,US,,technology,,,digital,rss,,,,,,,
+github-trending-1a2b3c4d,GitHub Trending,GitHub,https://rsshub.app/github/trending/daily/any,,en,US,,technology,,,digital,rss,,,,,,,
+bbc-science-environment-a97faa0a,BBC Science & Environment,BBC,https://feeds.bbci.co.uk/news/science_and_environment/rss.xml,https://www.bbc.com/news/science_and_environment,en,GB,,science,,,digital,rss,,,,,,,BBC News science and environment coverage
+sciencedaily-top-news-693abd6a,ScienceDaily Top News,ScienceDaily,https://www.sciencedaily.com/rss/all.xml,https://www.sciencedaily.com,en,US,,us,,,digital,rss,,,,,,,"Breaking science news and articles on global warming, extrasolar planets, stem cells, nanotechnology, evolution — from the world's leading universities and research organizations"
+carbon-brief-e0c7ff98,Carbon Brief,Carbon Brief,https://www.carbonbrief.org/feed/,https://www.carbonbrief.org,en,GB,,climate,,,digital,rss,,,,,,,"A data-driven climate journalism blog that explains global warming through clear analysis of climate science, energy, and policy"
+africanews-754d5800,Africanews,Africanews,https://www.africanews.com/feed/rss,https://www.africanews.com,en,CG,,world,,,digital,rss,,,,,,,"Pan-African news in English and French, part of the Euronews network"
+latin-america-reports-1ce2fbd0,Latin America Reports,Latin America Reports,https://latinamericareports.com/feed/,https://latinamericareports.com,en,PE,,world,,,digital,rss,,,,,,,On-the-ground reporting contextualizing Latin America's role in global affairs
+nsf-news-0534e5d2,NSF News,National Science Foundation,https://www.nsf.gov/rss/rss_www_news.xml,https://www.nsf.gov/news,en,US,,us,,,digital,rss,,,,,,,Latest articles about U.S. National Science Foundation discoveries and funding
+nasa-breaking-news-bcd83ac3,NASA Breaking News,NASA,https://www.nasa.gov/news-release/feed/,https://www.nasa.gov/news/releases/,en,US,,us,,,digital,rss,,,,,,,"NASA press releases and breaking news on space exploration, science, and technology"
+phys-org-ff4c7ba3,Phys.org,Phys.org,https://phys.org/rss-feed/,https://phys.org,en,GB,,science,,,digital,rss,,,,,,,"Daily science news on research developments, technological breakthroughs and the latest scientific innovations"
+new-scientist-9a506e18,New Scientist,New Scientist,https://www.newscientist.com/feed/home,https://www.newscientist.com,en,GB,,science,,,digital,rss,,,,,,,"Science news and long reads from expert journalists, covering science, technology, health and the environment"
+ansa-english-48611228,ANSA English,ANSA,https://www.ansa.it/english/english_rss.xml,https://www.ansa.it/english,en,IT,,europe,,,digital,rss,,,,,,,"Latest news from Italy and international politics, business, science, technology, lifestyle, and sports from ANSA"
+bbc-sport-7e17260f,BBC Sport,BBC,https://feeds.bbci.co.uk/sport/rss.xml,https://www.bbc.com/sport,en,GB,,sports,,,digital,rss,,,,,,,"BBC Sport — live scores, match reports, analysis, and sports news"
+techcrunch-84a591b7,TechCrunch — AI,TechCrunch,https://techcrunch.com/category/artificial-intelligence/feed/,https://techcrunch.com/category/artificial-intelligence/,en,US,,ai,,,digital,rss,,,,,,,Artificial-intelligence news and startup coverage from TechCrunch.
+mit-technology-review-186d715f,MIT Technology Review — AI,MIT Technology Review,https://www.technologyreview.com/topic/artificial-intelligence/feed/,https://www.technologyreview.com/topic/artificial-intelligence/,en,US,,ai,,,digital,rss,,,,,,,AI reporting and analysis from MIT Technology Review.
+venturebeat-b93450af,VentureBeat — AI,VentureBeat,https://venturebeat.com/category/ai/feed/,https://venturebeat.com/category/ai/,en,US,,ai,,,digital,rss,,,,,,,Enterprise AI news and analysis from VentureBeat.
+openai-3ae57466,OpenAI News,OpenAI,https://openai.com/news/rss.xml,https://openai.com/news/,en,US,,ai,,,digital,rss,true,,,,,,Official announcements and research updates from OpenAI.
+google-deepmind-0ea3c11e,Google DeepMind Blog,Google DeepMind,https://deepmind.google/blog/rss.xml,https://deepmind.google/blog/,en,GB,,ai,,,digital,rss,true,,,,,,Research and announcements from Google DeepMind.
+hugging-face-33e64987,Hugging Face Blog,Hugging Face,https://huggingface.co/blog/feed.xml,https://huggingface.co/blog,en,US,,ai,,,digital,rss,true,,,,,,Open-source machine-learning posts from Hugging Face.
+marktechpost-0f4dc4f0,MarkTechPost,MarkTechPost,https://www.marktechpost.com/feed/,https://www.marktechpost.com/,en,US,,ai,,,digital,rss,,,,,,,AI/ML research and tooling news.
+the-decoder-b2cfd8ab,The Decoder,The Decoder,https://the-decoder.com/feed/,https://the-decoder.com/,en,DE,,ai,,,digital,rss,,,,,,,English-language AI news and analysis published from Germany.
+berkeley-ai-research-560a3150,Berkeley AI Research Blog,Berkeley AI Research,https://bair.berkeley.edu/blog/feed.xml,https://bair.berkeley.edu/blog/,en,US,,ai,,,digital,atom,true,,,,,,Research posts from the Berkeley AI Research (BAIR) lab.
+google-c39414c5,Google — The Keyword: AI,Google,https://blog.google/technology/ai/rss/,https://blog.google/technology/ai/,en,US,,ai,,,digital,atom,true,,,,,,"AI news from Google's official blog, The Keyword."
+the-hill-101c9a9e,The Hill,The Hill,https://thehill.com/news/feed/,https://thehill.com/,en,US,,politics,,,digital,rss,,,,,,,"U.S. political news covering Congress, the White House, and campaigns."
+npr-08c3ace3,NPR Politics,NPR,https://feeds.npr.org/1014/rss.xml,https://www.npr.org/sections/politics/,en,US,,politics,,,broadcast,rss,,,,,,,NPR's coverage of U.S. and world politics.
+bbc-a9571967,BBC News — Politics,BBC,https://feeds.bbci.co.uk/news/politics/rss.xml,https://www.bbc.co.uk/news/politics,en,GB,,politics,,,broadcast,rss,,,,,,,UK and Westminster political news from the BBC.
+realclearpolitics-3cd34df8,RealClearPolitics,RealClearPolitics,https://www.realclearpolitics.com/index.xml,https://www.realclearpolitics.com/,en,US,,politics,,aggregator,aggregator,rss,,,,,,,"Aggregated U.S. political news, opinion, and polling."
+roll-call-7f999a27,Roll Call,Roll Call,https://rollcall.com/feed/,https://rollcall.com/,en,US,,politics,,,digital,rss,,,,,,,Capitol Hill and U.S. congressional news.
+stat-165bdc9c,STAT News,STAT,https://www.statnews.com/feed/,https://www.statnews.com/,en,US,,health,,,digital,rss,,,,,,,"Reporting on health, medicine, and the life sciences."
+kff-health-news-590eeb92,KFF Health News,KFF Health News,https://kffhealthnews.org/feed/,https://kffhealthnews.org/,en,US,,health,,,digital,rss,,,,,,,Nonprofit newsroom covering U.S. health policy and care.
+npr-b118fe82,NPR Health — Shots,NPR,https://feeds.npr.org/1128/rss.xml,https://www.npr.org/sections/health-shots/,en,US,,health,,,broadcast,rss,,,,,,,NPR's health news and the Shots blog.
+world-health-organization-5f74cfa7,WHO News,World Health Organization,https://www.who.int/rss-feeds/news-english.xml,https://www.who.int/news,en,CH,,health,,,digital,rss,true,,,,,,Official news releases from the World Health Organization.
+sciencedaily-8df9eb68,ScienceDaily — Health & Medicine,ScienceDaily,https://www.sciencedaily.com/rss/health_medicine.xml,https://www.sciencedaily.com/news/health_medicine/,en,US,,health,,,digital,rss,,,,,,,Health and medicine research news summaries.
+politico-821cd7dc,Politico,Politico,https://www.politico.com/rss/politicopicks.xml,https://www.politico.com,en,US,,politics,,,digital,rss,,,,,,,
+the-guardian-politics-fd15ffc1,The Guardian — Politics,The Guardian,https://www.theguardian.com/politics/rss,https://www.theguardian.com,en,GB,,politics,,,print,rss,,,,,,,
+vox-politics-4df45a26,Vox — Politics,Vox,https://www.vox.com/rss/politics/index.xml,https://www.vox.com,en,US,,politics,,,digital,rss,,,,,,,
+medpage-today-e8447c4c,MedPage Today,MedPage Today,https://www.medpagetoday.com/rss/headlines.xml,https://www.medpagetoday.com,en,US,,health,,,digital,rss,,,,,,,
+medical-news-today-31f68ac9,Medical News Today,Healthline Media,https://www.medicalnewstoday.com/newsfeeds-rss,https://www.medicalnewstoday.com,en,US|GB,,health,,,digital,rss,,,,,,,
+cdc-newsroom-55b13d0a,CDC Newsroom,CDC,https://tools.cdc.gov/api/v2/resources/media/132608.rss,https://www.cdc.gov,en,US,,health,,,digital,rss,true,,,,,,
+nih-news-releases-5a5273c6,NIH News Releases,National Institutes of Health,https://www.nih.gov/news-events/news-releases/feed.xml,https://www.nih.gov,en,US,,health,,,digital,rss,true,,,,,,
+the-lancet-global-health-d52d1cac,The Lancet — Global Health,The Lancet,https://www.thelancet.com/rssfeed/lancet_global_health.xml,https://www.thelancet.com,en,GB,,health,,,print,rss,,,,,,,
+fivethirtyeight-c0749426,FiveThirtyEight,FiveThirtyEight,https://fivethirtyeight.com/feed/,https://fivethirtyeight.com,en,US,,politics,,,digital,rss,,,,,,,
+the-intercept-329ed5cd,The Intercept,The Intercept,https://theintercept.com/feed/?lang=en,https://theintercept.com,en,US,,politics,,,digital,rss,,,,,,,
+mother-jones-763fd334,Mother Jones,Mother Jones,https://www.motherjones.com/feed/,https://www.motherjones.com,en,US,,politics,,,print,rss,,,,,,,
+the-spectator-b9855f10,The Spectator,The Spectator,https://www.spectator.co.uk/feed/,https://www.spectator.co.uk,en,GB,,politics,,,print,rss,,,,,,,

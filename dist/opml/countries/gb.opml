@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: GB</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="BBC" title="BBC" xmlUrl="https://feeds.bbci.co.uk/news/rss.xml" />
+    <outline type="rss" text="BBC News — Politics" title="BBC News — Politics" xmlUrl="https://feeds.bbci.co.uk/news/politics/rss.xml" />
+    <outline type="rss" text="BBC Science &amp; Environment" title="BBC Science &amp; Environment" xmlUrl="https://feeds.bbci.co.uk/news/science_and_environment/rss.xml" />
+    <outline type="rss" text="BBC Sport" title="BBC Sport" xmlUrl="https://feeds.bbci.co.uk/sport/rss.xml" />
+    <outline type="rss" text="BBC World" title="BBC World" xmlUrl="https://feeds.bbci.co.uk/news/world/rss.xml" />
+    <outline type="rss" text="Carbon Brief" title="Carbon Brief" xmlUrl="https://www.carbonbrief.org/feed/" />
+    <outline type="rss" text="Daily Mail" title="Daily Mail" xmlUrl="https://www.dailymail.co.uk/articles.rss" />
+    <outline type="rss" text="Euronews" title="Euronews" xmlUrl="https://www.euronews.com/rss?format=xml" />
+    <outline type="rss" text="Google DeepMind Blog" title="Google DeepMind Blog" xmlUrl="https://deepmind.google/blog/rss.xml" />
+    <outline type="rss" text="Medical News Today" title="Medical News Today" xmlUrl="https://www.medicalnewstoday.com/newsfeeds-rss" />
+    <outline type="rss" text="New Scientist" title="New Scientist" xmlUrl="https://www.newscientist.com/feed/home" />
+    <outline type="rss" text="Phys.org" title="Phys.org" xmlUrl="https://phys.org/rss-feed/" />
+    <outline type="rss" text="Reuters World" title="Reuters World" xmlUrl="https://www.reuters.com/arc/outboundfeeds/v1/rss/category/world/" />
+    <outline type="rss" text="Sky News" title="Sky News" xmlUrl="https://feeds.skynews.com/feeds/rss/home.xml" />
+    <outline type="rss" text="The Guardian" title="The Guardian" xmlUrl="https://www.theguardian.com/world/rss" />
+    <outline type="rss" text="The Guardian — Politics" title="The Guardian — Politics" xmlUrl="https://www.theguardian.com/politics/rss" />
+    <outline type="rss" text="The Lancet — Global Health" title="The Lancet — Global Health" xmlUrl="https://www.thelancet.com/rssfeed/lancet_global_health.xml" />
+    <outline type="rss" text="The Spectator" title="The Spectator" xmlUrl="https://www.spectator.co.uk/feed/" />
+  </body>
+</opml>

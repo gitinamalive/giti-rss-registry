@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-23T00:46:49.949Z",
+  "generatedAt": "2026-06-23T14:21:03.470Z",
   "source": "public-rss-registry/data/feeds.json (hand-curated)",
   "stats": {
-    "feeds": 217,
+    "feeds": 249,
     "duplicateIds": 0,
     "duplicateUrls": 0
   },
@@ -2986,6 +2986,484 @@
       "format": "rss",
       "homepage": "https://www.bbc.com/sport",
       "description": "BBC Sport — live scores, match reports, analysis, and sports news"
+    },
+    {
+      "id": "techcrunch-84a591b7",
+      "name": "TechCrunch — AI",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "homepage": "https://techcrunch.com/category/artificial-intelligence/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "Artificial-intelligence news and startup coverage from TechCrunch.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mit-technology-review-186d715f",
+      "name": "MIT Technology Review — AI",
+      "publisher": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+      "homepage": "https://www.technologyreview.com/topic/artificial-intelligence/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "AI reporting and analysis from MIT Technology Review.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "venturebeat-b93450af",
+      "name": "VentureBeat — AI",
+      "publisher": "VentureBeat",
+      "url": "https://venturebeat.com/category/ai/feed/",
+      "homepage": "https://venturebeat.com/category/ai/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "Enterprise AI news and analysis from VentureBeat.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "openai-3ae57466",
+      "name": "OpenAI News",
+      "publisher": "OpenAI",
+      "url": "https://openai.com/news/rss.xml",
+      "homepage": "https://openai.com/news/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "Official announcements and research updates from OpenAI.",
+      "mediaType": "digital",
+      "format": "rss",
+      "official": true
+    },
+    {
+      "id": "google-deepmind-0ea3c11e",
+      "name": "Google DeepMind Blog",
+      "publisher": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "homepage": "https://deepmind.google/blog/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "ai",
+      "description": "Research and announcements from Google DeepMind.",
+      "mediaType": "digital",
+      "format": "rss",
+      "official": true
+    },
+    {
+      "id": "hugging-face-33e64987",
+      "name": "Hugging Face Blog",
+      "publisher": "Hugging Face",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "homepage": "https://huggingface.co/blog",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "Open-source machine-learning posts from Hugging Face.",
+      "mediaType": "digital",
+      "format": "rss",
+      "official": true
+    },
+    {
+      "id": "marktechpost-0f4dc4f0",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "url": "https://www.marktechpost.com/feed/",
+      "homepage": "https://www.marktechpost.com/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "AI/ML research and tooling news.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-decoder-b2cfd8ab",
+      "name": "The Decoder",
+      "publisher": "The Decoder",
+      "url": "https://the-decoder.com/feed/",
+      "homepage": "https://the-decoder.com/",
+      "language": "en",
+      "countries": [
+        "DE"
+      ],
+      "category": "ai",
+      "description": "English-language AI news and analysis published from Germany.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "berkeley-ai-research-560a3150",
+      "name": "Berkeley AI Research Blog",
+      "publisher": "Berkeley AI Research",
+      "url": "https://bair.berkeley.edu/blog/feed.xml",
+      "homepage": "https://bair.berkeley.edu/blog/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "Research posts from the Berkeley AI Research (BAIR) lab.",
+      "mediaType": "digital",
+      "format": "atom",
+      "official": true
+    },
+    {
+      "id": "google-c39414c5",
+      "name": "Google — The Keyword: AI",
+      "publisher": "Google",
+      "url": "https://blog.google/technology/ai/rss/",
+      "homepage": "https://blog.google/technology/ai/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "AI news from Google's official blog, The Keyword.",
+      "mediaType": "digital",
+      "format": "atom",
+      "official": true
+    },
+    {
+      "id": "the-hill-101c9a9e",
+      "name": "The Hill",
+      "publisher": "The Hill",
+      "url": "https://thehill.com/news/feed/",
+      "homepage": "https://thehill.com/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "description": "U.S. political news covering Congress, the White House, and campaigns.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "npr-08c3ace3",
+      "name": "NPR Politics",
+      "publisher": "NPR",
+      "url": "https://feeds.npr.org/1014/rss.xml",
+      "homepage": "https://www.npr.org/sections/politics/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "description": "NPR's coverage of U.S. and world politics.",
+      "mediaType": "broadcast",
+      "format": "rss"
+    },
+    {
+      "id": "bbc-a9571967",
+      "name": "BBC News — Politics",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/news/politics/rss.xml",
+      "homepage": "https://www.bbc.co.uk/news/politics",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "politics",
+      "description": "UK and Westminster political news from the BBC.",
+      "mediaType": "broadcast",
+      "format": "rss"
+    },
+    {
+      "id": "realclearpolitics-3cd34df8",
+      "name": "RealClearPolitics",
+      "publisher": "RealClearPolitics",
+      "url": "https://www.realclearpolitics.com/index.xml",
+      "homepage": "https://www.realclearpolitics.com/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "description": "Aggregated U.S. political news, opinion, and polling.",
+      "mediaType": "aggregator",
+      "format": "rss",
+      "perspective": "aggregator"
+    },
+    {
+      "id": "roll-call-7f999a27",
+      "name": "Roll Call",
+      "publisher": "Roll Call",
+      "url": "https://rollcall.com/feed/",
+      "homepage": "https://rollcall.com/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "description": "Capitol Hill and U.S. congressional news.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "stat-165bdc9c",
+      "name": "STAT News",
+      "publisher": "STAT",
+      "url": "https://www.statnews.com/feed/",
+      "homepage": "https://www.statnews.com/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "description": "Reporting on health, medicine, and the life sciences.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "kff-health-news-590eeb92",
+      "name": "KFF Health News",
+      "publisher": "KFF Health News",
+      "url": "https://kffhealthnews.org/feed/",
+      "homepage": "https://kffhealthnews.org/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "description": "Nonprofit newsroom covering U.S. health policy and care.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "npr-b118fe82",
+      "name": "NPR Health — Shots",
+      "publisher": "NPR",
+      "url": "https://feeds.npr.org/1128/rss.xml",
+      "homepage": "https://www.npr.org/sections/health-shots/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "description": "NPR's health news and the Shots blog.",
+      "mediaType": "broadcast",
+      "format": "rss"
+    },
+    {
+      "id": "world-health-organization-5f74cfa7",
+      "name": "WHO News",
+      "publisher": "World Health Organization",
+      "url": "https://www.who.int/rss-feeds/news-english.xml",
+      "homepage": "https://www.who.int/news",
+      "language": "en",
+      "countries": [
+        "CH"
+      ],
+      "category": "health",
+      "description": "Official news releases from the World Health Organization.",
+      "mediaType": "digital",
+      "format": "rss",
+      "official": true
+    },
+    {
+      "id": "sciencedaily-8df9eb68",
+      "name": "ScienceDaily — Health & Medicine",
+      "publisher": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/rss/health_medicine.xml",
+      "homepage": "https://www.sciencedaily.com/news/health_medicine/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "description": "Health and medicine research news summaries.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "politico-821cd7dc",
+      "name": "Politico",
+      "publisher": "Politico",
+      "url": "https://www.politico.com/rss/politicopicks.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "homepage": "https://www.politico.com",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-guardian-politics-fd15ffc1",
+      "name": "The Guardian — Politics",
+      "publisher": "The Guardian",
+      "url": "https://www.theguardian.com/politics/rss",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "politics",
+      "homepage": "https://www.theguardian.com",
+      "mediaType": "print",
+      "format": "rss"
+    },
+    {
+      "id": "vox-politics-4df45a26",
+      "name": "Vox — Politics",
+      "publisher": "Vox",
+      "url": "https://www.vox.com/rss/politics/index.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "homepage": "https://www.vox.com",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "medpage-today-e8447c4c",
+      "name": "MedPage Today",
+      "publisher": "MedPage Today",
+      "url": "https://www.medpagetoday.com/rss/headlines.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "homepage": "https://www.medpagetoday.com",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "medical-news-today-31f68ac9",
+      "name": "Medical News Today",
+      "publisher": "Healthline Media",
+      "url": "https://www.medicalnewstoday.com/newsfeeds-rss",
+      "language": "en",
+      "countries": [
+        "US",
+        "GB"
+      ],
+      "category": "health",
+      "homepage": "https://www.medicalnewstoday.com",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "cdc-newsroom-55b13d0a",
+      "name": "CDC Newsroom",
+      "publisher": "CDC",
+      "url": "https://tools.cdc.gov/api/v2/resources/media/132608.rss",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "homepage": "https://www.cdc.gov",
+      "mediaType": "digital",
+      "format": "rss",
+      "official": true
+    },
+    {
+      "id": "nih-news-releases-5a5273c6",
+      "name": "NIH News Releases",
+      "publisher": "National Institutes of Health",
+      "url": "https://www.nih.gov/news-events/news-releases/feed.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "homepage": "https://www.nih.gov",
+      "mediaType": "digital",
+      "format": "rss",
+      "official": true
+    },
+    {
+      "id": "the-lancet-global-health-d52d1cac",
+      "name": "The Lancet — Global Health",
+      "publisher": "The Lancet",
+      "url": "https://www.thelancet.com/rssfeed/lancet_global_health.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "health",
+      "homepage": "https://www.thelancet.com",
+      "mediaType": "print",
+      "format": "rss"
+    },
+    {
+      "id": "fivethirtyeight-c0749426",
+      "name": "FiveThirtyEight",
+      "publisher": "FiveThirtyEight",
+      "url": "https://fivethirtyeight.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://fivethirtyeight.com"
+    },
+    {
+      "id": "the-intercept-329ed5cd",
+      "name": "The Intercept",
+      "publisher": "The Intercept",
+      "url": "https://theintercept.com/feed/?lang=en",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://theintercept.com"
+    },
+    {
+      "id": "mother-jones-763fd334",
+      "name": "Mother Jones",
+      "publisher": "Mother Jones",
+      "url": "https://www.motherjones.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.motherjones.com"
+    },
+    {
+      "id": "the-spectator-b9855f10",
+      "name": "The Spectator",
+      "publisher": "The Spectator",
+      "url": "https://www.spectator.co.uk/feed/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "politics",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.spectator.co.uk"
     }
   ]
 }

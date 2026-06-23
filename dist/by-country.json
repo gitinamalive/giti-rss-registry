@@ -1,0 +1,8551 @@
+{
+  "AE": [
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    }
+  ],
+  "AF": [
+    {
+      "id": "azadi-radio-pashto-63895036",
+      "name": "Azadi Radio Pashto",
+      "publisher": "Azadi Radio Pashto",
+      "url": "https://pa.azadiradio.org/api/epiqq",
+      "language": "en",
+      "countries": [
+        "AF"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent-exile",
+      "notes": "Radio Free Europe / Radio Liberty's Afghan Pashto-language service. RFE/RL is funded by the U.S. Agency for Global Media but operates with editorial independence under the International Broadcasting Act. Provides news to Afghanistan from abroad since Taliban restrictions on independent media.\n\nSources:\n  [1] https://pressroom.rferl.org/about-rferl\n  [2] https://en.wikipedia.org/wiki/Radio_Free_Europe/Radio_Liberty"
+    }
+  ],
+  "AM": [
+    {
+      "id": "news-am-9d0bfeac",
+      "name": "News.am",
+      "publisher": "News.am",
+      "url": "https://news.am/eng/rss/",
+      "language": "en",
+      "countries": [
+        "AM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "AO": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "AR": [
+    {
+      "id": "buenos-aires-times-3e5b28df",
+      "name": "Buenos Aires Times",
+      "publisher": "Buenos Aires Times",
+      "url": "https://www.batimes.com.ar/feed",
+      "language": "en",
+      "countries": [
+        "AR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "clarin-a3f5b97c",
+      "name": "Clarin",
+      "publisher": "Clarin",
+      "url": "https://www.clarin.com/rss/lo-ultimo/",
+      "language": "es",
+      "countries": [
+        "AR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mercopress-75406b7a",
+      "name": "MercoPress",
+      "publisher": "MercoPress",
+      "url": "https://en.mercopress.com/rss",
+      "language": "en",
+      "countries": [
+        "AR",
+        "BR",
+        "UY",
+        "PY",
+        "CL",
+        "BO",
+        "PE",
+        "EC",
+        "CO",
+        "VE",
+        "GY",
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mercopress-argentina-bc195222",
+      "name": "MercoPress Argentina",
+      "publisher": "MercoPress Argentina",
+      "url": "https://en.mercopress.com/rss/argentina",
+      "language": "en",
+      "countries": [
+        "AR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "AT": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "krone-at-115e395e",
+      "name": "Krone.at",
+      "publisher": "Krone.at",
+      "url": "https://www.krone.at/Nachrichten/rss.html",
+      "language": "de",
+      "countries": [
+        "AT"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "AU": [
+    {
+      "id": "abc-a97fa181",
+      "name": "ABC",
+      "publisher": "ABC",
+      "url": "https://www.abc.net.au/news/feed/46182/rss.xml",
+      "language": "en",
+      "countries": [
+        "AU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "abc-news-158fcc48",
+      "name": "ABC News",
+      "publisher": "ABC News",
+      "url": "https://www.abc.net.au/news/feed/51120/rss.xml",
+      "language": "en",
+      "countries": [
+        "AU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "news-com-au-dbb4cf0d",
+      "name": "News.com.au",
+      "publisher": "News.com.au",
+      "url": "https://www.news.com.au/content-feeds/latest-news-world/",
+      "language": "en",
+      "countries": [
+        "AU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "sbs-news-b737fcec",
+      "name": "SBS News",
+      "publisher": "SBS News",
+      "url": "https://www.sbs.com.au/news/feed",
+      "language": "en",
+      "countries": [
+        "AU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "sydney-morning-herald-89449064",
+      "name": "Sydney Morning Herald",
+      "publisher": "Sydney Morning Herald",
+      "url": "https://www.smh.com.au/rss/feed.xml",
+      "language": "en",
+      "countries": [
+        "AU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "AZ": [
+    {
+      "id": "day-az-19d2d7f0",
+      "name": "Day.az",
+      "publisher": "Day.az",
+      "url": "https://news.day.az/rss/all.rss",
+      "language": "en",
+      "countries": [
+        "AZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "BA": [
+    {
+      "id": "dnevnik-ba-68e60b22",
+      "name": "Dnevnik.ba",
+      "publisher": "Dnevnik.ba",
+      "url": "https://www.dnevnik.ba/rss.xml",
+      "language": "en",
+      "countries": [
+        "BA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "BB": [
+    {
+      "id": "nation-news-2c189d51",
+      "name": "Nation News",
+      "publisher": "Nation News",
+      "url": "https://www.nationnews.com/feed/rss",
+      "language": "en",
+      "countries": [
+        "BB"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "BD": [
+    {
+      "id": "kalerkantho-com-b415de52",
+      "name": "Kalerkantho.com",
+      "publisher": "Kalerkantho.com",
+      "url": "http://www.kalerkantho.com/rss.xml",
+      "language": "en",
+      "countries": [
+        "BD"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "BE": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "la-libre-e535c244",
+      "name": "La Libre",
+      "publisher": "La Libre",
+      "url": "https://www.lalibre.be/rss",
+      "language": "fr",
+      "countries": [
+        "BE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "BF": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "BG": [
+    {
+      "id": "dnes-dir-bg-1913434a",
+      "name": "Dnes Dir.bg",
+      "publisher": "Dnes Dir.bg",
+      "url": "http://dnes.dir.bg/support/cat_rss.php",
+      "language": "bg",
+      "countries": [
+        "BG"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "BH": [
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    }
+  ],
+  "BI": [
+    {
+      "id": "iwacu-affe9968",
+      "name": "IWACU",
+      "publisher": "IWACU",
+      "url": "https://www.iwacu-burundi.org/feed/",
+      "language": "en",
+      "countries": [
+        "BI"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "BJ": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "BM": [
+    {
+      "id": "bernews-da96a2c6",
+      "name": "Bernews",
+      "publisher": "Bernews",
+      "url": "https://bernews.com/tag/rory-field/feed/",
+      "language": "en",
+      "countries": [
+        "BM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "BO": [
+    {
+      "id": "la-raz-n-ff3875ae",
+      "name": "La Razón",
+      "publisher": "La Razón",
+      "url": "https://larazon.bo/feed/",
+      "language": "en",
+      "countries": [
+        "BO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mercopress-75406b7a",
+      "name": "MercoPress",
+      "publisher": "MercoPress",
+      "url": "https://en.mercopress.com/rss",
+      "language": "en",
+      "countries": [
+        "AR",
+        "BR",
+        "UY",
+        "PY",
+        "CL",
+        "BO",
+        "PE",
+        "EC",
+        "CO",
+        "VE",
+        "GY",
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "BR": [
+    {
+      "id": "g1-11fa6d52",
+      "name": "G1 (Globo)",
+      "publisher": "G1",
+      "url": "https://g1.globo.com/rss/g1/",
+      "language": "pt",
+      "countries": [
+        "BR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "g1-globo-8d0acbd4",
+      "name": "G1 Globo",
+      "publisher": "G1 Globo",
+      "url": "https://g1.globo.com/dynamo/rss2.xml",
+      "language": "pt",
+      "countries": [
+        "BR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mercopress-75406b7a",
+      "name": "MercoPress",
+      "publisher": "MercoPress",
+      "url": "https://en.mercopress.com/rss",
+      "language": "en",
+      "countries": [
+        "AR",
+        "BR",
+        "UY",
+        "PY",
+        "CL",
+        "BO",
+        "PE",
+        "EC",
+        "CO",
+        "VE",
+        "GY",
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-rio-times-ec8ed07a",
+      "name": "The Rio Times",
+      "publisher": "The Rio Times",
+      "url": "https://www.riotimesonline.com/feed/",
+      "language": "en",
+      "countries": [
+        "BR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "uol-not-cias-a51f4337",
+      "name": "UOL Notícias",
+      "publisher": "UOL Notícias",
+      "url": "https://rss.home.uol.com.br/index.xml",
+      "language": "pt",
+      "countries": [
+        "BR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "BS": [
+    {
+      "id": "bahamas-press-d2c9ebd3",
+      "name": "Bahamas Press",
+      "publisher": "Bahamas Press",
+      "url": "https://bahamaspress.com/feed/",
+      "language": "en",
+      "countries": [
+        "BS"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "BW": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "BY": [
+    {
+      "id": "nasha-niva-414a3072",
+      "name": "Nasha Niva",
+      "publisher": "Nasha Niva",
+      "url": "https://nn.by/?c=rss-all&lang=en",
+      "language": "en",
+      "countries": [
+        "BY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "CA": [
+    {
+      "id": "cbc-news-064838cc",
+      "name": "CBC News",
+      "publisher": "CBC News",
+      "url": "https://www.cbc.ca/cmlink/rss-topstories",
+      "language": "en",
+      "countries": [
+        "CA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "global-news-2e21ce61",
+      "name": "Global News",
+      "publisher": "Global News",
+      "url": "https://globalnews.ca/feed/",
+      "language": "en",
+      "countries": [
+        "CA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "CD": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "congo-planet-2cb570dc",
+      "name": "Congo Planet",
+      "publisher": "Congo Planet",
+      "url": "https://www.congoplanet.com/feeds/rss_congo_africa.xml",
+      "language": "en",
+      "countries": [
+        "CD"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "CF": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "CG": [
+    {
+      "id": "africanews-754d5800",
+      "name": "Africanews",
+      "publisher": "Africanews",
+      "url": "https://www.africanews.com/feed/rss",
+      "language": "en",
+      "countries": [
+        "CG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.africanews.com",
+      "description": "Pan-African news in English and French, part of the Euronews network"
+    },
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "CH": [
+    {
+      "id": "tages-anzeiger-5ce4888f",
+      "name": "Tages Anzeiger",
+      "publisher": "Tages Anzeiger",
+      "url": "https://www.tagesanzeiger.ch/rss.html",
+      "language": "de",
+      "countries": [
+        "CH"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "world-health-organization-5f74cfa7",
+      "name": "WHO News",
+      "publisher": "World Health Organization",
+      "url": "https://www.who.int/rss-feeds/news-english.xml",
+      "homepage": "https://www.who.int/news",
+      "language": "en",
+      "countries": [
+        "CH"
+      ],
+      "category": "health",
+      "description": "Official news releases from the World Health Organization.",
+      "mediaType": "digital",
+      "format": "rss",
+      "official": true
+    }
+  ],
+  "CI": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "CL": [
+    {
+      "id": "biobiochile-3fea126e",
+      "name": "BioBioChile",
+      "publisher": "BioBioChile",
+      "url": "https://feeds.feedburner.com/radiobiobio/NNeJ",
+      "language": "es",
+      "countries": [
+        "CL"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mercopress-75406b7a",
+      "name": "MercoPress",
+      "publisher": "MercoPress",
+      "url": "https://en.mercopress.com/rss",
+      "language": "en",
+      "countries": [
+        "AR",
+        "BR",
+        "UY",
+        "PY",
+        "CL",
+        "BO",
+        "PE",
+        "EC",
+        "CO",
+        "VE",
+        "GY",
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "santiago-times-8e41411f",
+      "name": "Santiago Times",
+      "publisher": "Santiago Times",
+      "url": "https://santiagotimes.cl/feed",
+      "language": "en",
+      "countries": [
+        "CL"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "CM": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "CN": [
+    {
+      "id": "china-daily-3df43fe7",
+      "name": "China Daily",
+      "publisher": "China Daily",
+      "url": "https://www.chinadaily.com.cn/rss/china_rss.xml",
+      "language": "en",
+      "countries": [
+        "CN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "State-owned English-language newspaper of the Chinese government. Published by the Publicity Department of the Chinese Communist Party. RSF ranks China among the most restrictive media environments globally.\n\nSources:\n  [1] https://rsf.org/en/country/china\n  [2] https://en.wikipedia.org/wiki/China_Daily"
+    },
+    {
+      "id": "scmp-china-846d3d21",
+      "name": "SCMP China",
+      "publisher": "SCMP China",
+      "url": "https://www.scmp.com/rss/91/feed",
+      "language": "en",
+      "countries": [
+        "CN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "south-china-morning-post-e55a65bc",
+      "name": "South China Morning Post",
+      "publisher": "South China Morning Post",
+      "url": "https://www.scmp.com/rss/4/feed",
+      "language": "en",
+      "countries": [
+        "CN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "CO": [
+    {
+      "id": "colombia-reports-b99a35bc",
+      "name": "Colombia Reports",
+      "publisher": "Colombia Reports",
+      "url": "https://colombiareports.com/feed",
+      "language": "en",
+      "countries": [
+        "CO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "el-colombiano-2bc910a9",
+      "name": "El Colombiano",
+      "publisher": "El Colombiano",
+      "url": "https://www.elcolombiano.com/rss/inicio.xml",
+      "language": "es",
+      "countries": [
+        "CO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mercopress-75406b7a",
+      "name": "MercoPress",
+      "publisher": "MercoPress",
+      "url": "https://en.mercopress.com/rss",
+      "language": "en",
+      "countries": [
+        "AR",
+        "BR",
+        "UY",
+        "PY",
+        "CL",
+        "BO",
+        "PE",
+        "EC",
+        "CO",
+        "VE",
+        "GY",
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "CR": [
+    {
+      "id": "el-financiero-8302247f",
+      "name": "El Financiero",
+      "publisher": "El Financiero",
+      "url": "https://www.elfinancierocr.com/rss/",
+      "language": "en",
+      "countries": [
+        "CR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "la-nacion-7503d963",
+      "name": "La Nacion",
+      "publisher": "La Nacion",
+      "url": "https://www.nacion.com/rss/",
+      "language": "es",
+      "countries": [
+        "CR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "CV": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "CY": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "sigma-live-c5a2ac04",
+      "name": "Sigma Live",
+      "publisher": "Sigma Live",
+      "url": "http://www.sigmalive.com/rss",
+      "language": "el",
+      "countries": [
+        "CY"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "CZ": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "novinky-cz-70ca2807",
+      "name": "Novinky.cz",
+      "publisher": "Novinky.cz",
+      "url": "https://www.novinky.cz/rss/",
+      "language": "cs",
+      "countries": [
+        "CZ"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "DE": [
+    {
+      "id": "der-spiegel-2bcc7bc8",
+      "name": "Der Spiegel — International",
+      "publisher": "Der Spiegel",
+      "url": "https://www.spiegel.de/international/index.rss",
+      "language": "en",
+      "countries": [
+        "DE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "der-spiegel-7e6cdbaf",
+      "name": "Der Spiegel — Schlagzeilen",
+      "publisher": "Der Spiegel",
+      "url": "https://www.spiegel.de/schlagzeilen/index.rss",
+      "language": "de",
+      "countries": [
+        "DE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "deutsche-welle-7c0d50d2",
+      "name": "Deutsche Welle (EN)",
+      "publisher": "Deutsche Welle",
+      "url": "https://rss.dw.com/rdf/rss-en-all",
+      "language": "de",
+      "countries": [
+        "DE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "die-welt-bdd27309",
+      "name": "DIE WELT",
+      "publisher": "DIE WELT",
+      "url": "https://www.welt.de/?service=Rss",
+      "language": "de",
+      "countries": [
+        "DE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "die-zeit-8957d1a5",
+      "name": "Die Zeit",
+      "publisher": "Die Zeit",
+      "url": "https://newsfeed.zeit.de/index",
+      "language": "de",
+      "countries": [
+        "DE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "tagesschau-68a09f16",
+      "name": "Tagesschau",
+      "publisher": "Tagesschau",
+      "url": "https://www.tagesschau.de/xml/rss2",
+      "language": "de",
+      "countries": [
+        "DE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-decoder-b2cfd8ab",
+      "name": "The Decoder",
+      "publisher": "The Decoder",
+      "url": "https://the-decoder.com/feed/",
+      "homepage": "https://the-decoder.com/",
+      "language": "en",
+      "countries": [
+        "DE"
+      ],
+      "category": "ai",
+      "description": "English-language AI news and analysis published from Germany.",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "DJ": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "DK": [
+    {
+      "id": "borsen-f0ec3a22",
+      "name": "Borsen.",
+      "publisher": "Borsen.",
+      "url": "https://borsen.dk/rss/",
+      "language": "da",
+      "countries": [
+        "DK"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "DM": [
+    {
+      "id": "dominica-news-6137b690",
+      "name": "Dominica News",
+      "publisher": "Dominica News",
+      "url": "https://dominicanewsonline.com/news/feed/",
+      "language": "en",
+      "countries": [
+        "DM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "DO": [
+    {
+      "id": "almomento-net-281b0532",
+      "name": "Almomento.net",
+      "publisher": "Almomento.net",
+      "url": "https://almomento.net/feed/",
+      "language": "en",
+      "countries": [
+        "DO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "DZ": [
+    {
+      "id": "algerie360-com-e9ede278",
+      "name": "Algerie360.com",
+      "publisher": "Algerie360.com",
+      "url": "https://www.algerie360.com/feed/",
+      "language": "en",
+      "countries": [
+        "DZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "EC": [
+    {
+      "id": "el-comercio-69bf7e73",
+      "name": "El Comercio",
+      "publisher": "El Comercio",
+      "url": "https://www.elcomercio.com/feed/",
+      "language": "en",
+      "countries": [
+        "EC"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mercopress-75406b7a",
+      "name": "MercoPress",
+      "publisher": "MercoPress",
+      "url": "https://en.mercopress.com/rss",
+      "language": "en",
+      "countries": [
+        "AR",
+        "BR",
+        "UY",
+        "PY",
+        "CL",
+        "BO",
+        "PE",
+        "EC",
+        "CO",
+        "VE",
+        "GY",
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "EE": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "postimees-9580dc13",
+      "name": "Postimees",
+      "publisher": "Postimees",
+      "url": "https://www.postimees.ee/rss/",
+      "language": "et",
+      "countries": [
+        "EE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "EG": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    },
+    {
+      "id": "daily-news-egypt-98182a83",
+      "name": "Daily News Egypt",
+      "publisher": "Daily News Egypt",
+      "url": "https://www.dailynewsegypt.com/feed",
+      "language": "en",
+      "countries": [
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "shorouk-1be484b3",
+      "name": "Shorouk",
+      "publisher": "Shorouk",
+      "url": "https://www.shorouknews.com/columns/rss/",
+      "language": "ar",
+      "countries": [
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "ER": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "asmarino-independent-e0181d41",
+      "name": "Asmarino Independent",
+      "publisher": "Asmarino Independent",
+      "url": "https://asmarino.com/?format=feed&type=rss",
+      "language": "en",
+      "countries": [
+        "ER"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "ES": [
+    {
+      "id": "el-pais-617dc1de",
+      "name": "EL PAIS",
+      "publisher": "EL PAIS",
+      "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+      "language": "es",
+      "countries": [
+        "ES"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "ET": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "voa-b6f7956e",
+      "name": "VOA",
+      "publisher": "VOA",
+      "url": "https://amharic.voanews.com/podcast/",
+      "language": "en",
+      "countries": [
+        "ET"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "FI": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "iltalehti-fi-8ebadb91",
+      "name": "Iltalehti.fi",
+      "publisher": "Iltalehti.fi",
+      "url": "https://www.iltalehti.fi/rss/uutiset.xml",
+      "language": "fi",
+      "countries": [
+        "FI"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "FJ": [
+    {
+      "id": "fbc-news-10cdbefd",
+      "name": "FBC News",
+      "publisher": "FBC News",
+      "url": "https://fbcnews.com.fj/feed",
+      "language": "en",
+      "countries": [
+        "FJ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "FO": [
+    {
+      "id": "kvf-faroe-islands-0c0ca6d5",
+      "name": "KVF Faroe Islands",
+      "publisher": "KVF Faroe Islands",
+      "url": "https://kvf.fo/rss",
+      "language": "en",
+      "countries": [
+        "FO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "FR": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "france-24-e1f73e0e",
+      "name": "France 24",
+      "publisher": "France 24",
+      "url": "https://www.france24.com/en/rss",
+      "language": "en",
+      "countries": [
+        "FR"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "le-monde-fc3ded1a",
+      "name": "Le Monde",
+      "publisher": "Le Monde",
+      "url": "https://www.lemonde.fr/en/rss/une.xml",
+      "language": "fr",
+      "countries": [
+        "FR"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "GA": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "infos-gabon-99930956",
+      "name": "Infos Gabon",
+      "publisher": "Infos Gabon",
+      "url": "https://fr.infosgabon.com/feed/",
+      "language": "en",
+      "countries": [
+        "GA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "GB": [
+    {
+      "id": "bbc-0a2d7d7a",
+      "name": "BBC",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/news/rss.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "bbc-a9571967",
+      "name": "BBC News — Politics",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/news/politics/rss.xml",
+      "homepage": "https://www.bbc.co.uk/news/politics",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "politics",
+      "description": "UK and Westminster political news from the BBC.",
+      "mediaType": "broadcast",
+      "format": "rss"
+    },
+    {
+      "id": "bbc-science-environment-a97faa0a",
+      "name": "BBC Science & Environment",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.bbc.com/news/science_and_environment",
+      "description": "BBC News science and environment coverage"
+    },
+    {
+      "id": "bbc-sport-7e17260f",
+      "name": "BBC Sport",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/sport/rss.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "sports",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.bbc.com/sport",
+      "description": "BBC Sport — live scores, match reports, analysis, and sports news"
+    },
+    {
+      "id": "bbc-3f05af4b",
+      "name": "BBC World",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "carbon-brief-e0c7ff98",
+      "name": "Carbon Brief",
+      "publisher": "Carbon Brief",
+      "url": "https://www.carbonbrief.org/feed/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "climate",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.carbonbrief.org",
+      "description": "A data-driven climate journalism blog that explains global warming through clear analysis of climate science, energy, and policy"
+    },
+    {
+      "id": "daily-mail-4a12363d",
+      "name": "Daily Mail",
+      "publisher": "Daily Mail",
+      "url": "https://www.dailymail.co.uk/articles.rss",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "google-deepmind-0ea3c11e",
+      "name": "Google DeepMind Blog",
+      "publisher": "Google DeepMind",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "homepage": "https://deepmind.google/blog/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "ai",
+      "description": "Research and announcements from Google DeepMind.",
+      "mediaType": "digital",
+      "format": "rss",
+      "official": true
+    },
+    {
+      "id": "medical-news-today-31f68ac9",
+      "name": "Medical News Today",
+      "publisher": "Healthline Media",
+      "url": "https://www.medicalnewstoday.com/newsfeeds-rss",
+      "language": "en",
+      "countries": [
+        "US",
+        "GB"
+      ],
+      "category": "health",
+      "homepage": "https://www.medicalnewstoday.com",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "new-scientist-9a506e18",
+      "name": "New Scientist",
+      "publisher": "New Scientist",
+      "url": "https://www.newscientist.com/feed/home",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.newscientist.com",
+      "description": "Science news and long reads from expert journalists, covering science, technology, health and the environment"
+    },
+    {
+      "id": "phys-org-ff4c7ba3",
+      "name": "Phys.org",
+      "publisher": "Phys.org",
+      "url": "https://phys.org/rss-feed/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://phys.org",
+      "description": "Daily science news on research developments, technological breakthroughs and the latest scientific innovations"
+    },
+    {
+      "id": "reuters-world-10fab0cc",
+      "name": "Reuters World",
+      "publisher": "Reuters World",
+      "url": "https://www.reuters.com/arc/outboundfeeds/v1/rss/category/world/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "sky-news-e1e43675",
+      "name": "Sky News",
+      "publisher": "Sky News",
+      "url": "https://feeds.skynews.com/feeds/rss/home.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-guardian-ebe3f1d5",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "url": "https://www.theguardian.com/world/rss",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-guardian-politics-fd15ffc1",
+      "name": "The Guardian — Politics",
+      "publisher": "The Guardian",
+      "url": "https://www.theguardian.com/politics/rss",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "politics",
+      "homepage": "https://www.theguardian.com",
+      "mediaType": "print",
+      "format": "rss"
+    },
+    {
+      "id": "the-lancet-global-health-d52d1cac",
+      "name": "The Lancet — Global Health",
+      "publisher": "The Lancet",
+      "url": "https://www.thelancet.com/rssfeed/lancet_global_health.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "health",
+      "homepage": "https://www.thelancet.com",
+      "mediaType": "print",
+      "format": "rss"
+    },
+    {
+      "id": "the-spectator-b9855f10",
+      "name": "The Spectator",
+      "publisher": "The Spectator",
+      "url": "https://www.spectator.co.uk/feed/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "politics",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.spectator.co.uk"
+    }
+  ],
+  "GH": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "ghana-mma-a1b18cfd",
+      "name": "Ghana MMA",
+      "publisher": "Ghana MMA",
+      "url": "https://www.ghanamma.com/category/business/feed/",
+      "language": "en",
+      "countries": [
+        "GH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "GI": [
+    {
+      "id": "gibraltar-chronicle-4d9e0c14",
+      "name": "Gibraltar Chronicle",
+      "publisher": "Gibraltar Chronicle",
+      "url": "https://www.chronicle.gi/feed/",
+      "language": "en",
+      "countries": [
+        "GI"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "GM": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "point-c85c24e3",
+      "name": "Point — The Gambia",
+      "publisher": "Point",
+      "url": "https://thepoint.gm/posts/rss/xml",
+      "language": "en",
+      "countries": [
+        "GM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "GN": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "guineenews-d34b3ea0",
+      "name": "Guineenews",
+      "publisher": "Guineenews",
+      "url": "https://guineenews.org/feed/",
+      "language": "en",
+      "countries": [
+        "GN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "GQ": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "GR": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "in-gr-0b923e1f",
+      "name": "in.gr",
+      "publisher": "in.gr",
+      "url": "http://rss.in.gr/Netvolution.Site.Engine.PageHandler.axd?rid=2&pid=250&la=1&si=1",
+      "language": "el",
+      "countries": [
+        "GR"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "GT": [
+    {
+      "id": "prensa-libre-2555cfc1",
+      "name": "Prensa Libre",
+      "publisher": "Prensa Libre",
+      "url": "https://www.prensalibre.com/feed",
+      "language": "es",
+      "countries": [
+        "GT"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "GW": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "GY": [
+    {
+      "id": "kaieteur-news-64f614fe",
+      "name": "Kaieteur News",
+      "publisher": "Kaieteur News",
+      "url": "https://www.kaieteurnewsonline.com/feed/",
+      "language": "en",
+      "countries": [
+        "GY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mercopress-75406b7a",
+      "name": "MercoPress",
+      "publisher": "MercoPress",
+      "url": "https://en.mercopress.com/rss",
+      "language": "en",
+      "countries": [
+        "AR",
+        "BR",
+        "UY",
+        "PY",
+        "CL",
+        "BO",
+        "PE",
+        "EC",
+        "CO",
+        "VE",
+        "GY",
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "HK": [
+    {
+      "id": "hong-kong-free-press-5e45b072",
+      "name": "Hong Kong Free Press",
+      "publisher": "Hong Kong Free Press",
+      "url": "https://hongkongfp.com/feed/",
+      "language": "en",
+      "countries": [
+        "HK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent",
+      "notes": "Hong Kong-based non-profit, JTI-certified news outlet. No shareholders or share capital — run directly by journalistic staff. Journalism Trust Initiative certified in 2025 after 130-point external audit. SOPA award winner. Publishes annual financial transparency reports.\n\nSources:\n  [1] https://hongkongfp.com/about/\n  [2] https://en.wikipedia.org/wiki/Hong_Kong_Free_Press"
+    },
+    {
+      "id": "orient-daily-75e5c96f",
+      "name": "Orient Daily",
+      "publisher": "Orient Daily",
+      "url": "https://feeds.feedburner.com/123greetings-daily-rss",
+      "language": "en",
+      "countries": [
+        "HK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "HR": [
+    {
+      "id": "24sata-hr-629a3986",
+      "name": "24sata.hr",
+      "publisher": "24sata.hr",
+      "url": "https://www.24sata.hr/feeds/news.xml",
+      "language": "hr",
+      "countries": [
+        "HR"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "HT": [
+    {
+      "id": "haiti-libre-6a742fcd",
+      "name": "Haiti Libre",
+      "publisher": "Haiti Libre",
+      "url": "https://www.haitilibre.com/rss-flash-en.xml",
+      "language": "en",
+      "countries": [
+        "HT"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "HU": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "index-d93ff4bc",
+      "name": "Index",
+      "publisher": "Index",
+      "url": "https://index.hu/24ora/rss",
+      "language": "hu",
+      "countries": [
+        "HU"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "ID": [
+    {
+      "id": "okezone-com-c1492079",
+      "name": "okezone.com",
+      "publisher": "okezone.com",
+      "url": "https://sindikasi.okezone.com/index.php/rss/0/RSS2.0",
+      "language": "id",
+      "countries": [
+        "ID"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "IE": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "irish-independent-bb1e3229",
+      "name": "Irish Independent",
+      "publisher": "Irish Independent",
+      "url": "https://www.independent.ie/irish-news/rss",
+      "language": "en",
+      "countries": [
+        "IE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "IL": [
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    },
+    {
+      "id": "jerusalem-post-0b17825c",
+      "name": "Jerusalem Post",
+      "publisher": "Jerusalem Post",
+      "url": "https://www.jpost.com/rss/rssfeedsheadlines.aspx",
+      "language": "en",
+      "countries": [
+        "IL"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "ynet-aa480431",
+      "name": "Ynet",
+      "publisher": "Ynet",
+      "url": "https://www.ynet.co.il/Integration/StoryRss3082.xml",
+      "language": "en",
+      "countries": [
+        "IL"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "IM": [
+    {
+      "id": "3fm-dd33aaf9",
+      "name": "3FM",
+      "publisher": "3FM",
+      "url": "https://www.three.fm/news/isle-of-man-news/feed.xml",
+      "language": "en",
+      "countries": [
+        "IM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "IN": [
+    {
+      "id": "the-hindu-a7a1378f",
+      "name": "The Hindu",
+      "publisher": "The Hindu",
+      "url": "https://www.thehindu.com/news/national/feeder/default.rss",
+      "language": "en",
+      "countries": [
+        "IN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "times-of-india-96815df8",
+      "name": "Times of India",
+      "publisher": "Times of India",
+      "url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+      "language": "en",
+      "countries": [
+        "IN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "IQ": [
+    {
+      "id": "ahewar-org-e0c08e67",
+      "name": "Ahewar.org",
+      "publisher": "Ahewar.org",
+      "url": "https://www.ahewar.org/rss/default.asp?lt=7",
+      "language": "en",
+      "countries": [
+        "IQ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    }
+  ],
+  "IR": [
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    },
+    {
+      "id": "irna-news-34bf5372",
+      "name": "IRNA News",
+      "publisher": "IRNA News",
+      "url": "https://en.irna.ir/rss",
+      "language": "en",
+      "countries": [
+        "IR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "Official state news agency of the Islamic Republic of Iran. Operates under the Ministry of Culture and Islamic Guidance, which appoints its leadership. State Media Monitor reports 80%+ of budget sourced from government.\n\nSources:\n  [1] https://statemediamonitor.com/2025/07/islamic-republic-news-agency-irna/\n  [2] https://rsf.org/en/country/iran\n  [3] https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency"
+    },
+    {
+      "id": "mehr-news-3af01666",
+      "name": "Mehr News",
+      "publisher": "Mehr News",
+      "url": "https://en.mehrnews.com/rss",
+      "language": "en",
+      "countries": [
+        "IR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "Mehr News Agency is under the Islamic Ideology Dissemination Organization (IIDO), an Iranian state body. State Media Monitor classifies both Tehran Times and Mehr News under IIDO oversight.\n\nSources:\n  [1] https://statemediamonitor.com/category/globalliststatemedia/mena/middle-east/iran/\n  [2] https://rsf.org/en/country/iran"
+    },
+    {
+      "id": "tabnak-b30db155",
+      "name": "Tabnak",
+      "publisher": "Tabnak",
+      "url": "https://www.tabnak.ir/fa/rss/allnews",
+      "language": "fa",
+      "countries": [
+        "IR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "tehran-times-100d939c",
+      "name": "Tehran Times",
+      "publisher": "Tehran Times",
+      "url": "https://www.tehrantimes.com/rss",
+      "language": "en",
+      "countries": [
+        "IR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "English-language outlet under the Islamic Ideology Dissemination Organization (IIDO), a state body that supervises multiple Iranian state-linked media. State Media Monitor classifies it as state-controlled.\n\nSources:\n  [1] https://statemediamonitor.com/category/globalliststatemedia/mena/middle-east/iran/\n  [2] https://rsf.org/en/country/iran"
+    },
+    {
+      "id": "the-guardian-8fe8409b",
+      "name": "The Guardian - Iran",
+      "publisher": "The Guardian",
+      "url": "https://www.theguardian.com/world/iran/rss",
+      "language": "en",
+      "countries": [
+        "IR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent",
+      "notes": "Part of Guardian Media Group, owned by the Scott Trust — a structure designed to protect editorial independence in perpetuity. No shareholders, no proprietor. RSF ranks UK press environment as 'satisfactory' (24/180).\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.theguardian.com/the-scott-trust"
+    }
+  ],
+  "IS": [
+    {
+      "id": "visir-8ad84bc3",
+      "name": "Visir",
+      "publisher": "Visir",
+      "url": "https://www.visir.is/apps/pbcs.dll/section?Category=FRETTIR&Template=rss&mime=xml",
+      "language": "is",
+      "countries": [
+        "IS"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "IT": [
+    {
+      "id": "ansa-english-48611228",
+      "name": "ANSA English",
+      "publisher": "ANSA",
+      "url": "https://www.ansa.it/english/english_rss.xml",
+      "language": "en",
+      "countries": [
+        "IT"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.ansa.it/english",
+      "description": "Latest news from Italy and international politics, business, science, technology, lifestyle, and sports from ANSA"
+    },
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "la-repubblica-ed4b824e",
+      "name": "La Repubblica",
+      "publisher": "La Repubblica",
+      "url": "https://www.repubblica.it/rss/homepage/rss2.0.xml",
+      "language": "it",
+      "countries": [
+        "IT"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "JM": [
+    {
+      "id": "the-jamaica-star-d4fd8f52",
+      "name": "The Jamaica Star",
+      "publisher": "The Jamaica Star",
+      "url": "http://jamaica-star.com/feed/news.xml",
+      "language": "en",
+      "countries": [
+        "JM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "JO": [
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    },
+    {
+      "id": "jordan-zad-b6bc625c",
+      "name": "Jordan Zad",
+      "publisher": "Jordan Zad",
+      "url": "https://www.jordanzad.com/rss.php?type=main",
+      "language": "en",
+      "countries": [
+        "JO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "JP": [
+    {
+      "id": "asahi-shimbun-de3a6e68",
+      "name": "Asahi Shimbun",
+      "publisher": "Asahi Shimbun",
+      "url": "https://rss.asahi.com/rss/asahi/newsheadlines.rdf",
+      "language": "en",
+      "countries": [
+        "JP"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "nhk-4c3d8382",
+      "name": "NHK",
+      "publisher": "NHK",
+      "url": "https://www.nhk.or.jp/rj/podcast/rss/english.xml",
+      "language": "en",
+      "countries": [
+        "JP"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-japan-times-1c3e4f26",
+      "name": "The Japan Times",
+      "publisher": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/feed/",
+      "language": "en",
+      "countries": [
+        "JP"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-japan-times-49acef46",
+      "name": "The Japan Times — Feed",
+      "publisher": "The Japan Times",
+      "url": "https://www.japantimes.co.jp/feed",
+      "language": "en",
+      "countries": [
+        "JP"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "KE": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "standard-media-40f83369",
+      "name": "Standard Media",
+      "publisher": "Standard Media",
+      "url": "https://www.standardmedia.co.ke/rss/business.php",
+      "language": "en",
+      "countries": [
+        "KE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "KH": [
+    {
+      "id": "rfi-khmer-c876ba43",
+      "name": "RFI Khmer",
+      "publisher": "RFI Khmer",
+      "url": "https://www.khmer.rfi.fr/cambodia/rss",
+      "language": "en",
+      "countries": [
+        "KH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "KN": [
+    {
+      "id": "ziz-0702db50",
+      "name": "ZIZ",
+      "publisher": "ZIZ",
+      "url": "https://zizonline.com/feed/",
+      "language": "en",
+      "countries": [
+        "KN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "KP": [
+    {
+      "id": "daily-nk-55b1eed9",
+      "name": "Daily NK",
+      "publisher": "Daily NK",
+      "url": "https://www.dailynk.com/english/feed/",
+      "language": "en",
+      "countries": [
+        "KP"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "state-monitor",
+      "notes": "Seoul-based online newspaper specializing in North Korea reporting through a network of citizen reporters inside the DPRK. NED-funded but editorially independent per its Journalism Ethics Charter. Foreign Policy Research Institute scholar describes it as an 'indispensable outlet' for North Korea coverage.\n\nSources:\n  [1] https://en.wikipedia.org/wiki/Daily_NK\n  [2] https://www.dailynk.com/english/how-we-report/\n  [3] https://grokipedia.com/page/Daily_NK"
+    },
+    {
+      "id": "nk-news-9a6d9273",
+      "name": "NK News",
+      "publisher": "NK News",
+      "url": "https://www.nknews.org/feed/",
+      "language": "en",
+      "countries": [
+        "KP"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "state-monitor",
+      "notes": "U.S.-based independent publication providing expert analysis and news on North Korea. Specialized in monitoring DPRK political, economic, and military developments. Cited by major outlets including Washington Post, BBC, and academic research.\n\nSources:\n  [1] https://www.nknews.org/\n  [2] https://en.wikipedia.org/wiki/Daily_NK"
+    }
+  ],
+  "KR": [
+    {
+      "id": "donga-sports-23035e23",
+      "name": "Donga Sports",
+      "publisher": "Donga Sports",
+      "url": "https://rss.donga.com/sports.xml",
+      "language": "ko",
+      "countries": [
+        "KR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "KW": [
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    }
+  ],
+  "KY": [
+    {
+      "id": "cayman-news-service-5319e5ee",
+      "name": "Cayman News Service",
+      "publisher": "Cayman News Service",
+      "url": "https://caymannewsservice.com/feed/",
+      "language": "en",
+      "countries": [
+        "KY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "KZ": [
+    {
+      "id": "tengri-news-0e6ec970",
+      "name": "Tengri News",
+      "publisher": "Tengri News",
+      "url": "https://tengrinews.kz/news.rss",
+      "language": "en",
+      "countries": [
+        "KZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "LB": [
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    }
+  ],
+  "LK": [
+    {
+      "id": "lanka-hot-news-8fe6d903",
+      "name": "Lanka Hot News",
+      "publisher": "Lanka Hot News",
+      "url": "https://www.lankahotnews.net/feeds/posts/default?alt=rss",
+      "language": "en",
+      "countries": [
+        "LK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "LR": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "LS": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "LT": [
+    {
+      "id": "delfi-43e415f3",
+      "name": "DELFI — Lithuania",
+      "publisher": "DELFI",
+      "url": "https://www.delfi.lt/rss/feeds/lithuania.xml",
+      "language": "lt",
+      "countries": [
+        "LT"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "LU": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "rtl-1b7f8ad0",
+      "name": "RTL",
+      "publisher": "RTL",
+      "url": "https://rtl.lu/rss/headlines/",
+      "language": "lb",
+      "countries": [
+        "LU"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "LV": [
+    {
+      "id": "delfi-d53fc8ed",
+      "name": "DELFI — Latvia",
+      "publisher": "DELFI",
+      "url": "https://www.delfi.lv/rss.php",
+      "language": "lv",
+      "countries": [
+        "LV"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "LY": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "MA": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "hespress-62913d28",
+      "name": "Hespress",
+      "publisher": "Hespress",
+      "url": "https://www.hespress.com/feed/index.rss",
+      "language": "en",
+      "countries": [
+        "MA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "MD": [
+    {
+      "id": "point-6a33f6d2",
+      "name": "Point — Moldova",
+      "publisher": "Point",
+      "url": "https://point.md/ru/rss/novosti/",
+      "language": "en",
+      "countries": [
+        "MD"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "ME": [
+    {
+      "id": "vijesti-6ba159a3",
+      "name": "Vijesti",
+      "publisher": "Vijesti",
+      "url": "https://www.vijesti.me/rss",
+      "language": "en",
+      "countries": [
+        "ME"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "MG": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "madagascar-tribune-0f2f25aa",
+      "name": "Madagascar Tribune",
+      "publisher": "Madagascar Tribune",
+      "url": "https://www.madagascar-tribune.com/spip.php?page=backend",
+      "language": "en",
+      "countries": [
+        "MG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "MK": [
+    {
+      "id": "kajgana-34ee9243",
+      "name": "Kajgana",
+      "publisher": "Kajgana",
+      "url": "https://kajgana.com/rss.xml",
+      "language": "en",
+      "countries": [
+        "MK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "ML": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "journaldumali-com-abe4771a",
+      "name": "JournalDuMali.com",
+      "publisher": "JournalDuMali.com",
+      "url": "https://www.journaldumali.com/rss/",
+      "language": "en",
+      "countries": [
+        "ML"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "MQ": [
+    {
+      "id": "france-antilles-martinique-471b3214",
+      "name": "France-Antilles Martinique",
+      "publisher": "France-Antilles Martinique",
+      "url": "https://www.martinique.franceantilles.fr/rss/lea_Une.xml",
+      "language": "en",
+      "countries": [
+        "MQ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "MR": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "MT": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "MU": [
+    {
+      "id": "maurice-info-f9d950e8",
+      "name": "Maurice Info",
+      "publisher": "Maurice Info",
+      "url": "https://maurice-info.mu/feed",
+      "language": "fr",
+      "countries": [
+        "MU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "MV": [
+    {
+      "id": "sun-mv-6688cb2d",
+      "name": "Sun.mv",
+      "publisher": "Sun.mv",
+      "url": "https://sun.mv/feed/",
+      "language": "en",
+      "countries": [
+        "MV"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "MW": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "nyasa-times-70efa8ae",
+      "name": "Nyasa Times",
+      "publisher": "Nyasa Times",
+      "url": "https://www.nyasatimes.com/feed/",
+      "language": "en",
+      "countries": [
+        "MW"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "MX": [
+    {
+      "id": "mexico-news-daily-e1f5f185",
+      "name": "Mexico News Daily",
+      "publisher": "Mexico News Daily",
+      "url": "https://mexiconewsdaily.com/feed/",
+      "language": "en",
+      "countries": [
+        "MX"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "reforma-com-4ee63d5f",
+      "name": "Reforma.com",
+      "publisher": "Reforma.com",
+      "url": "https://www.reforma.com/rss/portada.xml",
+      "language": "es",
+      "countries": [
+        "MX"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "MZ": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "NA": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "the-namibian-1002b655",
+      "name": "The Namibian",
+      "publisher": "The Namibian",
+      "url": "https://www.namibian.com.na/feed/",
+      "language": "en",
+      "countries": [
+        "NA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "NE": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "NG": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "premium-times-83c369c6",
+      "name": "Premium Times",
+      "publisher": "Premium Times",
+      "url": "https://www.premiumtimesng.com/feed",
+      "language": "en",
+      "countries": [
+        "NG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vanguard-news-108776b9",
+      "name": "Vanguard News",
+      "publisher": "Vanguard News",
+      "url": "https://www.vanguardngr.com/category/national-news/feed/",
+      "language": "en",
+      "countries": [
+        "NG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "NI": [
+    {
+      "id": "la-nueva-radio-ya-40dbe60e",
+      "name": "La Nueva Radio YA",
+      "publisher": "La Nueva Radio YA",
+      "url": "https://nuevaya.com.ni/feed/",
+      "language": "en",
+      "countries": [
+        "NI"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "NL": [
+    {
+      "id": "bellingcat-98c3c305",
+      "name": "Bellingcat",
+      "publisher": "Bellingcat",
+      "url": "https://www.bellingcat.com/feed/",
+      "language": "en",
+      "countries": [
+        "NL"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent",
+      "notes": "Independent investigative collective based in the Netherlands. Specializes in open-source intelligence and fact-checking. Funded by grants and public donations. Multiple award-winning investigations including MH17, Skripal poisoning, and Syrian chemical weapons.\n\nSources:\n  [1] https://www.bellingcat.com/about/\n  [2] https://en.wikipedia.org/wiki/Bellingcat"
+    },
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "nu-nl-b80230aa",
+      "name": "nu.nl",
+      "publisher": "nu.nl",
+      "url": "https://www.nu.nl/feeds/rss/algemeen.rss",
+      "language": "nl",
+      "countries": [
+        "NL"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "NO": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vg-nett-6174cf0d",
+      "name": "VG Nett",
+      "publisher": "VG Nett",
+      "url": "https://www.vg.no/rss/feed/?limit=10&format=rss&categories=&keywords=",
+      "language": "no",
+      "countries": [
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "NP": [
+    {
+      "id": "onlinekhabar-com-075424bb",
+      "name": "onlinekhabar.com",
+      "publisher": "onlinekhabar.com",
+      "url": "https://www.onlinekhabar.com/feed/",
+      "language": "en",
+      "countries": [
+        "NP"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "NZ": [
+    {
+      "id": "nz-herald-3c694a12",
+      "name": "NZ Herald",
+      "publisher": "NZ Herald",
+      "url": "https://rss.nzherald.co.nz/rss/xml/nzhrsscid_000000001.xml",
+      "language": "en",
+      "countries": [
+        "NZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "rnz-national-95e71c83",
+      "name": "RNZ National",
+      "publisher": "RNZ National",
+      "url": "https://www.rnz.co.nz/rss/national.xml",
+      "language": "en",
+      "countries": [
+        "NZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "rnz-pacific-5f172e7b",
+      "name": "RNZ Pacific",
+      "publisher": "RNZ Pacific",
+      "url": "https://www.rnz.co.nz/rss/pacific.xml",
+      "language": "en",
+      "countries": [
+        "NZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "OM": [
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    }
+  ],
+  "PA": [
+    {
+      "id": "central-america-data-3f3fbd8b",
+      "name": "Central America Data",
+      "publisher": "Central America Data",
+      "url": "https://www.odditysoftware.com/database_feed_Central+America+Geocode+Data.htm",
+      "language": "en",
+      "countries": [
+        "PA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "PE": [
+    {
+      "id": "el-comercio-per-c0d60a60",
+      "name": "El Comercio Perú",
+      "publisher": "El Comercio Perú",
+      "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml",
+      "language": "en",
+      "countries": [
+        "PE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "latin-america-reports-1ce2fbd0",
+      "name": "Latin America Reports",
+      "publisher": "Latin America Reports",
+      "url": "https://latinamericareports.com/feed/",
+      "language": "en",
+      "countries": [
+        "PE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://latinamericareports.com",
+      "description": "On-the-ground reporting contextualizing Latin America's role in global affairs"
+    },
+    {
+      "id": "mercopress-75406b7a",
+      "name": "MercoPress",
+      "publisher": "MercoPress",
+      "url": "https://en.mercopress.com/rss",
+      "language": "en",
+      "countries": [
+        "AR",
+        "BR",
+        "UY",
+        "PY",
+        "CL",
+        "BO",
+        "PE",
+        "EC",
+        "CO",
+        "VE",
+        "GY",
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "PF": [
+    {
+      "id": "tahiti-infos-64e2c50b",
+      "name": "Tahiti Infos",
+      "publisher": "Tahiti Infos",
+      "url": "https://www.tahiti-infos.com/xml/syndication.rss",
+      "language": "en",
+      "countries": [
+        "PF"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "PH": [
+    {
+      "id": "philstar-headlines-b5f0dd03",
+      "name": "Philstar Headlines",
+      "publisher": "Philstar Headlines",
+      "url": "https://www.philstar.com/rss/headlines",
+      "language": "en",
+      "countries": [
+        "PH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "PK": [
+    {
+      "id": "daily-express-edc53d4b",
+      "name": "Daily Express",
+      "publisher": "Daily Express",
+      "url": "https://feeds.feedburner.com/daily-express-news-showbiz",
+      "language": "ur",
+      "countries": [
+        "PK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "PL": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "gazeta-pl-8a4934cd",
+      "name": "Gazeta.pl",
+      "publisher": "Gazeta.pl",
+      "url": "https://rss.gazeta.pl/pub/rss/wiadomosci.xml",
+      "language": "pl",
+      "countries": [
+        "PL"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "PR": [
+    {
+      "id": "noti-uno-630-am-7b37529e",
+      "name": "Noti Uno 630 AM",
+      "publisher": "Noti Uno 630 AM",
+      "url": "https://estrella51.blogspot.com/feeds/posts/default?alt=rss",
+      "language": "en",
+      "countries": [
+        "PR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "PS": [
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    }
+  ],
+  "PT": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "expresso-9bcf73a1",
+      "name": "Expresso",
+      "publisher": "Expresso",
+      "url": "https://rss.impresa.pt/feed/latest/expresso.rss?type=ARTICLE,VIDEO,GALLERY,STREAM,PLAYLIST,EVENT,NEWSLETTER&limit=20&pubsubhub=true",
+      "language": "pt",
+      "countries": [
+        "PT"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "PY": [
+    {
+      "id": "abc-color-150e388a",
+      "name": "ABC Color",
+      "publisher": "ABC Color",
+      "url": "https://www.abc.com.py/arc/outboundfeeds/rss/nacionales/",
+      "language": "es",
+      "countries": [
+        "PY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mercopress-75406b7a",
+      "name": "MercoPress",
+      "publisher": "MercoPress",
+      "url": "https://en.mercopress.com/rss",
+      "language": "en",
+      "countries": [
+        "AR",
+        "BR",
+        "UY",
+        "PY",
+        "CL",
+        "BO",
+        "PE",
+        "EC",
+        "CO",
+        "VE",
+        "GY",
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "QA": [
+    {
+      "id": "al-jazeera-ecd16e1e",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml",
+      "language": "en",
+      "countries": [
+        "QA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    }
+  ],
+  "RO": [
+    {
+      "id": "adevarul-ro-7832868f",
+      "name": "adevarul.ro",
+      "publisher": "adevarul.ro",
+      "url": "https://adevarul.ro/rss/",
+      "language": "ro",
+      "countries": [
+        "RO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "RS": [
+    {
+      "id": "blic-8d1ebbbc",
+      "name": "Blic",
+      "publisher": "Blic",
+      "url": "https://www.blic.rs/rss/danasnje-vesti",
+      "language": "en",
+      "countries": [
+        "RS"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "RU": [
+    {
+      "id": "ria-novosti-78ca4795",
+      "name": "RIA Novosti",
+      "publisher": "RIA Novosti",
+      "url": "https://ria.ru/export/rss2/index.xml",
+      "language": "en",
+      "countries": [
+        "RU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "rt-news-b3b74514",
+      "name": "RT News",
+      "publisher": "RT News",
+      "url": "https://rt.com/rss/news/",
+      "language": "en",
+      "countries": [
+        "RU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "Russian state-funded international broadcaster. US State Dept (2024): 'de facto arm of Russia's intelligence apparatus.' Sanctioned by US, UK, EU, Canada. Banned globally by Meta and YouTube. Parent company TV-Novosti designated under E.O. 14024.\n\nSources:\n  [1] https://apnews.com/article/russia-putin-trump-sanctions-harris-rt-f7e3ff262fdf24695048cffe2529b937\n  [2] https://2021-2025.state.gov/alerting-the-world-to-rts-global-covert-activities/\n  [3] https://www.nbcnews.com/news/us-news/meta-bans-rt-russian-disinformation-rcna171402"
+    },
+    {
+      "id": "tass-d931bcff",
+      "name": "TASS",
+      "publisher": "TASS",
+      "url": "https://tass.com/rss/v2.xml",
+      "language": "en",
+      "countries": [
+        "RU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "Russian state news agency (TASS). Founded in 1904, government-owned and directly reflects Kremlin positions. Primary source of official Russian government statements and state narratives.\n\nSources:\n  [1] https://rsf.org/en/country/russia\n  [2] https://en.wikipedia.org/wiki/TASS"
+    },
+    {
+      "id": "the-moscow-times-349ba18f",
+      "name": "The Moscow Times",
+      "publisher": "The Moscow Times",
+      "url": "https://themoscowtimes.com/rss/news",
+      "language": "en",
+      "countries": [
+        "RU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent-exile",
+      "notes": "Independent Russian-language media relocated to the Netherlands after Russia's 2022 censorship laws imposing 15-year sentences for 'discrediting' the military. Declared 'undesirable organization' by Russian prosecutor general (July 2024), criminalizing cooperation. Reuters: 'one of the only Russia-based publications in English to maintain editorial independence.'\n\nSources:\n  [1] https://www.reuters.com/world/europe/russia-declares-independent-news-site-moscow-times-undesirable-2024-07-10/\n  [2] https://www.themoscowtimes.com/2022/02/28/russia-blocks-number-of-independent-and-ukrainian-media-outlets-a76649"
+    }
+  ],
+  "RW": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "SA": [
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    }
+  ],
+  "SB": [
+    {
+      "id": "solomon-times-d9ea069d",
+      "name": "Solomon Times",
+      "publisher": "Solomon Times",
+      "url": "https://www.solomontimes.com/rss/latest-news.xml",
+      "language": "en",
+      "countries": [
+        "SB"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "SD": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "SE": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "expressen-b6d68045",
+      "name": "Expressen",
+      "publisher": "Expressen",
+      "url": "https://www.expressen.se/rss/nyheter",
+      "language": "sv",
+      "countries": [
+        "SE"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "SG": [
+    {
+      "id": "the-new-paper-89d71e99",
+      "name": "The New Paper",
+      "publisher": "The New Paper",
+      "url": "https://www.tnp.sg/rss.xml",
+      "language": "en",
+      "countries": [
+        "SG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-straits-times-48618888",
+      "name": "The Straits Times",
+      "publisher": "The Straits Times",
+      "url": "https://www.straitstimes.com/news/world/rss.xml",
+      "language": "en",
+      "countries": [
+        "SG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "SI": [
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "planet-siol-net-32ed4384",
+      "name": "Planet Siol.net",
+      "publisher": "Planet Siol.net",
+      "url": "https://www.siol.net/rss.aspx?path=SiOL.Net",
+      "language": "sl",
+      "countries": [
+        "SI"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "SK": [
+    {
+      "id": "aktuality-sk-11904f56",
+      "name": "Aktuality.sk",
+      "publisher": "Aktuality.sk",
+      "url": "https://www.aktuality.sk/rss/",
+      "language": "sk",
+      "countries": [
+        "SK"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "euronews-698617a6",
+      "name": "Euronews",
+      "publisher": "Euronews",
+      "url": "https://www.euronews.com/rss?format=xml",
+      "language": "fr",
+      "countries": [
+        "FR",
+        "DE",
+        "ES",
+        "IT",
+        "GB",
+        "PL",
+        "NL",
+        "BE",
+        "PT",
+        "GR",
+        "AT",
+        "HU",
+        "CZ",
+        "RO",
+        "BG",
+        "SE",
+        "DK",
+        "FI",
+        "IE",
+        "HR",
+        "SK",
+        "SI",
+        "LT",
+        "LV",
+        "EE",
+        "CY",
+        "MT",
+        "LU",
+        "NO"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "SL": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "SM": [
+    {
+      "id": "giornale-sm-1e0abcdc",
+      "name": "Giornale.sm",
+      "publisher": "Giornale.sm",
+      "url": "https://giornalesm.com/feed/",
+      "language": "en",
+      "countries": [
+        "SM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "SN": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "leral-net-ed1a2c18",
+      "name": "leral.net",
+      "publisher": "leral.net",
+      "url": "https://www.leral.net/xml/syndication.rss",
+      "language": "en",
+      "countries": [
+        "SN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "SO": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "jowhar-com-bddf086d",
+      "name": "Jowhar.com",
+      "publisher": "Jowhar.com",
+      "url": "https://www.jowhar.com/?feed=rss2&author=1",
+      "language": "en",
+      "countries": [
+        "SO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "SR": [
+    {
+      "id": "mercopress-75406b7a",
+      "name": "MercoPress",
+      "publisher": "MercoPress",
+      "url": "https://en.mercopress.com/rss",
+      "language": "en",
+      "countries": [
+        "AR",
+        "BR",
+        "UY",
+        "PY",
+        "CL",
+        "BO",
+        "PE",
+        "EC",
+        "CO",
+        "VE",
+        "GY",
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "starnieuws-601638b5",
+      "name": "Starnieuws",
+      "publisher": "Starnieuws",
+      "url": "https://www.starnieuws.com/rss/starnieuws.rss",
+      "language": "en",
+      "countries": [
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "SS": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "SY": [
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    },
+    {
+      "id": "sana-3d39c5fb",
+      "name": "SANA",
+      "publisher": "SANA",
+      "url": "https://www.sana.sy/tr/?feed=rss2",
+      "language": "ar",
+      "countries": [
+        "SY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "Syrian Arab News Agency (SANA) is the official state news agency of the Syrian Arab Republic. State-run and controlled by the Syrian Ministry of Information.\n\nSources:\n  [1] https://rsf.org/en/country/syria\n  [2] https://en.wikipedia.org/wiki/Syrian_Arab_News_Agency"
+    }
+  ],
+  "SZ": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "TD": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "TG": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "TH": [
+    {
+      "id": "news-sanook-com-5bf6fe8c",
+      "name": "news.sanook.com",
+      "publisher": "news.sanook.com",
+      "url": "https://rssfeeds.sanook.com/rss/feeds/sanook/news.crime.xml",
+      "language": "th",
+      "countries": [
+        "TH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "TN": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "leaders-com-tn-d5f2e2f8",
+      "name": "leaders.com.tn",
+      "publisher": "leaders.com.tn",
+      "url": "https://www.leaders.com.tn/rss",
+      "language": "en",
+      "countries": [
+        "TN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "TR": [
+    {
+      "id": "vatan-f4febb20",
+      "name": "Vatan",
+      "publisher": "Vatan",
+      "url": "https://www.gazetevatan.com/rss/gundem.xml",
+      "language": "tr",
+      "countries": [
+        "TR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "TZ": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "daily-news-91c8d08a",
+      "name": "Daily News",
+      "publisher": "Daily News",
+      "url": "https://dailynews.co.tz/category/tanzania/feed",
+      "language": "en",
+      "countries": [
+        "TZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "UA": [
+    {
+      "id": "gazeta-ua-884b9280",
+      "name": "Gazeta.ua",
+      "publisher": "Gazeta.ua",
+      "url": "https://gazeta.ua/ru/rss",
+      "language": "en",
+      "countries": [
+        "UA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "UG": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ],
+  "US": [
+    {
+      "id": "android-developers-a6106c0a",
+      "name": "Android Developers",
+      "publisher": "Android Developers",
+      "url": "https://www.youtube.com/feeds/videos.xml?user=androiddevelopers",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "ars-technica-09cc00c5",
+      "name": "Ars Technica",
+      "publisher": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "berkeley-ai-research-560a3150",
+      "name": "Berkeley AI Research Blog",
+      "publisher": "Berkeley AI Research",
+      "url": "https://bair.berkeley.edu/blog/feed.xml",
+      "homepage": "https://bair.berkeley.edu/blog/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "Research posts from the Berkeley AI Research (BAIR) lab.",
+      "mediaType": "digital",
+      "format": "atom",
+      "official": true
+    },
+    {
+      "id": "bloomberg-markets-03c4eab0",
+      "name": "Bloomberg Markets",
+      "publisher": "Bloomberg Markets",
+      "url": "https://feeds.bloomberg.com/markets/news.rss",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "cdc-newsroom-55b13d0a",
+      "name": "CDC Newsroom",
+      "publisher": "CDC",
+      "url": "https://tools.cdc.gov/api/v2/resources/media/132608.rss",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "homepage": "https://www.cdc.gov",
+      "mediaType": "digital",
+      "format": "rss",
+      "official": true
+    },
+    {
+      "id": "durov-telegram-7f8a9b1c",
+      "name": "Du Rov's Channel",
+      "publisher": "Telegram",
+      "url": "https://rsshub.app/telegram/channel/durov",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "espn-b1ff08c3",
+      "name": "ESPN",
+      "publisher": "ESPN",
+      "url": "https://sports.espn.go.com/espn/rss/news",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "fivethirtyeight-c0749426",
+      "name": "FiveThirtyEight",
+      "publisher": "FiveThirtyEight",
+      "url": "https://fivethirtyeight.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://fivethirtyeight.com"
+    },
+    {
+      "id": "fox-news-2a69efeb",
+      "name": "Fox News",
+      "publisher": "Fox News",
+      "url": "https://feeds.foxnews.com/foxnews/latest",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "github-trending-1a2b3c4d",
+      "name": "GitHub Trending",
+      "publisher": "GitHub",
+      "url": "https://rsshub.app/github/trending/daily/any",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "google-c39414c5",
+      "name": "Google — The Keyword: AI",
+      "publisher": "Google",
+      "url": "https://blog.google/technology/ai/rss/",
+      "homepage": "https://blog.google/technology/ai/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "AI news from Google's official blog, The Keyword.",
+      "mediaType": "digital",
+      "format": "atom",
+      "official": true
+    },
+    {
+      "id": "hugging-face-33e64987",
+      "name": "Hugging Face Blog",
+      "publisher": "Hugging Face",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "homepage": "https://huggingface.co/blog",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "Open-source machine-learning posts from Hugging Face.",
+      "mediaType": "digital",
+      "format": "rss",
+      "official": true
+    },
+    {
+      "id": "kff-health-news-590eeb92",
+      "name": "KFF Health News",
+      "publisher": "KFF Health News",
+      "url": "https://kffhealthnews.org/feed/",
+      "homepage": "https://kffhealthnews.org/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "description": "Nonprofit newsroom covering U.S. health policy and care.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "marktechpost-0f4dc4f0",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "url": "https://www.marktechpost.com/feed/",
+      "homepage": "https://www.marktechpost.com/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "AI/ML research and tooling news.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "medical-news-today-31f68ac9",
+      "name": "Medical News Today",
+      "publisher": "Healthline Media",
+      "url": "https://www.medicalnewstoday.com/newsfeeds-rss",
+      "language": "en",
+      "countries": [
+        "US",
+        "GB"
+      ],
+      "category": "health",
+      "homepage": "https://www.medicalnewstoday.com",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "medpage-today-e8447c4c",
+      "name": "MedPage Today",
+      "publisher": "MedPage Today",
+      "url": "https://www.medpagetoday.com/rss/headlines.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "homepage": "https://www.medpagetoday.com",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mit-technology-review-19ef1c77",
+      "name": "MIT Technology Review",
+      "publisher": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mit-technology-review-186d715f",
+      "name": "MIT Technology Review — AI",
+      "publisher": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/",
+      "homepage": "https://www.technologyreview.com/topic/artificial-intelligence/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "AI reporting and analysis from MIT Technology Review.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mkbhd-youtube-5e4d3c2b",
+      "name": "MKBHD",
+      "publisher": "YouTube",
+      "url": "https://rsshub.app/youtube/user/marquesbrownlee",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mother-jones-763fd334",
+      "name": "Mother Jones",
+      "publisher": "Mother Jones",
+      "url": "https://www.motherjones.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.motherjones.com"
+    },
+    {
+      "id": "nasa-breaking-news-bcd83ac3",
+      "name": "NASA Breaking News",
+      "publisher": "NASA",
+      "url": "https://www.nasa.gov/news-release/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.nasa.gov/news/releases/",
+      "description": "NASA press releases and breaking news on space exploration, science, and technology"
+    },
+    {
+      "id": "nbc-news-08d85777",
+      "name": "NBC News",
+      "publisher": "NBC News",
+      "url": "https://feeds.nbcnews.com/feeds/topstories",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "new-york-times-02951f34",
+      "name": "New York Times",
+      "publisher": "New York Times",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "nih-news-releases-5a5273c6",
+      "name": "NIH News Releases",
+      "publisher": "National Institutes of Health",
+      "url": "https://www.nih.gov/news-events/news-releases/feed.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "homepage": "https://www.nih.gov",
+      "mediaType": "digital",
+      "format": "rss",
+      "official": true
+    },
+    {
+      "id": "npr-b118fe82",
+      "name": "NPR Health — Shots",
+      "publisher": "NPR",
+      "url": "https://feeds.npr.org/1128/rss.xml",
+      "homepage": "https://www.npr.org/sections/health-shots/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "description": "NPR's health news and the Shots blog.",
+      "mediaType": "broadcast",
+      "format": "rss"
+    },
+    {
+      "id": "npr-3e088378",
+      "name": "NPR News",
+      "publisher": "NPR",
+      "url": "https://feeds.npr.org/1001/rss.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "npr-08c3ace3",
+      "name": "NPR Politics",
+      "publisher": "NPR",
+      "url": "https://feeds.npr.org/1014/rss.xml",
+      "homepage": "https://www.npr.org/sections/politics/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "description": "NPR's coverage of U.S. and world politics.",
+      "mediaType": "broadcast",
+      "format": "rss"
+    },
+    {
+      "id": "npr-d6bccb16",
+      "name": "NPR World",
+      "publisher": "NPR",
+      "url": "https://feeds.npr.org/1004/rss.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "nsf-news-0534e5d2",
+      "name": "NSF News",
+      "publisher": "National Science Foundation",
+      "url": "https://www.nsf.gov/rss/rss_www_news.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.nsf.gov/news",
+      "description": "Latest articles about U.S. National Science Foundation discoveries and funding"
+    },
+    {
+      "id": "the-new-york-times-9ef86906",
+      "name": "NYT World",
+      "publisher": "The New York Times",
+      "url": "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "openai-3ae57466",
+      "name": "OpenAI News",
+      "publisher": "OpenAI",
+      "url": "https://openai.com/news/rss.xml",
+      "homepage": "https://openai.com/news/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "Official announcements and research updates from OpenAI.",
+      "mediaType": "digital",
+      "format": "rss",
+      "official": true
+    },
+    {
+      "id": "politico-821cd7dc",
+      "name": "Politico",
+      "publisher": "Politico",
+      "url": "https://www.politico.com/rss/politicopicks.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "homepage": "https://www.politico.com",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "propublica-5b32fc6c",
+      "name": "ProPublica",
+      "publisher": "ProPublica",
+      "url": "https://www.propublica.org/rss/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "realclearpolitics-3cd34df8",
+      "name": "RealClearPolitics",
+      "publisher": "RealClearPolitics",
+      "url": "https://www.realclearpolitics.com/index.xml",
+      "homepage": "https://www.realclearpolitics.com/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "description": "Aggregated U.S. political news, opinion, and polling.",
+      "mediaType": "aggregator",
+      "format": "rss",
+      "perspective": "aggregator"
+    },
+    {
+      "id": "roll-call-7f999a27",
+      "name": "Roll Call",
+      "publisher": "Roll Call",
+      "url": "https://rollcall.com/feed/",
+      "homepage": "https://rollcall.com/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "description": "Capitol Hill and U.S. congressional news.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "sciencedaily-8df9eb68",
+      "name": "ScienceDaily — Health & Medicine",
+      "publisher": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/rss/health_medicine.xml",
+      "homepage": "https://www.sciencedaily.com/news/health_medicine/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "description": "Health and medicine research news summaries.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "sciencedaily-top-news-693abd6a",
+      "name": "ScienceDaily Top News",
+      "publisher": "ScienceDaily",
+      "url": "https://www.sciencedaily.com/rss/all.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.sciencedaily.com",
+      "description": "Breaking science news and articles on global warming, extrasolar planets, stem cells, nanotechnology, evolution — from the world's leading universities and research organizations"
+    },
+    {
+      "id": "stat-165bdc9c",
+      "name": "STAT News",
+      "publisher": "STAT",
+      "url": "https://www.statnews.com/feed/",
+      "homepage": "https://www.statnews.com/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "health",
+      "description": "Reporting on health, medicine, and the life sciences.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "techcrunch-2ef05e31",
+      "name": "TechCrunch",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "techcrunch-84a591b7",
+      "name": "TechCrunch — AI",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "homepage": "https://techcrunch.com/category/artificial-intelligence/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "Artificial-intelligence news and startup coverage from TechCrunch.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-hill-101c9a9e",
+      "name": "The Hill",
+      "publisher": "The Hill",
+      "url": "https://thehill.com/news/feed/",
+      "homepage": "https://thehill.com/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "description": "U.S. political news covering Congress, the White House, and campaigns.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-intercept-cc6c2f48",
+      "name": "The Intercept",
+      "publisher": "The Intercept",
+      "url": "https://theintercept.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent",
+      "notes": "Independent non-profit investigative journalism outlet founded by Glenn Greenwald, Laura Poitras, and Jeremy Scahill. Pulitzer Prize-winning reporting (NSA surveillance/Snowden). Funded by First Look Media, a non-profit organization.\n\nSources:\n  [1] https://en.wikipedia.org/wiki/The_Intercept\n  [2] https://theintercept.com/about/"
+    },
+    {
+      "id": "the-intercept-329ed5cd",
+      "name": "The Intercept",
+      "publisher": "The Intercept",
+      "url": "https://theintercept.com/feed/?lang=en",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://theintercept.com"
+    },
+    {
+      "id": "the-new-republic-6746a13e",
+      "name": "The New Republic",
+      "publisher": "The New Republic",
+      "url": "https://www.newrepublic.com/rss.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "the-verge-e8d31cec",
+      "name": "The Verge",
+      "publisher": "The Verge",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "united-nations-news-b0e48c4e",
+      "name": "United Nations News",
+      "publisher": "United Nations News",
+      "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "venturebeat-b93450af",
+      "name": "VentureBeat — AI",
+      "publisher": "VentureBeat",
+      "url": "https://venturebeat.com/category/ai/feed/",
+      "homepage": "https://venturebeat.com/category/ai/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "ai",
+      "description": "Enterprise AI news and analysis from VentureBeat.",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vox-7a56ec3c",
+      "name": "Vox",
+      "publisher": "Vox",
+      "url": "https://www.vox.com/rss/index.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vox-politics-4df45a26",
+      "name": "Vox — Politics",
+      "publisher": "Vox",
+      "url": "https://www.vox.com/rss/politics/index.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "homepage": "https://www.vox.com",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "wall-street-journal-0c6c512e",
+      "name": "Wall Street Journal",
+      "publisher": "Wall Street Journal",
+      "url": "https://feeds.a.dj.com/rss/RSSWorldNews.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "wired-e8034180",
+      "name": "WIRED",
+      "publisher": "WIRED",
+      "url": "https://www.wired.com/feed/rss",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "UY": [
+    {
+      "id": "el-observador-121f3682",
+      "name": "El Observador",
+      "publisher": "El Observador",
+      "url": "https://www.elobservador.com.uy/rss/pages/ultimo-momento.xml",
+      "language": "en",
+      "countries": [
+        "UY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "mercopress-75406b7a",
+      "name": "MercoPress",
+      "publisher": "MercoPress",
+      "url": "https://en.mercopress.com/rss",
+      "language": "en",
+      "countries": [
+        "AR",
+        "BR",
+        "UY",
+        "PY",
+        "CL",
+        "BO",
+        "PE",
+        "EC",
+        "CO",
+        "VE",
+        "GY",
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "UZ": [
+    {
+      "id": "gazeta-uz-42bf059e",
+      "name": "Gazeta.uz",
+      "publisher": "Gazeta.uz",
+      "url": "https://www.gazeta.uz/rss/",
+      "language": "en",
+      "countries": [
+        "UZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "VE": [
+    {
+      "id": "mercopress-75406b7a",
+      "name": "MercoPress",
+      "publisher": "MercoPress",
+      "url": "https://en.mercopress.com/rss",
+      "language": "en",
+      "countries": [
+        "AR",
+        "BR",
+        "UY",
+        "PY",
+        "CL",
+        "BO",
+        "PE",
+        "EC",
+        "CO",
+        "VE",
+        "GY",
+        "SR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "VN": [
+    {
+      "id": "vnexpress-business-982a1f04",
+      "name": "VnExpress Business",
+      "publisher": "VnExpress Business",
+      "url": "http://vnexpress.net/rss/kinh-doanh.rss",
+      "language": "vi",
+      "countries": [
+        "VN"
+      ],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vnexpress-international-1de9faa5",
+      "name": "VNExpress International",
+      "publisher": "VNExpress International",
+      "url": "https://vnexpress.net/rss/tin-moi-nhat.rss",
+      "language": "en",
+      "countries": [
+        "VN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "XK": [
+    {
+      "id": "zeri-info-81b3c094",
+      "name": "ZERI.info",
+      "publisher": "ZERI.info",
+      "url": "https://zeri.info/rss/zerat",
+      "language": "en",
+      "countries": [
+        "XK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "YE": [
+    {
+      "id": "bbc-news-middle-east-966b1f9c",
+      "name": "BBC News - Middle East",
+      "publisher": "BBC News - Middle East",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
+      "language": "en",
+      "countries": [
+        "IL",
+        "IR",
+        "IQ",
+        "SA",
+        "AE",
+        "SY",
+        "JO",
+        "LB",
+        "YE",
+        "PS",
+        "BH",
+        "KW",
+        "OM",
+        "QA",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "regional",
+      "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
+    },
+    {
+      "id": "mareb-press-4e621f90",
+      "name": "Mareb Press",
+      "publisher": "Mareb Press",
+      "url": "https://marebpress.net/news_rss.php",
+      "language": "en",
+      "countries": [
+        "YE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "ZA": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "mail-guardian-eac78b61",
+      "name": "Mail & Guardian",
+      "publisher": "Mail & Guardian",
+      "url": "https://mg.co.za/feed/",
+      "language": "en",
+      "countries": [
+        "ZA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "news24-e7e4e356",
+      "name": "News24",
+      "publisher": "News24",
+      "url": "https://feeds.news24.com/articles/news24/TopStories/rss",
+      "language": "en",
+      "countries": [
+        "ZA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "ZM": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    },
+    {
+      "id": "tumfweko-97b6f24e",
+      "name": "Tumfweko",
+      "publisher": "Tumfweko",
+      "url": "https://tumfweko.com/feed/",
+      "language": "en",
+      "countries": [
+        "ZM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "ZW": [
+    {
+      "id": "allafrica-e4afdd7c",
+      "name": "AllAfrica",
+      "publisher": "AllAfrica",
+      "url": "https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf",
+      "language": "en",
+      "countries": [
+        "ZA",
+        "NG",
+        "KE",
+        "ET",
+        "GH",
+        "TZ",
+        "UG",
+        "RW",
+        "SN",
+        "CI",
+        "CM",
+        "CD",
+        "AO",
+        "MZ",
+        "MG",
+        "ZW",
+        "ZM",
+        "MW",
+        "ML",
+        "BF",
+        "NE",
+        "TD",
+        "SD",
+        "SS",
+        "SO",
+        "ER",
+        "DJ",
+        "CF",
+        "CG",
+        "GA",
+        "GQ",
+        "BJ",
+        "TG",
+        "SL",
+        "LR",
+        "GN",
+        "GW",
+        "CV",
+        "GM",
+        "MR",
+        "LS",
+        "SZ",
+        "BW",
+        "NA",
+        "DZ",
+        "MA",
+        "TN",
+        "LY",
+        "EG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rdf"
+    }
+  ]
+}

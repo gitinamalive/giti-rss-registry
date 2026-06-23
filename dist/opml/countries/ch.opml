@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: CH</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="Tages Anzeiger" title="Tages Anzeiger" xmlUrl="https://www.tagesanzeiger.ch/rss.html" />
+    <outline type="rss" text="WHO News" title="WHO News" xmlUrl="https://www.who.int/rss-feeds/news-english.xml" />
+  </body>
+</opml>

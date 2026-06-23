@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Category: politics</title>
+    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="BBC News — Politics" title="BBC News — Politics" xmlUrl="https://feeds.bbci.co.uk/news/politics/rss.xml" />
+    <outline type="rss" text="FiveThirtyEight" title="FiveThirtyEight" xmlUrl="https://fivethirtyeight.com/feed/" />
+    <outline type="rss" text="Mother Jones" title="Mother Jones" xmlUrl="https://www.motherjones.com/feed/" />
+    <outline type="rss" text="NPR Politics" title="NPR Politics" xmlUrl="https://feeds.npr.org/1014/rss.xml" />
+    <outline type="rss" text="Politico" title="Politico" xmlUrl="https://www.politico.com/rss/politicopicks.xml" />
+    <outline type="rss" text="RealClearPolitics" title="RealClearPolitics" xmlUrl="https://www.realclearpolitics.com/index.xml" />
+    <outline type="rss" text="Roll Call" title="Roll Call" xmlUrl="https://rollcall.com/feed/" />
+    <outline type="rss" text="The Guardian — Politics" title="The Guardian — Politics" xmlUrl="https://www.theguardian.com/politics/rss" />
+    <outline type="rss" text="The Hill" title="The Hill" xmlUrl="https://thehill.com/news/feed/" />
+    <outline type="rss" text="The Intercept" title="The Intercept" xmlUrl="https://theintercept.com/feed/?lang=en" />
+    <outline type="rss" text="The Spectator" title="The Spectator" xmlUrl="https://www.spectator.co.uk/feed/" />
+    <outline type="rss" text="Vox — Politics" title="Vox — Politics" xmlUrl="https://www.vox.com/rss/politics/index.xml" />
+  </body>
+</opml>

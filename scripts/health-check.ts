@@ -1,7 +1,7 @@
 /**
  * health-check.ts
  *
- * Automated feed health-checker. Performs conditional GETs on every feed
+ * Automated feed health-checker. Performs HEAD requests (with GET fallback) on
  * URL in data/feeds.json, records reachability, last-item date, and
  * computes a 0–100 healthScore. Warning-only — never blocks CI.
  *
@@ -176,15 +176,29 @@ async function main() {
             }
         }
 
-        // Health check
+        // Health check — try HEAD first, fall back to GET on 405/403
         try {
-            const headResp = await fetchHead(urlToCheck);
+            let headResp = await fetchHead(urlToCheck);
             result.status = headResp.status;
 
-            if (headResp.status >= 200 && headResp.status < 400) {
+            // Some servers reject HEAD — fall back to GET
+            if (headResp.status === 405 || headResp.status === 403) {
+                const body = await fetchFeedBody(urlToCheck);
+                if (body) {
+                    result.reachable = true;
+                    result.status = 200; // GET succeeded
+                }
+            } else if (headResp.status >= 200 && headResp.status < 400) {
                 result.reachable = true;
+            }
 
-                // Fetch body to extract last item date
+            if (result.reachable) {
+                // Record any redirect the HEAD followed
+                if (headResp.url !== urlToCheck && headResp.url !== feed.url) {
+                    result.redirectToHttps = headResp.url;
+                }
+
+                // Fetch body to extract last item date (if not already fetched via GET fallback)
                 const body = await fetchFeedBody(urlToCheck);
                 if (body) {
                     result.lastItemDate = extractLastItemDate(body);
