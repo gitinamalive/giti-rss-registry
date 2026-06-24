@@ -2,11 +2,14 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: investigative</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Bellingcat" title="Bellingcat" xmlUrl="https://www.bellingcat.com/feed/" />
+    <outline type="rss" text="ICIJ" title="ICIJ" xmlUrl="https://www.icij.org/feed/" />
+    <outline type="rss" text="OCCRP" title="OCCRP" xmlUrl="https://www.occrp.org/en/feed/" />
     <outline type="rss" text="ProPublica" title="ProPublica" xmlUrl="https://www.propublica.org/rss/" />
+    <outline type="rss" text="TBIJ" title="TBIJ" xmlUrl="https://www.thebureauinvestigates.com/feed/" />
     <outline type="rss" text="The Intercept" title="The Intercept" xmlUrl="https://theintercept.com/feed/" />
   </body>
 </opml>

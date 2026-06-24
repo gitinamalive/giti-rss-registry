@@ -2,11 +2,18 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: science</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="BBC Science &amp; Environment" title="BBC Science &amp; Environment" xmlUrl="https://feeds.bbci.co.uk/news/science_and_environment/rss.xml" />
+    <outline type="rss" text="EurekAlert!" title="EurekAlert!" xmlUrl="https://www.eurekalert.org/rss.xml" />
+    <outline type="rss" text="Live Science" title="Live Science" xmlUrl="https://www.livescience.com/feeds/all" />
+    <outline type="rss" text="Nature News" title="Nature News" xmlUrl="https://www.nature.com/nature.rss" />
     <outline type="rss" text="New Scientist" title="New Scientist" xmlUrl="https://www.newscientist.com/feed/home" />
     <outline type="rss" text="Phys.org" title="Phys.org" xmlUrl="https://phys.org/rss-feed/" />
+    <outline type="rss" text="PNAS" title="PNAS" xmlUrl="https://www.pnas.org/rss/early.xml" />
+    <outline type="rss" text="Quanta Magazine" title="Quanta Magazine" xmlUrl="https://www.quantamagazine.org/feed/" />
+    <outline type="rss" text="Science Magazine" title="Science Magazine" xmlUrl="https://www.science.org/rss/news_current.xml" />
+    <outline type="rss" text="Scientific American" title="Scientific American" xmlUrl="https://www.scientificamerican.com/feed/" />
   </body>
 </opml>

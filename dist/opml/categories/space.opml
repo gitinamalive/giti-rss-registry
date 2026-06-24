@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Category: space</title>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="ESA Top News" title="ESA Top News" xmlUrl="https://www.esa.int/rssfeed/Our_Activities/Space_Science" />
+    <outline type="rss" text="NASA Breaking News" title="NASA Breaking News" xmlUrl="https://www.nasa.gov/news-release/feed/" />
+    <outline type="rss" text="NASA Image of the Day" title="NASA Image of the Day" xmlUrl="https://www.nasa.gov/feeds/iotd-feed/" />
+    <outline type="rss" text="NASA JPL News" title="NASA JPL News" xmlUrl="https://www.jpl.nasa.gov/feed/" />
+    <outline type="rss" text="Space.com" title="Space.com" xmlUrl="https://www.space.com/feeds/all" />
+    <outline type="rss" text="Spaceflight Now" title="Spaceflight Now" xmlUrl="https://spaceflightnow.com/feed/" />
+    <outline type="rss" text="SpaceNews" title="SpaceNews" xmlUrl="https://spacenews.com/feed/" />
+    <outline type="rss" text="Universe Today" title="Universe Today" xmlUrl="https://www.universetoday.com/feed/" />
+  </body>
+</opml>

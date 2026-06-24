@@ -2,11 +2,13 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: CN</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
+    <outline type="rss" text="Caixin Global" title="Caixin Global" xmlUrl="https://www.caixinglobal.com/feed/" />
     <outline type="rss" text="China Daily" title="China Daily" xmlUrl="https://www.chinadaily.com.cn/rss/china_rss.xml" />
     <outline type="rss" text="SCMP China" title="SCMP China" xmlUrl="https://www.scmp.com/rss/91/feed" />
     <outline type="rss" text="South China Morning Post" title="South China Morning Post" xmlUrl="https://www.scmp.com/rss/4/feed" />
+    <outline type="rss" text="Xinhua English" title="Xinhua English" xmlUrl="https://english.news.cn/rss" />
   </body>
 </opml>

@@ -2,9 +2,10 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: AE</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="BBC News - Middle East" title="BBC News - Middle East" xmlUrl="https://feeds.bbci.co.uk/news/world/middle_east/rss.xml" />
+    <outline type="rss" text="Sky News Arabia" title="Sky News Arabia" xmlUrl="https://www.skynewsarabia.com/web/feed" />
   </body>
 </opml>

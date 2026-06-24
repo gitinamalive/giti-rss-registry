@@ -2,11 +2,21 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: finance</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Bloomberg Markets" title="Bloomberg Markets" xmlUrl="https://feeds.bloomberg.com/markets/news.rss" />
-    <outline type="rss" text="VnExpress Business" title="VnExpress Business" xmlUrl="http://vnexpress.net/rss/kinh-doanh.rss" />
+    <outline type="rss" text="Caixin Global" title="Caixin Global" xmlUrl="https://www.caixinglobal.com/feed/" />
+    <outline type="rss" text="CNBC Top News" title="CNBC Top News" xmlUrl="https://www.cnbc.com/id/100003114/device/rss/rss.html" />
+    <outline type="rss" text="Financial Times — World News" title="Financial Times — World News" xmlUrl="https://www.ft.com/world?format=rss" />
+    <outline type="rss" text="FT Chinese" title="FT Chinese" xmlUrl="https://www.ftchinese.com/rss/feed" />
+    <outline type="rss" text="Investopedia" title="Investopedia" xmlUrl="https://www.investopedia.com/feedbuilder/feed/getfeed?feedName=rss_headline" />
+    <outline type="rss" text="MarketWatch — Top Stories" title="MarketWatch — Top Stories" xmlUrl="https://feeds.content.dowjones.io/public/rss/mw_topstories" />
+    <outline type="rss" text="Nikkei Asia" title="Nikkei Asia" xmlUrl="https://asia.nikkei.com/rss/feed/nar" />
+    <outline type="rss" text="Reuters Business" title="Reuters Business" xmlUrl="https://www.reuters.com/arc/outboundfeeds/v1/rss/category/business/" />
+    <outline type="rss" text="The Economist" title="The Economist" xmlUrl="https://www.economist.com/feeds/print-sections/77/business.xml" />
+    <outline type="rss" text="VnExpress Business" title="VnExpress Business" xmlUrl="https://vnexpress.net/rss/kinh-doanh.rss" />
     <outline type="rss" text="Wall Street Journal" title="Wall Street Journal" xmlUrl="https://feeds.a.dj.com/rss/RSSWorldNews.xml" />
+    <outline type="rss" text="WSJ Markets" title="WSJ Markets" xmlUrl="https://feeds.content.dowjones.io/public/rss/wsj_markets" />
   </body>
 </opml>

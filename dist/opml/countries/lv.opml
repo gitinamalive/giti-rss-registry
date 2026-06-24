@@ -2,10 +2,11 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: LV</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="DELFI — Latvia" title="DELFI — Latvia" xmlUrl="https://www.delfi.lv/rss.php" />
     <outline type="rss" text="Euronews" title="Euronews" xmlUrl="https://www.euronews.com/rss?format=xml" />
+    <outline type="rss" text="Meduza" title="Meduza" xmlUrl="https://meduza.io/rss/all" />
   </body>
 </opml>

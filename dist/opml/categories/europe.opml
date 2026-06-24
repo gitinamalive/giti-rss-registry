@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: europe</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="24sata.hr" title="24sata.hr" xmlUrl="https://www.24sata.hr/feeds/news.xml" />
@@ -20,7 +20,7 @@
     <outline type="rss" text="Deutsche Welle (EN)" title="Deutsche Welle (EN)" xmlUrl="https://rss.dw.com/rdf/rss-en-all" />
     <outline type="rss" text="DIE WELT" title="DIE WELT" xmlUrl="https://www.welt.de/?service=Rss" />
     <outline type="rss" text="Die Zeit" title="Die Zeit" xmlUrl="https://newsfeed.zeit.de/index" />
-    <outline type="rss" text="Dnes Dir.bg" title="Dnes Dir.bg" xmlUrl="http://dnes.dir.bg/support/cat_rss.php" />
+    <outline type="rss" text="Dnes Dir.bg" title="Dnes Dir.bg" xmlUrl="https://dnes.dir.bg/support/cat_rss.php" />
     <outline type="rss" text="EL PAIS" title="EL PAIS" xmlUrl="https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada" />
     <outline type="rss" text="Euronews" title="Euronews" xmlUrl="https://www.euronews.com/rss?format=xml" />
     <outline type="rss" text="Expressen" title="Expressen" xmlUrl="https://www.expressen.se/rss/nyheter" />
@@ -28,7 +28,7 @@
     <outline type="rss" text="France 24" title="France 24" xmlUrl="https://www.france24.com/en/rss" />
     <outline type="rss" text="Gazeta.pl" title="Gazeta.pl" xmlUrl="https://rss.gazeta.pl/pub/rss/wiadomosci.xml" />
     <outline type="rss" text="Iltalehti.fi" title="Iltalehti.fi" xmlUrl="https://www.iltalehti.fi/rss/uutiset.xml" />
-    <outline type="rss" text="in.gr" title="in.gr" xmlUrl="http://rss.in.gr/Netvolution.Site.Engine.PageHandler.axd?rid=2&amp;pid=250&amp;la=1&amp;si=1" />
+    <outline type="rss" text="in.gr" title="in.gr" xmlUrl="https://rss.in.gr/Netvolution.Site.Engine.PageHandler.axd?rid=2&amp;pid=250&amp;la=1&amp;si=1" />
     <outline type="rss" text="Index" title="Index" xmlUrl="https://index.hu/24ora/rss" />
     <outline type="rss" text="Irish Independent" title="Irish Independent" xmlUrl="https://www.independent.ie/irish-news/rss" />
     <outline type="rss" text="Krone.at" title="Krone.at" xmlUrl="https://www.krone.at/Nachrichten/rss.html" />
@@ -39,8 +39,9 @@
     <outline type="rss" text="nu.nl" title="nu.nl" xmlUrl="https://www.nu.nl/feeds/rss/algemeen.rss" />
     <outline type="rss" text="Planet Siol.net" title="Planet Siol.net" xmlUrl="https://www.siol.net/rss.aspx?path=SiOL.Net" />
     <outline type="rss" text="Postimees" title="Postimees" xmlUrl="https://www.postimees.ee/rss/" />
+    <outline type="rss" text="Público" title="Público" xmlUrl="https://feeds.publico.pt/publico/UltimasNoticias" />
     <outline type="rss" text="RTL" title="RTL" xmlUrl="https://rtl.lu/rss/headlines/" />
-    <outline type="rss" text="Sigma Live" title="Sigma Live" xmlUrl="http://www.sigmalive.com/rss" />
+    <outline type="rss" text="Sigma Live" title="Sigma Live" xmlUrl="https://www.sigmalive.com/rss" />
     <outline type="rss" text="Sky News" title="Sky News" xmlUrl="https://feeds.skynews.com/feeds/rss/home.xml" />
     <outline type="rss" text="Tages Anzeiger" title="Tages Anzeiger" xmlUrl="https://www.tagesanzeiger.ch/rss.html" />
     <outline type="rss" text="Tagesschau" title="Tagesschau" xmlUrl="https://www.tagesschau.de/xml/rss2" />

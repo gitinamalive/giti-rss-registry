@@ -2,10 +2,11 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: HK</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Hong Kong Free Press" title="Hong Kong Free Press" xmlUrl="https://hongkongfp.com/feed/" />
     <outline type="rss" text="Orient Daily" title="Orient Daily" xmlUrl="https://feeds.feedburner.com/123greetings-daily-rss" />
+    <outline type="rss" text="The Initium" title="The Initium" xmlUrl="https://theinitium.com/feed/" />
   </body>
 </opml>

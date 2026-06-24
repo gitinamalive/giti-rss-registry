@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: US</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Android Developers" title="Android Developers" xmlUrl="https://www.youtube.com/feeds/videos.xml?user=androiddevelopers" />
@@ -10,14 +10,24 @@
     <outline type="rss" text="Berkeley AI Research Blog" title="Berkeley AI Research Blog" xmlUrl="https://bair.berkeley.edu/blog/feed.xml" />
     <outline type="rss" text="Bloomberg Markets" title="Bloomberg Markets" xmlUrl="https://feeds.bloomberg.com/markets/news.rss" />
     <outline type="rss" text="CDC Newsroom" title="CDC Newsroom" xmlUrl="https://tools.cdc.gov/api/v2/resources/media/132608.rss" />
+    <outline type="rss" text="CNBC Top News" title="CNBC Top News" xmlUrl="https://www.cnbc.com/id/100003114/device/rss/rss.html" />
     <outline type="rss" text="Du Rov&apos;s Channel" title="Du Rov&apos;s Channel" xmlUrl="https://rsshub.app/telegram/channel/durov" />
+    <outline type="rss" text="Engadget" title="Engadget" xmlUrl="https://www.engadget.com/rss.xml" />
     <outline type="rss" text="ESPN" title="ESPN" xmlUrl="https://sports.espn.go.com/espn/rss/news" />
+    <outline type="rss" text="EurekAlert!" title="EurekAlert!" xmlUrl="https://www.eurekalert.org/rss.xml" />
     <outline type="rss" text="FiveThirtyEight" title="FiveThirtyEight" xmlUrl="https://fivethirtyeight.com/feed/" />
     <outline type="rss" text="Fox News" title="Fox News" xmlUrl="https://feeds.foxnews.com/foxnews/latest" />
     <outline type="rss" text="GitHub Trending" title="GitHub Trending" xmlUrl="https://rsshub.app/github/trending/daily/any" />
+    <outline type="rss" text="Gizmodo" title="Gizmodo" xmlUrl="https://gizmodo.com/rss" />
     <outline type="rss" text="Google — The Keyword: AI" title="Google — The Keyword: AI" xmlUrl="https://blog.google/technology/ai/rss/" />
+    <outline type="rss" text="Grist" title="Grist" xmlUrl="https://grist.org/feed/" />
     <outline type="rss" text="Hugging Face Blog" title="Hugging Face Blog" xmlUrl="https://huggingface.co/blog/feed.xml" />
+    <outline type="rss" text="ICIJ" title="ICIJ" xmlUrl="https://www.icij.org/feed/" />
+    <outline type="rss" text="Inside Climate News" title="Inside Climate News" xmlUrl="https://insideclimatenews.org/feed/" />
+    <outline type="rss" text="Investopedia" title="Investopedia" xmlUrl="https://www.investopedia.com/feedbuilder/feed/getfeed?feedName=rss_headline" />
     <outline type="rss" text="KFF Health News" title="KFF Health News" xmlUrl="https://kffhealthnews.org/feed/" />
+    <outline type="rss" text="Live Science" title="Live Science" xmlUrl="https://www.livescience.com/feeds/all" />
+    <outline type="rss" text="MarketWatch — Top Stories" title="MarketWatch — Top Stories" xmlUrl="https://feeds.content.dowjones.io/public/rss/mw_topstories" />
     <outline type="rss" text="MarkTechPost" title="MarkTechPost" xmlUrl="https://www.marktechpost.com/feed/" />
     <outline type="rss" text="Medical News Today" title="Medical News Today" xmlUrl="https://www.medicalnewstoday.com/newsfeeds-rss" />
     <outline type="rss" text="MedPage Today" title="MedPage Today" xmlUrl="https://www.medpagetoday.com/rss/headlines.xml" />
@@ -26,22 +36,36 @@
     <outline type="rss" text="MKBHD" title="MKBHD" xmlUrl="https://rsshub.app/youtube/user/marquesbrownlee" />
     <outline type="rss" text="Mother Jones" title="Mother Jones" xmlUrl="https://www.motherjones.com/feed/" />
     <outline type="rss" text="NASA Breaking News" title="NASA Breaking News" xmlUrl="https://www.nasa.gov/news-release/feed/" />
+    <outline type="rss" text="NASA Climate" title="NASA Climate" xmlUrl="https://climate.nasa.gov/feeds/" />
+    <outline type="rss" text="NASA Image of the Day" title="NASA Image of the Day" xmlUrl="https://www.nasa.gov/feeds/iotd-feed/" />
+    <outline type="rss" text="NASA JPL News" title="NASA JPL News" xmlUrl="https://www.jpl.nasa.gov/feed/" />
     <outline type="rss" text="NBC News" title="NBC News" xmlUrl="https://feeds.nbcnews.com/feeds/topstories" />
     <outline type="rss" text="New York Times" title="New York Times" xmlUrl="https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml" />
     <outline type="rss" text="NIH News Releases" title="NIH News Releases" xmlUrl="https://www.nih.gov/news-events/news-releases/feed.xml" />
+    <outline type="rss" text="NOAA Climate.gov" title="NOAA Climate.gov" xmlUrl="https://www.climate.gov/news-features/feed" />
     <outline type="rss" text="NPR Health — Shots" title="NPR Health — Shots" xmlUrl="https://feeds.npr.org/1128/rss.xml" />
     <outline type="rss" text="NPR News" title="NPR News" xmlUrl="https://feeds.npr.org/1001/rss.xml" />
     <outline type="rss" text="NPR Politics" title="NPR Politics" xmlUrl="https://feeds.npr.org/1014/rss.xml" />
     <outline type="rss" text="NPR World" title="NPR World" xmlUrl="https://feeds.npr.org/1004/rss.xml" />
     <outline type="rss" text="NSF News" title="NSF News" xmlUrl="https://www.nsf.gov/rss/rss_www_news.xml" />
+    <outline type="rss" text="NYT Chinese" title="NYT Chinese" xmlUrl="https://cn.nytimes.com/rss/" />
     <outline type="rss" text="NYT World" title="NYT World" xmlUrl="https://rss.nytimes.com/services/xml/rss/nyt/World.xml" />
     <outline type="rss" text="OpenAI News" title="OpenAI News" xmlUrl="https://openai.com/news/rss.xml" />
+    <outline type="rss" text="PBS NewsHour" title="PBS NewsHour" xmlUrl="https://www.pbs.org/newshour/feeds/rss/headlines" />
+    <outline type="rss" text="PNAS" title="PNAS" xmlUrl="https://www.pnas.org/rss/early.xml" />
     <outline type="rss" text="Politico" title="Politico" xmlUrl="https://www.politico.com/rss/politicopicks.xml" />
     <outline type="rss" text="ProPublica" title="ProPublica" xmlUrl="https://www.propublica.org/rss/" />
+    <outline type="rss" text="Quanta Magazine" title="Quanta Magazine" xmlUrl="https://www.quantamagazine.org/feed/" />
     <outline type="rss" text="RealClearPolitics" title="RealClearPolitics" xmlUrl="https://www.realclearpolitics.com/index.xml" />
+    <outline type="rss" text="Rest of World" title="Rest of World" xmlUrl="https://restofworld.org/feed/" />
     <outline type="rss" text="Roll Call" title="Roll Call" xmlUrl="https://rollcall.com/feed/" />
+    <outline type="rss" text="Science Magazine" title="Science Magazine" xmlUrl="https://www.science.org/rss/news_current.xml" />
     <outline type="rss" text="ScienceDaily — Health &amp; Medicine" title="ScienceDaily — Health &amp; Medicine" xmlUrl="https://www.sciencedaily.com/rss/health_medicine.xml" />
     <outline type="rss" text="ScienceDaily Top News" title="ScienceDaily Top News" xmlUrl="https://www.sciencedaily.com/rss/all.xml" />
+    <outline type="rss" text="Scientific American" title="Scientific American" xmlUrl="https://www.scientificamerican.com/feed/" />
+    <outline type="rss" text="Space.com" title="Space.com" xmlUrl="https://www.space.com/feeds/all" />
+    <outline type="rss" text="Spaceflight Now" title="Spaceflight Now" xmlUrl="https://spaceflightnow.com/feed/" />
+    <outline type="rss" text="SpaceNews" title="SpaceNews" xmlUrl="https://spacenews.com/feed/" />
     <outline type="rss" text="STAT News" title="STAT News" xmlUrl="https://www.statnews.com/feed/" />
     <outline type="rss" text="TechCrunch" title="TechCrunch" xmlUrl="https://techcrunch.com/feed/" />
     <outline type="rss" text="TechCrunch — AI" title="TechCrunch — AI" xmlUrl="https://techcrunch.com/category/artificial-intelligence/feed/" />
@@ -56,5 +80,8 @@
     <outline type="rss" text="Vox — Politics" title="Vox — Politics" xmlUrl="https://www.vox.com/rss/politics/index.xml" />
     <outline type="rss" text="Wall Street Journal" title="Wall Street Journal" xmlUrl="https://feeds.a.dj.com/rss/RSSWorldNews.xml" />
     <outline type="rss" text="WIRED" title="WIRED" xmlUrl="https://www.wired.com/feed/rss" />
+    <outline type="rss" text="WSJ Markets" title="WSJ Markets" xmlUrl="https://feeds.content.dowjones.io/public/rss/wsj_markets" />
+    <outline type="rss" text="Yale Climate Connections" title="Yale Climate Connections" xmlUrl="https://yaleclimateconnections.org/feed/" />
+    <outline type="rss" text="ZDNet" title="ZDNet" xmlUrl="https://www.zdnet.com/news/rss.xml" />
   </body>
 </opml>

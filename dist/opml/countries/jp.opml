@@ -2,11 +2,16 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: JP</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Asahi Shimbun" title="Asahi Shimbun" xmlUrl="https://rss.asahi.com/rss/asahi/newsheadlines.rdf" />
+    <outline type="rss" text="Asahi Shimbun — Japanese" title="Asahi Shimbun — Japanese" xmlUrl="https://www.asahi.com/rss/asahi/newsheadlines.rdf" />
+    <outline type="rss" text="Mainichi Shimbun" title="Mainichi Shimbun" xmlUrl="https://mainichi.jp/rss/etc/mainichi-flash.rss" />
     <outline type="rss" text="NHK" title="NHK" xmlUrl="https://www.nhk.or.jp/rj/podcast/rss/english.xml" />
+    <outline type="rss" text="NHK News — Japanese" title="NHK News — Japanese" xmlUrl="https://www3.nhk.or.jp/rss/news/cat0.xml" />
+    <outline type="rss" text="NHK World" title="NHK World" xmlUrl="https://www3.nhk.or.jp/nhkworld/en/news/feed/" />
+    <outline type="rss" text="Nikkei Asia" title="Nikkei Asia" xmlUrl="https://asia.nikkei.com/rss/feed/nar" />
     <outline type="rss" text="The Japan Times" title="The Japan Times" xmlUrl="https://www.japantimes.co.jp/feed/" />
     <outline type="rss" text="The Japan Times — Feed" title="The Japan Times — Feed" xmlUrl="https://www.japantimes.co.jp/feed" />
   </body>

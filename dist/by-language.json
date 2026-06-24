@@ -1,6 +1,51 @@
 {
   "ar": [
     {
+      "id": "asharq-al-awsat-e4fd19a2",
+      "name": "Asharq Al-Awsat",
+      "publisher": "Asharq Al-Awsat",
+      "url": "https://aawsat.com/feed",
+      "language": "ar",
+      "countries": [
+        "GB"
+      ],
+      "category": "world",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://aawsat.com",
+      "description": "Asharq Al-Awsat — pan-Arab daily newspaper."
+    },
+    {
+      "id": "bbc-arabic-ff42d1dc",
+      "name": "BBC Arabic",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/arabic/rss.xml",
+      "language": "ar",
+      "countries": [
+        "GB"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www.bbc.com/arabic",
+      "description": "BBC Arabic news and analysis."
+    },
+    {
+      "id": "france-24-arabic-da663d36",
+      "name": "France 24 Arabic",
+      "publisher": "France 24",
+      "url": "https://www.france24.com/ar/rss",
+      "language": "ar",
+      "countries": [
+        "FR"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www.france24.com/ar/",
+      "description": "France 24 Arabic news feed."
+    },
+    {
       "id": "sana-3d39c5fb",
       "name": "SANA",
       "publisher": "SANA",
@@ -27,6 +72,21 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "sky-news-arabia-fc0759bd",
+      "name": "Sky News Arabia",
+      "publisher": "Sky News Arabia",
+      "url": "https://www.skynewsarabia.com/web/feed",
+      "language": "ar",
+      "countries": [
+        "AE"
+      ],
+      "category": "world",
+      "mediaType": "tv",
+      "format": "rss",
+      "homepage": "https://www.skynewsarabia.com",
+      "description": "Sky News Arabia — 24/7 Arabic news."
     }
   ],
   "bg": [
@@ -34,7 +94,7 @@
       "id": "dnes-dir-bg-1913434a",
       "name": "Dnes Dir.bg",
       "publisher": "Dnes Dir.bg",
-      "url": "http://dnes.dir.bg/support/cat_rss.php",
+      "url": "https://dnes.dir.bg/support/cat_rss.php",
       "language": "bg",
       "countries": [
         "BG"
@@ -98,7 +158,7 @@
         "DE"
       ],
       "category": "europe",
-      "mediaType": "digital",
+      "mediaType": "broadcast",
       "format": "rdf"
     },
     {
@@ -172,7 +232,7 @@
       "id": "in-gr-0b923e1f",
       "name": "in.gr",
       "publisher": "in.gr",
-      "url": "http://rss.in.gr/Netvolution.Site.Engine.PageHandler.axd?rid=2&pid=250&la=1&si=1",
+      "url": "https://rss.in.gr/Netvolution.Site.Engine.PageHandler.axd?rid=2&pid=250&la=1&si=1",
       "language": "el",
       "countries": [
         "GR"
@@ -185,7 +245,7 @@
       "id": "sigma-live-c5a2ac04",
       "name": "Sigma Live",
       "publisher": "Sigma Live",
-      "url": "http://www.sigmalive.com/rss",
+      "url": "https://www.sigmalive.com/rss",
       "language": "el",
       "countries": [
         "CY"
@@ -219,7 +279,7 @@
         "AU"
       ],
       "category": "world",
-      "mediaType": "digital",
+      "mediaType": "broadcast",
       "format": "rss"
     },
     {
@@ -232,7 +292,7 @@
         "AU"
       ],
       "category": "world",
-      "mediaType": "digital",
+      "mediaType": "broadcast",
       "format": "rss"
     },
     {
@@ -274,7 +334,9 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "notes": "Al Jazeera is funded by the Qatari government through the Qatar Media Corporation. Editorial independence is debated — RSF notes it 'reflects the Qatari government's viewpoint on regional issues' while acknowledging its professional journalism standards. Per CONTRIBUTING.md policy, labeled state-affiliated with this rationale documented."
     },
     {
       "id": "algerie360-com-e9ede278",
@@ -386,7 +448,7 @@
         "IT"
       ],
       "category": "europe",
-      "mediaType": "digital",
+      "mediaType": "wire",
       "format": "rss",
       "homepage": "https://www.ansa.it/english",
       "description": "Latest news from Italy and international politics, business, science, technology, lifestyle, and sports from ANSA"
@@ -468,7 +530,7 @@
         "GB"
       ],
       "category": "europe",
-      "mediaType": "digital",
+      "mediaType": "broadcast",
       "format": "rss"
     },
     {
@@ -495,7 +557,7 @@
         "EG"
       ],
       "category": "world",
-      "mediaType": "digital",
+      "mediaType": "broadcast",
       "format": "rss",
       "perspective": "regional",
       "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
@@ -525,7 +587,7 @@
         "GB"
       ],
       "category": "science",
-      "mediaType": "digital",
+      "mediaType": "broadcast",
       "format": "rss",
       "homepage": "https://www.bbc.com/news/science_and_environment",
       "description": "BBC News science and environment coverage"
@@ -540,7 +602,7 @@
         "GB"
       ],
       "category": "sports",
-      "mediaType": "digital",
+      "mediaType": "broadcast",
       "format": "rss",
       "homepage": "https://www.bbc.com/sport",
       "description": "BBC Sport — live scores, match reports, analysis, and sports news"
@@ -555,7 +617,7 @@
         "GB"
       ],
       "category": "europe",
-      "mediaType": "digital",
+      "mediaType": "broadcast",
       "format": "rss"
     },
     {
@@ -683,6 +745,21 @@
       "format": "rss"
     },
     {
+      "id": "cbc-news-top-stories-c4a96b2b",
+      "name": "CBC News — Top Stories",
+      "publisher": "CBC",
+      "url": "https://www.cbc.ca/webfeed/rss/rss-topstories",
+      "language": "en",
+      "countries": [
+        "CA"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www.cbc.ca/news",
+      "description": "CBC News top stories — Canada's public broadcaster."
+    },
+    {
       "id": "cdc-newsroom-55b13d0a",
       "name": "CDC Newsroom",
       "publisher": "CDC",
@@ -724,6 +801,36 @@
       "format": "rss",
       "perspective": "state-affiliated",
       "notes": "State-owned English-language newspaper of the Chinese government. Published by the Publicity Department of the Chinese Communist Party. RSF ranks China among the most restrictive media environments globally.\n\nSources:\n  [1] https://rsf.org/en/country/china\n  [2] https://en.wikipedia.org/wiki/China_Daily"
+    },
+    {
+      "id": "climate-home-news-f6d2cd6b",
+      "name": "Climate Home News",
+      "publisher": "Climate Home News",
+      "url": "https://www.climatechangenews.com/feed/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "climate",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.climatechangenews.com",
+      "description": "International climate and energy news, focusing on global climate negotiations and policy."
+    },
+    {
+      "id": "cnbc-top-news-fc3cf1fb",
+      "name": "CNBC Top News",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/id/100003114/device/rss/rss.html",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "finance",
+      "mediaType": "tv",
+      "format": "rss",
+      "homepage": "https://www.cnbc.com",
+      "description": "CNBC top business and market news."
     },
     {
       "id": "colombia-reports-b99a35bc",
@@ -923,6 +1030,57 @@
       "format": "rss"
     },
     {
+      "id": "engadget-5758161a",
+      "name": "Engadget",
+      "publisher": "Engadget",
+      "url": "https://www.engadget.com/rss.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.engadget.com",
+      "description": "Engadget — technology news, reviews, and buyer's guides."
+    },
+    {
+      "id": "esa-top-news-7fed9242",
+      "name": "ESA Top News",
+      "publisher": "European Space Agency",
+      "url": "https://www.esa.int/rssfeed/Our_Activities/Space_Science",
+      "language": "en",
+      "countries": [
+        "FR",
+        "DE",
+        "IT",
+        "GB",
+        "ES",
+        "NL",
+        "BE",
+        "CH",
+        "AT",
+        "SE",
+        "NO",
+        "FI",
+        "DK",
+        "PT",
+        "GR",
+        "IE",
+        "LU",
+        "CZ",
+        "RO",
+        "PL",
+        "HU",
+        "EE"
+      ],
+      "category": "space",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.esa.int",
+      "description": "European Space Agency top news on space science and exploration."
+    },
+    {
       "id": "espn-b1ff08c3",
       "name": "ESPN",
       "publisher": "ESPN",
@@ -936,6 +1094,21 @@
       "format": "rss"
     },
     {
+      "id": "eurekalert-f59fa259",
+      "name": "EurekAlert!",
+      "publisher": "AAAS",
+      "url": "https://www.eurekalert.org/rss.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.eurekalert.org",
+      "description": "Science news releases from universities, journals, and research organizations."
+    },
+    {
       "id": "fbc-news-10cdbefd",
       "name": "FBC News",
       "publisher": "FBC News",
@@ -947,6 +1120,21 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "financial-times-world-news-7eafde69",
+      "name": "Financial Times — World News",
+      "publisher": "Financial Times",
+      "url": "https://www.ft.com/world?format=rss",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "finance",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.ft.com",
+      "description": "Financial Times world news RSS feed."
     },
     {
       "id": "fivethirtyeight-c0749426",
@@ -985,7 +1173,7 @@
         "FR"
       ],
       "category": "europe",
-      "mediaType": "digital",
+      "mediaType": "broadcast",
       "format": "rss"
     },
     {
@@ -1080,6 +1268,21 @@
       "format": "rss"
     },
     {
+      "id": "gizmodo-735f1d07",
+      "name": "Gizmodo",
+      "publisher": "Gizmodo",
+      "url": "https://gizmodo.com/rss",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://gizmodo.com",
+      "description": "Gizmodo — design, technology, science, and science fiction."
+    },
+    {
       "id": "global-news-2e21ce61",
       "name": "Global News",
       "publisher": "Global News",
@@ -1123,6 +1326,21 @@
       "mediaType": "digital",
       "format": "rss",
       "official": true
+    },
+    {
+      "id": "grist-05e7a904",
+      "name": "Grist",
+      "publisher": "Grist",
+      "url": "https://grist.org/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "climate",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://grist.org",
+      "description": "Nonprofit environmental news outlet covering climate, sustainability, and environmental justice."
     },
     {
       "id": "guineenews-d34b3ea0",
@@ -1195,6 +1413,21 @@
       "official": true
     },
     {
+      "id": "icij-7ece0352",
+      "name": "ICIJ",
+      "publisher": "International Consortium of Investigative Journalists",
+      "url": "https://www.icij.org/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.icij.org",
+      "description": "ICIJ — global network of investigative journalists exposing crime, corruption, and abuse of power."
+    },
+    {
       "id": "infos-gabon-99930956",
       "name": "Infos Gabon",
       "publisher": "Infos Gabon",
@@ -1206,6 +1439,36 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "inside-climate-news-67ee29ca",
+      "name": "Inside Climate News",
+      "publisher": "Inside Climate News",
+      "url": "https://insideclimatenews.org/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "climate",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://insideclimatenews.org",
+      "description": "Pulitzer Prize-winning nonprofit news organization covering climate change, energy and the environment."
+    },
+    {
+      "id": "investopedia-f1589137",
+      "name": "Investopedia",
+      "publisher": "Investopedia",
+      "url": "https://www.investopedia.com/feedbuilder/feed/getfeed?feedName=rss_headline",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.investopedia.com",
+      "description": "Investopedia financial education and market news."
     },
     {
       "id": "irish-independent-bb1e3229",
@@ -1330,7 +1593,7 @@
       "id": "kalerkantho-com-b415de52",
       "name": "Kalerkantho.com",
       "publisher": "Kalerkantho.com",
-      "url": "http://www.kalerkantho.com/rss.xml",
+      "url": "https://www.kalerkantho.com/rss.xml",
       "language": "en",
       "countries": [
         "BD"
@@ -1338,6 +1601,21 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "kbs-world-bc06a766",
+      "name": "KBS World",
+      "publisher": "KBS",
+      "url": "https://world.kbs.co.kr/rss/rss_podcast.htm?lang=e",
+      "language": "en",
+      "countries": [
+        "KR"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://world.kbs.co.kr",
+      "description": "KBS World — South Korea's international public broadcaster in English."
     },
     {
       "id": "kff-health-news-590eeb92",
@@ -1353,6 +1631,21 @@
       "description": "Nonprofit newsroom covering U.S. health policy and care.",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "korea-herald-c4218c8a",
+      "name": "Korea Herald",
+      "publisher": "Korea Herald",
+      "url": "https://www.koreaherald.com/rss/feed.php",
+      "language": "en",
+      "countries": [
+        "KR"
+      ],
+      "category": "world",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.koreaherald.com",
+      "description": "Korea Herald — English-language daily from South Korea."
     },
     {
       "id": "kvf-faroe-islands-0c0ca6d5",
@@ -1448,6 +1741,21 @@
       "format": "rss"
     },
     {
+      "id": "live-science-dccc537e",
+      "name": "Live Science",
+      "publisher": "Live Science",
+      "url": "https://www.livescience.com/feeds/all",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.livescience.com",
+      "description": "Live Science — discoveries, technology, health, and the environment."
+    },
+    {
       "id": "madagascar-tribune-0f2f25aa",
       "name": "Madagascar Tribune",
       "publisher": "Madagascar Tribune",
@@ -1485,6 +1793,21 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "marketwatch-top-stories-cf706cc3",
+      "name": "MarketWatch — Top Stories",
+      "publisher": "MarketWatch",
+      "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.marketwatch.com",
+      "description": "MarketWatch top market and business stories."
     },
     {
       "id": "marktechpost-0f4dc4f0",
@@ -1659,11 +1982,56 @@
       "countries": [
         "US"
       ],
-      "category": "us",
+      "category": "space",
       "mediaType": "digital",
       "format": "rss",
       "homepage": "https://www.nasa.gov/news/releases/",
       "description": "NASA press releases and breaking news on space exploration, science, and technology"
+    },
+    {
+      "id": "nasa-climate-dc8a8c31",
+      "name": "NASA Climate",
+      "publisher": "NASA",
+      "url": "https://climate.nasa.gov/feeds/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "climate",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://climate.nasa.gov",
+      "description": "NASA's Global Climate Change news feed."
+    },
+    {
+      "id": "nasa-image-of-the-day-eb571d68",
+      "name": "NASA Image of the Day",
+      "publisher": "NASA",
+      "url": "https://www.nasa.gov/feeds/iotd-feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "space",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.nasa.gov/multimedia/imagegallery/iotd.html",
+      "description": "NASA's Image of the Day RSS feed."
+    },
+    {
+      "id": "nasa-jpl-news-044b7954",
+      "name": "NASA JPL News",
+      "publisher": "NASA JPL",
+      "url": "https://www.jpl.nasa.gov/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "space",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.jpl.nasa.gov",
+      "description": "Jet Propulsion Laboratory news on space exploration, robotics, and Earth science."
     },
     {
       "id": "nasha-niva-414a3072",
@@ -1690,6 +2058,21 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "nature-news-8efb1434",
+      "name": "Nature News",
+      "publisher": "Nature",
+      "url": "https://www.nature.com/nature.rss",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "science",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.nature.com",
+      "description": "Nature — the leading international weekly journal of science."
     },
     {
       "id": "nbc-news-08d85777",
@@ -1722,7 +2105,7 @@
     {
       "id": "new-york-times-02951f34",
       "name": "New York Times",
-      "publisher": "New York Times",
+      "publisher": "The New York Times",
       "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
       "language": "en",
       "countries": [
@@ -1785,6 +2168,21 @@
       "format": "rss"
     },
     {
+      "id": "nhk-world-0342efc9",
+      "name": "NHK World",
+      "publisher": "NHK",
+      "url": "https://www3.nhk.or.jp/nhkworld/en/news/feed/",
+      "language": "en",
+      "countries": [
+        "JP"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www3.nhk.or.jp/nhkworld/",
+      "description": "NHK World — Japan's international public broadcaster in English."
+    },
+    {
       "id": "nih-news-releases-5a5273c6",
       "name": "NIH News Releases",
       "publisher": "National Institutes of Health",
@@ -1800,6 +2198,21 @@
       "official": true
     },
     {
+      "id": "nikkei-asia-f31650f5",
+      "name": "Nikkei Asia",
+      "publisher": "Nikkei",
+      "url": "https://asia.nikkei.com/rss/feed/nar",
+      "language": "en",
+      "countries": [
+        "JP"
+      ],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://asia.nikkei.com",
+      "description": "Nikkei Asia business and economic news."
+    },
+    {
       "id": "nk-news-9a6d9273",
       "name": "NK News",
       "publisher": "NK News",
@@ -1813,6 +2226,21 @@
       "format": "rss",
       "perspective": "state-monitor",
       "notes": "U.S.-based independent publication providing expert analysis and news on North Korea. Specialized in monitoring DPRK political, economic, and military developments. Cited by major outlets including Washington Post, BBC, and academic research.\n\nSources:\n  [1] https://www.nknews.org/\n  [2] https://en.wikipedia.org/wiki/Daily_NK"
+    },
+    {
+      "id": "noaa-climate-gov-a43dfad9",
+      "name": "NOAA Climate.gov",
+      "publisher": "NOAA",
+      "url": "https://www.climate.gov/news-features/feed",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "climate",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.climate.gov",
+      "description": "NOAA Climate.gov news and features on climate science and adaptation."
     },
     {
       "id": "noti-uno-630-am-7b37529e",
@@ -1852,7 +2280,7 @@
         "US"
       ],
       "category": "us",
-      "mediaType": "digital",
+      "mediaType": "broadcast",
       "format": "rss"
     },
     {
@@ -1880,7 +2308,7 @@
         "US"
       ],
       "category": "us",
-      "mediaType": "digital",
+      "mediaType": "broadcast",
       "format": "rss"
     },
     {
@@ -1938,6 +2366,21 @@
       "format": "rss"
     },
     {
+      "id": "occrp-0669d4f8",
+      "name": "OCCRP",
+      "publisher": "Organized Crime and Corruption Reporting Project",
+      "url": "https://www.occrp.org/en/feed/",
+      "language": "en",
+      "countries": [
+        "BA"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.occrp.org",
+      "description": "OCCRP — worldwide investigative reporting on organized crime and corruption."
+    },
+    {
       "id": "onlinekhabar-com-075424bb",
       "name": "onlinekhabar.com",
       "publisher": "onlinekhabar.com",
@@ -1980,6 +2423,21 @@
       "format": "rss"
     },
     {
+      "id": "pbs-newshour-9b4984ea",
+      "name": "PBS NewsHour",
+      "publisher": "PBS",
+      "url": "https://www.pbs.org/newshour/feeds/rss/headlines",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www.pbs.org/newshour",
+      "description": "PBS NewsHour headlines — America's public television news program."
+    },
+    {
       "id": "philstar-headlines-b5f0dd03",
       "name": "Philstar Headlines",
       "publisher": "Philstar Headlines",
@@ -2006,6 +2464,21 @@
       "format": "rss",
       "homepage": "https://phys.org",
       "description": "Daily science news on research developments, technological breakthroughs and the latest scientific innovations"
+    },
+    {
+      "id": "pnas-3843ce69",
+      "name": "PNAS",
+      "publisher": "PNAS",
+      "url": "https://www.pnas.org/rss/early.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "science",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.pnas.org",
+      "description": "Proceedings of the National Academy of Sciences — early edition articles."
     },
     {
       "id": "point-6a33f6d2",
@@ -2074,6 +2547,21 @@
       "format": "rss"
     },
     {
+      "id": "quanta-magazine-78efa86f",
+      "name": "Quanta Magazine",
+      "publisher": "Simons Foundation",
+      "url": "https://www.quantamagazine.org/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.quantamagazine.org",
+      "description": "Quanta Magazine covers the latest news in mathematics, physics, biology, and computer science."
+    },
+    {
       "id": "realclearpolitics-3cd34df8",
       "name": "RealClearPolitics",
       "publisher": "RealClearPolitics",
@@ -2090,6 +2578,36 @@
       "perspective": "aggregator"
     },
     {
+      "id": "rest-of-world-ae2c3d54",
+      "name": "Rest of World",
+      "publisher": "Rest of World",
+      "url": "https://restofworld.org/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://restofworld.org",
+      "description": "Reporting on technology's impact outside the Western bubble."
+    },
+    {
+      "id": "reuters-business-732e613a",
+      "name": "Reuters Business",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/arc/outboundfeeds/v1/rss/category/business/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "finance",
+      "mediaType": "wire",
+      "format": "rss",
+      "homepage": "https://www.reuters.com",
+      "description": "Reuters business and financial news."
+    },
+    {
       "id": "reuters-world-10fab0cc",
       "name": "Reuters World",
       "publisher": "Reuters World",
@@ -2099,7 +2617,7 @@
         "GB"
       ],
       "category": "world",
-      "mediaType": "digital",
+      "mediaType": "wire",
       "format": "rss"
     },
     {
@@ -2211,6 +2729,21 @@
       "format": "rss"
     },
     {
+      "id": "science-magazine-1ac1417d",
+      "name": "Science Magazine",
+      "publisher": "AAAS",
+      "url": "https://www.science.org/rss/news_current.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "science",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.science.org",
+      "description": "Science magazine news and research from AAAS."
+    },
+    {
       "id": "sciencedaily-8df9eb68",
       "name": "ScienceDaily — Health & Medicine",
       "publisher": "ScienceDaily",
@@ -2239,6 +2772,21 @@
       "format": "rss",
       "homepage": "https://www.sciencedaily.com",
       "description": "Breaking science news and articles on global warming, extrasolar planets, stem cells, nanotechnology, evolution — from the world's leading universities and research organizations"
+    },
+    {
+      "id": "scientific-american-4a5cbcdd",
+      "name": "Scientific American",
+      "publisher": "Scientific American",
+      "url": "https://www.scientificamerican.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "science",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.scientificamerican.com",
+      "description": "Scientific American — award-winning science, health, and technology coverage."
     },
     {
       "id": "scmp-china-846d3d21",
@@ -2291,6 +2839,51 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "space-com-343adc7d",
+      "name": "Space.com",
+      "publisher": "Space.com",
+      "url": "https://www.space.com/feeds/all",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "space",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.space.com",
+      "description": "Space.com news covering space exploration, astronomy, and skywatching."
+    },
+    {
+      "id": "spaceflight-now-bd26039a",
+      "name": "Spaceflight Now",
+      "publisher": "Spaceflight Now",
+      "url": "https://spaceflightnow.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "space",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://spaceflightnow.com",
+      "description": "Launch schedules, space mission coverage, and rocket news."
+    },
+    {
+      "id": "spacenews-0279bb64",
+      "name": "SpaceNews",
+      "publisher": "SpaceNews",
+      "url": "https://spacenews.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "space",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://spacenews.com",
+      "description": "SpaceNews covers space industry, policy, technology, and exploration."
     },
     {
       "id": "standard-media-40f83369",
@@ -2388,6 +2981,21 @@
       "notes": "Russian state news agency (TASS). Founded in 1904, government-owned and directly reflects Kremlin positions. Primary source of official Russian government statements and state narratives.\n\nSources:\n  [1] https://rsf.org/en/country/russia\n  [2] https://en.wikipedia.org/wiki/TASS"
     },
     {
+      "id": "tbij-8caa6005",
+      "name": "TBIJ",
+      "publisher": "The Bureau of Investigative Journalism",
+      "url": "https://www.thebureauinvestigates.com/feed/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.thebureauinvestigates.com",
+      "description": "The Bureau of Investigative Journalism — public interest investigative journalism."
+    },
+    {
       "id": "techcrunch-2ef05e31",
       "name": "TechCrunch",
       "publisher": "TechCrunch",
@@ -2459,6 +3067,21 @@
       "format": "rss"
     },
     {
+      "id": "the-economist-dc7823fb",
+      "name": "The Economist",
+      "publisher": "The Economist",
+      "url": "https://www.economist.com/feeds/print-sections/77/business.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "finance",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.economist.com",
+      "description": "The Economist business and finance section."
+    },
+    {
       "id": "the-guardian-ebe3f1d5",
       "name": "The Guardian",
       "publisher": "The Guardian",
@@ -2485,6 +3108,21 @@
       "format": "rss",
       "perspective": "independent",
       "notes": "Part of Guardian Media Group, owned by the Scott Trust — a structure designed to protect editorial independence in perpetuity. No shareholders, no proprietor. RSF ranks UK press environment as 'satisfactory' (24/180).\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.theguardian.com/the-scott-trust"
+    },
+    {
+      "id": "the-guardian-climate-5d3ce11c",
+      "name": "The Guardian — Climate",
+      "publisher": "The Guardian",
+      "url": "https://www.theguardian.com/environment/climate-crisis/rss",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "climate",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.theguardian.com/environment/climate-crisis",
+      "description": "The Guardian's climate crisis coverage."
     },
     {
       "id": "the-guardian-politics-fd15ffc1",
@@ -2561,7 +3199,7 @@
       "id": "the-jamaica-star-d4fd8f52",
       "name": "The Jamaica Star",
       "publisher": "The Jamaica Star",
-      "url": "http://jamaica-star.com/feed/news.xml",
+      "url": "https://jamaica-star.com/feed/news.xml",
       "language": "en",
       "countries": [
         "JM"
@@ -2665,6 +3303,21 @@
       "format": "rss"
     },
     {
+      "id": "the-register-d5d82c95",
+      "name": "The Register",
+      "publisher": "The Register",
+      "url": "https://www.theregister.com/headlines.atom",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "atom",
+      "homepage": "https://www.theregister.com",
+      "description": "The Register — biting the hand that feeds IT."
+    },
+    {
       "id": "the-rio-times-ec8ed07a",
       "name": "The Rio Times",
       "publisher": "The Rio Times",
@@ -2755,6 +3408,21 @@
       "category": "us",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "universe-today-98424f40",
+      "name": "Universe Today",
+      "publisher": "Universe Today",
+      "url": "https://www.universetoday.com/feed/",
+      "language": "en",
+      "countries": [
+        "CA"
+      ],
+      "category": "space",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.universetoday.com",
+      "description": "Space and astronomy news from Universe Today."
     },
     {
       "id": "vanguard-news-108776b9",
@@ -2893,6 +3561,52 @@
       "format": "rss"
     },
     {
+      "id": "wsj-markets-43730613",
+      "name": "WSJ Markets",
+      "publisher": "Wall Street Journal",
+      "url": "https://feeds.content.dowjones.io/public/rss/wsj_markets",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "finance",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.wsj.com",
+      "description": "Wall Street Journal markets and finance coverage."
+    },
+    {
+      "id": "xinhua-english-383b8944",
+      "name": "Xinhua English",
+      "publisher": "Xinhua News Agency",
+      "url": "https://english.news.cn/rss",
+      "language": "en",
+      "countries": [
+        "CN"
+      ],
+      "category": "world",
+      "mediaType": "wire",
+      "format": "rss",
+      "homepage": "https://english.news.cn",
+      "description": "Xinhua News Agency — China's official state news agency. Labeled state-affiliated per registry policy.",
+      "perspective": "state-affiliated"
+    },
+    {
+      "id": "yale-climate-connections-df50d2f8",
+      "name": "Yale Climate Connections",
+      "publisher": "Yale University",
+      "url": "https://yaleclimateconnections.org/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "climate",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://yaleclimateconnections.org",
+      "description": "Yale program providing daily climate news and analysis."
+    },
+    {
       "id": "ynet-aa480431",
       "name": "Ynet",
       "publisher": "Ynet",
@@ -2904,6 +3618,21 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "zdnet-e1426035",
+      "name": "ZDNet",
+      "publisher": "ZDNet",
+      "url": "https://www.zdnet.com/news/rss.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.zdnet.com",
+      "description": "ZDNet — technology news, reviews, and analysis for IT professionals."
     },
     {
       "id": "zeri-info-81b3c094",
@@ -3165,6 +3894,53 @@
       "format": "rss"
     }
   ],
+  "hi": [
+    {
+      "id": "bbc-hindi-fd88776a",
+      "name": "BBC Hindi",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/hindi/rss.xml",
+      "language": "hi",
+      "countries": [
+        "GB"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www.bbc.com/hindi",
+      "description": "BBC Hindi news feed."
+    },
+    {
+      "id": "dainik-bhaskar-92b3bd92",
+      "name": "Dainik Bhaskar",
+      "publisher": "DB Corp",
+      "url": "https://www.bhaskar.com/rss-feed/",
+      "language": "hi",
+      "countries": [
+        "IN"
+      ],
+      "category": "world",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.bhaskar.com",
+      "description": "Dainik Bhaskar — one of India's largest Hindi-language daily newspapers."
+    },
+    {
+      "id": "ndtv-india-a9ced082",
+      "name": "NDTV India",
+      "publisher": "NDTV",
+      "url": "https://feeds.feedburner.com/ndtvindia",
+      "language": "hi",
+      "countries": [
+        "IN"
+      ],
+      "category": "world",
+      "mediaType": "tv",
+      "format": "rss",
+      "homepage": "https://ndtv.in",
+      "description": "NDTV India — Hindi news channel."
+    }
+  ],
   "hr": [
     {
       "id": "24sata-hr-629a3986",
@@ -3240,7 +4016,69 @@
       "format": "rss"
     }
   ],
+  "ja": [
+    {
+      "id": "asahi-shimbun-japanese-f4e45e49",
+      "name": "Asahi Shimbun — Japanese",
+      "publisher": "Asahi Shimbun",
+      "url": "https://www.asahi.com/rss/asahi/newsheadlines.rdf",
+      "language": "ja",
+      "countries": [
+        "JP"
+      ],
+      "category": "world",
+      "mediaType": "print",
+      "format": "rdf",
+      "homepage": "https://www.asahi.com",
+      "description": "Asahi Shimbun — major Japanese daily newspaper (Japanese edition)."
+    },
+    {
+      "id": "mainichi-shimbun-333fb4c0",
+      "name": "Mainichi Shimbun",
+      "publisher": "Mainichi Shimbun",
+      "url": "https://mainichi.jp/rss/etc/mainichi-flash.rss",
+      "language": "ja",
+      "countries": [
+        "JP"
+      ],
+      "category": "world",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://mainichi.jp",
+      "description": "Mainichi Shimbun — Japanese daily newspaper."
+    },
+    {
+      "id": "nhk-news-japanese-e5d45312",
+      "name": "NHK News — Japanese",
+      "publisher": "NHK",
+      "url": "https://www3.nhk.or.jp/rss/news/cat0.xml",
+      "language": "ja",
+      "countries": [
+        "JP"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www3.nhk.or.jp/news/",
+      "description": "NHK News — Japan's public broadcaster (Japanese edition)."
+    }
+  ],
   "ko": [
+    {
+      "id": "chosun-ilbo-7ac6e548",
+      "name": "Chosun Ilbo",
+      "publisher": "Chosun Ilbo",
+      "url": "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml",
+      "language": "ko",
+      "countries": [
+        "KR"
+      ],
+      "category": "world",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.chosun.com",
+      "description": "Chosun Ilbo — major Korean daily newspaper."
+    },
     {
       "id": "donga-sports-23035e23",
       "name": "Donga Sports",
@@ -3253,6 +4091,21 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "yonhap-news-3e30b331",
+      "name": "Yonhap News",
+      "publisher": "Yonhap",
+      "url": "https://www.yna.co.kr/rss/headline.xml",
+      "language": "ko",
+      "countries": [
+        "KR"
+      ],
+      "category": "world",
+      "mediaType": "wire",
+      "format": "rss",
+      "homepage": "https://www.yna.co.kr",
+      "description": "Yonhap News — South Korea's largest news agency (Korean edition)."
     }
   ],
   "lb": [
@@ -3347,6 +4200,21 @@
   ],
   "pt": [
     {
+      "id": "bbc-brasil-d5bbe197",
+      "name": "BBC Brasil",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/portuguese/rss.xml",
+      "language": "pt",
+      "countries": [
+        "GB"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www.bbc.com/portuguese",
+      "description": "BBC Brasil — Portuguese-language news."
+    },
+    {
       "id": "expresso-9bcf73a1",
       "name": "Expresso",
       "publisher": "Expresso",
@@ -3358,6 +4226,21 @@
       "category": "europe",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "folha-de-s-paulo-1126aff0",
+      "name": "Folha de S.Paulo",
+      "publisher": "Folha",
+      "url": "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml",
+      "language": "pt",
+      "countries": [
+        "BR"
+      ],
+      "category": "world",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.folha.uol.com.br",
+      "description": "Folha de S.Paulo — leading Brazilian daily newspaper."
     },
     {
       "id": "g1-11fa6d52",
@@ -3386,6 +4269,21 @@
       "format": "rss"
     },
     {
+      "id": "p-blico-7135869a",
+      "name": "Público",
+      "publisher": "Público",
+      "url": "https://feeds.publico.pt/publico/UltimasNoticias",
+      "language": "pt",
+      "countries": [
+        "PT"
+      ],
+      "category": "europe",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.publico.pt",
+      "description": "Público — Portuguese national daily newspaper."
+    },
+    {
       "id": "uol-not-cias-a51f4337",
       "name": "UOL Notícias",
       "publisher": "UOL Notícias",
@@ -3412,6 +4310,39 @@
       "category": "europe",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "ru": [
+    {
+      "id": "bbc-russian-27d98ae3",
+      "name": "BBC Russian",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/russian/rss.xml",
+      "language": "ru",
+      "countries": [
+        "GB"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www.bbc.com/russian",
+      "description": "BBC Russian news service."
+    },
+    {
+      "id": "meduza-fecba09f",
+      "name": "Meduza",
+      "publisher": "Meduza",
+      "url": "https://meduza.io/rss/all",
+      "language": "ru",
+      "countries": [
+        "LV"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://meduza.io",
+      "description": "Meduza — independent Russian-language news outlet based in Latvia.",
+      "perspective": "independent-exile"
     }
   ],
   "sk": [
@@ -3509,7 +4440,7 @@
       "id": "vnexpress-business-982a1f04",
       "name": "VnExpress Business",
       "publisher": "VnExpress Business",
-      "url": "http://vnexpress.net/rss/kinh-doanh.rss",
+      "url": "https://vnexpress.net/rss/kinh-doanh.rss",
       "language": "vi",
       "countries": [
         "VN"
@@ -3517,6 +4448,83 @@
       "category": "finance",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "zh": [
+    {
+      "id": "bbc-chinese-341d40ee",
+      "name": "BBC Chinese",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/zhongwen/simp/rss.xml",
+      "language": "zh",
+      "countries": [
+        "GB"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www.bbc.com/zhongwen/simp",
+      "description": "BBC Chinese simplified news feed."
+    },
+    {
+      "id": "caixin-global-b7e57675",
+      "name": "Caixin Global",
+      "publisher": "Caixin",
+      "url": "https://www.caixinglobal.com/feed/",
+      "language": "zh",
+      "countries": [
+        "CN"
+      ],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.caixinglobal.com",
+      "description": "Caixin Global — Chinese financial and business news in English and Chinese."
+    },
+    {
+      "id": "ft-chinese-961a6c2a",
+      "name": "FT Chinese",
+      "publisher": "Financial Times",
+      "url": "https://www.ftchinese.com/rss/feed",
+      "language": "zh",
+      "countries": [
+        "GB"
+      ],
+      "category": "finance",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.ftchinese.com",
+      "description": "Financial Times Chinese edition."
+    },
+    {
+      "id": "nyt-chinese-686c518d",
+      "name": "NYT Chinese",
+      "publisher": "The New York Times",
+      "url": "https://cn.nytimes.com/rss/",
+      "language": "zh",
+      "countries": [
+        "US"
+      ],
+      "category": "world",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://cn.nytimes.com",
+      "description": "New York Times Chinese edition."
+    },
+    {
+      "id": "the-initium-a45c67ad",
+      "name": "The Initium",
+      "publisher": "The Initium",
+      "url": "https://theinitium.com/feed/",
+      "language": "zh",
+      "countries": [
+        "HK"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://theinitium.com",
+      "description": "The Initium — in-depth Chinese-language journalism from Hong Kong."
     }
   ]
 }

@@ -2,9 +2,10 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: BA</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Dnevnik.ba" title="Dnevnik.ba" xmlUrl="https://www.dnevnik.ba/rss.xml" />
+    <outline type="rss" text="OCCRP" title="OCCRP" xmlUrl="https://www.occrp.org/en/feed/" />
   </body>
 </opml>

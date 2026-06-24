@@ -2,9 +2,13 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: KR</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
+    <outline type="rss" text="Chosun Ilbo" title="Chosun Ilbo" xmlUrl="https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml" />
     <outline type="rss" text="Donga Sports" title="Donga Sports" xmlUrl="https://rss.donga.com/sports.xml" />
+    <outline type="rss" text="KBS World" title="KBS World" xmlUrl="https://world.kbs.co.kr/rss/rss_podcast.htm?lang=e" />
+    <outline type="rss" text="Korea Herald" title="Korea Herald" xmlUrl="https://www.koreaherald.com/rss/feed.php" />
+    <outline type="rss" text="Yonhap News" title="Yonhap News" xmlUrl="https://www.yna.co.kr/rss/headline.xml" />
   </body>
 </opml>

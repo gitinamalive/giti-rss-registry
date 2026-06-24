@@ -2,9 +2,16 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: climate</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Carbon Brief" title="Carbon Brief" xmlUrl="https://www.carbonbrief.org/feed/" />
+    <outline type="rss" text="Climate Home News" title="Climate Home News" xmlUrl="https://www.climatechangenews.com/feed/" />
+    <outline type="rss" text="Grist" title="Grist" xmlUrl="https://grist.org/feed/" />
+    <outline type="rss" text="Inside Climate News" title="Inside Climate News" xmlUrl="https://insideclimatenews.org/feed/" />
+    <outline type="rss" text="NASA Climate" title="NASA Climate" xmlUrl="https://climate.nasa.gov/feeds/" />
+    <outline type="rss" text="NOAA Climate.gov" title="NOAA Climate.gov" xmlUrl="https://www.climate.gov/news-features/feed" />
+    <outline type="rss" text="The Guardian — Climate" title="The Guardian — Climate" xmlUrl="https://www.theguardian.com/environment/climate-crisis/rss" />
+    <outline type="rss" text="Yale Climate Connections" title="Yale Climate Connections" xmlUrl="https://yaleclimateconnections.org/feed/" />
   </body>
 </opml>

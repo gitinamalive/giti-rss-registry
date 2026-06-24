@@ -2,10 +2,10 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: VN</title>
-    <dateCreated>Tue, 23 Jun 2026 14:21:20 GMT</dateCreated>
+    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
   </head>
   <body>
-    <outline type="rss" text="VnExpress Business" title="VnExpress Business" xmlUrl="http://vnexpress.net/rss/kinh-doanh.rss" />
+    <outline type="rss" text="VnExpress Business" title="VnExpress Business" xmlUrl="https://vnexpress.net/rss/kinh-doanh.rss" />
     <outline type="rss" text="VNExpress International" title="VNExpress International" xmlUrl="https://vnexpress.net/rss/tin-moi-nhat.rss" />
   </body>
 </opml>
