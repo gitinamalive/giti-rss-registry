@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-23T18:13:08.183Z",
+  "generatedAt": "2026-06-24T08:27:32.898Z",
   "source": "public-rss-registry/data/feeds.json (hand-curated)",
   "stats": {
-    "feeds": 314,
+    "feeds": 357,
     "duplicateIds": 0,
     "duplicateUrls": 0
   },
@@ -2840,21 +2840,6 @@
       "description": "BBC News science and environment coverage"
     },
     {
-      "id": "sciencedaily-top-news-693abd6a",
-      "name": "ScienceDaily Top News",
-      "publisher": "ScienceDaily",
-      "url": "https://www.sciencedaily.com/rss/all.xml",
-      "language": "en",
-      "countries": [
-        "US"
-      ],
-      "category": "us",
-      "mediaType": "digital",
-      "format": "rss",
-      "homepage": "https://www.sciencedaily.com",
-      "description": "Breaking science news and articles on global warming, extrasolar planets, stem cells, nanotechnology, evolution — from the world's leading universities and research organizations"
-    },
-    {
       "id": "carbon-brief-e0c7ff98",
       "name": "Carbon Brief",
       "publisher": "Carbon Brief",
@@ -2930,21 +2915,6 @@
       "description": "NASA press releases and breaking news on space exploration, science, and technology"
     },
     {
-      "id": "phys-org-ff4c7ba3",
-      "name": "Phys.org",
-      "publisher": "Phys.org",
-      "url": "https://phys.org/rss-feed/",
-      "language": "en",
-      "countries": [
-        "GB"
-      ],
-      "category": "science",
-      "mediaType": "digital",
-      "format": "rss",
-      "homepage": "https://phys.org",
-      "description": "Daily science news on research developments, technological breakthroughs and the latest scientific innovations"
-    },
-    {
       "id": "new-scientist-9a506e18",
       "name": "New Scientist",
       "publisher": "New Scientist",
@@ -2988,6 +2958,261 @@
       "format": "rss",
       "homepage": "https://www.bbc.com/sport",
       "description": "BBC Sport — live scores, match reports, analysis, and sports news"
+    },
+    {
+      "id": "espn-2f4c8d1a",
+      "name": "ESPN",
+      "publisher": "ESPN",
+      "url": "https://feeds.espn.com/feeds/site/espn/global/headlines",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "tv",
+      "format": "rss",
+      "homepage": "https://www.espn.com",
+      "description": "ESPN — sports news, scores, highlights, and analysis."
+    },
+    {
+      "id": "sky-sports-5b9e2c4d",
+      "name": "Sky Sports",
+      "publisher": "Sky Sports",
+      "url": "https://www.skysports.com/feed/news",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "sports",
+      "mediaType": "tv",
+      "format": "rss",
+      "homepage": "https://www.skysports.com",
+      "description": "Sky Sports — live sport, news, and analysis."
+    },
+    {
+      "id": "sports-illustrated-3c7d1e5f",
+      "name": "Sports Illustrated",
+      "publisher": "Sports Illustrated",
+      "url": "https://feeds.si.com/si/rss/si_topstories.rss",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.si.com",
+      "description": "Sports Illustrated — sports news, features, and analysis."
+    },
+    {
+      "id": "the-athletic-6e2f4a9c",
+      "name": "The Athletic",
+      "publisher": "The Athletic",
+      "url": "https://theathletic.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://theathletic.com",
+      "description": "The Athletic — premium sports journalism and analysis."
+    },
+    {
+      "id": "ap-sports-8f5b3d2e",
+      "name": "AP Sports",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/apf/sports",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "wire",
+      "format": "rss",
+      "homepage": "https://apnews.com/hub/sports",
+      "description": "AP Sports — breaking sports news from around the world."
+    },
+    {
+      "id": "fox-sports-9a1c6e3d",
+      "name": "Fox Sports",
+      "publisher": "Fox Sports",
+      "url": "https://www.foxsports.com/feed/news-feed.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "tv",
+      "format": "rss",
+      "homepage": "https://www.foxsports.com",
+      "description": "Fox Sports — sports news, scores, and live coverage."
+    },
+    {
+      "id": "sportico-4d9e7f1b",
+      "name": "Sportico",
+      "publisher": "Sportico",
+      "url": "https://sportico.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://sportico.com",
+      "description": "Sportico — sports business and finance news."
+    },
+    {
+      "id": "deadspin-7c3f5a8e",
+      "name": "Deadspin",
+      "publisher": "Deadspin",
+      "url": "https://deadspin.com/feed",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://deadspin.com",
+      "description": "Deadspin — irreverent sports culture, analysis, and commentary."
+    },
+    {
+      "id": "reuters-sports-2b8c4f5d",
+      "name": "Reuters Sports",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/arc/outboundfeeds/v1/rss/category/sports/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "sports",
+      "mediaType": "wire",
+      "format": "rss",
+      "homepage": "https://www.reuters.com",
+      "description": "Reuters Sports — international sports news and results."
+    },
+    {
+      "id": "the-guardian-arts-4f1e8c9d",
+      "name": "The Guardian — Arts",
+      "publisher": "The Guardian",
+      "url": "https://www.theguardian.com/culture/rss",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.theguardian.com/culture",
+      "description": "The Guardian Arts and Culture — visual arts, literature, film, music, theater, and cultural commentary."
+    },
+    {
+      "id": "the-new-yorker-culture-7d3a5f2c",
+      "name": "The New Yorker — Culture",
+      "publisher": "The New Yorker",
+      "url": "https://www.newyorker.com/feed/culture",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "culture",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.newyorker.com/culture",
+      "description": "The New Yorker Culture — criticism, essays, and commentary on film, books, theater, music, and art."
+    },
+    {
+      "id": "artsy-8b6c2e1f",
+      "name": "Artsy",
+      "publisher": "Artsy",
+      "url": "https://artsy.net/feed",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://artsy.net",
+      "description": "Artsy — contemporary art news, exhibitions, galleries, and cultural trends."
+    },
+    {
+      "id": "frieze-3c7d9e4a",
+      "name": "Frieze",
+      "publisher": "Frieze",
+      "url": "https://frieze.com/feed/rss.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://frieze.com",
+      "description": "Frieze — contemporary art and culture magazine and fair."
+    },
+    {
+      "id": "apollo-magazine-5e4f1c8d",
+      "name": "Apollo Magazine",
+      "publisher": "Apollo Magazine",
+      "url": "https://www.apollomagazine.com/feed/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.apollomagazine.com",
+      "description": "Apollo Magazine — international art and culture criticism."
+    },
+    {
+      "id": "hyperallergic-9f2a3d5b",
+      "name": "Hyperallergic",
+      "publisher": "Hyperallergic",
+      "url": "https://hyperallergic.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://hyperallergic.com",
+      "description": "Hyperallergic — contemporary art criticism and cultural commentary."
+    },
+    {
+      "id": "architectural-digest-2b8f4e6c",
+      "name": "Architectural Digest",
+      "publisher": "Architectural Digest",
+      "url": "https://www.architecturaldigest.com/feed/latest",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.architecturaldigest.com",
+      "description": "Architectural Digest — architecture, design, and cultural living."
+    },
+    {
+      "id": "pitchfork-6c1d7f3e",
+      "name": "Pitchfork",
+      "publisher": "Pitchfork",
+      "url": "https://pitchfork.com/feed/rss.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://pitchfork.com",
+      "description": "Pitchfork — music news, reviews, interviews, and cultural analysis."
     },
     {
       "id": "techcrunch-84a591b7",
@@ -3143,6 +3368,126 @@
       "mediaType": "digital",
       "format": "atom",
       "official": true
+    },
+    {
+      "id": "variety-4e2f5c8a",
+      "name": "Variety",
+      "publisher": "Variety",
+      "url": "https://variety.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://variety.com",
+      "description": "Variety — entertainment industry news, film, television, music, and awards coverage."
+    },
+    {
+      "id": "the-hollywood-reporter-6f3a1d9b",
+      "name": "The Hollywood Reporter",
+      "publisher": "The Hollywood Reporter",
+      "url": "https://www.hollywoodreporter.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.hollywoodreporter.com",
+      "description": "The Hollywood Reporter — entertainment news, film, TV, music, and industry coverage."
+    },
+    {
+      "id": "deadline-7a4c2e5d",
+      "name": "Deadline",
+      "publisher": "Deadline",
+      "url": "https://deadline.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://deadline.com",
+      "description": "Deadline — entertainment breaking news, deals, and industry coverage."
+    },
+    {
+      "id": "indiewire-8b5f7c1e",
+      "name": "IndieWire",
+      "publisher": "IndieWire",
+      "url": "https://www.indiewire.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.indiewire.com",
+      "description": "IndieWire — independent film, television, and digital entertainment news."
+    },
+    {
+      "id": "vulture-ny-mag-3c9d2f6b",
+      "name": "Vulture",
+      "publisher": "New York Magazine",
+      "url": "https://www.vulture.com/feed/index.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.vulture.com",
+      "description": "Vulture — New York Magazine's culture and entertainment section with TV, film, and pop culture."
+    },
+    {
+      "id": "entertainment-weekly-2d7a4e8c",
+      "name": "EW",
+      "publisher": "Entertainment Weekly",
+      "url": "https://ew.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://ew.com",
+      "description": "Entertainment Weekly — TV, film, music, and celebrity news and entertainment."
+    },
+    {
+      "id": "the-wrap-9c1f5d3a",
+      "name": "The Wrap",
+      "publisher": "The Wrap",
+      "url": "https://www.thewrap.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.thewrap.com",
+      "description": "The Wrap — entertainment news, TV, film, and celebrity coverage."
+    },
+    {
+      "id": "rolling-stone-5e3b8f2d",
+      "name": "Rolling Stone",
+      "publisher": "Rolling Stone",
+      "url": "https://www.rollingstone.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.rollingstone.com",
+      "description": "Rolling Stone — music, entertainment, culture, and celebrity news and reviews."
     },
     {
       "id": "the-hill-101c9a9e",
@@ -3693,6 +4038,36 @@
       "description": "NOAA Climate.gov news and features on climate science and adaptation."
     },
     {
+      "id": "mongabay-d4c9e3a1",
+      "name": "Mongabay",
+      "publisher": "Mongabay",
+      "url": "https://news.mongabay.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "climate",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://news.mongabay.com",
+      "description": "Mongabay — environmental and climate journalism covering conservation, rainforests, and global environmental issues."
+    },
+    {
+      "id": "environmental-defense-fund-7b2e1c5f",
+      "name": "Environmental Defense Fund",
+      "publisher": "Environmental Defense Fund",
+      "url": "https://www.edf.org/news-feed",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "climate",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.edf.org",
+      "description": "Environmental Defense Fund — news and analysis on climate, energy, and environmental solutions."
+    },
+    {
       "id": "nasa-jpl-news-044b7954",
       "name": "NASA JPL News",
       "publisher": "NASA JPL",
@@ -3924,6 +4299,81 @@
       "description": "Proceedings of the National Academy of Sciences — early edition articles."
     },
     {
+      "id": "science-daily-2d4f9e6c",
+      "name": "Science Daily",
+      "publisher": "Science Daily",
+      "url": "https://www.sciencedaily.com/rss/all.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.sciencedaily.com",
+      "description": "Science Daily — breaking news from hundreds of universities and research institutions worldwide."
+    },
+    {
+      "id": "cosmos-magazine-8a3b5f12",
+      "name": "Cosmos Magazine",
+      "publisher": "Cosmos Magazine",
+      "url": "https://cosmosmagazine.com/feed/",
+      "language": "en",
+      "countries": [
+        "AU"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://cosmosmagazine.com",
+      "description": "Cosmos Magazine — science explained by leading researchers and science communicators."
+    },
+    {
+      "id": "phys-org-4c8b1d3e",
+      "name": "Phys.org",
+      "publisher": "Phys.org",
+      "url": "https://phys.org/rss-feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://phys.org",
+      "description": "Phys.org — physics, space, and astronomy news from research institutions worldwide."
+    },
+    {
+      "id": "the-conversation-science-f5e2c7a9",
+      "name": "The Conversation",
+      "publisher": "The Conversation",
+      "url": "https://theconversation.com/us/science/feed",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://theconversation.com",
+      "description": "The Conversation — in-depth analysis from academics and researchers on science and technology."
+    },
+    {
+      "id": "medical-news-today-6f7d2c1b",
+      "name": "Medical News Today",
+      "publisher": "Healthline Media",
+      "url": "https://www.medicalnewstoday.com/feeds/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.medicalnewstoday.com",
+      "description": "Medical News Today — news and research on medicine, health, and life sciences."
+    },
+    {
       "id": "icij-7ece0352",
       "name": "ICIJ",
       "publisher": "International Consortium of Investigative Journalists",
@@ -3967,6 +4417,66 @@
       "format": "rss",
       "homepage": "https://www.thebureauinvestigates.com",
       "description": "The Bureau of Investigative Journalism — public interest investigative journalism."
+    },
+    {
+      "id": "washington-post-investigations-3f7c8e2d",
+      "name": "Washington Post — Investigations",
+      "publisher": "Washington Post",
+      "url": "https://feeds.washingtonpost.com/rss/investigations",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.washingtonpost.com",
+      "description": "Washington Post investigations — Pulitzer Prize-winning investigative journalism."
+    },
+    {
+      "id": "reuters-investigations-9a5d3b4c",
+      "name": "Reuters Investigations",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/arc/outboundfeeds/v1/rss/investigative/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "investigative",
+      "mediaType": "wire",
+      "format": "rss",
+      "homepage": "https://www.reuters.com",
+      "description": "Reuters investigations — award-winning investigative reporting on global issues."
+    },
+    {
+      "id": "bbc-panorama-2e1f5d8a",
+      "name": "BBC Panorama",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/programmes/b006n2yl/episodes.rss",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "investigative",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www.bbc.co.uk/programmes/b006n2yl",
+      "description": "BBC Panorama — flagship investigative documentary and current affairs program."
+    },
+    {
+      "id": "aljazeera-investigations-7c3d9f1a",
+      "name": "Al Jazeera Investigations",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml?level=3&cat_id=/programs/investigative-unit",
+      "language": "en",
+      "countries": [
+        "QA"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.aljazeera.com",
+      "description": "Al Jazeera Investigations — award-winning global investigative journalism."
     },
     {
       "id": "rest-of-world-ae2c3d54",
@@ -4042,6 +4552,111 @@
       "format": "rss",
       "homepage": "https://www.engadget.com",
       "description": "Engadget — technology news, reviews, and buyer's guides."
+    },
+    {
+      "id": "hacker-news-rss-1c4d7f9e",
+      "name": "Hacker News",
+      "publisher": "Y Combinator",
+      "url": "https://feeds.hnrss.org/frontpage",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://news.ycombinator.com",
+      "description": "Hacker News — community curated technology news and discussion."
+    },
+    {
+      "id": "venturebeat-8d5e2c3a",
+      "name": "VentureBeat",
+      "publisher": "VentureBeat",
+      "url": "https://feeds.venturebeat.com/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://venturebeat.com",
+      "description": "VentureBeat — technology news, AI, startups, and venture capital."
+    },
+    {
+      "id": "anandtech-6b2e4f1c",
+      "name": "AnandTech",
+      "publisher": "AnandTech",
+      "url": "https://www.anandtech.com/rss/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.anandtech.com",
+      "description": "AnandTech — computer hardware reviews, benchmarks, and analysis."
+    },
+    {
+      "id": "techdirt-9f3c1e8b",
+      "name": "TechDirt",
+      "publisher": "TechDirt",
+      "url": "https://www.techdirt.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.techdirt.com",
+      "description": "TechDirt — technology policy, copyright, patents, and internet issues."
+    },
+    {
+      "id": "protocol-2d7f5a4e",
+      "name": "Protocol",
+      "publisher": "Protocol",
+      "url": "https://www.protocol.com/feed",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.protocol.com",
+      "description": "Protocol — enterprise tech news, AI, and digital transformation."
+    },
+    {
+      "id": "9to5mac-7c3b8d2a",
+      "name": "9to5Mac",
+      "publisher": "9to5Mac",
+      "url": "https://9to5mac.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://9to5mac.com",
+      "description": "9to5Mac — Apple news, reviews, and tutorials."
+    },
+    {
+      "id": "macrumors-5e1d6c3f",
+      "name": "MacRumors",
+      "publisher": "MacRumors",
+      "url": "https://feeds.macrumors.com/MacRumors/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.macrumors.com",
+      "description": "MacRumors — Apple news, rumors, and developments."
     },
     {
       "id": "bbc-arabic-ff42d1dc",
@@ -4177,6 +4792,36 @@
       "format": "rss",
       "homepage": "https://www.caixinglobal.com",
       "description": "Caixin Global — Chinese financial and business news in English and Chinese."
+    },
+    {
+      "id": "seeking-alpha-8f4b2c91",
+      "name": "Seeking Alpha",
+      "publisher": "Seeking Alpha",
+      "url": "https://seekingalpha.com/feed.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://seekingalpha.com",
+      "description": "Seeking Alpha — independent stock research, investment analysis, and financial commentary."
+    },
+    {
+      "id": "barrons-5c7d1e42",
+      "name": "Barron's",
+      "publisher": "Barron's",
+      "url": "https://www.barrons.com/xml/feeds/all-news.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "finance",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.barrons.com",
+      "description": "Barron's — premium financial journalism and market analysis from Dow Jones."
     },
     {
       "id": "bbc-hindi-fd88776a",
