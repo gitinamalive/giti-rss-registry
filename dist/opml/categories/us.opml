@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: us</title>
-    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
+    <dateCreated>Tue, 28 Jul 2026 17:58:38 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Du Rov&apos;s Channel" title="Du Rov&apos;s Channel" xmlUrl="https://rsshub.app/telegram/channel/durov" />
@@ -15,7 +15,6 @@
     <outline type="rss" text="NSF News" title="NSF News" xmlUrl="https://www.nsf.gov/rss/rss_www_news.xml" />
     <outline type="rss" text="NYT World" title="NYT World" xmlUrl="https://rss.nytimes.com/services/xml/rss/nyt/World.xml" />
     <outline type="rss" text="PBS NewsHour" title="PBS NewsHour" xmlUrl="https://www.pbs.org/newshour/feeds/rss/headlines" />
-    <outline type="rss" text="ScienceDaily Top News" title="ScienceDaily Top News" xmlUrl="https://www.sciencedaily.com/rss/all.xml" />
     <outline type="rss" text="The New Republic" title="The New Republic" xmlUrl="https://www.newrepublic.com/rss.xml" />
     <outline type="rss" text="United Nations News" title="United Nations News" xmlUrl="https://news.un.org/feed/subscribe/en/news/all/rss.xml" />
     <outline type="rss" text="Vox" title="Vox" xmlUrl="https://www.vox.com/rss/index.xml" />

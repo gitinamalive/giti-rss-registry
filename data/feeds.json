@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-24T08:27:32.898Z",
+  "generatedAt": "2026-07-28T17:15:00.000Z",
   "source": "public-rss-registry/data/feeds.json (hand-curated)",
   "stats": {
-    "feeds": 357,
+    "feeds": 379,
     "duplicateIds": 0,
     "duplicateUrls": 0
   },
@@ -5109,6 +5109,249 @@
       "homepage": "https://english.news.cn",
       "description": "Xinhua News Agency — China's official state news agency. Labeled state-affiliated per registry policy.",
       "perspective": "state-affiliated"
+    },
+    {
+      "id": "malaysiakini-b1668c76",
+      "name": "Malaysiakini",
+      "publisher": "Malaysiakini",
+      "url": "https://www.malaysiakini.com/rss/en/news.rss",
+      "language": "en",
+      "countries": ["MY"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "malay-mail-77a08800",
+      "name": "Malay Mail",
+      "publisher": "Malay Mail",
+      "url": "https://www.malaymail.com/feed/rss/malaysia",
+      "language": "en",
+      "countries": ["MY"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "dvb-english-a8ed0223",
+      "name": "DVB English",
+      "publisher": "Democratic Voice of Burma",
+      "url": "https://english.dvb.no/feed/",
+      "language": "en",
+      "countries": ["MM"],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss"
+    },
+    {
+      "id": "myanmar-now-4ebf4e5f",
+      "name": "Myanmar Now",
+      "publisher": "Myanmar Now",
+      "url": "https://www.myanmar-now.org/en/feed",
+      "language": "en",
+      "countries": ["MM"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "laotian-times-094f8289",
+      "name": "Laotian Times",
+      "publisher": "Laotian Times",
+      "url": "https://laotiantimes.com/feed/",
+      "language": "en",
+      "countries": ["LA"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "kuensel-0e890769",
+      "name": "Kuensel",
+      "publisher": "Kuensel",
+      "url": "https://kuenselonline.com/feed/",
+      "language": "en",
+      "countries": ["BT"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "24kg-1907a7c4",
+      "name": "24.kg",
+      "publisher": "24.kg News Agency",
+      "url": "https://24.kg/rss/",
+      "language": "ru",
+      "countries": ["KG"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "notes": "Russian-language feed. English feed was unavailable at the time of addition (the /english/feed/ endpoint returned 404). Russian-language coverage still provides Kyrgyzstan news access."
+    },
+    {
+      "id": "asia-plus-cac2ca6b",
+      "name": "Asia-Plus",
+      "publisher": "Asia-Plus",
+      "url": "https://asiaplustj.info/en/feed",
+      "language": "en",
+      "countries": ["TJ"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "civil-georgia-e1e95c4b",
+      "name": "Civil Georgia",
+      "publisher": "Civil Georgia",
+      "url": "https://civil.ge/feed/",
+      "language": "en",
+      "countries": ["GE"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "oc-media-aa033937",
+      "name": "OC Media",
+      "publisher": "OC Media",
+      "url": "https://oc-media.org/feed/",
+      "language": "en",
+      "countries": ["GE"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "tirana-times-2a3a8e03",
+      "name": "Tirana Times",
+      "publisher": "Tirana Times",
+      "url": "https://www.tiranatimes.com/feed/",
+      "language": "en",
+      "countries": ["AL"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "el-periodico-51a456a2",
+      "name": "El Periòdic d'Andorra",
+      "publisher": "El Periòdic d'Andorra",
+      "url": "https://www.elperiodic.ad/rss",
+      "language": "ca",
+      "countries": ["AD"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vatican-news-f3ac949b",
+      "name": "Vatican News",
+      "publisher": "Vatican News",
+      "url": "https://www.vaticannews.va/en.rss.xml",
+      "language": "en",
+      "countries": ["VA"],
+      "category": "politics",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "honduras-com-ee6e039e",
+      "name": "Honduras.com",
+      "publisher": "Honduras.com",
+      "url": "https://www.honduras.com/feed/",
+      "language": "es",
+      "countries": ["HN"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "oncubanews-7c8bde1f",
+      "name": "OnCubaNews",
+      "publisher": "OnCubaNews",
+      "url": "https://oncubanews.com/en/feed/",
+      "language": "en",
+      "countries": ["CU"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "breaking-belize-news-742d28dd",
+      "name": "Breaking Belize News",
+      "publisher": "Breaking Belize News",
+      "url": "https://www.breakingbelizenews.com/feed/",
+      "language": "en",
+      "countries": ["BZ"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "el-salvador-times-4d08d6ba",
+      "name": "El Salvador Times",
+      "publisher": "El Salvador Times",
+      "url": "https://www.elsalvadortimes.com/rss/",
+      "language": "en",
+      "countries": ["SV"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "post-courier-845b8ba3",
+      "name": "Post Courier",
+      "publisher": "Post Courier",
+      "url": "https://postcourier.com.pg/feed/",
+      "language": "en",
+      "countries": ["PG"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "vbtc-3e72583a",
+      "name": "VBTC",
+      "publisher": "Vanuatu Broadcasting and Television Corporation",
+      "url": "https://vbtc.vu/feed/",
+      "language": "en",
+      "countries": ["VU"],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss"
+    },
+    {
+      "id": "matangi-tonga-f2283a76",
+      "name": "Matangi Tonga",
+      "publisher": "Matangi Tonga",
+      "url": "https://matangitonga.to/rss.xml",
+      "language": "en",
+      "countries": ["TO"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "island-times-c38b60c7",
+      "name": "Island Times",
+      "publisher": "Island Times",
+      "url": "https://islandtimes.org/feed/",
+      "language": "en",
+      "countries": ["PW"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
+      "id": "tatoli-3cc2daf4",
+      "name": "Tatoli",
+      "publisher": "Tatoli",
+      "url": "https://www.tatoli.tl/en/feed/",
+      "language": "en",
+      "countries": ["TL"],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
     }
   ]
 }

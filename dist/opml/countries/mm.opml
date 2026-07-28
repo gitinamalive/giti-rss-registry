@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: MM</title>
+    <dateCreated>Tue, 28 Jul 2026 17:58:38 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="DVB English" title="DVB English" xmlUrl="https://english.dvb.no/feed/" />
+    <outline type="rss" text="Myanmar Now" title="Myanmar Now" xmlUrl="https://www.myanmar-now.org/en/feed" />
+  </body>
+</opml>

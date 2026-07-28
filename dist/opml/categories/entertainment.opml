@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Category: entertainment</title>
+    <dateCreated>Tue, 28 Jul 2026 17:58:38 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="Deadline" title="Deadline" xmlUrl="https://deadline.com/feed/" />
+    <outline type="rss" text="EW" title="EW" xmlUrl="https://ew.com/feed/" />
+    <outline type="rss" text="IndieWire" title="IndieWire" xmlUrl="https://www.indiewire.com/feed/" />
+    <outline type="rss" text="Rolling Stone" title="Rolling Stone" xmlUrl="https://www.rollingstone.com/feed/" />
+    <outline type="rss" text="The Hollywood Reporter" title="The Hollywood Reporter" xmlUrl="https://www.hollywoodreporter.com/feed/" />
+    <outline type="rss" text="The Wrap" title="The Wrap" xmlUrl="https://www.thewrap.com/feed/" />
+    <outline type="rss" text="Variety" title="Variety" xmlUrl="https://variety.com/feed/" />
+    <outline type="rss" text="Vulture" title="Vulture" xmlUrl="https://www.vulture.com/feed/index.xml" />
+  </body>
+</opml>

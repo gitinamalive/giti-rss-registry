@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: politics</title>
-    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
+    <dateCreated>Tue, 28 Jul 2026 17:58:38 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="BBC News — Politics" title="BBC News — Politics" xmlUrl="https://feeds.bbci.co.uk/news/politics/rss.xml" />
@@ -16,6 +16,7 @@
     <outline type="rss" text="The Hill" title="The Hill" xmlUrl="https://thehill.com/news/feed/" />
     <outline type="rss" text="The Intercept" title="The Intercept" xmlUrl="https://theintercept.com/feed/?lang=en" />
     <outline type="rss" text="The Spectator" title="The Spectator" xmlUrl="https://www.spectator.co.uk/feed/" />
+    <outline type="rss" text="Vatican News" title="Vatican News" xmlUrl="https://www.vaticannews.va/en.rss.xml" />
     <outline type="rss" text="Vox — Politics" title="Vox — Politics" xmlUrl="https://www.vox.com/rss/politics/index.xml" />
   </body>
 </opml>

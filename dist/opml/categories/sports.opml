@@ -2,9 +2,18 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: sports</title>
-    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
+    <dateCreated>Tue, 28 Jul 2026 17:58:38 GMT</dateCreated>
   </head>
   <body>
+    <outline type="rss" text="AP Sports" title="AP Sports" xmlUrl="https://apnews.com/apf/sports" />
     <outline type="rss" text="BBC Sport" title="BBC Sport" xmlUrl="https://feeds.bbci.co.uk/sport/rss.xml" />
+    <outline type="rss" text="Deadspin" title="Deadspin" xmlUrl="https://deadspin.com/feed" />
+    <outline type="rss" text="ESPN" title="ESPN" xmlUrl="https://feeds.espn.com/feeds/site/espn/global/headlines" />
+    <outline type="rss" text="Fox Sports" title="Fox Sports" xmlUrl="https://www.foxsports.com/feed/news-feed.xml" />
+    <outline type="rss" text="Reuters Sports" title="Reuters Sports" xmlUrl="https://www.reuters.com/arc/outboundfeeds/v1/rss/category/sports/" />
+    <outline type="rss" text="Sky Sports" title="Sky Sports" xmlUrl="https://www.skysports.com/feed/news" />
+    <outline type="rss" text="Sportico" title="Sportico" xmlUrl="https://sportico.com/feed/" />
+    <outline type="rss" text="Sports Illustrated" title="Sports Illustrated" xmlUrl="https://feeds.si.com/si/rss/si_topstories.rss" />
+    <outline type="rss" text="The Athletic" title="The Athletic" xmlUrl="https://theathletic.com/feed/" />
   </body>
 </opml>

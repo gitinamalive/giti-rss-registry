@@ -1,4 +1,20 @@
 {
+  "24.kg News Agency": [
+    {
+      "id": "24kg-1907a7c4",
+      "name": "24.kg",
+      "publisher": "24.kg News Agency",
+      "url": "https://24.kg/rss/",
+      "language": "ru",
+      "countries": [
+        "KG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "notes": "Russian-language feed. English feed was unavailable at the time of addition (the /english/feed/ endpoint returned 404). Russian-language coverage still provides Kyrgyzstan news access."
+    }
+  ],
   "24sata.hr": [
     {
       "id": "24sata-hr-629a3986",
@@ -27,6 +43,23 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "9to5Mac": [
+    {
+      "id": "9to5mac-7c3b8d2a",
+      "name": "9to5Mac",
+      "publisher": "9to5Mac",
+      "url": "https://9to5mac.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://9to5mac.com",
+      "description": "9to5Mac — Apple news, reviews, and tutorials."
     }
   ],
   "AAAS": [
@@ -183,6 +216,21 @@
       "format": "rss",
       "perspective": "state-affiliated",
       "notes": "Al Jazeera is funded by the Qatari government through the Qatar Media Corporation. Editorial independence is debated — RSF notes it 'reflects the Qatari government's viewpoint on regional issues' while acknowledging its professional journalism standards. Per CONTRIBUTING.md policy, labeled state-affiliated with this rationale documented."
+    },
+    {
+      "id": "aljazeera-investigations-7c3d9f1a",
+      "name": "Al Jazeera Investigations",
+      "publisher": "Al Jazeera",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml?level=3&cat_id=/programs/investigative-unit",
+      "language": "en",
+      "countries": [
+        "QA"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.aljazeera.com",
+      "description": "Al Jazeera Investigations — award-winning global investigative journalism."
     }
   ],
   "Algerie360.com": [
@@ -278,6 +326,23 @@
       "format": "rss"
     }
   ],
+  "AnandTech": [
+    {
+      "id": "anandtech-6b2e4f1c",
+      "name": "AnandTech",
+      "publisher": "AnandTech",
+      "url": "https://www.anandtech.com/rss/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.anandtech.com",
+      "description": "AnandTech — computer hardware reviews, benchmarks, and analysis."
+    }
+  ],
   "Android Developers": [
     {
       "id": "android-developers-a6106c0a",
@@ -310,6 +375,40 @@
       "description": "Latest news from Italy and international politics, business, science, technology, lifestyle, and sports from ANSA"
     }
   ],
+  "Apollo Magazine": [
+    {
+      "id": "apollo-magazine-5e4f1c8d",
+      "name": "Apollo Magazine",
+      "publisher": "Apollo Magazine",
+      "url": "https://www.apollomagazine.com/feed/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.apollomagazine.com",
+      "description": "Apollo Magazine — international art and culture criticism."
+    }
+  ],
+  "Architectural Digest": [
+    {
+      "id": "architectural-digest-2b8f4e6c",
+      "name": "Architectural Digest",
+      "publisher": "Architectural Digest",
+      "url": "https://www.architecturaldigest.com/feed/latest",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.architecturaldigest.com",
+      "description": "Architectural Digest — architecture, design, and cultural living."
+    }
+  ],
   "Ars Technica": [
     {
       "id": "ars-technica-09cc00c5",
@@ -323,6 +422,23 @@
       "category": "technology",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "Artsy": [
+    {
+      "id": "artsy-8b6c2e1f",
+      "name": "Artsy",
+      "publisher": "Artsy",
+      "url": "https://artsy.net/feed",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://artsy.net",
+      "description": "Artsy — contemporary art news, exhibitions, galleries, and cultural trends."
     }
   ],
   "Asahi Shimbun": [
@@ -372,6 +488,21 @@
       "description": "Asharq Al-Awsat — pan-Arab daily newspaper."
     }
   ],
+  "Asia-Plus": [
+    {
+      "id": "asia-plus-cac2ca6b",
+      "name": "Asia-Plus",
+      "publisher": "Asia-Plus",
+      "url": "https://asiaplustj.info/en/feed",
+      "language": "en",
+      "countries": [
+        "TJ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
   "Asmarino Independent": [
     {
       "id": "asmarino-independent-e0181d41",
@@ -385,6 +516,23 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "Associated Press": [
+    {
+      "id": "ap-sports-8f5b3d2e",
+      "name": "AP Sports",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/apf/sports",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "wire",
+      "format": "rss",
+      "homepage": "https://apnews.com/hub/sports",
+      "description": "AP Sports — breaking sports news from around the world."
     }
   ],
   "Azadi Radio Pashto": [
@@ -417,6 +565,23 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "Barron's": [
+    {
+      "id": "barrons-5c7d1e42",
+      "name": "Barron's",
+      "publisher": "Barron's",
+      "url": "https://www.barrons.com/xml/feeds/all-news.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "finance",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.barrons.com",
+      "description": "Barron's — premium financial journalism and market analysis from Dow Jones."
     }
   ],
   "BBC": [
@@ -507,6 +672,21 @@
       "description": "UK and Westminster political news from the BBC.",
       "mediaType": "broadcast",
       "format": "rss"
+    },
+    {
+      "id": "bbc-panorama-2e1f5d8a",
+      "name": "BBC Panorama",
+      "publisher": "BBC",
+      "url": "https://feeds.bbci.co.uk/programmes/b006n2yl/episodes.rss",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "investigative",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www.bbc.co.uk/programmes/b006n2yl",
+      "description": "BBC Panorama — flagship investigative documentary and current affairs program."
     },
     {
       "id": "bbc-russian-27d98ae3",
@@ -708,6 +888,21 @@
       "format": "rss"
     }
   ],
+  "Breaking Belize News": [
+    {
+      "id": "breaking-belize-news-742d28dd",
+      "name": "Breaking Belize News",
+      "publisher": "Breaking Belize News",
+      "url": "https://www.breakingbelizenews.com/feed/",
+      "language": "en",
+      "countries": [
+        "BZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
   "Buenos Aires Times": [
     {
       "id": "buenos-aires-times-3e5b28df",
@@ -870,6 +1065,21 @@
       "description": "Chosun Ilbo — major Korean daily newspaper."
     }
   ],
+  "Civil Georgia": [
+    {
+      "id": "civil-georgia-e1e95c4b",
+      "name": "Civil Georgia",
+      "publisher": "Civil Georgia",
+      "url": "https://civil.ge/feed/",
+      "language": "en",
+      "countries": [
+        "GE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
   "Clarin": [
     {
       "id": "clarin-a3f5b97c",
@@ -947,6 +1157,23 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "Cosmos Magazine": [
+    {
+      "id": "cosmos-magazine-8a3b5f12",
+      "name": "Cosmos Magazine",
+      "publisher": "Cosmos Magazine",
+      "url": "https://cosmosmagazine.com/feed/",
+      "language": "en",
+      "countries": [
+        "AU"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://cosmosmagazine.com",
+      "description": "Cosmos Magazine — science explained by leading researchers and science communicators."
     }
   ],
   "Daily Express": [
@@ -1058,6 +1285,40 @@
       "description": "Dainik Bhaskar — one of India's largest Hindi-language daily newspapers."
     }
   ],
+  "Deadline": [
+    {
+      "id": "deadline-7a4c2e5d",
+      "name": "Deadline",
+      "publisher": "Deadline",
+      "url": "https://deadline.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://deadline.com",
+      "description": "Deadline — entertainment breaking news, deals, and industry coverage."
+    }
+  ],
+  "Deadspin": [
+    {
+      "id": "deadspin-7c3f5a8e",
+      "name": "Deadspin",
+      "publisher": "Deadspin",
+      "url": "https://deadspin.com/feed",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://deadspin.com",
+      "description": "Deadspin — irreverent sports culture, analysis, and commentary."
+    }
+  ],
   "DELFI": [
     {
       "id": "delfi-d53fc8ed",
@@ -1083,6 +1344,21 @@
       ],
       "category": "europe",
       "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "Democratic Voice of Burma": [
+    {
+      "id": "dvb-english-a8ed0223",
+      "name": "DVB English",
+      "publisher": "Democratic Voice of Burma",
+      "url": "https://english.dvb.no/feed/",
+      "language": "en",
+      "countries": [
+        "MM"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
       "format": "rss"
     }
   ],
@@ -1309,6 +1585,36 @@
       "format": "rss"
     }
   ],
+  "El Periòdic d'Andorra": [
+    {
+      "id": "el-periodico-51a456a2",
+      "name": "El Periòdic d'Andorra",
+      "publisher": "El Periòdic d'Andorra",
+      "url": "https://www.elperiodic.ad/rss",
+      "language": "ca",
+      "countries": [
+        "AD"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "El Salvador Times": [
+    {
+      "id": "el-salvador-times-4d08d6ba",
+      "name": "El Salvador Times",
+      "publisher": "El Salvador Times",
+      "url": "https://www.elsalvadortimes.com/rss/",
+      "language": "en",
+      "countries": [
+        "SV"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
   "Engadget": [
     {
       "id": "engadget-5758161a",
@@ -1326,6 +1632,40 @@
       "description": "Engadget — technology news, reviews, and buyer's guides."
     }
   ],
+  "Entertainment Weekly": [
+    {
+      "id": "entertainment-weekly-2d7a4e8c",
+      "name": "EW",
+      "publisher": "Entertainment Weekly",
+      "url": "https://ew.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://ew.com",
+      "description": "Entertainment Weekly — TV, film, music, and celebrity news and entertainment."
+    }
+  ],
+  "Environmental Defense Fund": [
+    {
+      "id": "environmental-defense-fund-7b2e1c5f",
+      "name": "Environmental Defense Fund",
+      "publisher": "Environmental Defense Fund",
+      "url": "https://www.edf.org/news-feed",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "climate",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.edf.org",
+      "description": "Environmental Defense Fund — news and analysis on climate, energy, and environmental solutions."
+    }
+  ],
   "ESPN": [
     {
       "id": "espn-b1ff08c3",
@@ -1339,6 +1679,21 @@
       "category": "us",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "espn-2f4c8d1a",
+      "name": "ESPN",
+      "publisher": "ESPN",
+      "url": "https://feeds.espn.com/feeds/site/espn/global/headlines",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "tv",
+      "format": "rss",
+      "homepage": "https://www.espn.com",
+      "description": "ESPN — sports news, scores, highlights, and analysis."
     }
   ],
   "Euronews": [
@@ -1547,6 +1902,23 @@
       "format": "rss"
     }
   ],
+  "Fox Sports": [
+    {
+      "id": "fox-sports-9a1c6e3d",
+      "name": "Fox Sports",
+      "publisher": "Fox Sports",
+      "url": "https://www.foxsports.com/feed/news-feed.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "tv",
+      "format": "rss",
+      "homepage": "https://www.foxsports.com",
+      "description": "Fox Sports — sports news, scores, and live coverage."
+    }
+  ],
   "France 24": [
     {
       "id": "france-24-e1f73e0e",
@@ -1590,6 +1962,23 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "Frieze": [
+    {
+      "id": "frieze-3c7d9e4a",
+      "name": "Frieze",
+      "publisher": "Frieze",
+      "url": "https://frieze.com/feed/rss.xml",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://frieze.com",
+      "description": "Frieze — contemporary art and culture magazine and fair."
     }
   ],
   "G1": [
@@ -1857,6 +2246,21 @@
       "homepage": "https://www.medicalnewstoday.com",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "medical-news-today-6f7d2c1b",
+      "name": "Medical News Today",
+      "publisher": "Healthline Media",
+      "url": "https://www.medicalnewstoday.com/feeds/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.medicalnewstoday.com",
+      "description": "Medical News Today — news and research on medicine, health, and life sciences."
     }
   ],
   "Hespress": [
@@ -1868,6 +2272,21 @@
       "language": "en",
       "countries": [
         "MA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "Honduras.com": [
+    {
+      "id": "honduras-com-ee6e039e",
+      "name": "Honduras.com",
+      "publisher": "Honduras.com",
+      "url": "https://www.honduras.com/feed/",
+      "language": "es",
+      "countries": [
+        "HN"
       ],
       "category": "world",
       "mediaType": "digital",
@@ -1907,6 +2326,23 @@
       "mediaType": "digital",
       "format": "rss",
       "official": true
+    }
+  ],
+  "Hyperallergic": [
+    {
+      "id": "hyperallergic-9f2a3d5b",
+      "name": "Hyperallergic",
+      "publisher": "Hyperallergic",
+      "url": "https://hyperallergic.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://hyperallergic.com",
+      "description": "Hyperallergic — contemporary art criticism and cultural commentary."
     }
   ],
   "Iltalehti.fi": [
@@ -1952,6 +2388,23 @@
       "category": "europe",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "IndieWire": [
+    {
+      "id": "indiewire-8b5f7c1e",
+      "name": "IndieWire",
+      "publisher": "IndieWire",
+      "url": "https://www.indiewire.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.indiewire.com",
+      "description": "IndieWire — independent film, television, and digital entertainment news."
     }
   ],
   "Infos Gabon": [
@@ -2050,6 +2503,21 @@
       "format": "rss",
       "perspective": "state-affiliated",
       "notes": "Official state news agency of the Islamic Republic of Iran. Operates under the Ministry of Culture and Islamic Guidance, which appoints its leadership. State Media Monitor reports 80%+ of budget sourced from government.\n\nSources:\n  [1] https://statemediamonitor.com/2025/07/islamic-republic-news-agency-irna/\n  [2] https://rsf.org/en/country/iran\n  [3] https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency"
+    }
+  ],
+  "Island Times": [
+    {
+      "id": "island-times-c38b60c7",
+      "name": "Island Times",
+      "publisher": "Island Times",
+      "url": "https://islandtimes.org/feed/",
+      "language": "en",
+      "countries": [
+        "PW"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
     }
   ],
   "IWACU": [
@@ -2238,6 +2706,21 @@
       "format": "rss"
     }
   ],
+  "Kuensel": [
+    {
+      "id": "kuensel-0e890769",
+      "name": "Kuensel",
+      "publisher": "Kuensel",
+      "url": "https://kuenselonline.com/feed/",
+      "language": "en",
+      "countries": [
+        "BT"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
   "KVF Faroe Islands": [
     {
       "id": "kvf-faroe-islands-0c0ca6d5",
@@ -2343,6 +2826,21 @@
       "format": "rss"
     }
   ],
+  "Laotian Times": [
+    {
+      "id": "laotian-times-094f8289",
+      "name": "Laotian Times",
+      "publisher": "Laotian Times",
+      "url": "https://laotiantimes.com/feed/",
+      "language": "en",
+      "countries": [
+        "LA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
   "Latin America Reports": [
     {
       "id": "latin-america-reports-1ce2fbd0",
@@ -2422,6 +2920,23 @@
       "description": "Live Science — discoveries, technology, health, and the environment."
     }
   ],
+  "MacRumors": [
+    {
+      "id": "macrumors-5e1d6c3f",
+      "name": "MacRumors",
+      "publisher": "MacRumors",
+      "url": "https://feeds.macrumors.com/MacRumors/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.macrumors.com",
+      "description": "MacRumors — Apple news, rumors, and developments."
+    }
+  ],
   "Madagascar Tribune": [
     {
       "id": "madagascar-tribune-0f2f25aa",
@@ -2469,6 +2984,36 @@
       "description": "Mainichi Shimbun — Japanese daily newspaper."
     }
   ],
+  "Malay Mail": [
+    {
+      "id": "malay-mail-77a08800",
+      "name": "Malay Mail",
+      "publisher": "Malay Mail",
+      "url": "https://www.malaymail.com/feed/rss/malaysia",
+      "language": "en",
+      "countries": [
+        "MY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "Malaysiakini": [
+    {
+      "id": "malaysiakini-b1668c76",
+      "name": "Malaysiakini",
+      "publisher": "Malaysiakini",
+      "url": "https://www.malaysiakini.com/rss/en/news.rss",
+      "language": "en",
+      "countries": [
+        "MY"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
   "Mareb Press": [
     {
       "id": "mareb-press-4e621f90",
@@ -2514,6 +3059,21 @@
       ],
       "category": "ai",
       "description": "AI/ML research and tooling news.",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "Matangi Tonga": [
+    {
+      "id": "matangi-tonga-f2283a76",
+      "name": "Matangi Tonga",
+      "publisher": "Matangi Tonga",
+      "url": "https://matangitonga.to/rss.xml",
+      "language": "en",
+      "countries": [
+        "TO"
+      ],
+      "category": "world",
       "mediaType": "digital",
       "format": "rss"
     }
@@ -2670,6 +3230,23 @@
       "format": "rss"
     }
   ],
+  "Mongabay": [
+    {
+      "id": "mongabay-d4c9e3a1",
+      "name": "Mongabay",
+      "publisher": "Mongabay",
+      "url": "https://news.mongabay.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "climate",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://news.mongabay.com",
+      "description": "Mongabay — environmental and climate journalism covering conservation, rainforests, and global environmental issues."
+    }
+  ],
   "Mother Jones": [
     {
       "id": "mother-jones-763fd334",
@@ -2684,6 +3261,21 @@
       "mediaType": "print",
       "format": "rss",
       "homepage": "https://www.motherjones.com"
+    }
+  ],
+  "Myanmar Now": [
+    {
+      "id": "myanmar-now-4ebf4e5f",
+      "name": "Myanmar Now",
+      "publisher": "Myanmar Now",
+      "url": "https://www.myanmar-now.org/en/feed",
+      "language": "en",
+      "countries": [
+        "MM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
     }
   ],
   "NASA": [
@@ -2878,6 +3470,23 @@
       "format": "rss",
       "homepage": "https://www.newscientist.com",
       "description": "Science news and long reads from expert journalists, covering science, technology, health and the environment"
+    }
+  ],
+  "New York Magazine": [
+    {
+      "id": "vulture-ny-mag-3c9d2f6b",
+      "name": "Vulture",
+      "publisher": "New York Magazine",
+      "url": "https://www.vulture.com/feed/index.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.vulture.com",
+      "description": "Vulture — New York Magazine's culture and entertainment section with TV, film, and pop culture."
     }
   ],
   "News.am": [
@@ -3169,6 +3778,21 @@
       "format": "rss"
     }
   ],
+  "OC Media": [
+    {
+      "id": "oc-media-aa033937",
+      "name": "OC Media",
+      "publisher": "OC Media",
+      "url": "https://oc-media.org/feed/",
+      "language": "en",
+      "countries": [
+        "GE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
   "okezone.com": [
     {
       "id": "okezone-com-c1492079",
@@ -3178,6 +3802,21 @@
       "language": "id",
       "countries": [
         "ID"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "OnCubaNews": [
+    {
+      "id": "oncubanews-7c8bde1f",
+      "name": "OnCubaNews",
+      "publisher": "OnCubaNews",
+      "url": "https://oncubanews.com/en/feed/",
+      "language": "en",
+      "countries": [
+        "CU"
       ],
       "category": "world",
       "mediaType": "digital",
@@ -3283,19 +3922,36 @@
   ],
   "Phys.org": [
     {
-      "id": "phys-org-ff4c7ba3",
+      "id": "phys-org-4c8b1d3e",
       "name": "Phys.org",
       "publisher": "Phys.org",
       "url": "https://phys.org/rss-feed/",
       "language": "en",
       "countries": [
-        "GB"
+        "US"
       ],
       "category": "science",
       "mediaType": "digital",
       "format": "rss",
       "homepage": "https://phys.org",
-      "description": "Daily science news on research developments, technological breakthroughs and the latest scientific innovations"
+      "description": "Phys.org — physics, space, and astronomy news from research institutions worldwide."
+    }
+  ],
+  "Pitchfork": [
+    {
+      "id": "pitchfork-6c1d7f3e",
+      "name": "Pitchfork",
+      "publisher": "Pitchfork",
+      "url": "https://pitchfork.com/feed/rss.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://pitchfork.com",
+      "description": "Pitchfork — music news, reviews, interviews, and cultural analysis."
     }
   ],
   "Planet Siol.net": [
@@ -3374,6 +4030,21 @@
       "format": "rss"
     }
   ],
+  "Post Courier": [
+    {
+      "id": "post-courier-845b8ba3",
+      "name": "Post Courier",
+      "publisher": "Post Courier",
+      "url": "https://postcourier.com.pg/feed/",
+      "language": "en",
+      "countries": [
+        "PG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
   "Postimees": [
     {
       "id": "postimees-9580dc13",
@@ -3432,6 +4103,23 @@
       "category": "investigative",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "Protocol": [
+    {
+      "id": "protocol-2d7f5a4e",
+      "name": "Protocol",
+      "publisher": "Protocol",
+      "url": "https://www.protocol.com/feed",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.protocol.com",
+      "description": "Protocol — enterprise tech news, AI, and digital transformation."
     }
   ],
   "Público": [
@@ -3516,6 +4204,36 @@
       "format": "rss",
       "homepage": "https://www.reuters.com",
       "description": "Reuters business and financial news."
+    },
+    {
+      "id": "reuters-investigations-9a5d3b4c",
+      "name": "Reuters Investigations",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/arc/outboundfeeds/v1/rss/investigative/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "investigative",
+      "mediaType": "wire",
+      "format": "rss",
+      "homepage": "https://www.reuters.com",
+      "description": "Reuters investigations — award-winning investigative reporting on global issues."
+    },
+    {
+      "id": "reuters-sports-2b8c4f5d",
+      "name": "Reuters Sports",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/arc/outboundfeeds/v1/rss/category/sports/",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "sports",
+      "mediaType": "wire",
+      "format": "rss",
+      "homepage": "https://www.reuters.com",
+      "description": "Reuters Sports — international sports news and results."
     }
   ],
   "Reuters World": [
@@ -3610,6 +4328,23 @@
       "format": "rss"
     }
   ],
+  "Rolling Stone": [
+    {
+      "id": "rolling-stone-5e3b8f2d",
+      "name": "Rolling Stone",
+      "publisher": "Rolling Stone",
+      "url": "https://www.rollingstone.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.rollingstone.com",
+      "description": "Rolling Stone — music, entertainment, culture, and celebrity news and reviews."
+    }
+  ],
   "RT News": [
     {
       "id": "rt-news-b3b74514",
@@ -3689,6 +4424,23 @@
       "format": "rss"
     }
   ],
+  "Science Daily": [
+    {
+      "id": "science-daily-2d4f9e6c",
+      "name": "Science Daily",
+      "publisher": "Science Daily",
+      "url": "https://www.sciencedaily.com/rss/all.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.sciencedaily.com",
+      "description": "Science Daily — breaking news from hundreds of universities and research institutions worldwide."
+    }
+  ],
   "ScienceDaily": [
     {
       "id": "sciencedaily-8df9eb68",
@@ -3704,21 +4456,6 @@
       "description": "Health and medicine research news summaries.",
       "mediaType": "digital",
       "format": "rss"
-    },
-    {
-      "id": "sciencedaily-top-news-693abd6a",
-      "name": "ScienceDaily Top News",
-      "publisher": "ScienceDaily",
-      "url": "https://www.sciencedaily.com/rss/all.xml",
-      "language": "en",
-      "countries": [
-        "US"
-      ],
-      "category": "us",
-      "mediaType": "digital",
-      "format": "rss",
-      "homepage": "https://www.sciencedaily.com",
-      "description": "Breaking science news and articles on global warming, extrasolar planets, stem cells, nanotechnology, evolution — from the world's leading universities and research organizations"
     }
   ],
   "Scientific American": [
@@ -3751,6 +4488,23 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "Seeking Alpha": [
+    {
+      "id": "seeking-alpha-8f4b2c91",
+      "name": "Seeking Alpha",
+      "publisher": "Seeking Alpha",
+      "url": "https://seekingalpha.com/feed.xml",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://seekingalpha.com",
+      "description": "Seeking Alpha — independent stock research, investment analysis, and financial commentary."
     }
   ],
   "Shorouk": [
@@ -3832,6 +4586,23 @@
       "description": "Sky News Arabia — 24/7 Arabic news."
     }
   ],
+  "Sky Sports": [
+    {
+      "id": "sky-sports-5b9e2c4d",
+      "name": "Sky Sports",
+      "publisher": "Sky Sports",
+      "url": "https://www.skysports.com/feed/news",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "sports",
+      "mediaType": "tv",
+      "format": "rss",
+      "homepage": "https://www.skysports.com",
+      "description": "Sky Sports — live sport, news, and analysis."
+    }
+  ],
   "Solomon Times": [
     {
       "id": "solomon-times-d9ea069d",
@@ -3911,6 +4682,40 @@
       "format": "rss",
       "homepage": "https://spacenews.com",
       "description": "SpaceNews covers space industry, policy, technology, and exploration."
+    }
+  ],
+  "Sportico": [
+    {
+      "id": "sportico-4d9e7f1b",
+      "name": "Sportico",
+      "publisher": "Sportico",
+      "url": "https://sportico.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://sportico.com",
+      "description": "Sportico — sports business and finance news."
+    }
+  ],
+  "Sports Illustrated": [
+    {
+      "id": "sports-illustrated-3c7d1e5f",
+      "name": "Sports Illustrated",
+      "publisher": "Sports Illustrated",
+      "url": "https://feeds.si.com/si/rss/si_topstories.rss",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.si.com",
+      "description": "Sports Illustrated — sports news, features, and analysis."
     }
   ],
   "Standard Media": [
@@ -4067,6 +4872,21 @@
       "notes": "Russian state news agency (TASS). Founded in 1904, government-owned and directly reflects Kremlin positions. Primary source of official Russian government statements and state narratives.\n\nSources:\n  [1] https://rsf.org/en/country/russia\n  [2] https://en.wikipedia.org/wiki/TASS"
     }
   ],
+  "Tatoli": [
+    {
+      "id": "tatoli-3cc2daf4",
+      "name": "Tatoli",
+      "publisher": "Tatoli",
+      "url": "https://www.tatoli.tl/en/feed/",
+      "language": "en",
+      "countries": [
+        "TL"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
   "TechCrunch": [
     {
       "id": "techcrunch-2ef05e31",
@@ -4095,6 +4915,23 @@
       "description": "Artificial-intelligence news and startup coverage from TechCrunch.",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "TechDirt": [
+    {
+      "id": "techdirt-9f3c1e8b",
+      "name": "TechDirt",
+      "publisher": "TechDirt",
+      "url": "https://www.techdirt.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.techdirt.com",
+      "description": "TechDirt — technology policy, copyright, patents, and internet issues."
     }
   ],
   "Tehran Times": [
@@ -4144,6 +4981,23 @@
       "format": "rss"
     }
   ],
+  "The Athletic": [
+    {
+      "id": "the-athletic-6e2f4a9c",
+      "name": "The Athletic",
+      "publisher": "The Athletic",
+      "url": "https://theathletic.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "sports",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://theathletic.com",
+      "description": "The Athletic — premium sports journalism and analysis."
+    }
+  ],
   "The Bureau of Investigative Journalism": [
     {
       "id": "tbij-8caa6005",
@@ -4159,6 +5013,23 @@
       "format": "rss",
       "homepage": "https://www.thebureauinvestigates.com",
       "description": "The Bureau of Investigative Journalism — public interest investigative journalism."
+    }
+  ],
+  "The Conversation": [
+    {
+      "id": "the-conversation-science-f5e2c7a9",
+      "name": "The Conversation",
+      "publisher": "The Conversation",
+      "url": "https://theconversation.com/us/science/feed",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "science",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://theconversation.com",
+      "description": "The Conversation — in-depth analysis from academics and researchers on science and technology."
     }
   ],
   "The Decoder": [
@@ -4225,6 +5096,21 @@
       "notes": "Part of Guardian Media Group, owned by the Scott Trust — a structure designed to protect editorial independence in perpetuity. No shareholders, no proprietor. RSF ranks UK press environment as 'satisfactory' (24/180).\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.theguardian.com/the-scott-trust"
     },
     {
+      "id": "the-guardian-arts-4f1e8c9d",
+      "name": "The Guardian — Arts",
+      "publisher": "The Guardian",
+      "url": "https://www.theguardian.com/culture/rss",
+      "language": "en",
+      "countries": [
+        "GB"
+      ],
+      "category": "culture",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.theguardian.com/culture",
+      "description": "The Guardian Arts and Culture — visual arts, literature, film, music, theater, and cultural commentary."
+    },
+    {
       "id": "the-guardian-climate-5d3ce11c",
       "name": "The Guardian — Climate",
       "publisher": "The Guardian",
@@ -4284,6 +5170,23 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "The Hollywood Reporter": [
+    {
+      "id": "the-hollywood-reporter-6f3a1d9b",
+      "name": "The Hollywood Reporter",
+      "publisher": "The Hollywood Reporter",
+      "url": "https://www.hollywoodreporter.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.hollywoodreporter.com",
+      "description": "The Hollywood Reporter — entertainment news, film, TV, music, and industry coverage."
     }
   ],
   "The Initium": [
@@ -4498,6 +5401,23 @@
       "format": "rss"
     }
   ],
+  "The New Yorker": [
+    {
+      "id": "the-new-yorker-culture-7d3a5f2c",
+      "name": "The New Yorker — Culture",
+      "publisher": "The New Yorker",
+      "url": "https://www.newyorker.com/feed/culture",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "culture",
+      "mediaType": "print",
+      "format": "rss",
+      "homepage": "https://www.newyorker.com/culture",
+      "description": "The New Yorker Culture — criticism, essays, and commentary on film, books, theater, music, and art."
+    }
+  ],
   "The Register": [
     {
       "id": "the-register-d5d82c95",
@@ -4576,6 +5496,23 @@
       "format": "rss"
     }
   ],
+  "The Wrap": [
+    {
+      "id": "the-wrap-9c1f5d3a",
+      "name": "The Wrap",
+      "publisher": "The Wrap",
+      "url": "https://www.thewrap.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.thewrap.com",
+      "description": "The Wrap — entertainment news, TV, film, and celebrity coverage."
+    }
+  ],
   "Times of India": [
     {
       "id": "times-of-india-96815df8",
@@ -4585,6 +5522,21 @@
       "language": "en",
       "countries": [
         "IN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
+  "Tirana Times": [
+    {
+      "id": "tirana-times-2a3a8e03",
+      "name": "Tirana Times",
+      "publisher": "Tirana Times",
+      "url": "https://www.tiranatimes.com/feed/",
+      "language": "en",
+      "countries": [
+        "AL"
       ],
       "category": "world",
       "mediaType": "digital",
@@ -4668,6 +5620,38 @@
       "format": "rss"
     }
   ],
+  "Vanuatu Broadcasting and Television Corporation": [
+    {
+      "id": "vbtc-3e72583a",
+      "name": "VBTC",
+      "publisher": "Vanuatu Broadcasting and Television Corporation",
+      "url": "https://vbtc.vu/feed/",
+      "language": "en",
+      "countries": [
+        "VU"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss"
+    }
+  ],
+  "Variety": [
+    {
+      "id": "variety-4e2f5c8a",
+      "name": "Variety",
+      "publisher": "Variety",
+      "url": "https://variety.com/feed/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "entertainment",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://variety.com",
+      "description": "Variety — entertainment industry news, film, television, music, and awards coverage."
+    }
+  ],
   "Vatan": [
     {
       "id": "vatan-f4febb20",
@@ -4683,7 +5667,37 @@
       "format": "rss"
     }
   ],
+  "Vatican News": [
+    {
+      "id": "vatican-news-f3ac949b",
+      "name": "Vatican News",
+      "publisher": "Vatican News",
+      "url": "https://www.vaticannews.va/en.rss.xml",
+      "language": "en",
+      "countries": [
+        "VA"
+      ],
+      "category": "politics",
+      "mediaType": "digital",
+      "format": "rss"
+    }
+  ],
   "VentureBeat": [
+    {
+      "id": "venturebeat-8d5e2c3a",
+      "name": "VentureBeat",
+      "publisher": "VentureBeat",
+      "url": "https://feeds.venturebeat.com/",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://venturebeat.com",
+      "description": "VentureBeat — technology news, AI, startups, and venture capital."
+    },
     {
       "id": "venturebeat-b93450af",
       "name": "VentureBeat — AI",
@@ -4849,6 +5863,23 @@
       "description": "Wall Street Journal markets and finance coverage."
     }
   ],
+  "Washington Post": [
+    {
+      "id": "washington-post-investigations-3f7c8e2d",
+      "name": "Washington Post — Investigations",
+      "publisher": "Washington Post",
+      "url": "https://feeds.washingtonpost.com/rss/investigations",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.washingtonpost.com",
+      "description": "Washington Post investigations — Pulitzer Prize-winning investigative journalism."
+    }
+  ],
   "WIRED": [
     {
       "id": "wired-e8034180",
@@ -4898,6 +5929,23 @@
       "homepage": "https://english.news.cn",
       "description": "Xinhua News Agency — China's official state news agency. Labeled state-affiliated per registry policy.",
       "perspective": "state-affiliated"
+    }
+  ],
+  "Y Combinator": [
+    {
+      "id": "hacker-news-rss-1c4d7f9e",
+      "name": "Hacker News",
+      "publisher": "Y Combinator",
+      "url": "https://feeds.hnrss.org/frontpage",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "technology",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://news.ycombinator.com",
+      "description": "Hacker News — community curated technology news and discussion."
     }
   ],
   "Yale University": [
