@@ -2,10 +2,11 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: QA</title>
-    <dateCreated>Tue, 23 Jun 2026 18:14:23 GMT</dateCreated>
+    <dateCreated>Tue, 28 Jul 2026 17:58:38 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Al Jazeera" title="Al Jazeera" xmlUrl="https://www.aljazeera.com/xml/rss/all.xml" />
+    <outline type="rss" text="Al Jazeera Investigations" title="Al Jazeera Investigations" xmlUrl="https://www.aljazeera.com/xml/rss/all.xml?level=3&amp;cat_id=/programs/investigative-unit" />
     <outline type="rss" text="BBC News - Middle East" title="BBC News - Middle East" xmlUrl="https://feeds.bbci.co.uk/news/world/middle_east/rss.xml" />
   </body>
 </opml>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Category: culture</title>
+    <dateCreated>Tue, 28 Jul 2026 17:58:38 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="Apollo Magazine" title="Apollo Magazine" xmlUrl="https://www.apollomagazine.com/feed/" />
+    <outline type="rss" text="Architectural Digest" title="Architectural Digest" xmlUrl="https://www.architecturaldigest.com/feed/latest" />
+    <outline type="rss" text="Artsy" title="Artsy" xmlUrl="https://artsy.net/feed" />
+    <outline type="rss" text="Frieze" title="Frieze" xmlUrl="https://frieze.com/feed/rss.xml" />
+    <outline type="rss" text="Hyperallergic" title="Hyperallergic" xmlUrl="https://hyperallergic.com/feed/" />
+    <outline type="rss" text="Pitchfork" title="Pitchfork" xmlUrl="https://pitchfork.com/feed/rss.xml" />
+    <outline type="rss" text="The Guardian — Arts" title="The Guardian — Arts" xmlUrl="https://www.theguardian.com/culture/rss" />
+    <outline type="rss" text="The New Yorker — Culture" title="The New Yorker — Culture" xmlUrl="https://www.newyorker.com/feed/culture" />
+  </body>
+</opml>

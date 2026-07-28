@@ -273,16 +273,31 @@ durov-telegram-7f8a9b1c,Du Rov's Channel,Telegram,https://rsshub.app/telegram/ch
 mkbhd-youtube-5e4d3c2b,MKBHD,YouTube,https://rsshub.app/youtube/user/marquesbrownlee,,en,US,,technology,,,digital,rss,,,,,,,
 github-trending-1a2b3c4d,GitHub Trending,GitHub,https://rsshub.app/github/trending/daily/any,,en,US,,technology,,,digital,rss,,,,,,,
 bbc-science-environment-a97faa0a,BBC Science & Environment,BBC,https://feeds.bbci.co.uk/news/science_and_environment/rss.xml,https://www.bbc.com/news/science_and_environment,en,GB,,science,,,broadcast,rss,,,,,,,BBC News science and environment coverage
-sciencedaily-top-news-693abd6a,ScienceDaily Top News,ScienceDaily,https://www.sciencedaily.com/rss/all.xml,https://www.sciencedaily.com,en,US,,us,,,digital,rss,,,,,,,"Breaking science news and articles on global warming, extrasolar planets, stem cells, nanotechnology, evolution — from the world's leading universities and research organizations"
 carbon-brief-e0c7ff98,Carbon Brief,Carbon Brief,https://www.carbonbrief.org/feed/,https://www.carbonbrief.org,en,GB,,climate,,,digital,rss,,,,,,,"A data-driven climate journalism blog that explains global warming through clear analysis of climate science, energy, and policy"
 africanews-754d5800,Africanews,Africanews,https://www.africanews.com/feed/rss,https://www.africanews.com,en,CG,,world,,,digital,rss,,,,,,,"Pan-African news in English and French, part of the Euronews network"
 latin-america-reports-1ce2fbd0,Latin America Reports,Latin America Reports,https://latinamericareports.com/feed/,https://latinamericareports.com,en,PE,,world,,,digital,rss,,,,,,,On-the-ground reporting contextualizing Latin America's role in global affairs
 nsf-news-0534e5d2,NSF News,National Science Foundation,https://www.nsf.gov/rss/rss_www_news.xml,https://www.nsf.gov/news,en,US,,us,,,digital,rss,,,,,,,Latest articles about U.S. National Science Foundation discoveries and funding
 nasa-breaking-news-bcd83ac3,NASA Breaking News,NASA,https://www.nasa.gov/news-release/feed/,https://www.nasa.gov/news/releases/,en,US,,space,,,digital,rss,,,,,,,"NASA press releases and breaking news on space exploration, science, and technology"
-phys-org-ff4c7ba3,Phys.org,Phys.org,https://phys.org/rss-feed/,https://phys.org,en,GB,,science,,,digital,rss,,,,,,,"Daily science news on research developments, technological breakthroughs and the latest scientific innovations"
 new-scientist-9a506e18,New Scientist,New Scientist,https://www.newscientist.com/feed/home,https://www.newscientist.com,en,GB,,science,,,digital,rss,,,,,,,"Science news and long reads from expert journalists, covering science, technology, health and the environment"
 ansa-english-48611228,ANSA English,ANSA,https://www.ansa.it/english/english_rss.xml,https://www.ansa.it/english,en,IT,,europe,,,wire,rss,,,,,,,"Latest news from Italy and international politics, business, science, technology, lifestyle, and sports from ANSA"
 bbc-sport-7e17260f,BBC Sport,BBC,https://feeds.bbci.co.uk/sport/rss.xml,https://www.bbc.com/sport,en,GB,,sports,,,broadcast,rss,,,,,,,"BBC Sport — live scores, match reports, analysis, and sports news"
+espn-2f4c8d1a,ESPN,ESPN,https://feeds.espn.com/feeds/site/espn/global/headlines,https://www.espn.com,en,US,,sports,,,tv,rss,,,,,,,"ESPN — sports news, scores, highlights, and analysis."
+sky-sports-5b9e2c4d,Sky Sports,Sky Sports,https://www.skysports.com/feed/news,https://www.skysports.com,en,GB,,sports,,,tv,rss,,,,,,,"Sky Sports — live sport, news, and analysis."
+sports-illustrated-3c7d1e5f,Sports Illustrated,Sports Illustrated,https://feeds.si.com/si/rss/si_topstories.rss,https://www.si.com,en,US,,sports,,,digital,rss,,,,,,,"Sports Illustrated — sports news, features, and analysis."
+the-athletic-6e2f4a9c,The Athletic,The Athletic,https://theathletic.com/feed/,https://theathletic.com,en,US,,sports,,,digital,rss,,,,,,,The Athletic — premium sports journalism and analysis.
+ap-sports-8f5b3d2e,AP Sports,Associated Press,https://apnews.com/apf/sports,https://apnews.com/hub/sports,en,US,,sports,,,wire,rss,,,,,,,AP Sports — breaking sports news from around the world.
+fox-sports-9a1c6e3d,Fox Sports,Fox Sports,https://www.foxsports.com/feed/news-feed.xml,https://www.foxsports.com,en,US,,sports,,,tv,rss,,,,,,,"Fox Sports — sports news, scores, and live coverage."
+sportico-4d9e7f1b,Sportico,Sportico,https://sportico.com/feed/,https://sportico.com,en,US,,sports,,,digital,rss,,,,,,,Sportico — sports business and finance news.
+deadspin-7c3f5a8e,Deadspin,Deadspin,https://deadspin.com/feed,https://deadspin.com,en,US,,sports,,,digital,rss,,,,,,,"Deadspin — irreverent sports culture, analysis, and commentary."
+reuters-sports-2b8c4f5d,Reuters Sports,Reuters,https://www.reuters.com/arc/outboundfeeds/v1/rss/category/sports/,https://www.reuters.com,en,GB,,sports,,,wire,rss,,,,,,,Reuters Sports — international sports news and results.
+the-guardian-arts-4f1e8c9d,The Guardian — Arts,The Guardian,https://www.theguardian.com/culture/rss,https://www.theguardian.com/culture,en,GB,,culture,,,digital,rss,,,,,,,"The Guardian Arts and Culture — visual arts, literature, film, music, theater, and cultural commentary."
+the-new-yorker-culture-7d3a5f2c,The New Yorker — Culture,The New Yorker,https://www.newyorker.com/feed/culture,https://www.newyorker.com/culture,en,US,,culture,,,print,rss,,,,,,,"The New Yorker Culture — criticism, essays, and commentary on film, books, theater, music, and art."
+artsy-8b6c2e1f,Artsy,Artsy,https://artsy.net/feed,https://artsy.net,en,US,,culture,,,digital,rss,,,,,,,"Artsy — contemporary art news, exhibitions, galleries, and cultural trends."
+frieze-3c7d9e4a,Frieze,Frieze,https://frieze.com/feed/rss.xml,https://frieze.com,en,GB,,culture,,,digital,rss,,,,,,,Frieze — contemporary art and culture magazine and fair.
+apollo-magazine-5e4f1c8d,Apollo Magazine,Apollo Magazine,https://www.apollomagazine.com/feed/,https://www.apollomagazine.com,en,GB,,culture,,,digital,rss,,,,,,,Apollo Magazine — international art and culture criticism.
+hyperallergic-9f2a3d5b,Hyperallergic,Hyperallergic,https://hyperallergic.com/feed/,https://hyperallergic.com,en,US,,culture,,,digital,rss,,,,,,,Hyperallergic — contemporary art criticism and cultural commentary.
+architectural-digest-2b8f4e6c,Architectural Digest,Architectural Digest,https://www.architecturaldigest.com/feed/latest,https://www.architecturaldigest.com,en,US,,culture,,,digital,rss,,,,,,,"Architectural Digest — architecture, design, and cultural living."
+pitchfork-6c1d7f3e,Pitchfork,Pitchfork,https://pitchfork.com/feed/rss.xml,https://pitchfork.com,en,US,,culture,,,digital,rss,,,,,,,"Pitchfork — music news, reviews, interviews, and cultural analysis."
 techcrunch-84a591b7,TechCrunch — AI,TechCrunch,https://techcrunch.com/category/artificial-intelligence/feed/,https://techcrunch.com/category/artificial-intelligence/,en,US,,ai,,,digital,rss,,,,,,,Artificial-intelligence news and startup coverage from TechCrunch.
 mit-technology-review-186d715f,MIT Technology Review — AI,MIT Technology Review,https://www.technologyreview.com/topic/artificial-intelligence/feed/,https://www.technologyreview.com/topic/artificial-intelligence/,en,US,,ai,,,digital,rss,,,,,,,AI reporting and analysis from MIT Technology Review.
 venturebeat-b93450af,VentureBeat — AI,VentureBeat,https://venturebeat.com/category/ai/feed/,https://venturebeat.com/category/ai/,en,US,,ai,,,digital,rss,,,,,,,Enterprise AI news and analysis from VentureBeat.
@@ -293,6 +308,14 @@ marktechpost-0f4dc4f0,MarkTechPost,MarkTechPost,https://www.marktechpost.com/fee
 the-decoder-b2cfd8ab,The Decoder,The Decoder,https://the-decoder.com/feed/,https://the-decoder.com/,en,DE,,ai,,,digital,rss,,,,,,,English-language AI news and analysis published from Germany.
 berkeley-ai-research-560a3150,Berkeley AI Research Blog,Berkeley AI Research,https://bair.berkeley.edu/blog/feed.xml,https://bair.berkeley.edu/blog/,en,US,,ai,,,digital,atom,true,,,,,,Research posts from the Berkeley AI Research (BAIR) lab.
 google-c39414c5,Google — The Keyword: AI,Google,https://blog.google/technology/ai/rss/,https://blog.google/technology/ai/,en,US,,ai,,,digital,atom,true,,,,,,"AI news from Google's official blog, The Keyword."
+variety-4e2f5c8a,Variety,Variety,https://variety.com/feed/,https://variety.com,en,US,,entertainment,,,digital,rss,,,,,,,"Variety — entertainment industry news, film, television, music, and awards coverage."
+the-hollywood-reporter-6f3a1d9b,The Hollywood Reporter,The Hollywood Reporter,https://www.hollywoodreporter.com/feed/,https://www.hollywoodreporter.com,en,US,,entertainment,,,digital,rss,,,,,,,"The Hollywood Reporter — entertainment news, film, TV, music, and industry coverage."
+deadline-7a4c2e5d,Deadline,Deadline,https://deadline.com/feed/,https://deadline.com,en,US,,entertainment,,,digital,rss,,,,,,,"Deadline — entertainment breaking news, deals, and industry coverage."
+indiewire-8b5f7c1e,IndieWire,IndieWire,https://www.indiewire.com/feed/,https://www.indiewire.com,en,US,,entertainment,,,digital,rss,,,,,,,"IndieWire — independent film, television, and digital entertainment news."
+vulture-ny-mag-3c9d2f6b,Vulture,New York Magazine,https://www.vulture.com/feed/index.xml,https://www.vulture.com,en,US,,entertainment,,,digital,rss,,,,,,,"Vulture — New York Magazine's culture and entertainment section with TV, film, and pop culture."
+entertainment-weekly-2d7a4e8c,EW,Entertainment Weekly,https://ew.com/feed/,https://ew.com,en,US,,entertainment,,,digital,rss,,,,,,,"Entertainment Weekly — TV, film, music, and celebrity news and entertainment."
+the-wrap-9c1f5d3a,The Wrap,The Wrap,https://www.thewrap.com/feed/,https://www.thewrap.com,en,US,,entertainment,,,digital,rss,,,,,,,"The Wrap — entertainment news, TV, film, and celebrity coverage."
+rolling-stone-5e3b8f2d,Rolling Stone,Rolling Stone,https://www.rollingstone.com/feed/,https://www.rollingstone.com,en,US,,entertainment,,,digital,rss,,,,,,,"Rolling Stone — music, entertainment, culture, and celebrity news and reviews."
 the-hill-101c9a9e,The Hill,The Hill,https://thehill.com/news/feed/,https://thehill.com/,en,US,,politics,,,digital,rss,,,,,,,"U.S. political news covering Congress, the White House, and campaigns."
 npr-08c3ace3,NPR Politics,NPR,https://feeds.npr.org/1014/rss.xml,https://www.npr.org/sections/politics/,en,US,,politics,,,broadcast,rss,,,,,,,NPR's coverage of U.S. and world politics.
 bbc-a9571967,BBC News — Politics,BBC,https://feeds.bbci.co.uk/news/politics/rss.xml,https://www.bbc.co.uk/news/politics,en,GB,,politics,,,broadcast,rss,,,,,,,UK and Westminster political news from the BBC.
@@ -330,6 +353,8 @@ climate-home-news-f6d2cd6b,Climate Home News,Climate Home News,https://www.clima
 the-guardian-climate-5d3ce11c,The Guardian — Climate,The Guardian,https://www.theguardian.com/environment/climate-crisis/rss,https://www.theguardian.com/environment/climate-crisis,en,GB,,climate,,,print,rss,,,,,,,The Guardian's climate crisis coverage.
 nasa-climate-dc8a8c31,NASA Climate,NASA,https://climate.nasa.gov/feeds/,https://climate.nasa.gov,en,US,,climate,,,digital,rss,,,,,,,NASA's Global Climate Change news feed.
 noaa-climate-gov-a43dfad9,NOAA Climate.gov,NOAA,https://www.climate.gov/news-features/feed,https://www.climate.gov,en,US,,climate,,,digital,rss,,,,,,,NOAA Climate.gov news and features on climate science and adaptation.
+mongabay-d4c9e3a1,Mongabay,Mongabay,https://news.mongabay.com/feed/,https://news.mongabay.com,en,US,,climate,,,digital,rss,,,,,,,"Mongabay — environmental and climate journalism covering conservation, rainforests, and global environmental issues."
+environmental-defense-fund-7b2e1c5f,Environmental Defense Fund,Environmental Defense Fund,https://www.edf.org/news-feed,https://www.edf.org,en,US,,climate,,,digital,rss,,,,,,,"Environmental Defense Fund — news and analysis on climate, energy, and environmental solutions."
 nasa-jpl-news-044b7954,NASA JPL News,NASA JPL,https://www.jpl.nasa.gov/feed/,https://www.jpl.nasa.gov,en,US,,space,,,digital,rss,,,,,,,"Jet Propulsion Laboratory news on space exploration, robotics, and Earth science."
 nasa-image-of-the-day-eb571d68,NASA Image of the Day,NASA,https://www.nasa.gov/feeds/iotd-feed/,https://www.nasa.gov/multimedia/imagegallery/iotd.html,en,US,,space,,,digital,rss,,,,,,,NASA's Image of the Day RSS feed.
 esa-top-news-7fed9242,ESA Top News,European Space Agency,https://www.esa.int/rssfeed/Our_Activities/Space_Science,https://www.esa.int,en,FR|DE|IT|GB|ES|NL|BE|CH|AT|SE|NO|FI|DK|PT|GR|IE|LU|CZ|RO|PL|HU|EE,,space,,,digital,rss,,,,,,,European Space Agency top news on space science and exploration.
@@ -344,14 +369,30 @@ quanta-magazine-78efa86f,Quanta Magazine,Simons Foundation,https://www.quantamag
 eurekalert-f59fa259,EurekAlert!,AAAS,https://www.eurekalert.org/rss.xml,https://www.eurekalert.org,en,US,,science,,,digital,rss,,,,,,,"Science news releases from universities, journals, and research organizations."
 live-science-dccc537e,Live Science,Live Science,https://www.livescience.com/feeds/all,https://www.livescience.com,en,US,,science,,,digital,rss,,,,,,,"Live Science — discoveries, technology, health, and the environment."
 pnas-3843ce69,PNAS,PNAS,https://www.pnas.org/rss/early.xml,https://www.pnas.org,en,US,,science,,,print,rss,,,,,,,Proceedings of the National Academy of Sciences — early edition articles.
+science-daily-2d4f9e6c,Science Daily,Science Daily,https://www.sciencedaily.com/rss/all.xml,https://www.sciencedaily.com,en,US,,science,,,digital,rss,,,,,,,Science Daily — breaking news from hundreds of universities and research institutions worldwide.
+cosmos-magazine-8a3b5f12,Cosmos Magazine,Cosmos Magazine,https://cosmosmagazine.com/feed/,https://cosmosmagazine.com,en,AU,,science,,,digital,rss,,,,,,,Cosmos Magazine — science explained by leading researchers and science communicators.
+phys-org-4c8b1d3e,Phys.org,Phys.org,https://phys.org/rss-feed/,https://phys.org,en,US,,science,,,digital,rss,,,,,,,"Phys.org — physics, space, and astronomy news from research institutions worldwide."
+the-conversation-science-f5e2c7a9,The Conversation,The Conversation,https://theconversation.com/us/science/feed,https://theconversation.com,en,US,,science,,,digital,rss,,,,,,,The Conversation — in-depth analysis from academics and researchers on science and technology.
+medical-news-today-6f7d2c1b,Medical News Today,Healthline Media,https://www.medicalnewstoday.com/feeds/,https://www.medicalnewstoday.com,en,US,,science,,,digital,rss,,,,,,,"Medical News Today — news and research on medicine, health, and life sciences."
 icij-7ece0352,ICIJ,International Consortium of Investigative Journalists,https://www.icij.org/feed/,https://www.icij.org,en,US,,investigative,,,digital,rss,,,,,,,"ICIJ — global network of investigative journalists exposing crime, corruption, and abuse of power."
 occrp-0669d4f8,OCCRP,Organized Crime and Corruption Reporting Project,https://www.occrp.org/en/feed/,https://www.occrp.org,en,BA,,investigative,,,digital,rss,,,,,,,OCCRP — worldwide investigative reporting on organized crime and corruption.
 tbij-8caa6005,TBIJ,The Bureau of Investigative Journalism,https://www.thebureauinvestigates.com/feed/,https://www.thebureauinvestigates.com,en,GB,,investigative,,,digital,rss,,,,,,,The Bureau of Investigative Journalism — public interest investigative journalism.
+washington-post-investigations-3f7c8e2d,Washington Post — Investigations,Washington Post,https://feeds.washingtonpost.com/rss/investigations,https://www.washingtonpost.com,en,US,,investigative,,,digital,rss,,,,,,,Washington Post investigations — Pulitzer Prize-winning investigative journalism.
+reuters-investigations-9a5d3b4c,Reuters Investigations,Reuters,https://www.reuters.com/arc/outboundfeeds/v1/rss/investigative/,https://www.reuters.com,en,GB,,investigative,,,wire,rss,,,,,,,Reuters investigations — award-winning investigative reporting on global issues.
+bbc-panorama-2e1f5d8a,BBC Panorama,BBC,https://feeds.bbci.co.uk/programmes/b006n2yl/episodes.rss,https://www.bbc.co.uk/programmes/b006n2yl,en,GB,,investigative,,,broadcast,rss,,,,,,,BBC Panorama — flagship investigative documentary and current affairs program.
+aljazeera-investigations-7c3d9f1a,Al Jazeera Investigations,Al Jazeera,https://www.aljazeera.com/xml/rss/all.xml?level=3&cat_id=/programs/investigative-unit,https://www.aljazeera.com,en,QA,,investigative,,,digital,rss,,,,,,,Al Jazeera Investigations — award-winning global investigative journalism.
 rest-of-world-ae2c3d54,Rest of World,Rest of World,https://restofworld.org/feed/,https://restofworld.org,en,US,,technology,,,digital,rss,,,,,,,Reporting on technology's impact outside the Western bubble.
 the-register-d5d82c95,The Register,The Register,https://www.theregister.com/headlines.atom,https://www.theregister.com,en,GB,,technology,,,digital,atom,,,,,,,The Register — biting the hand that feeds IT.
 zdnet-e1426035,ZDNet,ZDNet,https://www.zdnet.com/news/rss.xml,https://www.zdnet.com,en,US,,technology,,,digital,rss,,,,,,,"ZDNet — technology news, reviews, and analysis for IT professionals."
 gizmodo-735f1d07,Gizmodo,Gizmodo,https://gizmodo.com/rss,https://gizmodo.com,en,US,,technology,,,digital,rss,,,,,,,"Gizmodo — design, technology, science, and science fiction."
 engadget-5758161a,Engadget,Engadget,https://www.engadget.com/rss.xml,https://www.engadget.com,en,US,,technology,,,digital,rss,,,,,,,"Engadget — technology news, reviews, and buyer's guides."
+hacker-news-rss-1c4d7f9e,Hacker News,Y Combinator,https://feeds.hnrss.org/frontpage,https://news.ycombinator.com,en,US,,technology,,,digital,rss,,,,,,,Hacker News — community curated technology news and discussion.
+venturebeat-8d5e2c3a,VentureBeat,VentureBeat,https://feeds.venturebeat.com/,https://venturebeat.com,en,US,,technology,,,digital,rss,,,,,,,"VentureBeat — technology news, AI, startups, and venture capital."
+anandtech-6b2e4f1c,AnandTech,AnandTech,https://www.anandtech.com/rss/,https://www.anandtech.com,en,US,,technology,,,digital,rss,,,,,,,"AnandTech — computer hardware reviews, benchmarks, and analysis."
+techdirt-9f3c1e8b,TechDirt,TechDirt,https://www.techdirt.com/feed/,https://www.techdirt.com,en,US,,technology,,,digital,rss,,,,,,,"TechDirt — technology policy, copyright, patents, and internet issues."
+protocol-2d7f5a4e,Protocol,Protocol,https://www.protocol.com/feed,https://www.protocol.com,en,US,,technology,,,digital,rss,,,,,,,"Protocol — enterprise tech news, AI, and digital transformation."
+9to5mac-7c3b8d2a,9to5Mac,9to5Mac,https://9to5mac.com/feed/,https://9to5mac.com,en,US,,technology,,,digital,rss,,,,,,,"9to5Mac — Apple news, reviews, and tutorials."
+macrumors-5e1d6c3f,MacRumors,MacRumors,https://feeds.macrumors.com/MacRumors/,https://www.macrumors.com,en,US,,technology,,,digital,rss,,,,,,,"MacRumors — Apple news, rumors, and developments."
 bbc-arabic-ff42d1dc,BBC Arabic,BBC,https://feeds.bbci.co.uk/arabic/rss.xml,https://www.bbc.com/arabic,ar,GB,,world,,,broadcast,rss,,,,,,,BBC Arabic news and analysis.
 france-24-arabic-da663d36,France 24 Arabic,France 24,https://www.france24.com/ar/rss,https://www.france24.com/ar/,ar,FR,,world,,,broadcast,rss,,,,,,,France 24 Arabic news feed.
 sky-news-arabia-fc0759bd,Sky News Arabia,Sky News Arabia,https://www.skynewsarabia.com/web/feed,https://www.skynewsarabia.com,ar,AE,,world,,,tv,rss,,,,,,,Sky News Arabia — 24/7 Arabic news.
@@ -361,6 +402,8 @@ nyt-chinese-686c518d,NYT Chinese,The New York Times,https://cn.nytimes.com/rss/,
 ft-chinese-961a6c2a,FT Chinese,Financial Times,https://www.ftchinese.com/rss/feed,https://www.ftchinese.com,zh,GB,,finance,,,print,rss,,,,,,,Financial Times Chinese edition.
 the-initium-a45c67ad,The Initium,The Initium,https://theinitium.com/feed/,https://theinitium.com,zh,HK,,world,,,digital,rss,,,,,,,The Initium — in-depth Chinese-language journalism from Hong Kong.
 caixin-global-b7e57675,Caixin Global,Caixin,https://www.caixinglobal.com/feed/,https://www.caixinglobal.com,zh,CN,,finance,,,digital,rss,,,,,,,Caixin Global — Chinese financial and business news in English and Chinese.
+seeking-alpha-8f4b2c91,Seeking Alpha,Seeking Alpha,https://seekingalpha.com/feed.xml,https://seekingalpha.com,en,US,,finance,,,digital,rss,,,,,,,"Seeking Alpha — independent stock research, investment analysis, and financial commentary."
+barrons-5c7d1e42,Barron's,Barron's,https://www.barrons.com/xml/feeds/all-news.xml,https://www.barrons.com,en,US,,finance,,,print,rss,,,,,,,Barron's — premium financial journalism and market analysis from Dow Jones.
 bbc-hindi-fd88776a,BBC Hindi,BBC,https://feeds.bbci.co.uk/hindi/rss.xml,https://www.bbc.com/hindi,hi,GB,,world,,,broadcast,rss,,,,,,,BBC Hindi news feed.
 dainik-bhaskar-92b3bd92,Dainik Bhaskar,DB Corp,https://www.bhaskar.com/rss-feed/,https://www.bhaskar.com,hi,IN,,world,,,print,rss,,,,,,,Dainik Bhaskar — one of India's largest Hindi-language daily newspapers.
 ndtv-india-a9ced082,NDTV India,NDTV,https://feeds.feedburner.com/ndtvindia,https://ndtv.in,hi,IN,,world,,,tv,rss,,,,,,,NDTV India — Hindi news channel.
@@ -380,3 +423,25 @@ pbs-newshour-9b4984ea,PBS NewsHour,PBS,https://www.pbs.org/newshour/feeds/rss/he
 nhk-world-0342efc9,NHK World,NHK,https://www3.nhk.or.jp/nhkworld/en/news/feed/,https://www3.nhk.or.jp/nhkworld/,en,JP,,world,,,broadcast,rss,,,,,,,NHK World — Japan's international public broadcaster in English.
 kbs-world-bc06a766,KBS World,KBS,https://world.kbs.co.kr/rss/rss_podcast.htm?lang=e,https://world.kbs.co.kr,en,KR,,world,,,broadcast,rss,,,,,,,KBS World — South Korea's international public broadcaster in English.
 xinhua-english-383b8944,Xinhua English,Xinhua News Agency,https://english.news.cn/rss,https://english.news.cn,en,CN,,world,,state-affiliated,wire,rss,,,,,,,Xinhua News Agency — China's official state news agency. Labeled state-affiliated per registry policy.
+malaysiakini-b1668c76,Malaysiakini,Malaysiakini,https://www.malaysiakini.com/rss/en/news.rss,,en,MY,,world,,,digital,rss,,,,,,,
+malay-mail-77a08800,Malay Mail,Malay Mail,https://www.malaymail.com/feed/rss/malaysia,,en,MY,,world,,,digital,rss,,,,,,,
+dvb-english-a8ed0223,DVB English,Democratic Voice of Burma,https://english.dvb.no/feed/,,en,MM,,world,,,broadcast,rss,,,,,,,
+myanmar-now-4ebf4e5f,Myanmar Now,Myanmar Now,https://www.myanmar-now.org/en/feed,,en,MM,,world,,,digital,rss,,,,,,,
+laotian-times-094f8289,Laotian Times,Laotian Times,https://laotiantimes.com/feed/,,en,LA,,world,,,digital,rss,,,,,,,
+kuensel-0e890769,Kuensel,Kuensel,https://kuenselonline.com/feed/,,en,BT,,world,,,digital,rss,,,,,,,
+24kg-1907a7c4,24.kg,24.kg News Agency,https://24.kg/rss/,,ru,KG,,world,,,digital,rss,,,,,,Russian-language feed. English feed was unavailable at the time of addition (the /english/feed/ endpoint returned 404). Russian-language coverage still provides Kyrgyzstan news access.,
+asia-plus-cac2ca6b,Asia-Plus,Asia-Plus,https://asiaplustj.info/en/feed,,en,TJ,,world,,,digital,rss,,,,,,,
+civil-georgia-e1e95c4b,Civil Georgia,Civil Georgia,https://civil.ge/feed/,,en,GE,,world,,,digital,rss,,,,,,,
+oc-media-aa033937,OC Media,OC Media,https://oc-media.org/feed/,,en,GE,,world,,,digital,rss,,,,,,,
+tirana-times-2a3a8e03,Tirana Times,Tirana Times,https://www.tiranatimes.com/feed/,,en,AL,,world,,,digital,rss,,,,,,,
+el-periodico-51a456a2,El Periòdic d'Andorra,El Periòdic d'Andorra,https://www.elperiodic.ad/rss,,ca,AD,,world,,,digital,rss,,,,,,,
+vatican-news-f3ac949b,Vatican News,Vatican News,https://www.vaticannews.va/en.rss.xml,,en,VA,,politics,,,digital,rss,,,,,,,
+honduras-com-ee6e039e,Honduras.com,Honduras.com,https://www.honduras.com/feed/,,es,HN,,world,,,digital,rss,,,,,,,
+oncubanews-7c8bde1f,OnCubaNews,OnCubaNews,https://oncubanews.com/en/feed/,,en,CU,,world,,,digital,rss,,,,,,,
+breaking-belize-news-742d28dd,Breaking Belize News,Breaking Belize News,https://www.breakingbelizenews.com/feed/,,en,BZ,,world,,,digital,rss,,,,,,,
+el-salvador-times-4d08d6ba,El Salvador Times,El Salvador Times,https://www.elsalvadortimes.com/rss/,,en,SV,,world,,,digital,rss,,,,,,,
+post-courier-845b8ba3,Post Courier,Post Courier,https://postcourier.com.pg/feed/,,en,PG,,world,,,digital,rss,,,,,,,
+vbtc-3e72583a,VBTC,Vanuatu Broadcasting and Television Corporation,https://vbtc.vu/feed/,,en,VU,,world,,,broadcast,rss,,,,,,,
+matangi-tonga-f2283a76,Matangi Tonga,Matangi Tonga,https://matangitonga.to/rss.xml,,en,TO,,world,,,digital,rss,,,,,,,
+island-times-c38b60c7,Island Times,Island Times,https://islandtimes.org/feed/,,en,PW,,world,,,digital,rss,,,,,,,
+tatoli-3cc2daf4,Tatoli,Tatoli,https://www.tatoli.tl/en/feed/,,en,TL,,world,,,digital,rss,,,,,,,
