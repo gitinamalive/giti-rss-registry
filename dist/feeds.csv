@@ -92,7 +92,7 @@ mexico-news-daily-e1f5f185,Mexico News Daily,Mexico News Daily,https://mexiconew
 the-rio-times-ec8ed07a,The Rio Times,The Rio Times,https://www.riotimesonline.com/feed/,,en,BR,,world,,,digital,rss,,,,,,,
 buenos-aires-times-3e5b28df,Buenos Aires Times,Buenos Aires Times,https://www.batimes.com.ar/feed,,en,AR,,world,,,digital,rss,,,,,,,
 sbs-news-b737fcec,SBS News,SBS News,https://www.sbs.com.au/news/feed,,en,AU,,world,,,digital,rss,,,,,,,
-rnz-pacific-5f172e7b,RNZ Pacific,RNZ Pacific,https://www.rnz.co.nz/rss/pacific.xml,,en,NZ,,world,,,digital,rss,,,,,,,
+rnz-pacific-5f172e7b,RNZ Pacific,Radio New Zealand,https://www.rnz.co.nz/rss/pacific.xml,https://www.rnz.co.nz/pacific,en,WS|KI|MH|FM|NR|TV|FJ|PG|SB|VU|TO|CK|NU|PW,,world,,regional,radio,rss,,,,,,,Radio New Zealand Pacific service. Regional aggregator covering 14 Pacific island nations
 rnz-national-95e71c83,RNZ National,RNZ National,https://www.rnz.co.nz/rss/national.xml,,en,NZ,,world,,,digital,rss,,,,,,,
 wired-e8034180,WIRED,WIRED,https://www.wired.com/feed/rss,,en,US,,technology,,,digital,rss,,,,,,,
 ars-technica-09cc00c5,Ars Technica,Ars Technica,https://feeds.arstechnica.com/arstechnica/index,,en,US,,technology,,,digital,rss,,,,,,,
@@ -445,3 +445,16 @@ vbtc-3e72583a,VBTC,Vanuatu Broadcasting and Television Corporation,https://vbtc.
 matangi-tonga-f2283a76,Matangi Tonga,Matangi Tonga,https://matangitonga.to/rss.xml,,en,TO,,world,,,digital,rss,,,,,,,
 island-times-c38b60c7,Island Times,Island Times,https://islandtimes.org/feed/,,en,PW,,world,,,digital,rss,,,,,,,
 tatoli-3cc2daf4,Tatoli,Tatoli,https://www.tatoli.tl/en/feed/,,en,TL,,world,,,digital,rss,,,,,,,
+st-lucia-times-3b1160bb,St. Lucia Times,St. Lucia Times,https://stluciatimes.com/feed/,https://stluciatimes.com,en,LC,,world,,independent,digital,rss,,,,,,,Independent online news for Saint Lucia
+the-voice-slu-871a29f4,The Voice SLU,The Voice SLU,https://thevoiceslu.com/feed/,https://thevoiceslu.com,en,LC,,world,,independent,digital,rss,,,,,,,Saint Lucian news outlet
+cnc3-283740a8,CNC3,CNC3,https://www.cnc3.co.tt/feed/,https://www.cnc3.co.tt,en,TT,,world,,independent,tv,rss,,,,,,,Trinidad and Tobago television news network
+times-of-central-asia-4cbf1866,Times of Central Asia,Times of Central Asia,https://timesca.com/feed/,https://timesca.com,en,TM,,world,,regional,digital,rss,,,,,,,"English-language news covering Central Asia. Assigned TM only — KZ, KG, TJ, UZ have dedicated local feeds"
+the-scoop-8d7183e7,The Scoop,The Scoop,https://thescoop.co/feed/,https://thescoop.co,en,BN,,world,,independent,digital,rss,,,,,,,Independent news from Brunei
+news-mn-ffe6a8c1,News.mn,News.mn,https://news.mn/en/feed/,https://news.mn/en/,en,MN,,world,,independent,digital,rss,,,,,,,English-language news from Mongolia
+antigua-observer-c8da4558,Antigua Observer,Antigua Observer,https://antiguaobserver.com/feed/,https://antiguaobserver.com,en,AG,,world,,independent,digital,rss,,,,,,,News from Antigua and Barbuda
+antigua-newsroom-90c61b09,Antigua Newsroom,Antigua Newsroom,https://antiguanewsroom.com/feed/,https://antiguanewsroom.com,en,AG,,world,,independent,digital,rss,,,,,,,Antigua and Barbuda news
+now-grenada-bf49fbdf,Now Grenada,Now Grenada,https://nowgrenada.com/feed/,https://nowgrenada.com,en,GD,,world,,independent,digital,rss,,,,,,,Grenada news and current affairs
+searchlight-04417d8b,Searchlight,Searchlight,https://www.searchlight.vc/feed/,https://www.searchlight.vc,en,VC,,world,,independent,digital,rss,,,,,,,News from Saint Vincent and the Grenadines
+st-vincent-times-df7309b6,St Vincent Times,St Vincent Times,https://www.stvincenttimes.com/feed/,https://www.stvincenttimes.com,en,VC,,world,,independent,digital,rss,,,,,,,Saint Vincent and the Grenadines news
+monaco-life-9a4409c7,Monaco Life,Monaco Life,https://www.monacolife.net/feed/,https://www.monacolife.net,en,MC,,world,,independent,digital,rss,,,,,,,English-language news from Monaco
+tela-non-3daacff8,Tela Non,Tela Non,https://www.telanon.info/feed/,https://www.telanon.info,pt,ST,,world,,independent,digital,rss,,,,,,,News from São Tomé and Príncipe

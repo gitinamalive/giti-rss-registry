@@ -375,6 +375,42 @@
       "description": "Latest news from Italy and international politics, business, science, technology, lifestyle, and sports from ANSA"
     }
   ],
+  "Antigua Newsroom": [
+    {
+      "name": "Antigua Newsroom",
+      "publisher": "Antigua Newsroom",
+      "url": "https://antiguanewsroom.com/feed/",
+      "homepage": "https://antiguanewsroom.com",
+      "language": "en",
+      "countries": [
+        "AG"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "Antigua and Barbuda news",
+      "id": "antigua-newsroom-90c61b09"
+    }
+  ],
+  "Antigua Observer": [
+    {
+      "name": "Antigua Observer",
+      "publisher": "Antigua Observer",
+      "url": "https://antiguaobserver.com/feed/",
+      "homepage": "https://antiguaobserver.com",
+      "language": "en",
+      "countries": [
+        "AG"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "News from Antigua and Barbuda",
+      "id": "antigua-observer-c8da4558"
+    }
+  ],
   "Apollo Magazine": [
     {
       "id": "apollo-magazine-5e4f1c8d",
@@ -1127,6 +1163,24 @@
       "format": "rss",
       "homepage": "https://www.cnbc.com",
       "description": "CNBC top business and market news."
+    }
+  ],
+  "CNC3": [
+    {
+      "name": "CNC3",
+      "publisher": "CNC3",
+      "url": "https://www.cnc3.co.tt/feed/",
+      "homepage": "https://www.cnc3.co.tt",
+      "language": "en",
+      "countries": [
+        "TT"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "tv",
+      "perspective": "independent",
+      "description": "Trinidad and Tobago television news network",
+      "id": "cnc3-283740a8"
     }
   ],
   "Colombia Reports": [
@@ -3230,6 +3284,24 @@
       "format": "rss"
     }
   ],
+  "Monaco Life": [
+    {
+      "name": "Monaco Life",
+      "publisher": "Monaco Life",
+      "url": "https://www.monacolife.net/feed/",
+      "homepage": "https://www.monacolife.net",
+      "language": "en",
+      "countries": [
+        "MC"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "English-language news from Monaco",
+      "id": "monaco-life-9a4409c7"
+    }
+  ],
   "Mongabay": [
     {
       "id": "mongabay-d4c9e3a1",
@@ -3519,6 +3591,24 @@
       "format": "rss"
     }
   ],
+  "News.mn": [
+    {
+      "name": "News.mn",
+      "publisher": "News.mn",
+      "url": "https://news.mn/en/feed/",
+      "homepage": "https://news.mn/en/",
+      "language": "en",
+      "countries": [
+        "MN"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "English-language news from Mongolia",
+      "id": "news-mn-ffe6a8c1"
+    }
+  ],
   "news.sanook.com": [
     {
       "id": "news-sanook-com-5bf6fe8c",
@@ -3673,6 +3763,24 @@
       "category": "europe",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "Now Grenada": [
+    {
+      "name": "Now Grenada",
+      "publisher": "Now Grenada",
+      "url": "https://nowgrenada.com/feed/",
+      "homepage": "https://nowgrenada.com",
+      "language": "en",
+      "countries": [
+        "GD"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "Grenada news and current affairs",
+      "id": "now-grenada-bf49fbdf"
     }
   ],
   "NPR": [
@@ -4139,6 +4247,37 @@
       "description": "Público — Portuguese national daily newspaper."
     }
   ],
+  "Radio New Zealand": [
+    {
+      "id": "rnz-pacific-5f172e7b",
+      "name": "RNZ Pacific",
+      "publisher": "Radio New Zealand",
+      "url": "https://www.rnz.co.nz/rss/pacific.xml",
+      "homepage": "https://www.rnz.co.nz/pacific",
+      "language": "en",
+      "countries": [
+        "WS",
+        "KI",
+        "MH",
+        "FM",
+        "NR",
+        "TV",
+        "FJ",
+        "PG",
+        "SB",
+        "VU",
+        "TO",
+        "CK",
+        "NU",
+        "PW"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "radio",
+      "perspective": "regional",
+      "description": "Radio New Zealand Pacific service. Regional aggregator covering 14 Pacific island nations"
+    }
+  ],
   "RealClearPolitics": [
     {
       "id": "realclearpolitics-3cd34df8",
@@ -4287,21 +4426,6 @@
       "name": "RNZ National",
       "publisher": "RNZ National",
       "url": "https://www.rnz.co.nz/rss/national.xml",
-      "language": "en",
-      "countries": [
-        "NZ"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    }
-  ],
-  "RNZ Pacific": [
-    {
-      "id": "rnz-pacific-5f172e7b",
-      "name": "RNZ Pacific",
-      "publisher": "RNZ Pacific",
-      "url": "https://www.rnz.co.nz/rss/pacific.xml",
       "language": "en",
       "countries": [
         "NZ"
@@ -4488,6 +4612,24 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    }
+  ],
+  "Searchlight": [
+    {
+      "name": "Searchlight",
+      "publisher": "Searchlight",
+      "url": "https://www.searchlight.vc/feed/",
+      "homepage": "https://www.searchlight.vc",
+      "language": "en",
+      "countries": [
+        "VC"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "News from Saint Vincent and the Grenadines",
+      "id": "searchlight-04417d8b"
     }
   ],
   "Seeking Alpha": [
@@ -4716,6 +4858,42 @@
       "format": "rss",
       "homepage": "https://www.si.com",
       "description": "Sports Illustrated — sports news, features, and analysis."
+    }
+  ],
+  "St Vincent Times": [
+    {
+      "name": "St Vincent Times",
+      "publisher": "St Vincent Times",
+      "url": "https://www.stvincenttimes.com/feed/",
+      "homepage": "https://www.stvincenttimes.com",
+      "language": "en",
+      "countries": [
+        "VC"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "Saint Vincent and the Grenadines news",
+      "id": "st-vincent-times-df7309b6"
+    }
+  ],
+  "St. Lucia Times": [
+    {
+      "name": "St. Lucia Times",
+      "publisher": "St. Lucia Times",
+      "url": "https://stluciatimes.com/feed/",
+      "homepage": "https://stluciatimes.com",
+      "language": "en",
+      "countries": [
+        "LC"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "Independent online news for Saint Lucia",
+      "id": "st-lucia-times-3b1160bb"
     }
   ],
   "Standard Media": [
@@ -4949,6 +5127,24 @@
       "format": "rss",
       "perspective": "state-affiliated",
       "notes": "English-language outlet under the Islamic Ideology Dissemination Organization (IIDO), a state body that supervises multiple Iranian state-linked media. State Media Monitor classifies it as state-controlled.\n\nSources:\n  [1] https://statemediamonitor.com/category/globalliststatemedia/mena/middle-east/iran/\n  [2] https://rsf.org/en/country/iran"
+    }
+  ],
+  "Tela Non": [
+    {
+      "name": "Tela Non",
+      "publisher": "Tela Non",
+      "url": "https://www.telanon.info/feed/",
+      "homepage": "https://www.telanon.info",
+      "language": "pt",
+      "countries": [
+        "ST"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "News from São Tomé and Príncipe",
+      "id": "tela-non-3daacff8"
     }
   ],
   "Telegram": [
@@ -5450,6 +5646,24 @@
       "format": "rss"
     }
   ],
+  "The Scoop": [
+    {
+      "name": "The Scoop",
+      "publisher": "The Scoop",
+      "url": "https://thescoop.co/feed/",
+      "homepage": "https://thescoop.co",
+      "language": "en",
+      "countries": [
+        "BN"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "Independent news from Brunei",
+      "id": "the-scoop-8d7183e7"
+    }
+  ],
   "The Spectator": [
     {
       "id": "the-spectator-b9855f10",
@@ -5496,6 +5710,24 @@
       "format": "rss"
     }
   ],
+  "The Voice SLU": [
+    {
+      "name": "The Voice SLU",
+      "publisher": "The Voice SLU",
+      "url": "https://thevoiceslu.com/feed/",
+      "homepage": "https://thevoiceslu.com",
+      "language": "en",
+      "countries": [
+        "LC"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "Saint Lucian news outlet",
+      "id": "the-voice-slu-871a29f4"
+    }
+  ],
   "The Wrap": [
     {
       "id": "the-wrap-9c1f5d3a",
@@ -5511,6 +5743,24 @@
       "format": "rss",
       "homepage": "https://www.thewrap.com",
       "description": "The Wrap — entertainment news, TV, film, and celebrity coverage."
+    }
+  ],
+  "Times of Central Asia": [
+    {
+      "name": "Times of Central Asia",
+      "publisher": "Times of Central Asia",
+      "url": "https://timesca.com/feed/",
+      "homepage": "https://timesca.com",
+      "language": "en",
+      "countries": [
+        "TM"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "regional",
+      "description": "English-language news covering Central Asia. Assigned TM only — KZ, KG, TJ, UZ have dedicated local feeds",
+      "id": "times-of-central-asia-4cbf1866"
     }
   ],
   "Times of India": [

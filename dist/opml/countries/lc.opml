@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: LC</title>
+    <dateCreated>Fri, 31 Jul 2026 17:55:11 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="St. Lucia Times" title="St. Lucia Times" xmlUrl="https://stluciatimes.com/feed/" />
+    <outline type="rss" text="The Voice SLU" title="The Voice SLU" xmlUrl="https://thevoiceslu.com/feed/" />
+  </body>
+</opml>

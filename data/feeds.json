@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-28T17:15:00.000Z",
+  "generatedAt": "2026-07-31T05:16:00.000Z",
   "source": "public-rss-registry/data/feeds.json (hand-curated)",
   "stats": {
-    "feeds": 379,
+    "feeds": 392,
     "duplicateIds": 0,
     "duplicateUrls": 0
   },
@@ -800,15 +800,31 @@
     {
       "id": "rnz-pacific-5f172e7b",
       "name": "RNZ Pacific",
-      "publisher": "RNZ Pacific",
+      "publisher": "Radio New Zealand",
       "url": "https://www.rnz.co.nz/rss/pacific.xml",
+      "homepage": "https://www.rnz.co.nz/pacific",
       "language": "en",
       "countries": [
-        "NZ"
+        "WS",
+        "KI",
+        "MH",
+        "FM",
+        "NR",
+        "TV",
+        "FJ",
+        "PG",
+        "SB",
+        "VU",
+        "TO",
+        "CK",
+        "NU",
+        "PW"
       ],
       "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "mediaType": "radio",
+      "perspective": "regional",
+      "description": "Radio New Zealand Pacific service. Regional aggregator covering 14 Pacific island nations"
     },
     {
       "id": "rnz-national-95e71c83",
@@ -5116,7 +5132,9 @@
       "publisher": "Malaysiakini",
       "url": "https://www.malaysiakini.com/rss/en/news.rss",
       "language": "en",
-      "countries": ["MY"],
+      "countries": [
+        "MY"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5127,7 +5145,9 @@
       "publisher": "Malay Mail",
       "url": "https://www.malaymail.com/feed/rss/malaysia",
       "language": "en",
-      "countries": ["MY"],
+      "countries": [
+        "MY"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5138,7 +5158,9 @@
       "publisher": "Democratic Voice of Burma",
       "url": "https://english.dvb.no/feed/",
       "language": "en",
-      "countries": ["MM"],
+      "countries": [
+        "MM"
+      ],
       "category": "world",
       "mediaType": "broadcast",
       "format": "rss"
@@ -5149,7 +5171,9 @@
       "publisher": "Myanmar Now",
       "url": "https://www.myanmar-now.org/en/feed",
       "language": "en",
-      "countries": ["MM"],
+      "countries": [
+        "MM"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5160,7 +5184,9 @@
       "publisher": "Laotian Times",
       "url": "https://laotiantimes.com/feed/",
       "language": "en",
-      "countries": ["LA"],
+      "countries": [
+        "LA"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5171,7 +5197,9 @@
       "publisher": "Kuensel",
       "url": "https://kuenselonline.com/feed/",
       "language": "en",
-      "countries": ["BT"],
+      "countries": [
+        "BT"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5182,7 +5210,9 @@
       "publisher": "24.kg News Agency",
       "url": "https://24.kg/rss/",
       "language": "ru",
-      "countries": ["KG"],
+      "countries": [
+        "KG"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss",
@@ -5194,7 +5224,9 @@
       "publisher": "Asia-Plus",
       "url": "https://asiaplustj.info/en/feed",
       "language": "en",
-      "countries": ["TJ"],
+      "countries": [
+        "TJ"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5205,7 +5237,9 @@
       "publisher": "Civil Georgia",
       "url": "https://civil.ge/feed/",
       "language": "en",
-      "countries": ["GE"],
+      "countries": [
+        "GE"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5216,7 +5250,9 @@
       "publisher": "OC Media",
       "url": "https://oc-media.org/feed/",
       "language": "en",
-      "countries": ["GE"],
+      "countries": [
+        "GE"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5227,7 +5263,9 @@
       "publisher": "Tirana Times",
       "url": "https://www.tiranatimes.com/feed/",
       "language": "en",
-      "countries": ["AL"],
+      "countries": [
+        "AL"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5238,7 +5276,9 @@
       "publisher": "El Periòdic d'Andorra",
       "url": "https://www.elperiodic.ad/rss",
       "language": "ca",
-      "countries": ["AD"],
+      "countries": [
+        "AD"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5249,7 +5289,9 @@
       "publisher": "Vatican News",
       "url": "https://www.vaticannews.va/en.rss.xml",
       "language": "en",
-      "countries": ["VA"],
+      "countries": [
+        "VA"
+      ],
       "category": "politics",
       "mediaType": "digital",
       "format": "rss"
@@ -5260,7 +5302,9 @@
       "publisher": "Honduras.com",
       "url": "https://www.honduras.com/feed/",
       "language": "es",
-      "countries": ["HN"],
+      "countries": [
+        "HN"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5271,7 +5315,9 @@
       "publisher": "OnCubaNews",
       "url": "https://oncubanews.com/en/feed/",
       "language": "en",
-      "countries": ["CU"],
+      "countries": [
+        "CU"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5282,7 +5328,9 @@
       "publisher": "Breaking Belize News",
       "url": "https://www.breakingbelizenews.com/feed/",
       "language": "en",
-      "countries": ["BZ"],
+      "countries": [
+        "BZ"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5293,7 +5341,9 @@
       "publisher": "El Salvador Times",
       "url": "https://www.elsalvadortimes.com/rss/",
       "language": "en",
-      "countries": ["SV"],
+      "countries": [
+        "SV"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5304,7 +5354,9 @@
       "publisher": "Post Courier",
       "url": "https://postcourier.com.pg/feed/",
       "language": "en",
-      "countries": ["PG"],
+      "countries": [
+        "PG"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5315,7 +5367,9 @@
       "publisher": "Vanuatu Broadcasting and Television Corporation",
       "url": "https://vbtc.vu/feed/",
       "language": "en",
-      "countries": ["VU"],
+      "countries": [
+        "VU"
+      ],
       "category": "world",
       "mediaType": "broadcast",
       "format": "rss"
@@ -5326,7 +5380,9 @@
       "publisher": "Matangi Tonga",
       "url": "https://matangitonga.to/rss.xml",
       "language": "en",
-      "countries": ["TO"],
+      "countries": [
+        "TO"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5337,7 +5393,9 @@
       "publisher": "Island Times",
       "url": "https://islandtimes.org/feed/",
       "language": "en",
-      "countries": ["PW"],
+      "countries": [
+        "PW"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
@@ -5348,10 +5406,220 @@
       "publisher": "Tatoli",
       "url": "https://www.tatoli.tl/en/feed/",
       "language": "en",
-      "countries": ["TL"],
+      "countries": [
+        "TL"
+      ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "name": "St. Lucia Times",
+      "publisher": "St. Lucia Times",
+      "url": "https://stluciatimes.com/feed/",
+      "homepage": "https://stluciatimes.com",
+      "language": "en",
+      "countries": [
+        "LC"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "Independent online news for Saint Lucia",
+      "id": "st-lucia-times-3b1160bb"
+    },
+    {
+      "name": "The Voice SLU",
+      "publisher": "The Voice SLU",
+      "url": "https://thevoiceslu.com/feed/",
+      "homepage": "https://thevoiceslu.com",
+      "language": "en",
+      "countries": [
+        "LC"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "Saint Lucian news outlet",
+      "id": "the-voice-slu-871a29f4"
+    },
+    {
+      "name": "CNC3",
+      "publisher": "CNC3",
+      "url": "https://www.cnc3.co.tt/feed/",
+      "homepage": "https://www.cnc3.co.tt",
+      "language": "en",
+      "countries": [
+        "TT"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "tv",
+      "perspective": "independent",
+      "description": "Trinidad and Tobago television news network",
+      "id": "cnc3-283740a8"
+    },
+    {
+      "name": "Times of Central Asia",
+      "publisher": "Times of Central Asia",
+      "url": "https://timesca.com/feed/",
+      "homepage": "https://timesca.com",
+      "language": "en",
+      "countries": [
+        "TM"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "regional",
+      "description": "English-language news covering Central Asia. Assigned TM only — KZ, KG, TJ, UZ have dedicated local feeds",
+      "id": "times-of-central-asia-4cbf1866"
+    },
+    {
+      "name": "The Scoop",
+      "publisher": "The Scoop",
+      "url": "https://thescoop.co/feed/",
+      "homepage": "https://thescoop.co",
+      "language": "en",
+      "countries": [
+        "BN"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "Independent news from Brunei",
+      "id": "the-scoop-8d7183e7"
+    },
+    {
+      "name": "News.mn",
+      "publisher": "News.mn",
+      "url": "https://news.mn/en/feed/",
+      "homepage": "https://news.mn/en/",
+      "language": "en",
+      "countries": [
+        "MN"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "English-language news from Mongolia",
+      "id": "news-mn-ffe6a8c1"
+    },
+    {
+      "name": "Antigua Observer",
+      "publisher": "Antigua Observer",
+      "url": "https://antiguaobserver.com/feed/",
+      "homepage": "https://antiguaobserver.com",
+      "language": "en",
+      "countries": [
+        "AG"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "News from Antigua and Barbuda",
+      "id": "antigua-observer-c8da4558"
+    },
+    {
+      "name": "Antigua Newsroom",
+      "publisher": "Antigua Newsroom",
+      "url": "https://antiguanewsroom.com/feed/",
+      "homepage": "https://antiguanewsroom.com",
+      "language": "en",
+      "countries": [
+        "AG"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "Antigua and Barbuda news",
+      "id": "antigua-newsroom-90c61b09"
+    },
+    {
+      "name": "Now Grenada",
+      "publisher": "Now Grenada",
+      "url": "https://nowgrenada.com/feed/",
+      "homepage": "https://nowgrenada.com",
+      "language": "en",
+      "countries": [
+        "GD"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "Grenada news and current affairs",
+      "id": "now-grenada-bf49fbdf"
+    },
+    {
+      "name": "Searchlight",
+      "publisher": "Searchlight",
+      "url": "https://www.searchlight.vc/feed/",
+      "homepage": "https://www.searchlight.vc",
+      "language": "en",
+      "countries": [
+        "VC"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "News from Saint Vincent and the Grenadines",
+      "id": "searchlight-04417d8b"
+    },
+    {
+      "name": "St Vincent Times",
+      "publisher": "St Vincent Times",
+      "url": "https://www.stvincenttimes.com/feed/",
+      "homepage": "https://www.stvincenttimes.com",
+      "language": "en",
+      "countries": [
+        "VC"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "Saint Vincent and the Grenadines news",
+      "id": "st-vincent-times-df7309b6"
+    },
+    {
+      "name": "Monaco Life",
+      "publisher": "Monaco Life",
+      "url": "https://www.monacolife.net/feed/",
+      "homepage": "https://www.monacolife.net",
+      "language": "en",
+      "countries": [
+        "MC"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "English-language news from Monaco",
+      "id": "monaco-life-9a4409c7"
+    },
+    {
+      "name": "Tela Non",
+      "publisher": "Tela Non",
+      "url": "https://www.telanon.info/feed/",
+      "homepage": "https://www.telanon.info",
+      "language": "pt",
+      "countries": [
+        "ST"
+      ],
+      "category": "world",
+      "format": "rss",
+      "mediaType": "digital",
+      "perspective": "independent",
+      "description": "News from São Tomé and Príncipe",
+      "id": "tela-non-3daacff8"
     }
   ]
 }

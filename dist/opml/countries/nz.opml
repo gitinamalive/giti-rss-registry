@@ -2,11 +2,10 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: NZ</title>
-    <dateCreated>Tue, 28 Jul 2026 17:58:38 GMT</dateCreated>
+    <dateCreated>Fri, 31 Jul 2026 17:55:11 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="NZ Herald" title="NZ Herald" xmlUrl="https://rss.nzherald.co.nz/rss/xml/nzhrsscid_000000001.xml" />
     <outline type="rss" text="RNZ National" title="RNZ National" xmlUrl="https://www.rnz.co.nz/rss/national.xml" />
-    <outline type="rss" text="RNZ Pacific" title="RNZ Pacific" xmlUrl="https://www.rnz.co.nz/rss/pacific.xml" />
   </body>
 </opml>

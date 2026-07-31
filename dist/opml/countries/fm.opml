@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Giti RSS Registry — Country: FM</title>
+    <dateCreated>Fri, 31 Jul 2026 17:55:11 GMT</dateCreated>
+  </head>
+  <body>
+    <outline type="rss" text="RNZ Pacific" title="RNZ Pacific" xmlUrl="https://www.rnz.co.nz/rss/pacific.xml" />
+  </body>
+</opml>
