@@ -14,7 +14,6 @@ daily-mail-4a12363d,Daily Mail,Daily Mail,https://www.dailymail.co.uk/articles.r
 sky-news-e1e43675,Sky News,Sky News,https://feeds.skynews.com/feeds/rss/home.xml,,en,GB,,europe,,,digital,rss,,,,,,,
 global-news-2e21ce61,Global News,Global News,https://globalnews.ca/feed/,,en,CA,,world,,,digital,rss,,,,,,,
 abc-news-158fcc48,ABC News,ABC News,https://www.abc.net.au/news/feed/51120/rss.xml,,en,AU,,world,,,broadcast,rss,,,,,,,
-the-japan-times-1c3e4f26,The Japan Times,The Japan Times,https://www.japantimes.co.jp/feed/,,en,JP,,world,,,digital,rss,,,,,,,
 g1-11fa6d52,G1 (Globo),G1,https://g1.globo.com/rss/g1/,,pt,BR,,world,,,digital,rss,,,,,,,
 vanguard-news-108776b9,Vanguard News,Vanguard News,https://www.vanguardngr.com/category/national-news/feed/,,en,NG,,world,,,digital,rss,,,,,,,
 france-24-e1f73e0e,France 24,France 24,https://www.france24.com/en/rss,,en,FR,,europe,,,broadcast,rss,,,,,,,
@@ -28,7 +27,7 @@ der-spiegel-7e6cdbaf,Der Spiegel — Schlagzeilen,Der Spiegel,https://www.spiege
 tagesschau-68a09f16,Tagesschau,Tagesschau,https://www.tagesschau.de/xml/rss2,,de,DE,,europe,,,digital,rss,,,,,,,
 die-zeit-8957d1a5,Die Zeit,Die Zeit,https://newsfeed.zeit.de/index,,de,DE,,europe,,,digital,rss,,,,,,,
 euronews-698617a6,Euronews,Euronews,https://www.euronews.com/rss?format=xml,,fr,FR|DE|ES|IT|GB|PL|NL|BE|PT|GR|AT|HU|CZ|RO|BG|SE|DK|FI|IE|HR|SK|SI|LT|LV|EE|CY|MT|LU|NO,,europe,,,digital,rss,,,,,,,
-the-japan-times-49acef46,The Japan Times — Feed,The Japan Times,https://www.japantimes.co.jp/feed,,en,JP,,world,,,digital,rss,,,,,,,
+the-japan-times-49acef46,The Japan Times,The Japan Times,https://www.japantimes.co.jp/feed,,en,JP,,world,,,digital,rss,,,,,,,
 asahi-shimbun-de3a6e68,Asahi Shimbun,Asahi Shimbun,https://rss.asahi.com/rss/asahi/newsheadlines.rdf,,en,JP,,world,,,digital,rdf,,,,,,,
 times-of-india-96815df8,Times of India,Times of India,https://timesofindia.indiatimes.com/rssfeedstopstories.cms,,en,IN,,world,,,digital,rss,,,,,,,
 rt-news-b3b74514,RT News,RT News,https://rt.com/rss/news/,,en,RU,,world,,state-affiliated,digital,rss,,,,,,"Russian state-funded international broadcaster. US State Dept (2024): 'de facto arm of Russia's intelligence apparatus.' Sanctioned by US, UK, EU, Canada. Banned globally by Meta and YouTube. Parent company TV-Novosti designated under E.O. 14024.

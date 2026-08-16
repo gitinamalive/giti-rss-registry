@@ -1,8 +1,11 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import {
     type BootstrapPayload,
+    type FeedEntry,
     allowedCategories,
+    allowedCoverageTypes,
     allowedFormats,
     allowedMediaTypes,
     allowedPerspectives,
@@ -135,6 +138,148 @@ function urlNormalizationIssues(value: string): string[] {
     return issues;
 }
 
+export interface FeedValidationResult {
+    errors: string[];
+    warnings: string[];
+}
+
+/**
+ * Validate a single feed entry. Shared by the CLI validator and the batch
+ * importer so neither re-implements the rules.
+ */
+export function validateFeedEntry(feed: FeedEntry, index: number): FeedValidationResult {
+    const prefix = `feeds[${index}]`;
+    const errors: string[] = [];
+    const warnings: string[] = [];
+
+    if (!feed.id?.trim()) errors.push(`${prefix}.id is required`);
+    if (!feed.name?.trim()) errors.push(`${prefix}.name is required`);
+    if (!feed.publisher?.trim()) errors.push(`${prefix}.publisher is required`);
+    if (!feed.url?.trim()) errors.push(`${prefix}.url is required`);
+    if (!feed.language?.trim()) errors.push(`${prefix}.language is required`);
+    if (!Array.isArray(feed.countries)) errors.push(`${prefix}.countries must be an array`);
+    if (!feed.category?.trim()) errors.push(`${prefix}.category is required`);
+
+    if (feed.url && !isValidUrl(feed.url)) {
+        errors.push(`${prefix}.url is not valid http/https URL`);
+    } else if (feed.url && !isPublicHostname(feed.url)) {
+        errors.push(`${prefix}.url host is not a public interface (potential SSRF)`);
+    }
+    if (feed.url?.startsWith('http://')) warnings.push(`${prefix}.url uses http (consider https)`);
+
+    // URL normalization checks
+    if (feed.url && isValidUrl(feed.url)) {
+        const issues = urlNormalizationIssues(feed.url);
+        issues.forEach((issue) => warnings.push(`${prefix}.url: ${issue}`));
+    }
+
+    if (feed.homepage && !isValidUrl(feed.homepage)) {
+        errors.push(`${prefix}.homepage is not a valid http/https URL`);
+    } else if (feed.homepage && !isPublicHostname(feed.homepage)) {
+        errors.push(`${prefix}.homepage host is not a public interface`);
+    }
+    if (feed.homepage?.startsWith('http://')) {
+        warnings.push(`${prefix}.homepage uses http (consider https)`);
+    }
+
+    if (feed.language && !isLanguageCode(feed.language)) {
+        errors.push(`${prefix}.language is not a valid language code`);
+    }
+
+    if (Array.isArray(feed.countries)) {
+        feed.countries.forEach((country) => {
+            // Regex check (format)
+            if (!isIsoCountryCode(country)) {
+                errors.push(`${prefix}.countries has invalid ISO format: ${country}`);
+            }
+            // Set check (valid ISO 3166-1 alpha-2)
+            else if (!isValidIsoCountryCode(country)) {
+                errors.push(`${prefix}.countries has unrecognized ISO-3166 alpha-2 code: ${country}`);
+            }
+        });
+        if (feed.countries.length === 0) {
+            warnings.push(`${prefix}.countries is empty — feed will be excluded from by-country.json and country OPML`);
+        }
+    }
+
+    if (feed.category && !allowedCategories.has(feed.category)) {
+        errors.push(`${prefix}.category not in approved set: ${feed.category}`);
+    }
+
+    if (feed.format && !allowedFormats.has(feed.format)) {
+        errors.push(`${prefix}.format not allowed: ${feed.format}`);
+    }
+
+    if (feed.mediaType && !allowedMediaTypes.has(feed.mediaType)) {
+        errors.push(`${prefix}.mediaType not allowed: ${feed.mediaType}`);
+    }
+
+    if (feed.perspective && !allowedPerspectives.has(feed.perspective)) {
+        errors.push(`${prefix}.perspective not allowed: ${feed.perspective}`);
+    }
+
+    if (feed.coverageType && !allowedCoverageTypes.has(feed.coverageType)) {
+        errors.push(`${prefix}.coverageType not allowed: ${feed.coverageType}`);
+    }
+
+    if (feed.publisherCountries !== undefined) {
+        if (!Array.isArray(feed.publisherCountries)) {
+            errors.push(`${prefix}.publisherCountries must be an array`);
+        } else {
+            feed.publisherCountries.forEach((country) => {
+                if (!isIsoCountryCode(country)) {
+                    errors.push(`${prefix}.publisherCountries has invalid ISO format: ${country}`);
+                } else if (!isValidIsoCountryCode(country)) {
+                    errors.push(`${prefix}.publisherCountries has unrecognized ISO-3166 alpha-2 code: ${country}`);
+                }
+            });
+        }
+    }
+
+    // healthScore range check (0-100)
+    if (feed.healthScore !== undefined && feed.healthScore !== null) {
+        if (typeof feed.healthScore !== 'number' || !Number.isFinite(feed.healthScore)) {
+            errors.push(`${prefix}.healthScore must be a finite number`);
+        } else if (feed.healthScore < 0 || feed.healthScore > 100) {
+            errors.push(`${prefix}.healthScore is ${feed.healthScore} — must be 0-100`);
+        }
+    }
+
+    // ISO timestamp validation for optional timestamp fields
+    if (feed.lastCheckedAt) {
+        if (!isValidIsoTimestamp(feed.lastCheckedAt)) {
+            errors.push(
+                `${prefix}.lastCheckedAt "${feed.lastCheckedAt}" is not a valid canonical ISO-8601 timestamp`
+            );
+        }
+    }
+    if (feed.lastItemPublishedAt) {
+        if (!isValidIsoTimestamp(feed.lastItemPublishedAt)) {
+            errors.push(
+                `${prefix}.lastItemPublishedAt "${feed.lastItemPublishedAt}" is not a valid canonical ISO-8601 timestamp`
+            );
+        }
+    }
+
+    // Cross-field: mediaType 'wire' should have at least 2 countries (typically)
+    if (feed.mediaType === 'wire' && Array.isArray(feed.countries) && feed.countries.length < 2) {
+        warnings.push(
+            `${prefix} is a wire service but has fewer than 2 countries — wire services typically serve multiple markets`
+        );
+    }
+
+    // Cross-field: 'description' should not be a single character or empty string after trim
+    if (feed.description !== undefined && feed.description !== null) {
+        if (feed.description.trim().length === 0) {
+            warnings.push(`${prefix}.description is present but empty — consider omitting or providing content`);
+        } else if (feed.description.trim().length < 10) {
+            warnings.push(`${prefix}.description is very short (< 10 chars) — consider expanding`);
+        }
+    }
+
+    return { errors, warnings };
+}
+
 async function recomputeAndWrite(filePath: string, payload: BootstrapPayload): Promise<void> {
     const feeds = payload.feeds;
     const ids = feeds.map(f => f.id).filter(Boolean);
@@ -185,114 +330,9 @@ async function main(): Promise<void> {
     }
 
     payload.feeds.forEach((feed, index) => {
-        const prefix = `feeds[${index}]`;
-
-        if (!feed.id?.trim()) errors.push(`${prefix}.id is required`);
-        if (!feed.name?.trim()) errors.push(`${prefix}.name is required`);
-        if (!feed.publisher?.trim()) errors.push(`${prefix}.publisher is required`);
-        if (!feed.url?.trim()) errors.push(`${prefix}.url is required`);
-        if (!feed.language?.trim()) errors.push(`${prefix}.language is required`);
-        if (!Array.isArray(feed.countries)) errors.push(`${prefix}.countries must be an array`);
-        if (!feed.category?.trim()) errors.push(`${prefix}.category is required`);
-
-        if (feed.url && !isValidUrl(feed.url)) {
-            errors.push(`${prefix}.url is not valid http/https URL`);
-        } else if (feed.url && !isPublicHostname(feed.url)) {
-            errors.push(`${prefix}.url host is not a public interface (potential SSRF)`);
-        }
-        if (feed.url?.startsWith('http://')) warnings.push(`${prefix}.url uses http (consider https)`);
-
-        // URL normalization checks
-        if (feed.url && isValidUrl(feed.url)) {
-            const issues = urlNormalizationIssues(feed.url);
-            issues.forEach(issue => warnings.push(`${prefix}.url: ${issue}`));
-        }
-
-        if (feed.homepage && !isValidUrl(feed.homepage)) {
-            errors.push(`${prefix}.homepage is not a valid http/https URL`);
-        } else if (feed.homepage && !isPublicHostname(feed.homepage)) {
-            errors.push(`${prefix}.homepage host is not a public interface`);
-        }
-        if (feed.homepage?.startsWith('http://')) {
-            warnings.push(`${prefix}.homepage uses http (consider https)`);
-        }
-
-        if (feed.language && !isLanguageCode(feed.language)) {
-            errors.push(`${prefix}.language is not a valid language code`);
-        }
-
-        if (Array.isArray(feed.countries)) {
-            feed.countries.forEach((country) => {
-                // Regex check (format)
-                if (!isIsoCountryCode(country)) {
-                    errors.push(`${prefix}.countries has invalid ISO format: ${country}`);
-                }
-                // Set check (valid ISO 3166-1 alpha-2)
-                else if (!isValidIsoCountryCode(country)) {
-                    errors.push(`${prefix}.countries has unrecognized ISO-3166 alpha-2 code: ${country}`);
-                }
-            });
-            if (feed.countries.length === 0) {
-                warnings.push(`${prefix}.countries is empty — feed will be excluded from by-country.json and country OPML`);
-            }
-        }
-
-        if (feed.category && !allowedCategories.has(feed.category)) {
-            errors.push(`${prefix}.category not in approved set: ${feed.category}`);
-        }
-
-        if (feed.format && !allowedFormats.has(feed.format)) {
-            errors.push(`${prefix}.format not allowed: ${feed.format}`);
-        }
-
-        if (feed.mediaType && !allowedMediaTypes.has(feed.mediaType)) {
-            errors.push(`${prefix}.mediaType not allowed: ${feed.mediaType}`);
-        }
-
-        if (feed.perspective && !allowedPerspectives.has(feed.perspective)) {
-            errors.push(`${prefix}.perspective not allowed: ${feed.perspective}`);
-        }
-
-        // healthScore range check (0-100)
-        if (feed.healthScore !== undefined && feed.healthScore !== null) {
-            if (typeof feed.healthScore !== 'number' || !Number.isFinite(feed.healthScore)) {
-                errors.push(`${prefix}.healthScore must be a finite number`);
-            } else if (feed.healthScore < 0 || feed.healthScore > 100) {
-                errors.push(`${prefix}.healthScore is ${feed.healthScore} — must be 0-100`);
-            }
-        }
-
-        // ISO timestamp validation for optional timestamp fields
-        if (feed.lastCheckedAt) {
-            if (!isValidIsoTimestamp(feed.lastCheckedAt)) {
-                errors.push(
-                    `${prefix}.lastCheckedAt "${feed.lastCheckedAt}" is not a valid canonical ISO-8601 timestamp`
-                );
-            }
-        }
-        if (feed.lastItemPublishedAt) {
-            if (!isValidIsoTimestamp(feed.lastItemPublishedAt)) {
-                errors.push(
-                    `${prefix}.lastItemPublishedAt "${feed.lastItemPublishedAt}" is not a valid canonical ISO-8601 timestamp`
-                );
-            }
-        }
-
-        // Cross-field: mediaType 'wire' should have at least 2 countries (typically)
-        if (feed.mediaType === 'wire' && Array.isArray(feed.countries) && feed.countries.length < 2) {
-            warnings.push(
-                `${prefix} is a wire service but has fewer than 2 countries — wire services typically serve multiple markets`
-            );
-        }
-
-        // Cross-field: 'description' should not be a single character or empty string after trim
-        if (feed.description !== undefined && feed.description !== null) {
-            if (feed.description.trim().length === 0) {
-                warnings.push(`${prefix}.description is present but empty — consider omitting or providing content`);
-            } else if (feed.description.trim().length < 10) {
-                warnings.push(`${prefix}.description is very short (< 10 chars) — consider expanding`);
-            }
-        }
+        const { errors: feedErrors, warnings: feedWarnings } = validateFeedEntry(feed, index);
+        errors.push(...feedErrors);
+        warnings.push(...feedWarnings);
     });
 
     // Category coverage check — warn if a declared category has zero feeds
@@ -394,7 +434,13 @@ async function main(): Promise<void> {
 
     if (fixMode) {
         await recomputeAndWrite(filePath, payload);
-        process.stdout.write('Validation passed after --fix.\n');
+        if (errors.length > 0) {
+            process.stderr.write(`Repaired stats/warnings; ${errors.length} error(s) remain:\n`);
+            process.stderr.write(`${errors.slice(0, 20).join('\n')}\n`);
+            process.exitCode = 1;
+        } else {
+            process.stdout.write('Validation passed after --fix.\n');
+        }
         return;
     }
 
@@ -408,10 +454,15 @@ async function main(): Promise<void> {
     process.stdout.write('Validation passed with no errors.\n');
 }
 
-main().catch((error: unknown) => {
-    console.error(`[validate] Failed:`, error);
-    process.exitCode = 1;
-});
+// Only run validation when executed directly (not when imported by tests,
+// which need the exported helpers without the main() side effect).
+const isMain = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (isMain) {
+    main().catch((error: unknown) => {
+        console.error(`[validate] Failed:`, error);
+        process.exitCode = 1;
+    });
+}
 
 export {
     findDuplicates,

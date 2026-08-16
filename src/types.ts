@@ -34,6 +34,20 @@ export type FeedCategory =
   | 'health'
   | 'culture';
 
+export type CoverageType =
+  | 'global'
+  | 'international'
+  | 'regional'
+  | 'national'
+  | 'single-country'
+  | 'investigative'
+  | 'aggregator'
+  | 'health'
+  | 'science'
+  | 'sports'
+  | 'entertainment'
+  | 'culture';
+
 export interface FeedEntry {
   id: string;
   name: string;
@@ -55,6 +69,8 @@ export interface FeedEntry {
   healthScore?: number;
   notes?: string;
   description?: string;
+  coverageType?: CoverageType;
+  publisherCountries?: string[];
 }
 
 export interface BootstrapPayload {
@@ -109,4 +125,19 @@ export const allowedPerspectives = new Set<Perspective>([
   'regional',
   'state-monitor',
   'aggregator',
+]);
+
+export const allowedCoverageTypes = new Set<CoverageType>([
+  'global',
+  'international',
+  'regional',
+  'national',
+  'single-country',
+  'investigative',
+  'aggregator',
+  'health',
+  'science',
+  'sports',
+  'entertainment',
+  'culture',
 ]);

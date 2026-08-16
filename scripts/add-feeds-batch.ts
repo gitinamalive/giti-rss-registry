@@ -10,69 +10,12 @@
  *   npx tsx scripts/add-feeds-batch.ts --file new-feeds.json
  */
 
-import { readFile, writeFile } from 'fs/promises';
-import { createHash } from 'crypto';
-import { FeedEntry, BootstrapPayload, allowedCategories, allowedFormats, allowedMediaTypes, allowedPerspectives } from '../src/types.js';
+import { readFile, rename, writeFile } from 'fs/promises';
+import { generateFeedId, normalizeUrl } from '../src/id.ts';
+import { validateFeedEntry } from './validate.ts';
+import type { FeedEntry, BootstrapPayload } from '../src/types.ts';
 
 const FEEDS_PATH = new URL('../data/feeds.json', import.meta.url).pathname.replace(/^\/([A-Z]):/, '$1:');
-
-function generateId(name: string): string {
-  const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  const hash = createHash('sha256').update(name).digest('hex').substring(0, 8);
-  return `${slug}-${hash}`;
-}
-
-function validateNewFeed(feed: Partial<FeedEntry>): { valid: boolean; errors: string[] } {
-  const errors: string[] = [];
-
-  if (!feed.name || typeof feed.name !== 'string') errors.push('name is required and must be a string');
-  if (!feed.url || typeof feed.url !== 'string') errors.push('url is required and must be a string');
-  if (feed.url && !/^https?:\/\/.+/.test(feed.url)) errors.push('url must start with http:// or https://');
-  if (!feed.publisher || typeof feed.publisher !== 'string') errors.push('publisher is required and must be a string');
-
-  if (feed.language && typeof feed.language !== 'string') errors.push('language must be a string (BCP-47)');
-
-  if (feed.countries) {
-    if (!Array.isArray(feed.countries)) {
-      errors.push('countries must be an array of ISO 3166-1 alpha-2 codes');
-    } else if (!feed.countries.every((c: string) => /^[A-Z]{2}$/.test(c))) {
-      errors.push('each country must be a 2-letter ISO 3166-1 alpha-2 code');
-    }
-  }
-
-  if (feed.category) {
-    if (typeof feed.category !== 'string') {
-      errors.push('category must be a string');
-    } else if (!allowedCategories.has(feed.category)) {
-      errors.push(`category "${feed.category}" is not in allowed set: ${[...allowedCategories].join(', ')}`);
-    }
-  }
-
-  if (feed.format && !allowedFormats.has(feed.format)) {
-    errors.push(`format "${feed.format}" is not in allowed set: ${[...allowedFormats].join(', ')}`);
-  }
-
-  if (feed.mediaType && !allowedMediaTypes.has(feed.mediaType)) {
-    errors.push(`mediaType "${feed.mediaType}" is not in allowed set: ${[...allowedMediaTypes].join(', ')}`);
-  }
-
-  if (feed.perspective && !allowedPerspectives.has(feed.perspective)) {
-    errors.push(`perspective "${feed.perspective}" is not in allowed set: ${[...allowedPerspectives].join(', ')}`);
-  }
-
-  if (feed.homepage && typeof feed.homepage !== 'string') errors.push('homepage must be a string if provided');
-  if (feed.description && typeof feed.description !== 'string') errors.push('description must be a string if provided');
-
-  if (feed.tags) {
-    if (!Array.isArray(feed.tags)) {
-      errors.push('tags must be an array of strings');
-    } else if (!feed.tags.every((t: string) => typeof t === 'string')) {
-      errors.push('each tag must be a string');
-    }
-  }
-
-  return { valid: errors.length === 0, errors };
-}
 
 async function main() {
   // Read existing registry
@@ -80,6 +23,7 @@ async function main() {
   const payload: BootstrapPayload = JSON.parse(raw);
   const existing = payload.feeds;
   const existingUrls = new Set(existing.map(f => f.url.toLowerCase()));
+  const existingNormUrls = new Set(existing.map(f => normalizeUrl(f.url)));
   const existingIds = new Set(existing.map(f => f.id));
   const existingNames = new Set(existing.map(f => f.name.toLowerCase()));
 
@@ -111,40 +55,15 @@ async function main() {
   const skipped: { name: string; reason: string }[] = [];
 
   for (const raw of proposed) {
-    // Validate
-    const validation = validateNewFeed(raw);
-    if (!validation.valid) {
-      skipped.push({ name: raw.name || '(unnamed)', reason: `Validation: ${validation.errors.join('; ')}` });
-      continue;
-    }
+    const name = raw.name ?? '';
+    const url = raw.url ?? '';
+    const publisher = raw.publisher ?? '';
 
-    const name = raw.name!;
-    const url = raw.url!;
-
-    // Check duplicates
-    if (existingUrls.has(url.toLowerCase())) {
-      skipped.push({ name, reason: `URL already exists: ${url}` });
-      continue;
-    }
-
-    // Check name similarity (warn but don't block)
-    if (existingNames.has(name.toLowerCase())) {
-      skipped.push({ name, reason: `Name already exists (case-insensitive): ${name}` });
-      continue;
-    }
-
-    // Generate ID
-    const id = raw.id || generateId(name);
-    if (existingIds.has(id)) {
-      skipped.push({ name, reason: `ID collision: ${id}` });
-      continue;
-    }
-
-    // Build the feed entry
+    // Build the prospective feed entry first (defaults + canonical ID).
     const feed: FeedEntry = {
-      id,
+      id: raw.id || generateFeedId(publisher, url),
       name,
-      publisher: raw.publisher!,
+      publisher,
       url,
       language: raw.language || 'en',
       countries: raw.countries || [],
@@ -163,19 +82,57 @@ async function main() {
     if (raw.lastCheckedAt) feed.lastCheckedAt = raw.lastCheckedAt;
     if (raw.lastItemPublishedAt) feed.lastItemPublishedAt = raw.lastItemPublishedAt;
 
+    // Validate the complete entry against the shared rules.
+    const validation = validateFeedEntry(feed, proposed.indexOf(raw));
+    if (validation.errors.length > 0) {
+      skipped.push({ name: name || '(unnamed)', reason: `Validation: ${validation.errors.join('; ')}` });
+      continue;
+    }
+
+    // Check duplicates (exact and normalized URL) and ID collisions
+    if (existingUrls.has(url.toLowerCase())) {
+      skipped.push({ name, reason: `URL already exists: ${url}` });
+      continue;
+    }
+    if (existingNormUrls.has(normalizeUrl(url))) {
+      skipped.push({ name, reason: `URL already exists (normalized): ${url}` });
+      continue;
+    }
+    if (existingIds.has(feed.id)) {
+      skipped.push({ name, reason: `ID collision: ${feed.id}` });
+      continue;
+    }
+
+    // Check name similarity (warn but don't block)
+    if (existingNames.has(name.toLowerCase())) {
+      skipped.push({ name, reason: `Name already exists (case-insensitive): ${name}` });
+      continue;
+    }
+
     existing.push(feed);
     existingUrls.add(url.toLowerCase());
-    existingIds.add(id);
+    existingNormUrls.add(normalizeUrl(url));
+    existingIds.add(feed.id);
     existingNames.add(name.toLowerCase());
     added.push(feed);
   }
 
   // Update stats
   payload.stats.feeds = existing.length;
+  payload.stats.duplicateIds = 0;
+  payload.stats.duplicateUrls = 0;
+  payload.warnings = { duplicateIds: [], duplicateUrls: [] };
   payload.generatedAt = new Date().toISOString();
 
-  // Write back
-  await writeFile(FEEDS_PATH, JSON.stringify(payload, null, 2) + '\n', 'utf8');
+  // Write atomically so a mid-batch failure never leaves feeds.json partial.
+  // A no-op import must not rewrite the file (avoids churning generatedAt).
+  if (added.length > 0) {
+    const tempPath = `${FEEDS_PATH}.tmp`;
+    await writeFile(tempPath, JSON.stringify(payload, null, 2) + '\n', 'utf8');
+    await rename(tempPath, FEEDS_PATH);
+  } else {
+    console.log('No feeds were added — feeds.json was not modified.');
+  }
 
   // Report
   console.log(`\n─── Batch Add Summary ───`);
@@ -194,4 +151,7 @@ async function main() {
   }
 }
 
-main().catch(console.error);
+main().catch((error: unknown) => {
+  console.error('[add-feeds-batch] Failed:', error);
+  process.exitCode = 1;
+});

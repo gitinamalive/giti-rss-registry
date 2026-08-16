@@ -11,7 +11,9 @@ import {
     isValidIsoTimestamp,
     urlNormalizationIssues,
     ISO_3166_ALPHA2,
+    validateFeedEntry,
 } from '../scripts/validate.ts';
+import type { FeedEntry } from '../src/types.ts';
 
 // ── findDuplicates ──────────────────────────────────────────────────────
 
@@ -244,5 +246,34 @@ describe('urlNormalizationIssues', () => {
     it('flags both trailing slash and fragment when both present', () => {
         const issues = urlNormalizationIssues('https://example.com/rss/#top');
         expect(issues.length).toBe(2);
+    });
+});
+
+describe('validateFeedEntry coverage metadata', () => {
+    const feed: FeedEntry = {
+        id: 'example-00000000',
+        name: 'Example',
+        publisher: 'Example Publisher',
+        url: 'https://example.com/feed',
+        language: 'en',
+        countries: ['US'],
+        category: 'world',
+    };
+
+    it('accepts a supported coverage type and publisher countries', () => {
+        const result = validateFeedEntry({
+            ...feed,
+            coverageType: 'national',
+            publisherCountries: ['US', 'CA'],
+        }, 0);
+        expect(result.errors).toEqual([]);
+    });
+
+    it('rejects an invalid publisher country at runtime', () => {
+        const result = validateFeedEntry({
+            ...feed,
+            publisherCountries: ['XX'],
+        }, 0);
+        expect(result.errors).toContain('feeds[0].publisherCountries has unrecognized ISO-3166 alpha-2 code: XX');
     });
 });

@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "schema/feeds.schema.json",
+  "title": "Giti RSS Registry",
+  "description": "JSON Schema for the registry payload (data/feeds.json). Mirrors src/types.ts; validated by scripts/validate-schema.ts.",
+  "type": "object",
+  "required": ["generatedAt", "source", "stats", "warnings", "feeds"],
+  "properties": {
+    "generatedAt": { "type": "string" },
+    "source": { "type": "string" },
+    "stats": {
+      "type": "object",
+      "required": ["feeds", "duplicateIds", "duplicateUrls"],
+      "properties": {
+        "feeds": { "type": "integer", "minimum": 0 },
+        "duplicateIds": { "type": "integer", "minimum": 0 },
+        "duplicateUrls": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "warnings": {
+      "type": "object",
+      "properties": {
+        "duplicateIds": { "type": "array", "items": { "type": "string" } },
+        "duplicateUrls": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "feeds": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/FeedEntry" }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "FeedEntry": {
+      "type": "object",
+      "required": ["id", "name", "publisher", "url", "language", "countries", "category"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Opaque, immutable identifier (publisher slug + 8-hex sha1 of normalized URL). Existing IDs are never regenerated."
+        },
+        "name": { "type": "string", "minLength": 1 },
+        "publisher": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "pattern": "^https?://.+" },
+        "homepage": { "type": "string" },
+        "language": { "type": "string", "minLength": 1 },
+        "countries": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[A-Z]{2}$" }
+        },
+        "region": { "type": "string" },
+        "category": { "$ref": "#/$defs/FeedCategory" },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "perspective": { "$ref": "#/$defs/Perspective" },
+        "mediaType": { "$ref": "#/$defs/MediaType" },
+        "format": { "$ref": "#/$defs/FeedFormat" },
+        "official": { "type": "boolean" },
+        "active": { "type": "boolean" },
+        "lastCheckedAt": { "type": "string" },
+        "lastItemPublishedAt": { "type": "string" },
+        "healthScore": { "type": "number", "minimum": 0, "maximum": 100 },
+        "notes": { "type": "string" },
+        "description": { "type": "string" },
+        "coverageType": { "$ref": "#/$defs/CoverageType" },
+        "publisherCountries": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[A-Z]{2}$" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "FeedCategory": {
+      "type": "string",
+      "enum": ["world", "us", "europe", "technology", "ai", "space", "finance", "science", "climate", "politics", "investigative", "sports", "entertainment", "health", "culture"]
+    },
+    "Perspective": {
+      "type": "string",
+      "enum": ["independent", "state-affiliated", "independent-exile", "regional", "state-monitor", "aggregator"]
+    },
+    "MediaType": {
+      "type": "string",
+      "enum": ["print", "tv", "radio", "digital", "wire", "aggregator", "broadcast"]
+    },
+    "FeedFormat": {
+      "type": "string",
+      "enum": ["rss", "atom", "jsonfeed", "rdf"]
+    },
+    "CoverageType": {
+      "type": "string",
+      "enum": ["global", "international", "regional", "national", "single-country", "investigative", "aggregator", "health", "science", "sports", "entertainment", "culture"]
+    }
+  }
+}

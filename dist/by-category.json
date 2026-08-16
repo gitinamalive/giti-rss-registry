@@ -5285,21 +5285,8 @@
       "format": "rss"
     },
     {
-      "id": "the-japan-times-1c3e4f26",
-      "name": "The Japan Times",
-      "publisher": "The Japan Times",
-      "url": "https://www.japantimes.co.jp/feed/",
-      "language": "en",
-      "countries": [
-        "JP"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
       "id": "the-japan-times-49acef46",
-      "name": "The Japan Times — Feed",
+      "name": "The Japan Times",
       "publisher": "The Japan Times",
       "url": "https://www.japantimes.co.jp/feed",
       "language": "en",

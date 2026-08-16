@@ -1,6 +1,8 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import type { FeedEntry, BootstrapPayload } from '../src/types.ts';
+import { escapeCsv, escapeJsonForScript, escapeXml, toFileSafeSegment } from '../src/escape.ts';
 
 const args = process.argv.slice(2);
 const fileArg = args.findIndex(arg => arg === '--file');
@@ -13,38 +15,7 @@ const bootstrapPath = resolve(filePath);
 const distPath = resolve(outPath);
 const opmlPath = resolve(distPath, 'opml');
 
-function escapeCsv(value: unknown): string {
-    const raw = value == null ? '' : String(value);
-    if (/[",\n]/.test(raw)) {
-        return `"${raw.replace(/"/g, '""')}"`;
-    }
-    return raw;
-}
-
-function escapeXml(value: string | null | undefined): string {
-    if (!value) return '';
-    return value.replace(/[&<>'"]/g, (char) => {
-        switch (char) {
-            case '&': return '&amp;';
-            case '<': return '&lt;';
-            case '>': return '&gt;';
-            case "'": return '&apos;';
-            case '"': return '&quot;';
-            default: return char;
-        }
-    });
-}
-
-function toFileSafeSegment(value: string): string {
-    return value
-        .toLowerCase()
-        .trim()
-        .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-+|-+$/g, '')
-        .replace(/-{2,}/g, '-');
-}
-
-function buildIndex(feeds: FeedEntry[], selector: (entry: FeedEntry) => string[]): Record<string, FeedEntry[]> {
+export function buildIndex(feeds: FeedEntry[], selector: (entry: FeedEntry) => string[]): Record<string, FeedEntry[]> {
     const grouped: Record<string, FeedEntry[]> = {};
 
     feeds.forEach((feed) => {
@@ -57,7 +28,11 @@ function buildIndex(feeds: FeedEntry[], selector: (entry: FeedEntry) => string[]
 
     const collator = new Intl.Collator('en', { sensitivity: 'base' });
     Object.keys(grouped).forEach((key) => {
-        grouped[key] = grouped[key].sort((a, b) => collator.compare(a.name, b.name));
+        // The id tie-break keeps member order fully deterministic regardless of the
+        // input feed order (some feeds legitimately share the same display name).
+        grouped[key] = grouped[key].sort(
+            (a, b) => collator.compare(a.name, b.name) || a.id.localeCompare(b.id)
+        );
     });
 
     return Object.fromEntries(Object.entries(grouped).sort(([a], [b]) => collator.compare(a, b)));
@@ -69,8 +44,12 @@ async function writeJson(relativePath: string, value: unknown): Promise<void> {
     await writeFile(fullPath, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
 }
 
-function generateOpml(title: string, feeds: FeedEntry[]): string {
-    const timestamp = new Date().toUTCString();
+export function generateOpml(
+    title: string,
+    feeds: FeedEntry[],
+    generatedAt: string = new Date().toISOString(),
+): string {
+    const timestamp = new Date(generatedAt).toUTCString();
     const collator = new Intl.Collator('en', { sensitivity: 'base' });
     const lines: string[] = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -95,14 +74,14 @@ function generateOpml(title: string, feeds: FeedEntry[]): string {
     return `${lines.join('\n')}\n`;
 }
 
-async function writeOpml(relativePath: string, title: string, feeds: FeedEntry[]): Promise<void> {
+async function writeOpml(relativePath: string, title: string, feeds: FeedEntry[], generatedAt?: string): Promise<void> {
     const fullPath = resolve(opmlPath, relativePath);
     await mkdir(resolve(fullPath, '..'), { recursive: true });
-    await writeFile(fullPath, generateOpml(title, feeds), 'utf8');
+    await writeFile(fullPath, generateOpml(title, feeds, generatedAt), 'utf8');
 }
 
-function generateIndexHtml(feeds: FeedEntry[]): string {
-    const feedsJson = JSON.stringify(feeds);
+export function generateIndexHtml(feeds: FeedEntry[], generatedAt: string = new Date().toISOString()): string {
+    const feedsJson = escapeJsonForScript(feeds);
     // Unique sorted values for dropdowns
     const categories = [...new Set(feeds.map(f => f.category))].sort();
     const countries = [...new Set(feeds.flatMap(f => f.countries))].filter(Boolean).sort();
@@ -212,7 +191,7 @@ ${langOpts}
 </table>
 </div>
 <footer>
-Generated ${new Date().toISOString().split('T')[0]} \u00B7
+Generated ${generatedAt.split('T')[0]} \u00B7
 <a href="https://github.com/gitinamalive/giti-rss-registry">giti-rss-registry</a> \u00B7
 MIT Licensed \u00B7 <a href="feeds.json">Raw JSON</a> \u00B7 <a href="feeds.csv">CSV</a> \u00B7 <a href="opml/all.opml">OPML</a>
 </footer>
@@ -235,7 +214,7 @@ function render(feeds) {
     const countries = (f.countries||[]).map(c => '<span class="country-tag">' + c + '</span>').join('');
     const url = (f.url||'').substring(0, 80) + ((f.url||'').length > 80 ? '\u2026' : '');
     return '<tr>' +
-      '<td>' + (f.homepage ? '<a href="' + f.homepage + '" target="_blank" rel="noopener">' + esc(f.name) + '</a>' : esc(f.name)) + '</td>' +
+      '<td>' + (f.homepage ? '<a href="' + escAttr(f.homepage) + '" target="_blank" rel="noopener">' + esc(f.name) + '</a>' : esc(f.name)) + '</td>' +
       '<td>' + esc(f.publisher) + '</td>' +
       '<td>' + esc(f.category) + '</td>' +
       '<td>' + countries + '</td>' +
@@ -322,6 +301,7 @@ async function main(): Promise<void> {
     const raw = await readFile(bootstrapPath, 'utf8');
     const payload = JSON.parse(raw) as BootstrapPayload;
     const feeds = payload.feeds;
+    const generatedAt = payload.generatedAt;
 
     await mkdir(distPath, { recursive: true });
     await mkdir(opmlPath, { recursive: true });
@@ -357,7 +337,7 @@ async function main(): Promise<void> {
         feed.lastItemPublishedAt ?? '',
         feed.healthScore ?? '',
         feed.notes ?? '', feed.description ?? ''
-    ].map(escapeCsv).join(','));
+    ].map((v) => escapeCsv(v, { formulaSafe: true })).join(','));
 
     await writeFile(resolve(distPath, 'feeds.csv'), `${csvHeader}\n${csvRows.join('\n')}\n`, 'utf8');
     await writeJson('by-country.json', byCountry);
@@ -365,18 +345,18 @@ async function main(): Promise<void> {
     await writeJson('by-publisher.json', byPublisher);
     await writeJson('by-language.json', byLanguage);
 
-    await writeOpml('all.opml', 'Giti RSS Registry \u2014 All Feeds', feeds);
+    await writeOpml('all.opml', 'Giti RSS Registry \u2014 All Feeds', feeds, generatedAt);
 
     for (const [country, entries] of Object.entries(byCountry)) {
-        await writeOpml(`countries/${toFileSafeSegment(country)}.opml`, `Giti RSS Registry \u2014 Country: ${country}`, entries);
+        await writeOpml(`countries/${toFileSafeSegment(country)}.opml`, `Giti RSS Registry \u2014 Country: ${country}`, entries, generatedAt);
     }
 
     for (const [category, entries] of Object.entries(byCategory)) {
-        await writeOpml(`categories/${toFileSafeSegment(category)}.opml`, `Giti RSS Registry \u2014 Category: ${category}`, entries);
+        await writeOpml(`categories/${toFileSafeSegment(category)}.opml`, `Giti RSS Registry \u2014 Category: ${category}`, entries, generatedAt);
     }
 
     // Generate browsable HTML directory
-    const html = generateIndexHtml(feeds);
+    const html = generateIndexHtml(feeds, generatedAt);
     await writeFile(resolve(distPath, 'index.html'), html, 'utf8');
 
     process.stdout.write(
@@ -384,7 +364,12 @@ async function main(): Promise<void> {
     );
 }
 
-main().catch((error: unknown) => {
-    console.error(`[build-artifacts] Failed:`, error);
-    process.exitCode = 1;
-});
+// Only run the build when executed directly (not when imported by tests or the
+// parity checker, which need the pure exported functions without side effects).
+const isMain = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (isMain) {
+    main().catch((error: unknown) => {
+        console.error(`[build-artifacts] Failed:`, error);
+        process.exitCode = 1;
+    });
+}

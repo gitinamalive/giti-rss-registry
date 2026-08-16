@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: US</title>
-    <dateCreated>Fri, 31 Jul 2026 17:55:11 GMT</dateCreated>
+    <dateCreated>Sun, 16 Aug 2026 05:12:19 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="9to5Mac" title="9to5Mac" xmlUrl="https://9to5mac.com/feed/" />
@@ -22,8 +22,8 @@
     <outline type="rss" text="Du Rov&apos;s Channel" title="Du Rov&apos;s Channel" xmlUrl="https://rsshub.app/telegram/channel/durov" />
     <outline type="rss" text="Engadget" title="Engadget" xmlUrl="https://www.engadget.com/rss.xml" />
     <outline type="rss" text="Environmental Defense Fund" title="Environmental Defense Fund" xmlUrl="https://www.edf.org/news-feed" />
-    <outline type="rss" text="ESPN" title="ESPN" xmlUrl="https://sports.espn.go.com/espn/rss/news" />
     <outline type="rss" text="ESPN" title="ESPN" xmlUrl="https://feeds.espn.com/feeds/site/espn/global/headlines" />
+    <outline type="rss" text="ESPN" title="ESPN" xmlUrl="https://sports.espn.go.com/espn/rss/news" />
     <outline type="rss" text="EurekAlert!" title="EurekAlert!" xmlUrl="https://www.eurekalert.org/rss.xml" />
     <outline type="rss" text="EW" title="EW" xmlUrl="https://ew.com/feed/" />
     <outline type="rss" text="FiveThirtyEight" title="FiveThirtyEight" xmlUrl="https://fivethirtyeight.com/feed/" />
@@ -99,8 +99,8 @@
     <outline type="rss" text="The Conversation" title="The Conversation" xmlUrl="https://theconversation.com/us/science/feed" />
     <outline type="rss" text="The Hill" title="The Hill" xmlUrl="https://thehill.com/news/feed/" />
     <outline type="rss" text="The Hollywood Reporter" title="The Hollywood Reporter" xmlUrl="https://www.hollywoodreporter.com/feed/" />
-    <outline type="rss" text="The Intercept" title="The Intercept" xmlUrl="https://theintercept.com/feed/" />
     <outline type="rss" text="The Intercept" title="The Intercept" xmlUrl="https://theintercept.com/feed/?lang=en" />
+    <outline type="rss" text="The Intercept" title="The Intercept" xmlUrl="https://theintercept.com/feed/" />
     <outline type="rss" text="The New Republic" title="The New Republic" xmlUrl="https://www.newrepublic.com/rss.xml" />
     <outline type="rss" text="The New Yorker — Culture" title="The New Yorker — Culture" xmlUrl="https://www.newyorker.com/feed/culture" />
     <outline type="rss" text="The Verge" title="The Verge" xmlUrl="https://www.theverge.com/rss/index.xml" />

@@ -76,16 +76,21 @@ Required for each feed in v1 public release:
 - `id`, `name`, `publisher`, `url`, `language`, `countries`, `category`
 
 Optional (recommended over time):
-- `homepage`, `tags`, `perspective`, `mediaType`, `format`, `official`, `active`, `lastCheckedAt`, `lastItemPublishedAt`, `healthScore`, `notes`
+- `homepage`, `tags`, `perspective`, `mediaType`, `format`, `official`, `active`, `lastCheckedAt`, `lastItemPublishedAt`, `healthScore`, `notes`, `description`, `coverageType`, `publisherCountries`
 
 ## Validation rules (minimum)
 
 1. `id`
+   - opaque and immutable — never regenerated after minting
    - unique across dataset
-   - stable across releases
+   - exactly one new-ID algorithm:
+     `toFileSafeSegment(publisher) + '-' + sha1(normalizeUrl(url)).slice(0, 8)`
+     (canonical implementation in `src/id.ts`; the shape matches historical IDs)
 2. `url`
    - valid URL
    - unique across dataset
+   - unique under URL normalization (trim, lowercase host, strip trailing slash
+     and fragment) — equivalent normalized URLs must not produce two feeds
 3. `countries`
    - ISO alpha-2 uppercase codes
 4. `language`
@@ -107,7 +112,9 @@ Current source shape (`RSSSuggestion`):
 
 Recommended bootstrap mapping:
 
-- `id`: deterministic slug/hash from `name + url`
+- `id`: keep the existing `id` verbatim (opaque + immutable). Only NEW feeds
+  mint IDs via `src/id.ts` (`generateFeedId`: publisher slug + 8-hex sha1 of
+  the normalized URL), never from `name + url`.
 - `publisher`: inferred from `name` (or explicit overrides later)
 - `category`: normalize from title case to lowercase enum
   - `World -> world`

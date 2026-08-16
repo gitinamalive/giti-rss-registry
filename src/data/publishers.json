@@ -1,0 +1,228 @@
+{
+  "publishers": {
+    "Associated Press": {
+      "countries": ["US", "UK", "CA"],
+      "coverageType": "global"
+    },
+    "Reuters": {
+      "countries": ["US", "UK", "DE", "FR", "JP"],
+      "coverageType": "global"
+    },
+    "BBC News": {
+      "countries": ["GB"],
+      "coverageType": "national"
+    },
+    "The Guardian": {
+      "countries": ["GB"],
+      "coverageType": "national"
+    },
+    "The New York Times": {
+      "countries": ["US"],
+      "coverageType": "national"
+    },
+    "Le Monde": {
+      "countries": ["FR"],
+      "coverageType": "national"
+    },
+    "Der Spiegel": {
+      "countries": ["DE"],
+      "coverageType": "national"
+    },
+    "El Pais": {
+      "countries": ["ES"],
+      "coverageType": "national"
+    },
+    "Corriere della Sera": {
+      "countries": ["IT"],
+      "coverageType": "national"
+    },
+    "La Repubblica": {
+      "countries": ["IT"],
+      "coverageType": "national"
+    },
+    "El Mundo": {
+      "countries": ["ES"],
+      "coverageType": "national"
+    },
+    "The Washington Post": {
+      "countries": ["US"],
+      "coverageType": "national"
+    },
+    "Die Zeit": {
+      "countries": ["DE"],
+      "coverageType": "national"
+    },
+    "France 24": {
+      "countries": ["FR"],
+      "coverageType": "international"
+    },
+    "Al Jazeera": {
+      "countries": ["QA", "GB", "US"],
+      "coverageType": "international"
+    },
+    "RT": {
+      "countries": ["RU"],
+      "coverageType": "international"
+    },
+    "Deutsche Welle": {
+      "countries": ["DE"],
+      "coverageType": "international"
+    },
+    "CBC News": {
+      "countries": ["CA"],
+      "coverageType": "national"
+    },
+    "ABC News": {
+      "countries": ["US"],
+      "coverageType": "national"
+    },
+    "Sky News": {
+      "countries": ["AU"],
+      "coverageType": "national"
+    },
+    "Fox News": {
+      "countries": ["US"],
+      "coverageType": "national"
+    },
+    "CNN": {
+      "countries": ["US"],
+      "coverageType": "global"
+    },
+    "MSN News": {
+      "countries": ["US"],
+      "coverageType": "aggregator"
+    },
+    "Yahoo! News": {
+      "countries": ["US"],
+      "coverageType": "aggregator"
+    },
+    "Google News": {
+      "countries": ["US"],
+      "coverageType": "aggregator"
+    },
+    "HuffPost": {
+      "countries": ["US"],
+      "coverageType": "aggregator"
+    },
+    "BuzzFeed News": {
+      "countries": ["US"],
+      "coverageType": "aggregator"
+    },
+    "Vice News": {
+      "countries": ["US"],
+      "coverageType": "international"
+    },
+    "The Intercept": {
+      "countries": ["US"],
+      "coverageType": "investigative"
+    },
+    "ProPublica": {
+      "countries": ["US"],
+      "coverageType": "investigative"
+    },
+    "ABC Health": {
+      "countries": ["US"],
+      "coverageType": "health"
+    },
+    "WebMD": {
+      "countries": ["US"],
+      "coverageType": "health"
+    },
+    "Science Magazine": {
+      "countries": ["US"],
+      "coverageType": "science"
+    },
+    "Nature": {
+      "countries": ["GB"],
+      "coverageType": "science"
+    },
+    "ScienceDaily": {
+      "countries": ["US"],
+      "coverageType": "science"
+    },
+    "Phys.org": {
+      "countries": ["US"],
+      "coverageType": "science"
+    },
+    "ESPN": {
+      "countries": ["US"],
+      "coverageType": "sports"
+    },
+    "The Athletic": {
+      "countries": ["US"],
+      "coverageType": "sports"
+    },
+    "The Athletic UK": {
+      "countries": ["GB"],
+      "coverageType": "sports"
+    },
+    "The Players' Tribune": {
+      "countries": ["US"],
+      "coverageType": "sports"
+    },
+    "Billboard": {
+      "countries": ["US"],
+      "coverageType": "entertainment"
+    },
+    "Rolling Stone": {
+      "countries": ["US"],
+      "coverageType": "entertainment"
+    },
+    "NME": {
+      "countries": ["GB"],
+      "coverageType": "entertainment"
+    },
+    "Variety": {
+      "countries": ["US"],
+      "coverageType": "entertainment"
+    },
+    "The Hollywood Reporter": {
+      "countries": ["US"],
+      "coverageType": "entertainment"
+    },
+    "Deadline": {
+      "countries": ["US"],
+      "coverageType": "entertainment"
+    },
+    "Artforum": {
+      "countries": ["US"],
+      "coverageType": "culture"
+    },
+    "Frieze": {
+      "countries": ["US", "GB"],
+      "coverageType": "culture"
+    },
+    "ARTnews": {
+      "countries": ["US"],
+      "coverageType": "culture"
+    },
+    "The Art Newspaper": {
+      "countries": ["US"],
+      "coverageType": "culture"
+    },
+    "Hyperallergic": {
+      "countries": ["US"],
+      "coverageType": "culture"
+    },
+    "The New Yorker": {
+      "countries": ["US"],
+      "coverageType": "culture"
+    },
+    "The Atlantic": {
+      "countries": ["US"],
+      "coverageType": "culture"
+    },
+    "The Nation": {
+      "countries": ["US"],
+      "coverageType": "investigative"
+    },
+    "Mother Jones": {
+      "countries": ["US"],
+      "coverageType": "investigative"
+    },
+    "The Intercept": {
+      "countries": ["US"],
+      "coverageType": "investigative"
+    }
+  }
+}

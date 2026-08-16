@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-31T05:16:00.000Z",
+  "generatedAt": "2026-08-16T05:12:19.073Z",
   "source": "public-rss-registry/data/feeds.json (hand-curated)",
   "stats": {
-    "feeds": 392,
+    "feeds": 391,
     "duplicateIds": 0,
     "duplicateUrls": 0
   },
@@ -209,19 +209,6 @@
       "format": "rss"
     },
     {
-      "id": "the-japan-times-1c3e4f26",
-      "name": "The Japan Times",
-      "publisher": "The Japan Times",
-      "url": "https://www.japantimes.co.jp/feed/",
-      "language": "en",
-      "countries": [
-        "JP"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
       "id": "g1-11fa6d52",
       "name": "G1 (Globo)",
       "publisher": "G1",
@@ -420,7 +407,7 @@
     },
     {
       "id": "the-japan-times-49acef46",
-      "name": "The Japan Times — Feed",
+      "name": "The Japan Times",
       "publisher": "The Japan Times",
       "url": "https://www.japantimes.co.jp/feed",
       "language": "en",

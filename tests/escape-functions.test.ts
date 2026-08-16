@@ -1,86 +1,29 @@
 import { describe, it, expect } from 'vitest';
-
-/* eslint-disable no-useless-escape */
+import {
+    escapeCsv,
+    escapeHtmlAttr,
+    escapeHtmlText,
+    escapeJsonForScript,
+    escapeXml,
+    escapeXmlAttr,
+    toFileSafeSegment,
+} from '../src/escape.ts';
+import { computeHealthScore } from '../src/health.ts';
 
 // ── Build expected entity references at runtime ─────────────────────────
-// We cannot hardcode & < > " ' in this source file
-// because the tool pipeline HTML-decodes them in transit. Instead we build
-// them from character codes so the assertions match actual function output.
+// Hardcoding & < > " ' in this source file is avoided because the tool
+// pipeline HTML-decodes them in transit. Build them from character codes so
+// assertions match the actual function output.
 const A = String.fromCharCode(38);
 const AMP = A + 'amp;';
-const LT  = A + 'lt;';
-const GT  = A + 'gt;';
+const LT = A + 'lt;';
+const GT = A + 'gt;';
 const QUOT = A + 'quot;';
 const APOS = A + 'apos;';
 const NUM39 = A + '#39;';
 
-// ── Re-implementations of build-artifacts.ts functions ──────────────────
-// Must stay byte-identical to the implementations in scripts/build-artifacts.ts.
-
-function escapeXml(value: string | null | undefined): string {
-    if (!value) return '';
-    return value
-        .replace(new RegExp(A, 'g'), AMP)
-        .replace(/</g, LT)
-        .replace(/>/g, GT)
-        .replace(/"/g, QUOT)
-        .replace(/'/g, APOS);
-}
-
-function esc(s: string | null | undefined): string {
-    return String(s ?? '')
-        .replace(new RegExp(A, 'g'), AMP)
-        .replace(/</g, LT)
-        .replace(/>/g, GT)
-        .replace(/"/g, QUOT);
-}
-
-function escAttr(s: string | null | undefined): string {
-    return String(s ?? '')
-        .replace(new RegExp(A, 'g'), AMP)
-        .replace(/"/g, QUOT)
-        .replace(/'/g, NUM39);
-}
-
-function escapeCsv(value: unknown): string {
-    const raw = value == null ? '' : String(value);
-    if (raw.includes(',') || raw.includes('"') || raw.includes('\n') || raw.includes('\r')) {
-        return '"' + raw.replace(/"/g, '""') + '"';
-    }
-    return raw;
-}
-
-function toFileSafeSegment(value: string): string {
-    return value
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, '-')
-        .replace(/^-|-$/g, '');
-}
-
-function computeHealthScore(
-    reachable: boolean,
-    https: boolean,
-    lastItemAgeDays: number | null,
-    redirectToHttps: boolean,
-): number {
-    let score = 0;
-    if (reachable) score += 30;
-    if (https) score += 20;
-    else if (redirectToHttps) score += 10;
-    if (lastItemAgeDays !== null) {
-        if (lastItemAgeDays <= 1) score += 30;
-        else if (lastItemAgeDays <= 7) score += 25;
-        else if (lastItemAgeDays <= 30) score += 15;
-        else if (lastItemAgeDays <= 90) score += 5;
-    }
-    score += 20; // base
-    return Math.min(100, score);
-}
-
-// ── Tests ───────────────────────────────────────────────────────────────
-
 describe('escapeXml', () => {
-    it('returns empty string for null/undefined', () => {
+    it('returns empty string for null/undefined/empty', () => {
         expect(escapeXml(null)).toBe('');
         expect(escapeXml(undefined)).toBe('');
         expect(escapeXml('')).toBe('');
@@ -121,29 +64,40 @@ describe('escapeXml', () => {
         expect(result).toContain(QUOT);
         expect(result).toContain(APOS);
         // Verify bare special characters are NOT present.
-        // Remove ALL entity references, then check that no bare & < > remain.
         const strippedAllEntities = result
             .replaceAll(AMP, '')
             .replaceAll(LT, '')
             .replaceAll(GT, '')
             .replaceAll(QUOT, '')
             .replaceAll(APOS, '');
-        expect(strippedAllEntities).not.toContain(A); // no bare &
+        expect(strippedAllEntities).not.toContain(A);
         expect(strippedAllEntities).not.toContain('<');
         expect(strippedAllEntities).not.toContain('>');
     });
 });
 
-describe('esc (HTML body context)', () => {
+describe('escapeXmlAttr', () => {
+    it('escapes the same entity set as escapeXml', () => {
+        const input = 'a & b "c" <d> e\'f';
+        expect(escapeXmlAttr(input)).toBe(escapeXml(input));
+    });
+
+    it('returns empty string for null/undefined', () => {
+        expect(escapeXmlAttr(null)).toBe('');
+        expect(escapeXmlAttr(undefined)).toBe('');
+    });
+});
+
+describe('escapeHtmlText (HTML body context)', () => {
     it('does NOT escape single quotes (by design — body context)', () => {
-        const result = esc("It's");
+        const result = escapeHtmlText("It's");
         expect(result).not.toContain(APOS);
         expect(result).not.toContain(NUM39);
         expect(result).toContain("It's"); // unchanged
     });
 
     it('escapes ampersands, angle brackets, and double quotes', () => {
-        const result = esc('A & B < C > D "E"');
+        const result = escapeHtmlText('A & B < C > D "E"');
         expect(result).toContain(AMP);
         expect(result).toContain(LT);
         expect(result).toContain(GT);
@@ -151,19 +105,47 @@ describe('esc (HTML body context)', () => {
     });
 });
 
-describe('escAttr (HTML attribute context)', () => {
+describe('escapeHtmlAttr (HTML attribute context)', () => {
     it('escapes ampersands, double quotes, and single quotes', () => {
-        const result = escAttr("A & B \" C ' D");
+        const result = escapeHtmlAttr('A & B " C \' D');
         expect(result).toContain(AMP);
         expect(result).toContain(QUOT);
         expect(result).toContain(NUM39);
     });
 
     it('does NOT escape angle brackets (by design — attr context)', () => {
-        const result = escAttr('<test>');
+        const result = escapeHtmlAttr('<test>');
         expect(result).not.toContain(LT);
         expect(result).not.toContain(GT);
         expect(result).toContain('<test>'); // unchanged
+    });
+});
+
+describe('escapeJsonForScript', () => {
+    it('produces output that round-trips through JSON.parse', () => {
+        const value = { name: '</script><script>alert(1)</script>', n: 1, ok: true };
+        expect(JSON.parse(escapeJsonForScript(value))).toEqual(value);
+    });
+
+    it('neutralizes </script and <script sequences (case-insensitive)', () => {
+        const out = escapeJsonForScript({ name: '</ScRiPt><script>alert(1)</script>' });
+        expect(out.toLowerCase()).not.toContain('</script');
+        expect(out.toLowerCase()).not.toContain('<script');
+        expect(out).toContain('\\u003c');
+    });
+
+    it('escapes ampersand and the Unicode line separators', () => {
+        const out = escapeJsonForScript({ v: 'a & b \u2028 c \u2029 d' });
+        expect(out).toContain('\\u0026');
+        expect(out).toContain('\\u2028');
+        expect(out).toContain('\\u2029');
+    });
+
+    it('serializes primitives like JSON.stringify', () => {
+        expect(escapeJsonForScript(null)).toBe('null');
+        expect(escapeJsonForScript(undefined)).toBe('null');
+        expect(escapeJsonForScript([])).toBe('[]');
+        expect(escapeJsonForScript(42)).toBe('42');
     });
 });
 
@@ -193,6 +175,26 @@ describe('escapeCsv', () => {
     it('wraps values containing carriage returns', () => {
         expect(escapeCsv('col1\rcol2')).toBe('"col1\rcol2"');
     });
+
+    it('does not apply formula safety by default', () => {
+        expect(escapeCsv('=1+1')).toBe('=1+1');
+        expect(escapeCsv('@SUM')).toBe('@SUM');
+    });
+
+    it('prefixes formula-triggering values when formulaSafe is enabled', () => {
+        expect(escapeCsv('=1+1', { formulaSafe: true })).toBe("'=1+1");
+        expect(escapeCsv('+cmd', { formulaSafe: true })).toBe("'+cmd");
+        expect(escapeCsv('-42', { formulaSafe: true })).toBe("'-42");
+        expect(escapeCsv('@SUM', { formulaSafe: true })).toBe("'@SUM");
+        expect(escapeCsv('\tvalue', { formulaSafe: true })).toBe("'\tvalue");
+        // CR is a formula trigger, but it also forces RFC-4180 quoting
+        const cr = String.fromCharCode(13);
+        expect(escapeCsv(cr + 'value', { formulaSafe: true })).toBe('"' + "'" + cr + 'value"');
+    });
+
+    it('leaves non-formula values untouched under formulaSafe', () => {
+        expect(escapeCsv('hello', { formulaSafe: true })).toBe('hello');
+    });
 });
 
 describe('toFileSafeSegment', () => {
@@ -215,49 +217,51 @@ describe('toFileSafeSegment', () => {
     it('handles empty string', () => {
         expect(toFileSafeSegment('')).toBe('');
     });
+
+    it('trims surrounding whitespace before slugging', () => {
+        expect(toFileSafeSegment('  Hello World  ')).toBe('hello-world');
+    });
 });
 
 describe('computeHealthScore', () => {
-    it('scores unreachable feeds below 30', () => {
-        const score = computeHealthScore(false, false, null, false);
-        expect(score).toBeLessThan(30);
+    const now = new Date('2026-08-01T00:00:00.000Z');
+    const iso = (daysAgo: number): string =>
+        new Date(now.getTime() - daysAgo * 86400000).toISOString();
+
+    it('scores unreachable feeds as 0', () => {
+        expect(computeHealthScore(false, iso(1), now)).toBe(0);
+        expect(computeHealthScore(false, undefined, now)).toBe(0);
     });
 
-    it('gives full 100 for reachable + https + recent content', () => {
-        const score = computeHealthScore(true, true, 0.5, false);
-        expect(score).toBe(100);
+    it('scores reachable-but-unparseable feeds as 40', () => {
+        expect(computeHealthScore(true, undefined, now)).toBe(40);
     });
 
-    it('awards partial credit for HTTP that redirects to HTTPS', () => {
-        const httpScore = computeHealthScore(true, false, 1, false);
-        const redirectScore = computeHealthScore(true, false, 1, true);
-        expect(redirectScore).toBeGreaterThan(httpScore);
+    it('scores fresh content (<7 days) as 100', () => {
+        expect(computeHealthScore(true, iso(1), now)).toBe(100);
     });
 
-    it('decays score as content age increases', () => {
-        const score1 = computeHealthScore(true, true, 1, false);
-        const score2 = computeHealthScore(true, true, 8, false);
-        const score3 = computeHealthScore(true, true, 31, false);
-        const score4 = computeHealthScore(true, true, 91, false);
-        expect(score1).toBeGreaterThan(score2);
-        expect(score2).toBeGreaterThan(score3);
-        expect(score3).toBeGreaterThan(score4);
+    it('scores stale content (7–30 days) as 70', () => {
+        expect(computeHealthScore(true, iso(8), now)).toBe(70);
+        expect(computeHealthScore(true, iso(29), now)).toBe(70);
     });
 
-    it('stays within the 0-100 range for all input combinations', () => {
+    it('scores very-stale content (>30 days) as 40', () => {
+        expect(computeHealthScore(true, iso(31), now)).toBe(40);
+        expect(computeHealthScore(true, iso(365), now)).toBe(40);
+    });
+
+    it('stays within the 0-100 range', () => {
         for (const reachable of [true, false]) {
-            for (const https of [true, false]) {
-                for (const age of [null, 0, 1, 7, 30, 90, 365]) {
-                    const score = computeHealthScore(reachable, https, age, false);
-                    expect(score).toBeGreaterThanOrEqual(0);
-                    expect(score).toBeLessThanOrEqual(100);
-                }
+            for (const daysAgo of [undefined, 0, 1, 7, 30, 90, 365]) {
+                const score = computeHealthScore(
+                    reachable,
+                    daysAgo === undefined ? undefined : iso(daysAgo),
+                    now,
+                );
+                expect(score).toBeGreaterThanOrEqual(0);
+                expect(score).toBeLessThanOrEqual(100);
             }
         }
-    });
-
-    it('returns base 20 for unreachable + no HTTPS + no content', () => {
-        const score = computeHealthScore(false, false, null, false);
-        expect(score).toBe(20);
     });
 });

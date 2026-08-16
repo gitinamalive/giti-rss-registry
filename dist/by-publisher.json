@@ -1722,19 +1722,6 @@
   ],
   "ESPN": [
     {
-      "id": "espn-b1ff08c3",
-      "name": "ESPN",
-      "publisher": "ESPN",
-      "url": "https://sports.espn.go.com/espn/rss/news",
-      "language": "en",
-      "countries": [
-        "US"
-      ],
-      "category": "us",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
       "id": "espn-2f4c8d1a",
       "name": "ESPN",
       "publisher": "ESPN",
@@ -1748,6 +1735,19 @@
       "format": "rss",
       "homepage": "https://www.espn.com",
       "description": "ESPN — sports news, scores, highlights, and analysis."
+    },
+    {
+      "id": "espn-b1ff08c3",
+      "name": "ESPN",
+      "publisher": "ESPN",
+      "url": "https://sports.espn.go.com/espn/rss/news",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "us",
+      "mediaType": "digital",
+      "format": "rss"
     }
   ],
   "Euronews": [
@@ -5404,6 +5404,20 @@
   ],
   "The Intercept": [
     {
+      "id": "the-intercept-329ed5cd",
+      "name": "The Intercept",
+      "publisher": "The Intercept",
+      "url": "https://theintercept.com/feed/?lang=en",
+      "language": "en",
+      "countries": [
+        "US"
+      ],
+      "category": "politics",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://theintercept.com"
+    },
+    {
       "id": "the-intercept-cc6c2f48",
       "name": "The Intercept",
       "publisher": "The Intercept",
@@ -5417,20 +5431,6 @@
       "format": "rss",
       "perspective": "independent",
       "notes": "Independent non-profit investigative journalism outlet founded by Glenn Greenwald, Laura Poitras, and Jeremy Scahill. Pulitzer Prize-winning reporting (NSA surveillance/Snowden). Funded by First Look Media, a non-profit organization.\n\nSources:\n  [1] https://en.wikipedia.org/wiki/The_Intercept\n  [2] https://theintercept.com/about/"
-    },
-    {
-      "id": "the-intercept-329ed5cd",
-      "name": "The Intercept",
-      "publisher": "The Intercept",
-      "url": "https://theintercept.com/feed/?lang=en",
-      "language": "en",
-      "countries": [
-        "US"
-      ],
-      "category": "politics",
-      "mediaType": "digital",
-      "format": "rss",
-      "homepage": "https://theintercept.com"
     }
   ],
   "The Jamaica Star": [
@@ -5450,21 +5450,8 @@
   ],
   "The Japan Times": [
     {
-      "id": "the-japan-times-1c3e4f26",
-      "name": "The Japan Times",
-      "publisher": "The Japan Times",
-      "url": "https://www.japantimes.co.jp/feed/",
-      "language": "en",
-      "countries": [
-        "JP"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
       "id": "the-japan-times-49acef46",
-      "name": "The Japan Times — Feed",
+      "name": "The Japan Times",
       "publisher": "The Japan Times",
       "url": "https://www.japantimes.co.jp/feed",
       "language": "en",

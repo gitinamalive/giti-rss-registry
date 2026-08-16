@@ -20,6 +20,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm run build
       - run: npx tsx scripts/health-check.ts
         timeout-minutes: 30
       - uses: actions/configure-pages@v5
