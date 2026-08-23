@@ -75,8 +75,11 @@ async function main() {
     // Optional fields
     if (raw.homepage) feed.homepage = raw.homepage;
     if (raw.description) feed.description = raw.description;
+    if (raw.region) feed.region = raw.region;
+    if (raw.coverageType) feed.coverageType = raw.coverageType;
     if (raw.tags && raw.tags.length > 0) feed.tags = raw.tags;
     if (raw.perspective) feed.perspective = raw.perspective;
+    if (raw.notes) feed.notes = raw.notes;
     if (raw.active !== undefined) feed.active = raw.active;
     if (raw.healthScore !== undefined) feed.healthScore = raw.healthScore;
     if (raw.lastCheckedAt) feed.lastCheckedAt = raw.lastCheckedAt;

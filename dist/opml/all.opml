@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — All Feeds</title>
-    <dateCreated>Sun, 16 Aug 2026 05:12:19 GMT</dateCreated>
+    <dateCreated>Sun, 23 Aug 2026 19:32:16 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="24.kg" title="24.kg" xmlUrl="https://24.kg/rss/" />
@@ -12,6 +12,7 @@
     <outline type="rss" text="ABC" title="ABC" xmlUrl="https://www.abc.net.au/news/feed/46182/rss.xml" />
     <outline type="rss" text="ABC Color" title="ABC Color" xmlUrl="https://www.abc.com.py/arc/outboundfeeds/rss/nacionales/" />
     <outline type="rss" text="ABC News" title="ABC News" xmlUrl="https://www.abc.net.au/news/feed/51120/rss.xml" />
+    <outline type="rss" text="Actu Cameroun" title="Actu Cameroun" xmlUrl="https://actucameroun.com/feed/" />
     <outline type="rss" text="adevarul.ro" title="adevarul.ro" xmlUrl="https://adevarul.ro/rss/" />
     <outline type="rss" text="Africanews" title="Africanews" xmlUrl="https://www.africanews.com/feed/rss" />
     <outline type="rss" text="Ahewar.org" title="Ahewar.org" xmlUrl="https://www.ahewar.org/rss/default.asp?lt=7" />
@@ -21,6 +22,7 @@
     <outline type="rss" text="Algerie360.com" title="Algerie360.com" xmlUrl="https://www.algerie360.com/feed/" />
     <outline type="rss" text="AllAfrica" title="AllAfrica" xmlUrl="https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf" />
     <outline type="rss" text="Almomento.net" title="Almomento.net" xmlUrl="https://almomento.net/feed/" />
+    <outline type="rss" text="Alwihda Info" title="Alwihda Info" xmlUrl="https://www.alwihdainfo.com/feed" />
     <outline type="rss" text="AnandTech" title="AnandTech" xmlUrl="https://www.anandtech.com/rss/" />
     <outline type="rss" text="Android Developers" title="Android Developers" xmlUrl="https://www.youtube.com/feeds/videos.xml?user=androiddevelopers" />
     <outline type="rss" text="ANSA English" title="ANSA English" xmlUrl="https://www.ansa.it/english/english_rss.xml" />
@@ -46,6 +48,7 @@
     <outline type="rss" text="BBC Hindi" title="BBC Hindi" xmlUrl="https://feeds.bbci.co.uk/hindi/rss.xml" />
     <outline type="rss" text="BBC News - Middle East" title="BBC News - Middle East" xmlUrl="https://feeds.bbci.co.uk/news/world/middle_east/rss.xml" />
     <outline type="rss" text="BBC News — Politics" title="BBC News — Politics" xmlUrl="https://feeds.bbci.co.uk/news/politics/rss.xml" />
+    <outline type="rss" text="BBC News Africa" title="BBC News Africa" xmlUrl="https://feeds.bbci.co.uk/news/world/africa/rss.xml" />
     <outline type="rss" text="BBC Panorama" title="BBC Panorama" xmlUrl="https://feeds.bbci.co.uk/programmes/b006n2yl/episodes.rss" />
     <outline type="rss" text="BBC Russian" title="BBC Russian" xmlUrl="https://feeds.bbci.co.uk/russian/rss.xml" />
     <outline type="rss" text="BBC Science &amp; Environment" title="BBC Science &amp; Environment" xmlUrl="https://feeds.bbci.co.uk/news/science_and_environment/rss.xml" />
@@ -77,6 +80,7 @@
     <outline type="rss" text="Colombia Reports" title="Colombia Reports" xmlUrl="https://colombiareports.com/feed" />
     <outline type="rss" text="Congo Planet" title="Congo Planet" xmlUrl="https://www.congoplanet.com/feeds/rss_congo_africa.xml" />
     <outline type="rss" text="Cosmos Magazine" title="Cosmos Magazine" xmlUrl="https://cosmosmagazine.com/feed/" />
+    <outline type="rss" text="Dabanga Sudan" title="Dabanga Sudan" xmlUrl="https://www.dabangasudan.org/en/feed" />
     <outline type="rss" text="Daily Express" title="Daily Express" xmlUrl="https://feeds.feedburner.com/daily-express-news-showbiz" />
     <outline type="rss" text="Daily Mail" title="Daily Mail" xmlUrl="https://www.dailymail.co.uk/articles.rss" />
     <outline type="rss" text="Daily News" title="Daily News" xmlUrl="https://dailynews.co.tz/category/tanzania/feed" />
@@ -90,6 +94,7 @@
     <outline type="rss" text="DELFI — Lithuania" title="DELFI — Lithuania" xmlUrl="https://www.delfi.lt/rss/feeds/lithuania.xml" />
     <outline type="rss" text="Der Spiegel — International" title="Der Spiegel — International" xmlUrl="https://www.spiegel.de/international/index.rss" />
     <outline type="rss" text="Der Spiegel — Schlagzeilen" title="Der Spiegel — Schlagzeilen" xmlUrl="https://www.spiegel.de/schlagzeilen/index.rss" />
+    <outline type="rss" text="Deutsche Welle (DW) Africa" title="Deutsche Welle (DW) Africa" xmlUrl="https://rss.dw.com/rdf/rss-en-africa" />
     <outline type="rss" text="Deutsche Welle (EN)" title="Deutsche Welle (EN)" xmlUrl="https://rss.dw.com/rdf/rss-en-all" />
     <outline type="rss" text="DIE WELT" title="DIE WELT" xmlUrl="https://www.welt.de/?service=Rss" />
     <outline type="rss" text="Die Zeit" title="Die Zeit" xmlUrl="https://newsfeed.zeit.de/index" />
@@ -124,6 +129,7 @@
     <outline type="rss" text="Fox News" title="Fox News" xmlUrl="https://feeds.foxnews.com/foxnews/latest" />
     <outline type="rss" text="Fox Sports" title="Fox Sports" xmlUrl="https://www.foxsports.com/feed/news-feed.xml" />
     <outline type="rss" text="France 24" title="France 24" xmlUrl="https://www.france24.com/en/rss" />
+    <outline type="rss" text="France 24 Afrique" title="France 24 Afrique" xmlUrl="https://www.france24.com/fr/afrique/rss" />
     <outline type="rss" text="France 24 Arabic" title="France 24 Arabic" xmlUrl="https://www.france24.com/ar/rss" />
     <outline type="rss" text="France-Antilles Martinique" title="France-Antilles Martinique" xmlUrl="https://www.martinique.franceantilles.fr/rss/lea_Une.xml" />
     <outline type="rss" text="Frieze" title="Frieze" xmlUrl="https://frieze.com/feed/rss.xml" />
@@ -186,6 +192,7 @@
     <outline type="rss" text="Le Monde" title="Le Monde" xmlUrl="https://www.lemonde.fr/en/rss/une.xml" />
     <outline type="rss" text="leaders.com.tn" title="leaders.com.tn" xmlUrl="https://www.leaders.com.tn/rss" />
     <outline type="rss" text="leral.net" title="leral.net" xmlUrl="https://www.leral.net/xml/syndication.rss" />
+    <outline type="rss" text="Libya Herald" title="Libya Herald" xmlUrl="https://www.libyaherald.com/feed/" />
     <outline type="rss" text="Live Science" title="Live Science" xmlUrl="https://www.livescience.com/feeds/all" />
     <outline type="rss" text="MacRumors" title="MacRumors" xmlUrl="https://feeds.macrumors.com/MacRumors/" />
     <outline type="rss" text="Madagascar Tribune" title="Madagascar Tribune" xmlUrl="https://www.madagascar-tribune.com/spip.php?page=backend" />
@@ -229,6 +236,7 @@
     <outline type="rss" text="News.mn" title="News.mn" xmlUrl="https://news.mn/en/feed/" />
     <outline type="rss" text="news.sanook.com" title="news.sanook.com" xmlUrl="https://rssfeeds.sanook.com/rss/feeds/sanook/news.crime.xml" />
     <outline type="rss" text="News24" title="News24" xmlUrl="https://feeds.news24.com/articles/news24/TopStories/rss" />
+    <outline type="rss" text="NewsDay Zimbabwe" title="NewsDay Zimbabwe" xmlUrl="https://newsday.co.zw/feed/" />
     <outline type="rss" text="NHK" title="NHK" xmlUrl="https://www.nhk.or.jp/rj/podcast/rss/english.xml" />
     <outline type="rss" text="NHK News — Japanese" title="NHK News — Japanese" xmlUrl="https://www3.nhk.or.jp/rss/news/cat0.xml" />
     <outline type="rss" text="NHK World" title="NHK World" xmlUrl="https://www3.nhk.or.jp/nhkworld/en/news/feed/" />
@@ -324,6 +332,7 @@
     <outline type="rss" text="TASS" title="TASS" xmlUrl="https://tass.com/rss/v2.xml" />
     <outline type="rss" text="Tatoli" title="Tatoli" xmlUrl="https://www.tatoli.tl/en/feed/" />
     <outline type="rss" text="TBIJ" title="TBIJ" xmlUrl="https://www.thebureauinvestigates.com/feed/" />
+    <outline type="rss" text="Tchad Infos" title="Tchad Infos" xmlUrl="https://tchadinfos.com/feed" />
     <outline type="rss" text="TechCrunch" title="TechCrunch" xmlUrl="https://techcrunch.com/feed/" />
     <outline type="rss" text="TechCrunch — AI" title="TechCrunch — AI" xmlUrl="https://techcrunch.com/category/artificial-intelligence/feed/" />
     <outline type="rss" text="TechDirt" title="TechDirt" xmlUrl="https://www.techdirt.com/feed/" />
@@ -342,6 +351,7 @@
     <outline type="rss" text="The Hill" title="The Hill" xmlUrl="https://thehill.com/news/feed/" />
     <outline type="rss" text="The Hindu" title="The Hindu" xmlUrl="https://www.thehindu.com/news/national/feeder/default.rss" />
     <outline type="rss" text="The Hollywood Reporter" title="The Hollywood Reporter" xmlUrl="https://www.hollywoodreporter.com/feed/" />
+    <outline type="rss" text="The Independent Uganda" title="The Independent Uganda" xmlUrl="https://www.independent.co.ug/feed/" />
     <outline type="rss" text="The Initium" title="The Initium" xmlUrl="https://theinitium.com/feed/" />
     <outline type="rss" text="The Intercept" title="The Intercept" xmlUrl="https://theintercept.com/feed/" />
     <outline type="rss" text="The Intercept" title="The Intercept" xmlUrl="https://theintercept.com/feed/?lang=en" />

@@ -2,12 +2,16 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: EG</title>
-    <dateCreated>Sun, 16 Aug 2026 05:12:19 GMT</dateCreated>
+    <dateCreated>Sun, 23 Aug 2026 19:32:16 GMT</dateCreated>
   </head>
   <body>
+    <outline type="rss" text="Al Jazeera" title="Al Jazeera" xmlUrl="https://www.aljazeera.com/xml/rss/all.xml" />
     <outline type="rss" text="AllAfrica" title="AllAfrica" xmlUrl="https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf" />
     <outline type="rss" text="BBC News - Middle East" title="BBC News - Middle East" xmlUrl="https://feeds.bbci.co.uk/news/world/middle_east/rss.xml" />
+    <outline type="rss" text="BBC News Africa" title="BBC News Africa" xmlUrl="https://feeds.bbci.co.uk/news/world/africa/rss.xml" />
     <outline type="rss" text="Daily News Egypt" title="Daily News Egypt" xmlUrl="https://www.dailynewsegypt.com/feed" />
+    <outline type="rss" text="Deutsche Welle (DW) Africa" title="Deutsche Welle (DW) Africa" xmlUrl="https://rss.dw.com/rdf/rss-en-africa" />
+    <outline type="rss" text="France 24 Afrique" title="France 24 Afrique" xmlUrl="https://www.france24.com/fr/afrique/rss" />
     <outline type="rss" text="Shorouk" title="Shorouk" xmlUrl="https://www.shorouknews.com/columns/rss/" />
   </body>
 </opml>

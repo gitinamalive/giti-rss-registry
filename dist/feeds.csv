@@ -1,6 +1,10 @@
 id,name,publisher,url,homepage,language,countries,region,category,tags,perspective,mediaType,format,official,active,lastCheckedAt,lastItemPublishedAt,healthScore,notes,description
 npr-d6bccb16,NPR World,NPR,https://feeds.npr.org/1004/rss.xml,,en,US,,us,,,broadcast,rss,,,,,,,
-al-jazeera-ecd16e1e,Al Jazeera,Al Jazeera,https://www.aljazeera.com/xml/rss/all.xml,,en,QA,,world,,state-affiliated,digital,rss,,,,,,"Al Jazeera is funded by the Qatari government through the Qatar Media Corporation. Editorial independence is debated — RSF notes it 'reflects the Qatari government's viewpoint on regional issues' while acknowledging its professional journalism standards. Per CONTRIBUTING.md policy, labeled state-affiliated with this rationale documented.",
+al-jazeera-ecd16e1e,Al Jazeera,Al Jazeera,https://www.aljazeera.com/xml/rss/all.xml,https://www.aljazeera.com/africa/,en,QA|DZ|AO|BJ|BW|BF|BI|CV|CM|CF|TD|KM|CG|CD|CI|DJ|EG|GQ|ER|SZ|ET|GA|GM|GH|GN|GW|KE|LS|LR|LY|MG|MW|ML|MR|MU|MA|MZ|NA|NE|NG|RW|ST|SN|SC|SL|SO|ZA|SS|SD|TZ|TG|TN|UG|ZM|ZW,Africa,world,,state-affiliated,digital,rss,,,,,,"Al Jazeera is funded by the Qatari government through the Qatar Media Corporation. Editorial independence is debated — RSF notes it 'reflects the Qatari government's viewpoint on regional issues' while acknowledging its professional journalism standards. Per CONTRIBUTING.md policy, labeled state-affiliated with this rationale documented. The network-wide RSS feed is mapped to African countries because the site maintains a dedicated Africa section; monitor feed-level filtering after ingestion.
+
+Sources:
+  [1] https://www.aljazeera.com/xml/rss/all.xml
+  [2] https://www.aljazeera.com/africa/",English-language Al Jazeera reporting from Africa and international news with African relevance.
 the-new-york-times-9ef86906,NYT World,The New York Times,https://rss.nytimes.com/services/xml/rss/nyt/World.xml,,en,US,,us,,,digital,rss,,,,,,,
 reuters-world-10fab0cc,Reuters World,Reuters World,https://www.reuters.com/arc/outboundfeeds/v1/rss/category/world/,,en,GB,,world,,,wire,rss,,,,,,,
 united-nations-news-b0e48c4e,United Nations News,United Nations News,https://news.un.org/feed/subscribe/en/news/all/rss.xml,,en,US,,us,,,digital,rss,,,,,,,
@@ -273,7 +277,7 @@ mkbhd-youtube-5e4d3c2b,MKBHD,YouTube,https://rsshub.app/youtube/user/marquesbrow
 github-trending-1a2b3c4d,GitHub Trending,GitHub,https://rsshub.app/github/trending/daily/any,,en,US,,technology,,,digital,rss,,,,,,,
 bbc-science-environment-a97faa0a,BBC Science & Environment,BBC,https://feeds.bbci.co.uk/news/science_and_environment/rss.xml,https://www.bbc.com/news/science_and_environment,en,GB,,science,,,broadcast,rss,,,,,,,BBC News science and environment coverage
 carbon-brief-e0c7ff98,Carbon Brief,Carbon Brief,https://www.carbonbrief.org/feed/,https://www.carbonbrief.org,en,GB,,climate,,,digital,rss,,,,,,,"A data-driven climate journalism blog that explains global warming through clear analysis of climate science, energy, and policy"
-africanews-754d5800,Africanews,Africanews,https://www.africanews.com/feed/rss,https://www.africanews.com,en,CG,,world,,,digital,rss,,,,,,,"Pan-African news in English and French, part of the Euronews network"
+africanews-754d5800,Africanews,Africanews,https://www.africanews.com/feed/rss,https://www.africanews.com,en,CG|TD|SD|LY|UG|RW|CI|CM|AO|MZ|ZW|BF|NE|SS|DJ|CF|GQ|BJ|TG|SL|LR|GW|CV|MR|LS|SZ|BW,,world,,,digital,rss,,,,,,,"Pan-African news in English and French, part of the Euronews network"
 latin-america-reports-1ce2fbd0,Latin America Reports,Latin America Reports,https://latinamericareports.com/feed/,https://latinamericareports.com,en,PE,,world,,,digital,rss,,,,,,,On-the-ground reporting contextualizing Latin America's role in global affairs
 nsf-news-0534e5d2,NSF News,National Science Foundation,https://www.nsf.gov/rss/rss_www_news.xml,https://www.nsf.gov/news,en,US,,us,,,digital,rss,,,,,,,Latest articles about U.S. National Science Foundation discoveries and funding
 nasa-breaking-news-bcd83ac3,NASA Breaking News,NASA,https://www.nasa.gov/news-release/feed/,https://www.nasa.gov/news/releases/,en,US,,space,,,digital,rss,,,,,,,"NASA press releases and breaking news on space exploration, science, and technology"
@@ -457,3 +461,52 @@ searchlight-04417d8b,Searchlight,Searchlight,https://www.searchlight.vc/feed/,ht
 st-vincent-times-df7309b6,St Vincent Times,St Vincent Times,https://www.stvincenttimes.com/feed/,https://www.stvincenttimes.com,en,VC,,world,,independent,digital,rss,,,,,,,Saint Vincent and the Grenadines news
 monaco-life-9a4409c7,Monaco Life,Monaco Life,https://www.monacolife.net/feed/,https://www.monacolife.net,en,MC,,world,,independent,digital,rss,,,,,,,English-language news from Monaco
 tela-non-3daacff8,Tela Non,Tela Non,https://www.telanon.info/feed/,https://www.telanon.info,pt,ST,,world,,independent,digital,rss,,,,,,,News from São Tomé and Príncipe
+alwihda-info-bd96007a,Alwihda Info,Alwihda Info,https://www.alwihdainfo.com/feed,https://www.alwihdainfo.com,fr,TD,Africa,world,,independent,digital,rss,,,,,,"Chadian outlet whose public editorial statement emphasizes accuracy, impartiality, and respect for facts. A public 2026 correction shows an explicit correction process; retain normal cross-source checks for sensitive claims.
+
+Sources:
+  [1] https://www.alwihdainfo.com/a-propos-de-nous/
+  [2] https://www.alwihdainfo.com/erratum-alwihda-info-presente-ses-excuses-a-l-ARSAT-et-a-son-audience-pour-un-manquement-a-l-equilibre-de-l-information-a148942/","French-language Chadian and pan-African news covering Chad, Africa, and international affairs."
+tchad-infos-6fcd4363,Tchad Infos,Tchad Infos,https://tchadinfos.com/feed,https://tchadinfos.com,fr,TD,Africa,world,,independent,digital,rss,,,,,,"Tchadinfos describes itself as an independent national news source founded in 2012. Its legal notice identifies a Chadian publisher and editor of record.
+
+Sources:
+  [1] https://tchadinfos.com/a-propos/
+  [2] https://tchadinfos.com/mentions-legales/","French-language national news from Chad covering politics, society, economy, and culture."
+dabanga-sudan-b1fe56e1,Dabanga Sudan,Dabanga Sudan,https://www.dabangasudan.org/en/feed,https://www.dabangasudan.org/en/,en,SD,Africa,world,,independent-exile,digital,rss,,,,,,"Dabanga identifies itself as an independent Sudanese broadcaster and publisher founded in 2008 and operating in exile. Its published editorial guidelines emphasize accuracy, verification, fairness, and impartiality.
+
+Sources:
+  [1] https://www.dabangasudan.org/en/about-us
+  [2] https://www.dabangasudan.org/wp-content/uploads/2023/01/dabanga-editorial-guidelines-english.pdf",English-language Sudan news from an independent Sudanese media house operating in exile.
+libya-herald-a36d60fd,Libya Herald,Libya Herald,https://www.libyaherald.com/feed/,https://libyaherald.com/,en,LY,Africa,world,,independent,digital,rss,,,,,,"Libya Herald describes itself as an independent private publication, separate from political parties, governments, and religious organizations; its homepage is actively publishing current Libya news.
+
+Sources:
+  [1] https://libyaherald.com/about-us
+  [2] https://libyaherald.com/faqs/","English-language Libyan news covering politics, security, economy, business, and society."
+actu-cameroun-e3b85951,Actu Cameroun,Actu Cameroun,https://actucameroun.com/feed/,https://actucameroun.com/,fr,CM,Africa,world,,independent,digital,rss,,,,,,"Actu Cameroun publishes frequent Cameroon-focused reporting and disclosed a 2024 one-month suspension following a decision by Cameroon’s National Communication Council; the outlet announced corrective measures before resuming publication. Retain normal cross-source checks for sensitive claims.
+
+Sources:
+  [1] https://actucameroun.com/
+  [2] https://actucameroun.com/2024/07/10/communique-reprise-des-activites-dactu-cameroun/","French-language Cameroonian news covering politics, society, economy, sport, and international affairs."
+the-independent-uganda-587a8086,The Independent Uganda,The Independent Uganda,https://www.independent.co.ug/feed/,https://www.independent.co.ug/,en,UG,Africa,world,,independent,digital,rss,,,,,,"The Independent Uganda homepage shows current national reporting, analysis, and magazine content with daily publication activity. Its mix includes original reporting and clearly attributed wire material; treat attributed wire stories as secondary-source content.
+
+Sources:
+  [1] https://www.independent.co.ug/","English-language Ugandan news and analysis covering national, regional, business, health, and world affairs."
+newsday-zimbabwe-343560db,NewsDay Zimbabwe,NewsDay Zimbabwe,https://newsday.co.zw/feed/,https://www.newsday.co.zw/,en,ZW,Africa,world,,independent,digital,rss,,,,,,"NewsDay is part of Alpha Media Holdings, which describes its publications as independent and free from political ties or outside influence. The homepage shows current daily stories; some content is marked Premium.
+
+Sources:
+  [1] https://www.newsday.co.zw/
+  [2] https://www.newsday.co.zw/newsday/index.php/topic/credibility","English-language Zimbabwean daily news covering local, national, regional, business, sport, and analysis."
+bbc-dca93aa2,BBC News Africa,BBC,https://feeds.bbci.co.uk/news/world/africa/rss.xml,https://www.bbc.com/news/world/africa,en,DZ|AO|BJ|BW|BF|BI|CV|CM|CF|TD|KM|CG|CD|CI|DJ|EG|GQ|ER|SZ|ET|GA|GM|GH|GN|GW|KE|LS|LR|LY|MG|MW|ML|MR|MU|MA|MZ|NA|NE|NG|RW|ST|SN|SC|SL|SO|ZA|SS|SD|TZ|TG|TN|UG|ZM|ZW,Africa,world,,regional,broadcast,rss,,,,,,"BBC Africa is a high-credibility regional fallback with broad English-language coverage. The RSS endpoint responds as XML; the web research tool could not render the XML payload, so live item parsing remains a runtime verification task.
+
+Sources:
+  [1] https://feeds.bbci.co.uk/news/world/africa/rss.xml
+  [2] https://www.bbc.com/news/world/africa","English-language BBC reporting from across Africa, including politics, conflict, society, health, business, and culture."
+france-24-7de99109,France 24 Afrique,France 24,https://www.france24.com/fr/afrique/rss,https://www.france24.com/fr/afrique/,fr,DZ|AO|BJ|BW|BF|BI|CV|CM|CF|TD|KM|CG|CD|CI|DJ|EG|GQ|ER|SZ|ET|GA|GM|GH|GN|GW|KE|LS|LR|LY|MG|MW|ML|MR|MU|MA|MZ|NA|NE|NG|RW|ST|SN|SC|SL|SO|ZA|SS|SD|TZ|TG|TN|UG|ZM|ZW,Africa,world,,regional,broadcast,rss,,,,,,"France 24 Afrique provides a French-language regional perspective for countries where local RSS coverage is limited. The RSS endpoint returned an HTTP response but was blocked from HTML rendering during vetting; live XML and proxy accessibility remain verification tasks.
+
+Sources:
+  [1] https://www.france24.com/fr/afrique/rss
+  [2] https://www.france24.com/fr/afrique/",French-language France 24 reporting and analysis from across Africa.
+deutsche-welle-4bb7073b,Deutsche Welle (DW) Africa,Deutsche Welle,https://rss.dw.com/rdf/rss-en-africa,https://www.dw.com/en/africa/s-12756,en,DZ|AO|BJ|BW|BF|BI|CV|CM|CF|TD|KM|CG|CD|CI|DJ|EG|GQ|ER|SZ|ET|GA|GM|GH|GN|GW|KE|LS|LR|LY|MG|MW|ML|MR|MU|MA|MZ|NA|NE|NG|RW|ST|SN|SC|SL|SO|ZA|SS|SD|TZ|TG|TN|UG|ZM|ZW,Africa,world,,regional,broadcast,rdf,,,,,,"DW Africa is a high-credibility international broadcaster with dedicated Africa programming and reporting. The RSS endpoint responds as XML; the web research tool could not render the XML payload, so live item parsing remains a runtime verification task.
+
+Sources:
+  [1] https://rss.dw.com/rdf/rss-en-africa
+  [2] https://www.dw.com/en/africa/s-12756","English-language Deutsche Welle reporting, analysis, and multimedia coverage from Africa."
