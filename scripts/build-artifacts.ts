@@ -130,6 +130,9 @@ td.url a:hover{text-decoration:underline}
 .score-70{background:var(--yellow)}
 .score-40{background:var(--orange)}
 .score-0{background:var(--red)}
+.health-status{display:inline-block;font-size:.7rem;font-weight:600;border-radius:3px;padding:.08rem .3rem;background:#e9ecef;color:var(--text)}
+.health-fresh{background:#d1e7dd;color:#0f5132}.health-stale,.health-very-stale{background:#fff3cd;color:#664d03}.health-stale-content{background:#ffe5d0;color:#7a3510}.health-unreachable,.health-invalid-content{background:#f8d7da;color:#842029}.health-unchecked{background:#e2e3e5;color:#41464b}
+.last-checked{display:block;color:var(--muted);font-size:.68rem;margin-top:.15rem}
 .country-tag{display:inline-block;background:#e9ecef;padding:0 .35em;border-radius:3px;font-size:.7rem;margin:1px}
 .empty{color:var(--muted);text-align:center;padding:2rem}
 footer{text-align:center;padding:1.5rem;color:var(--muted);font-size:.75rem;border-top:1px solid var(--border)}
@@ -165,10 +168,20 @@ ${langOpts}
 </select>
 <select id="filter-health" aria-label="Filter by health">
 <option value="">\u2764\uFE0F All health</option>
-<option value="100">Active (<7 days)</option>
-<option value="70">Stale (7\u201330 days)</option>
-<option value="40">Very stale (>30 days)</option>
-<option value="0">Dead / unchecked</option>
+<option value="fresh">Healthy / fresh</option>
+<option value="stale">Stale article</option>
+<option value="very-stale">Very stale article</option>
+<option value="stale-content">Stale content / no recent article</option>
+<option value="unreachable">Unreachable</option>
+<option value="invalid-content">Invalid feed content</option>
+<option value="unchecked">Not checked</option>
+</select>
+<select id="filter-checked" aria-label="Filter by last checked">
+<option value="">\u23F1 Any last checked</option>
+<option value="7">Checked within 7 days</option>
+<option value="30">Checked within 30 days</option>
+<option value="older">Checked more than 30 days ago</option>
+<option value="never">Never checked</option>
 </select>
 <button class="btn btn-primary" id="export-csv" aria-label="Export filtered results as CSV">\u2B07 CSV</button>
 <button class="btn" id="reset-filters" aria-label="Reset all filters">\u21BA Reset</button>
@@ -183,7 +196,8 @@ ${langOpts}
 <th data-sort="category">Category</th>
 <th data-sort="countries">Country</th>
 <th data-sort="language">Lang</th>
-<th data-sort="healthScore">Health</th>
+<th data-sort="healthScore">Health status</th>
+<th data-sort="lastCheckedAt">Last checked</th>
 <th>URL</th>
 </tr>
 </thead>
@@ -196,7 +210,8 @@ Generated ${generatedAt.split('T')[0]} \u00B7
 MIT Licensed \u00B7 <a href="feeds.json">Raw JSON</a> \u00B7 <a href="feeds.csv">CSV</a> \u00B7 <a href="opml/all.opml">OPML</a>
 </footer>
 <script>
-const ALL_FEEDS = ${feedsJson};
+const INITIAL_FEEDS = ${feedsJson};
+let ALL_FEEDS = INITIAL_FEEDS.map(feed => Object.assign({healthStatus:'unchecked',lastCheckedAt:null,healthScore:null}, feed));
 let sortCol = 'name';
 let sortDir = 1;
 
@@ -207,10 +222,13 @@ function render(feeds) {
   const tbody = $('#table-body');
   const stats = $('#stats');
   stats.innerHTML = '<strong>' + feeds.length + '</strong> of <strong>' + ALL_FEEDS.length + '</strong> feeds shown';
-  if (!feeds.length) { tbody.innerHTML = '<tr><td colspan="7" class="empty">No matching feeds found.</td></tr>'; return; }
+  if (!feeds.length) { tbody.innerHTML = '<tr><td colspan="8" class="empty">No matching feeds found.</td></tr>'; return; }
   tbody.innerHTML = feeds.map(f => {
     const score = f.healthScore ?? '';
     const scoreClass = score === 100 ? 'score-100' : score === 70 ? 'score-70' : score === 40 ? 'score-40' : score === 0 ? 'score-0' : '';
+    const status = f.healthStatus || 'unchecked';
+    const statusLabel = ({fresh:'Fresh',stale:'Stale article','very-stale':'Very stale article','stale-content':'Stale content',unreachable:'Unreachable','invalid-content':'Invalid content',unchecked:'Not checked'})[status] || status;
+    const checked = f.lastCheckedAt ? new Date(f.lastCheckedAt).toLocaleDateString() : '\u2014';
     const countries = (f.countries||[]).map(c => '<span class="country-tag">' + c + '</span>').join('');
     const url = (f.url||'').substring(0, 80) + ((f.url||'').length > 80 ? '\u2026' : '');
     return '<tr>' +
@@ -219,7 +237,8 @@ function render(feeds) {
       '<td>' + esc(f.category) + '</td>' +
       '<td>' + countries + '</td>' +
       '<td>' + esc(f.language) + '</td>' +
-      '<td>' + (scoreClass ? '<span class="score ' + scoreClass + '">' + score + '</span>' : '\u2014') + '</td>' +
+      '<td><span class="health-status health-' + escAttr(status) + '">' + esc(statusLabel) + '</span>' + (scoreClass ? ' <span class="score ' + scoreClass + '">' + score + '</span>' : '') + '</td>' +
+      '<td><span class="last-checked">' + esc(checked) + '</span></td>' +
       '<td class="url"><a href="' + escAttr(f.url) + '" target="_blank" rel="noopener" title="' + escAttr(f.url||'') + '">' + esc(url) + '</a></td>' +
       '</tr>';
   }).join('');
@@ -234,20 +253,31 @@ function getFilters() {
   const country = $('#filter-country').value;
   const lang = $('#filter-language').value;
   const health = $('#filter-health').value;
-  return {search, cat, country, lang, health};
+  const checked = $('#filter-checked').value;
+  return {search, cat, country, lang, health, checked};
+}
+
+function matchesFilters(f, filters) {
+  const {search, cat, country, lang, health, checked} = filters;
+  if (search && !(String(f.name||'').toLowerCase().includes(search) || String(f.publisher||'').toLowerCase().includes(search) || (f.description||'').toLowerCase().includes(search) || (f.countries||[]).some(c => c.toLowerCase().includes(search)))) return false;
+  if (cat && f.category !== cat) return false;
+  if (country && !(f.countries||[]).includes(country)) return false;
+  if (lang && f.language !== lang) return false;
+  if (health && (f.healthStatus || 'unchecked') !== health) return false;
+  if (checked) {
+    if (checked === 'never' && f.lastCheckedAt) return false;
+    if (checked !== 'never' && !f.lastCheckedAt) return false;
+    if (checked === '7' && Date.now() - new Date(f.lastCheckedAt).getTime() > 7*86400000) return false;
+    if (checked === '30' && Date.now() - new Date(f.lastCheckedAt).getTime() > 30*86400000) return false;
+    if (checked === 'older' && Date.now() - new Date(f.lastCheckedAt).getTime() <= 30*86400000) return false;
+  }
+  return true;
 }
 
 function filterFeeds() {
-  const {search, cat, country, lang, health} = getFilters();
+  const filters = getFilters();
   let result = ALL_FEEDS;
-  if (search) result = result.filter(f => esc(f.name).toLowerCase().includes(search) || esc(f.publisher).toLowerCase().includes(search) || (f.description||'').toLowerCase().includes(search) || (f.countries||[]).some(c => c.toLowerCase().includes(search)));
-  if (cat) result = result.filter(f => f.category === cat);
-  if (country) result = result.filter(f => (f.countries||[]).includes(country));
-  if (lang) result = result.filter(f => f.language === lang);
-  if (health === '100') result = result.filter(f => f.healthScore === 100);
-  else if (health === '70') result = result.filter(f => f.healthScore === 70);
-  else if (health === '40') result = result.filter(f => f.healthScore === 40);
-  else if (health === '0') result = result.filter(f => !f.healthScore || f.healthScore === 0);
+  result = result.filter(f => matchesFilters(f, filters));
   result.sort((a,b) => {
     const va = a[sortCol] ?? ''; const vb = b[sortCol] ?? '';
     if (sortCol === 'healthScore') return ((va||0)-(vb||0))*sortDir;
@@ -258,18 +288,11 @@ function filterFeeds() {
 }
 
 function exportCSV() {
-  const {search, cat, country, lang, health} = getFilters();
+  const filters = getFilters();
   let result = ALL_FEEDS;
-  if (search) result = result.filter(f => esc(f.name).toLowerCase().includes(search) || esc(f.publisher).toLowerCase().includes(search) || (f.description||'').toLowerCase().includes(search) || (f.countries||[]).some(c => c.toLowerCase().includes(search)));
-  if (cat) result = result.filter(f => f.category === cat);
-  if (country) result = result.filter(f => (f.countries||[]).includes(country));
-  if (lang) result = result.filter(f => f.language === lang);
-  if (health==='100') result=result.filter(f=>f.healthScore===100);
-  else if (health==='70') result=result.filter(f=>f.healthScore===70);
-  else if (health==='40') result=result.filter(f=>f.healthScore===40);
-  else if (health==='0') result=result.filter(f=>!f.healthScore||f.healthScore===0);
-  const csv = 'name,publisher,url,category,countries,language,healthScore,homepage,description\\n' +
-    result.map(f => ['"'+esc(f.name)+'"','"'+esc(f.publisher)+'"','"'+escAttr(f.url)+'"',f.category,(f.countries||[]).join('|'),f.language,f.healthScore??'','"'+escAttr(f.homepage||'')+'"','"'+esc(f.description||'')+'"'].join(',')).join('\\n');
+  result = result.filter(f => matchesFilters(f, filters));
+  const csv = 'name,publisher,url,category,countries,language,healthStatus,healthScore,lastCheckedAt,homepage,description\\n' +
+    result.map(f => ['"'+esc(f.name)+'"','"'+esc(f.publisher)+'"','"'+escAttr(f.url)+'"',f.category,(f.countries||[]).join('|'),f.language,f.healthStatus||'unchecked',f.healthScore??'',f.lastCheckedAt||'','"'+escAttr(f.homepage||'')+'"','"'+esc(f.description||'')+'"'].join(',')).join('\\n');
   const blob = new Blob([csv],{type:'text/csv'});
   const a = document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='giti-rss-registry-filtered.csv'; a.click();
 }
@@ -282,8 +305,9 @@ $('#filter-category').addEventListener('change', filterFeeds);
 $('#filter-country').addEventListener('change', filterFeeds);
 $('#filter-language').addEventListener('change', filterFeeds);
 $('#filter-health').addEventListener('change', filterFeeds);
+$('#filter-checked').addEventListener('change', filterFeeds);
 $('#export-csv').addEventListener('click', exportCSV);
-$('#reset-filters').addEventListener('click', () => { $('#search').value='';$('#filter-category').value='';$('#filter-country').value='';$('#filter-language').value='';$('#filter-health').value='';filterFeeds(); });
+$('#reset-filters').addEventListener('click', () => { $('#search').value='';$('#filter-category').value='';$('#filter-country').value='';$('#filter-language').value='';$('#filter-health').value='';$('#filter-checked').value='';filterFeeds(); });
 $$('th[data-sort]').forEach(th => th.addEventListener('click', () => {
   const col = th.dataset.sort;
   if (col === sortCol) sortDir *= -1; else { sortCol = col; sortDir = 1; }
@@ -292,6 +316,12 @@ $$('th[data-sort]').forEach(th => th.addEventListener('click', () => {
   filterFeeds();
 }));
 render(ALL_FEEDS);
+fetch('feeds-health.json', {cache:'no-store'}).then(response => response.ok ? response.json() : null).then(overlay => {
+  if (!overlay || !Array.isArray(overlay.feeds)) return;
+  const healthById = new Map(overlay.feeds.map(entry => [entry.id, entry]));
+  ALL_FEEDS = INITIAL_FEEDS.map(feed => Object.assign({healthStatus:'unchecked',lastCheckedAt:null,healthScore:null}, feed, healthById.get(feed.id) || {}));
+  filterFeeds();
+}).catch(() => { /* The canonical directory remains usable if the overlay is unavailable. */ });
 <\/script>
 </body>
 </html>`;

@@ -11,11 +11,12 @@ export const STALE_THRESHOLD_DAYS = 30;
 
 export type HealthStatus =
     | 'unchecked'
-    | 'unknown'
     | 'fresh'
     | 'stale'
     | 'very-stale'
-    | 'unreachable';
+    | 'stale-content'
+    | 'unreachable'
+    | 'invalid-content';
 
 /** Per-feed health overlay entry (keyed by stable feed id). */
 export interface FeedHealthEntry {
@@ -25,6 +26,11 @@ export interface FeedHealthEntry {
     lastCheckedAt: string | null;
     lastItemPublishedAt: string | null;
     active: boolean;
+    consecutiveFailures: number;
+    lastSuccessAt: string | null;
+    lastFailureAt: string | null;
+    /** False after four consecutive failed endpoint checks; canonical data remains. */
+    defaultSuggestion: boolean;
 }
 
 /**
@@ -53,12 +59,14 @@ export function computeHealthScore(
 }
 
 export interface DeriveHealthStatusInput {
-    /** true when the last check succeeded (HEAD/GET), false when it failed. */
+    /** true when the last bounded GET contained a valid feed, false otherwise. */
     active: boolean;
     /** Absent → the feed has never been checked → 'unchecked'. */
     lastCheckedAt?: string | null;
-    /** Absent while reachable → checked but no parseable items → 'unknown'. */
+    /** Absent while reachable → checked but no parseable items → 'stale-content'. */
     lastItemPublishedAt?: string | null;
+    /** Distinguishes a valid feed with stale content from invalid content. */
+    failureStatus?: Extract<HealthStatus, 'unreachable' | 'invalid-content'>;
     now?: Date;
 }
 
@@ -76,8 +84,9 @@ export interface DeriveHealthStatusInput {
  */
 export function deriveHealthStatus(input: DeriveHealthStatusInput): HealthStatus {
     if (!input.lastCheckedAt) return 'unchecked';
+    if (input.failureStatus) return input.failureStatus;
     if (!input.active) return 'unreachable';
-    if (!input.lastItemPublishedAt) return 'unknown';
+    if (!input.lastItemPublishedAt) return 'stale-content';
 
     const now = input.now ?? new Date();
     const daysSince = (now.getTime() - new Date(input.lastItemPublishedAt).getTime()) / (1000 * 60 * 60 * 24);

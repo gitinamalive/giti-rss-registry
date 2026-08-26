@@ -68,7 +68,7 @@ describe('generateIndexHtml', () => {
     it('embeds the homepage value losslessly in page data', () => {
         const feed = makeFeed({ homepage: 'https://example.com' });
         const html = generateIndexHtml([feed]);
-        const match = html.match(/const ALL_FEEDS = (\[.*\]);/);
+        const match = html.match(/const INITIAL_FEEDS = (\[.*\]);/);
         expect(JSON.parse(match![1])[0].homepage).toBe('https://example.com');
     });
 
@@ -78,7 +78,7 @@ describe('generateIndexHtml', () => {
             description: 'a & b \u2028 c',
         });
         const html = generateIndexHtml([feed]);
-        const match = html.match(/const ALL_FEEDS = (\[.*\]);/);
+        const match = html.match(/const INITIAL_FEEDS = (\[.*\]);/);
         expect(match).not.toBeNull();
         const parsed = JSON.parse(match![1]);
         expect(parsed).toHaveLength(1);

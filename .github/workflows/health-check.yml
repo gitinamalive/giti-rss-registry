@@ -2,29 +2,79 @@ name: Weekly Feed Health Check
 
 on:
   schedule:
-    - cron: '0 6 * * 1'  # Every Monday at 06:00 UTC
+    - cron: '0 6 * * 1'
   workflow_dispatch:
 
+concurrency:
+  group: weekly-feed-health
+  cancel-in-progress: false
+
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
+  issues: write
 
 jobs:
   health-check:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20
           cache: npm
-      - run: npm ci
-      - run: npm run build
-      - run: npx tsx scripts/health-check.ts
-        timeout-minutes: 30
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v4
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run health check
+        run: npx tsx scripts/health-check.ts 2>&1 | tee health-report.txt
+
+      - name: Commit health overlay
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist/feeds-health.json
+          git diff --staged --quiet || git commit -m "chore(rss-registry): weekly health check update [skip ci]"
+          git push
+
+      - name: Create review issues for feeds failing four consecutive checks
+        uses: actions/github-script@v7
         with:
-          path: dist
-      - uses: actions/deploy-pages@v4
+          script: |
+            const fs = require('fs');
+            const overlay = JSON.parse(fs.readFileSync('dist/feeds-health.json', 'utf8'));
+            const canonical = JSON.parse(fs.readFileSync('data/feeds.json', 'utf8'));
+            const byId = new Map(canonical.feeds.map(feed => [feed.id, feed]));
+            const candidates = overlay.feeds.filter(feed => feed.consecutiveFailures >= 4);
+            for (const health of candidates) {
+              const feed = byId.get(health.id);
+              if (!feed) continue;
+              const title = `[Health Review] ${feed.name} has failed ${health.consecutiveFailures} weekly checks`;
+              const existing = await github.paginate(github.rest.issues.listForRepo, {
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'open',
+                labels: 'health-review',
+                per_page: 100,
+              });
+              if (existing.some(issue => issue.title === title)) continue;
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                labels: ['health-review', 'automated'],
+                body: [
+                  `Feed: ${feed.name}`,
+                  `Stable ID: ${feed.id}`,
+                  `URL: ${feed.url}`,
+                  `Health status: ${health.healthStatus}`,
+                  `Consecutive failures: ${health.consecutiveFailures}`,
+                  `Last success: ${health.lastSuccessAt ?? 'never'}`,
+                  `Last failure: ${health.lastFailureAt ?? 'unknown'}`,
+                  '',
+                  'This feed remains in canonical data and is not auto-deleted. Review it before restoring it to default suggestions.',
+                ].join('\n'),
+              });
+            }
