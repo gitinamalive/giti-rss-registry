@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { buildIndex, generateIndexHtml, generateOpml } from '../scripts/build-artifacts.ts';
+import { buildIndex, createDuplicateReport, createManifest, generateIndexHtml, generateOpml } from '../scripts/build-artifacts.ts';
 import type { FeedEntry } from '../src/types.ts';
 
 // Malicious / hostile input fixtures. Each must be neutralized when it flows
@@ -111,5 +111,32 @@ describe('buildIndex', () => {
         const byCategory = buildIndex([b, c, a], (f) => [f.category]);
         expect(Object.keys(byCategory)).toEqual(['us', 'world']);
         expect(byCategory.world.map((f) => f.name)).toEqual(['Alpha', 'Beta']);
+    });
+});
+
+describe('generated metadata artifacts', () => {
+    it('creates a versioned manifest with source provenance and counts', () => {
+        expect(createManifest({
+            sourceCommit: 'abc123',
+            sourceChecksum: 'deadbeef',
+            generatedAt: '2026-08-26T00:00:00.000Z',
+            artifactCounts: { feeds: 1, opml: 1 },
+        })).toEqual({
+            schemaVersion: '1.0.0',
+            generatorVersion: '1.1.0',
+            sourceCommit: 'abc123',
+            sourceChecksum: 'deadbeef',
+            generatedAt: '2026-08-26T00:00:00.000Z',
+            artifactCounts: { feeds: 1, opml: 1 },
+        });
+    });
+
+    it('serializes possible duplicate findings as a report artifact', () => {
+        const finding = { fingerprint: 'https://example.com/feed', feedIds: ['a', 'b'], urls: ['https://example.com/feed', 'https://www.example.com/feed'] };
+        expect(createDuplicateReport([finding], '2026-08-26T00:00:00.000Z', 'checksum')).toEqual({
+            generatedAt: '2026-08-26T00:00:00.000Z',
+            sourceChecksum: 'checksum',
+            possibleDuplicates: [finding],
+        });
     });
 });

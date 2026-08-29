@@ -1,8 +1,16 @@
+import { createHash } from 'node:crypto';
+import { execFile } from 'node:child_process';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { promisify } from 'node:util';
 import type { FeedEntry, BootstrapPayload } from '../src/types.ts';
 import { escapeCsv, escapeJsonForScript, escapeXml, toFileSafeSegment } from '../src/escape.ts';
+import { findPossibleDuplicateUrls, type PossibleDuplicateFinding } from '../src/urlFingerprint.ts';
+
+const execFileAsync = promisify(execFile);
+export const GENERATOR_VERSION = '1.1.0';
+export const SCHEMA_VERSION = '1.0.0';
 
 const args = process.argv.slice(2);
 const fileArg = args.findIndex(arg => arg === '--file');
@@ -42,6 +50,40 @@ async function writeJson(relativePath: string, value: unknown): Promise<void> {
     const fullPath = resolve(distPath, relativePath);
     await mkdir(resolve(fullPath, '..'), { recursive: true });
     await writeFile(fullPath, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
+}
+
+export interface RegistryManifest {
+    schemaVersion: string;
+    generatorVersion: string;
+    sourceCommit: string;
+    sourceChecksum: string;
+    generatedAt: string;
+    artifactCounts: Record<string, number>;
+}
+
+export function createManifest(input: Omit<RegistryManifest, 'schemaVersion' | 'generatorVersion'>): RegistryManifest {
+    return {
+        schemaVersion: SCHEMA_VERSION,
+        generatorVersion: GENERATOR_VERSION,
+        ...input,
+    };
+}
+
+export function createDuplicateReport(
+    findings: PossibleDuplicateFinding[],
+    generatedAt: string,
+    sourceChecksum: string,
+): { generatedAt: string; sourceChecksum: string; possibleDuplicates: PossibleDuplicateFinding[] } {
+    return { generatedAt, sourceChecksum, possibleDuplicates: findings };
+}
+
+async function getSourceCommit(): Promise<string> {
+    try {
+        const result = await execFileAsync('git', ['rev-parse', 'HEAD']);
+        return result.stdout.trim();
+    } catch {
+        return 'unknown';
+    }
 }
 
 export function generateOpml(
@@ -332,6 +374,9 @@ async function main(): Promise<void> {
     const payload = JSON.parse(raw) as BootstrapPayload;
     const feeds = payload.feeds;
     const generatedAt = payload.generatedAt;
+    const sourceChecksum = createHash('sha256').update(raw).digest('hex');
+    const sourceCommit = await getSourceCommit();
+    const manifestGeneratedAt = new Date().toISOString();
 
     await mkdir(distPath, { recursive: true });
     await mkdir(opmlPath, { recursive: true });
@@ -385,12 +430,29 @@ async function main(): Promise<void> {
         await writeOpml(`categories/${toFileSafeSegment(category)}.opml`, `Giti RSS Registry \u2014 Category: ${category}`, entries, generatedAt);
     }
 
+    const possibleDuplicates = findPossibleDuplicateUrls(feeds);
+    await writeJson('duplicate-report.json', createDuplicateReport(possibleDuplicates, manifestGeneratedAt, sourceChecksum));
+    await writeJson('manifest.json', createManifest({
+        sourceCommit,
+        sourceChecksum,
+        generatedAt: manifestGeneratedAt,
+        artifactCounts: {
+            feeds: feeds.length,
+            countries: Object.keys(byCountry).length,
+            categories: Object.keys(byCategory).length,
+            publishers: Object.keys(byPublisher).length,
+            languages: Object.keys(byLanguage).length,
+            opml: 1 + Object.keys(byCountry).length + Object.keys(byCategory).length,
+            possibleDuplicates: possibleDuplicates.length,
+        },
+    }));
+
     // Generate browsable HTML directory
     const html = generateIndexHtml(feeds, generatedAt);
     await writeFile(resolve(distPath, 'index.html'), html, 'utf8');
 
     process.stdout.write(
-        `Generated registry artifacts in ${distPath} (feeds: ${feeds.length}, countries: ${Object.keys(byCountry).length}, categories: ${Object.keys(byCategory).length}).\n`
+        `Generated registry artifacts in ${distPath} (feeds: ${feeds.length}, countries: ${Object.keys(byCountry).length}, categories: ${Object.keys(byCategory).length}, possible duplicates: ${possibleDuplicates.length}).\n`
     );
 }
 

@@ -18,6 +18,7 @@ import {
     allowedMediaTypes,
     allowedPerspectives,
 } from '../src/types.ts';
+import { ISO_639_1 } from '../src/languages.ts';
 
 const SCHEMA_PATH = resolve('schema/feeds.schema.json');
 const FEEDS_PATH = resolve('data/feeds.json');
@@ -29,6 +30,7 @@ const ENUM_CHECKS: Array<{ defName: string; allowed: ReadonlySet<string> }> = [
     { defName: 'MediaType', allowed: allowedMediaTypes },
     { defName: 'FeedFormat', allowed: allowedFormats },
     { defName: 'CoverageType', allowed: allowedCoverageTypes },
+    { defName: 'LanguageCode', allowed: ISO_639_1 },
 ];
 
 function driftProblems(schemaEnum: readonly string[], allowed: ReadonlySet<string>): string[] {

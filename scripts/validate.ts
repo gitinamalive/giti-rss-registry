@@ -10,6 +10,8 @@ import {
     allowedMediaTypes,
     allowedPerspectives,
 } from '../src/types.ts';
+import { ISO_639_1 } from '../src/languages.ts';
+import { findPossibleDuplicateUrls } from '../src/urlFingerprint.ts';
 
 // ── ISO 3166-1 alpha-2 country codes ──────────────────────────────────────
 const ISO_3166_ALPHA2: ReadonlySet<string> = new Set([
@@ -96,7 +98,7 @@ function isPublicHostname(value: string): boolean {
 }
 
 function isLanguageCode(value: string): boolean {
-    return /^[a-z]{2,3}(?:-[a-z0-9]{2,8})*$/i.test(value);
+    return ISO_639_1.has(value);
 }
 
 function isIsoCountryCode(value: string): boolean {
@@ -320,6 +322,7 @@ async function main(): Promise<void> {
 
     const idDuplicates = findDuplicates(payload.feeds.map((f) => f.id).filter(Boolean));
     const urlDuplicates = findDuplicates(payload.feeds.map((f) => f.url).filter(Boolean));
+    const possibleUrlDuplicates = findPossibleDuplicateUrls(payload.feeds);
 
     if (idDuplicates.length > 0) {
         errors.push(`Duplicate ids detected: ${idDuplicates.slice(0, 10).join(', ')}`);
@@ -328,6 +331,12 @@ async function main(): Promise<void> {
     if (urlDuplicates.length > 0) {
         errors.push(`Duplicate urls detected: ${urlDuplicates.slice(0, 10).join(', ')}`);
     }
+
+    possibleUrlDuplicates.forEach((finding) => {
+        warnings.push(
+            `Possible duplicate URL fingerprint "${finding.fingerprint}" — feeds: ${finding.feedIds.join(', ')}`
+        );
+    });
 
     payload.feeds.forEach((feed, index) => {
         const { errors: feedErrors, warnings: feedWarnings } = validateFeedEntry(feed, index);

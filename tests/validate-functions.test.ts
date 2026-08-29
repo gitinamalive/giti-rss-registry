@@ -99,27 +99,33 @@ describe('isPublicHostname', () => {
 // ── isLanguageCode ──────────────────────────────────────────────────────
 
 describe('isLanguageCode', () => {
-    it('accepts two-letter codes', () => {
+    it('accepts only allowlisted ISO 639-1 two-letter codes', () => {
         expect(isLanguageCode('en')).toBe(true);
         expect(isLanguageCode('ar')).toBe(true);
         expect(isLanguageCode('zh')).toBe(true);
     });
 
-    it('accepts three-letter codes', () => {
-        expect(isLanguageCode('eng')).toBe(true);
-        expect(isLanguageCode('zho')).toBe(true);
-    });
-
-    it('accepts codes with region subtags', () => {
-        expect(isLanguageCode('zh-Hans')).toBe(true);
-        expect(isLanguageCode('en-GB')).toBe(true);
-        expect(isLanguageCode('pt-BR')).toBe(true);
-    });
-
     it('rejects invalid codes', () => {
         expect(isLanguageCode('')).toBe(false);
         expect(isLanguageCode('e')).toBe(false);
-        expect(isLanguageCode('ENGLISH')).toBe(false); // too long
+        expect(isLanguageCode('eng')).toBe(false);
+        expect(isLanguageCode('en-GB')).toBe(false);
+        expect(isLanguageCode('zz')).toBe(false);
+        expect(isLanguageCode('EN')).toBe(false);
+    });
+
+    it('rejects zz from feed validation, not just the helper', () => {
+        const result = validateFeedEntry({
+            id: 'invalid-language',
+            name: 'Invalid language',
+            publisher: 'Publisher',
+            url: 'https://example.com/feed.xml',
+            language: 'zz',
+            countries: ['US'],
+            category: 'world',
+        }, 0);
+
+        expect(result.errors).toContain('feeds[0].language is not a valid language code');
     });
 });
 
