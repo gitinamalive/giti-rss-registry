@@ -390,7 +390,7 @@ async function main(): Promise<void> {
 
     const csvHeader = [
         'id', 'name', 'publisher', 'url', 'homepage', 'language', 'countries', 'region', 'category', 'tags',
-        'perspective', 'mediaType', 'format', 'official', 'active', 'lastCheckedAt', 'lastItemPublishedAt', 'healthScore', 'notes', 'description'
+        'perspective', 'mediaType', 'format', 'official', 'active', 'lastCheckedAt', 'lastItemPublishedAt', 'healthScore', 'notes', 'description', 'alwaysSchedule'
     ].join(',');
     const csvRows = feeds.map((feed) => [
         feed.id,
@@ -411,7 +411,7 @@ async function main(): Promise<void> {
         feed.lastCheckedAt ?? '',
         feed.lastItemPublishedAt ?? '',
         feed.healthScore ?? '',
-        feed.notes ?? '', feed.description ?? ''
+        feed.notes ?? '', feed.description ?? '', feed.alwaysSchedule ?? ''
     ].map((v) => escapeCsv(v, { formulaSafe: true })).join(','));
 
     await writeFile(resolve(distPath, 'feeds.csv'), `${csvHeader}\n${csvRows.join('\n')}\n`, 'utf8');

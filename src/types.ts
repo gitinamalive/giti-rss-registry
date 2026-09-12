@@ -71,6 +71,8 @@ export interface FeedEntry {
   description?: string;
   coverageType?: CoverageType;
   publisherCountries?: string[];
+  /** Keep a verified coverage feed in every scheduled ingestion batch. */
+  alwaysSchedule?: boolean;
 }
 
 export interface BootstrapPayload {

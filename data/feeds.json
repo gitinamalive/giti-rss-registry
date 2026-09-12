@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-23T19:32:16.046Z",
+  "generatedAt": "2026-09-11T17:47:38.564Z",
   "source": "public-rss-registry/data/feeds.json (hand-curated)",
   "stats": {
-    "feeds": 401,
+    "feeds": 405,
     "duplicateIds": 0,
     "duplicateUrls": 0
   },
@@ -661,6 +661,7 @@
       "category": "world",
       "mediaType": "broadcast",
       "format": "rss",
+      "alwaysSchedule": true,
       "perspective": "regional",
       "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
     },
@@ -868,6 +869,7 @@
       "category": "world",
       "format": "rss",
       "mediaType": "radio",
+      "alwaysSchedule": true,
       "perspective": "regional",
       "description": "Radio New Zealand Pacific service. Regional aggregator covering 14 Pacific island nations"
     },
@@ -1800,7 +1802,8 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "alwaysSchedule": true
     },
     {
       "id": "kvf-faroe-islands-0c0ca6d5",
@@ -4787,6 +4790,7 @@
       "category": "world",
       "mediaType": "tv",
       "format": "rss",
+      "alwaysSchedule": true,
       "homepage": "https://www.skynewsarabia.com",
       "description": "Sky News Arabia — 24/7 Arabic news."
     },
@@ -5968,6 +5972,82 @@
       "coverageType": "regional",
       "perspective": "regional",
       "notes": "France 24 Afrique provides a French-language regional perspective for countries where local RSS coverage is limited. The RSS endpoint returned an HTTP response but was blocked from HTML rendering during vetting; live XML and proxy accessibility remain verification tasks.\n\nSources:\n  [1] https://www.france24.com/fr/afrique/rss\n  [2] https://www.france24.com/fr/afrique/"
+    },
+    {
+      "id": "kuwait-times-8dec2932",
+      "name": "Kuwait Times - Latest",
+      "publisher": "Kuwait Times",
+      "url": "https://kuwaittimes.com/rssFeed/0",
+      "language": "en",
+      "countries": [
+        "KW"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "alwaysSchedule": true,
+      "homepage": "https://kuwaittimes.com/rss/",
+      "region": "Middle East",
+      "coverageType": "national",
+      "perspective": "independent",
+      "notes": "Official Kuwait Times RSS directory lists this endpoint as its latest-articles feed. The endpoint returns RSS/XML; item parsing should be monitored by the registry health check.\n\nSources:\n  [1] https://kuwaittimes.com/rss/\n  [2] https://kuwaittimes.com/rssFeed/0"
+    },
+    {
+      "id": "gulf-today-6ef79262",
+      "name": "Gulf Today - Latest",
+      "publisher": "Gulf Today",
+      "url": "https://www.gulftoday.ae/rssFeed/0/",
+      "language": "en",
+      "countries": [
+        "AE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "alwaysSchedule": true,
+      "homepage": "https://www.gulftoday.ae/rss",
+      "region": "Middle East",
+      "coverageType": "regional",
+      "perspective": "regional",
+      "notes": "Official Gulf Today RSS directory lists this endpoint as its latest-news feed and identifies Gulf Today as a UAE news publisher. The endpoint returns RSS/XML; item parsing should be monitored by the registry health check.\n\nSources:\n  [1] https://www.gulftoday.ae/rss\n  [2] https://www.gulftoday.ae/rssFeed/0/"
+    },
+    {
+      "id": "meed-40c15a24",
+      "name": "MEED - UAE",
+      "publisher": "MEED",
+      "url": "https://www.meed.com/countries/gcc/uae/rss/feed",
+      "language": "en",
+      "countries": [
+        "AE"
+      ],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss",
+      "alwaysSchedule": true,
+      "homepage": "https://www.meed.com",
+      "region": "Middle East",
+      "coverageType": "national",
+      "perspective": "independent",
+      "notes": "MEED's official RSS directory exposes a country feed for UAE. The endpoint returns application/rss+xml; item parsing and access policy should be monitored by the registry health check.\n\nSources:\n  [1] https://www.meed.com/rss-feeds\n  [2] https://www.meed.com/countries/gcc/uae/rss/feed"
+    },
+    {
+      "id": "meed-fb0cc5ec",
+      "name": "MEED - Kuwait",
+      "publisher": "MEED",
+      "url": "https://www.meed.com/countries/gcc/kuwait/rss/feed",
+      "language": "en",
+      "countries": [
+        "KW"
+      ],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss",
+      "alwaysSchedule": true,
+      "homepage": "https://www.meed.com",
+      "region": "Middle East",
+      "coverageType": "national",
+      "perspective": "independent",
+      "notes": "MEED's official RSS directory exposes a country feed for Kuwait. The endpoint returns application/rss+xml; item parsing and access policy should be monitored by the registry health check.\n\nSources:\n  [1] https://www.meed.com/rss-feeds\n  [2] https://www.meed.com/countries/gcc/kuwait/rss/feed"
     },
     {
       "id": "deutsche-welle-4bb7073b",

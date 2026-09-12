@@ -22,14 +22,14 @@ async function fileHash(): Promise<string> {
 }
 
 describe('source data integrity', () => {
-    it('matches the current registry contract (401 feeds / 15 categories / 206 countries / 164 descriptions / 8 official / 44 perspectives)', async () => {
+    it('matches the current registry contract (405 feeds / 15 categories / 206 countries / 164 descriptions / 8 official / 48 perspectives)', async () => {
         const { feeds } = await loadPayload();
-        expect(feeds.length).toBe(401);
+        expect(feeds.length).toBe(405);
         expect(new Set(feeds.map((f) => f.category)).size).toBe(15);
         expect(new Set(feeds.flatMap((f) => f.countries)).size).toBe(206);
         expect(feeds.filter((f) => f.description).length).toBe(164);
         expect(feeds.filter((f) => f.official).length).toBe(8);
-        expect(feeds.filter((f) => f.perspective).length).toBe(44);
+        expect(feeds.filter((f) => f.perspective).length).toBe(48);
     });
 
     it('declares stats/warnings that match the actual feeds array', async () => {

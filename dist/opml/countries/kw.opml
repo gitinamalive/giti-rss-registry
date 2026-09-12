@@ -2,9 +2,11 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: KW</title>
-    <dateCreated>Sun, 23 Aug 2026 19:32:16 GMT</dateCreated>
+    <dateCreated>Fri, 11 Sep 2026 17:47:38 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="BBC News - Middle East" title="BBC News - Middle East" xmlUrl="https://feeds.bbci.co.uk/news/world/middle_east/rss.xml" />
+    <outline type="rss" text="Kuwait Times - Latest" title="Kuwait Times - Latest" xmlUrl="https://kuwaittimes.com/rssFeed/0" />
+    <outline type="rss" text="MEED - Kuwait" title="MEED - Kuwait" xmlUrl="https://www.meed.com/countries/gcc/kuwait/rss/feed" />
   </body>
 </opml>

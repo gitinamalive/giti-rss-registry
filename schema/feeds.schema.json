@@ -68,7 +68,8 @@
         "publisherCountries": {
           "type": "array",
           "items": { "type": "string", "pattern": "^[A-Z]{2}$" }
-        }
+        },
+        "alwaysSchedule": { "type": "boolean" }
       },
       "additionalProperties": false
     },

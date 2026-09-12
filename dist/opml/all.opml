@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — All Feeds</title>
-    <dateCreated>Sun, 23 Aug 2026 19:32:16 GMT</dateCreated>
+    <dateCreated>Fri, 11 Sep 2026 17:47:38 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="24.kg" title="24.kg" xmlUrl="https://24.kg/rss/" />
@@ -149,6 +149,7 @@
     <outline type="rss" text="Google DeepMind Blog" title="Google DeepMind Blog" xmlUrl="https://deepmind.google/blog/rss.xml" />
     <outline type="rss" text="Grist" title="Grist" xmlUrl="https://grist.org/feed/" />
     <outline type="rss" text="Guineenews" title="Guineenews" xmlUrl="https://guineenews.org/feed/" />
+    <outline type="rss" text="Gulf Today - Latest" title="Gulf Today - Latest" xmlUrl="https://www.gulftoday.ae/rssFeed/0/" />
     <outline type="rss" text="Hacker News" title="Hacker News" xmlUrl="https://feeds.hnrss.org/frontpage" />
     <outline type="rss" text="Haiti Libre" title="Haiti Libre" xmlUrl="https://www.haitilibre.com/rss-flash-en.xml" />
     <outline type="rss" text="Hespress" title="Hespress" xmlUrl="https://www.hespress.com/feed/index.rss" />
@@ -180,6 +181,7 @@
     <outline type="rss" text="Korea Herald" title="Korea Herald" xmlUrl="https://www.koreaherald.com/rss/feed.php" />
     <outline type="rss" text="Krone.at" title="Krone.at" xmlUrl="https://www.krone.at/Nachrichten/rss.html" />
     <outline type="rss" text="Kuensel" title="Kuensel" xmlUrl="https://kuenselonline.com/feed/" />
+    <outline type="rss" text="Kuwait Times - Latest" title="Kuwait Times - Latest" xmlUrl="https://kuwaittimes.com/rssFeed/0" />
     <outline type="rss" text="KVF Faroe Islands" title="KVF Faroe Islands" xmlUrl="https://kvf.fo/rss" />
     <outline type="rss" text="La Libre" title="La Libre" xmlUrl="https://www.lalibre.be/rss" />
     <outline type="rss" text="La Nacion" title="La Nacion" xmlUrl="https://www.nacion.com/rss/" />
@@ -209,6 +211,8 @@
     <outline type="rss" text="Medical News Today" title="Medical News Today" xmlUrl="https://www.medicalnewstoday.com/feeds/" />
     <outline type="rss" text="MedPage Today" title="MedPage Today" xmlUrl="https://www.medpagetoday.com/rss/headlines.xml" />
     <outline type="rss" text="Meduza" title="Meduza" xmlUrl="https://meduza.io/rss/all" />
+    <outline type="rss" text="MEED - Kuwait" title="MEED - Kuwait" xmlUrl="https://www.meed.com/countries/gcc/kuwait/rss/feed" />
+    <outline type="rss" text="MEED - UAE" title="MEED - UAE" xmlUrl="https://www.meed.com/countries/gcc/uae/rss/feed" />
     <outline type="rss" text="Mehr News" title="Mehr News" xmlUrl="https://en.mehrnews.com/rss" />
     <outline type="rss" text="MercoPress" title="MercoPress" xmlUrl="https://en.mercopress.com/rss" />
     <outline type="rss" text="MercoPress Argentina" title="MercoPress Argentina" xmlUrl="https://en.mercopress.com/rss/argentina" />

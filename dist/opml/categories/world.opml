@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: world</title>
-    <dateCreated>Sun, 23 Aug 2026 19:32:16 GMT</dateCreated>
+    <dateCreated>Fri, 11 Sep 2026 17:47:38 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="24.kg" title="24.kg" xmlUrl="https://24.kg/rss/" />
@@ -83,6 +83,7 @@
     <outline type="rss" text="Giornale.sm" title="Giornale.sm" xmlUrl="https://giornalesm.com/feed/" />
     <outline type="rss" text="Global News" title="Global News" xmlUrl="https://globalnews.ca/feed/" />
     <outline type="rss" text="Guineenews" title="Guineenews" xmlUrl="https://guineenews.org/feed/" />
+    <outline type="rss" text="Gulf Today - Latest" title="Gulf Today - Latest" xmlUrl="https://www.gulftoday.ae/rssFeed/0/" />
     <outline type="rss" text="Haiti Libre" title="Haiti Libre" xmlUrl="https://www.haitilibre.com/rss-flash-en.xml" />
     <outline type="rss" text="Hespress" title="Hespress" xmlUrl="https://www.hespress.com/feed/index.rss" />
     <outline type="rss" text="Honduras.com" title="Honduras.com" xmlUrl="https://www.honduras.com/feed/" />
@@ -101,6 +102,7 @@
     <outline type="rss" text="KBS World" title="KBS World" xmlUrl="https://world.kbs.co.kr/rss/rss_podcast.htm?lang=e" />
     <outline type="rss" text="Korea Herald" title="Korea Herald" xmlUrl="https://www.koreaherald.com/rss/feed.php" />
     <outline type="rss" text="Kuensel" title="Kuensel" xmlUrl="https://kuenselonline.com/feed/" />
+    <outline type="rss" text="Kuwait Times - Latest" title="Kuwait Times - Latest" xmlUrl="https://kuwaittimes.com/rssFeed/0" />
     <outline type="rss" text="KVF Faroe Islands" title="KVF Faroe Islands" xmlUrl="https://kvf.fo/rss" />
     <outline type="rss" text="La Nacion" title="La Nacion" xmlUrl="https://www.nacion.com/rss/" />
     <outline type="rss" text="La Nueva Radio YA" title="La Nueva Radio YA" xmlUrl="https://nuevaya.com.ni/feed/" />

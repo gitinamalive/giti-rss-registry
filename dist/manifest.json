@@ -1,14 +1,14 @@
 {
   "schemaVersion": "1.0.0",
   "generatorVersion": "1.1.0",
-  "sourceCommit": "a72679915eeb9d3ad26392d7f6e804b5a4fa9a53",
-  "sourceChecksum": "81c021cf7ad9ecb655f7bd0cc5c26362d8c4d777411c9ed1c809f46b61636640",
-  "generatedAt": "2026-08-29T07:11:09.911Z",
+  "sourceCommit": "0e5daf8919e78b1942965dea2d8696e72421f978",
+  "sourceChecksum": "c6b6450b773bcd853a9ed952c7a191d0949179700a18113d3fca627fea17af03",
+  "generatedAt": "2026-09-12T03:29:14.893Z",
   "artifactCounts": {
-    "feeds": 401,
+    "feeds": 405,
     "countries": 206,
     "categories": 15,
-    "publishers": 357,
+    "publishers": 360,
     "languages": 38,
     "opml": 222,
     "possibleDuplicates": 0

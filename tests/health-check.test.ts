@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import {
     checkFeed,
     isPublicHttpUrl,
@@ -72,36 +72,41 @@ describe('public redirect safety', () => {
 
 describe('health history overlay', () => {
     it('preserves failure history across weekly checks and resets on success', () => {
-        let prior = undefined;
-        for (let week = 1; week <= 4; week += 1) {
-            prior = mergeHealthEntry(feed.id, {
-                status: 503,
-                reachable: false,
-                contentValid: false,
-                failureStatus: 'unreachable',
-            }, `2026-08-${String(week).padStart(2, '0')}T00:00:00.000Z`, prior);
-        }
-        expect(prior).toMatchObject({
-            consecutiveFailures: 4,
-            lastSuccessAt: null,
-            lastFailureAt: '2026-08-04T00:00:00.000Z',
-            healthStatus: 'unreachable',
-            defaultSuggestion: false,
-        });
+        vi.useFakeTimers({ now: new Date('2026-08-26T12:00:00.000Z') });
+        try {
+            let prior = undefined;
+            for (let week = 1; week <= 4; week += 1) {
+                prior = mergeHealthEntry(feed.id, {
+                    status: 503,
+                    reachable: false,
+                    contentValid: false,
+                    failureStatus: 'unreachable',
+                }, `2026-08-${String(week).padStart(2, '0')}T00:00:00.000Z`, prior);
+            }
+            expect(prior).toMatchObject({
+                consecutiveFailures: 4,
+                lastSuccessAt: null,
+                lastFailureAt: '2026-08-04T00:00:00.000Z',
+                healthStatus: 'unreachable',
+                defaultSuggestion: false,
+            });
 
-        const recovered = mergeHealthEntry(feed.id, {
-            status: 200,
-            reachable: true,
-            contentValid: true,
-            format: 'rss',
-            lastItemDate: '2026-08-26T00:00:00.000Z',
-        }, '2026-08-05T00:00:00.000Z', prior);
-        expect(recovered).toMatchObject({
-            consecutiveFailures: 0,
-            lastSuccessAt: '2026-08-05T00:00:00.000Z',
-            lastFailureAt: '2026-08-04T00:00:00.000Z',
-            healthStatus: 'fresh',
-        });
+            const recovered = mergeHealthEntry(feed.id, {
+                status: 200,
+                reachable: true,
+                contentValid: true,
+                format: 'rss',
+                lastItemDate: '2026-08-26T00:00:00.000Z',
+            }, '2026-08-05T00:00:00.000Z', prior);
+            expect(recovered).toMatchObject({
+                consecutiveFailures: 0,
+                lastSuccessAt: '2026-08-05T00:00:00.000Z',
+                lastFailureAt: '2026-08-04T00:00:00.000Z',
+                healthStatus: 'fresh',
+            });
+        } finally {
+            vi.useRealTimers();
+        }
     });
 
     it('keeps stale content separate from dead links', () => {
