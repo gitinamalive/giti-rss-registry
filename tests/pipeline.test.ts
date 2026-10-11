@@ -30,7 +30,7 @@ describe('source data integrity', () => {
         expect(feeds.some((f) => Boolean(f.description))).toBe(true);
         expect(feeds.some((f) => Boolean(f.official))).toBe(true);
         expect(feeds.some((f) => Boolean(f.perspective))).toBe(true);
-    });;
+    });
 
     it('declares stats/warnings that match the actual feeds array', async () => {
         const payload = await loadPayload();
