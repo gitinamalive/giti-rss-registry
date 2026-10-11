@@ -1,5 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { isIP } from 'node:net';
 import { pathToFileURL } from 'node:url';
 import {
     type BootstrapPayload,
@@ -81,15 +82,19 @@ function isPublicHostname(value: string): boolean {
         )
             return false;
 
-        // IPv6 loopback / ULA / link-local
-        if (
-            host === '::1' ||
-            host === '[::1]' ||
-            host.startsWith('fc') ||
-            host.startsWith('fd') ||
-            host.startsWith('fe80:')
-        )
-            return false;
+        // Apply IPv6 range checks only to literal IPv6 addresses. The URL
+        // hostname includes brackets for IPv6 literals in Node.
+        const ipv6Address = host.startsWith('[') && host.endsWith(']') ? host.slice(1, -1) : host;
+        if (isIP(ipv6Address) === 6) {
+            const firstHextet = ipv6Address.split(':', 1)[0].padEnd(4, '0');
+            if (
+                ipv6Address === '::1' ||
+                firstHextet.startsWith('fc') || // fc00::/7 unique-local
+                firstHextet.startsWith('fd') ||
+                /^fe[89ab]/.test(firstHextet) // fe80::/10 link-local
+            )
+                return false;
+        }
 
         return true;
     } catch {
