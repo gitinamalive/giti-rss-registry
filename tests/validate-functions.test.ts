@@ -68,6 +68,8 @@ describe('isPublicHostname', () => {
     it('accepts public domains', () => {
         expect(isPublicHostname('https://feeds.npr.org/rss.xml')).toBe(true);
         expect(isPublicHostname('https://www.bbc.com/feed.rss')).toBe(true);
+        expect(isPublicHostname('https://fda.gov/feed.xml')).toBe(true);
+        expect(isPublicHostname('https://fcbarcelona.com/feed.xml')).toBe(true);
     });
 
     it('rejects localhost', () => {
@@ -89,6 +91,12 @@ describe('isPublicHostname', () => {
     it('rejects IPv6 loopback', () => {
         expect(isPublicHostname('http://[::1]/feed')).toBe(false);
         expect(isPublicHostname('http://::1/feed')).toBe(false);
+    });
+
+    it('rejects IPv6 unique-local and link-local literals', () => {
+        expect(isPublicHostname('http://[fc00::1]/feed')).toBe(false);
+        expect(isPublicHostname('http://[fd12:3456::1]/feed')).toBe(false);
+        expect(isPublicHostname('http://[fe80::1]/feed')).toBe(false);
     });
 
     it('rejects invalid URLs gracefully', () => {
