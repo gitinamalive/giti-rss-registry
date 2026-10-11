@@ -8341,6 +8341,20 @@
       "format": "rss"
     },
     {
+      "id": "france-24-4f802a5f",
+      "name": "France 24 — French",
+      "publisher": "France 24",
+      "url": "https://www.france24.com/fr/rss",
+      "language": "fr",
+      "countries": [
+        "FR"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "alwaysSchedule": true
+    },
+    {
       "id": "france-24-arabic-da663d36",
       "name": "France 24 Arabic",
       "publisher": "France 24",
@@ -8360,7 +8374,7 @@
       "name": "Le Monde",
       "publisher": "Le Monde",
       "url": "https://www.lemonde.fr/en/rss/une.xml",
-      "language": "fr",
+      "language": "en",
       "countries": [
         "FR"
       ],
@@ -12292,7 +12306,8 @@
       "mediaType": "print",
       "format": "rss",
       "homepage": "https://mainichi.jp",
-      "description": "Mainichi Shimbun — Japanese daily newspaper."
+      "description": "Mainichi Shimbun — Japanese daily newspaper.",
+      "alwaysSchedule": true
     },
     {
       "id": "nhk-4c3d8382",

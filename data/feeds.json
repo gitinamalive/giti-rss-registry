@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-11T17:47:38.564Z",
+  "generatedAt": "2026-10-11T02:41:40.000Z",
   "source": "public-rss-registry/data/feeds.json (hand-curated)",
   "stats": {
-    "feeds": 405,
+    "feeds": 406,
     "duplicateIds": 0,
     "duplicateUrls": 0
   },
@@ -306,11 +306,25 @@
       "format": "rss"
     },
     {
+      "id": "france-24-4f802a5f",
+      "name": "France 24 — French",
+      "publisher": "France 24",
+      "url": "https://www.france24.com/fr/rss",
+      "language": "fr",
+      "countries": [
+        "FR"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "alwaysSchedule": true
+    },
+    {
       "id": "le-monde-fc3ded1a",
       "name": "Le Monde",
       "publisher": "Le Monde",
       "url": "https://www.lemonde.fr/en/rss/une.xml",
-      "language": "fr",
+      "language": "en",
       "countries": [
         "FR"
       ],
@@ -5063,7 +5077,8 @@
       "mediaType": "print",
       "format": "rss",
       "homepage": "https://mainichi.jp",
-      "description": "Mainichi Shimbun — Japanese daily newspaper."
+      "description": "Mainichi Shimbun — Japanese daily newspaper.",
+      "alwaysSchedule": true
     },
     {
       "id": "nhk-news-japanese-e5d45312",

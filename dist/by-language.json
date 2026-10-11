@@ -2470,6 +2470,19 @@
       "description": "On-the-ground reporting contextualizing Latin America's role in global affairs"
     },
     {
+      "id": "le-monde-fc3ded1a",
+      "name": "Le Monde",
+      "publisher": "Le Monde",
+      "url": "https://www.lemonde.fr/en/rss/une.xml",
+      "language": "en",
+      "countries": [
+        "FR"
+      ],
+      "category": "europe",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
       "id": "leaders-com-tn-d5f2e2f8",
       "name": "leaders.com.tn",
       "publisher": "leaders.com.tn",
@@ -5392,6 +5405,20 @@
       "format": "rss"
     },
     {
+      "id": "france-24-4f802a5f",
+      "name": "France 24 — French",
+      "publisher": "France 24",
+      "url": "https://www.france24.com/fr/rss",
+      "language": "fr",
+      "countries": [
+        "FR"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "alwaysSchedule": true
+    },
+    {
       "id": "france-24-7de99109",
       "name": "France 24 Afrique",
       "publisher": "France 24",
@@ -5471,19 +5498,6 @@
       "language": "fr",
       "countries": [
         "BE"
-      ],
-      "category": "europe",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
-      "id": "le-monde-fc3ded1a",
-      "name": "Le Monde",
-      "publisher": "Le Monde",
-      "url": "https://www.lemonde.fr/en/rss/une.xml",
-      "language": "fr",
-      "countries": [
-        "FR"
       ],
       "category": "europe",
       "mediaType": "digital",
@@ -5673,7 +5687,8 @@
       "mediaType": "print",
       "format": "rss",
       "homepage": "https://mainichi.jp",
-      "description": "Mainichi Shimbun — Japanese daily newspaper."
+      "description": "Mainichi Shimbun — Japanese daily newspaper.",
+      "alwaysSchedule": true
     },
     {
       "id": "nhk-news-japanese-e5d45312",

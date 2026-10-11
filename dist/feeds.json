@@ -294,11 +294,25 @@
     "format": "rss"
   },
   {
+    "id": "france-24-4f802a5f",
+    "name": "France 24 — French",
+    "publisher": "France 24",
+    "url": "https://www.france24.com/fr/rss",
+    "language": "fr",
+    "countries": [
+      "FR"
+    ],
+    "category": "world",
+    "mediaType": "broadcast",
+    "format": "rss",
+    "alwaysSchedule": true
+  },
+  {
     "id": "le-monde-fc3ded1a",
     "name": "Le Monde",
     "publisher": "Le Monde",
     "url": "https://www.lemonde.fr/en/rss/une.xml",
-    "language": "fr",
+    "language": "en",
     "countries": [
       "FR"
     ],
@@ -2021,7 +2035,7 @@
     "name": "Ahewar.org",
     "publisher": "Ahewar.org",
     "url": "https://www.ahewar.org/rss/default.asp?lt=7",
-    "language": "ar",
+    "language": "en",
     "countries": [
       "IQ"
     ],
@@ -5051,7 +5065,8 @@
     "mediaType": "print",
     "format": "rss",
     "homepage": "https://mainichi.jp",
-    "description": "Mainichi Shimbun — Japanese daily newspaper."
+    "description": "Mainichi Shimbun — Japanese daily newspaper.",
+    "alwaysSchedule": true
   },
   {
     "id": "nhk-news-japanese-e5d45312",

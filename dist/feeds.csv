@@ -21,7 +21,8 @@ abc-news-158fcc48,ABC News,ABC News,https://www.abc.net.au/news/feed/51120/rss.x
 g1-11fa6d52,G1 (Globo),G1,https://g1.globo.com/rss/g1/,,pt,BR,,world,,,digital,rss,,,,,,,,
 vanguard-news-108776b9,Vanguard News,Vanguard News,https://www.vanguardngr.com/category/national-news/feed/,,en,NG,,world,,,digital,rss,,,,,,,,
 france-24-e1f73e0e,France 24,France 24,https://www.france24.com/en/rss,,en,FR,,europe,,,broadcast,rss,,,,,,,,
-le-monde-fc3ded1a,Le Monde,Le Monde,https://www.lemonde.fr/en/rss/une.xml,,fr,FR,,europe,,,digital,rss,,,,,,,,
+france-24-4f802a5f,France 24 — French,France 24,https://www.france24.com/fr/rss,,fr,FR,,world,,,broadcast,rss,,,,,,,,true
+le-monde-fc3ded1a,Le Monde,Le Monde,https://www.lemonde.fr/en/rss/une.xml,,en,FR,,europe,,,digital,rss,,,,,,,,
 deutsche-welle-7c0d50d2,Deutsche Welle (EN),Deutsche Welle,https://rss.dw.com/rdf/rss-en-all,,de,DE,,europe,,,broadcast,rdf,,,,,,,,
 der-spiegel-2bcc7bc8,Der Spiegel — International,Der Spiegel,https://www.spiegel.de/international/index.rss,,en,DE,,europe,,,digital,rss,,,,,,,,
 the-hindu-a7a1378f,The Hindu,The Hindu,https://www.thehindu.com/news/national/feeder/default.rss,,en,IN,,world,,,digital,rss,,,,,,,,
@@ -204,7 +205,7 @@ index-d93ff4bc,Index,Index,https://index.hu/24ora/rss,,hu,HU,,europe,,,digital,r
 irish-independent-bb1e3229,Irish Independent,Irish Independent,https://www.independent.ie/irish-news/rss,,en,IE,,europe,,,digital,rss,,,,,,,,
 ynet-aa480431,Ynet,Ynet,https://www.ynet.co.il/Integration/StoryRss3082.xml,,en,IL,,world,,,digital,rss,,,,,,,,
 3fm-dd33aaf9,3FM,3FM,https://www.three.fm/news/isle-of-man-news/feed.xml,,en,IM,,world,,,digital,rss,,,,,,,,
-ahewar-org-e0c08e67,Ahewar.org,Ahewar.org,https://www.ahewar.org/rss/default.asp?lt=7,,ar,IQ,,world,,,digital,rss,,,,,,,,
+ahewar-org-e0c08e67,Ahewar.org,Ahewar.org,https://www.ahewar.org/rss/default.asp?lt=7,,en,IQ,,world,,,digital,rss,,,,,,,,
 irna-news-34bf5372,IRNA News,IRNA News,https://en.irna.ir/rss,,en,IR,,world,,state-affiliated,digital,rss,,,,,,"Official state news agency of the Islamic Republic of Iran. Operates under the Ministry of Culture and Islamic Guidance, which appoints its leadership. State Media Monitor reports 80%+ of budget sourced from government.
 
 Sources:
@@ -416,7 +417,7 @@ p-blico-7135869a,Público,Público,https://feeds.publico.pt/publico/UltimasNotic
 bbc-russian-27d98ae3,BBC Russian,BBC,https://feeds.bbci.co.uk/russian/rss.xml,https://www.bbc.com/russian,ru,GB,,world,,,broadcast,rss,,,,,,,BBC Russian news service.,
 meduza-fecba09f,Meduza,Meduza,https://meduza.io/rss/all,https://meduza.io,ru,LV,,world,,independent-exile,digital,rss,,,,,,,Meduza — independent Russian-language news outlet based in Latvia.,
 asahi-shimbun-japanese-f4e45e49,Asahi Shimbun — Japanese,Asahi Shimbun,https://www.asahi.com/rss/asahi/newsheadlines.rdf,https://www.asahi.com,ja,JP,,world,,,print,rdf,,,,,,,Asahi Shimbun — major Japanese daily newspaper (Japanese edition).,
-mainichi-shimbun-333fb4c0,Mainichi Shimbun,Mainichi Shimbun,https://mainichi.jp/rss/etc/mainichi-flash.rss,https://mainichi.jp,ja,JP,,world,,,print,rss,,,,,,,Mainichi Shimbun — Japanese daily newspaper.,
+mainichi-shimbun-333fb4c0,Mainichi Shimbun,Mainichi Shimbun,https://mainichi.jp/rss/etc/mainichi-flash.rss,https://mainichi.jp,ja,JP,,world,,,print,rss,,,,,,,Mainichi Shimbun — Japanese daily newspaper.,true
 nhk-news-japanese-e5d45312,NHK News — Japanese,NHK,https://www3.nhk.or.jp/rss/news/cat0.xml,https://www3.nhk.or.jp/news/,ja,JP,,world,,,broadcast,rss,,,,,,,NHK News — Japan's public broadcaster (Japanese edition).,
 yonhap-news-3e30b331,Yonhap News,Yonhap,https://www.yna.co.kr/rss/headline.xml,https://www.yna.co.kr,ko,KR,,world,,,wire,rss,,,,,,,Yonhap News — South Korea's largest news agency (Korean edition).,
 korea-herald-c4218c8a,Korea Herald,Korea Herald,https://www.koreaherald.com/rss/feed.php,https://www.koreaherald.com,en,KR,,world,,,print,rss,,,,,,,Korea Herald — English-language daily from South Korea.,
