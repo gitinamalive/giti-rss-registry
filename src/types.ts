@@ -73,6 +73,10 @@ export interface FeedEntry {
   publisherCountries?: string[];
   /** Keep a verified coverage feed in every scheduled ingestion batch. */
   alwaysSchedule?: boolean;
+  /** Provenance metadata describing source origin/importer attribution. */
+  sourceAttribution?: string;
+  /** Content distribution license or terms indicator. */
+  license?: string;
 }
 
 export interface BootstrapPayload {

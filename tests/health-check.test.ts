@@ -9,6 +9,7 @@ import {
     readExistingOverlay,
     type Fetcher,
 } from '../scripts/health-check.ts';
+import { deriveQuarantineStatus } from '../src/health.ts';
 import type { FeedEntry } from '../src/types.ts';
 
 const feed: FeedEntry = {
@@ -222,5 +223,114 @@ describe('fail-closed health history overlay', () => {
         }, '2026-08-26T00:00:00.000Z');
         expect(result.healthStatus).toBe('stale-content');
         expect(result.active).toBe(true);
+        expect(result.failureReason).toBe('stale_content');
+    });
+});
+
+describe('quarantine policy and capability telemetry', () => {
+    it('derives correct quarantine status across failure counts', () => {
+        expect(deriveQuarantineStatus(0)).toBe('active');
+        expect(deriveQuarantineStatus(1)).toBe('degraded');
+        expect(deriveQuarantineStatus(2)).toBe('degraded');
+        expect(deriveQuarantineStatus(3)).toBe('degraded');
+        expect(deriveQuarantineStatus(4)).toBe('quarantined');
+        expect(deriveQuarantineStatus(10)).toBe('quarantined');
+    });
+
+    it('categorizes HTTP 4xx and 5xx failure reasons', async () => {
+        const fetch404: Fetcher = async () => new Response('Not Found', { status: 404 });
+        const res404 = await checkFeed(feed, { fetcher: fetch404, resolveHost: publicResolver });
+        expect(res404.reachable).toBe(false);
+        expect(res404.failureReason).toBe('http_4xx');
+
+        const fetch503: Fetcher = async () => new Response('Unavailable', { status: 503 });
+        const res503 = await checkFeed(feed, { fetcher: fetch503, resolveHost: publicResolver });
+        expect(res503.reachable).toBe(false);
+        expect(res503.failureReason).toBe('http_5xx');
+    });
+
+    it('categorizes timeout failure reasons', async () => {
+        const timeoutFetcher: Fetcher = async () => {
+            const err = new Error('The operation was aborted');
+            err.name = 'AbortError';
+            throw err;
+        };
+        const resTimeout = await checkFeed(feed, { fetcher: timeoutFetcher, resolveHost: publicResolver });
+        expect(resTimeout.reachable).toBe(false);
+        expect(resTimeout.failureReason).toBe('timeout');
+    });
+
+    it('categorizes SSRF block as ssrf_blocked', async () => {
+        const localFeed = { ...feed, url: 'http://127.0.0.1/feed.xml' };
+        const res = await checkFeed(localFeed, { resolveHost: publicResolver });
+        expect(res.reachable).toBe(false);
+        expect(res.failureReason).toBe('ssrf_blocked');
+    });
+
+    it('detects permanent redirect URL on 301/308 and distinguishes from 302', async () => {
+        // Permanent 301 redirect
+        const fetcher301: Fetcher = async (input, init) => {
+            if (init?.method === 'HEAD') return new Response(null, { status: 405 });
+            if (String(input) === feed.url) {
+                return new Response(null, { status: 301, headers: { location: 'https://example.com/new-feed.xml' } });
+            }
+            return new Response('<rss><channel><item><pubDate>2026-08-26T00:00:00Z</pubDate></item></channel></rss>', {
+                status: 200,
+            });
+        };
+
+        const result301 = await checkFeed(feed, { fetcher: fetcher301, resolveHost: publicResolver });
+        expect(result301.reachable).toBe(true);
+        expect(result301.capabilities?.permanentRedirectUrl).toBe('https://example.com/new-feed.xml');
+        expect(result301.capabilities?.supportsHttps).toBe(true);
+
+        // Temporary 302 redirect
+        const fetcher302: Fetcher = async (input, init) => {
+            if (init?.method === 'HEAD') return new Response(null, { status: 405 });
+            if (String(input) === feed.url) {
+                return new Response(null, { status: 302, headers: { location: 'https://example.com/temp-feed.xml' } });
+            }
+            return new Response('<rss><channel><item><pubDate>2026-08-26T00:00:00Z</pubDate></item></channel></rss>', {
+                status: 200,
+            });
+        };
+
+        const result302 = await checkFeed(feed, { fetcher: fetcher302, resolveHost: publicResolver });
+        expect(result302.reachable).toBe(true);
+        expect(result302.capabilities?.permanentRedirectUrl).toBeNull();
+    });
+
+    it('merges entry with quarantineStatus and capabilities', () => {
+        const degraded = mergeHealthEntry(feed.id, {
+            status: 500,
+            reachable: false,
+            contentValid: false,
+            failureReason: 'http_5xx',
+        }, '2026-08-01T00:00:00Z');
+        expect(degraded.quarantineStatus).toBe('degraded');
+        expect(degraded.consecutiveFailures).toBe(1);
+        expect(degraded.failureReason).toBe('http_5xx');
+
+        const quarantined = mergeHealthEntry(feed.id, {
+            status: 500,
+            reachable: false,
+            contentValid: false,
+            failureReason: 'http_5xx',
+        }, '2026-08-04T00:00:00Z', {
+            ...degraded,
+            consecutiveFailures: 3,
+        });
+        expect(quarantined.quarantineStatus).toBe('quarantined');
+        expect(quarantined.defaultSuggestion).toBe(false);
+
+        const recovered = mergeHealthEntry(feed.id, {
+            status: 200,
+            reachable: true,
+            contentValid: true,
+            lastItemDate: '2026-08-20T00:00:00Z',
+        }, '2026-08-05T00:00:00Z', quarantined);
+        expect(recovered.quarantineStatus).toBe('active');
+        expect(recovered.defaultSuggestion).toBe(true);
+        expect(recovered.failureReason).toBeNull();
     });
 });

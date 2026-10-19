@@ -13,7 +13,7 @@ import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import type { BootstrapPayload, FeedEntry } from '../src/types.ts';
-import type { FeedHealthEntry } from '../src/health.ts';
+import { deriveQuarantineStatus, type FeedHealthEntry } from '../src/health.ts';
 
 export const HEALTH_LABEL = 'health-review';
 export const AUTOMATED_LABEL = 'automated';
@@ -79,7 +79,8 @@ export function extractFeedIdFromIssue(issue: { body?: string | null; title: str
 }
 
 export function buildIssueBody(feed: FeedEntry, health: FeedHealthEntry): string {
-    return [
+    const quarantine = health.quarantineStatus ?? deriveQuarantineStatus(health.consecutiveFailures);
+    const lines = [
         getIssueMarker(feed.id),
         `## Health Review for ${feed.name}`,
         '',
@@ -89,6 +90,12 @@ export function buildIssueBody(feed: FeedEntry, health: FeedHealthEntry): string
         `- **Publisher:** ${feed.publisher}`,
         `- **Countries:** ${(feed.countries || []).join(', ') || 'N/A'}`,
         `- **Health Status:** \`${health.healthStatus}\``,
+        `- **Quarantine Status:** \`${quarantine}\``,
+    ];
+    if (health.failureReason) {
+        lines.push(`- **Failure Reason:** \`${health.failureReason}\``);
+    }
+    lines.push(
         `- **Consecutive Failures:** ${health.consecutiveFailures}`,
         `- **Last Success:** ${health.lastSuccessAt ?? 'never'}`,
         `- **Last Failure:** ${health.lastFailureAt ?? 'unknown'}`,
@@ -97,7 +104,8 @@ export function buildIssueBody(feed: FeedEntry, health: FeedHealthEntry): string
         '> [!NOTE]',
         '> This feed remains in the canonical registry source data and is not auto-deleted.',
         '> It is excluded from default client suggestions until verified healthy.',
-    ].join('\n');
+    );
+    return lines.join('\n');
 }
 
 export function reconcileHealthState(
@@ -143,10 +151,13 @@ export function reconcileHealthState(
 
             const updatedBody = buildIssueBody(feed, health);
 
-            // Check if status or error transition warrants a comment
+            // Check if status, quarantine, or error transition warrants a comment
             let transitionComment: string | undefined;
+            const currentQuarantine = health.quarantineStatus ?? deriveQuarantineStatus(health.consecutiveFailures);
             if (retained.body && !retained.body.includes(health.healthStatus)) {
-                transitionComment = `Health status transition: Feed status changed to **${health.healthStatus}** (consecutive failures: ${health.consecutiveFailures}).`;
+                transitionComment = `Health status transition: Feed status changed to **${health.healthStatus}** (consecutive failures: ${health.consecutiveFailures}, quarantine: ${currentQuarantine}).`;
+            } else if (retained.body && currentQuarantine === 'quarantined' && !retained.body.includes('`quarantined`')) {
+                transitionComment = `Quarantine threshold reached: Feed has failed ${health.consecutiveFailures} consecutive checks and is now **quarantined**.`;
             }
 
             plan.toUpdate.push({

@@ -16,6 +16,9 @@ import type { BootstrapPayload, FeedEntry, FeedFormat } from '../src/types.ts';
 import {
     computeHealthScore,
     deriveHealthStatus,
+    deriveQuarantineStatus,
+    type FailureReason,
+    type FeedCapabilities,
     type FeedHealthEntry,
     type HealthStatus,
 } from '../src/health.ts';
@@ -48,9 +51,11 @@ export interface HealthResult {
     reachable: boolean;
     contentValid: boolean;
     failureStatus?: Extract<HealthStatus, 'unreachable' | 'invalid-content'>;
+    failureReason?: FailureReason;
     lastItemDate?: string;
     format?: FeedFormat;
     finalUrl?: string;
+    capabilities?: FeedCapabilities;
 }
 
 export interface CheckFeedOptions {
@@ -69,6 +74,7 @@ export interface RedirectedResponse {
     response: Response;
     finalUrl: string;
     redirects: string[];
+    permanentRedirectUrl?: string | null;
 }
 
 export interface FollowRedirectsOptions {
@@ -168,6 +174,7 @@ export async function followRedirects(
 ): Promise<RedirectedResponse> {
     let currentUrl = url;
     const redirects: string[] = [];
+    let hasPermanentRedirect = false;
 
     for (let redirectCount = 0; redirectCount <= MAX_REDIRECTS; redirectCount += 1) {
         await assertPublicHttpUrl(currentUrl, options.resolveHost);
@@ -180,7 +187,15 @@ export async function followRedirects(
         });
 
         if (!REDIRECT_STATUSES.has(response.status)) {
-            return { response, finalUrl: currentUrl, redirects };
+            return {
+                response,
+                finalUrl: currentUrl,
+                redirects,
+                permanentRedirectUrl: hasPermanentRedirect && currentUrl !== url ? currentUrl : null,
+            };
+        }
+        if (response.status === 301 || response.status === 308) {
+            hasPermanentRedirect = true;
         }
         if (redirectCount === MAX_REDIRECTS) {
             throw new Error(`Too many redirects for ${url}`);
@@ -426,14 +441,22 @@ export async function checkFeed(feed: FeedEntry, options: CheckFeedOptions = {})
         }
 
         const get = await followRedirects(feed.url, { method: 'GET' }, requestOptions);
+        const capabilities: FeedCapabilities = {
+            supportsHttps: Boolean(get.finalUrl?.startsWith('https://') || feed.url.startsWith('https://')),
+            permanentRedirectUrl: get.permanentRedirectUrl ?? null,
+        };
+
         if (!get.response.ok) {
             await get.response.body?.cancel();
+            const failureReason: FailureReason = get.response.status >= 500 ? 'http_5xx' : 'http_4xx';
             return {
                 status: get.response.status,
                 reachable: false,
                 contentValid: false,
                 failureStatus: 'unreachable',
+                failureReason,
                 finalUrl: get.finalUrl,
+                capabilities,
             };
         }
 
@@ -447,7 +470,9 @@ export async function checkFeed(feed: FeedEntry, options: CheckFeedOptions = {})
                 reachable: false,
                 contentValid: false,
                 failureStatus: 'invalid-content',
+                failureReason: 'invalid_content',
                 finalUrl: get.finalUrl,
+                capabilities,
             };
         }
 
@@ -458,16 +483,35 @@ export async function checkFeed(feed: FeedEntry, options: CheckFeedOptions = {})
             format: content.format,
             lastItemDate: content.lastItemDate,
             finalUrl: get.finalUrl,
+            capabilities,
         };
     } catch (error: unknown) {
+        const errMessage = error instanceof Error ? error.message : String(error);
         const isTimeout =
-            (error instanceof Error && (error.name === 'AbortError' || error.message.includes('Timeout') || error.message.includes('aborted'))) ||
-            (typeof error === 'object' && error !== null && 'name' in error && error.name === 'AbortError');
+            (error instanceof Error && (error.name === 'AbortError' || errMessage.includes('Timeout') || errMessage.includes('aborted'))) ||
+            (typeof error === 'object' && error !== null && 'name' in error && (error as { name?: string }).name === 'AbortError');
+        const isSsrf = errMessage.includes('non-public') || errMessage.includes('not a public HTTP(S) host');
+        const isDns = errMessage.includes('ENOTFOUND') || errMessage.includes('EAI_AGAIN') || errMessage.includes('getaddrinfo');
+
+        let failureReason: FailureReason = 'http_5xx';
+        if (isTimeout) {
+            failureReason = 'timeout';
+        } else if (isSsrf) {
+            failureReason = 'ssrf_blocked';
+        } else if (isDns) {
+            failureReason = 'dns_error';
+        }
+
         return {
             status: isTimeout ? 'timeout' : 'error',
             reachable: false,
             contentValid: false,
             failureStatus: 'unreachable',
+            failureReason,
+            capabilities: {
+                supportsHttps: feed.url.startsWith('https://'),
+                permanentRedirectUrl: null,
+            },
         };
     } finally {
         clearTimeout(timer);
@@ -499,6 +543,15 @@ export function mergeHealthEntry(
     const consecutiveFailures = active ? 0 : (prior?.consecutiveFailures ?? 0) + 1;
     const lastSuccessAt = active ? checkedAt : (prior?.lastSuccessAt ?? null);
     const lastFailureAt = active ? (prior?.lastFailureAt ?? null) : checkedAt;
+    const quarantineStatus = deriveQuarantineStatus(consecutiveFailures);
+    const failureReason: FailureReason | null = active
+        ? (result.lastItemDate ? null : 'stale_content')
+        : (result.failureReason ?? (result.failureStatus === 'invalid-content' ? 'invalid_content' : 'http_5xx'));
+    const capabilities: FeedCapabilities = result.capabilities ?? {
+        supportsHttps: Boolean(result.finalUrl?.startsWith('https://')),
+        permanentRedirectUrl: null,
+    };
+
     return {
         id,
         healthStatus: deriveHealthStatus({
@@ -515,6 +568,9 @@ export function mergeHealthEntry(
         lastSuccessAt,
         lastFailureAt,
         defaultSuggestion: consecutiveFailures < 4,
+        quarantineStatus,
+        failureReason,
+        capabilities,
     };
 }
 
@@ -578,7 +634,16 @@ async function main(): Promise<void> {
         const prior = previous.get(feed.id);
         const result = index < results.length ? results[index] : null;
         if (!result) {
-            return prior ? { ...prior, defaultSuggestion: prior.defaultSuggestion ?? (prior.consecutiveFailures < 4) } : {
+            return prior ? {
+                ...prior,
+                defaultSuggestion: prior.defaultSuggestion ?? (prior.consecutiveFailures < 4),
+                quarantineStatus: prior.quarantineStatus ?? deriveQuarantineStatus(prior.consecutiveFailures),
+                failureReason: prior.failureReason ?? null,
+                capabilities: prior.capabilities ?? {
+                    supportsHttps: feed.url.startsWith('https://'),
+                    permanentRedirectUrl: null,
+                },
+            } : {
                 id: feed.id,
                 healthStatus: 'unchecked',
                 healthScore: null,
@@ -589,6 +654,12 @@ async function main(): Promise<void> {
                 lastSuccessAt: null,
                 lastFailureAt: null,
                 defaultSuggestion: true,
+                quarantineStatus: 'active',
+                failureReason: null,
+                capabilities: {
+                    supportsHttps: feed.url.startsWith('https://'),
+                    permanentRedirectUrl: null,
+                },
             };
         }
 

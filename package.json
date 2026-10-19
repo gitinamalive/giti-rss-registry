@@ -11,6 +11,7 @@
     "validate": "npx tsx scripts/validate.ts && npx tsx scripts/validate-schema.ts",
     "validate:schema": "npx tsx scripts/validate-schema.ts",
     "build": "npx tsx scripts/build-artifacts.ts",
+    "build:artifacts": "npx tsx scripts/build-artifacts.ts",
     "type-check": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",

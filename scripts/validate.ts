@@ -284,6 +284,18 @@ export function validateFeedEntry(feed: FeedEntry, index: number): FeedValidatio
         }
     }
 
+    if (feed.sourceAttribution !== undefined && feed.sourceAttribution !== null) {
+        if (typeof feed.sourceAttribution !== 'string' || feed.sourceAttribution.trim().length === 0) {
+            errors.push(`${prefix}.sourceAttribution must be a non-empty string when provided`);
+        }
+    }
+
+    if (feed.license !== undefined && feed.license !== null) {
+        if (typeof feed.license !== 'string' || feed.license.trim().length === 0) {
+            errors.push(`${prefix}.license must be a non-empty string when provided`);
+        }
+    }
+
     return { errors, warnings };
 }
 

@@ -25,7 +25,6 @@ import {
     type Fetcher,
 } from './health-check.ts';
 import { generateFeedId, normalizeUrl } from '../src/id.ts';
-import { findPossibleDuplicateUrls } from '../src/urlFingerprint.ts';
 import type { BootstrapPayload, FeedCategory, FeedEntry, FeedFormat, MediaType, Perspective } from '../src/types.ts';
 
 export interface ProposedFeedInput {

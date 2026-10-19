@@ -10,8 +10,6 @@ import { findPossibleDuplicateUrls, type PossibleDuplicateFinding } from '../src
 import {
     ISO_3166_1_ALPHA2_COUNTRIES,
     buildCountryCoverageMatrix,
-    isDomesticFeed,
-    type CountryCoverageEntry,
 } from '../src/countries.ts';
 
 const execFileAsync = promisify(execFile);

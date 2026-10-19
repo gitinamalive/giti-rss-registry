@@ -18,6 +18,22 @@ export type HealthStatus =
     | 'unreachable'
     | 'invalid-content';
 
+export type QuarantineStatus = 'active' | 'degraded' | 'quarantined';
+
+export type FailureReason =
+    | 'timeout'
+    | 'http_4xx'
+    | 'http_5xx'
+    | 'dns_error'
+    | 'ssrf_blocked'
+    | 'invalid_content'
+    | 'stale_content';
+
+export interface FeedCapabilities {
+    supportsHttps?: boolean;
+    permanentRedirectUrl?: string | null;
+}
+
 /** Per-feed health overlay entry (keyed by stable feed id). */
 export interface FeedHealthEntry {
     id: string;
@@ -31,6 +47,19 @@ export interface FeedHealthEntry {
     lastFailureAt: string | null;
     /** False after four consecutive failed endpoint checks; canonical data remains. */
     defaultSuggestion: boolean;
+    /** Quarantine status derived from consecutive failure count. */
+    quarantineStatus?: QuarantineStatus;
+    /** Detailed reason category for probe failure or content staleness. */
+    failureReason?: FailureReason | null;
+    /** Transport and reachability capabilities detected during probe. */
+    capabilities?: FeedCapabilities;
+}
+
+/** Derive quarantine status from consecutive failure count: >=4 quarantined, 1-3 degraded, 0 active. */
+export function deriveQuarantineStatus(consecutiveFailures: number): QuarantineStatus {
+    if (consecutiveFailures >= 4) return 'quarantined';
+    if (consecutiveFailures >= 1) return 'degraded';
+    return 'active';
 }
 
 /**
