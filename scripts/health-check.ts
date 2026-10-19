@@ -11,6 +11,7 @@ import { isIP } from 'node:net';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { XMLParser } from 'fast-xml-parser';
 import type { BootstrapPayload, FeedEntry, FeedFormat } from '../src/types.ts';
 import {
     computeHealthScore,
@@ -19,9 +20,9 @@ import {
     type HealthStatus,
 } from '../src/health.ts';
 
-export const HTTP_TIMEOUT_MS = 10_000;
+export const HTTP_TIMEOUT_MS = 15_000;
 export const MAX_REDIRECTS = 5;
-export const MAX_BODY_BYTES = 1_000_000;
+export const MAX_BODY_BYTES = 5_000_000; // 5 MB
 export const CONCURRENCY = 8;
 export const DEFAULT_MAX_FEEDS = Infinity;
 
@@ -31,6 +32,13 @@ const JSON_FEED_VERSIONS = new Set([
     'https://jsonfeed.org/version/1',
     'https://jsonfeed.org/version/1.1',
 ]);
+
+const xmlParser = new XMLParser({
+    ignoreAttributes: false,
+    attributeNamePrefix: '@_',
+    processEntities: false,
+    isArray: (name) => ['item', 'entry'].includes(name),
+});
 
 export type Fetcher = typeof fetch;
 export type HostResolver = (hostname: string) => Promise<string[]>;
@@ -61,6 +69,13 @@ export interface RedirectedResponse {
     response: Response;
     finalUrl: string;
     redirects: string[];
+}
+
+export interface FollowRedirectsOptions {
+    fetcher: Fetcher;
+    resolveHost: HostResolver;
+    timeoutMs?: number;
+    signal?: AbortSignal;
 }
 
 /** Reject non-HTTP(S), credential-bearing, local, and reserved IP URLs. */
@@ -139,33 +154,30 @@ export async function assertPublicHttpUrl(
 }
 
 function requestHeaders(): HeadersInit {
-    return { 'User-Agent': USER_AGENT, Accept: 'application/rss+xml, application/atom+xml, application/feed+json, application/json, text/xml, */*' };
+    return {
+        'User-Agent': USER_AGENT,
+        Accept: 'application/rss+xml, application/atom+xml, application/rdf+xml, application/feed+json, application/json, text/xml;q=0.9, */*;q=0.8',
+    };
 }
 
 /** Follow redirects explicitly so each Location is validated before fetch. */
 export async function followRedirects(
     url: string,
     init: RequestInit,
-    options: Required<Pick<CheckFeedOptions, 'fetcher' | 'resolveHost' | 'timeoutMs'>>,
+    options: FollowRedirectsOptions,
 ): Promise<RedirectedResponse> {
     let currentUrl = url;
     const redirects: string[] = [];
 
     for (let redirectCount = 0; redirectCount <= MAX_REDIRECTS; redirectCount += 1) {
         await assertPublicHttpUrl(currentUrl, options.resolveHost);
-        const controller = new AbortController();
-        const timer = setTimeout(() => controller.abort(), options.timeoutMs);
-        let response: Response;
-        try {
-            response = await options.fetcher(currentUrl, {
-                ...init,
-                redirect: 'manual',
-                signal: controller.signal,
-                headers: { ...requestHeaders(), ...(init.headers ?? {}) },
-            });
-        } finally {
-            clearTimeout(timer);
-        }
+        const signal = options.signal ?? init.signal;
+        const response = await options.fetcher(currentUrl, {
+            ...init,
+            redirect: 'manual',
+            signal,
+            headers: { ...requestHeaders(), ...(init.headers ?? {}) },
+        });
 
         if (!REDIRECT_STATUSES.has(response.status)) {
             return { response, finalUrl: currentUrl, redirects };
@@ -185,29 +197,101 @@ export async function followRedirects(
     throw new Error(`Too many redirects for ${url}`);
 }
 
-async function readBoundedText(response: Response, maxBytes: number): Promise<string> {
-    if (!response.body) return response.text();
+/** Consumes the stream up to maxBytes under the request deadline. */
+export async function readBoundedBytes(
+    response: Response,
+    maxBytes: number,
+    signal?: AbortSignal,
+): Promise<Uint8Array> {
+    if (!response.body) {
+        const arrayBuf = await response.arrayBuffer();
+        const bytes = new Uint8Array(arrayBuf);
+        if (bytes.byteLength > maxBytes) {
+            throw new Error(`Feed response exceeds maximum size of ${maxBytes} bytes`);
+        }
+        return bytes;
+    }
+
     const reader = response.body.getReader();
     const chunks: Uint8Array[] = [];
     let total = 0;
+
+    const onAbort = () => {
+        reader.cancel().catch(() => {});
+    };
+
+    if (signal) {
+        if (signal.aborted) {
+            await reader.cancel();
+            throw new Error('Request timed out or aborted');
+        }
+        signal.addEventListener('abort', onAbort, { once: true });
+    }
+
     try {
         while (true) {
             const { done, value } = await reader.read();
             if (done) break;
             total += value.byteLength;
-            if (total > maxBytes) throw new Error(`Feed response exceeds ${maxBytes} bytes`);
+            if (total > maxBytes) {
+                await reader.cancel();
+                throw new Error(`Feed response exceeds maximum size of ${maxBytes} bytes`);
+            }
             chunks.push(value);
         }
     } finally {
+        if (signal) {
+            signal.removeEventListener('abort', onAbort);
+        }
         reader.releaseLock();
     }
+
     const bytes = new Uint8Array(total);
     let offset = 0;
     for (const chunk of chunks) {
         bytes.set(chunk, offset);
         offset += chunk.byteLength;
     }
-    return new TextDecoder().decode(bytes);
+    return bytes;
+}
+
+/** Decodes raw payload respecting BOM, Content-Type header, and XML prolog. */
+export function decodeFeedBytes(bytes: Uint8Array, contentTypeHeader?: string | null): string {
+    // 1. Check BOM
+    if (bytes.length >= 3 && bytes[0] === 0xEF && bytes[1] === 0xBB && bytes[2] === 0xBF) {
+        return new TextDecoder('utf-8').decode(bytes.subarray(3));
+    }
+    if (bytes.length >= 2 && bytes[0] === 0xFE && bytes[1] === 0xFF) {
+        return new TextDecoder('utf-16be').decode(bytes.subarray(2));
+    }
+    if (bytes.length >= 2 && bytes[0] === 0xFF && bytes[1] === 0xFE) {
+        return new TextDecoder('utf-16le').decode(bytes.subarray(2));
+    }
+
+    // 2. HTTP Content-Type header charset parameter
+    let charset: string | null = null;
+    if (contentTypeHeader) {
+        const match = contentTypeHeader.match(/charset=\s*["']?([a-zA-Z0-9_-]+)/i);
+        if (match) {
+            charset = match[1].trim();
+        }
+    }
+
+    // 3. XML Prolog sniffing (first 512 bytes)
+    if (!charset) {
+        const sniff = new TextDecoder('latin1').decode(bytes.subarray(0, 512));
+        const xmlMatch = sniff.match(/<\?xml\b[^>]*\bencoding\s*=\s*["']([a-zA-Z0-9_-]+)["']/i);
+        if (xmlMatch) {
+            charset = xmlMatch[1].trim();
+        }
+    }
+
+    // 4. Safe decode with fallback to UTF-8
+    try {
+        return new TextDecoder(charset || 'utf-8', { fatal: false }).decode(bytes);
+    } catch {
+        return new TextDecoder('utf-8', { fatal: false }).decode(bytes);
+    }
 }
 
 function parseDate(value: unknown): string | undefined {
@@ -220,46 +304,98 @@ function latestDate(values: unknown[]): string | undefined {
     return values.map(parseDate).filter((value): value is string => Boolean(value)).sort().at(-1);
 }
 
-/** Validate feed shape instead of treating arbitrary 2xx HTML as healthy. */
+/** Validate feed shape structurally instead of treating arbitrary HTML as healthy. */
 export function parseFeedContent(body: string): FeedContent | null {
     const trimmed = body.replace(/^\uFEFF/, '').trim();
-    const xml = trimmed.replace(/^<\?xml\b[^>]*\?>\s*/i, '');
-    if (/^<rss\b/i.test(xml) && /<channel\b/i.test(xml) && /<\/rss>/i.test(xml)) {
-        return {
-            format: 'rss',
-            lastItemDate: latestDate([
-                ...[...xml.matchAll(/<pubDate\b[^>]*>([^<]*)<\/pubDate>/gi)].map((match) => match[1]),
-                ...[...xml.matchAll(/<lastBuildDate\b[^>]*>([^<]*)<\/lastBuildDate>/gi)].map((match) => match[1]),
-            ]),
-        };
-    }
-    if (/^<rdf:RDF\b/i.test(xml) && /<\/rdf:RDF>/i.test(xml)) {
-        return {
-            format: 'rdf',
-            lastItemDate: latestDate([...xml.matchAll(/<dc:date\b[^>]*>([^<]*)<\/dc:date>/gi)].map((match) => match[1])),
-        };
-    }
-    if (/^<feed\b/i.test(xml) && /<\/feed>/i.test(xml)) {
-        return {
-            format: 'atom',
-            lastItemDate: latestDate([
-                ...[...xml.matchAll(/<updated\b[^>]*>([^<]*)<\/updated>/gi)].map((match) => match[1]),
-                ...[...xml.matchAll(/<published\b[^>]*>([^<]*)<\/published>/gi)].map((match) => match[1]),
-            ]),
-        };
-    }
+    if (!trimmed) return null;
 
-    try {
-        const json = JSON.parse(trimmed) as { version?: unknown; items?: unknown };
-        if (!json || typeof json !== 'object' || !JSON_FEED_VERSIONS.has(String(json.version)) || !Array.isArray(json.items)) {
+    // 1. JSON Feed
+    if (trimmed.startsWith('{')) {
+        try {
+            const json = JSON.parse(trimmed) as { version?: unknown; items?: unknown };
+            if (
+                json &&
+                typeof json === 'object' &&
+                typeof json.version === 'string' &&
+                (JSON_FEED_VERSIONS.has(json.version) || json.version.startsWith('https://jsonfeed.org/version/')) &&
+                Array.isArray(json.items)
+            ) {
+                const itemDates = json.items.flatMap((item) => {
+                    if (!item || typeof item !== 'object') return [];
+                    const candidate = item as { date_published?: unknown; date_modified?: unknown };
+                    return [candidate.date_published, candidate.date_modified];
+                });
+                return { format: 'jsonfeed', lastItemDate: latestDate(itemDates) };
+            }
+        } catch {
             return null;
         }
-        const itemDates = json.items.flatMap((item) => {
-            if (!item || typeof item !== 'object') return [];
-            const candidate = item as { date_published?: unknown; date_modified?: unknown };
-            return [candidate.date_published, candidate.date_modified];
-        });
-        return { format: 'jsonfeed', lastItemDate: latestDate(itemDates) };
+    }
+
+    // 2. XML Formats (RSS 2.0 / 0.9x, Atom, RDF)
+    try {
+        const parsed = xmlParser.parse(trimmed);
+        if (!parsed || typeof parsed !== 'object') return null;
+
+        // RSS: root is <rss>
+        if (parsed.rss && parsed.rss.channel) {
+            const channel = parsed.rss.channel;
+            const rawItems = channel.item ?? [];
+            const items = Array.isArray(rawItems) ? rawItems : [rawItems];
+            const itemDates: unknown[] = [];
+            for (const item of items) {
+                if (item && typeof item === 'object') {
+                    if (item.pubDate) itemDates.push(item.pubDate);
+                    if (item['dc:date']) itemDates.push(item['dc:date']);
+                    if (item['dcterms:issued']) itemDates.push(item['dcterms:issued']);
+                    if (item['dcterms:modified']) itemDates.push(item['dcterms:modified']);
+                }
+            }
+            return {
+                format: 'rss',
+                lastItemDate: latestDate(itemDates),
+            };
+        }
+
+        // Atom: root is <feed>
+        if (parsed.feed) {
+            const feed = parsed.feed;
+            const rawEntries = feed.entry ?? [];
+            const entries = Array.isArray(rawEntries) ? rawEntries : [rawEntries];
+            const itemDates: unknown[] = [];
+            for (const entry of entries) {
+                if (entry && typeof entry === 'object') {
+                    if (entry.published) itemDates.push(entry.published);
+                    if (entry.updated) itemDates.push(entry.updated);
+                    if (entry['dc:date']) itemDates.push(entry['dc:date']);
+                }
+            }
+            return {
+                format: 'atom',
+                lastItemDate: latestDate(itemDates),
+            };
+        }
+
+        // RDF (RSS 1.0): root is <rdf:RDF> or <RDF>
+        const rdfRoot = parsed['rdf:RDF'] || parsed.RDF;
+        if (rdfRoot) {
+            const rawItems = rdfRoot.item ?? [];
+            const items = Array.isArray(rawItems) ? rawItems : [rawItems];
+            const itemDates: unknown[] = [];
+            for (const item of items) {
+                if (item && typeof item === 'object') {
+                    if (item['dc:date']) itemDates.push(item['dc:date']);
+                    if (item.pubDate) itemDates.push(item.pubDate);
+                    if (item['dcterms:issued']) itemDates.push(item['dcterms:issued']);
+                }
+            }
+            return {
+                format: 'rdf',
+                lastItemDate: latestDate(itemDates),
+            };
+        }
+
+        return null;
     } catch {
         return null;
     }
@@ -270,11 +406,18 @@ export async function checkFeed(feed: FeedEntry, options: CheckFeedOptions = {})
     const resolveHost = options.resolveHost ?? defaultHostResolver;
     const timeoutMs = options.timeoutMs ?? HTTP_TIMEOUT_MS;
     const maxBodyBytes = options.maxBodyBytes ?? MAX_BODY_BYTES;
-    const requestOptions = { fetcher, resolveHost, timeoutMs };
+
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(new Error(`Timeout after ${timeoutMs}ms`)), timeoutMs);
+    const requestOptions: FollowRedirectsOptions = {
+        fetcher,
+        resolveHost,
+        timeoutMs,
+        signal: controller.signal,
+    };
 
     try {
-        // HEAD is advisory. It may fail or report a misleading content type, so
-        // a bounded GET always decides whether the feed is healthy.
+        // HEAD is advisory. If it fails or is rejected, a bounded GET decides health.
         try {
             const head = await followRedirects(feed.url, { method: 'HEAD' }, requestOptions);
             await head.response.body?.cancel();
@@ -285,14 +428,29 @@ export async function checkFeed(feed: FeedEntry, options: CheckFeedOptions = {})
         const get = await followRedirects(feed.url, { method: 'GET' }, requestOptions);
         if (!get.response.ok) {
             await get.response.body?.cancel();
-            return { status: get.response.status, reachable: false, contentValid: false, failureStatus: 'unreachable', finalUrl: get.finalUrl };
+            return {
+                status: get.response.status,
+                reachable: false,
+                contentValid: false,
+                failureStatus: 'unreachable',
+                finalUrl: get.finalUrl,
+            };
         }
 
-        const body = await readBoundedText(get.response, maxBodyBytes);
+        const bytes = await readBoundedBytes(get.response, maxBodyBytes, controller.signal);
+        const body = decodeFeedBytes(bytes, get.response.headers.get('content-type'));
         const content = parseFeedContent(body);
+
         if (!content) {
-            return { status: get.response.status, reachable: false, contentValid: false, failureStatus: 'invalid-content', finalUrl: get.finalUrl };
+            return {
+                status: get.response.status,
+                reachable: false,
+                contentValid: false,
+                failureStatus: 'invalid-content',
+                finalUrl: get.finalUrl,
+            };
         }
+
         return {
             status: get.response.status,
             reachable: true,
@@ -302,12 +460,17 @@ export async function checkFeed(feed: FeedEntry, options: CheckFeedOptions = {})
             finalUrl: get.finalUrl,
         };
     } catch (error: unknown) {
+        const isTimeout =
+            (error instanceof Error && (error.name === 'AbortError' || error.message.includes('Timeout') || error.message.includes('aborted'))) ||
+            (typeof error === 'object' && error !== null && 'name' in error && error.name === 'AbortError');
         return {
-            status: error instanceof Error && error.name === 'AbortError' ? 'timeout' : 'error',
+            status: isTimeout ? 'timeout' : 'error',
             reachable: false,
             contentValid: false,
             failureStatus: 'unreachable',
         };
+    } finally {
+        clearTimeout(timer);
     }
 }
 
@@ -355,12 +518,22 @@ export function mergeHealthEntry(
     };
 }
 
-async function readExistingOverlay(path: string): Promise<Map<string, FeedHealthEntry>> {
+export async function readExistingOverlay(path: string, allowEmptyPrior = false): Promise<Map<string, FeedHealthEntry>> {
     try {
         const raw = JSON.parse(await readFile(path, 'utf8')) as ExistingOverlay;
-        return new Map((raw.feeds ?? []).map((entry) => [entry.id, entry]));
-    } catch {
-        return new Map();
+        if (!raw || !Array.isArray(raw.feeds)) {
+            throw new Error(`Missing or invalid 'feeds' array in ${path}`);
+        }
+        return new Map(raw.feeds.map((entry) => [entry.id, entry]));
+    } catch (error) {
+        if (allowEmptyPrior) {
+            process.stderr.write(`[warn] Initializing empty prior health overlay (${(error as Error).message})\n`);
+            return new Map();
+        }
+        throw new Error(
+            `Fail-closed abort: could not read prior health state from ${path}. ` +
+            `Pass --allow-empty-prior-state to initialize fresh counters. Details: ${(error as Error).message}`
+        );
     }
 }
 
@@ -371,15 +544,21 @@ function parseMaxFeeds(args: string[]): number {
     return Number.isFinite(value) && value >= 0 ? value : DEFAULT_MAX_FEEDS;
 }
 
+function parseAllowEmptyPrior(args: string[]): boolean {
+    return args.includes('--allow-empty-prior-state');
+}
+
 async function main(): Promise<void> {
-    const maxFeeds = parseMaxFeeds(process.argv.slice(2));
+    const args = process.argv.slice(2);
+    const maxFeeds = parseMaxFeeds(args);
+    const allowEmptyPrior = parseAllowEmptyPrior(args);
     const feedsPath = resolve('data/feeds.json');
     const distPath = resolve('dist');
     const outputPath = resolve(distPath, 'feeds-health.json');
     await mkdir(distPath, { recursive: true });
 
     const payload = JSON.parse(await readFile(feedsPath, 'utf8')) as BootstrapPayload;
-    const previous = await readExistingOverlay(outputPath);
+    const previous = await readExistingOverlay(outputPath, allowEmptyPrior);
     const feedsToCheck = payload.feeds.slice(0, maxFeeds);
     const checkedAt = new Date().toISOString();
     const results: Array<HealthResult | null> = new Array(feedsToCheck.length).fill(null);

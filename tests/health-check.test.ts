@@ -1,9 +1,12 @@
 import { describe, expect, it, vi } from 'vitest';
 import {
     checkFeed,
+    decodeFeedBytes,
     isPublicHttpUrl,
     mergeHealthEntry,
     parseFeedContent,
+    readBoundedBytes,
+    readExistingOverlay,
     type Fetcher,
 } from '../scripts/health-check.ts';
 import type { FeedEntry } from '../src/types.ts';
@@ -51,6 +54,98 @@ describe('feed content validation', () => {
         expect(methods).toEqual(['HEAD', 'GET']);
         expect(result).toMatchObject({ reachable: true, contentValid: true, format: 'rss' });
     });
+
+    it('isolates item pubDate from channel lastBuildDate in RSS feeds', () => {
+        const xml = `
+            <rss version="2.0">
+                <channel>
+                    <title>Test Outlet</title>
+                    <lastBuildDate>2026-10-19T12:00:00Z</lastBuildDate>
+                    <item>
+                        <title>Article 1</title>
+                        <pubDate>2026-08-01T00:00:00Z</pubDate>
+                    </item>
+                </channel>
+            </rss>
+        `;
+        const content = parseFeedContent(xml);
+        expect(content?.format).toBe('rss');
+        expect(content?.lastItemDate).toBe('2026-08-01T00:00:00.000Z');
+    });
+
+    it('isolates entry published date from feed-level updated date in Atom feeds', () => {
+        const xml = `
+            <feed xmlns="http://www.w3.org/2005/Atom">
+                <title>Test Feed</title>
+                <updated>2026-10-19T12:00:00Z</updated>
+                <entry>
+                    <title>Story</title>
+                    <published>2026-09-01T10:00:00Z</published>
+                </entry>
+            </feed>
+        `;
+        const content = parseFeedContent(xml);
+        expect(content?.format).toBe('atom');
+        expect(content?.lastItemDate).toBe('2026-09-01T10:00:00.000Z');
+    });
+});
+
+describe('charset detection and decoding', () => {
+    it('strips UTF-8 BOM correctly', () => {
+        const utf8Bytes = new Uint8Array([0xEF, 0xBB, 0xBF, 0x48, 0x65, 0x6C, 0x6C, 0x6F]); // BOM + 'Hello'
+        expect(decodeFeedBytes(utf8Bytes)).toBe('Hello');
+    });
+
+    it('decodes ISO-8859-1 correctly via Content-Type header', () => {
+        // 'café' in ISO-8859-1: 0x63, 0x61, 0x66, 0xE9
+        const bytes = new Uint8Array([0x63, 0x61, 0x66, 0xE9]);
+        const decoded = decodeFeedBytes(bytes, 'application/xml; charset=ISO-8859-1');
+        expect(decoded).toBe('café');
+    });
+
+    it('sniffs encoding from XML prolog when header charset is absent', () => {
+        // Replace 'é' UTF-8 (2 bytes) with single byte 0xE9 in buffer
+        const isoBytes = new Uint8Array([
+            ...new TextEncoder().encode('<?xml version="1.0" encoding="ISO-8859-1"?><channel><item>caf'),
+            0xE9,
+            ...new TextEncoder().encode('</item></channel>'),
+        ]);
+        const decoded = decodeFeedBytes(isoBytes, 'text/xml');
+        expect(decoded).toContain('café');
+    });
+
+    it('falls back to UTF-8 on unrecognized charset label', () => {
+        const bytes = new TextEncoder().encode('<rss><channel>hello</channel></rss>');
+        const decoded = decodeFeedBytes(bytes, 'application/xml; charset=non-existent-charset-12345');
+        expect(decoded).toContain('hello');
+    });
+});
+
+describe('bounded stream reader', () => {
+    it('aborts when payload exceeds maxBytes', async () => {
+        const largeStream = new ReadableStream({
+            start(controller) {
+                controller.enqueue(new Uint8Array(1024 * 1024)); // 1MB
+                controller.enqueue(new Uint8Array(1024 * 1024)); // +1MB
+                controller.close();
+            },
+        });
+        const response = new Response(largeStream);
+        await expect(readBoundedBytes(response, 1024 * 512)).rejects.toThrow('Feed response exceeds maximum size');
+    });
+
+    it('reads bounded byte payload successfully', async () => {
+        const stream = new ReadableStream({
+            start(controller) {
+                controller.enqueue(new TextEncoder().encode('feed data chunk 1 '));
+                controller.enqueue(new TextEncoder().encode('feed data chunk 2'));
+                controller.close();
+            },
+        });
+        const response = new Response(stream);
+        const bytes = await readBoundedBytes(response, 1024 * 1024);
+        expect(new TextDecoder().decode(bytes)).toBe('feed data chunk 1 feed data chunk 2');
+    });
 });
 
 describe('public redirect safety', () => {
@@ -70,7 +165,16 @@ describe('public redirect safety', () => {
     });
 });
 
-describe('health history overlay', () => {
+describe('fail-closed health history overlay', () => {
+    it('fails closed when prior overlay file cannot be read and allowEmptyPrior is false', async () => {
+        await expect(readExistingOverlay('non-existent-overlay-path.json', false)).rejects.toThrow('Fail-closed abort');
+    });
+
+    it('permits empty prior initialization when allowEmptyPrior is true', async () => {
+        const overlay = await readExistingOverlay('non-existent-overlay-path.json', true);
+        expect(overlay.size).toBe(0);
+    });
+
     it('preserves failure history across weekly checks and resets on success', () => {
         vi.useFakeTimers({ now: new Date('2026-08-26T12:00:00.000Z') });
         try {

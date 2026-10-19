@@ -52,13 +52,21 @@ async function writeJson(relativePath: string, value: unknown): Promise<void> {
     await writeFile(fullPath, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
 }
 
+export interface ArtifactHashEntry {
+    sha256: string;
+    bytes: number;
+}
+
 export interface RegistryManifest {
     schemaVersion: string;
     generatorVersion: string;
     sourceCommit: string;
     sourceChecksum: string;
     generatedAt: string;
+    registryRevision?: string;
+    healthRevision?: string;
     artifactCounts: Record<string, number>;
+    artifacts?: Record<string, ArtifactHashEntry>;
 }
 
 export function createManifest(input: Omit<RegistryManifest, 'schemaVersion' | 'generatorVersion'>): RegistryManifest {
@@ -432,10 +440,36 @@ async function main(): Promise<void> {
 
     const possibleDuplicates = findPossibleDuplicateUrls(feeds);
     await writeJson('duplicate-report.json', createDuplicateReport(possibleDuplicates, manifestGeneratedAt, sourceChecksum));
+
+    const artifactsMap: Record<string, ArtifactHashEntry> = {};
+    const trackedArtifactFiles = [
+        'feeds.json',
+        'feeds.csv',
+        'by-country.json',
+        'by-category.json',
+        'by-publisher.json',
+        'by-language.json',
+        'feeds-health.json',
+    ];
+
+    for (const relFile of trackedArtifactFiles) {
+        try {
+            const fileBytes = await readFile(resolve(distPath, relFile));
+            const sha256 = createHash('sha256').update(fileBytes).digest('hex');
+            artifactsMap[relFile] = { sha256, bytes: fileBytes.byteLength };
+        } catch {
+            // File may not exist yet (e.g. feeds-health.json before health-check runs)
+        }
+    }
+
+    const healthRevision = artifactsMap['feeds-health.json']?.sha256;
+
     await writeJson('manifest.json', createManifest({
         sourceCommit,
         sourceChecksum,
         generatedAt: manifestGeneratedAt,
+        registryRevision: sourceChecksum,
+        ...(healthRevision ? { healthRevision } : {}),
         artifactCounts: {
             feeds: feeds.length,
             countries: Object.keys(byCountry).length,
@@ -445,6 +479,7 @@ async function main(): Promise<void> {
             opml: 1 + Object.keys(byCountry).length + Object.keys(byCategory).length,
             possibleDuplicates: possibleDuplicates.length,
         },
+        artifacts: artifactsMap,
     }));
 
     // Generate browsable HTML directory
