@@ -4,6 +4,7 @@ node_modules
 # Generated proposal files from one-time scripts
 data/feeds.proposed.json
 # Planning artifacts
+artifacts/
 giti-rss-registry-research-report-*.md
 # OS junk
 Thumbs.db
