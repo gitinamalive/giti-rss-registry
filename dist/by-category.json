@@ -2878,6 +2878,24 @@
       "format": "rss"
     },
     {
+      "id": "a-na-o-0c1e8bf4",
+      "name": "A Nação",
+      "publisher": "A Nação",
+      "url": "https://www.anacao.cv/feed/",
+      "language": "pt",
+      "countries": [
+        "CV"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from A Nação Cabo Verde publication portal",
+      "license": "Editorial RSS / Copyright A Nação",
+      "lastCheckedAt": "2026-10-19T20:30:32.018Z",
+      "lastItemPublishedAt": "2026-10-19T18:18:49.000Z",
+      "active": true
+    },
+    {
       "id": "abc-a97fa181",
       "name": "ABC",
       "publisher": "ABC",
@@ -3199,6 +3217,24 @@
       "perspective": "independent",
       "description": "News from Antigua and Barbuda",
       "id": "antigua-observer-c8da4558"
+    },
+    {
+      "id": "arab-news-abec76d8",
+      "name": "Arab News",
+      "publisher": "Arab News",
+      "url": "https://www.arabnews.com/rss.xml",
+      "language": "en",
+      "countries": [
+        "SA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Arab News publication portal",
+      "license": "Editorial RSS / Copyright Arab News",
+      "lastCheckedAt": "2026-10-19T20:30:35.314Z",
+      "lastItemPublishedAt": "2026-10-19T20:30:27.000Z",
+      "active": true
     },
     {
       "id": "asahi-shimbun-de3a6e68",
@@ -3917,6 +3953,24 @@
       "format": "rss"
     },
     {
+      "id": "efecto-cocuyo-da2bab39",
+      "name": "Efecto Cocuyo",
+      "publisher": "Efecto Cocuyo",
+      "url": "https://efectococuyo.com/feed/",
+      "language": "es",
+      "countries": [
+        "VE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Efecto Cocuyo Venezuela publication portal",
+      "license": "Editorial RSS / Copyright Efecto Cocuyo",
+      "lastCheckedAt": "2026-10-19T20:30:35.388Z",
+      "lastItemPublishedAt": "2026-10-19T20:22:15.000Z",
+      "active": true
+    },
+    {
       "id": "el-colombiano-2bc910a9",
       "name": "El Colombiano",
       "publisher": "El Colombiano",
@@ -4149,6 +4203,24 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "fraternit-matin-57a7b9fa",
+      "name": "Fraternité Matin",
+      "publisher": "Fraternité Matin",
+      "url": "https://www.fratmat.info/rssFeed/0",
+      "language": "fr",
+      "countries": [
+        "CI"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Fraternité Matin Côte d'Ivoire publication portal",
+      "license": "Editorial RSS / Copyright Fraternité Matin",
+      "lastCheckedAt": "2026-10-19T20:30:31.357Z",
+      "lastItemPublishedAt": "2026-10-19T16:12:00.000Z",
+      "active": true
     },
     {
       "id": "g1-11fa6d52",
@@ -4574,6 +4646,24 @@
       "format": "rss"
     },
     {
+      "id": "la-nouvelle-tribune-1ea86eca",
+      "name": "La Nouvelle Tribune",
+      "publisher": "La Nouvelle Tribune",
+      "url": "https://lanouvelletribune.info/feed/",
+      "language": "fr",
+      "countries": [
+        "BJ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from La Nouvelle Tribune Benin publication portal",
+      "license": "Editorial RSS / Copyright La Nouvelle Tribune",
+      "lastCheckedAt": "2026-10-19T20:30:19.817Z",
+      "lastItemPublishedAt": "2026-10-19T20:28:19.000Z",
+      "active": true
+    },
+    {
       "id": "la-nueva-radio-ya-40dbe60e",
       "name": "La Nueva Radio YA",
       "publisher": "La Nueva Radio YA",
@@ -4654,6 +4744,24 @@
       "format": "rss"
     },
     {
+      "id": "lefaso-net-103d0c4d",
+      "name": "LeFaso.net",
+      "publisher": "LeFaso.net",
+      "url": "https://lefaso.net/spip.php?page=backend",
+      "language": "fr",
+      "countries": [
+        "BF"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from LeFaso.net publication portal",
+      "license": "Editorial RSS / Copyright LeFaso.net",
+      "lastCheckedAt": "2026-10-19T20:30:18.846Z",
+      "lastItemPublishedAt": "2026-10-19T18:59:06.000Z",
+      "active": true
+    },
+    {
       "id": "leral-net-ed1a2c18",
       "name": "leral.net",
       "publisher": "leral.net",
@@ -4726,6 +4834,24 @@
       "homepage": "https://mainichi.jp",
       "description": "Mainichi Shimbun — Japanese daily newspaper.",
       "alwaysSchedule": true
+    },
+    {
+      "id": "maka-angola-ef51cbdb",
+      "name": "Maka Angola",
+      "publisher": "Maka Angola",
+      "url": "https://www.makaangola.org/feed/",
+      "language": "pt",
+      "countries": [
+        "AO"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Maka Angola publication portal",
+      "license": "Editorial RSS / Copyright Maka Angola",
+      "lastCheckedAt": "2026-10-19T20:30:17.933Z",
+      "lastItemPublishedAt": "2026-10-16T11:47:07.000Z",
+      "active": true
     },
     {
       "id": "malay-mail-77a08800",
@@ -4901,6 +5027,24 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "naharnet-d4d4aadd",
+      "name": "Naharnet",
+      "publisher": "Naharnet",
+      "url": "https://www.naharnet.com/tags/middle-east/en/feed.atom",
+      "language": "en",
+      "countries": [
+        "LB"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "atom",
+      "sourceAttribution": "Curated editorial research from Naharnet publication portal",
+      "license": "Editorial RSS / Copyright Naharnet",
+      "lastCheckedAt": "2026-10-19T20:30:32.135Z",
+      "lastItemPublishedAt": "2026-10-19T11:59:29.000Z",
+      "active": true
     },
     {
       "id": "nasha-niva-414a3072",
@@ -5412,6 +5556,24 @@
       "notes": "Russian state-funded international broadcaster. US State Dept (2024): 'de facto arm of Russia's intelligence apparatus.' Sanctioned by US, UK, EU, Canada. Banned globally by Meta and YouTube. Parent company TV-Novosti designated under E.O. 14024.\n\nSources:\n  [1] https://apnews.com/article/russia-putin-trump-sanctions-harris-rt-f7e3ff262fdf24695048cffe2529b937\n  [2] https://2021-2025.state.gov/alerting-the-world-to-rts-global-covert-activities/\n  [3] https://www.nbcnews.com/news/us-news/meta-bans-rt-russian-disinformation-rcna171402"
     },
     {
+      "id": "samoa-global-news-2521f45b",
+      "name": "Samoa Global News",
+      "publisher": "Samoa Global News",
+      "url": "https://samoaglobalnews.com/feed/",
+      "language": "en",
+      "countries": [
+        "WS"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Samoa Global News publication portal",
+      "license": "Editorial RSS / Copyright Samoa Global News",
+      "lastCheckedAt": "2026-10-19T20:30:36.435Z",
+      "lastItemPublishedAt": "2026-10-19T12:43:20.000Z",
+      "active": true
+    },
+    {
       "id": "sana-3d39c5fb",
       "name": "SANA",
       "publisher": "SANA",
@@ -5608,6 +5770,24 @@
       "format": "rss"
     },
     {
+      "id": "sunday-standard-f11dbb48",
+      "name": "Sunday Standard",
+      "publisher": "Sunday Standard",
+      "url": "https://www.sundaystandard.info/feed/",
+      "language": "en",
+      "countries": [
+        "BW"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Sunday Standard Botswana publication portal",
+      "license": "Editorial RSS / Copyright Sunday Standard",
+      "lastCheckedAt": "2026-10-19T20:30:31.124Z",
+      "lastItemPublishedAt": "2026-10-19T07:44:11.000Z",
+      "active": true
+    },
+    {
       "id": "sydney-morning-herald-89449064",
       "name": "Sydney Morning Herald",
       "publisher": "Sydney Morning Herald",
@@ -5619,6 +5799,24 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "taarifa-rwanda-b37e728c",
+      "name": "Taarifa Rwanda",
+      "publisher": "Taarifa Rwanda",
+      "url": "https://taarifa.rw/feed/",
+      "language": "en",
+      "countries": [
+        "RW"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Taarifa Rwanda publication portal",
+      "license": "Editorial RSS / Copyright Taarifa Rwanda",
+      "lastCheckedAt": "2026-10-19T20:30:34.755Z",
+      "lastItemPublishedAt": "2026-10-19T14:45:27.000Z",
+      "active": true
     },
     {
       "id": "tabnak-b30db155",

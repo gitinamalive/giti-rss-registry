@@ -443,7 +443,26 @@
   {
     "code": "AO",
     "name": "Angola",
-    "domesticFeeds": [],
+    "domesticFeeds": [
+      {
+        "id": "maka-angola-ef51cbdb",
+        "name": "Maka Angola",
+        "publisher": "Maka Angola",
+        "url": "https://www.makaangola.org/feed/",
+        "language": "pt",
+        "countries": [
+          "AO"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "sourceAttribution": "Curated editorial research from Maka Angola publication portal",
+        "license": "Editorial RSS / Copyright Maka Angola",
+        "lastCheckedAt": "2026-10-19T20:30:17.933Z",
+        "lastItemPublishedAt": "2026-10-16T11:47:07.000Z",
+        "active": true
+      }
+    ],
     "regionalFeeds": [
       {
         "id": "al-jazeera-ecd16e1e",
@@ -837,8 +856,8 @@
         "notes": "DW Africa is a high-credibility international broadcaster with dedicated Africa programming and reporting. The RSS endpoint responds as XML; the web research tool could not render the XML payload, so live item parsing remains a runtime verification task.\n\nSources:\n  [1] https://rss.dw.com/rdf/rss-en-africa\n  [2] https://www.dw.com/en/africa/s-12756"
       }
     ],
-    "totalFeeds": 6,
-    "tier": "regional-only"
+    "totalFeeds": 7,
+    "tier": "domestic-single"
   },
   {
     "code": "AG",
@@ -1439,7 +1458,26 @@
   {
     "code": "BJ",
     "name": "Benin",
-    "domesticFeeds": [],
+    "domesticFeeds": [
+      {
+        "id": "la-nouvelle-tribune-1ea86eca",
+        "name": "La Nouvelle Tribune",
+        "publisher": "La Nouvelle Tribune",
+        "url": "https://lanouvelletribune.info/feed/",
+        "language": "fr",
+        "countries": [
+          "BJ"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "sourceAttribution": "Curated editorial research from La Nouvelle Tribune Benin publication portal",
+        "license": "Editorial RSS / Copyright La Nouvelle Tribune",
+        "lastCheckedAt": "2026-10-19T20:30:19.817Z",
+        "lastItemPublishedAt": "2026-10-19T20:28:19.000Z",
+        "active": true
+      }
+    ],
     "regionalFeeds": [
       {
         "id": "al-jazeera-ecd16e1e",
@@ -1833,8 +1871,8 @@
         "notes": "DW Africa is a high-credibility international broadcaster with dedicated Africa programming and reporting. The RSS endpoint responds as XML; the web research tool could not render the XML payload, so live item parsing remains a runtime verification task.\n\nSources:\n  [1] https://rss.dw.com/rdf/rss-en-africa\n  [2] https://www.dw.com/en/africa/s-12756"
       }
     ],
-    "totalFeeds": 6,
-    "tier": "regional-only"
+    "totalFeeds": 7,
+    "tier": "domestic-single"
   },
   {
     "code": "BM",
@@ -1967,7 +2005,26 @@
   {
     "code": "BW",
     "name": "Botswana",
-    "domesticFeeds": [],
+    "domesticFeeds": [
+      {
+        "id": "sunday-standard-f11dbb48",
+        "name": "Sunday Standard",
+        "publisher": "Sunday Standard",
+        "url": "https://www.sundaystandard.info/feed/",
+        "language": "en",
+        "countries": [
+          "BW"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "sourceAttribution": "Curated editorial research from Sunday Standard Botswana publication portal",
+        "license": "Editorial RSS / Copyright Sunday Standard",
+        "lastCheckedAt": "2026-10-19T20:30:31.124Z",
+        "lastItemPublishedAt": "2026-10-19T07:44:11.000Z",
+        "active": true
+      }
+    ],
     "regionalFeeds": [
       {
         "id": "al-jazeera-ecd16e1e",
@@ -2361,8 +2418,8 @@
         "notes": "DW Africa is a high-credibility international broadcaster with dedicated Africa programming and reporting. The RSS endpoint responds as XML; the web research tool could not render the XML payload, so live item parsing remains a runtime verification task.\n\nSources:\n  [1] https://rss.dw.com/rdf/rss-en-africa\n  [2] https://www.dw.com/en/africa/s-12756"
       }
     ],
-    "totalFeeds": 6,
-    "tier": "regional-only"
+    "totalFeeds": 7,
+    "tier": "domestic-single"
   },
   {
     "code": "BR",
@@ -2557,7 +2614,26 @@
   {
     "code": "BF",
     "name": "Burkina Faso",
-    "domesticFeeds": [],
+    "domesticFeeds": [
+      {
+        "id": "lefaso-net-103d0c4d",
+        "name": "LeFaso.net",
+        "publisher": "LeFaso.net",
+        "url": "https://lefaso.net/spip.php?page=backend",
+        "language": "fr",
+        "countries": [
+          "BF"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "sourceAttribution": "Curated editorial research from LeFaso.net publication portal",
+        "license": "Editorial RSS / Copyright LeFaso.net",
+        "lastCheckedAt": "2026-10-19T20:30:18.846Z",
+        "lastItemPublishedAt": "2026-10-19T18:59:06.000Z",
+        "active": true
+      }
+    ],
     "regionalFeeds": [
       {
         "id": "al-jazeera-ecd16e1e",
@@ -2951,8 +3027,8 @@
         "notes": "DW Africa is a high-credibility international broadcaster with dedicated Africa programming and reporting. The RSS endpoint responds as XML; the web research tool could not render the XML payload, so live item parsing remains a runtime verification task.\n\nSources:\n  [1] https://rss.dw.com/rdf/rss-en-africa\n  [2] https://www.dw.com/en/africa/s-12756"
       }
     ],
-    "totalFeeds": 6,
-    "tier": "regional-only"
+    "totalFeeds": 7,
+    "tier": "domestic-single"
   },
   {
     "code": "BI",
@@ -3776,7 +3852,26 @@
   {
     "code": "CV",
     "name": "Cape Verde",
-    "domesticFeeds": [],
+    "domesticFeeds": [
+      {
+        "id": "a-na-o-0c1e8bf4",
+        "name": "A Nação",
+        "publisher": "A Nação",
+        "url": "https://www.anacao.cv/feed/",
+        "language": "pt",
+        "countries": [
+          "CV"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "sourceAttribution": "Curated editorial research from A Nação Cabo Verde publication portal",
+        "license": "Editorial RSS / Copyright A Nação",
+        "lastCheckedAt": "2026-10-19T20:30:32.018Z",
+        "lastItemPublishedAt": "2026-10-19T18:18:49.000Z",
+        "active": true
+      }
+    ],
     "regionalFeeds": [
       {
         "id": "al-jazeera-ecd16e1e",
@@ -4170,8 +4265,8 @@
         "notes": "DW Africa is a high-credibility international broadcaster with dedicated Africa programming and reporting. The RSS endpoint responds as XML; the web research tool could not render the XML payload, so live item parsing remains a runtime verification task.\n\nSources:\n  [1] https://rss.dw.com/rdf/rss-en-africa\n  [2] https://www.dw.com/en/africa/s-12756"
       }
     ],
-    "totalFeeds": 6,
-    "tier": "regional-only"
+    "totalFeeds": 7,
+    "tier": "domestic-single"
   },
   {
     "code": "KY",
@@ -12345,7 +12440,26 @@
   {
     "code": "CI",
     "name": "Ivory Coast",
-    "domesticFeeds": [],
+    "domesticFeeds": [
+      {
+        "id": "fraternit-matin-57a7b9fa",
+        "name": "Fraternité Matin",
+        "publisher": "Fraternité Matin",
+        "url": "https://www.fratmat.info/rssFeed/0",
+        "language": "fr",
+        "countries": [
+          "CI"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "sourceAttribution": "Curated editorial research from Fraternité Matin Côte d'Ivoire publication portal",
+        "license": "Editorial RSS / Copyright Fraternité Matin",
+        "lastCheckedAt": "2026-10-19T20:30:31.357Z",
+        "lastItemPublishedAt": "2026-10-19T16:12:00.000Z",
+        "active": true
+      }
+    ],
     "regionalFeeds": [
       {
         "id": "al-jazeera-ecd16e1e",
@@ -12739,8 +12853,8 @@
         "notes": "DW Africa is a high-credibility international broadcaster with dedicated Africa programming and reporting. The RSS endpoint responds as XML; the web research tool could not render the XML payload, so live item parsing remains a runtime verification task.\n\nSources:\n  [1] https://rss.dw.com/rdf/rss-en-africa\n  [2] https://www.dw.com/en/africa/s-12756"
       }
     ],
-    "totalFeeds": 6,
-    "tier": "regional-only"
+    "totalFeeds": 7,
+    "tier": "domestic-single"
   },
   {
     "code": "JM",
@@ -13603,7 +13717,26 @@
   {
     "code": "LB",
     "name": "Lebanon",
-    "domesticFeeds": [],
+    "domesticFeeds": [
+      {
+        "id": "naharnet-d4d4aadd",
+        "name": "Naharnet",
+        "publisher": "Naharnet",
+        "url": "https://www.naharnet.com/tags/middle-east/en/feed.atom",
+        "language": "en",
+        "countries": [
+          "LB"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "atom",
+        "sourceAttribution": "Curated editorial research from Naharnet publication portal",
+        "license": "Editorial RSS / Copyright Naharnet",
+        "lastCheckedAt": "2026-10-19T20:30:32.135Z",
+        "lastItemPublishedAt": "2026-10-19T11:59:29.000Z",
+        "active": true
+      }
+    ],
     "regionalFeeds": [
       {
         "id": "bbc-news-middle-east-966b1f9c",
@@ -13636,8 +13769,8 @@
         "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
       }
     ],
-    "totalFeeds": 1,
-    "tier": "regional-only"
+    "totalFeeds": 2,
+    "tier": "domestic-single"
   },
   {
     "code": "LS",
@@ -20884,7 +21017,26 @@
   {
     "code": "RW",
     "name": "Rwanda",
-    "domesticFeeds": [],
+    "domesticFeeds": [
+      {
+        "id": "taarifa-rwanda-b37e728c",
+        "name": "Taarifa Rwanda",
+        "publisher": "Taarifa Rwanda",
+        "url": "https://taarifa.rw/feed/",
+        "language": "en",
+        "countries": [
+          "RW"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "sourceAttribution": "Curated editorial research from Taarifa Rwanda publication portal",
+        "license": "Editorial RSS / Copyright Taarifa Rwanda",
+        "lastCheckedAt": "2026-10-19T20:30:34.755Z",
+        "lastItemPublishedAt": "2026-10-19T14:45:27.000Z",
+        "active": true
+      }
+    ],
     "regionalFeeds": [
       {
         "id": "al-jazeera-ecd16e1e",
@@ -21278,8 +21430,8 @@
         "notes": "DW Africa is a high-credibility international broadcaster with dedicated Africa programming and reporting. The RSS endpoint responds as XML; the web research tool could not render the XML payload, so live item parsing remains a runtime verification task.\n\nSources:\n  [1] https://rss.dw.com/rdf/rss-en-africa\n  [2] https://www.dw.com/en/africa/s-12756"
       }
     ],
-    "totalFeeds": 6,
-    "tier": "regional-only"
+    "totalFeeds": 7,
+    "tier": "domestic-single"
   },
   {
     "code": "KN",
@@ -21388,7 +21540,26 @@
   {
     "code": "WS",
     "name": "Samoa",
-    "domesticFeeds": [],
+    "domesticFeeds": [
+      {
+        "id": "samoa-global-news-2521f45b",
+        "name": "Samoa Global News",
+        "publisher": "Samoa Global News",
+        "url": "https://samoaglobalnews.com/feed/",
+        "language": "en",
+        "countries": [
+          "WS"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "sourceAttribution": "Curated editorial research from Samoa Global News publication portal",
+        "license": "Editorial RSS / Copyright Samoa Global News",
+        "lastCheckedAt": "2026-10-19T20:30:36.435Z",
+        "lastItemPublishedAt": "2026-10-19T12:43:20.000Z",
+        "active": true
+      }
+    ],
     "regionalFeeds": [
       {
         "id": "rnz-pacific-5f172e7b",
@@ -21421,8 +21592,8 @@
         "description": "Radio New Zealand Pacific service. Regional aggregator covering 14 Pacific island nations"
       }
     ],
-    "totalFeeds": 1,
-    "tier": "regional-only"
+    "totalFeeds": 2,
+    "tier": "domestic-single"
   },
   {
     "code": "SM",
@@ -21764,7 +21935,26 @@
   {
     "code": "SA",
     "name": "Saudi Arabia",
-    "domesticFeeds": [],
+    "domesticFeeds": [
+      {
+        "id": "arab-news-abec76d8",
+        "name": "Arab News",
+        "publisher": "Arab News",
+        "url": "https://www.arabnews.com/rss.xml",
+        "language": "en",
+        "countries": [
+          "SA"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "sourceAttribution": "Curated editorial research from Arab News publication portal",
+        "license": "Editorial RSS / Copyright Arab News",
+        "lastCheckedAt": "2026-10-19T20:30:35.314Z",
+        "lastItemPublishedAt": "2026-10-19T20:30:27.000Z",
+        "active": true
+      }
+    ],
     "regionalFeeds": [
       {
         "id": "bbc-news-middle-east-966b1f9c",
@@ -21797,8 +21987,8 @@
         "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
       }
     ],
-    "totalFeeds": 1,
-    "tier": "regional-only"
+    "totalFeeds": 2,
+    "tier": "domestic-single"
   },
   {
     "code": "SN",
@@ -29531,7 +29721,26 @@
   {
     "code": "VE",
     "name": "Venezuela",
-    "domesticFeeds": [],
+    "domesticFeeds": [
+      {
+        "id": "efecto-cocuyo-da2bab39",
+        "name": "Efecto Cocuyo",
+        "publisher": "Efecto Cocuyo",
+        "url": "https://efectococuyo.com/feed/",
+        "language": "es",
+        "countries": [
+          "VE"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "sourceAttribution": "Curated editorial research from Efecto Cocuyo Venezuela publication portal",
+        "license": "Editorial RSS / Copyright Efecto Cocuyo",
+        "lastCheckedAt": "2026-10-19T20:30:35.388Z",
+        "lastItemPublishedAt": "2026-10-19T20:22:15.000Z",
+        "active": true
+      }
+    ],
     "regionalFeeds": [
       {
         "id": "mercopress-75406b7a",
@@ -29558,8 +29767,8 @@
         "format": "rss"
       }
     ],
-    "totalFeeds": 1,
-    "tier": "regional-only"
+    "totalFeeds": 2,
+    "tier": "domestic-single"
   },
   {
     "code": "VN",

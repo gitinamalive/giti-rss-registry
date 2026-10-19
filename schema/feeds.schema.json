@@ -69,7 +69,9 @@
           "type": "array",
           "items": { "type": "string", "pattern": "^[A-Z]{2}$" }
         },
-        "alwaysSchedule": { "type": "boolean" }
+        "alwaysSchedule": { "type": "boolean" },
+        "sourceAttribution": { "type": "string" },
+        "license": { "type": "string" }
       },
       "additionalProperties": false
     },
