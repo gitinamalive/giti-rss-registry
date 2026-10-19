@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: SL</title>
-    <dateCreated>Mon, 19 Oct 2026 20:30:36 GMT</dateCreated>
+    <dateCreated>Mon, 19 Oct 2026 21:56:26 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Africanews" title="Africanews" xmlUrl="https://www.africanews.com/feed/rss" />
@@ -11,5 +11,6 @@
     <outline type="rss" text="BBC News Africa" title="BBC News Africa" xmlUrl="https://feeds.bbci.co.uk/news/world/africa/rss.xml" />
     <outline type="rss" text="Deutsche Welle (DW) Africa" title="Deutsche Welle (DW) Africa" xmlUrl="https://rss.dw.com/rdf/rss-en-africa" />
     <outline type="rss" text="France 24 Afrique" title="France 24 Afrique" xmlUrl="https://www.france24.com/fr/afrique/rss" />
+    <outline type="rss" text="The Sierra Leone Telegraph" title="The Sierra Leone Telegraph" xmlUrl="https://www.thesierraleonetelegraph.com/feed/" />
   </body>
 </opml>

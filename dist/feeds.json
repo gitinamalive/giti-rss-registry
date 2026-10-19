@@ -6321,5 +6321,257 @@
     "lastCheckedAt": "2026-10-19T20:30:36.435Z",
     "lastItemPublishedAt": "2026-10-19T12:43:20.000Z",
     "active": true
+  },
+  {
+    "id": "frontpage-africa-fb595433",
+    "name": "FrontPage Africa",
+    "publisher": "FrontPage Africa",
+    "url": "https://frontpageafricaonline.com/feed/",
+    "language": "en",
+    "countries": [
+      "LR"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from FrontPage Africa publication portal",
+    "license": "Editorial RSS / Copyright FrontPage Africa",
+    "lastCheckedAt": "2026-10-19T21:56:07.554Z",
+    "lastItemPublishedAt": "2026-10-19T06:03:30.000Z",
+    "active": true
+  },
+  {
+    "id": "the-sierra-leone-telegraph-1b9284fe",
+    "name": "The Sierra Leone Telegraph",
+    "publisher": "The Sierra Leone Telegraph",
+    "url": "https://www.thesierraleonetelegraph.com/feed/",
+    "language": "en",
+    "countries": [
+      "SL"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from The Sierra Leone Telegraph publication portal",
+    "license": "Editorial RSS / Copyright The Sierra Leone Telegraph",
+    "lastCheckedAt": "2026-10-19T21:56:07.878Z",
+    "lastItemPublishedAt": "2026-10-13T13:30:25.000Z",
+    "active": true
+  },
+  {
+    "id": "eye-radio-367d4fa5",
+    "name": "Eye Radio",
+    "publisher": "Eye Radio",
+    "url": "https://eyeradio.org/feed/",
+    "language": "en",
+    "countries": [
+      "SS"
+    ],
+    "category": "world",
+    "mediaType": "broadcast",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Eye Radio South Sudan portal",
+    "license": "Editorial RSS / Copyright Eye Radio",
+    "lastCheckedAt": "2026-10-19T21:56:09.252Z",
+    "lastItemPublishedAt": "2026-10-19T18:52:01.000Z",
+    "active": true
+  },
+  {
+    "id": "a-r-info-agadez-4808d9cf",
+    "name": "Aïr Info Agadez",
+    "publisher": "Aïr Info Agadez",
+    "url": "https://airinfoagadez.com/feed/",
+    "language": "fr",
+    "countries": [
+      "NE"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Aïr Info Agadez Niger portal",
+    "license": "Editorial RSS / Copyright Aïr Info Agadez",
+    "lastCheckedAt": "2026-10-19T21:56:13.056Z",
+    "lastItemPublishedAt": "2026-10-17T20:43:39.000Z",
+    "active": true
+  },
+  {
+    "id": "o-pa-s-4e8811db",
+    "name": "O País",
+    "publisher": "O País",
+    "url": "https://opais.co.mz/feed/",
+    "language": "pt",
+    "countries": [
+      "MZ"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from O País Moçambique portal",
+    "license": "Editorial RSS / Copyright O País",
+    "lastCheckedAt": "2026-10-19T21:56:13.483Z",
+    "lastItemPublishedAt": "2026-10-19T18:45:30.000Z",
+    "active": true
+  },
+  {
+    "id": "carta-de-mo-ambique-221372ae",
+    "name": "Carta de Moçambique",
+    "publisher": "Carta de Moçambique",
+    "url": "https://cartamz.com/feed/",
+    "language": "pt",
+    "countries": [
+      "MZ"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Carta de Moçambique portal",
+    "license": "Editorial RSS / Copyright Carta de Moçambique",
+    "lastCheckedAt": "2026-10-19T21:56:14.404Z",
+    "lastItemPublishedAt": "2026-10-19T10:58:34.000Z",
+    "active": true
+  },
+  {
+    "id": "vox-congo-f10418ff",
+    "name": "Vox Congo",
+    "publisher": "Vox Congo",
+    "url": "https://www.vox.cg/feed/",
+    "language": "fr",
+    "countries": [
+      "CG"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Vox Congo portal",
+    "license": "Editorial RSS / Copyright Vox Congo",
+    "lastCheckedAt": "2026-10-19T21:56:15.049Z",
+    "lastItemPublishedAt": "2026-10-18T13:34:12.000Z",
+    "active": true
+  },
+  {
+    "id": "bahrain-mirror-a7b6c1f7",
+    "name": "Bahrain Mirror",
+    "publisher": "Bahrain Mirror",
+    "url": "https://bahrainmirror.com/rss.xml",
+    "language": "ar",
+    "countries": [
+      "BH"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Bahrain Mirror portal",
+    "license": "Editorial RSS / Copyright Bahrain Mirror",
+    "lastCheckedAt": "2026-10-19T21:56:16.980Z",
+    "lastItemPublishedAt": "2026-10-19T17:38:00.000Z",
+    "active": true
+  },
+  {
+    "id": "quds-news-network-ea0f3d6a",
+    "name": "Quds News Network",
+    "publisher": "Quds News Network",
+    "url": "https://qudsn.co/rss",
+    "language": "ar",
+    "countries": [
+      "PS"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Quds News Network portal",
+    "license": "Editorial RSS / Copyright Quds News Network",
+    "lastCheckedAt": "2026-10-19T21:56:18.111Z",
+    "lastItemPublishedAt": "2026-10-19T20:25:05.000Z",
+    "active": true
+  },
+  {
+    "id": "times-of-oman-73951e9b",
+    "name": "Times of Oman",
+    "publisher": "Times of Oman",
+    "url": "https://timesofoman.com/feed",
+    "language": "en",
+    "countries": [
+      "OM"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Times of Oman publication portal",
+    "license": "Editorial RSS / Copyright Times of Oman",
+    "lastCheckedAt": "2026-10-19T21:56:19.063Z",
+    "lastItemPublishedAt": "2026-10-19T16:20:19.000Z",
+    "active": true
+  },
+  {
+    "id": "la-nation-9bf08638",
+    "name": "La Nation",
+    "publisher": "La Nation",
+    "url": "https://www.lanation.dj/feed/",
+    "language": "fr",
+    "countries": [
+      "DJ"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from La Nation Djibouti publication portal",
+    "license": "Editorial RSS / Copyright La Nation",
+    "lastCheckedAt": "2026-10-19T21:56:22.575Z",
+    "lastItemPublishedAt": "2026-10-19T07:21:15.000Z",
+    "active": true
+  },
+  {
+    "id": "comores-infos-e30a9d02",
+    "name": "Comores Infos",
+    "publisher": "Comores Infos",
+    "url": "https://www.comoresinfos.net/feed/",
+    "language": "fr",
+    "countries": [
+      "KM"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Comores Infos publication portal",
+    "license": "Editorial RSS / Copyright Comores Infos",
+    "lastCheckedAt": "2026-10-19T21:56:25.198Z",
+    "lastItemPublishedAt": "2026-10-19T07:20:14.000Z",
+    "active": true
+  },
+  {
+    "id": "ahoraeg-b0428fc8",
+    "name": "AhoraEG",
+    "publisher": "AhoraEG",
+    "url": "https://ahoraeg.com/feed/",
+    "language": "es",
+    "countries": [
+      "GQ"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from AhoraEG publication portal",
+    "license": "Editorial RSS / Copyright AhoraEG",
+    "lastCheckedAt": "2026-10-19T21:56:25.351Z",
+    "lastItemPublishedAt": "2026-10-19T19:40:09.000Z",
+    "active": true
+  },
+  {
+    "id": "real-equatorial-guinea-e8732a81",
+    "name": "Real Equatorial Guinea",
+    "publisher": "Real Equatorial Guinea",
+    "url": "https://realequatorialguinea.com/feed/",
+    "language": "es",
+    "countries": [
+      "GQ"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Real Equatorial Guinea publication portal",
+    "license": "Editorial RSS / Copyright Real Equatorial Guinea",
+    "lastCheckedAt": "2026-10-19T21:56:26.396Z",
+    "lastItemPublishedAt": "2026-10-19T21:13:28.000Z",
+    "active": true
   }
 ]

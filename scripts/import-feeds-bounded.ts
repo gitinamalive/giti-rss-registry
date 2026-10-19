@@ -283,7 +283,7 @@ async function main(): Promise<void> {
 
         process.stdout.write(`Rebuilding registry artifacts...\n`);
         const npxCmd = process.platform === 'win32' ? 'npx.cmd' : 'npx';
-        await execFileAsync(npxCmd, ['tsx', 'scripts/build-artifacts.ts']);
+        await execFileAsync(npxCmd, ['tsx', 'scripts/build-artifacts.ts'], { shell: process.platform === 'win32' });
         process.stdout.write(`Artifacts compiled and hashes updated.\n`);
     } else if (dryRun) {
         process.stdout.write(`\n[dry-run] feeds.json was not modified.\n`);

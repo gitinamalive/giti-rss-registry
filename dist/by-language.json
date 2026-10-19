@@ -16,6 +16,24 @@
       "description": "Asharq Al-Awsat — pan-Arab daily newspaper."
     },
     {
+      "id": "bahrain-mirror-a7b6c1f7",
+      "name": "Bahrain Mirror",
+      "publisher": "Bahrain Mirror",
+      "url": "https://bahrainmirror.com/rss.xml",
+      "language": "ar",
+      "countries": [
+        "BH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Bahrain Mirror portal",
+      "license": "Editorial RSS / Copyright Bahrain Mirror",
+      "lastCheckedAt": "2026-10-19T21:56:16.980Z",
+      "lastItemPublishedAt": "2026-10-19T17:38:00.000Z",
+      "active": true
+    },
+    {
       "id": "bbc-arabic-ff42d1dc",
       "name": "BBC Arabic",
       "publisher": "BBC",
@@ -44,6 +62,24 @@
       "format": "rss",
       "homepage": "https://www.france24.com/ar/",
       "description": "France 24 Arabic news feed."
+    },
+    {
+      "id": "quds-news-network-ea0f3d6a",
+      "name": "Quds News Network",
+      "publisher": "Quds News Network",
+      "url": "https://qudsn.co/rss",
+      "language": "ar",
+      "countries": [
+        "PS"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Quds News Network portal",
+      "license": "Editorial RSS / Copyright Quds News Network",
+      "lastCheckedAt": "2026-10-19T21:56:18.111Z",
+      "lastItemPublishedAt": "2026-10-19T20:25:05.000Z",
+      "active": true
     },
     {
       "id": "sana-3d39c5fb",
@@ -1729,6 +1765,24 @@
       "description": "Entertainment Weekly — TV, film, music, and celebrity news and entertainment."
     },
     {
+      "id": "eye-radio-367d4fa5",
+      "name": "Eye Radio",
+      "publisher": "Eye Radio",
+      "url": "https://eyeradio.org/feed/",
+      "language": "en",
+      "countries": [
+        "SS"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Eye Radio South Sudan portal",
+      "license": "Editorial RSS / Copyright Eye Radio",
+      "lastCheckedAt": "2026-10-19T21:56:09.252Z",
+      "lastItemPublishedAt": "2026-10-19T18:52:01.000Z",
+      "active": true
+    },
+    {
       "id": "fbc-news-10cdbefd",
       "name": "FBC News",
       "publisher": "FBC News",
@@ -1839,6 +1893,24 @@
       "format": "rss",
       "homepage": "https://frieze.com",
       "description": "Frieze — contemporary art and culture magazine and fair."
+    },
+    {
+      "id": "frontpage-africa-fb595433",
+      "name": "FrontPage Africa",
+      "publisher": "FrontPage Africa",
+      "url": "https://frontpageafricaonline.com/feed/",
+      "language": "en",
+      "countries": [
+        "LR"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from FrontPage Africa publication portal",
+      "license": "Editorial RSS / Copyright FrontPage Africa",
+      "lastCheckedAt": "2026-10-19T21:56:07.554Z",
+      "lastItemPublishedAt": "2026-10-19T06:03:30.000Z",
+      "active": true
     },
     {
       "id": "gazeta-ua-884b9280",
@@ -4774,6 +4846,24 @@
       "id": "the-scoop-8d7183e7"
     },
     {
+      "id": "the-sierra-leone-telegraph-1b9284fe",
+      "name": "The Sierra Leone Telegraph",
+      "publisher": "The Sierra Leone Telegraph",
+      "url": "https://www.thesierraleonetelegraph.com/feed/",
+      "language": "en",
+      "countries": [
+        "SL"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from The Sierra Leone Telegraph publication portal",
+      "license": "Editorial RSS / Copyright The Sierra Leone Telegraph",
+      "lastCheckedAt": "2026-10-19T21:56:07.878Z",
+      "lastItemPublishedAt": "2026-10-13T13:30:25.000Z",
+      "active": true
+    },
+    {
       "id": "the-spectator-b9855f10",
       "name": "The Spectator",
       "publisher": "The Spectator",
@@ -4872,6 +4962,24 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "times-of-oman-73951e9b",
+      "name": "Times of Oman",
+      "publisher": "Times of Oman",
+      "url": "https://timesofoman.com/feed",
+      "language": "en",
+      "countries": [
+        "OM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Times of Oman publication portal",
+      "license": "Editorial RSS / Copyright Times of Oman",
+      "lastCheckedAt": "2026-10-19T21:56:19.063Z",
+      "lastItemPublishedAt": "2026-10-19T16:20:19.000Z",
+      "active": true
     },
     {
       "id": "tirana-times-2a3a8e03",
@@ -5265,6 +5373,24 @@
       "format": "rss"
     },
     {
+      "id": "ahoraeg-b0428fc8",
+      "name": "AhoraEG",
+      "publisher": "AhoraEG",
+      "url": "https://ahoraeg.com/feed/",
+      "language": "es",
+      "countries": [
+        "GQ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from AhoraEG publication portal",
+      "license": "Editorial RSS / Copyright AhoraEG",
+      "lastCheckedAt": "2026-10-19T21:56:25.351Z",
+      "lastItemPublishedAt": "2026-10-19T19:40:09.000Z",
+      "active": true
+    },
+    {
       "id": "biobiochile-3fea126e",
       "name": "BioBioChile",
       "publisher": "BioBioChile",
@@ -5374,6 +5500,24 @@
       "format": "rss"
     },
     {
+      "id": "real-equatorial-guinea-e8732a81",
+      "name": "Real Equatorial Guinea",
+      "publisher": "Real Equatorial Guinea",
+      "url": "https://realequatorialguinea.com/feed/",
+      "language": "es",
+      "countries": [
+        "GQ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Real Equatorial Guinea publication portal",
+      "license": "Editorial RSS / Copyright Real Equatorial Guinea",
+      "lastCheckedAt": "2026-10-19T21:56:26.396Z",
+      "lastItemPublishedAt": "2026-10-19T21:13:28.000Z",
+      "active": true
+    },
+    {
       "id": "reforma-com-4ee63d5f",
       "name": "Reforma.com",
       "publisher": "Reforma.com",
@@ -5453,6 +5597,24 @@
       "notes": "Actu Cameroun publishes frequent Cameroon-focused reporting and disclosed a 2024 one-month suspension following a decision by Cameroon’s National Communication Council; the outlet announced corrective measures before resuming publication. Retain normal cross-source checks for sensitive claims.\n\nSources:\n  [1] https://actucameroun.com/\n  [2] https://actucameroun.com/2024/07/10/communique-reprise-des-activites-dactu-cameroun/"
     },
     {
+      "id": "a-r-info-agadez-4808d9cf",
+      "name": "Aïr Info Agadez",
+      "publisher": "Aïr Info Agadez",
+      "url": "https://airinfoagadez.com/feed/",
+      "language": "fr",
+      "countries": [
+        "NE"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Aïr Info Agadez Niger portal",
+      "license": "Editorial RSS / Copyright Aïr Info Agadez",
+      "lastCheckedAt": "2026-10-19T21:56:13.056Z",
+      "lastItemPublishedAt": "2026-10-17T20:43:39.000Z",
+      "active": true
+    },
+    {
       "id": "alwihda-info-bd96007a",
       "name": "Alwihda Info",
       "publisher": "Alwihda Info",
@@ -5470,6 +5632,24 @@
       "perspective": "independent",
       "coverageType": "national",
       "notes": "Chadian outlet whose public editorial statement emphasizes accuracy, impartiality, and respect for facts. A public 2026 correction shows an explicit correction process; retain normal cross-source checks for sensitive claims.\n\nSources:\n  [1] https://www.alwihdainfo.com/a-propos-de-nous/\n  [2] https://www.alwihdainfo.com/erratum-alwihda-info-presente-ses-excuses-a-l-ARSAT-et-a-son-audience-pour-un-manquement-a-l-equilibre-de-l-information-a148942/"
+    },
+    {
+      "id": "comores-infos-e30a9d02",
+      "name": "Comores Infos",
+      "publisher": "Comores Infos",
+      "url": "https://www.comoresinfos.net/feed/",
+      "language": "fr",
+      "countries": [
+        "KM"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Comores Infos publication portal",
+      "license": "Editorial RSS / Copyright Comores Infos",
+      "lastCheckedAt": "2026-10-19T21:56:25.198Z",
+      "lastItemPublishedAt": "2026-10-19T07:20:14.000Z",
+      "active": true
     },
     {
       "id": "euronews-698617a6",
@@ -5630,6 +5810,24 @@
       "format": "rss"
     },
     {
+      "id": "la-nation-9bf08638",
+      "name": "La Nation",
+      "publisher": "La Nation",
+      "url": "https://www.lanation.dj/feed/",
+      "language": "fr",
+      "countries": [
+        "DJ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from La Nation Djibouti publication portal",
+      "license": "Editorial RSS / Copyright La Nation",
+      "lastCheckedAt": "2026-10-19T21:56:22.575Z",
+      "lastItemPublishedAt": "2026-10-19T07:21:15.000Z",
+      "active": true
+    },
+    {
       "id": "la-nouvelle-tribune-1ea86eca",
       "name": "La Nouvelle Tribune",
       "publisher": "La Nouvelle Tribune",
@@ -5696,6 +5894,24 @@
       "perspective": "independent",
       "coverageType": "national",
       "notes": "Tchadinfos describes itself as an independent national news source founded in 2012. Its legal notice identifies a Chadian publisher and editor of record.\n\nSources:\n  [1] https://tchadinfos.com/a-propos/\n  [2] https://tchadinfos.com/mentions-legales/"
+    },
+    {
+      "id": "vox-congo-f10418ff",
+      "name": "Vox Congo",
+      "publisher": "Vox Congo",
+      "url": "https://www.vox.cg/feed/",
+      "language": "fr",
+      "countries": [
+        "CG"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Vox Congo portal",
+      "license": "Editorial RSS / Copyright Vox Congo",
+      "lastCheckedAt": "2026-10-19T21:56:15.049Z",
+      "lastItemPublishedAt": "2026-10-18T13:34:12.000Z",
+      "active": true
     }
   ],
   "hi": [
@@ -6038,6 +6254,24 @@
       "description": "BBC Brasil — Portuguese-language news."
     },
     {
+      "id": "carta-de-mo-ambique-221372ae",
+      "name": "Carta de Moçambique",
+      "publisher": "Carta de Moçambique",
+      "url": "https://cartamz.com/feed/",
+      "language": "pt",
+      "countries": [
+        "MZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from Carta de Moçambique portal",
+      "license": "Editorial RSS / Copyright Carta de Moçambique",
+      "lastCheckedAt": "2026-10-19T21:56:14.404Z",
+      "lastItemPublishedAt": "2026-10-19T10:58:34.000Z",
+      "active": true
+    },
+    {
       "id": "expresso-9bcf73a1",
       "name": "Expresso",
       "publisher": "Expresso",
@@ -6107,6 +6341,24 @@
       "license": "Editorial RSS / Copyright Maka Angola",
       "lastCheckedAt": "2026-10-19T20:30:17.933Z",
       "lastItemPublishedAt": "2026-10-16T11:47:07.000Z",
+      "active": true
+    },
+    {
+      "id": "o-pa-s-4e8811db",
+      "name": "O País",
+      "publisher": "O País",
+      "url": "https://opais.co.mz/feed/",
+      "language": "pt",
+      "countries": [
+        "MZ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "sourceAttribution": "Curated editorial research from O País Moçambique portal",
+      "license": "Editorial RSS / Copyright O País",
+      "lastCheckedAt": "2026-10-19T21:56:13.483Z",
+      "lastItemPublishedAt": "2026-10-19T18:45:30.000Z",
       "active": true
     },
     {
