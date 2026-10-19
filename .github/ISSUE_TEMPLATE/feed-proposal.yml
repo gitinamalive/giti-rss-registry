@@ -1,0 +1,96 @@
+name: Propose a News Feed
+description: Suggest a new verified RSS, Atom, RDF, or JSON news feed for the registry
+title: '[Feed Proposal]: '
+labels: ['feed-proposal', 'automated-triage']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping expand global open news coverage!
+        Please fill in the details below. Our triage bot will validate reachability, detect feed format, and draft metadata.
+  - type: input
+    id: feed_url
+    attributes:
+      label: Feed URL
+      description: The direct public HTTP(S) link to the RSS, Atom, RDF, or JSON feed.
+      placeholder: https://example.com/feed.xml
+    validations:
+      required: true
+  - type: input
+    id: country
+    attributes:
+      label: Target Country Code (ISO-3166-1 alpha-2)
+      description: Primary 2-letter country code this outlet covers or originates from (e.g., NG, DE, JP, AR, US).
+      placeholder: US
+    validations:
+      required: true
+  - type: input
+    id: publisher
+    attributes:
+      label: Publisher Name
+      description: The name of the organization or publication.
+      placeholder: Premium Times
+    validations:
+      required: false
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Primary news category.
+      options:
+        - world
+        - politics
+        - technology
+        - finance
+        - sports
+        - science
+        - climate
+        - health
+        - entertainment
+        - culture
+        - ai
+        - space
+        - europe
+        - us
+        - investigative
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: Primary Language Code (ISO-639-1)
+      description: 2-letter language code (e.g., en, es, fr, ar, de, zh). Defaults to en if undetermined.
+      placeholder: en
+    validations:
+      required: false
+  - type: dropdown
+    id: media_type
+    attributes:
+      label: Media Type
+      description: Type of outlet publishing this feed.
+      options:
+        - digital
+        - print
+        - broadcast
+        - wire
+    validations:
+      required: false
+  - type: dropdown
+    id: perspective
+    attributes:
+      label: Editorial Perspective
+      description: General operational/editorial structure.
+      options:
+        - independent
+        - public-service
+        - corporate
+        - state-affiliated
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Context
+      description: Any notes on geographic focus, regional coverage, or paywalls/restrictions.
+    validations:
+      required: false

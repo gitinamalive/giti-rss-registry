@@ -150,7 +150,7 @@ export function generateIndexHtml(feeds: FeedEntry[], generatedAt: string = new 
 :root{--bg:#f8f9fa;--card:#fff;--border:#dee2e6;--text:#212529;--muted:#6c757d;--link:#0d6efd;--green:#198754;--yellow:#fd7e14;--orange:#e8590c;--red:#dc3545;--radius:6px}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;min-height:100vh}
-header{background:var(--card);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:10;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+header{background:var(--card);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:10;box-shadow:0 1px 3px rgba(0,0,0,.05);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
 header h1{font-size:1.25rem;font-weight:600;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
 header .badge{background:var(--link);color:#fff;font-size:.75rem;padding:.15em .5em;border-radius:999px;font-weight:500}
 header .sub{color:var(--muted);font-size:.8rem;margin-top:.25rem}
@@ -201,6 +201,7 @@ th,td{padding:.35rem .4rem}
 <header>
 <h1>\u{1F4E1} Giti RSS Registry <span class="badge">${feeds.length} feeds</span></h1>
 <div class="sub">Curated global news feed directory \u2014 filterable, sortable, open data</div>
+<a class="btn btn-primary" href="https://github.com/gitinamalive/giti-rss-registry/issues/new?template=feed-proposal.yml" target="_blank" rel="noopener" style="margin-left:auto">+ Propose Feed</a>
 </header>
 <div class="controls">
 <input type="search" id="search" placeholder="\u{1F50D}  Search by name, publisher, description, or country\u2026" aria-label="Search feeds">
