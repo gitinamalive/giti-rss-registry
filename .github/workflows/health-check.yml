@@ -34,11 +34,21 @@ jobs:
       - name: Refresh build artifacts and manifest
         run: npm run build
 
+      - name: Generate permanent redirect proposals
+        run: npx tsx scripts/propose-redirect-updates.ts
+
+      - name: Upload redirect proposals
+        uses: actions/upload-artifact@v4
+        with:
+          name: proposed-redirects
+          path: artifacts/proposed-redirects.json
+          if-no-files-found: ignore
+
       - name: Commit health overlay and manifest
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dist/feeds-health.json dist/manifest.json
+          git add dist/feeds-health.json dist/manifest.json dist/coverage-matrix.json
           git diff --staged --quiet || git commit -m "chore(rss-registry): weekly health check update"
           git push
 
