@@ -6573,5 +6573,245 @@
     "lastCheckedAt": "2026-10-19T21:56:26.396Z",
     "lastItemPublishedAt": "2026-10-19T21:13:28.000Z",
     "active": true
+  },
+  {
+    "id": "the-shift-news-c5a4d3e2",
+    "name": "The Shift News",
+    "publisher": "The Shift News",
+    "url": "https://theshiftnews.com/feed/",
+    "language": "en",
+    "countries": [
+      "MT"
+    ],
+    "category": "investigative",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from The Shift News publication portal",
+    "license": "Editorial RSS / Copyright The Shift News",
+    "homepage": "https://theshiftnews.com",
+    "description": "Independent investigative journalism and news reporting from Malta.",
+    "lastCheckedAt": "2026-10-20T00:56:12.847Z",
+    "lastItemPublishedAt": "2026-10-19T17:07:09.000Z",
+    "active": true
+  },
+  {
+    "id": "newsbook-malta-b7e1c84f",
+    "name": "Newsbook Malta",
+    "publisher": "Newsbook Malta",
+    "url": "https://newsbook.com.mt/en/feed/",
+    "language": "en",
+    "countries": [
+      "MT"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Newsbook Malta publication portal",
+    "license": "Editorial RSS / Copyright Newsbook Malta",
+    "homepage": "https://newsbook.com.mt/en/",
+    "description": "Comprehensive English-language Maltese news covering politics, society, and current events.",
+    "lastCheckedAt": "2026-10-20T00:56:13.592Z",
+    "lastItemPublishedAt": "2026-10-19T18:59:43.000Z",
+    "active": true
+  },
+  {
+    "id": "independent-news-eswatini-9a2c4e7b",
+    "name": "Independent News Eswatini",
+    "publisher": "Independent News Eswatini",
+    "url": "https://independentnews.co.sz/feed/",
+    "language": "en",
+    "countries": [
+      "SZ"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Independent News Eswatini portal",
+    "license": "Editorial RSS / Copyright Independent News Eswatini",
+    "homepage": "https://independentnews.co.sz",
+    "description": "Independent digital news service reporting on domestic and regional affairs in Eswatini.",
+    "lastCheckedAt": "2026-10-20T00:56:15.131Z",
+    "lastItemPublishedAt": "2026-10-19T14:42:49.000Z",
+    "active": true
+  },
+  {
+    "id": "sahara-medias-a4c8e1f0",
+    "name": "Sahara Medias",
+    "publisher": "Sahara Medias",
+    "url": "https://fr.saharamedias.net/feed/",
+    "language": "fr",
+    "countries": [
+      "MR"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Sahara Medias publication portal",
+    "license": "Editorial RSS / Copyright Sahara Medias",
+    "homepage": "https://fr.saharamedias.net",
+    "description": "Leading Mauritanian and Sahelian news portal covering national, regional, and economic news.",
+    "lastCheckedAt": "2026-10-20T00:56:16.279Z",
+    "lastItemPublishedAt": "2026-10-20T00:02:20.000Z",
+    "active": true
+  },
+  {
+    "id": "savoir-news-d8e2b9c1",
+    "name": "Savoir News",
+    "publisher": "Savoir News",
+    "url": "https://savoirnews.tg/feed/",
+    "language": "fr",
+    "countries": [
+      "TG"
+    ],
+    "category": "world",
+    "mediaType": "wire",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Savoir News Togo agency portal",
+    "license": "Editorial RSS / Copyright Savoir News",
+    "homepage": "https://savoirnews.tg",
+    "description": "Togolese news agency and information portal covering politics, society, and development in Togo.",
+    "lastCheckedAt": "2026-10-20T00:56:18.070Z",
+    "lastItemPublishedAt": "2026-10-20T00:28:35.000Z",
+    "active": true
+  },
+  {
+    "id": "corbeau-news-centrafrique-b3f1e8a7",
+    "name": "Corbeau News Centrafrique",
+    "publisher": "Corbeau News Centrafrique",
+    "url": "https://corbeaunews-centrafrique.org/feed/",
+    "language": "fr",
+    "countries": [
+      "CF"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Corbeau News Centrafrique portal",
+    "license": "Editorial RSS / Copyright Corbeau News Centrafrique",
+    "homepage": "https://corbeaunews-centrafrique.org",
+    "description": "Independent investigative and daily news platform focused on the Central African Republic.",
+    "lastCheckedAt": "2026-10-20T00:56:18.245Z",
+    "lastItemPublishedAt": "2026-10-19T12:00:00.000Z",
+    "active": true
+  },
+  {
+    "id": "cook-islands-news-e5d2a8b9",
+    "name": "Cook Islands News",
+    "publisher": "Cook Islands News",
+    "url": "https://www.cookislandsnews.com/feed/",
+    "language": "en",
+    "countries": [
+      "CK"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Cook Islands News publication portal",
+    "license": "Editorial RSS / Copyright Cook Islands News",
+    "homepage": "https://www.cookislandsnews.com",
+    "description": "The Cook Islands national newspaper providing daily domestic, cultural, and political news.",
+    "lastCheckedAt": "2026-10-20T00:56:18.683Z",
+    "lastItemPublishedAt": "2026-10-19T19:07:41.000Z",
+    "active": true
+  },
+  {
+    "id": "marshall-islands-journal-8e3b1c9a",
+    "name": "The Marshall Islands Journal",
+    "publisher": "The Marshall Islands Journal",
+    "url": "https://marshallislandsjournal.com/feed/",
+    "language": "en",
+    "countries": [
+      "MH"
+    ],
+    "category": "world",
+    "mediaType": "print",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from The Marshall Islands Journal portal",
+    "license": "Editorial RSS / Copyright The Marshall Islands Journal",
+    "homepage": "https://marshallislandsjournal.com",
+    "description": "Weekly print and digital newspaper of record for the Republic of the Marshall Islands.",
+    "lastCheckedAt": "2026-10-20T00:56:18.768Z",
+    "lastItemPublishedAt": "2026-10-15T20:28:00.000Z",
+    "active": true
+  },
+  {
+    "id": "seychelles-state-house-d1b8e4f2",
+    "name": "Seychelles State House News",
+    "publisher": "Office of the President of Seychelles",
+    "url": "https://statehouse.gov.sc/rss/news",
+    "language": "en",
+    "countries": [
+      "SC"
+    ],
+    "category": "politics",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Seychelles State House official portal",
+    "license": "Official Public Information / Copyright Republic of Seychelles",
+    "homepage": "https://statehouse.gov.sc",
+    "description": "Official news and government statements from the Office of the President of Seychelles.",
+    "lastCheckedAt": "2026-10-20T00:56:22.853Z",
+    "lastItemPublishedAt": "2026-10-17T04:00:00.000Z",
+    "active": true
+  },
+  {
+    "id": "lesotho-times-e9a3b2c1",
+    "name": "Lesotho Times",
+    "publisher": "Lesotho Times",
+    "url": "https://lestimes.com/?feed=rss2",
+    "language": "en",
+    "countries": [
+      "LS"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from Lesotho Times publication portal",
+    "license": "Editorial RSS / Copyright Lesotho Times",
+    "homepage": "https://lestimes.com",
+    "description": "Leading weekly independent newspaper providing political, business, and investigative coverage of Lesotho.",
+    "lastCheckedAt": "2026-10-20T00:56:26.871Z",
+    "lastItemPublishedAt": "2026-10-15T20:01:43.000Z",
+    "active": true
+  },
+  {
+    "id": "o-democrata-gb-c8e1a4f3",
+    "name": "O Democrata GB",
+    "publisher": "O Democrata",
+    "url": "https://www.odemocratagb.com/?feed=rss2",
+    "language": "pt",
+    "countries": [
+      "GW"
+    ],
+    "category": "world",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from O Democrata Guinea-Bissau portal",
+    "license": "Editorial RSS / Copyright O Democrata",
+    "homepage": "https://www.odemocratagb.com",
+    "description": "Independent weekly newspaper and online news portal in Guinea-Bissau covering politics and society.",
+    "lastCheckedAt": "2026-10-20T00:56:28.949Z",
+    "lastItemPublishedAt": "2026-10-19T22:58:52.000Z",
+    "active": true
+  },
+  {
+    "id": "fsm-gov-news-b4e8a1c9",
+    "name": "FSM National Government News",
+    "publisher": "FSM National Government",
+    "url": "https://gov.fm/feed/",
+    "language": "en",
+    "countries": [
+      "FM"
+    ],
+    "category": "politics",
+    "mediaType": "digital",
+    "format": "rss",
+    "sourceAttribution": "Curated editorial research from FSM National Government official portal",
+    "license": "Official Public Information / Copyright Federated States of Micronesia",
+    "homepage": "https://gov.fm",
+    "description": "Official news releases and executive announcements from the Federated States of Micronesia National Government.",
+    "lastCheckedAt": "2026-10-20T00:56:30.348Z",
+    "lastItemPublishedAt": "2026-10-05T02:28:54.000Z",
+    "active": true
   }
 ]

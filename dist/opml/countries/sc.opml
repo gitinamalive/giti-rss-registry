@@ -2,12 +2,13 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: SC</title>
-    <dateCreated>Tue, 20 Oct 2026 00:33:03 GMT</dateCreated>
+    <dateCreated>Tue, 20 Oct 2026 00:56:30 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Al Jazeera" title="Al Jazeera" xmlUrl="https://www.aljazeera.com/xml/rss/all.xml" />
     <outline type="rss" text="BBC News Africa" title="BBC News Africa" xmlUrl="https://feeds.bbci.co.uk/news/world/africa/rss.xml" />
     <outline type="rss" text="Deutsche Welle (DW) Africa" title="Deutsche Welle (DW) Africa" xmlUrl="https://rss.dw.com/rdf/rss-en-africa" />
     <outline type="rss" text="France 24 Afrique" title="France 24 Afrique" xmlUrl="https://www.france24.com/fr/afrique/rss" />
+    <outline type="rss" text="Seychelles State House News" title="Seychelles State House News" xmlUrl="https://statehouse.gov.sc/rss/news" />
   </body>
 </opml>

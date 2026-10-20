@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: world</title>
-    <dateCreated>Tue, 20 Oct 2026 00:33:03 GMT</dateCreated>
+    <dateCreated>Tue, 20 Oct 2026 00:56:30 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="24.kg" title="24.kg" xmlUrl="https://24.kg/rss/" />
@@ -57,6 +57,8 @@
     <outline type="rss" text="Colombia Reports" title="Colombia Reports" xmlUrl="https://colombiareports.com/feed" />
     <outline type="rss" text="Comores Infos" title="Comores Infos" xmlUrl="https://www.comoresinfos.net/feed/" />
     <outline type="rss" text="Congo Planet" title="Congo Planet" xmlUrl="https://www.congoplanet.com/feeds/rss_congo_africa.xml" />
+    <outline type="rss" text="Cook Islands News" title="Cook Islands News" xmlUrl="https://www.cookislandsnews.com/feed/" />
+    <outline type="rss" text="Corbeau News Centrafrique" title="Corbeau News Centrafrique" xmlUrl="https://corbeaunews-centrafrique.org/feed/" />
     <outline type="rss" text="Dabanga Sudan" title="Dabanga Sudan" xmlUrl="https://www.dabangasudan.org/en/feed" />
     <outline type="rss" text="Daily Express" title="Daily Express" xmlUrl="https://feeds.feedburner.com/daily-express-news-showbiz" />
     <outline type="rss" text="Daily News" title="Daily News" xmlUrl="https://dailynews.co.tz/category/tanzania/feed" />
@@ -100,6 +102,7 @@
     <outline type="rss" text="Hespress" title="Hespress" xmlUrl="https://www.hespress.com/feed/index.rss" />
     <outline type="rss" text="Honduras.com" title="Honduras.com" xmlUrl="https://www.honduras.com/feed/" />
     <outline type="rss" text="Hong Kong Free Press" title="Hong Kong Free Press" xmlUrl="https://hongkongfp.com/feed/" />
+    <outline type="rss" text="Independent News Eswatini" title="Independent News Eswatini" xmlUrl="https://independentnews.co.sz/feed/" />
     <outline type="rss" text="Infos Gabon" title="Infos Gabon" xmlUrl="https://fr.infosgabon.com/feed/" />
     <outline type="rss" text="IRNA News" title="IRNA News" xmlUrl="https://en.irna.ir/rss" />
     <outline type="rss" text="Island Times" title="Island Times" xmlUrl="https://islandtimes.org/feed/" />
@@ -127,6 +130,7 @@
     <outline type="rss" text="leaders.com.tn" title="leaders.com.tn" xmlUrl="https://www.leaders.com.tn/rss" />
     <outline type="rss" text="LeFaso.net" title="LeFaso.net" xmlUrl="https://lefaso.net/spip.php?page=backend" />
     <outline type="rss" text="leral.net" title="leral.net" xmlUrl="https://www.leral.net/xml/syndication.rss" />
+    <outline type="rss" text="Lesotho Times" title="Lesotho Times" xmlUrl="https://lestimes.com/?feed=rss2" />
     <outline type="rss" text="Libya Herald" title="Libya Herald" xmlUrl="https://www.libyaherald.com/feed/" />
     <outline type="rss" text="Madagascar Tribune" title="Madagascar Tribune" xmlUrl="https://www.madagascar-tribune.com/spip.php?page=backend" />
     <outline type="rss" text="Mail &amp; Guardian" title="Mail &amp; Guardian" xmlUrl="https://mg.co.za/feed/" />
@@ -153,6 +157,7 @@
     <outline type="rss" text="News.mn" title="News.mn" xmlUrl="https://news.mn/en/feed/" />
     <outline type="rss" text="news.sanook.com" title="news.sanook.com" xmlUrl="https://rssfeeds.sanook.com/rss/feeds/sanook/news.crime.xml" />
     <outline type="rss" text="News24" title="News24" xmlUrl="https://feeds.news24.com/articles/news24/TopStories/rss" />
+    <outline type="rss" text="Newsbook Malta" title="Newsbook Malta" xmlUrl="https://newsbook.com.mt/en/feed/" />
     <outline type="rss" text="NewsDay Zimbabwe" title="NewsDay Zimbabwe" xmlUrl="https://newsday.co.zw/feed/" />
     <outline type="rss" text="NHK" title="NHK" xmlUrl="https://www.nhk.or.jp/rj/podcast/rss/english.xml" />
     <outline type="rss" text="NHK News — Japanese" title="NHK News — Japanese" xmlUrl="https://www3.nhk.or.jp/rss/news/cat0.xml" />
@@ -163,6 +168,7 @@
     <outline type="rss" text="Nyasa Times" title="Nyasa Times" xmlUrl="https://www.nyasatimes.com/feed/" />
     <outline type="rss" text="NYT Chinese" title="NYT Chinese" xmlUrl="https://cn.nytimes.com/rss/" />
     <outline type="rss" text="NZ Herald" title="NZ Herald" xmlUrl="https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/?outputType=xml&amp;_website=nzh" />
+    <outline type="rss" text="O Democrata GB" title="O Democrata GB" xmlUrl="https://www.odemocratagb.com/?feed=rss2" />
     <outline type="rss" text="O País" title="O País" xmlUrl="https://opais.co.mz/feed/" />
     <outline type="rss" text="OC Media" title="OC Media" xmlUrl="https://oc-media.org/feed/" />
     <outline type="rss" text="okezone.com" title="okezone.com" xmlUrl="https://sindikasi.okezone.com/index.php/rss/0/RSS2.0" />
@@ -184,9 +190,11 @@
     <outline type="rss" text="RNZ National" title="RNZ National" xmlUrl="https://www.rnz.co.nz/rss/national.xml" />
     <outline type="rss" text="RNZ Pacific" title="RNZ Pacific" xmlUrl="https://www.rnz.co.nz/rss/pacific.xml" />
     <outline type="rss" text="RT News" title="RT News" xmlUrl="https://rt-english.com/rss/news/" />
+    <outline type="rss" text="Sahara Medias" title="Sahara Medias" xmlUrl="https://fr.saharamedias.net/feed/" />
     <outline type="rss" text="Samoa Global News" title="Samoa Global News" xmlUrl="https://samoaglobalnews.com/feed/" />
     <outline type="rss" text="SANA" title="SANA" xmlUrl="https://sana.sy/tr/feed/" />
     <outline type="rss" text="Santiago Times" title="Santiago Times" xmlUrl="https://santiagotimes.cl/feed" />
+    <outline type="rss" text="Savoir News" title="Savoir News" xmlUrl="https://savoirnews.tg/feed/" />
     <outline type="rss" text="SBS News" title="SBS News" xmlUrl="https://www.sbs.com.au/news/feed" />
     <outline type="rss" text="SCMP China" title="SCMP China" xmlUrl="https://www.scmp.com/rss/91/feed" />
     <outline type="rss" text="Searchlight" title="Searchlight" xmlUrl="https://www.searchlight.vc/feed/" />
@@ -216,6 +224,7 @@
     <outline type="rss" text="The Initium" title="The Initium" xmlUrl="https://theinitium.com/rss/" />
     <outline type="rss" text="The Jamaica Star" title="The Jamaica Star" xmlUrl="https://jamaica-star.com/feed/news.xml" />
     <outline type="rss" text="The Japan Times" title="The Japan Times" xmlUrl="https://www.japantimes.co.jp/feed" />
+    <outline type="rss" text="The Marshall Islands Journal" title="The Marshall Islands Journal" xmlUrl="https://marshallislandsjournal.com/feed/" />
     <outline type="rss" text="The Moscow Times" title="The Moscow Times" xmlUrl="https://www.themoscowtimes.com/rss/news" />
     <outline type="rss" text="The Namibian" title="The Namibian" xmlUrl="https://www.namibian.com.na/feed/" />
     <outline type="rss" text="The New Paper" title="The New Paper" xmlUrl="https://www.tnp.sg/rss.xml" />

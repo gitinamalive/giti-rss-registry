@@ -2,16 +2,18 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: politics</title>
-    <dateCreated>Tue, 20 Oct 2026 00:33:03 GMT</dateCreated>
+    <dateCreated>Tue, 20 Oct 2026 00:56:30 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="BBC News — Politics" title="BBC News — Politics" xmlUrl="https://feeds.bbci.co.uk/news/politics/rss.xml" />
     <outline type="rss" text="FiveThirtyEight" title="FiveThirtyEight" xmlUrl="https://fivethirtyeight.com/feed/" />
+    <outline type="rss" text="FSM National Government News" title="FSM National Government News" xmlUrl="https://gov.fm/feed/" />
     <outline type="rss" text="Mother Jones" title="Mother Jones" xmlUrl="https://www.motherjones.com/feed/" />
     <outline type="rss" text="NPR Politics" title="NPR Politics" xmlUrl="https://feeds.npr.org/1014/rss.xml" />
     <outline type="rss" text="Politico" title="Politico" xmlUrl="https://www.politico.com/rss/politicopicks.xml" />
     <outline type="rss" text="RealClearPolitics" title="RealClearPolitics" xmlUrl="https://www.realclearpolitics.com/index.xml" />
     <outline type="rss" text="Roll Call" title="Roll Call" xmlUrl="https://rollcall.com/feed/" />
+    <outline type="rss" text="Seychelles State House News" title="Seychelles State House News" xmlUrl="https://statehouse.gov.sc/rss/news" />
     <outline type="rss" text="The Guardian — Politics" title="The Guardian — Politics" xmlUrl="https://www.theguardian.com/politics/rss" />
     <outline type="rss" text="The Hill" title="The Hill" xmlUrl="https://thehill.com/news/feed/" />
     <outline type="rss" text="The Intercept" title="The Intercept" xmlUrl="https://theintercept.com/feed/?lang=en" />
