@@ -2,10 +2,10 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: SI</title>
-    <dateCreated>Mon, 19 Oct 2026 21:56:26 GMT</dateCreated>
+    <dateCreated>Tue, 20 Oct 2026 00:33:03 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Euronews" title="Euronews" xmlUrl="https://www.euronews.com/rss?format=xml" />
-    <outline type="rss" text="Planet Siol.net" title="Planet Siol.net" xmlUrl="https://www.siol.net/rss.aspx?path=SiOL.Net" />
+    <outline type="rss" text="Planet Siol.net" title="Planet Siol.net" xmlUrl="https://siol.net/feeds/latest2" />
   </body>
 </opml>

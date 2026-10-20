@@ -2,11 +2,11 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: finance</title>
-    <dateCreated>Mon, 19 Oct 2026 21:56:26 GMT</dateCreated>
+    <dateCreated>Tue, 20 Oct 2026 00:33:03 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Barron&apos;s" title="Barron&apos;s" xmlUrl="https://www.barrons.com/xml/feeds/all-news.xml" />
-    <outline type="rss" text="Bloomberg Markets" title="Bloomberg Markets" xmlUrl="https://feeds.bloomberg.com/markets/news.rss" />
+    <outline type="rss" text="Bloomberg Markets" title="Bloomberg Markets" xmlUrl="https://www.bloomberg.com/feeds/markets/news.rss" />
     <outline type="rss" text="Caixin Global" title="Caixin Global" xmlUrl="https://www.caixinglobal.com/feed/" />
     <outline type="rss" text="CNBC Top News" title="CNBC Top News" xmlUrl="https://www.cnbc.com/id/100003114/device/rss/rss.html" />
     <outline type="rss" text="Financial Times — World News" title="Financial Times — World News" xmlUrl="https://www.ft.com/world?format=rss" />

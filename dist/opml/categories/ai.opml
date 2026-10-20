@@ -2,11 +2,11 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: ai</title>
-    <dateCreated>Mon, 19 Oct 2026 21:56:26 GMT</dateCreated>
+    <dateCreated>Tue, 20 Oct 2026 00:33:03 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Berkeley AI Research Blog" title="Berkeley AI Research Blog" xmlUrl="https://bair.berkeley.edu/blog/feed.xml" />
-    <outline type="rss" text="Google — The Keyword: AI" title="Google — The Keyword: AI" xmlUrl="https://blog.google/technology/ai/rss/" />
+    <outline type="rss" text="Google — The Keyword: AI" title="Google — The Keyword: AI" xmlUrl="https://blog.google/innovation-and-ai/technology/ai/rss/" />
     <outline type="rss" text="Google DeepMind Blog" title="Google DeepMind Blog" xmlUrl="https://deepmind.google/blog/rss.xml" />
     <outline type="rss" text="Hugging Face Blog" title="Hugging Face Blog" xmlUrl="https://huggingface.co/blog/feed.xml" />
     <outline type="rss" text="MarkTechPost" title="MarkTechPost" xmlUrl="https://www.marktechpost.com/feed/" />

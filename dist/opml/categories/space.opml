@@ -2,16 +2,16 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: space</title>
-    <dateCreated>Mon, 19 Oct 2026 21:56:26 GMT</dateCreated>
+    <dateCreated>Tue, 20 Oct 2026 00:33:03 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="ESA Top News" title="ESA Top News" xmlUrl="https://www.esa.int/rssfeed/Our_Activities/Space_Science" />
     <outline type="rss" text="NASA Breaking News" title="NASA Breaking News" xmlUrl="https://www.nasa.gov/news-release/feed/" />
     <outline type="rss" text="NASA Image of the Day" title="NASA Image of the Day" xmlUrl="https://www.nasa.gov/feeds/iotd-feed/" />
     <outline type="rss" text="NASA JPL News" title="NASA JPL News" xmlUrl="https://www.jpl.nasa.gov/feed/" />
-    <outline type="rss" text="Space.com" title="Space.com" xmlUrl="https://www.space.com/feeds/all" />
+    <outline type="rss" text="Space.com" title="Space.com" xmlUrl="https://www.space.com/feeds.xml" />
     <outline type="rss" text="Spaceflight Now" title="Spaceflight Now" xmlUrl="https://spaceflightnow.com/feed/" />
     <outline type="rss" text="SpaceNews" title="SpaceNews" xmlUrl="https://spacenews.com/feed/" />
-    <outline type="rss" text="Universe Today" title="Universe Today" xmlUrl="https://www.universetoday.com/feed/" />
+    <outline type="rss" text="Universe Today" title="Universe Today" xmlUrl="https://www.universetoday.com/rss.xml" />
   </body>
 </opml>

@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: technology</title>
-    <dateCreated>Mon, 19 Oct 2026 21:56:26 GMT</dateCreated>
+    <dateCreated>Tue, 20 Oct 2026 00:33:03 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="9to5Mac" title="9to5Mac" xmlUrl="https://9to5mac.com/feed/" />
@@ -11,13 +11,13 @@
     <outline type="rss" text="Ars Technica" title="Ars Technica" xmlUrl="https://feeds.arstechnica.com/arstechnica/index" />
     <outline type="rss" text="Engadget" title="Engadget" xmlUrl="https://www.engadget.com/rss.xml" />
     <outline type="rss" text="GitHub Trending" title="GitHub Trending" xmlUrl="https://rsshub.app/github/trending/daily/any" />
-    <outline type="rss" text="Gizmodo" title="Gizmodo" xmlUrl="https://gizmodo.com/rss" />
+    <outline type="rss" text="Gizmodo" title="Gizmodo" xmlUrl="https://gizmodo.com/feed" />
     <outline type="rss" text="Hacker News" title="Hacker News" xmlUrl="https://feeds.hnrss.org/frontpage" />
     <outline type="rss" text="MacRumors" title="MacRumors" xmlUrl="https://feeds.macrumors.com/MacRumors/" />
     <outline type="rss" text="MIT Technology Review" title="MIT Technology Review" xmlUrl="https://www.technologyreview.com/feed/" />
     <outline type="rss" text="MKBHD" title="MKBHD" xmlUrl="https://rsshub.app/youtube/user/marquesbrownlee" />
     <outline type="rss" text="Protocol" title="Protocol" xmlUrl="https://www.protocol.com/feed" />
-    <outline type="rss" text="Rest of World" title="Rest of World" xmlUrl="https://restofworld.org/feed/" />
+    <outline type="rss" text="Rest of World" title="Rest of World" xmlUrl="https://restofworld.org/feed/latest/" />
     <outline type="rss" text="TechCrunch" title="TechCrunch" xmlUrl="https://techcrunch.com/feed/" />
     <outline type="rss" text="TechDirt" title="TechDirt" xmlUrl="https://www.techdirt.com/feed/" />
     <outline type="rss" text="The Register" title="The Register" xmlUrl="https://www.theregister.com/headlines.atom" />

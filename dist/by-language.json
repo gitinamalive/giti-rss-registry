@@ -85,7 +85,7 @@
       "id": "sana-3d39c5fb",
       "name": "SANA",
       "publisher": "SANA",
-      "url": "https://www.sana.sy/tr/?feed=rss2",
+      "url": "https://sana.sy/tr/feed/",
       "language": "ar",
       "countries": [
         "SY"
@@ -146,7 +146,7 @@
       "id": "el-periodico-51a456a2",
       "name": "El Periòdic d'Andorra",
       "publisher": "El Periòdic d'Andorra",
-      "url": "https://www.elperiodic.ad/rss",
+      "url": "https://elperiodic.ad/feed/",
       "language": "ca",
       "countries": [
         "AD"
@@ -217,7 +217,7 @@
       "id": "die-welt-bdd27309",
       "name": "DIE WELT",
       "publisher": "DIE WELT",
-      "url": "https://www.welt.de/?service=Rss",
+      "url": "https://www.welt.de/feeds/latest.rss",
       "language": "de",
       "countries": [
         "DE"
@@ -256,7 +256,7 @@
       "id": "tages-anzeiger-5ce4888f",
       "name": "Tages Anzeiger",
       "publisher": "Tages Anzeiger",
-      "url": "https://www.tagesanzeiger.ch/rss.html",
+      "url": "https://partner-feeds.publishing.tamedia.ch/rss/tagesanzeiger/",
       "language": "de",
       "countries": [
         "CH"
@@ -269,7 +269,7 @@
       "id": "tagesschau-68a09f16",
       "name": "Tagesschau",
       "publisher": "Tagesschau",
-      "url": "https://www.tagesschau.de/xml/rss2",
+      "url": "https://www.tagesschau.de/infoservices/alle-meldungen-100~rss2.xml",
       "language": "de",
       "countries": [
         "DE"
@@ -774,7 +774,7 @@
       "id": "asia-plus-cac2ca6b",
       "name": "Asia-Plus",
       "publisher": "Asia-Plus",
-      "url": "https://asiaplustj.info/en/feed",
+      "url": "https://asiaplus.news/en/feed/",
       "language": "en",
       "countries": [
         "TJ"
@@ -800,7 +800,7 @@
       "id": "azadi-radio-pashto-63895036",
       "name": "Azadi Radio Pashto",
       "publisher": "Azadi Radio Pashto",
-      "url": "https://pa.azadiradio.org/api/epiqq",
+      "url": "https://pa.azadiradio.com/api/epiqq",
       "language": "en",
       "countries": [
         "AF"
@@ -815,7 +815,7 @@
       "id": "bahamas-press-d2c9ebd3",
       "name": "Bahamas Press",
       "publisher": "Bahamas Press",
-      "url": "https://bahamaspress.com/feed/",
+      "url": "https://www.bahamaspress.com/feed/",
       "language": "en",
       "countries": [
         "BS"
@@ -1088,7 +1088,7 @@
       "id": "bloomberg-markets-03c4eab0",
       "name": "Bloomberg Markets",
       "publisher": "Bloomberg Markets",
-      "url": "https://feeds.bloomberg.com/markets/news.rss",
+      "url": "https://www.bloomberg.com/feeds/markets/news.rss",
       "language": "en",
       "countries": [
         "US"
@@ -1345,7 +1345,7 @@
       "id": "daily-mail-4a12363d",
       "name": "Daily Mail",
       "publisher": "Daily Mail",
-      "url": "https://www.dailymail.co.uk/articles.rss",
+      "url": "https://www.dailymail.com/articles.rss",
       "language": "en",
       "countries": [
         "GB"
@@ -1725,7 +1725,7 @@
       "id": "espn-b1ff08c3",
       "name": "ESPN",
       "publisher": "ESPN",
-      "url": "https://sports.espn.go.com/espn/rss/news",
+      "url": "https://www.espn.com/espn/rss/news",
       "language": "en",
       "countries": [
         "US"
@@ -1786,7 +1786,7 @@
       "id": "fbc-news-10cdbefd",
       "name": "FBC News",
       "publisher": "FBC News",
-      "url": "https://fbcnews.com.fj/feed",
+      "url": "https://www.fbcnews.com.fj/feed/",
       "language": "en",
       "countries": [
         "FJ"
@@ -1829,7 +1829,7 @@
       "id": "fox-news-2a69efeb",
       "name": "Fox News",
       "publisher": "Fox News",
-      "url": "https://feeds.foxnews.com/foxnews/latest",
+      "url": "https://moxie.foxnews.com/google-publisher/latest.xml",
       "language": "en",
       "countries": [
         "US"
@@ -1870,7 +1870,7 @@
       "id": "france-antilles-martinique-471b3214",
       "name": "France-Antilles Martinique",
       "publisher": "France-Antilles Martinique",
-      "url": "https://www.martinique.franceantilles.fr/rss/lea_Une.xml",
+      "url": "https://www.martinique.franceantilles.fr/actualite/rss.xml",
       "language": "en",
       "countries": [
         "MQ"
@@ -1929,7 +1929,7 @@
       "id": "gazeta-uz-42bf059e",
       "name": "Gazeta.uz",
       "publisher": "Gazeta.uz",
-      "url": "https://www.gazeta.uz/rss/",
+      "url": "https://www.gazeta.uz/oz/rss/",
       "language": "en",
       "countries": [
         "UZ"
@@ -1994,7 +1994,7 @@
       "id": "gizmodo-735f1d07",
       "name": "Gizmodo",
       "publisher": "Gizmodo",
-      "url": "https://gizmodo.com/rss",
+      "url": "https://gizmodo.com/feed",
       "language": "en",
       "countries": [
         "US"
@@ -2022,7 +2022,7 @@
       "id": "google-c39414c5",
       "name": "Google — The Keyword: AI",
       "publisher": "Google",
-      "url": "https://blog.google/technology/ai/rss/",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/rss/",
       "homepage": "https://blog.google/technology/ai/",
       "language": "en",
       "countries": [
@@ -2173,7 +2173,7 @@
       "id": "hyperallergic-9f2a3d5b",
       "name": "Hyperallergic",
       "publisher": "Hyperallergic",
-      "url": "https://hyperallergic.com/feed/",
+      "url": "https://hyperallergic.com/rss/",
       "language": "en",
       "countries": [
         "US"
@@ -2341,7 +2341,7 @@
       "id": "journaldumali-com-abe4771a",
       "name": "JournalDuMali.com",
       "publisher": "JournalDuMali.com",
-      "url": "https://www.journaldumali.com/rss/",
+      "url": "https://journaldumali.com/feed/",
       "language": "en",
       "countries": [
         "ML"
@@ -2354,7 +2354,7 @@
       "id": "jowhar-com-bddf086d",
       "name": "Jowhar.com",
       "publisher": "Jowhar.com",
-      "url": "https://www.jowhar.com/?feed=rss2&author=1",
+      "url": "https://jowhar.com/feed/",
       "language": "en",
       "countries": [
         "SO"
@@ -2367,7 +2367,7 @@
       "id": "kaieteur-news-64f614fe",
       "name": "Kaieteur News",
       "publisher": "Kaieteur News",
-      "url": "https://www.kaieteurnewsonline.com/feed/",
+      "url": "https://kaieteurnewsonline.com/feed/",
       "language": "en",
       "countries": [
         "GY"
@@ -2464,7 +2464,7 @@
       "id": "kuwait-times-8dec2932",
       "name": "Kuwait Times - Latest",
       "publisher": "Kuwait Times",
-      "url": "https://kuwaittimes.com/rssFeed/0",
+      "url": "https://kuwaittimes.com/rssfeed/0/",
       "language": "en",
       "countries": [
         "KW"
@@ -2621,7 +2621,7 @@
       "id": "live-science-dccc537e",
       "name": "Live Science",
       "publisher": "Live Science",
-      "url": "https://www.livescience.com/feeds/all",
+      "url": "https://www.livescience.com/feeds.xml",
       "language": "en",
       "countries": [
         "US"
@@ -2690,7 +2690,7 @@
       "id": "malaysiakini-b1668c76",
       "name": "Malaysiakini",
       "publisher": "Malaysiakini",
-      "url": "https://www.malaysiakini.com/rss/en/news.rss",
+      "url": "https://www.malaysiakini.com/en/rss/news.rss",
       "language": "en",
       "countries": [
         "MY"
@@ -2946,7 +2946,7 @@
     {
       "name": "Monaco Life",
       "publisher": "Monaco Life",
-      "url": "https://www.monacolife.net/feed/",
+      "url": "https://monacolife.net/feed/",
       "homepage": "https://www.monacolife.net",
       "language": "en",
       "countries": [
@@ -2992,7 +2992,7 @@
       "id": "myanmar-now-4ebf4e5f",
       "name": "Myanmar Now",
       "publisher": "Myanmar Now",
-      "url": "https://www.myanmar-now.org/en/feed",
+      "url": "https://myanmar-now.org/en/feed/",
       "language": "en",
       "countries": [
         "MM"
@@ -3083,7 +3083,7 @@
       "id": "nasha-niva-414a3072",
       "name": "Nasha Niva",
       "publisher": "Nasha Niva",
-      "url": "https://nn.by/?c=rss-all&lang=en",
+      "url": "https://nashaniva.com/?c=rss-all&lang=en",
       "language": "en",
       "countries": [
         "BY"
@@ -3124,7 +3124,7 @@
       "id": "nbc-news-08d85777",
       "name": "NBC News",
       "publisher": "NBC News",
-      "url": "https://feeds.nbcnews.com/feeds/topstories",
+      "url": "https://feeds.nbcnews.com/nbcnews/public/news",
       "language": "en",
       "countries": [
         "US"
@@ -3137,7 +3137,7 @@
       "id": "new-scientist-9a506e18",
       "name": "New Scientist",
       "publisher": "New Scientist",
-      "url": "https://www.newscientist.com/feed/home",
+      "url": "https://www.newscientist.com/feed/",
       "language": "en",
       "countries": [
         "GB"
@@ -3165,7 +3165,7 @@
       "id": "news-am-9d0bfeac",
       "name": "News.am",
       "publisher": "News.am",
-      "url": "https://news.am/eng/rss/",
+      "url": "https://news.am/en/rss",
       "language": "en",
       "countries": [
         "AM"
@@ -3453,7 +3453,7 @@
       "id": "nz-herald-3c694a12",
       "name": "NZ Herald",
       "publisher": "NZ Herald",
-      "url": "https://rss.nzherald.co.nz/rss/xml/nzhrsscid_000000001.xml",
+      "url": "https://www.nzherald.co.nz/arc/outboundfeeds/rss/section/nz/?outputType=xml&_website=nzh",
       "language": "en",
       "countries": [
         "NZ"
@@ -3688,7 +3688,7 @@
       "id": "propublica-5b32fc6c",
       "name": "ProPublica",
       "publisher": "ProPublica",
-      "url": "https://www.propublica.org/rss/",
+      "url": "https://www.propublica.org/feed",
       "language": "en",
       "countries": [
         "US"
@@ -3747,7 +3747,7 @@
       "id": "rest-of-world-ae2c3d54",
       "name": "Rest of World",
       "publisher": "Rest of World",
-      "url": "https://restofworld.org/feed/",
+      "url": "https://restofworld.org/feed/latest/",
       "language": "en",
       "countries": [
         "US"
@@ -3820,7 +3820,7 @@
       "id": "rfi-khmer-c876ba43",
       "name": "RFI Khmer",
       "publisher": "RFI Khmer",
-      "url": "https://www.khmer.rfi.fr/cambodia/rss",
+      "url": "https://www.rfi.fr/km/%E1%9E%80%E1%9E%98%E1%9F%92%E1%9E%96%E1%9E%BB%E1%9E%87%E1%9E%B6/rss",
       "language": "en",
       "countries": [
         "KH"
@@ -3919,7 +3919,7 @@
       "id": "rt-news-b3b74514",
       "name": "RT News",
       "publisher": "RT News",
-      "url": "https://rt.com/rss/news/",
+      "url": "https://rt-english.com/rss/news/",
       "language": "en",
       "countries": [
         "RU"
@@ -4136,7 +4136,7 @@
       "id": "space-com-343adc7d",
       "name": "Space.com",
       "publisher": "Space.com",
-      "url": "https://www.space.com/feeds/all",
+      "url": "https://www.space.com/feeds.xml",
       "language": "en",
       "countries": [
         "US"
@@ -4736,7 +4736,7 @@
       "id": "the-moscow-times-349ba18f",
       "name": "The Moscow Times",
       "publisher": "The Moscow Times",
-      "url": "https://themoscowtimes.com/rss/news",
+      "url": "https://www.themoscowtimes.com/rss/news",
       "language": "en",
       "countries": [
         "RU"
@@ -4777,7 +4777,7 @@
       "id": "the-new-republic-6746a13e",
       "name": "The New Republic",
       "publisher": "The New Republic",
-      "url": "https://www.newrepublic.com/rss.xml",
+      "url": "https://newrepublic.com/rss.xml",
       "language": "en",
       "countries": [
         "US"
@@ -5024,7 +5024,7 @@
       "id": "universe-today-98424f40",
       "name": "Universe Today",
       "publisher": "Universe Today",
-      "url": "https://www.universetoday.com/feed/",
+      "url": "https://www.universetoday.com/rss.xml",
       "language": "en",
       "countries": [
         "CA"
@@ -5618,7 +5618,7 @@
       "id": "alwihda-info-bd96007a",
       "name": "Alwihda Info",
       "publisher": "Alwihda Info",
-      "url": "https://www.alwihdainfo.com/feed",
+      "url": "https://www.alwihdainfo.com/rss/",
       "language": "fr",
       "countries": [
         "TD"
@@ -5800,7 +5800,7 @@
       "id": "la-libre-e535c244",
       "name": "La Libre",
       "publisher": "La Libre",
-      "url": "https://www.lalibre.be/rss",
+      "url": "https://www.lalibre.be/arc/outboundfeeds/rss/?outputType=xml",
       "language": "fr",
       "countries": [
         "BE"
@@ -6011,7 +6011,7 @@
       "id": "visir-8ad84bc3",
       "name": "Visir",
       "publisher": "Visir",
-      "url": "https://www.visir.is/apps/pbcs.dll/section?Category=FRETTIR&Template=rss&mime=xml",
+      "url": "https://www.visir.is/rss/frettir",
       "language": "is",
       "countries": [
         "IS"
@@ -6134,7 +6134,7 @@
       "id": "rtl-1b7f8ad0",
       "name": "RTL",
       "publisher": "RTL",
-      "url": "https://rtl.lu/rss/headlines/",
+      "url": "https://www.rtl.lu/rss/headlines",
       "language": "lb",
       "countries": [
         "LU"
@@ -6149,7 +6149,7 @@
       "id": "delfi-43e415f3",
       "name": "DELFI — Lithuania",
       "publisher": "DELFI",
-      "url": "https://www.delfi.lt/rss/feeds/lithuania.xml",
+      "url": "https://feed.delfi.lt/v2/articles/7?format=rss",
       "language": "lt",
       "countries": [
         "LT"
@@ -6179,7 +6179,7 @@
       "id": "nu-nl-b80230aa",
       "name": "nu.nl",
       "publisher": "nu.nl",
-      "url": "https://www.nu.nl/feeds/rss/algemeen.rss",
+      "url": "https://www.nu.nl/rss/algemeen",
       "language": "nl",
       "countries": [
         "NL"
@@ -6209,7 +6209,7 @@
       "id": "gazeta-pl-8a4934cd",
       "name": "Gazeta.pl",
       "publisher": "Gazeta.pl",
-      "url": "https://rss.gazeta.pl/pub/rss/wiadomosci.xml",
+      "url": "https://www.gazeta.pl/pub/rss/wiadomosci.xml",
       "language": "pl",
       "countries": [
         "PL"
@@ -6396,7 +6396,7 @@
       "id": "uol-not-cias-a51f4337",
       "name": "UOL Notícias",
       "publisher": "UOL Notícias",
-      "url": "https://rss.home.uol.com.br/index.xml",
+      "url": "https://www.uol.com.br/vueland/api/?loadComponent=XmlFeedRss",
       "language": "pt",
       "countries": [
         "BR"
@@ -6411,7 +6411,7 @@
       "id": "adevarul-ro-7832868f",
       "name": "adevarul.ro",
       "publisher": "adevarul.ro",
-      "url": "https://adevarul.ro/rss/",
+      "url": "https://adevarul.ro/rss/index",
       "language": "ro",
       "countries": [
         "RO"
@@ -6488,7 +6488,7 @@
       "id": "planet-siol-net-32ed4384",
       "name": "Planet Siol.net",
       "publisher": "Planet Siol.net",
-      "url": "https://www.siol.net/rss.aspx?path=SiOL.Net",
+      "url": "https://siol.net/feeds/latest2",
       "language": "sl",
       "countries": [
         "SI"
@@ -6503,7 +6503,7 @@
       "id": "expressen-b6d68045",
       "name": "Expressen",
       "publisher": "Expressen",
-      "url": "https://www.expressen.se/rss/nyheter",
+      "url": "https://feeds.expressen.se/nyheter/",
       "language": "sv",
       "countries": [
         "SE"
@@ -6578,7 +6578,7 @@
       "id": "bbc-chinese-341d40ee",
       "name": "BBC Chinese",
       "publisher": "BBC",
-      "url": "https://feeds.bbci.co.uk/zhongwen/simp/rss.xml",
+      "url": "https://feeds.bbci.co.uk/zhongwen/trad/rss.xml",
       "language": "zh",
       "countries": [
         "GB"
@@ -6638,7 +6638,7 @@
       "id": "the-initium-a45c67ad",
       "name": "The Initium",
       "publisher": "The Initium",
-      "url": "https://theinitium.com/feed/",
+      "url": "https://theinitium.com/rss/",
       "language": "zh",
       "countries": [
         "HK"

@@ -2,9 +2,9 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: MC</title>
-    <dateCreated>Mon, 19 Oct 2026 21:56:26 GMT</dateCreated>
+    <dateCreated>Tue, 20 Oct 2026 00:33:03 GMT</dateCreated>
   </head>
   <body>
-    <outline type="rss" text="Monaco Life" title="Monaco Life" xmlUrl="https://www.monacolife.net/feed/" />
+    <outline type="rss" text="Monaco Life" title="Monaco Life" xmlUrl="https://monacolife.net/feed/" />
   </body>
 </opml>

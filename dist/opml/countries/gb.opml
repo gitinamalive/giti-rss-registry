@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: GB</title>
-    <dateCreated>Mon, 19 Oct 2026 21:56:26 GMT</dateCreated>
+    <dateCreated>Tue, 20 Oct 2026 00:33:03 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Apollo Magazine" title="Apollo Magazine" xmlUrl="https://www.apollomagazine.com/feed/" />
@@ -10,7 +10,7 @@
     <outline type="rss" text="BBC" title="BBC" xmlUrl="https://feeds.bbci.co.uk/news/rss.xml" />
     <outline type="rss" text="BBC Arabic" title="BBC Arabic" xmlUrl="https://feeds.bbci.co.uk/arabic/rss.xml" />
     <outline type="rss" text="BBC Brasil" title="BBC Brasil" xmlUrl="https://feeds.bbci.co.uk/portuguese/rss.xml" />
-    <outline type="rss" text="BBC Chinese" title="BBC Chinese" xmlUrl="https://feeds.bbci.co.uk/zhongwen/simp/rss.xml" />
+    <outline type="rss" text="BBC Chinese" title="BBC Chinese" xmlUrl="https://feeds.bbci.co.uk/zhongwen/trad/rss.xml" />
     <outline type="rss" text="BBC Hindi" title="BBC Hindi" xmlUrl="https://feeds.bbci.co.uk/hindi/rss.xml" />
     <outline type="rss" text="BBC News — Politics" title="BBC News — Politics" xmlUrl="https://feeds.bbci.co.uk/news/politics/rss.xml" />
     <outline type="rss" text="BBC Panorama" title="BBC Panorama" xmlUrl="https://feeds.bbci.co.uk/programmes/b006n2yl/episodes.rss" />
@@ -20,7 +20,7 @@
     <outline type="rss" text="BBC World" title="BBC World" xmlUrl="https://feeds.bbci.co.uk/news/world/rss.xml" />
     <outline type="rss" text="Carbon Brief" title="Carbon Brief" xmlUrl="https://www.carbonbrief.org/feed/" />
     <outline type="rss" text="Climate Home News" title="Climate Home News" xmlUrl="https://www.climatechangenews.com/feed/" />
-    <outline type="rss" text="Daily Mail" title="Daily Mail" xmlUrl="https://www.dailymail.co.uk/articles.rss" />
+    <outline type="rss" text="Daily Mail" title="Daily Mail" xmlUrl="https://www.dailymail.com/articles.rss" />
     <outline type="rss" text="ESA Top News" title="ESA Top News" xmlUrl="https://www.esa.int/rssfeed/Our_Activities/Space_Science" />
     <outline type="rss" text="Euronews" title="Euronews" xmlUrl="https://www.euronews.com/rss?format=xml" />
     <outline type="rss" text="Financial Times — World News" title="Financial Times — World News" xmlUrl="https://www.ft.com/world?format=rss" />
@@ -29,7 +29,7 @@
     <outline type="rss" text="Google DeepMind Blog" title="Google DeepMind Blog" xmlUrl="https://deepmind.google/blog/rss.xml" />
     <outline type="rss" text="Medical News Today" title="Medical News Today" xmlUrl="https://www.medicalnewstoday.com/newsfeeds-rss" />
     <outline type="rss" text="Nature News" title="Nature News" xmlUrl="https://www.nature.com/nature.rss" />
-    <outline type="rss" text="New Scientist" title="New Scientist" xmlUrl="https://www.newscientist.com/feed/home" />
+    <outline type="rss" text="New Scientist" title="New Scientist" xmlUrl="https://www.newscientist.com/feed/" />
     <outline type="rss" text="Reuters Business" title="Reuters Business" xmlUrl="https://www.reuters.com/arc/outboundfeeds/v1/rss/category/business/" />
     <outline type="rss" text="Reuters Investigations" title="Reuters Investigations" xmlUrl="https://www.reuters.com/arc/outboundfeeds/v1/rss/investigative/" />
     <outline type="rss" text="Reuters Sports" title="Reuters Sports" xmlUrl="https://www.reuters.com/arc/outboundfeeds/v1/rss/category/sports/" />
