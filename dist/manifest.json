@@ -1,11 +1,11 @@
 {
   "schemaVersion": "1.0.0",
   "generatorVersion": "1.1.0",
-  "sourceCommit": "d48c84fe4fc245191c104d640304becf4ea81d80",
+  "sourceCommit": "6254f87d5b1a169c2cc38fa21654b52e0fc25e5a",
   "sourceChecksum": "b3a2c71e5b715c126b61545da365f872b6cff5dedefe239649680bd9b189f866",
-  "generatedAt": "2026-10-20T00:56:31.961Z",
+  "generatedAt": "2026-10-26T12:13:13.170Z",
   "registryRevision": "b3a2c71e5b715c126b61545da365f872b6cff5dedefe239649680bd9b189f866",
-  "healthRevision": "f74ce534a5d1bba1f606aac66e1dd643b372745917bb215e885496ee5d6a866a",
+  "healthRevision": "40e78043f3c5ebc05c3ae53d28bd0978bb3d03b3be76d108f31be3555b6e6cef",
   "artifactCounts": {
     "feeds": 443,
     "countries": 206,
@@ -45,8 +45,8 @@
       "bytes": 800153
     },
     "feeds-health.json": {
-      "sha256": "f74ce534a5d1bba1f606aac66e1dd643b372745917bb215e885496ee5d6a866a",
-      "bytes": 239880
+      "sha256": "40e78043f3c5ebc05c3ae53d28bd0978bb3d03b3be76d108f31be3555b6e6cef",
+      "bytes": 244887
     }
   }
 }
