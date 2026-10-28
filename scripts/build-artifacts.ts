@@ -4,6 +4,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { promisify } from 'node:util';
+import { Script } from 'node:vm';
 import type { FeedEntry, BootstrapPayload } from '../src/types.ts';
 import { escapeCsv, escapeJsonForScript, escapeXml, toFileSafeSegment } from '../src/escape.ts';
 import { findPossibleDuplicateUrls, type PossibleDuplicateFinding } from '../src/urlFingerprint.ts';
@@ -542,7 +543,7 @@ function renderMatrix(entries) {
       '<td>' + healthPill + '</td>' +
       '<td>' +
         '<a class="btn btn-sm btn-primary" href="' + escAttr(suggestUrl) + '" target="_blank" rel="noopener" title="Propose feed for ' + escAttr(e.name) + '">+ Suggest</a> ' +
-        (e.total > 0 ? '<button type="button" class="btn btn-sm" onclick="viewCountryFeeds(\'' + escAttr(e.code) + '\')">View (' + e.total + ')</button>' : '') +
+        (e.total > 0 ? '<button type="button" class="btn btn-sm" onclick="viewCountryFeeds(\\'' + escAttr(e.code) + '\\')">View (' + e.total + ')</button>' : '') +
       '</td>' +
       '</tr>';
   }).join('');
@@ -773,6 +774,12 @@ async function main(): Promise<void> {
     // Generate browsable HTML directory
     const html = generateIndexHtml(feeds, generatedAt);
     await writeFile(resolve(distPath, 'index.html'), html, 'utf8');
+
+    const inlineScripts = [...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)];
+    if (inlineScripts.length !== 1) {
+        throw new Error(`Expected one inline script in generated index.html, found ${inlineScripts.length}`);
+    }
+    new Script(inlineScripts[0][1], { filename: 'dist/index.html:inline-script' });
 
     process.stdout.write(
         `Generated registry artifacts in ${distPath} (feeds: ${feeds.length}, countries: ${Object.keys(byCountry).length}, categories: ${Object.keys(byCategory).length}, possible duplicates: ${possibleDuplicates.length}).\n`
