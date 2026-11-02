@@ -17,6 +17,27 @@ export type Perspective =
   | 'state-monitor'
   | 'aggregator';
 
+export type EditorialGovernance =
+  | 'independent'
+  | 'public-service'
+  | 'state-controlled'
+  | 'state-affiliated'
+  | 'disputed'
+  | 'unknown';
+
+export type OperatingCircumstance =
+  | 'domestic'
+  | 'exile'
+  | 'diaspora'
+  | 'cross-border';
+
+export type SourceRole =
+  | 'reporting'
+  | 'wire'
+  | 'aggregator'
+  | 'institutional'
+  | 'personal-channel';
+
 export type FeedCategory =
   | 'world'
   | 'us'
@@ -71,6 +92,10 @@ export interface FeedEntry {
   description?: string;
   coverageType?: CoverageType;
   publisherCountries?: string[];
+  governance?: EditorialGovernance;
+  operatingCircumstance?: OperatingCircumstance;
+  sourceRole?: SourceRole;
+  publisherDomain?: string;
   /** Keep a verified coverage feed in every scheduled ingestion batch. */
   alwaysSchedule?: boolean;
   /** Provenance metadata describing source origin/importer attribution. */
@@ -146,4 +171,28 @@ export const allowedCoverageTypes = new Set<CoverageType>([
   'sports',
   'entertainment',
   'culture',
+]);
+
+export const allowedEditorialGovernances = new Set<EditorialGovernance>([
+  'independent',
+  'public-service',
+  'state-controlled',
+  'state-affiliated',
+  'disputed',
+  'unknown',
+]);
+
+export const allowedOperatingCircumstances = new Set<OperatingCircumstance>([
+  'domestic',
+  'exile',
+  'diaspora',
+  'cross-border',
+]);
+
+export const allowedSourceRoles = new Set<SourceRole>([
+  'reporting',
+  'wire',
+  'aggregator',
+  'institutional',
+  'personal-channel',
 ]);

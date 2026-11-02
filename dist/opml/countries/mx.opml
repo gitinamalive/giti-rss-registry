@@ -5,6 +5,7 @@
     <dateCreated>Tue, 20 Oct 2026 00:56:30 GMT</dateCreated>
   </head>
   <body>
+    <outline type="rss" text="Animal Político" title="Animal Político" xmlUrl="https://animalpolitico.com/feed/" />
     <outline type="rss" text="Mexico News Daily" title="Mexico News Daily" xmlUrl="https://mexiconewsdaily.com/feed/" />
     <outline type="rss" text="Reforma.com" title="Reforma.com" xmlUrl="https://www.reforma.com/rss/portada.xml" />
   </body>

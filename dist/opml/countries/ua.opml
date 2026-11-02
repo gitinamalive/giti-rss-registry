@@ -6,5 +6,6 @@
   </head>
   <body>
     <outline type="rss" text="Gazeta.ua" title="Gazeta.ua" xmlUrl="https://gazeta.ua/ru/rss" />
+    <outline type="rss" text="The Kyiv Independent" title="The Kyiv Independent" xmlUrl="https://kyivindependent.com/feed/" />
   </body>
 </opml>

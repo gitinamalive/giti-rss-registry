@@ -6,7 +6,6 @@
   </head>
   <body>
     <outline type="rss" text="9to5Mac" title="9to5Mac" xmlUrl="https://9to5mac.com/feed/" />
-    <outline type="rss" text="AnandTech" title="AnandTech" xmlUrl="https://www.anandtech.com/rss/" />
     <outline type="rss" text="Android Developers" title="Android Developers" xmlUrl="https://www.youtube.com/feeds/videos.xml?user=androiddevelopers" />
     <outline type="rss" text="AP Sports" title="AP Sports" xmlUrl="https://apnews.com/apf/sports" />
     <outline type="rss" text="Architectural Digest" title="Architectural Digest" xmlUrl="https://www.architecturaldigest.com/feed/latest" />
@@ -19,7 +18,6 @@
     <outline type="rss" text="CNBC Top News" title="CNBC Top News" xmlUrl="https://www.cnbc.com/id/100003114/device/rss/rss.html" />
     <outline type="rss" text="Deadline" title="Deadline" xmlUrl="https://deadline.com/feed/" />
     <outline type="rss" text="Deadspin" title="Deadspin" xmlUrl="https://deadspin.com/feed" />
-    <outline type="rss" text="Du Rov&apos;s Channel" title="Du Rov&apos;s Channel" xmlUrl="https://rsshub.app/telegram/channel/durov" />
     <outline type="rss" text="Engadget" title="Engadget" xmlUrl="https://www.engadget.com/rss.xml" />
     <outline type="rss" text="Environmental Defense Fund" title="Environmental Defense Fund" xmlUrl="https://www.edf.org/news-feed" />
     <outline type="rss" text="ESPN" title="ESPN" xmlUrl="https://feeds.espn.com/feeds/site/espn/global/headlines" />
@@ -75,7 +73,6 @@
     <outline type="rss" text="PNAS" title="PNAS" xmlUrl="https://www.pnas.org/rss/early.xml" />
     <outline type="rss" text="Politico" title="Politico" xmlUrl="https://www.politico.com/rss/politicopicks.xml" />
     <outline type="rss" text="ProPublica" title="ProPublica" xmlUrl="https://www.propublica.org/feed" />
-    <outline type="rss" text="Protocol" title="Protocol" xmlUrl="https://www.protocol.com/feed" />
     <outline type="rss" text="Quanta Magazine" title="Quanta Magazine" xmlUrl="https://www.quantamagazine.org/feed/" />
     <outline type="rss" text="RealClearPolitics" title="RealClearPolitics" xmlUrl="https://www.realclearpolitics.com/index.xml" />
     <outline type="rss" text="Rest of World" title="Rest of World" xmlUrl="https://restofworld.org/feed/latest/" />

@@ -5,6 +5,7 @@
     <dateCreated>Tue, 20 Oct 2026 00:56:30 GMT</dateCreated>
   </head>
   <body>
+    <outline type="rss" text="El Faro" title="El Faro" xmlUrl="https://elfaro.net/es/rss" />
     <outline type="rss" text="El Salvador Times" title="El Salvador Times" xmlUrl="https://www.elsalvadortimes.com/rss/" />
   </body>
 </opml>

@@ -14,9 +14,12 @@ import Ajv from 'ajv';
 import {
     allowedCategories,
     allowedCoverageTypes,
+    allowedEditorialGovernances,
     allowedFormats,
     allowedMediaTypes,
+    allowedOperatingCircumstances,
     allowedPerspectives,
+    allowedSourceRoles,
 } from '../src/types.ts';
 import { ISO_639_1 } from '../src/languages.ts';
 
@@ -27,6 +30,9 @@ const FEEDS_PATH = resolve('data/feeds.json');
 const ENUM_CHECKS: Array<{ defName: string; allowed: ReadonlySet<string> }> = [
     { defName: 'FeedCategory', allowed: allowedCategories },
     { defName: 'Perspective', allowed: allowedPerspectives },
+    { defName: 'EditorialGovernance', allowed: allowedEditorialGovernances },
+    { defName: 'OperatingCircumstance', allowed: allowedOperatingCircumstances },
+    { defName: 'SourceRole', allowed: allowedSourceRoles },
     { defName: 'MediaType', allowed: allowedMediaTypes },
     { defName: 'FeedFormat', allowed: allowedFormats },
     { defName: 'CoverageType', allowed: allowedCoverageTypes },

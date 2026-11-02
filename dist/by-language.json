@@ -201,19 +201,6 @@
       "format": "rss"
     },
     {
-      "id": "deutsche-welle-7c0d50d2",
-      "name": "Deutsche Welle (EN)",
-      "publisher": "Deutsche Welle",
-      "url": "https://rss.dw.com/rdf/rss-en-all",
-      "language": "de",
-      "countries": [
-        "DE"
-      ],
-      "category": "europe",
-      "mediaType": "broadcast",
-      "format": "rdf"
-    },
-    {
       "id": "die-welt-bdd27309",
       "name": "DIE WELT",
       "publisher": "DIE WELT",
@@ -590,21 +577,6 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
-    },
-    {
-      "id": "anandtech-6b2e4f1c",
-      "name": "AnandTech",
-      "publisher": "AnandTech",
-      "url": "https://www.anandtech.com/rss/",
-      "language": "en",
-      "countries": [
-        "US"
-      ],
-      "category": "technology",
-      "mediaType": "digital",
-      "format": "rss",
-      "homepage": "https://www.anandtech.com",
-      "description": "AnandTech — computer hardware reviews, benchmarks, and analysis."
     },
     {
       "id": "android-developers-a6106c0a",
@@ -1124,6 +1096,21 @@
       "format": "rss"
     },
     {
+      "id": "caixin-global-b7e57675",
+      "name": "Caixin Global",
+      "publisher": "Caixin",
+      "url": "https://www.caixinglobal.com/feed/",
+      "language": "en",
+      "countries": [
+        "CN"
+      ],
+      "category": "finance",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://www.caixinglobal.com",
+      "description": "Caixin Global — Chinese financial and business news in English and Chinese."
+    },
+    {
       "id": "carbon-brief-e0c7ff98",
       "name": "Carbon Brief",
       "publisher": "Carbon Brief",
@@ -1221,6 +1208,20 @@
       "format": "rss",
       "perspective": "state-affiliated",
       "notes": "State-owned English-language newspaper of the Chinese government. Published by the Publicity Department of the Chinese Communist Party. RSF ranks China among the most restrictive media environments globally.\n\nSources:\n  [1] https://rsf.org/en/country/china\n  [2] https://en.wikipedia.org/wiki/China_Daily"
+    },
+    {
+      "id": "citi-newsroom-928c48dc",
+      "name": "Citi Newsroom",
+      "publisher": "Citi Newsroom",
+      "url": "https://citinewsroom.com/feed/",
+      "language": "en",
+      "countries": [
+        "GH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent"
     },
     {
       "id": "civil-georgia-e1e95c4b",
@@ -1544,17 +1545,17 @@
       "notes": "DW Africa is a high-credibility international broadcaster with dedicated Africa programming and reporting. The RSS endpoint responds as XML; the web research tool could not render the XML payload, so live item parsing remains a runtime verification task.\n\nSources:\n  [1] https://rss.dw.com/rdf/rss-en-africa\n  [2] https://www.dw.com/en/africa/s-12756"
     },
     {
-      "id": "dnevnik-ba-68e60b22",
-      "name": "Dnevnik.ba",
-      "publisher": "Dnevnik.ba",
-      "url": "https://www.dnevnik.ba/rss.xml",
+      "id": "deutsche-welle-7c0d50d2",
+      "name": "Deutsche Welle (EN)",
+      "publisher": "Deutsche Welle",
+      "url": "https://rss.dw.com/rdf/rss-en-all",
       "language": "en",
       "countries": [
-        "BA"
+        "DE"
       ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
+      "category": "europe",
+      "mediaType": "broadcast",
+      "format": "rdf"
     },
     {
       "id": "dominica-news-6137b690",
@@ -1566,19 +1567,6 @@
         "DM"
       ],
       "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
-      "id": "durov-telegram-7f8a9b1c",
-      "name": "Du Rov's Channel",
-      "publisher": "Telegram",
-      "url": "https://rsshub.app/telegram/channel/durov",
-      "language": "en",
-      "countries": [
-        "US"
-      ],
-      "category": "us",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -1887,19 +1875,6 @@
       "format": "rss"
     },
     {
-      "id": "france-antilles-martinique-471b3214",
-      "name": "France-Antilles Martinique",
-      "publisher": "France-Antilles Martinique",
-      "url": "https://www.martinique.franceantilles.fr/actualite/rss.xml",
-      "language": "en",
-      "countries": [
-        "MQ"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
       "id": "frieze-3c7d9e4a",
       "name": "Frieze",
       "publisher": "Frieze",
@@ -1953,19 +1928,6 @@
       "active": true
     },
     {
-      "id": "gazeta-ua-884b9280",
-      "name": "Gazeta.ua",
-      "publisher": "Gazeta.ua",
-      "url": "https://gazeta.ua/ru/rss",
-      "language": "en",
-      "countries": [
-        "UA"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
       "id": "gazeta-uz-42bf059e",
       "name": "Gazeta.uz",
       "publisher": "Gazeta.uz",
@@ -1973,19 +1935,6 @@
       "language": "en",
       "countries": [
         "UZ"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
-      "id": "ghana-mma-a1b18cfd",
-      "name": "Ghana MMA",
-      "publisher": "Ghana MMA",
-      "url": "https://www.ghanamma.com/category/business/feed/",
-      "language": "en",
-      "countries": [
-        "GH"
       ],
       "category": "world",
       "mediaType": "digital",
@@ -3798,21 +3747,6 @@
       "format": "rss"
     },
     {
-      "id": "protocol-2d7f5a4e",
-      "name": "Protocol",
-      "publisher": "Protocol",
-      "url": "https://www.protocol.com/feed",
-      "language": "en",
-      "countries": [
-        "US"
-      ],
-      "category": "technology",
-      "mediaType": "digital",
-      "format": "rss",
-      "homepage": "https://www.protocol.com",
-      "description": "Protocol — enterprise tech news, AI, and digital transformation."
-    },
-    {
       "id": "quanta-magazine-78efa86f",
       "name": "Quanta Magazine",
       "publisher": "Simons Foundation",
@@ -3914,32 +3848,6 @@
       ],
       "category": "world",
       "mediaType": "wire",
-      "format": "rss"
-    },
-    {
-      "id": "rfi-khmer-c876ba43",
-      "name": "RFI Khmer",
-      "publisher": "RFI Khmer",
-      "url": "https://www.rfi.fr/km/%E1%9E%80%E1%9E%98%E1%9F%92%E1%9E%96%E1%9E%BB%E1%9E%87%E1%9E%B6/rss",
-      "language": "en",
-      "countries": [
-        "KH"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
-      "id": "ria-novosti-78ca4795",
-      "name": "RIA Novosti",
-      "publisher": "RIA Novosti",
-      "url": "https://ria.ru/export/rss2/index.xml",
-      "language": "en",
-      "countries": [
-        "RU"
-      ],
-      "category": "world",
-      "mediaType": "digital",
       "format": "rss"
     },
     {
@@ -4839,6 +4747,26 @@
       "format": "rss"
     },
     {
+      "id": "the-kyiv-independent-5782f526",
+      "name": "The Kyiv Independent",
+      "publisher": "The Kyiv Independent",
+      "url": "https://kyivindependent.com/feed/",
+      "language": "en",
+      "countries": [
+        "UA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://kyivindependent.com",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "kyivindependent.com",
+      "description": "The Kyiv Independent — leading English-language independent media in Ukraine."
+    },
+    {
       "id": "the-lancet-global-health-d52d1cac",
       "name": "The Lancet — Global Health",
       "publisher": "The Lancet",
@@ -5551,6 +5479,26 @@
       "active": true
     },
     {
+      "id": "animal-politico-59c2914a",
+      "name": "Animal Político",
+      "publisher": "Animal Politico",
+      "url": "https://animalpolitico.com/feed/",
+      "language": "es",
+      "countries": [
+        "MX"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://animalpolitico.com",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "animalpolitico.com",
+      "description": "Animal Político — independent Mexican digital native newsroom known for anti-corruption and public interest investigations."
+    },
+    {
       "id": "biobiochile-3fea126e",
       "name": "BioBioChile",
       "publisher": "BioBioChile",
@@ -5606,6 +5554,26 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "el-faro-1aae9981",
+      "name": "El Faro",
+      "publisher": "El Faro",
+      "url": "https://elfaro.net/es/rss",
+      "language": "es",
+      "countries": [
+        "SV"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://elfaro.net",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "cross-border",
+      "sourceRole": "reporting",
+      "publisherDomain": "elfaro.net",
+      "description": "El Faro — pioneering Central American independent investigative newsroom covering governance, corruption, and human rights."
     },
     {
       "id": "el-pais-617dc1de",
@@ -5707,6 +5675,27 @@
     }
   ],
   "fa": [
+    {
+      "id": "radio-farda-48c98b32",
+      "name": "Radio Farda",
+      "publisher": "Radio Farda",
+      "url": "https://www.radiofarda.com/api/z$qite_rqi",
+      "language": "fa",
+      "countries": [
+        "IR"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www.radiofarda.com",
+      "perspective": "independent-exile",
+      "governance": "public-service",
+      "operatingCircumstance": "cross-border",
+      "sourceRole": "reporting",
+      "publisherDomain": "radiofarda.com",
+      "description": "Radio Farda — Persian-language service of Radio Free Europe/Radio Liberty, funded by U.S. Congress via USAGM with statutory editorial independence.",
+      "notes": "Radio Farda is funded by a grant from the U.S. Congress through the U.S. Agency for Global Media (USAGM). Under the U.S. International Broadcasting Act, journalists are legally protected by an editorial firewall from government interference."
+    },
     {
       "id": "tabnak-b30db155",
       "name": "Tabnak",
@@ -5959,6 +5948,19 @@
       "notes": "France 24 Afrique provides a French-language regional perspective for countries where local RSS coverage is limited. The RSS endpoint returned an HTTP response but was blocked from HTML rendering during vetting; live XML and proxy accessibility remain verification tasks.\n\nSources:\n  [1] https://www.france24.com/fr/afrique/rss\n  [2] https://www.france24.com/fr/afrique/"
     },
     {
+      "id": "france-antilles-martinique-471b3214",
+      "name": "France-Antilles Martinique",
+      "publisher": "France-Antilles Martinique",
+      "url": "https://www.martinique.franceantilles.fr/actualite/rss.xml",
+      "language": "fr",
+      "countries": [
+        "MQ"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
       "id": "fraternit-matin-57a7b9fa",
       "name": "Fraternité Matin",
       "publisher": "Fraternité Matin",
@@ -6055,6 +6057,26 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "radio-canada-d7774cd1",
+      "name": "Radio-Canada Info",
+      "publisher": "Radio-Canada",
+      "url": "https://ici.radio-canada.ca/rss/4159",
+      "language": "fr",
+      "countries": [
+        "CA"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://ici.radio-canada.ca",
+      "perspective": "independent",
+      "governance": "public-service",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "radio-canada.ca",
+      "description": "Radio-Canada Info — French-language public service broadcast journalism in Canada."
     },
     {
       "id": "sahara-medias-a4c8e1f0",
@@ -6194,6 +6216,19 @@
       "category": "europe",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "dnevnik-ba-68e60b22",
+      "name": "Dnevnik.ba",
+      "publisher": "Dnevnik.ba",
+      "url": "https://www.dnevnik.ba/rss.xml",
+      "language": "hr",
+      "countries": [
+        "BA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
     }
   ],
   "hu": [
@@ -6302,6 +6337,21 @@
       "format": "rss",
       "homepage": "https://www3.nhk.or.jp/news/",
       "description": "NHK News — Japan's public broadcaster (Japanese edition)."
+    }
+  ],
+  "km": [
+    {
+      "id": "rfi-khmer-c876ba43",
+      "name": "RFI Khmer",
+      "publisher": "RFI Khmer",
+      "url": "https://www.rfi.fr/km/%E1%9E%80%E1%9E%98%E1%9F%92%E1%9E%96%E1%9E%BB%E1%9E%87%E1%9E%B6/rss",
+      "language": "km",
+      "countries": [
+        "KH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
     }
   ],
   "ko": [
@@ -6692,20 +6742,71 @@
       "description": "BBC Russian news service."
     },
     {
+      "id": "gazeta-ua-884b9280",
+      "name": "Gazeta.ua",
+      "publisher": "Gazeta.ua",
+      "url": "https://gazeta.ua/ru/rss",
+      "language": "ru",
+      "countries": [
+        "UA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
+    },
+    {
       "id": "meduza-fecba09f",
       "name": "Meduza",
       "publisher": "Meduza",
       "url": "https://meduza.io/rss/all",
       "language": "ru",
       "countries": [
-        "LV"
+        "LV",
+        "RU"
       ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss",
       "homepage": "https://meduza.io",
       "description": "Meduza — independent Russian-language news outlet based in Latvia.",
-      "perspective": "independent-exile"
+      "perspective": "independent-exile",
+      "governance": "independent",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "meduza.io"
+    },
+    {
+      "id": "novaya-gazeta-europe-8b1a4971",
+      "name": "Novaya Gazeta Europe",
+      "publisher": "Novaya Gazeta Europe",
+      "url": "https://novayagazeta.eu/feed/rss",
+      "language": "ru",
+      "countries": [
+        "RU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://novayagazeta.eu",
+      "perspective": "independent-exile",
+      "governance": "independent",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "novayagazeta.eu",
+      "description": "Novaya Gazeta Europe — independent Russian journalism founded in European exile following censorship of Novaya Gazeta."
+    },
+    {
+      "id": "ria-novosti-78ca4795",
+      "name": "RIA Novosti",
+      "publisher": "RIA Novosti",
+      "url": "https://ria.ru/export/rss2/index.xml",
+      "language": "ru",
+      "countries": [
+        "RU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss"
     }
   ],
   "sk": [
@@ -6830,21 +6931,6 @@
       "description": "BBC Chinese simplified news feed."
     },
     {
-      "id": "caixin-global-b7e57675",
-      "name": "Caixin Global",
-      "publisher": "Caixin",
-      "url": "https://www.caixinglobal.com/feed/",
-      "language": "zh",
-      "countries": [
-        "CN"
-      ],
-      "category": "finance",
-      "mediaType": "digital",
-      "format": "rss",
-      "homepage": "https://www.caixinglobal.com",
-      "description": "Caixin Global — Chinese financial and business news in English and Chinese."
-    },
-    {
       "id": "ft-chinese-961a6c2a",
       "name": "FT Chinese",
       "publisher": "Financial Times",
@@ -6881,13 +6967,20 @@
       "url": "https://theinitium.com/rss/",
       "language": "zh",
       "countries": [
-        "HK"
+        "SG",
+        "HK",
+        "CN"
       ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss",
       "homepage": "https://theinitium.com",
-      "description": "The Initium — in-depth Chinese-language journalism from Hong Kong."
+      "description": "The Initium — independent in-depth Chinese-language journalism headquartered in Singapore covering Greater China.",
+      "perspective": "independent-exile",
+      "governance": "independent",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "theinitium.com"
     }
   ]
 }

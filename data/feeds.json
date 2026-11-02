@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-20T00:56:30.348Z",
   "source": "public-rss-registry/data/feeds.json (hand-curated)",
   "stats": {
-    "feeds": 443,
+    "feeds": 446,
     "duplicateIds": 0,
     "duplicateUrls": 0
   },
@@ -337,7 +337,7 @@
       "name": "Deutsche Welle (EN)",
       "publisher": "Deutsche Welle",
       "url": "https://rss.dw.com/rdf/rss-en-all",
-      "language": "de",
+      "language": "en",
       "countries": [
         "DE"
       ],
@@ -1355,7 +1355,7 @@
       "name": "Dnevnik.ba",
       "publisher": "Dnevnik.ba",
       "url": "https://www.dnevnik.ba/rss.xml",
-      "language": "en",
+      "language": "hr",
       "countries": [
         "BA"
       ],
@@ -1859,19 +1859,6 @@
       "format": "rss"
     },
     {
-      "id": "ghana-mma-a1b18cfd",
-      "name": "Ghana MMA",
-      "publisher": "Ghana MMA",
-      "url": "https://www.ghanamma.com/category/business/feed/",
-      "language": "en",
-      "countries": [
-        "GH"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
       "id": "gibraltar-chronicle-4d9e0c14",
       "name": "Gibraltar Chronicle",
       "publisher": "Gibraltar Chronicle",
@@ -2153,7 +2140,7 @@
       "name": "RFI Khmer",
       "publisher": "RFI Khmer",
       "url": "https://www.rfi.fr/km/%E1%9E%80%E1%9E%98%E1%9F%92%E1%9E%96%E1%9E%BB%E1%9E%87%E1%9E%B6/rss",
-      "language": "en",
+      "language": "km",
       "countries": [
         "KH"
       ],
@@ -2335,7 +2322,7 @@
       "name": "France-Antilles Martinique",
       "publisher": "France-Antilles Martinique",
       "url": "https://www.martinique.franceantilles.fr/actualite/rss.xml",
-      "language": "en",
+      "language": "fr",
       "countries": [
         "MQ"
       ],
@@ -2608,7 +2595,7 @@
       "name": "RIA Novosti",
       "publisher": "RIA Novosti",
       "url": "https://ria.ru/export/rss2/index.xml",
-      "language": "en",
+      "language": "ru",
       "countries": [
         "RU"
       ],
@@ -2751,7 +2738,7 @@
       "name": "Gazeta.ua",
       "publisher": "Gazeta.ua",
       "url": "https://gazeta.ua/ru/rss",
-      "language": "en",
+      "language": "ru",
       "countries": [
         "UA"
       ],
@@ -2860,19 +2847,6 @@
         "ZM"
       ],
       "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
-      "id": "durov-telegram-7f8a9b1c",
-      "name": "Du Rov's Channel",
-      "publisher": "Telegram",
-      "url": "https://rsshub.app/telegram/channel/durov",
-      "language": "en",
-      "countries": [
-        "US"
-      ],
-      "category": "us",
       "mediaType": "digital",
       "format": "rss"
     },
@@ -4688,21 +4662,6 @@
       "description": "VentureBeat — technology news, AI, startups, and venture capital."
     },
     {
-      "id": "anandtech-6b2e4f1c",
-      "name": "AnandTech",
-      "publisher": "AnandTech",
-      "url": "https://www.anandtech.com/rss/",
-      "language": "en",
-      "countries": [
-        "US"
-      ],
-      "category": "technology",
-      "mediaType": "digital",
-      "format": "rss",
-      "homepage": "https://www.anandtech.com",
-      "description": "AnandTech — computer hardware reviews, benchmarks, and analysis."
-    },
-    {
       "id": "techdirt-9f3c1e8b",
       "name": "TechDirt",
       "publisher": "TechDirt",
@@ -4716,21 +4675,6 @@
       "format": "rss",
       "homepage": "https://www.techdirt.com",
       "description": "TechDirt — technology policy, copyright, patents, and internet issues."
-    },
-    {
-      "id": "protocol-2d7f5a4e",
-      "name": "Protocol",
-      "publisher": "Protocol",
-      "url": "https://www.protocol.com/feed",
-      "language": "en",
-      "countries": [
-        "US"
-      ],
-      "category": "technology",
-      "mediaType": "digital",
-      "format": "rss",
-      "homepage": "https://www.protocol.com",
-      "description": "Protocol — enterprise tech news, AI, and digital transformation."
     },
     {
       "id": "9to5mac-7c3b8d2a",
@@ -4875,20 +4819,27 @@
       "url": "https://theinitium.com/rss/",
       "language": "zh",
       "countries": [
-        "HK"
+        "SG",
+        "HK",
+        "CN"
       ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss",
       "homepage": "https://theinitium.com",
-      "description": "The Initium — in-depth Chinese-language journalism from Hong Kong."
+      "description": "The Initium — independent in-depth Chinese-language journalism headquartered in Singapore covering Greater China.",
+      "perspective": "independent-exile",
+      "governance": "independent",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "theinitium.com"
     },
     {
       "id": "caixin-global-b7e57675",
       "name": "Caixin Global",
       "publisher": "Caixin",
       "url": "https://www.caixinglobal.com/feed/",
-      "language": "zh",
+      "language": "en",
       "countries": [
         "CN"
       ],
@@ -5040,14 +4991,19 @@
       "url": "https://meduza.io/rss/all",
       "language": "ru",
       "countries": [
-        "LV"
+        "LV",
+        "RU"
       ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss",
       "homepage": "https://meduza.io",
       "description": "Meduza — independent Russian-language news outlet based in Latvia.",
-      "perspective": "independent-exile"
+      "perspective": "independent-exile",
+      "governance": "independent",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "meduza.io"
     },
     {
       "id": "asahi-shimbun-japanese-f4e45e49",
@@ -6825,6 +6781,141 @@
       "lastCheckedAt": "2026-10-20T00:56:30.348Z",
       "lastItemPublishedAt": "2026-10-05T02:28:54.000Z",
       "active": true
+    },
+    {
+      "id": "citi-newsroom-928c48dc",
+      "name": "Citi Newsroom",
+      "publisher": "Citi Newsroom",
+      "url": "https://citinewsroom.com/feed/",
+      "language": "en",
+      "countries": [
+        "GH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent"
+    },
+    {
+      "id": "the-kyiv-independent-5782f526",
+      "name": "The Kyiv Independent",
+      "publisher": "The Kyiv Independent",
+      "url": "https://kyivindependent.com/feed/",
+      "language": "en",
+      "countries": [
+        "UA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://kyivindependent.com",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "kyivindependent.com",
+      "description": "The Kyiv Independent — leading English-language independent media in Ukraine."
+    },
+    {
+      "id": "novaya-gazeta-europe-8b1a4971",
+      "name": "Novaya Gazeta Europe",
+      "publisher": "Novaya Gazeta Europe",
+      "url": "https://novayagazeta.eu/feed/rss",
+      "language": "ru",
+      "countries": [
+        "RU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://novayagazeta.eu",
+      "perspective": "independent-exile",
+      "governance": "independent",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "novayagazeta.eu",
+      "description": "Novaya Gazeta Europe — independent Russian journalism founded in European exile following censorship of Novaya Gazeta."
+    },
+    {
+      "id": "radio-canada-d7774cd1",
+      "name": "Radio-Canada Info",
+      "publisher": "Radio-Canada",
+      "url": "https://ici.radio-canada.ca/rss/4159",
+      "language": "fr",
+      "countries": [
+        "CA"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://ici.radio-canada.ca",
+      "perspective": "independent",
+      "governance": "public-service",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "radio-canada.ca",
+      "description": "Radio-Canada Info — French-language public service broadcast journalism in Canada."
+    },
+    {
+      "id": "radio-farda-48c98b32",
+      "name": "Radio Farda",
+      "publisher": "Radio Farda",
+      "url": "https://www.radiofarda.com/api/z$qite_rqi",
+      "language": "fa",
+      "countries": [
+        "IR"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www.radiofarda.com",
+      "perspective": "independent-exile",
+      "governance": "public-service",
+      "operatingCircumstance": "cross-border",
+      "sourceRole": "reporting",
+      "publisherDomain": "radiofarda.com",
+      "description": "Radio Farda — Persian-language service of Radio Free Europe/Radio Liberty, funded by U.S. Congress via USAGM with statutory editorial independence.",
+      "notes": "Radio Farda is funded by a grant from the U.S. Congress through the U.S. Agency for Global Media (USAGM). Under the U.S. International Broadcasting Act, journalists are legally protected by an editorial firewall from government interference."
+    },
+    {
+      "id": "animal-politico-59c2914a",
+      "name": "Animal Político",
+      "publisher": "Animal Politico",
+      "url": "https://animalpolitico.com/feed/",
+      "language": "es",
+      "countries": [
+        "MX"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://animalpolitico.com",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "animalpolitico.com",
+      "description": "Animal Político — independent Mexican digital native newsroom known for anti-corruption and public interest investigations."
+    },
+    {
+      "id": "el-faro-1aae9981",
+      "name": "El Faro",
+      "publisher": "El Faro",
+      "url": "https://elfaro.net/es/rss",
+      "language": "es",
+      "countries": [
+        "SV"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://elfaro.net",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "cross-border",
+      "sourceRole": "reporting",
+      "publisherDomain": "elfaro.net",
+      "description": "El Faro — pioneering Central American independent investigative newsroom covering governance, corruption, and human rights."
     }
   ]
 }

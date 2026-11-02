@@ -1993,7 +1993,7 @@
         "name": "Dnevnik.ba",
         "publisher": "Dnevnik.ba",
         "url": "https://www.dnevnik.ba/rss.xml",
-        "language": "en",
+        "language": "hr",
         "countries": [
           "BA"
         ],
@@ -3370,7 +3370,7 @@
         "name": "RFI Khmer",
         "publisher": "RFI Khmer",
         "url": "https://www.rfi.fr/km/%E1%9E%80%E1%9E%98%E1%9F%92%E1%9E%96%E1%9E%BB%E1%9E%87%E1%9E%B6/rss",
-        "language": "en",
+        "language": "km",
         "countries": [
           "KH"
         ],
@@ -3862,10 +3862,30 @@
         "format": "rss",
         "homepage": "https://www.cbc.ca/news",
         "description": "CBC News top stories — Canada's public broadcaster."
+      },
+      {
+        "id": "radio-canada-d7774cd1",
+        "name": "Radio-Canada Info",
+        "publisher": "Radio-Canada",
+        "url": "https://ici.radio-canada.ca/rss/4159",
+        "language": "fr",
+        "countries": [
+          "CA"
+        ],
+        "category": "world",
+        "mediaType": "broadcast",
+        "format": "rss",
+        "homepage": "https://ici.radio-canada.ca",
+        "perspective": "independent",
+        "governance": "public-service",
+        "operatingCircumstance": "domestic",
+        "sourceRole": "reporting",
+        "publisherDomain": "radio-canada.ca",
+        "description": "Radio-Canada Info — French-language public service broadcast journalism in Canada."
       }
     ],
     "regionalFeeds": [],
-    "totalFeeds": 4,
+    "totalFeeds": 5,
     "tier": "domestic-multi"
   },
   {
@@ -5279,7 +5299,7 @@
         "name": "Caixin Global",
         "publisher": "Caixin",
         "url": "https://www.caixinglobal.com/feed/",
-        "language": "zh",
+        "language": "en",
         "countries": [
           "CN"
         ],
@@ -5306,8 +5326,31 @@
         "perspective": "state-affiliated"
       }
     ],
-    "regionalFeeds": [],
-    "totalFeeds": 5,
+    "regionalFeeds": [
+      {
+        "id": "the-initium-a45c67ad",
+        "name": "The Initium",
+        "publisher": "The Initium",
+        "url": "https://theinitium.com/rss/",
+        "language": "zh",
+        "countries": [
+          "SG",
+          "HK",
+          "CN"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "homepage": "https://theinitium.com",
+        "description": "The Initium — independent in-depth Chinese-language journalism headquartered in Singapore covering Greater China.",
+        "perspective": "independent-exile",
+        "governance": "independent",
+        "operatingCircumstance": "exile",
+        "sourceRole": "reporting",
+        "publisherDomain": "theinitium.com"
+      }
+    ],
+    "totalFeeds": 6,
     "tier": "domestic-multi"
   },
   {
@@ -7447,11 +7490,31 @@
         "category": "world",
         "mediaType": "digital",
         "format": "rss"
+      },
+      {
+        "id": "el-faro-1aae9981",
+        "name": "El Faro",
+        "publisher": "El Faro",
+        "url": "https://elfaro.net/es/rss",
+        "language": "es",
+        "countries": [
+          "SV"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "homepage": "https://elfaro.net",
+        "perspective": "independent",
+        "governance": "independent",
+        "operatingCircumstance": "cross-border",
+        "sourceRole": "reporting",
+        "publisherDomain": "elfaro.net",
+        "description": "El Faro — pioneering Central American independent investigative newsroom covering governance, corruption, and human rights."
       }
     ],
     "regionalFeeds": [],
-    "totalFeeds": 1,
-    "tier": "domestic-single"
+    "totalFeeds": 2,
+    "tier": "domestic-multi"
   },
   {
     "code": "GQ",
@@ -10287,7 +10350,7 @@
         "name": "Deutsche Welle (EN)",
         "publisher": "Deutsche Welle",
         "url": "https://rss.dw.com/rdf/rss-en-all",
-        "language": "de",
+        "language": "en",
         "countries": [
           "DE"
         ],
@@ -10463,17 +10526,18 @@
     "name": "Ghana",
     "domesticFeeds": [
       {
-        "id": "ghana-mma-a1b18cfd",
-        "name": "Ghana MMA",
-        "publisher": "Ghana MMA",
-        "url": "https://www.ghanamma.com/category/business/feed/",
+        "id": "citi-newsroom-928c48dc",
+        "name": "Citi Newsroom",
+        "publisher": "Citi Newsroom",
+        "url": "https://citinewsroom.com/feed/",
         "language": "en",
         "countries": [
           "GH"
         ],
         "category": "world",
         "mediaType": "digital",
-        "format": "rss"
+        "format": "rss",
+        "perspective": "independent"
       }
     ],
     "regionalFeeds": [
@@ -11916,7 +11980,9 @@
         "format": "rss",
         "perspective": "independent",
         "notes": "Hong Kong-based non-profit, JTI-certified news outlet. No shareholders or share capital — run directly by journalistic staff. Journalism Trust Initiative certified in 2025 after 130-point external audit. SOPA award winner. Publishes annual financial transparency reports.\n\nSources:\n  [1] https://hongkongfp.com/about/\n  [2] https://en.wikipedia.org/wiki/Hong_Kong_Free_Press"
-      },
+      }
+    ],
+    "regionalFeeds": [
       {
         "id": "the-initium-a45c67ad",
         "name": "The Initium",
@@ -11924,16 +11990,22 @@
         "url": "https://theinitium.com/rss/",
         "language": "zh",
         "countries": [
-          "HK"
+          "SG",
+          "HK",
+          "CN"
         ],
         "category": "world",
         "mediaType": "digital",
         "format": "rss",
         "homepage": "https://theinitium.com",
-        "description": "The Initium — in-depth Chinese-language journalism from Hong Kong."
+        "description": "The Initium — independent in-depth Chinese-language journalism headquartered in Singapore covering Greater China.",
+        "perspective": "independent-exile",
+        "governance": "independent",
+        "operatingCircumstance": "exile",
+        "sourceRole": "reporting",
+        "publisherDomain": "theinitium.com"
       }
     ],
-    "regionalFeeds": [],
     "totalFeeds": 3,
     "tier": "domestic-multi"
   },
@@ -12222,6 +12294,27 @@
         "format": "rss",
         "perspective": "state-affiliated",
         "notes": "Official state news agency of the Islamic Republic of Iran. Operates under the Ministry of Culture and Islamic Guidance, which appoints its leadership. State Media Monitor reports 80%+ of budget sourced from government.\n\nSources:\n  [1] https://statemediamonitor.com/2025/07/islamic-republic-news-agency-irna/\n  [2] https://rsf.org/en/country/iran\n  [3] https://en.wikipedia.org/wiki/Islamic_Republic_News_Agency"
+      },
+      {
+        "id": "radio-farda-48c98b32",
+        "name": "Radio Farda",
+        "publisher": "Radio Farda",
+        "url": "https://www.radiofarda.com/api/z$qite_rqi",
+        "language": "fa",
+        "countries": [
+          "IR"
+        ],
+        "category": "world",
+        "mediaType": "broadcast",
+        "format": "rss",
+        "homepage": "https://www.radiofarda.com",
+        "perspective": "independent-exile",
+        "governance": "public-service",
+        "operatingCircumstance": "cross-border",
+        "sourceRole": "reporting",
+        "publisherDomain": "radiofarda.com",
+        "description": "Radio Farda — Persian-language service of Radio Free Europe/Radio Liberty, funded by U.S. Congress via USAGM with statutory editorial independence.",
+        "notes": "Radio Farda is funded by a grant from the U.S. Congress through the U.S. Agency for Global Media (USAGM). Under the U.S. International Broadcasting Act, journalists are legally protected by an editorial firewall from government interference."
       }
     ],
     "regionalFeeds": [
@@ -12256,7 +12349,7 @@
         "notes": "BBC regional bureau covering 15 Middle Eastern countries. BBC is the world's leading public service broadcaster, funded by the UK license fee with editorial independence enshrined in its Royal Charter. RSF ranks UK 24/180.\n\nSources:\n  [1] https://rsf.org/en/country/united-kingdom\n  [2] https://www.bbc.com/aboutthebbc/governance/charter"
       }
     ],
-    "totalFeeds": 6,
+    "totalFeeds": 7,
     "tier": "domestic-multi"
   },
   {
@@ -13828,22 +13921,6 @@
         "category": "europe",
         "mediaType": "digital",
         "format": "rss"
-      },
-      {
-        "id": "meduza-fecba09f",
-        "name": "Meduza",
-        "publisher": "Meduza",
-        "url": "https://meduza.io/rss/all",
-        "language": "ru",
-        "countries": [
-          "LV"
-        ],
-        "category": "world",
-        "mediaType": "digital",
-        "format": "rss",
-        "homepage": "https://meduza.io",
-        "description": "Meduza — independent Russian-language news outlet based in Latvia.",
-        "perspective": "independent-exile"
       }
     ],
     "regionalFeeds": [
@@ -13887,10 +13964,31 @@
         "category": "europe",
         "mediaType": "digital",
         "format": "rss"
+      },
+      {
+        "id": "meduza-fecba09f",
+        "name": "Meduza",
+        "publisher": "Meduza",
+        "url": "https://meduza.io/rss/all",
+        "language": "ru",
+        "countries": [
+          "LV",
+          "RU"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "homepage": "https://meduza.io",
+        "description": "Meduza — independent Russian-language news outlet based in Latvia.",
+        "perspective": "independent-exile",
+        "governance": "independent",
+        "operatingCircumstance": "exile",
+        "sourceRole": "reporting",
+        "publisherDomain": "meduza.io"
       }
     ],
     "totalFeeds": 3,
-    "tier": "domestic-multi"
+    "tier": "domestic-single"
   },
   {
     "code": "LB",
@@ -16710,7 +16808,7 @@
         "name": "France-Antilles Martinique",
         "publisher": "France-Antilles Martinique",
         "url": "https://www.martinique.franceantilles.fr/actualite/rss.xml",
-        "language": "en",
+        "language": "fr",
         "countries": [
           "MQ"
         ],
@@ -17485,10 +17583,30 @@
         "category": "world",
         "mediaType": "digital",
         "format": "rss"
+      },
+      {
+        "id": "animal-politico-59c2914a",
+        "name": "Animal Político",
+        "publisher": "Animal Politico",
+        "url": "https://animalpolitico.com/feed/",
+        "language": "es",
+        "countries": [
+          "MX"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "homepage": "https://animalpolitico.com",
+        "perspective": "independent",
+        "governance": "independent",
+        "operatingCircumstance": "domestic",
+        "sourceRole": "reporting",
+        "publisherDomain": "animalpolitico.com",
+        "description": "Animal Político — independent Mexican digital native newsroom known for anti-corruption and public interest investigations."
       }
     ],
     "regionalFeeds": [],
-    "totalFeeds": 2,
+    "totalFeeds": 3,
     "tier": "domestic-multi"
   },
   {
@@ -21436,17 +21554,59 @@
         "name": "RIA Novosti",
         "publisher": "RIA Novosti",
         "url": "https://ria.ru/export/rss2/index.xml",
-        "language": "en",
+        "language": "ru",
         "countries": [
           "RU"
         ],
         "category": "world",
         "mediaType": "digital",
         "format": "rss"
+      },
+      {
+        "id": "novaya-gazeta-europe-8b1a4971",
+        "name": "Novaya Gazeta Europe",
+        "publisher": "Novaya Gazeta Europe",
+        "url": "https://novayagazeta.eu/feed/rss",
+        "language": "ru",
+        "countries": [
+          "RU"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "homepage": "https://novayagazeta.eu",
+        "perspective": "independent-exile",
+        "governance": "independent",
+        "operatingCircumstance": "exile",
+        "sourceRole": "reporting",
+        "publisherDomain": "novayagazeta.eu",
+        "description": "Novaya Gazeta Europe — independent Russian journalism founded in European exile following censorship of Novaya Gazeta."
       }
     ],
-    "regionalFeeds": [],
-    "totalFeeds": 4,
+    "regionalFeeds": [
+      {
+        "id": "meduza-fecba09f",
+        "name": "Meduza",
+        "publisher": "Meduza",
+        "url": "https://meduza.io/rss/all",
+        "language": "ru",
+        "countries": [
+          "LV",
+          "RU"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "homepage": "https://meduza.io",
+        "description": "Meduza — independent Russian-language news outlet based in Latvia.",
+        "perspective": "independent-exile",
+        "governance": "independent",
+        "operatingCircumstance": "exile",
+        "sourceRole": "reporting",
+        "publisherDomain": "meduza.io"
+      }
+    ],
+    "totalFeeds": 6,
     "tier": "domestic-multi"
   },
   {
@@ -23589,8 +23749,31 @@
         "format": "rss"
       }
     ],
-    "regionalFeeds": [],
-    "totalFeeds": 2,
+    "regionalFeeds": [
+      {
+        "id": "the-initium-a45c67ad",
+        "name": "The Initium",
+        "publisher": "The Initium",
+        "url": "https://theinitium.com/rss/",
+        "language": "zh",
+        "countries": [
+          "SG",
+          "HK",
+          "CN"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "homepage": "https://theinitium.com",
+        "description": "The Initium — independent in-depth Chinese-language journalism headquartered in Singapore covering Greater China.",
+        "perspective": "independent-exile",
+        "governance": "independent",
+        "operatingCircumstance": "exile",
+        "sourceRole": "reporting",
+        "publisherDomain": "theinitium.com"
+      }
+    ],
+    "totalFeeds": 3,
     "tier": "domestic-multi"
   },
   {
@@ -27679,18 +27862,38 @@
         "name": "Gazeta.ua",
         "publisher": "Gazeta.ua",
         "url": "https://gazeta.ua/ru/rss",
-        "language": "en",
+        "language": "ru",
         "countries": [
           "UA"
         ],
         "category": "world",
         "mediaType": "digital",
         "format": "rss"
+      },
+      {
+        "id": "the-kyiv-independent-5782f526",
+        "name": "The Kyiv Independent",
+        "publisher": "The Kyiv Independent",
+        "url": "https://kyivindependent.com/feed/",
+        "language": "en",
+        "countries": [
+          "UA"
+        ],
+        "category": "world",
+        "mediaType": "digital",
+        "format": "rss",
+        "homepage": "https://kyivindependent.com",
+        "perspective": "independent",
+        "governance": "independent",
+        "operatingCircumstance": "domestic",
+        "sourceRole": "reporting",
+        "publisherDomain": "kyivindependent.com",
+        "description": "The Kyiv Independent — leading English-language independent media in Ukraine."
       }
     ],
     "regionalFeeds": [],
-    "totalFeeds": 1,
-    "tier": "domestic-single"
+    "totalFeeds": 2,
+    "tier": "domestic-multi"
   },
   {
     "code": "AE",
@@ -28687,19 +28890,6 @@
         "name": "ESPN",
         "publisher": "ESPN",
         "url": "https://www.espn.com/espn/rss/news",
-        "language": "en",
-        "countries": [
-          "US"
-        ],
-        "category": "us",
-        "mediaType": "digital",
-        "format": "rss"
-      },
-      {
-        "id": "durov-telegram-7f8a9b1c",
-        "name": "Du Rov's Channel",
-        "publisher": "Telegram",
-        "url": "https://rsshub.app/telegram/channel/durov",
         "language": "en",
         "countries": [
           "US"
@@ -29934,21 +30124,6 @@
         "description": "VentureBeat — technology news, AI, startups, and venture capital."
       },
       {
-        "id": "anandtech-6b2e4f1c",
-        "name": "AnandTech",
-        "publisher": "AnandTech",
-        "url": "https://www.anandtech.com/rss/",
-        "language": "en",
-        "countries": [
-          "US"
-        ],
-        "category": "technology",
-        "mediaType": "digital",
-        "format": "rss",
-        "homepage": "https://www.anandtech.com",
-        "description": "AnandTech — computer hardware reviews, benchmarks, and analysis."
-      },
-      {
         "id": "techdirt-9f3c1e8b",
         "name": "TechDirt",
         "publisher": "TechDirt",
@@ -29962,21 +30137,6 @@
         "format": "rss",
         "homepage": "https://www.techdirt.com",
         "description": "TechDirt — technology policy, copyright, patents, and internet issues."
-      },
-      {
-        "id": "protocol-2d7f5a4e",
-        "name": "Protocol",
-        "publisher": "Protocol",
-        "url": "https://www.protocol.com/feed",
-        "language": "en",
-        "countries": [
-          "US"
-        ],
-        "category": "technology",
-        "mediaType": "digital",
-        "format": "rss",
-        "homepage": "https://www.protocol.com",
-        "description": "Protocol — enterprise tech news, AI, and digital transformation."
       },
       {
         "id": "9to5mac-7c3b8d2a",
@@ -30086,7 +30246,7 @@
         "format": "rss"
       }
     ],
-    "totalFeeds": 113,
+    "totalFeeds": 110,
     "tier": "domestic-multi"
   },
   {

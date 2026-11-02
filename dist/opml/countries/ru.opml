@@ -5,6 +5,8 @@
     <dateCreated>Tue, 20 Oct 2026 00:56:30 GMT</dateCreated>
   </head>
   <body>
+    <outline type="rss" text="Meduza" title="Meduza" xmlUrl="https://meduza.io/rss/all" />
+    <outline type="rss" text="Novaya Gazeta Europe" title="Novaya Gazeta Europe" xmlUrl="https://novayagazeta.eu/feed/rss" />
     <outline type="rss" text="RIA Novosti" title="RIA Novosti" xmlUrl="https://ria.ru/export/rss2/index.xml" />
     <outline type="rss" text="RT News" title="RT News" xmlUrl="https://rt-english.com/rss/news/" />
     <outline type="rss" text="TASS" title="TASS" xmlUrl="https://tass.com/rss/v2.xml" />

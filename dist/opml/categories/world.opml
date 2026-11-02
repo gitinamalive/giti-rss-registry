@@ -21,6 +21,7 @@
     <outline type="rss" text="AllAfrica" title="AllAfrica" xmlUrl="https://allafrica.com/tools/headlines/rdf/africa/headlines.rdf" />
     <outline type="rss" text="Almomento.net" title="Almomento.net" xmlUrl="https://almomento.net/feed/" />
     <outline type="rss" text="Alwihda Info" title="Alwihda Info" xmlUrl="https://www.alwihdainfo.com/rss/" />
+    <outline type="rss" text="Animal Político" title="Animal Político" xmlUrl="https://animalpolitico.com/feed/" />
     <outline type="rss" text="Antigua Newsroom" title="Antigua Newsroom" xmlUrl="https://antiguanewsroom.com/feed/" />
     <outline type="rss" text="Antigua Observer" title="Antigua Observer" xmlUrl="https://antiguaobserver.com/feed/" />
     <outline type="rss" text="Arab News" title="Arab News" xmlUrl="https://www.arabnews.com/rss.xml" />
@@ -51,6 +52,7 @@
     <outline type="rss" text="Central America Data" title="Central America Data" xmlUrl="https://www.odditysoftware.com/database_feed_Central+America+Geocode+Data.htm" />
     <outline type="rss" text="China Daily" title="China Daily" xmlUrl="https://www.chinadaily.com.cn/rss/china_rss.xml" />
     <outline type="rss" text="Chosun Ilbo" title="Chosun Ilbo" xmlUrl="https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml" />
+    <outline type="rss" text="Citi Newsroom" title="Citi Newsroom" xmlUrl="https://citinewsroom.com/feed/" />
     <outline type="rss" text="Civil Georgia" title="Civil Georgia" xmlUrl="https://civil.ge/feed/" />
     <outline type="rss" text="Clarin" title="Clarin" xmlUrl="https://www.clarin.com/rss/lo-ultimo/" />
     <outline type="rss" text="CNC3" title="CNC3" xmlUrl="https://www.cnc3.co.tt/feed/" />
@@ -75,6 +77,7 @@
     <outline type="rss" text="El Colombiano" title="El Colombiano" xmlUrl="https://www.elcolombiano.com/rss/inicio.xml" />
     <outline type="rss" text="El Comercio" title="El Comercio" xmlUrl="https://www.elcomercio.com/feed/" />
     <outline type="rss" text="El Comercio Perú" title="El Comercio Perú" xmlUrl="https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml" />
+    <outline type="rss" text="El Faro" title="El Faro" xmlUrl="https://elfaro.net/es/rss" />
     <outline type="rss" text="El Financiero" title="El Financiero" xmlUrl="https://www.elfinancierocr.com/rss/" />
     <outline type="rss" text="El Observador" title="El Observador" xmlUrl="https://www.elobservador.com.uy/rss/pages/ultimo-momento.xml" />
     <outline type="rss" text="El Periòdic d&apos;Andorra" title="El Periòdic d&apos;Andorra" xmlUrl="https://elperiodic.ad/feed/" />
@@ -92,7 +95,6 @@
     <outline type="rss" text="G1 Globo" title="G1 Globo" xmlUrl="https://g1.globo.com/dynamo/rss2.xml" />
     <outline type="rss" text="Gazeta.ua" title="Gazeta.ua" xmlUrl="https://gazeta.ua/ru/rss" />
     <outline type="rss" text="Gazeta.uz" title="Gazeta.uz" xmlUrl="https://www.gazeta.uz/oz/rss/" />
-    <outline type="rss" text="Ghana MMA" title="Ghana MMA" xmlUrl="https://www.ghanamma.com/category/business/feed/" />
     <outline type="rss" text="Gibraltar Chronicle" title="Gibraltar Chronicle" xmlUrl="https://www.chronicle.gi/feed/" />
     <outline type="rss" text="Giornale.sm" title="Giornale.sm" xmlUrl="https://giornalesm.com/feed/" />
     <outline type="rss" text="Global News" title="Global News" xmlUrl="https://globalnews.ca/feed/" />
@@ -164,6 +166,7 @@
     <outline type="rss" text="NHK World" title="NHK World" xmlUrl="https://www3.nhk.or.jp/nhkworld/en/news/feed/" />
     <outline type="rss" text="NK News" title="NK News" xmlUrl="https://www.nknews.org/feed/" />
     <outline type="rss" text="Noti Uno 630 AM" title="Noti Uno 630 AM" xmlUrl="https://estrella51.blogspot.com/feeds/posts/default?alt=rss" />
+    <outline type="rss" text="Novaya Gazeta Europe" title="Novaya Gazeta Europe" xmlUrl="https://novayagazeta.eu/feed/rss" />
     <outline type="rss" text="Now Grenada" title="Now Grenada" xmlUrl="https://nowgrenada.com/feed/" />
     <outline type="rss" text="Nyasa Times" title="Nyasa Times" xmlUrl="https://www.nyasatimes.com/feed/" />
     <outline type="rss" text="NYT Chinese" title="NYT Chinese" xmlUrl="https://cn.nytimes.com/rss/" />
@@ -182,6 +185,8 @@
     <outline type="rss" text="Premium Times" title="Premium Times" xmlUrl="https://www.premiumtimesng.com/feed" />
     <outline type="rss" text="Prensa Libre" title="Prensa Libre" xmlUrl="https://www.prensalibre.com/feed" />
     <outline type="rss" text="Quds News Network" title="Quds News Network" xmlUrl="https://qudsn.co/rss" />
+    <outline type="rss" text="Radio Farda" title="Radio Farda" xmlUrl="https://www.radiofarda.com/api/z$qite_rqi" />
+    <outline type="rss" text="Radio-Canada Info" title="Radio-Canada Info" xmlUrl="https://ici.radio-canada.ca/rss/4159" />
     <outline type="rss" text="Real Equatorial Guinea" title="Real Equatorial Guinea" xmlUrl="https://realequatorialguinea.com/feed/" />
     <outline type="rss" text="Reforma.com" title="Reforma.com" xmlUrl="https://www.reforma.com/rss/portada.xml" />
     <outline type="rss" text="Reuters World" title="Reuters World" xmlUrl="https://www.reuters.com/arc/outboundfeeds/v1/rss/category/world/" />
@@ -224,6 +229,7 @@
     <outline type="rss" text="The Initium" title="The Initium" xmlUrl="https://theinitium.com/rss/" />
     <outline type="rss" text="The Jamaica Star" title="The Jamaica Star" xmlUrl="https://jamaica-star.com/feed/news.xml" />
     <outline type="rss" text="The Japan Times" title="The Japan Times" xmlUrl="https://www.japantimes.co.jp/feed" />
+    <outline type="rss" text="The Kyiv Independent" title="The Kyiv Independent" xmlUrl="https://kyivindependent.com/feed/" />
     <outline type="rss" text="The Marshall Islands Journal" title="The Marshall Islands Journal" xmlUrl="https://marshallislandsjournal.com/feed/" />
     <outline type="rss" text="The Moscow Times" title="The Moscow Times" xmlUrl="https://www.themoscowtimes.com/rss/news" />
     <outline type="rss" text="The Namibian" title="The Namibian" xmlUrl="https://www.namibian.com.na/feed/" />

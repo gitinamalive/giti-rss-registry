@@ -716,7 +716,7 @@
       "name": "Deutsche Welle (EN)",
       "publisher": "Deutsche Welle",
       "url": "https://rss.dw.com/rdf/rss-en-all",
-      "language": "de",
+      "language": "en",
       "countries": [
         "DE"
       ],
@@ -1166,7 +1166,7 @@
       "name": "Caixin Global",
       "publisher": "Caixin",
       "url": "https://www.caixinglobal.com/feed/",
-      "language": "zh",
+      "language": "en",
       "countries": [
         "CN"
       ],
@@ -2465,21 +2465,6 @@
       "description": "9to5Mac — Apple news, reviews, and tutorials."
     },
     {
-      "id": "anandtech-6b2e4f1c",
-      "name": "AnandTech",
-      "publisher": "AnandTech",
-      "url": "https://www.anandtech.com/rss/",
-      "language": "en",
-      "countries": [
-        "US"
-      ],
-      "category": "technology",
-      "mediaType": "digital",
-      "format": "rss",
-      "homepage": "https://www.anandtech.com",
-      "description": "AnandTech — computer hardware reviews, benchmarks, and analysis."
-    },
-    {
       "id": "android-developers-a6106c0a",
       "name": "Android Developers",
       "publisher": "Android Developers",
@@ -2605,21 +2590,6 @@
       "format": "rss"
     },
     {
-      "id": "protocol-2d7f5a4e",
-      "name": "Protocol",
-      "publisher": "Protocol",
-      "url": "https://www.protocol.com/feed",
-      "language": "en",
-      "countries": [
-        "US"
-      ],
-      "category": "technology",
-      "mediaType": "digital",
-      "format": "rss",
-      "homepage": "https://www.protocol.com",
-      "description": "Protocol — enterprise tech news, AI, and digital transformation."
-    },
-    {
       "id": "rest-of-world-ae2c3d54",
       "name": "Rest of World",
       "publisher": "Rest of World",
@@ -2735,19 +2705,6 @@
     }
   ],
   "us": [
-    {
-      "id": "durov-telegram-7f8a9b1c",
-      "name": "Du Rov's Channel",
-      "publisher": "Telegram",
-      "url": "https://rsshub.app/telegram/channel/durov",
-      "language": "en",
-      "countries": [
-        "US"
-      ],
-      "category": "us",
-      "mediaType": "digital",
-      "format": "rss"
-    },
     {
       "id": "espn-b1ff08c3",
       "name": "ESPN",
@@ -3283,6 +3240,26 @@
       "notes": "Chadian outlet whose public editorial statement emphasizes accuracy, impartiality, and respect for facts. A public 2026 correction shows an explicit correction process; retain normal cross-source checks for sensitive claims.\n\nSources:\n  [1] https://www.alwihdainfo.com/a-propos-de-nous/\n  [2] https://www.alwihdainfo.com/erratum-alwihda-info-presente-ses-excuses-a-l-ARSAT-et-a-son-audience-pour-un-manquement-a-l-equilibre-de-l-information-a148942/"
     },
     {
+      "id": "animal-politico-59c2914a",
+      "name": "Animal Político",
+      "publisher": "Animal Politico",
+      "url": "https://animalpolitico.com/feed/",
+      "language": "es",
+      "countries": [
+        "MX"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://animalpolitico.com",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "animalpolitico.com",
+      "description": "Animal Político — independent Mexican digital native newsroom known for anti-corruption and public interest investigations."
+    },
+    {
       "name": "Antigua Newsroom",
       "publisher": "Antigua Newsroom",
       "url": "https://antiguanewsroom.com/feed/",
@@ -3792,6 +3769,20 @@
       "description": "Chosun Ilbo — major Korean daily newspaper."
     },
     {
+      "id": "citi-newsroom-928c48dc",
+      "name": "Citi Newsroom",
+      "publisher": "Citi Newsroom",
+      "url": "https://citinewsroom.com/feed/",
+      "language": "en",
+      "countries": [
+        "GH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent"
+    },
+    {
       "id": "civil-georgia-e1e95c4b",
       "name": "Civil Georgia",
       "publisher": "Civil Georgia",
@@ -4095,7 +4086,7 @@
       "name": "Dnevnik.ba",
       "publisher": "Dnevnik.ba",
       "url": "https://www.dnevnik.ba/rss.xml",
-      "language": "en",
+      "language": "hr",
       "countries": [
         "BA"
       ],
@@ -4198,6 +4189,26 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "el-faro-1aae9981",
+      "name": "El Faro",
+      "publisher": "El Faro",
+      "url": "https://elfaro.net/es/rss",
+      "language": "es",
+      "countries": [
+        "SV"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://elfaro.net",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "cross-border",
+      "sourceRole": "reporting",
+      "publisherDomain": "elfaro.net",
+      "description": "El Faro — pioneering Central American independent investigative newsroom covering governance, corruption, and human rights."
     },
     {
       "id": "el-financiero-8302247f",
@@ -4404,7 +4415,7 @@
       "name": "France-Antilles Martinique",
       "publisher": "France-Antilles Martinique",
       "url": "https://www.martinique.franceantilles.fr/actualite/rss.xml",
-      "language": "en",
+      "language": "fr",
       "countries": [
         "MQ"
       ],
@@ -4479,7 +4490,7 @@
       "name": "Gazeta.ua",
       "publisher": "Gazeta.ua",
       "url": "https://gazeta.ua/ru/rss",
-      "language": "en",
+      "language": "ru",
       "countries": [
         "UA"
       ],
@@ -4495,19 +4506,6 @@
       "language": "en",
       "countries": [
         "UZ"
-      ],
-      "category": "world",
-      "mediaType": "digital",
-      "format": "rss"
-    },
-    {
-      "id": "ghana-mma-a1b18cfd",
-      "name": "Ghana MMA",
-      "publisher": "Ghana MMA",
-      "url": "https://www.ghanamma.com/category/business/feed/",
-      "language": "en",
-      "countries": [
-        "GH"
       ],
       "category": "world",
       "mediaType": "digital",
@@ -5209,14 +5207,19 @@
       "url": "https://meduza.io/rss/all",
       "language": "ru",
       "countries": [
-        "LV"
+        "LV",
+        "RU"
       ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss",
       "homepage": "https://meduza.io",
       "description": "Meduza — independent Russian-language news outlet based in Latvia.",
-      "perspective": "independent-exile"
+      "perspective": "independent-exile",
+      "governance": "independent",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "meduza.io"
     },
     {
       "id": "mehr-news-3af01666",
@@ -5550,6 +5553,26 @@
       "format": "rss"
     },
     {
+      "id": "novaya-gazeta-europe-8b1a4971",
+      "name": "Novaya Gazeta Europe",
+      "publisher": "Novaya Gazeta Europe",
+      "url": "https://novayagazeta.eu/feed/rss",
+      "language": "ru",
+      "countries": [
+        "RU"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://novayagazeta.eu",
+      "perspective": "independent-exile",
+      "governance": "independent",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "novayagazeta.eu",
+      "description": "Novaya Gazeta Europe — independent Russian journalism founded in European exile following censorship of Novaya Gazeta."
+    },
+    {
       "name": "Now Grenada",
       "publisher": "Now Grenada",
       "url": "https://nowgrenada.com/feed/",
@@ -5806,6 +5829,47 @@
       "active": true
     },
     {
+      "id": "radio-farda-48c98b32",
+      "name": "Radio Farda",
+      "publisher": "Radio Farda",
+      "url": "https://www.radiofarda.com/api/z$qite_rqi",
+      "language": "fa",
+      "countries": [
+        "IR"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://www.radiofarda.com",
+      "perspective": "independent-exile",
+      "governance": "public-service",
+      "operatingCircumstance": "cross-border",
+      "sourceRole": "reporting",
+      "publisherDomain": "radiofarda.com",
+      "description": "Radio Farda — Persian-language service of Radio Free Europe/Radio Liberty, funded by U.S. Congress via USAGM with statutory editorial independence.",
+      "notes": "Radio Farda is funded by a grant from the U.S. Congress through the U.S. Agency for Global Media (USAGM). Under the U.S. International Broadcasting Act, journalists are legally protected by an editorial firewall from government interference."
+    },
+    {
+      "id": "radio-canada-d7774cd1",
+      "name": "Radio-Canada Info",
+      "publisher": "Radio-Canada",
+      "url": "https://ici.radio-canada.ca/rss/4159",
+      "language": "fr",
+      "countries": [
+        "CA"
+      ],
+      "category": "world",
+      "mediaType": "broadcast",
+      "format": "rss",
+      "homepage": "https://ici.radio-canada.ca",
+      "perspective": "independent",
+      "governance": "public-service",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "radio-canada.ca",
+      "description": "Radio-Canada Info — French-language public service broadcast journalism in Canada."
+    },
+    {
       "id": "real-equatorial-guinea-e8732a81",
       "name": "Real Equatorial Guinea",
       "publisher": "Real Equatorial Guinea",
@@ -5854,7 +5918,7 @@
       "name": "RFI Khmer",
       "publisher": "RFI Khmer",
       "url": "https://www.rfi.fr/km/%E1%9E%80%E1%9E%98%E1%9F%92%E1%9E%96%E1%9E%BB%E1%9E%87%E1%9E%B6/rss",
-      "language": "en",
+      "language": "km",
       "countries": [
         "KH"
       ],
@@ -5867,7 +5931,7 @@
       "name": "RIA Novosti",
       "publisher": "RIA Novosti",
       "url": "https://ria.ru/export/rss2/index.xml",
-      "language": "en",
+      "language": "ru",
       "countries": [
         "RU"
       ],
@@ -6407,13 +6471,20 @@
       "url": "https://theinitium.com/rss/",
       "language": "zh",
       "countries": [
-        "HK"
+        "SG",
+        "HK",
+        "CN"
       ],
       "category": "world",
       "mediaType": "digital",
       "format": "rss",
       "homepage": "https://theinitium.com",
-      "description": "The Initium — in-depth Chinese-language journalism from Hong Kong."
+      "description": "The Initium — independent in-depth Chinese-language journalism headquartered in Singapore covering Greater China.",
+      "perspective": "independent-exile",
+      "governance": "independent",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "theinitium.com"
     },
     {
       "id": "the-jamaica-star-d4fd8f52",
@@ -6440,6 +6511,26 @@
       "category": "world",
       "mediaType": "digital",
       "format": "rss"
+    },
+    {
+      "id": "the-kyiv-independent-5782f526",
+      "name": "The Kyiv Independent",
+      "publisher": "The Kyiv Independent",
+      "url": "https://kyivindependent.com/feed/",
+      "language": "en",
+      "countries": [
+        "UA"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "homepage": "https://kyivindependent.com",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "kyivindependent.com",
+      "description": "The Kyiv Independent — leading English-language independent media in Ukraine."
     },
     {
       "id": "marshall-islands-journal-8e3b1c9a",
