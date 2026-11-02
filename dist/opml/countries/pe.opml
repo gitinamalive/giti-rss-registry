@@ -2,10 +2,11 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: PE</title>
-    <dateCreated>Tue, 20 Oct 2026 00:56:30 GMT</dateCreated>
+    <dateCreated>Mon, 02 Nov 2026 05:38:09 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="El Comercio Perú" title="El Comercio Perú" xmlUrl="https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml" />
+    <outline type="rss" text="IDL-Reporteros" title="IDL-Reporteros" xmlUrl="https://idl-reporteros.pe/feed" />
     <outline type="rss" text="Latin America Reports" title="Latin America Reports" xmlUrl="https://latinamericareports.com/feed/" />
     <outline type="rss" text="MercoPress" title="MercoPress" xmlUrl="https://en.mercopress.com/rss" />
   </body>

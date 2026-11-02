@@ -2,9 +2,10 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: NI</title>
-    <dateCreated>Tue, 20 Oct 2026 00:56:30 GMT</dateCreated>
+    <dateCreated>Mon, 02 Nov 2026 05:38:09 GMT</dateCreated>
   </head>
   <body>
+    <outline type="rss" text="Confidencial" title="Confidencial" xmlUrl="https://confidencial.digital/feed" />
     <outline type="rss" text="La Nueva Radio YA" title="La Nueva Radio YA" xmlUrl="https://nuevaya.com.ni/feed/" />
   </body>
 </opml>

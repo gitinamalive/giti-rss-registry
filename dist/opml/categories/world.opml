@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: world</title>
-    <dateCreated>Tue, 20 Oct 2026 00:56:30 GMT</dateCreated>
+    <dateCreated>Mon, 02 Nov 2026 05:38:09 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="24.kg" title="24.kg" xmlUrl="https://24.kg/rss/" />
@@ -182,6 +182,7 @@
     <outline type="rss" text="Point — Moldova" title="Point — Moldova" xmlUrl="https://point.md/ru/rss/novosti/" />
     <outline type="rss" text="Point — The Gambia" title="Point — The Gambia" xmlUrl="https://thepoint.gm/posts/rss/xml" />
     <outline type="rss" text="Post Courier" title="Post Courier" xmlUrl="https://postcourier.com.pg/feed/" />
+    <outline type="rss" text="Prachatai English" title="Prachatai English" xmlUrl="https://prachataienglish.com/rss.xml" />
     <outline type="rss" text="Premium Times" title="Premium Times" xmlUrl="https://www.premiumtimesng.com/feed" />
     <outline type="rss" text="Prensa Libre" title="Prensa Libre" xmlUrl="https://www.prensalibre.com/feed" />
     <outline type="rss" text="Quds News Network" title="Quds News Network" xmlUrl="https://qudsn.co/rss" />
@@ -202,6 +203,7 @@
     <outline type="rss" text="Savoir News" title="Savoir News" xmlUrl="https://savoirnews.tg/feed/" />
     <outline type="rss" text="SBS News" title="SBS News" xmlUrl="https://www.sbs.com.au/news/feed" />
     <outline type="rss" text="SCMP China" title="SCMP China" xmlUrl="https://www.scmp.com/rss/91/feed" />
+    <outline type="rss" text="Scroll.in" title="Scroll.in" xmlUrl="https://feeds.feedburner.com/ScrollinArticles.rss" />
     <outline type="rss" text="Searchlight" title="Searchlight" xmlUrl="https://www.searchlight.vc/feed/" />
     <outline type="rss" text="Shorouk" title="Shorouk" xmlUrl="https://www.shorouknews.com/columns/rss/" />
     <outline type="rss" text="Sky News Arabia" title="Sky News Arabia" xmlUrl="https://www.skynewsarabia.com/web/feed" />
@@ -227,6 +229,7 @@
     <outline type="rss" text="The Hindu" title="The Hindu" xmlUrl="https://www.thehindu.com/news/national/feeder/default.rss" />
     <outline type="rss" text="The Independent Uganda" title="The Independent Uganda" xmlUrl="https://www.independent.co.ug/feed/" />
     <outline type="rss" text="The Initium" title="The Initium" xmlUrl="https://theinitium.com/rss/" />
+    <outline type="rss" text="The Irrawaddy" title="The Irrawaddy" xmlUrl="https://www.irrawaddy.com/feed" />
     <outline type="rss" text="The Jamaica Star" title="The Jamaica Star" xmlUrl="https://jamaica-star.com/feed/news.xml" />
     <outline type="rss" text="The Japan Times" title="The Japan Times" xmlUrl="https://www.japantimes.co.jp/feed" />
     <outline type="rss" text="The Kyiv Independent" title="The Kyiv Independent" xmlUrl="https://kyivindependent.com/feed/" />
@@ -234,11 +237,13 @@
     <outline type="rss" text="The Moscow Times" title="The Moscow Times" xmlUrl="https://www.themoscowtimes.com/rss/news" />
     <outline type="rss" text="The Namibian" title="The Namibian" xmlUrl="https://www.namibian.com.na/feed/" />
     <outline type="rss" text="The New Paper" title="The New Paper" xmlUrl="https://www.tnp.sg/rss.xml" />
+    <outline type="rss" text="The News Minute" title="The News Minute" xmlUrl="https://www.thenewsminute.com/feed" />
     <outline type="rss" text="The Rio Times" title="The Rio Times" xmlUrl="https://www.riotimesonline.com/feed/" />
     <outline type="rss" text="The Scoop" title="The Scoop" xmlUrl="https://thescoop.co/feed/" />
     <outline type="rss" text="The Sierra Leone Telegraph" title="The Sierra Leone Telegraph" xmlUrl="https://www.thesierraleonetelegraph.com/feed/" />
     <outline type="rss" text="The Straits Times" title="The Straits Times" xmlUrl="https://www.straitstimes.com/news/world/rss.xml" />
     <outline type="rss" text="The Voice SLU" title="The Voice SLU" xmlUrl="https://thevoiceslu.com/feed/" />
+    <outline type="rss" text="The Wire Hindi" title="The Wire Hindi" xmlUrl="https://thewirehindi.com/feed" />
     <outline type="rss" text="Times of Central Asia" title="Times of Central Asia" xmlUrl="https://timesca.com/feed/" />
     <outline type="rss" text="Times of India" title="Times of India" xmlUrl="https://timesofindia.indiatimes.com/rssfeedstopstories.cms" />
     <outline type="rss" text="Times of Oman" title="Times of Oman" xmlUrl="https://timesofoman.com/feed" />

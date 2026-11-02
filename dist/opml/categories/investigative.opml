@@ -2,15 +2,20 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Category: investigative</title>
-    <dateCreated>Tue, 20 Oct 2026 00:56:30 GMT</dateCreated>
+    <dateCreated>Mon, 02 Nov 2026 05:38:09 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Al Jazeera Investigations" title="Al Jazeera Investigations" xmlUrl="https://www.aljazeera.com/xml/rss/all.xml?level=3&amp;cat_id=/programs/investigative-unit" />
     <outline type="rss" text="BBC Panorama" title="BBC Panorama" xmlUrl="https://feeds.bbci.co.uk/programmes/b006n2yl/episodes.rss" />
     <outline type="rss" text="Bellingcat" title="Bellingcat" xmlUrl="https://www.bellingcat.com/feed/" />
+    <outline type="rss" text="Confidencial" title="Confidencial" xmlUrl="https://confidencial.digital/feed" />
     <outline type="rss" text="ICIJ" title="ICIJ" xmlUrl="https://www.icij.org/feed/" />
+    <outline type="rss" text="IDL-Reporteros" title="IDL-Reporteros" xmlUrl="https://idl-reporteros.pe/feed" />
+    <outline type="rss" text="Newslaundry" title="Newslaundry" xmlUrl="https://www.newslaundry.com/stories.rss" />
     <outline type="rss" text="OCCRP" title="OCCRP" xmlUrl="https://www.occrp.org/en/feed/" />
+    <outline type="rss" text="Pie de Página" title="Pie de Página" xmlUrl="https://piedepagina.mx/feed" />
     <outline type="rss" text="ProPublica" title="ProPublica" xmlUrl="https://www.propublica.org/feed" />
+    <outline type="rss" text="Rappler" title="Rappler" xmlUrl="https://www.rappler.com/feed" />
     <outline type="rss" text="Reuters Investigations" title="Reuters Investigations" xmlUrl="https://www.reuters.com/arc/outboundfeeds/v1/rss/investigative/" />
     <outline type="rss" text="TBIJ" title="TBIJ" xmlUrl="https://www.thebureauinvestigates.com/feed/" />
     <outline type="rss" text="The Intercept" title="The Intercept" xmlUrl="https://theintercept.com/feed/" />

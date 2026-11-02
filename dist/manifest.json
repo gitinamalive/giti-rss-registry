@@ -1,48 +1,48 @@
 {
   "schemaVersion": "1.0.0",
   "generatorVersion": "1.1.0",
-  "sourceCommit": "49c2a6a55e75dfe1b87d8410192866cecaa84df2",
-  "sourceChecksum": "0da5c2e28dac9e88b617da852e1a7b777ee16b80eb1f0a01126afd2c2a3af62b",
-  "generatedAt": "2026-11-02T02:34:05.552Z",
-  "registryRevision": "0da5c2e28dac9e88b617da852e1a7b777ee16b80eb1f0a01126afd2c2a3af62b",
+  "sourceCommit": "unknown",
+  "sourceChecksum": "453176358a90c063c8234359410d8df40c94c4b0485e700f947bd387cd75532b",
+  "generatedAt": "2026-11-02T05:38:28.953Z",
+  "registryRevision": "453176358a90c063c8234359410d8df40c94c4b0485e700f947bd387cd75532b",
   "healthRevision": "18215600c2a5387fa2ea9b3ec73563a3044be29be69d20a3e12aa657bd78089c",
   "artifactCounts": {
-    "feeds": 446,
+    "feeds": 456,
     "countries": 206,
     "categories": 15,
-    "publishers": 400,
+    "publishers": 410,
     "languages": 39,
     "opml": 222,
     "possibleDuplicates": 0
   },
   "artifacts": {
     "feeds.json": {
-      "sha256": "7eebe64de8800d2483bfaf00097361dda9b16468a4025be410aabbc6cbd18282",
-      "bytes": 187143
+      "sha256": "449af774e80288413f9c1a2d4ae24f17d40d230f023b2a449dd55afc6fbe55d4",
+      "bytes": 195310
     },
     "feeds.csv": {
-      "sha256": "78dc12722d5f5ec620474511166a025b9c13d76c720a18c1373c1f27fd81d90e",
-      "bytes": 88907
+      "sha256": "c07bfcd464d68771d5fac0bb70711ebd8152b0f7259f7fd9b1ad6fef3f5336e2",
+      "bytes": 92200
     },
     "by-country.json": {
-      "sha256": "607a40b5cc6cde71a623022e3f5af71680e2fb9666dbe277dab5fb0f88539e7e",
-      "bytes": 717698
+      "sha256": "f92476e1561b8adc0f694608daf68365d43a1b081246005450990f188730c618",
+      "bytes": 729987
     },
     "by-category.json": {
-      "sha256": "a7d8f70524992bfe28b7f6581d52869e9251eecf948844fd31bf5a0302623aca",
-      "bytes": 201239
+      "sha256": "700369d8b55e8c0a878430109d503e6a5164971af9158c4baf2323180aef5c37",
+      "bytes": 209880
     },
     "by-publisher.json": {
-      "sha256": "588fd7771b1922c783f94bb0c5450952b666f7f3caa85b00db62e69d1e9b54b3",
-      "bytes": 210619
+      "sha256": "3892d44fc5689c67b77e9cf2e175bb2746b670d5bd06ce9edd75ac86370af3ca",
+      "bytes": 219491
     },
     "by-language.json": {
-      "sha256": "1e0c0b1702df1b483d910afe334471609baae52b2514f789ba239d14e4904821",
-      "bytes": 201501
+      "sha256": "969403e23ee0ae0301661b68e389b7a30897f3c2dca51b757ea297b5139ace49",
+      "bytes": 210142
     },
     "coverage-matrix.json": {
-      "sha256": "21de4d4e0134c4107460b476de72c7b4c5f9fd912130556f4aaa061dbfc92193",
-      "bytes": 806232
+      "sha256": "08d0a2d23edad25acf7b943d5e28900783de6d56779c6c97b2f4ad9082f126f3",
+      "bytes": 819218
     },
     "feeds-health.json": {
       "sha256": "18215600c2a5387fa2ea9b3ec73563a3044be29be69d20a3e12aa657bd78089c",

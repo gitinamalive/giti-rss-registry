@@ -2,12 +2,16 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: IN</title>
-    <dateCreated>Tue, 20 Oct 2026 00:56:30 GMT</dateCreated>
+    <dateCreated>Mon, 02 Nov 2026 05:38:09 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="Dainik Bhaskar" title="Dainik Bhaskar" xmlUrl="https://www.bhaskar.com/rss-feed/" />
     <outline type="rss" text="NDTV India" title="NDTV India" xmlUrl="https://feeds.feedburner.com/ndtvindia" />
+    <outline type="rss" text="Newslaundry" title="Newslaundry" xmlUrl="https://www.newslaundry.com/stories.rss" />
+    <outline type="rss" text="Scroll.in" title="Scroll.in" xmlUrl="https://feeds.feedburner.com/ScrollinArticles.rss" />
     <outline type="rss" text="The Hindu" title="The Hindu" xmlUrl="https://www.thehindu.com/news/national/feeder/default.rss" />
+    <outline type="rss" text="The News Minute" title="The News Minute" xmlUrl="https://www.thenewsminute.com/feed" />
+    <outline type="rss" text="The Wire Hindi" title="The Wire Hindi" xmlUrl="https://thewirehindi.com/feed" />
     <outline type="rss" text="Times of India" title="Times of India" xmlUrl="https://timesofindia.indiatimes.com/rssfeedstopstories.cms" />
   </body>
 </opml>

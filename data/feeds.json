@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-20T00:56:30.348Z",
+  "generatedAt": "2026-11-02T05:38:09.787Z",
   "source": "public-rss-registry/data/feeds.json (hand-curated)",
   "stats": {
-    "feeds": 446,
+    "feeds": 456,
     "duplicateIds": 0,
     "duplicateUrls": 0
   },
@@ -529,7 +529,11 @@
       "mediaType": "digital",
       "format": "rss",
       "perspective": "state-affiliated",
-      "notes": "Russian state-funded international broadcaster. US State Dept (2024): 'de facto arm of Russia's intelligence apparatus.' Sanctioned by US, UK, EU, Canada. Banned globally by Meta and YouTube. Parent company TV-Novosti designated under E.O. 14024.\n\nSources:\n  [1] https://apnews.com/article/russia-putin-trump-sanctions-harris-rt-f7e3ff262fdf24695048cffe2529b937\n  [2] https://2021-2025.state.gov/alerting-the-world-to-rts-global-covert-activities/\n  [3] https://www.nbcnews.com/news/us-news/meta-bans-rt-russian-disinformation-rcna171402"
+      "notes": "Russian state-funded international broadcaster. US State Dept (2024): 'de facto arm of Russia's intelligence apparatus.' Sanctioned by US, UK, EU, Canada. Banned globally by Meta and YouTube. Parent company TV-Novosti designated under E.O. 14024.\n\nSources:\n  [1] https://apnews.com/article/russia-putin-trump-sanctions-harris-rt-f7e3ff262fdf24695048cffe2529b937\n  [2] https://2021-2025.state.gov/alerting-the-world-to-rts-global-covert-activities/\n  [3] https://www.nbcnews.com/news/us-news/meta-bans-rt-russian-disinformation-rcna171402",
+      "governance": "state-controlled",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "rt-english.com"
     },
     {
       "id": "tass-d931bcff",
@@ -544,7 +548,11 @@
       "mediaType": "digital",
       "format": "rss",
       "perspective": "state-affiliated",
-      "notes": "Russian state news agency (TASS). Founded in 1904, government-owned and directly reflects Kremlin positions. Primary source of official Russian government statements and state narratives.\n\nSources:\n  [1] https://rsf.org/en/country/russia\n  [2] https://en.wikipedia.org/wiki/TASS"
+      "notes": "Russian state news agency (TASS). Founded in 1904, government-owned and directly reflects Kremlin positions. Primary source of official Russian government statements and state narratives.\n\nSources:\n  [1] https://rsf.org/en/country/russia\n  [2] https://en.wikipedia.org/wiki/TASS",
+      "governance": "state-controlled",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "wire",
+      "publisherDomain": "tass.com"
     },
     {
       "id": "the-moscow-times-349ba18f",
@@ -559,7 +567,12 @@
       "mediaType": "digital",
       "format": "rss",
       "perspective": "independent-exile",
-      "notes": "Independent Russian-language media relocated to the Netherlands after Russia's 2022 censorship laws imposing 15-year sentences for 'discrediting' the military. Declared 'undesirable organization' by Russian prosecutor general (July 2024), criminalizing cooperation. Reuters: 'one of the only Russia-based publications in English to maintain editorial independence.'\n\nSources:\n  [1] https://www.reuters.com/world/europe/russia-declares-independent-news-site-moscow-times-undesirable-2024-07-10/\n  [2] https://www.themoscowtimes.com/2022/02/28/russia-blocks-number-of-independent-and-ukrainian-media-outlets-a76649"
+      "notes": "Independent Russian-language media relocated to the Netherlands after Russia's 2022 censorship laws imposing 15-year sentences for 'discrediting' the military. Declared 'undesirable organization' by Russian prosecutor general (July 2024), criminalizing cooperation. Reuters: 'one of the only Russia-based publications in English to maintain editorial independence.'\n\nSources:\n  [1] https://www.reuters.com/world/europe/russia-declares-independent-news-site-moscow-times-undesirable-2024-07-10/\n  [2] https://www.themoscowtimes.com/2022/02/28/russia-blocks-number-of-independent-and-ukrainian-media-outlets-a76649",
+      "homepage": "https://www.themoscowtimes.com",
+      "governance": "independent",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "themoscowtimes.com"
     },
     {
       "id": "scmp-china-846d3d21",
@@ -2601,7 +2614,12 @@
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "perspective": "state-affiliated",
+      "governance": "state-controlled",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "wire",
+      "publisherDomain": "ria.ru"
     },
     {
       "id": "solomon-times-d9ea069d",
@@ -5205,11 +5223,20 @@
       "url": "https://english.dvb.no/feed/",
       "language": "en",
       "countries": [
-        "MM"
+        "MM",
+        "NO",
+        "TH"
       ],
       "category": "world",
       "mediaType": "broadcast",
-      "format": "rss"
+      "format": "rss",
+      "homepage": "https://english.dvb.no",
+      "perspective": "independent-exile",
+      "governance": "public-service",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "english.dvb.no",
+      "description": "Democratic Voice of Burma — independent public-interest broadcaster established in exile covering Myanmar."
     },
     {
       "id": "myanmar-now-4ebf4e5f",
@@ -5218,11 +5245,19 @@
       "url": "https://myanmar-now.org/en/feed/",
       "language": "en",
       "countries": [
-        "MM"
+        "MM",
+        "TH"
       ],
       "category": "world",
       "mediaType": "digital",
-      "format": "rss"
+      "format": "rss",
+      "homepage": "https://myanmar-now.org",
+      "perspective": "independent-exile",
+      "governance": "independent",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "myanmar-now.org",
+      "description": "Myanmar Now — independent investigative news agency operating underground and from exile following the 2021 military coup."
     },
     {
       "id": "laotian-times-094f8289",
@@ -6916,6 +6951,208 @@
       "sourceRole": "reporting",
       "publisherDomain": "elfaro.net",
       "description": "El Faro — pioneering Central American independent investigative newsroom covering governance, corruption, and human rights."
+    },
+    {
+      "id": "scroll-in-01c9baf2",
+      "name": "Scroll.in",
+      "publisher": "Scroll.in",
+      "url": "https://feeds.feedburner.com/ScrollinArticles.rss",
+      "homepage": "https://scroll.in",
+      "language": "en",
+      "countries": [
+        "IN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "scroll.in",
+      "description": "Scroll.in — independent Indian digital news and investigative publication covering national politics, governance, and culture."
+    },
+    {
+      "id": "newslaundry-cf4114ce",
+      "name": "Newslaundry",
+      "publisher": "Newslaundry",
+      "url": "https://www.newslaundry.com/stories.rss",
+      "homepage": "https://www.newslaundry.com",
+      "language": "en",
+      "countries": [
+        "IN"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "newslaundry.com",
+      "description": "Newslaundry — pioneer subscriber-supported Indian media watchdog and independent investigative journalism portal."
+    },
+    {
+      "id": "the-news-minute-45d3b1d2",
+      "name": "The News Minute",
+      "publisher": "The News Minute",
+      "url": "https://www.thenewsminute.com/feed",
+      "homepage": "https://www.thenewsminute.com",
+      "language": "en",
+      "countries": [
+        "IN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "thenewsminute.com",
+      "description": "The News Minute — award-winning independent digital news organization covering governance, human rights, and politics in southern India."
+    },
+    {
+      "id": "the-wire-hindi-7007d0d7",
+      "name": "The Wire Hindi",
+      "publisher": "The Wire",
+      "url": "https://thewirehindi.com/feed",
+      "homepage": "https://thewirehindi.com",
+      "language": "hi",
+      "countries": [
+        "IN"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "thewirehindi.com",
+      "description": "The Wire Hindi — Hindi-language edition of the non-profit investigative newsroom The Wire (Foundation for Independent Journalism)."
+    },
+    {
+      "id": "the-irrawaddy-460fe0c0",
+      "name": "The Irrawaddy",
+      "publisher": "The Irrawaddy",
+      "url": "https://www.irrawaddy.com/feed",
+      "homepage": "https://www.irrawaddy.com",
+      "language": "en",
+      "countries": [
+        "MM",
+        "TH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent-exile",
+      "governance": "independent",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "irrawaddy.com",
+      "description": "The Irrawaddy — premier independent news organization founded in 1992 by exiled Burmese journalists in Thailand covering Myanmar politics and human rights."
+    },
+    {
+      "id": "rappler-4e6318dc",
+      "name": "Rappler",
+      "publisher": "Rappler",
+      "url": "https://www.rappler.com/feed",
+      "homepage": "https://www.rappler.com",
+      "language": "en",
+      "countries": [
+        "PH"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "rappler.com",
+      "description": "Rappler — Nobel Peace Prize-winning independent investigative newsroom in the Philippines founded by Maria Ressa."
+    },
+    {
+      "id": "prachatai-english-163767f7",
+      "name": "Prachatai English",
+      "publisher": "Prachatai",
+      "url": "https://prachataienglish.com/rss.xml",
+      "homepage": "https://prachataienglish.com",
+      "language": "en",
+      "countries": [
+        "TH"
+      ],
+      "category": "world",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "prachataienglish.com",
+      "description": "Prachatai English — non-profit independent newsroom reporting on social justice, democratic movements, and human rights in Thailand."
+    },
+    {
+      "id": "confidencial-f64425c1",
+      "name": "Confidencial",
+      "publisher": "Confidencial",
+      "url": "https://confidencial.digital/feed",
+      "homepage": "https://confidencial.digital",
+      "language": "es",
+      "countries": [
+        "NI",
+        "CR"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent-exile",
+      "governance": "independent",
+      "operatingCircumstance": "exile",
+      "sourceRole": "reporting",
+      "publisherDomain": "confidencial.digital",
+      "description": "Confidencial — acclaimed Nicaraguan independent investigative newsroom directed by Carlos Fernando Chamorro, operating from exile in Costa Rica."
+    },
+    {
+      "id": "idl-reporteros-3c4aeebf",
+      "name": "IDL-Reporteros",
+      "publisher": "IDL-Reporteros",
+      "url": "https://idl-reporteros.pe/feed",
+      "homepage": "https://idl-reporteros.pe",
+      "language": "es",
+      "countries": [
+        "PE"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "idl-reporteros.pe",
+      "description": "IDL-Reporteros — landmark Peruvian independent non-profit investigative journalism center founded by Gustavo Gorriti."
+    },
+    {
+      "id": "pie-de-pagina-2e8f4520",
+      "name": "Pie de Página",
+      "publisher": "Pie de Pagina",
+      "url": "https://piedepagina.mx/feed",
+      "homepage": "https://piedepagina.mx",
+      "language": "es",
+      "countries": [
+        "MX"
+      ],
+      "category": "investigative",
+      "mediaType": "digital",
+      "format": "rss",
+      "perspective": "independent",
+      "governance": "independent",
+      "operatingCircumstance": "domestic",
+      "sourceRole": "reporting",
+      "publisherDomain": "piedepagina.mx",
+      "description": "Pie de Página — independent Mexican investigative and human rights journalism portal created by the Periodistas de a Pie network."
     }
   ]
 }

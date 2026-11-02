@@ -46,7 +46,7 @@ tass-d931bcff,TASS,TASS,https://tass.com/rss/v2.xml,,en,RU,,world,,state-affilia
 Sources:
   [1] https://rsf.org/en/country/russia
   [2] https://en.wikipedia.org/wiki/TASS",,
-the-moscow-times-349ba18f,The Moscow Times,The Moscow Times,https://www.themoscowtimes.com/rss/news,,en,RU,,world,,independent-exile,digital,rss,,,,,,"Independent Russian-language media relocated to the Netherlands after Russia's 2022 censorship laws imposing 15-year sentences for 'discrediting' the military. Declared 'undesirable organization' by Russian prosecutor general (July 2024), criminalizing cooperation. Reuters: 'one of the only Russia-based publications in English to maintain editorial independence.'
+the-moscow-times-349ba18f,The Moscow Times,The Moscow Times,https://www.themoscowtimes.com/rss/news,https://www.themoscowtimes.com,en,RU,,world,,independent-exile,digital,rss,,,,,,"Independent Russian-language media relocated to the Netherlands after Russia's 2022 censorship laws imposing 15-year sentences for 'discrediting' the military. Declared 'undesirable organization' by Russian prosecutor general (July 2024), criminalizing cooperation. Reuters: 'one of the only Russia-based publications in English to maintain editorial independence.'
 
 Sources:
   [1] https://www.reuters.com/world/europe/russia-declares-independent-news-site-moscow-times-undesirable-2024-07-10/
@@ -252,7 +252,7 @@ expresso-9bcf73a1,Expresso,Expresso,"https://rss.impresa.pt/feed/latest/expresso
 abc-color-150e388a,ABC Color,ABC Color,https://www.abc.com.py/arc/outboundfeeds/rss/nacionales/,,es,PY,,world,,,digital,rss,,,,,,,,
 adevarul-ro-7832868f,adevarul.ro,adevarul.ro,https://adevarul.ro/rss/index,,ro,RO,,europe,,,digital,rss,,,,,,,,
 blic-8d1ebbbc,Blic,Blic,https://www.blic.rs/rss/danasnje-vesti,,en,RS,,world,,,digital,rss,,,,,,,,
-ria-novosti-78ca4795,RIA Novosti,RIA Novosti,https://ria.ru/export/rss2/index.xml,,ru,RU,,world,,,digital,rss,,,,,,,,
+ria-novosti-78ca4795,RIA Novosti,RIA Novosti,https://ria.ru/export/rss2/index.xml,,ru,RU,,world,,state-affiliated,digital,rss,,,,,,,,
 solomon-times-d9ea069d,Solomon Times,Solomon Times,https://www.solomontimes.com/rss/latest-news.xml,,en,SB,,world,,,digital,rss,,,,,,,,
 the-straits-times-48618888,The Straits Times,The Straits Times,https://www.straitstimes.com/news/world/rss.xml,,en,SG,,world,,,digital,rss,,,,,,,,
 planet-siol-net-32ed4384,Planet Siol.net,Planet Siol.net,https://siol.net/feeds/latest2,,sl,SI,,europe,,,digital,rss,,,,,,,,
@@ -425,8 +425,8 @@ kbs-world-bc06a766,KBS World,KBS,https://world.kbs.co.kr/rss/rss_podcast.htm?lan
 xinhua-english-383b8944,Xinhua English,Xinhua News Agency,https://english.news.cn/rss,https://english.news.cn,en,CN,,world,,state-affiliated,wire,rss,,,,,,,Xinhua News Agency — China's official state news agency. Labeled state-affiliated per registry policy.,
 malaysiakini-b1668c76,Malaysiakini,Malaysiakini,https://www.malaysiakini.com/en/rss/news.rss,,en,MY,,world,,,digital,rss,,,,,,,,
 malay-mail-77a08800,Malay Mail,Malay Mail,https://www.malaymail.com/feed/rss/malaysia,,en,MY,,world,,,digital,rss,,,,,,,,
-dvb-english-a8ed0223,DVB English,Democratic Voice of Burma,https://english.dvb.no/feed/,,en,MM,,world,,,broadcast,rss,,,,,,,,
-myanmar-now-4ebf4e5f,Myanmar Now,Myanmar Now,https://myanmar-now.org/en/feed/,,en,MM,,world,,,digital,rss,,,,,,,,
+dvb-english-a8ed0223,DVB English,Democratic Voice of Burma,https://english.dvb.no/feed/,https://english.dvb.no,en,MM|NO|TH,,world,,independent-exile,broadcast,rss,,,,,,,Democratic Voice of Burma — independent public-interest broadcaster established in exile covering Myanmar.,
+myanmar-now-4ebf4e5f,Myanmar Now,Myanmar Now,https://myanmar-now.org/en/feed/,https://myanmar-now.org,en,MM|TH,,world,,independent-exile,digital,rss,,,,,,,Myanmar Now — independent investigative news agency operating underground and from exile following the 2021 military coup.,
 laotian-times-094f8289,Laotian Times,Laotian Times,https://laotiantimes.com/feed/,,en,LA,,world,,,digital,rss,,,,,,,,
 kuensel-0e890769,Kuensel,Kuensel,https://kuenselonline.com/feed/,,en,BT,,world,,,digital,rss,,,,,,,,
 24kg-1907a7c4,24.kg,24.kg News Agency,https://24.kg/rss/,,ru,KG,,world,,,digital,rss,,,,,,Russian-language feed. English feed was unavailable at the time of addition (the /english/feed/ endpoint returned 404). Russian-language coverage still provides Kyrgyzstan news access.,,
@@ -571,3 +571,13 @@ radio-canada-d7774cd1,Radio-Canada Info,Radio-Canada,https://ici.radio-canada.ca
 radio-farda-48c98b32,Radio Farda,Radio Farda,https://www.radiofarda.com/api/z$qite_rqi,https://www.radiofarda.com,fa,IR,,world,,independent-exile,broadcast,rss,,,,,,"Radio Farda is funded by a grant from the U.S. Congress through the U.S. Agency for Global Media (USAGM). Under the U.S. International Broadcasting Act, journalists are legally protected by an editorial firewall from government interference.","Radio Farda — Persian-language service of Radio Free Europe/Radio Liberty, funded by U.S. Congress via USAGM with statutory editorial independence.",
 animal-politico-59c2914a,Animal Político,Animal Politico,https://animalpolitico.com/feed/,https://animalpolitico.com,es,MX,,world,,independent,digital,rss,,,,,,,Animal Político — independent Mexican digital native newsroom known for anti-corruption and public interest investigations.,
 el-faro-1aae9981,El Faro,El Faro,https://elfaro.net/es/rss,https://elfaro.net,es,SV,,world,,independent,digital,rss,,,,,,,"El Faro — pioneering Central American independent investigative newsroom covering governance, corruption, and human rights.",
+scroll-in-01c9baf2,Scroll.in,Scroll.in,https://feeds.feedburner.com/ScrollinArticles.rss,https://scroll.in,en,IN,,world,,independent,digital,rss,,,,,,,"Scroll.in — independent Indian digital news and investigative publication covering national politics, governance, and culture.",
+newslaundry-cf4114ce,Newslaundry,Newslaundry,https://www.newslaundry.com/stories.rss,https://www.newslaundry.com,en,IN,,investigative,,independent,digital,rss,,,,,,,Newslaundry — pioneer subscriber-supported Indian media watchdog and independent investigative journalism portal.,
+the-news-minute-45d3b1d2,The News Minute,The News Minute,https://www.thenewsminute.com/feed,https://www.thenewsminute.com,en,IN,,world,,independent,digital,rss,,,,,,,"The News Minute — award-winning independent digital news organization covering governance, human rights, and politics in southern India.",
+the-wire-hindi-7007d0d7,The Wire Hindi,The Wire,https://thewirehindi.com/feed,https://thewirehindi.com,hi,IN,,world,,independent,digital,rss,,,,,,,The Wire Hindi — Hindi-language edition of the non-profit investigative newsroom The Wire (Foundation for Independent Journalism).,
+the-irrawaddy-460fe0c0,The Irrawaddy,The Irrawaddy,https://www.irrawaddy.com/feed,https://www.irrawaddy.com,en,MM|TH,,world,,independent-exile,digital,rss,,,,,,,The Irrawaddy — premier independent news organization founded in 1992 by exiled Burmese journalists in Thailand covering Myanmar politics and human rights.,
+rappler-4e6318dc,Rappler,Rappler,https://www.rappler.com/feed,https://www.rappler.com,en,PH,,investigative,,independent,digital,rss,,,,,,,Rappler — Nobel Peace Prize-winning independent investigative newsroom in the Philippines founded by Maria Ressa.,
+prachatai-english-163767f7,Prachatai English,Prachatai,https://prachataienglish.com/rss.xml,https://prachataienglish.com,en,TH,,world,,independent,digital,rss,,,,,,,"Prachatai English — non-profit independent newsroom reporting on social justice, democratic movements, and human rights in Thailand.",
+confidencial-f64425c1,Confidencial,Confidencial,https://confidencial.digital/feed,https://confidencial.digital,es,NI|CR,,investigative,,independent-exile,digital,rss,,,,,,,"Confidencial — acclaimed Nicaraguan independent investigative newsroom directed by Carlos Fernando Chamorro, operating from exile in Costa Rica.",
+idl-reporteros-3c4aeebf,IDL-Reporteros,IDL-Reporteros,https://idl-reporteros.pe/feed,https://idl-reporteros.pe,es,PE,,investigative,,independent,digital,rss,,,,,,,IDL-Reporteros — landmark Peruvian independent non-profit investigative journalism center founded by Gustavo Gorriti.,
+pie-de-pagina-2e8f4520,Pie de Página,Pie de Pagina,https://piedepagina.mx/feed,https://piedepagina.mx,es,MX,,investigative,,independent,digital,rss,,,,,,,Pie de Página — independent Mexican investigative and human rights journalism portal created by the Periodistas de a Pie network.,
