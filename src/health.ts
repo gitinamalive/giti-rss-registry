@@ -20,6 +20,15 @@ export type HealthStatus =
 
 export type QuarantineStatus = 'active' | 'degraded' | 'quarantined';
 
+export type DiagnosticHealthCategory =
+    | 'HEALTHY'
+    | 'STALE'
+    | 'REDIRECT_PERMANENT'
+    | 'MALFORMED_XML'
+    | 'BLOCKED_SCRAPER'
+    | 'DEAD_ENDPOINT'
+    | 'UNREACHABLE';
+
 export type FailureReason =
     | 'timeout'
     | 'http_4xx'
@@ -53,6 +62,8 @@ export interface FeedHealthEntry {
     failureReason?: FailureReason | null;
     /** Transport and reachability capabilities detected during probe. */
     capabilities?: FeedCapabilities;
+    /** Discrete lifecycle diagnostic status category. */
+    diagnosticCategory?: DiagnosticHealthCategory;
 }
 
 /** Derive quarantine status from consecutive failure count: >=4 quarantined, 1-3 degraded, 0 active. */
@@ -123,3 +134,46 @@ export function deriveHealthStatus(input: DeriveHealthStatusInput): HealthStatus
     if (daysSince < STALE_THRESHOLD_DAYS) return 'stale';
     return 'very-stale';
 }
+
+export interface DeriveDiagnosticCategoryInput {
+    reachable: boolean;
+    contentValid: boolean;
+    status: number | string;
+    lastItemDate?: string | null;
+    permanentRedirectUrl?: string | null;
+    failureStatus?: Extract<HealthStatus, 'unreachable' | 'invalid-content'>;
+    now?: Date;
+}
+
+/**
+ * Derives discrete lifecycle diagnostic classification:
+ * - HEALTHY: reachable, valid XML/JSON feed, items within stale threshold.
+ * - STALE: reachable, valid XML/JSON feed, but newest item exceeds stale threshold (or missing item dates).
+ * - REDIRECT_PERMANENT: endpoint returned 301/308 permanent redirect.
+ * - MALFORMED_XML: HTTP 200 returned, but payload failed feed structure parser.
+ * - BLOCKED_SCRAPER: HTTP 403 or 429 bot challenge / rate-limit barrier.
+ * - DEAD_ENDPOINT: HTTP 404 or 410 dead endpoint.
+ * - UNREACHABLE: network timeout, DNS failure, 5xx server error, or connection abort.
+ */
+export function deriveDiagnosticCategory(input: DeriveDiagnosticCategoryInput): DiagnosticHealthCategory {
+    if (input.permanentRedirectUrl) {
+        return 'REDIRECT_PERMANENT';
+    }
+    if (input.reachable && input.contentValid) {
+        if (!input.lastItemDate) return 'STALE';
+        const now = input.now ?? new Date();
+        const ageDays = (now.getTime() - new Date(input.lastItemDate).getTime()) / (1000 * 60 * 60 * 24);
+        return ageDays > STALE_THRESHOLD_DAYS ? 'STALE' : 'HEALTHY';
+    }
+    if (input.status === 403 || input.status === 429) {
+        return 'BLOCKED_SCRAPER';
+    }
+    if (input.status === 404 || input.status === 410) {
+        return 'DEAD_ENDPOINT';
+    }
+    if (input.failureStatus === 'invalid-content') {
+        return 'MALFORMED_XML';
+    }
+    return 'UNREACHABLE';
+}
+

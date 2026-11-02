@@ -15,7 +15,9 @@ import { XMLParser } from 'fast-xml-parser';
 import type { BootstrapPayload, FeedEntry, FeedFormat } from '../src/types.ts';
 import {
     computeHealthScore,
+    deriveDiagnosticCategory,
     deriveHealthStatus,
+    type DiagnosticHealthCategory,
     deriveQuarantineStatus,
     type FailureReason,
     type FeedCapabilities,
@@ -551,6 +553,14 @@ export function mergeHealthEntry(
         supportsHttps: Boolean(result.finalUrl?.startsWith('https://')),
         permanentRedirectUrl: null,
     };
+    const diagnosticCategory: DiagnosticHealthCategory = deriveDiagnosticCategory({
+        reachable: result.reachable,
+        contentValid: result.contentValid,
+        status: result.status,
+        lastItemDate: result.lastItemDate,
+        permanentRedirectUrl: capabilities.permanentRedirectUrl,
+        failureStatus: result.failureStatus,
+    });
 
     return {
         id,
@@ -571,6 +581,7 @@ export function mergeHealthEntry(
         quarantineStatus,
         failureReason,
         capabilities,
+        diagnosticCategory,
     };
 }
 
@@ -672,11 +683,20 @@ async function main(): Promise<void> {
         unreachable: results.filter((result) => result?.failureStatus === 'unreachable').length,
         invalidContent: results.filter((result) => result?.failureStatus === 'invalid-content').length,
         reviewRequired: feeds.filter((entry) => entry.consecutiveFailures >= 4).length,
+        diagnosticBreakdown: {
+            healthy: feeds.filter((entry) => entry.diagnosticCategory === 'HEALTHY').length,
+            stale: feeds.filter((entry) => entry.diagnosticCategory === 'STALE').length,
+            permanentRedirects: feeds.filter((entry) => entry.diagnosticCategory === 'REDIRECT_PERMANENT').length,
+            malformedXml: feeds.filter((entry) => entry.diagnosticCategory === 'MALFORMED_XML').length,
+            blockedScraper: feeds.filter((entry) => entry.diagnosticCategory === 'BLOCKED_SCRAPER').length,
+            deadEndpoint: feeds.filter((entry) => entry.diagnosticCategory === 'DEAD_ENDPOINT').length,
+            unreachable: feeds.filter((entry) => entry.diagnosticCategory === 'UNREACHABLE').length,
+        },
     };
     const overlay = { generatedAt: payload.generatedAt, checkedAt, type: 'health-overlay' as const, feeds, stats };
     await writeFile(outputPath, `${JSON.stringify(overlay, null, 2)}\n`, 'utf8');
 
-    process.stdout.write(`\n─── Health Check Summary ───\nChecked: ${stats.checked}\nReachable: ${stats.reachable}\nUnreachable: ${stats.unreachable}\nInvalid content: ${stats.invalidContent}\nReview required (4+ consecutive failures): ${stats.reviewRequired}\nOutput (overlay): ${outputPath}\n`);
+    process.stdout.write(`\n─── Health Check Summary ───\nChecked: ${stats.checked}\nReachable: ${stats.reachable}\nUnreachable: ${stats.unreachable}\nInvalid content: ${stats.invalidContent}\nReview required (4+ consecutive failures): ${stats.reviewRequired}\n─── Lifecycle Breakdown ───\n  HEALTHY (fresh & valid): ${stats.diagnosticBreakdown.healthy}\n  STALE (newest item >30d): ${stats.diagnosticBreakdown.stale}\n  REDIRECT_PERMANENT (301/308): ${stats.diagnosticBreakdown.permanentRedirects}\n  MALFORMED_XML (parser error): ${stats.diagnosticBreakdown.malformedXml}\n  BLOCKED_SCRAPER (403/429): ${stats.diagnosticBreakdown.blockedScraper}\n  DEAD_ENDPOINT (404/410): ${stats.diagnosticBreakdown.deadEndpoint}\n  UNREACHABLE (timeout/error): ${stats.diagnosticBreakdown.unreachable}\nOutput (overlay): ${outputPath}\n`);
 }
 
 const isMain = process.argv[1] !== undefined && import.meta.url === pathToFileURL(process.argv[1]).href;

@@ -9,7 +9,7 @@ import {
     readExistingOverlay,
     type Fetcher,
 } from '../scripts/health-check.ts';
-import { deriveQuarantineStatus } from '../src/health.ts';
+import { deriveDiagnosticCategory, deriveQuarantineStatus } from '../src/health.ts';
 import type { FeedEntry } from '../src/types.ts';
 
 const feed: FeedEntry = {
@@ -327,10 +327,93 @@ describe('quarantine policy and capability telemetry', () => {
             status: 200,
             reachable: true,
             contentValid: true,
-            lastItemDate: '2026-08-20T00:00:00Z',
-        }, '2026-08-05T00:00:00Z', quarantined);
+            lastItemDate: new Date().toISOString(),
+        }, new Date().toISOString(), quarantined);
         expect(recovered.quarantineStatus).toBe('active');
         expect(recovered.defaultSuggestion).toBe(true);
         expect(recovered.failureReason).toBeNull();
+        expect(recovered.diagnosticCategory).toBe('HEALTHY');
+    });
+
+    it('classifies all discrete lifecycle diagnostic categories', () => {
+        const now = new Date('2026-11-01T00:00:00Z');
+
+        // 1. HEALTHY: reachable, valid content, recent item
+        expect(deriveDiagnosticCategory({
+            reachable: true,
+            contentValid: true,
+            status: 200,
+            lastItemDate: '2026-10-25T00:00:00Z',
+            now,
+        })).toBe('HEALTHY');
+
+        // 2. STALE: reachable, valid content, but older than 30 days
+        expect(deriveDiagnosticCategory({
+            reachable: true,
+            contentValid: true,
+            status: 200,
+            lastItemDate: '2026-09-01T00:00:00Z',
+            now,
+        })).toBe('STALE');
+
+        // 3. REDIRECT_PERMANENT: observed 301/308 target
+        expect(deriveDiagnosticCategory({
+            reachable: true,
+            contentValid: true,
+            status: 200,
+            permanentRedirectUrl: 'https://example.com/new-url',
+            now,
+        })).toBe('REDIRECT_PERMANENT');
+
+        // 4. MALFORMED_XML: 200 OK but invalid content structure
+        expect(deriveDiagnosticCategory({
+            reachable: false,
+            contentValid: false,
+            status: 200,
+            failureStatus: 'invalid-content',
+            now,
+        })).toBe('MALFORMED_XML');
+
+        // 5. BLOCKED_SCRAPER: 403 or 429 challenge
+        expect(deriveDiagnosticCategory({
+            reachable: false,
+            contentValid: false,
+            status: 403,
+            now,
+        })).toBe('BLOCKED_SCRAPER');
+        expect(deriveDiagnosticCategory({
+            reachable: false,
+            contentValid: false,
+            status: 429,
+            now,
+        })).toBe('BLOCKED_SCRAPER');
+
+        // 6. DEAD_ENDPOINT: 404 or 410 dead link
+        expect(deriveDiagnosticCategory({
+            reachable: false,
+            contentValid: false,
+            status: 404,
+            now,
+        })).toBe('DEAD_ENDPOINT');
+        expect(deriveDiagnosticCategory({
+            reachable: false,
+            contentValid: false,
+            status: 410,
+            now,
+        })).toBe('DEAD_ENDPOINT');
+
+        // 7. UNREACHABLE: 5xx, timeout, or network error
+        expect(deriveDiagnosticCategory({
+            reachable: false,
+            contentValid: false,
+            status: 500,
+            now,
+        })).toBe('UNREACHABLE');
+        expect(deriveDiagnosticCategory({
+            reachable: false,
+            contentValid: false,
+            status: 'timeout',
+            now,
+        })).toBe('UNREACHABLE');
     });
 });
