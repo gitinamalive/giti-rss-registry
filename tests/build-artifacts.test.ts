@@ -85,6 +85,35 @@ describe('generateIndexHtml', () => {
         expect(parsed[0].name).toBe('</script><script>alert(1)</script>');
         expect(parsed[0].description).toBe('a & b \u2028 c');
     });
+
+    it('binds sticky thead to top: 0 of the table scroll container with solid background and shadow', () => {
+        const html = generateIndexHtml([makeFeed()]);
+        expect(html).toContain('thead{background:#e9ecef;position:sticky;top:0;inset-block-start:0;z-index:5;box-shadow:0 2px 4px rgba(0,0,0,.08)}');
+        expect(html).not.toContain('top:125px');
+        expect(html).not.toContain('top:60px');
+    });
+
+    it('replaces the off-screen URL column with quick-copy RSS buttons and consistent feed names', () => {
+        const html = generateIndexHtml([makeFeed()]);
+        expect(html).not.toContain('<th>URL</th>');
+        expect(html).toContain('copy-rss-btn');
+        expect(html).toContain('<span class="feed-name"');
+        expect(html).not.toContain("'<a href=\"' + escAttr(f.homepage)");
+    });
+
+    it('includes filtered Export OPML action next to Export CSV in the filter bar', () => {
+        const html = generateIndexHtml([makeFeed()]);
+        expect(html).toContain('id="export-csv"');
+        expect(html).toContain('id="export-opml"');
+        expect(html).toContain('function exportOPML()');
+        expect(html).toContain('giti-rss-registry-filtered.opml');
+    });
+
+    it('renders expandable multi-country tag lists without ellipsis truncation', () => {
+        const html = generateIndexHtml([makeFeed({ countries: ['US', 'CA', 'GB', 'FR', 'DE', 'JP', 'AU'] })]);
+        expect(html).toContain('td.countries-cell{min-width:110px;max-width:230px;white-space:normal}');
+        expect(html).toContain('class="country-more"');
+    });
 });
 
 describe('generateOpml', () => {

@@ -162,7 +162,7 @@ export function generateIndexHtml(feeds: FeedEntry[], generatedAt: string = new 
 :root{--bg:#f8f9fa;--card:#fff;--border:#dee2e6;--text:#212529;--muted:#6c757d;--link:#0d6efd;--green:#198754;--yellow:#fd7e14;--orange:#e8590c;--red:#dc3545;--radius:6px;--blue:#0d6efd}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;min-height:100vh}
-header{background:var(--card);border-bottom:1px solid var(--border);padding:1rem 1.5rem;position:sticky;top:0;z-index:10;box-shadow:0 1px 3px rgba(0,0,0,.05);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+header{background:var(--card);border-bottom:1px solid var(--border);padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
 header h1{font-size:1.25rem;font-weight:600;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
 header .badge{background:var(--link);color:#fff;font-size:.75rem;padding:.15em .5em;border-radius:999px;font-weight:500}
 header .sub{color:var(--muted);font-size:.8rem;margin-top:.25rem}
@@ -183,33 +183,61 @@ header .sub{color:var(--muted);font-size:.8rem;margin-top:.25rem}
 .btn-primary{background:var(--link);color:#fff;border-color:var(--link)}
 .btn-primary:hover{background:#0b5ed7}
 .btn-sm{font-size:.72rem;padding:.2rem .45rem}
-.stats{display:flex;flex-wrap:wrap;gap:1rem;padding:0 1.5rem 1rem;color:var(--muted);font-size:.8rem}
+.stats{display:flex;flex-wrap:wrap;gap:1rem;padding:0 1.5rem .75rem;color:var(--muted);font-size:.8rem}
 .stats strong{color:var(--text)}
-.table-wrap{overflow-x:auto;padding:0 1.5rem 2rem}
-table{width:100%;border-collapse:collapse;font-size:.82rem;background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04)}
-thead{background:#e9ecef;position:sticky;top:125px;z-index:5}
-th{padding:.55rem .6rem;text-align:left;font-weight:600;cursor:pointer;user-select:none;white-space:nowrap;border-bottom:2px solid var(--border)}
-th:hover{color:var(--link)}
-th .sort-arrow{font-size:.65rem;margin-left:.15rem}
-td{padding:.45rem .6rem;border-bottom:1px solid var(--border);max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-tr:hover{background:#f1f3f5}
-td.url{max-width:320px;font-family:monospace;font-size:.75rem}
-td.url a{color:var(--link);text-decoration:none}
-td.url a:hover{text-decoration:underline}
+.table-shell{padding:0 1.5rem 1.5rem}
+.table-wrap{overflow:auto;max-inline-size:100%;max-height:70vh;max-block-size:clamp(320px,calc(100dvh - 230px),780px);scroll-padding-top:42px;border:1px solid var(--border);border-radius:var(--radius);background:var(--card);box-shadow:0 1px 3px rgba(0,0,0,.04)}
+#section-matrix .table-wrap{max-block-size:clamp(320px,calc(100dvh - 320px),740px)}
+.table-wrap:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+table{width:100%;border-collapse:separate;border-spacing:0;font-size:.82rem;background:var(--card)}
+thead{background:#e9ecef;position:sticky;top:0;inset-block-start:0;z-index:5;box-shadow:0 2px 4px rgba(0,0,0,.08)}
+th{padding:.55rem .6rem;text-align:left;font-weight:600;white-space:nowrap;border-bottom:2px solid var(--border);background:#e9ecef}
+th:has(> .sort-btn){padding:0}
+.sort-btn{display:flex;align-items:center;gap:.25rem;width:100%;min-block-size:36px;padding:.55rem .6rem;border:0;background:transparent;font:inherit;color:inherit;text-align:left;cursor:pointer}
+.sort-btn:hover{color:var(--link)}
+.sort-btn:focus-visible{outline:2px solid var(--link);outline-offset:-2px}
+th .sort-arrow,th .msort-arrow{font-size:.65rem;margin-left:.15rem}
+th[aria-sort="ascending"] .sort-arrow::after,th[aria-sort="ascending"] .msort-arrow::after{content:'\u25B2'}
+th[aria-sort="descending"] .sort-arrow::after,th[aria-sort="descending"] .msort-arrow::after{content:'\u25BC'}
+td{padding:.45rem .6rem;border-bottom:1px solid var(--border);vertical-align:middle}
+tbody tr:last-child td{border-bottom:none}
+tbody tr:hover{background:#f1f3f5}
+td.name-cell{min-width:190px;max-width:300px}
+.name-row{display:flex;align-items:center;justify-content:space-between;gap:.45rem}
+.feed-name{font-weight:500;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.row-actions{display:inline-flex;align-items:center;gap:.25rem;flex-shrink:0}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;gap:.2rem;min-inline-size:26px;min-block-size:26px;padding:.15rem .3rem;border:1px solid var(--border);border-radius:4px;background:var(--card);color:var(--muted);cursor:pointer;text-decoration:none;font-size:.7rem;font-weight:500;line-height:1;transition:color .15s,border-color .15s,background-color .15s}
+.icon-btn:hover{color:var(--link);border-color:var(--link);background:#f0f6ff}
+.icon-btn:focus-visible{outline:2px solid var(--link);outline-offset:1px}
+.icon-btn svg{width:13px;height:13px;flex-shrink:0;pointer-events:none}
+.copy-rss-btn .icon-check,.copy-rss-btn .copy-label{display:none}
+.copy-rss-btn[data-copied]{color:#0f5132;border-color:#badbcc;background:#d1e7dd}
+.copy-rss-btn[data-copied] .icon-copy{display:none}
+.copy-rss-btn[data-copied] .icon-check,.copy-rss-btn[data-copied] .copy-label{display:inline}
+.copy-rss-btn[data-failed]{color:#842029;border-color:#f5c2c7;background:#f8d7da}
+.copy-rss-btn[data-failed] .copy-label{display:inline}
+td.pub-cell{max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+td.countries-cell{min-width:110px;max-width:230px;white-space:normal}
+.country-list{display:flex;flex-wrap:wrap;gap:3px;align-items:center}
+.country-tag{display:inline-block;background:#e9ecef;padding:.05rem .35em;border-radius:3px;font-size:.7rem;line-height:1.35}
+.country-tag.is-match{background:#cfe2ff;color:#084298;font-weight:600}
+.country-more{display:inline-flex;align-items:center;padding:.05rem .4em;border:1px solid var(--border);border-radius:3px;background:var(--card);color:var(--link);font-size:.68rem;font-weight:600;cursor:pointer;line-height:1.35}
+.country-more:hover{background:#e7f1ff;border-color:var(--link)}
+.country-more:focus-visible{outline:2px solid var(--link);outline-offset:1px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .score{display:inline-block;width:28px;height:18px;line-height:18px;text-align:center;border-radius:3px;font-size:.7rem;font-weight:600;color:#fff}
 .score-100{background:var(--green)}
 .score-70{background:var(--yellow)}
 .score-40{background:var(--orange)}
 .score-0{background:var(--red)}
-.health-status{display:inline-block;font-size:.7rem;font-weight:600;border-radius:3px;padding:.08rem .3rem;background:#e9ecef;color:var(--text)}
+.health-status{display:inline-block;font-size:.7rem;font-weight:600;border-radius:3px;padding:.08rem .3rem;background:#e9ecef;color:var(--text);white-space:nowrap}
 .health-fresh{background:#d1e7dd;color:#0f5132}.health-stale,.health-very-stale{background:#fff3cd;color:#664d03}.health-stale-content{background:#ffe5d0;color:#7a3510}.health-unreachable,.health-invalid-content{background:#f8d7da;color:#842029}.health-unchecked{background:#e2e3e5;color:#41464b}
-.tier-badge{display:inline-block;font-size:.72rem;font-weight:600;border-radius:3px;padding:.12rem .4rem}
+.tier-badge{display:inline-block;font-size:.72rem;font-weight:600;border-radius:3px;padding:.12rem .4rem;white-space:nowrap}
 .tier-domestic-multi{background:#d1e7dd;color:#0f5132}
 .tier-domestic-single{background:#fff3cd;color:#664d03}
 .tier-regional-only{background:#cfe2ff;color:#084298}
 .tier-uncovered{background:#f8d7da;color:#842029}
-.last-checked{display:block;color:var(--muted);font-size:.68rem;margin-top:.15rem}
-.country-tag{display:inline-block;background:#e9ecef;padding:0 .35em;border-radius:3px;font-size:.7rem;margin:1px}
+.last-checked{display:block;color:var(--muted);font-size:.72rem;white-space:nowrap}
 .pub-badge{display:inline-block;background:#e9ecef;border-radius:3px;font-size:.72rem;padding:.1rem .35rem;margin:1px;max-width:200px;overflow:hidden;text-overflow:ellipsis;vertical-align:middle}
 .empty{color:var(--muted);text-align:center;padding:2rem}
 .hidden{display:none !important}
@@ -219,9 +247,13 @@ footer a{color:var(--link)}
 header h1{font-size:1rem}
 .controls{flex-direction:column;align-items:stretch}
 .controls input{max-width:none}
-thead{top:60px}
+.table-shell{padding:0 .75rem 1rem}
 table{font-size:.75rem}
 th,td{padding:.35rem .4rem}
+.sort-btn{padding:.35rem .4rem;min-block-size:32px}
+}
+@media(prefers-reduced-motion:reduce){
+.tab-btn,.icon-btn{transition:none}
 }
 </style>
 </head>
@@ -268,26 +300,29 @@ ${langOpts}
 <option value="older">Checked more than 30 days ago</option>
 <option value="never">Never checked</option>
 </select>
-<button class="btn btn-primary" id="export-csv" aria-label="Export filtered results as CSV">\u2B07 CSV</button>
-<button class="btn" id="reset-filters" aria-label="Reset all filters">\u21BA Reset</button>
+<button type="button" class="btn btn-primary" id="export-csv" aria-label="Export filtered results as CSV">\u2B07 CSV</button>
+<button type="button" class="btn btn-primary" id="export-opml" aria-label="Export filtered results as OPML">\u2B07 Export OPML</button>
+<button type="button" class="btn" id="reset-filters" aria-label="Reset all filters">\u21BA Reset</button>
 </div>
 <div class="stats" id="stats"></div>
-<div class="table-wrap">
-<table id="feed-table" role="grid" aria-label="Feed registry">
+<div id="copy-status" class="sr-only" role="status"></div>
+<div class="table-shell">
+<div class="table-wrap" tabindex="0" role="region" aria-label="Feed registry">
+<table id="feed-table" aria-label="Feed registry">
 <thead>
 <tr>
-<th data-sort="name">Name <span class="sort-arrow">\u25BC</span></th>
-<th data-sort="publisher">Publisher</th>
-<th data-sort="category">Category</th>
-<th data-sort="countries">Country</th>
-<th data-sort="language">Lang</th>
-<th data-sort="healthScore">Health status</th>
-<th data-sort="lastCheckedAt">Last checked</th>
-<th>URL</th>
+<th scope="col" data-sort="name" aria-sort="ascending"><button type="button" class="sort-btn">Name <span class="sort-arrow" aria-hidden="true"></span></button></th>
+<th scope="col" data-sort="publisher"><button type="button" class="sort-btn">Publisher <span class="sort-arrow" aria-hidden="true"></span></button></th>
+<th scope="col" data-sort="category"><button type="button" class="sort-btn">Category <span class="sort-arrow" aria-hidden="true"></span></button></th>
+<th scope="col" data-sort="countries"><button type="button" class="sort-btn">Country <span class="sort-arrow" aria-hidden="true"></span></button></th>
+<th scope="col" data-sort="language"><button type="button" class="sort-btn">Lang <span class="sort-arrow" aria-hidden="true"></span></button></th>
+<th scope="col" data-sort="healthScore"><button type="button" class="sort-btn">Health status <span class="sort-arrow" aria-hidden="true"></span></button></th>
+<th scope="col" data-sort="lastCheckedAt"><button type="button" class="sort-btn">Last checked <span class="sort-arrow" aria-hidden="true"></span></button></th>
 </tr>
 </thead>
 <tbody id="table-body"></tbody>
 </table>
+</div>
 </div>
 </section>
 
@@ -315,25 +350,27 @@ ${langOpts}
 <option value="has-issues">Has Degraded / Unreachable Feeds</option>
 <option value="unchecked">Unchecked Only</option>
 </select>
-<button class="btn btn-primary" id="export-matrix-csv" aria-label="Export matrix as CSV">\u2B07 CSV</button>
-<button class="btn" id="reset-matrix-filters" aria-label="Reset matrix filters">\u21BA Reset</button>
+<button type="button" class="btn btn-primary" id="export-matrix-csv" aria-label="Export matrix as CSV">\u2B07 CSV</button>
+<button type="button" class="btn" id="reset-matrix-filters" aria-label="Reset matrix filters">\u21BA Reset</button>
 </div>
 <div class="stats" id="matrix-stats"></div>
-<div class="table-wrap">
-<table id="matrix-table" role="grid" aria-label="Country coverage matrix">
+<div class="table-shell">
+<div class="table-wrap" tabindex="0" role="region" aria-label="Country coverage matrix">
+<table id="matrix-table" aria-label="Country coverage matrix">
 <thead>
 <tr>
-<th data-msort="name">Country <span class="msort-arrow">\u25BC</span></th>
-<th data-msort="tier">Coverage Tier</th>
-<th data-msort="total">Total Feeds</th>
-<th>Domestic Publishers</th>
-<th>Regional Fallbacks</th>
-<th>Health Status</th>
-<th>Action</th>
+<th scope="col" data-msort="name" aria-sort="ascending"><button type="button" class="sort-btn">Country <span class="msort-arrow" aria-hidden="true"></span></button></th>
+<th scope="col" data-msort="tier"><button type="button" class="sort-btn">Coverage Tier <span class="msort-arrow" aria-hidden="true"></span></button></th>
+<th scope="col" data-msort="total"><button type="button" class="sort-btn">Total Feeds <span class="msort-arrow" aria-hidden="true"></span></button></th>
+<th scope="col">Domestic Publishers</th>
+<th scope="col">Regional Fallbacks</th>
+<th scope="col">Health Status</th>
+<th scope="col">Action</th>
 </tr>
 </thead>
 <tbody id="matrix-table-body"></tbody>
 </table>
+</div>
 </div>
 </section>
 
@@ -352,12 +389,37 @@ let sortDir = 1;
 let mSortCol = 'name';
 let mSortDir = 1;
 let hasHealthOverlay = false;
+const expandedCountries = new Set();
+const copyTimers = new WeakMap();
+const collator = new Intl.Collator('en', { numeric: true, sensitivity: 'base' });
+let lastStatusMessage = '';
 
 const $ = (s,d) => (d||document).querySelector(s);
 const $$ = (s,d) => [...(d||document).querySelectorAll(s)];
 
 function esc(s) { return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function escAttr(s) { return String(s??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+function escXml(s) { return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&apos;'); }
+function safeHref(u) { const s = String(u||'').trim(); return /^https?:\\/\\//i.test(s) ? s : ''; }
+function csvField(v) {
+  let s = v == null ? '' : String(v);
+  if (/^[=+\\-@\\t\\r]/.test(s)) s = "'" + s;
+  return '"' + s.replace(/"/g, '""') + '"';
+}
+function announce(msg) {
+  const el = $('#copy-status');
+  if (!el) return;
+  let text = msg;
+  if (text === lastStatusMessage) text += '\\u00A0';
+  lastStatusMessage = msg;
+  el.textContent = '';
+  requestAnimationFrame(() => { el.textContent = text; });
+}
+
+const COPY_SVG = '<svg class="icon-copy" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M11 5V3.5A1.5 1.5 0 0 0 9.5 2h-6A1.5 1.5 0 0 0 2 3.5v6A1.5 1.5 0 0 0 3.5 11H5"/></svg>';
+const CHECK_SVG = '<svg class="icon-check" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 8.5 6.5 11.5 12.5 4.5"/></svg>';
+const RSS_SVG = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="3.5" cy="12.5" r="1" fill="currentColor"/><path d="M2.5 7.5a6 6 0 0 1 6 6"/><path d="M2.5 3.5a10 10 0 0 1 10 10"/></svg>';
+const EXT_SVG = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2.5H13.5V6.5"/><path d="M13.5 2.5 7 9"/><path d="M12.5 9.5V12.5A1 1 0 0 1 11.5 13.5H3.5A1 1 0 0 1 2.5 12.5V4.5A1 1 0 0 1 3.5 3.5H6.5"/></svg>';
 
 function isDomestic(f, c) {
   if (f.publisherCountries && f.publisherCountries.length) return f.publisherCountries.includes(c);
@@ -437,30 +499,90 @@ window.viewCountryFeeds = function(code) {
   }
 };
 
+function renderCountryList(f, activeCountry) {
+  const list = f.countries || [];
+  if (!list.length) return '<span style="color:var(--muted)">\u2014</span>';
+  const isExpanded = expandedCountries.has(f.id);
+  let ordered = list;
+  if (activeCountry && list.includes(activeCountry) && list.indexOf(activeCountry) >= 5 && !isExpanded) {
+    ordered = [activeCountry, ...list.filter(c => c !== activeCountry)];
+  }
+  const visible = (!isExpanded && ordered.length > 6) ? ordered.slice(0, 5) : ordered;
+  const tags = visible.map(c => {
+    const name = COUNTRIES_MAP[c] || c;
+    const cls = activeCountry && c === activeCountry ? 'country-tag is-match' : 'country-tag';
+    return '<span class="' + cls + '" title="' + escAttr(c + ' \u2014 ' + name) + '">' + esc(c) + '</span>';
+  }).join('');
+  if (ordered.length <= 6) return tags;
+  const remaining = ordered.length - visible.length;
+  const btnLabel = isExpanded ? 'Show less' : '+' + remaining + ' more';
+  const btnTitle = isExpanded ? 'Collapse country list' : 'Show all ' + ordered.length + ' countries';
+  return tags + '<button type="button" class="country-more" data-feed-id="' + escAttr(f.id) + '" aria-expanded="' + (isExpanded ? 'true' : 'false') + '" title="' + escAttr(btnTitle) + '">' + esc(btnLabel) + '</button>';
+}
+
 function renderFeeds(feeds) {
   const tbody = $('#table-body');
   const stats = $('#stats');
+  const activeCountry = $('#filter-country').value;
   stats.innerHTML = '<strong>' + feeds.length + '</strong> of <strong>' + ALL_FEEDS.length + '</strong> feeds shown';
-  if (!feeds.length) { tbody.innerHTML = '<tr><td colspan="8" class="empty">No matching feeds found.</td></tr>'; return; }
+  if (!feeds.length) { tbody.innerHTML = '<tr><td colspan="7" class="empty">No matching feeds found.</td></tr>'; return; }
   tbody.innerHTML = feeds.map(f => {
     const score = f.healthScore ?? '';
     const scoreClass = score === 100 ? 'score-100' : score === 70 ? 'score-70' : score === 40 ? 'score-40' : score === 0 ? 'score-0' : '';
     const status = f.healthStatus || 'unchecked';
     const statusLabel = ({fresh:'Fresh',stale:'Stale article','very-stale':'Very stale article','stale-content':'Stale content',unreachable:'Unreachable','invalid-content':'Invalid content',unchecked:'Not checked'})[status] || status;
     const checked = f.lastCheckedAt ? new Date(f.lastCheckedAt).toLocaleDateString() : '\u2014';
-    const countries = (f.countries||[]).map(c => '<span class="country-tag">' + c + '</span>').join('');
-    const url = (f.url||'').substring(0, 80) + ((f.url||'').length > 80 ? '\u2026' : '');
+    const feedHref = safeHref(f.url);
+    const homeHref = safeHref(f.homepage);
+    const copyBtn = '<button type="button" class="icon-btn copy-rss-btn" data-url="' + escAttr(f.url||'') + '" data-name="' + escAttr(f.name||'') + '" aria-label="Copy RSS URL for ' + escAttr(f.name||'') + '" title="Copy RSS URL: ' + escAttr(f.url||'') + '">' + COPY_SVG + CHECK_SVG + '<span class="copy-label">Copied</span></button>';
+    const openRss = feedHref ? '<a class="icon-btn" href="' + escAttr(feedHref) + '" target="_blank" rel="noopener noreferrer" aria-label="Open RSS feed for ' + escAttr(f.name||'') + '" title="Open RSS feed">' + RSS_SVG + '</a>' : '';
+    const openHome = homeHref ? '<a class="icon-btn" href="' + escAttr(homeHref) + '" target="_blank" rel="noopener noreferrer" aria-label="Visit website for ' + escAttr(f.name||'') + '" title="Visit website">' + EXT_SVG + '</a>' : '';
     return '<tr>' +
-      '<td>' + (f.homepage ? '<a href="' + escAttr(f.homepage) + '" target="_blank" rel="noopener">' + esc(f.name) + '</a>' : esc(f.name)) + '</td>' +
-      '<td>' + esc(f.publisher) + '</td>' +
+      '<td class="name-cell"><div class="name-row"><span class="feed-name" title="' + escAttr(f.description || f.name) + '">' + esc(f.name) + '</span><span class="row-actions">' + copyBtn + openRss + openHome + '</span></div></td>' +
+      '<td class="pub-cell" title="' + escAttr(f.publisher||'') + '">' + esc(f.publisher) + '</td>' +
       '<td>' + esc(f.category) + '</td>' +
-      '<td>' + countries + '</td>' +
+      '<td class="countries-cell"><div class="country-list" data-feed-id="' + escAttr(f.id) + '">' + renderCountryList(f, activeCountry) + '</div></td>' +
       '<td>' + esc(f.language) + '</td>' +
       '<td><span class="health-status health-' + escAttr(status) + '">' + esc(statusLabel) + '</span>' + (scoreClass ? ' <span class="score ' + scoreClass + '">' + score + '</span>' : '') + '</td>' +
       '<td><span class="last-checked">' + esc(checked) + '</span></td>' +
-      '<td class="url"><a href="' + escAttr(f.url) + '" target="_blank" rel="noopener" title="' + escAttr(f.url||'') + '">' + esc(url) + '</a></td>' +
       '</tr>';
   }).join('');
+}
+
+function legacyCopy(text) {
+  const field = Object.assign(document.createElement('textarea'), { value: text });
+  field.setAttribute('readonly', '');
+  field.style.cssText = 'position:fixed;inset-block-start:0;opacity:0';
+  document.body.append(field);
+  field.select();
+  try { return document.execCommand('copy'); } finally { field.remove(); }
+}
+
+function setCopyFeedback(button, ok) {
+  clearTimeout(copyTimers.get(button));
+  button.removeAttribute('data-copied');
+  button.removeAttribute('data-failed');
+  const label = button.querySelector('.copy-label');
+  if (label) label.textContent = ok ? 'Copied' : 'Failed';
+  void button.offsetWidth;
+  button.setAttribute(ok ? 'data-copied' : 'data-failed', '');
+  const feedName = button.dataset.name || 'feed';
+  announce(ok ? 'Copied RSS URL for ' + feedName : 'Copy failed for ' + feedName);
+  copyTimers.set(button, setTimeout(() => {
+    button.removeAttribute('data-copied');
+    button.removeAttribute('data-failed');
+  }, 2000));
+}
+
+async function copyRssUrl(button) {
+  const url = button.dataset.url || '';
+  if (!url) return;
+  try {
+    await navigator.clipboard.writeText(url);
+    setCopyFeedback(button, true);
+  } catch {
+    setCopyFeedback(button, Boolean(legacyCopy(url)));
+  }
 }
 
 function getFilters() {
@@ -490,16 +612,20 @@ function matchesFilters(f, filters) {
   return true;
 }
 
-function filterFeeds() {
+function getFilteredFeeds() {
   const filters = getFilters();
-  let result = ALL_FEEDS.filter(f => matchesFilters(f, filters));
+  const result = ALL_FEEDS.filter(f => matchesFilters(f, filters));
   result.sort((a,b) => {
     const va = a[sortCol] ?? ''; const vb = b[sortCol] ?? '';
     if (sortCol === 'healthScore') return ((va||0)-(vb||0))*sortDir;
-    if (sortCol === 'countries') return String(va).localeCompare(String(vb))*sortDir;
-    return String(va).localeCompare(String(vb))*sortDir;
+    if (sortCol === 'countries') return collator.compare(String(va), String(vb))*sortDir;
+    return collator.compare(String(va), String(vb))*sortDir;
   });
-  renderFeeds(result);
+  return result;
+}
+
+function filterFeeds() {
+  renderFeeds(getFilteredFeeds());
 }
 
 function renderMatrix(entries) {
@@ -574,30 +700,79 @@ function filterMatrix() {
   renderMatrix(result);
 }
 
+function downloadBlob(content, type, filename) {
+  const blob = new Blob([content], { type });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
 function exportCSV() {
-  const filters = getFilters();
-  let result = ALL_FEEDS.filter(f => matchesFilters(f, filters));
+  const result = getFilteredFeeds();
   const csv = 'name,publisher,url,category,countries,language,healthStatus,healthScore,lastCheckedAt,homepage,description\\n' +
-    result.map(f => ['"'+esc(f.name)+'"','"'+esc(f.publisher)+'"','"'+escAttr(f.url)+'"',f.category,(f.countries||[]).join('|'),f.language,f.healthStatus||'unchecked',f.healthScore??'',f.lastCheckedAt||'','"'+escAttr(f.homepage||'')+'"','"'+esc(f.description||'')+'"'].join(',')).join('\\n');
-  const blob = new Blob([csv],{type:'text/csv'});
-  const a = document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='giti-rss-registry-filtered.csv'; a.click();
+    result.map(f => [
+      csvField(f.name),
+      csvField(f.publisher),
+      csvField(f.url),
+      csvField(f.category),
+      csvField((f.countries||[]).join('|')),
+      csvField(f.language),
+      csvField(f.healthStatus||'unchecked'),
+      csvField(f.healthScore??''),
+      csvField(f.lastCheckedAt||''),
+      csvField(f.homepage||''),
+      csvField(f.description||'')
+    ].join(',')).join('\\n');
+  downloadBlob(csv, 'text/csv;charset=utf-8', 'giti-rss-registry-filtered.csv');
+  announce('Exported ' + result.length + ' feeds as CSV');
+}
+
+function exportOPML() {
+  const filters = getFilters();
+  const result = getFilteredFeeds().slice().sort((a, b) => collator.compare(a.name || '', b.name || ''));
+  const parts = [];
+  if (filters.country) parts.push('Country: ' + filters.country);
+  if (filters.cat) parts.push('Category: ' + filters.cat);
+  if (filters.lang) parts.push('Language: ' + filters.lang);
+  if (filters.health) parts.push('Health: ' + filters.health);
+  if (filters.search) parts.push('Search: ' + filters.search);
+  const title = 'Giti RSS Registry \u2014 ' + (parts.length ? parts.join(', ') : 'Filtered Feeds');
+  const lines = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<opml version="2.0">',
+    '  <head>',
+    '    <title>' + escXml(title) + '</title>',
+    '    <dateCreated>' + escXml(new Date().toUTCString()) + '</dateCreated>',
+    '  </head>',
+    '  <body>'
+  ];
+  for (const f of result) {
+    lines.push('    <outline type="rss" text="' + escXml(f.name) + '" title="' + escXml(f.name) + '" xmlUrl="' + escXml(f.url) + '" />');
+  }
+  lines.push('  </body>', '</opml>', '');
+  downloadBlob(lines.join('\\n'), 'text/x-opml;charset=utf-8', 'giti-rss-registry-filtered.opml');
+  announce('Exported ' + result.length + ' feeds as OPML');
 }
 
 function exportMatrixCSV() {
   const csv = 'countryCode,countryName,tier,totalFeeds,domesticFeedsCount,regionalFeedsCount,domesticPublishers,healthFreshCount,healthIssueCount\\n' +
     MATRIX_DATA.map(e => [
       e.code,
-      '"' + esc(e.name) + '"',
+      csvField(e.name),
       e.tier,
       e.total,
       e.domestic.length,
       e.regional.length,
-      '"' + e.domestic.map(f => f.publisher || f.name).join(' | ') + '"',
+      csvField(e.domestic.map(f => f.publisher || f.name).join(' | ')),
       e.freshCount,
       e.issueCount
     ].join(',')).join('\\n');
-  const blob = new Blob([csv],{type:'text/csv'});
-  const a = document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='giti-rss-country-coverage-matrix.csv'; a.click();
+  downloadBlob(csv, 'text/csv;charset=utf-8', 'giti-rss-country-coverage-matrix.csv');
 }
 
 $('#search').addEventListener('input', filterFeeds);
@@ -607,7 +782,30 @@ $('#filter-language').addEventListener('change', filterFeeds);
 $('#filter-health').addEventListener('change', filterFeeds);
 $('#filter-checked').addEventListener('change', filterFeeds);
 $('#export-csv').addEventListener('click', exportCSV);
-$('#reset-filters').addEventListener('click', () => { $('#search').value='';$('#filter-category').value='';$('#filter-country').value='';$('#filter-language').value='';$('#filter-health').value='';$('#filter-checked').value='';filterFeeds(); });
+$('#export-opml').addEventListener('click', exportOPML);
+$('#reset-filters').addEventListener('click', () => { $('#search').value='';$('#filter-category').value='';$('#filter-country').value='';$('#filter-language').value='';$('#filter-health').value='';$('#filter-checked').value='';expandedCountries.clear();filterFeeds(); });
+
+$('#table-body').addEventListener('click', (event) => {
+  const copyBtn = event.target.closest('.copy-rss-btn');
+  if (copyBtn) {
+    copyRssUrl(copyBtn);
+    return;
+  }
+  const moreBtn = event.target.closest('.country-more');
+  if (moreBtn) {
+    const feedId = moreBtn.dataset.feedId;
+    if (!feedId) return;
+    if (expandedCountries.has(feedId)) expandedCountries.delete(feedId);
+    else expandedCountries.add(feedId);
+    const feed = ALL_FEEDS.find(item => item.id === feedId);
+    const container = moreBtn.closest('.country-list');
+    if (feed && container) {
+      container.innerHTML = renderCountryList(feed, $('#filter-country').value);
+      const nextBtn = container.querySelector('.country-more');
+      if (nextBtn) nextBtn.focus();
+    }
+  }
+});
 
 $('#matrix-search').addEventListener('input', filterMatrix);
 $('#matrix-filter-tier').addEventListener('change', filterMatrix);
@@ -615,31 +813,35 @@ $('#matrix-filter-health').addEventListener('change', filterMatrix);
 $('#export-matrix-csv').addEventListener('click', exportMatrixCSV);
 $('#reset-matrix-filters').addEventListener('click', () => { $('#matrix-search').value='';$('#matrix-filter-tier').value='';$('#matrix-filter-health').value='';filterMatrix(); });
 
-$$('#feed-table th[data-sort]').forEach(th => th.addEventListener('click', () => {
+$('#feed-table thead').addEventListener('click', (event) => {
+  const btn = event.target.closest('.sort-btn');
+  if (!btn) return;
+  const th = btn.closest('th[data-sort]');
+  if (!th) return;
   const col = th.dataset.sort;
   if (col === sortCol) sortDir *= -1; else { sortCol = col; sortDir = 1; }
-  $$('#feed-table th .sort-arrow').forEach(a => a.textContent='');
-  th.querySelector('.sort-arrow').textContent = sortDir===1?'\u25BC':'\u25B2';
+  $$('#feed-table th[data-sort]').forEach(h => h.removeAttribute('aria-sort'));
+  const dirLabel = sortDir === 1 ? 'ascending' : 'descending';
+  th.setAttribute('aria-sort', dirLabel);
   filterFeeds();
-}));
+  announce('Sorted feeds by ' + btn.textContent.trim() + ', ' + dirLabel);
+});
 
-$$('#matrix-table th[data-msort]').forEach(th => th.addEventListener('click', () => {
+$('#matrix-table thead').addEventListener('click', (event) => {
+  const btn = event.target.closest('.sort-btn');
+  if (!btn) return;
+  const th = btn.closest('th[data-msort]');
+  if (!th) return;
   const col = th.dataset.msort;
   if (col === mSortCol) mSortDir *= -1; else { mSortCol = col; mSortDir = 1; }
-  $$('#matrix-table th .msort-arrow').forEach(a => a.textContent='');
-  let arrow = th.querySelector('.msort-arrow');
-  if (!arrow) {
-    arrow = document.createElement('span');
-    arrow.className = 'msort-arrow';
-    th.appendChild(arrow);
-  }
-  arrow.textContent = mSortDir===1?'\u25BC':'\u25B2';
+  $$('#matrix-table th[data-msort]').forEach(h => h.removeAttribute('aria-sort'));
+  th.setAttribute('aria-sort', mSortDir === 1 ? 'ascending' : 'descending');
   filterMatrix();
-}));
+});
 
 // Initialize directory and matrix
 MATRIX_DATA = computeMatrix(ALL_FEEDS);
-renderFeeds(ALL_FEEDS);
+filterFeeds();
 renderMatrix(MATRIX_DATA);
 updateMatrixSummaryCards();
 

@@ -109,13 +109,10 @@ describe('new-ID algorithm (src/id.ts)', () => {
 });
 
 describe('importer failure contract', () => {
-    const npx = process.platform === 'win32' ? 'npx.cmd' : 'npx';
-
     const runImporter = (input: string) =>
-        spawnSync(`${npx} tsx scripts/add-feeds-batch.ts`, {
+        spawnSync(process.execPath, ['--import', 'tsx', 'scripts/add-feeds-batch.ts'], {
             input,
             encoding: 'utf8',
-            shell: true,
         });
 
     it('exits non-zero on malformed input and leaves feeds.json untouched', async () => {
