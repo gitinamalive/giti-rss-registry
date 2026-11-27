@@ -1,11 +1,11 @@
 {
   "schemaVersion": "1.1.0",
   "generatorVersion": "1.2.0",
-  "sourceCommit": "64a3074aeb2f7e7185e3f654bb5d48eb01802e0e",
-  "sourceChecksum": "7fbf24e2f9c06280a78050ec765202261a7aef158ed7f52c54cffa06ffba1057",
+  "sourceCommit": "bf11ea7cc35e9bca73bd933783d73e07090e34e3",
+  "sourceChecksum": "dc614d0feeb7a8f37fc847587ae9acdd1c9373b5f4d5de73143739df3bd90a41",
   "generatedAt": "2026-11-02T05:38:09.787Z",
-  "registryRevision": "7fbf24e2f9c06280a78050ec765202261a7aef158ed7f52c54cffa06ffba1057",
-  "healthRevision": "75ffb67863fb966f9c9c06f84b50aa1c800d531ecfda00142d110496c3b0bcb1",
+  "registryRevision": "dc614d0feeb7a8f37fc847587ae9acdd1c9373b5f4d5de73143739df3bd90a41",
+  "healthRevision": "3655eceb69c492189de1d8398d5cdce59fb4b515cdfd86f8e6c7072f9790e031",
   "artifactCounts": {
     "feeds": 456,
     "countries": 206,
@@ -49,11 +49,11 @@
       "bytes": 819227
     },
     "feeds-health.json": {
-      "sha256": "75ffb67863fb966f9c9c06f84b50aa1c800d531ecfda00142d110496c3b0bcb1",
-      "bytes": 280242
+      "sha256": "3655eceb69c492189de1d8398d5cdce59fb4b515cdfd86f8e6c7072f9790e031",
+      "bytes": 272371
     },
     "duplicate-report.json": {
-      "sha256": "ffd01d7de6236e270452f5159888f4ee1b7a314c990ac06b71ba532572b39295",
+      "sha256": "daf4230879f4120f3844c1c584e593def981ec2559af4b3629d176da0e6c7744",
       "bytes": 164
     },
     "opml/all.opml": {
