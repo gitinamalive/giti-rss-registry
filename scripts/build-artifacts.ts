@@ -81,7 +81,7 @@ async function main(): Promise<void> {
     const payload = JSON.parse(raw) as BootstrapPayload;
     const feeds = payload.feeds;
     const generatedAt = payload.generatedAt;
-    const sourceChecksum = createHash('sha256').update(raw).digest('hex');
+    const sourceChecksum = createHash('sha256').update(raw.replace(/\r\n/g, '\n')).digest('hex');
     const sourceCommit = await getSourceCommit();
 
     await mkdir(distPath, { recursive: true });
