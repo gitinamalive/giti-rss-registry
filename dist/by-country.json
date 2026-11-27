@@ -2912,7 +2912,7 @@
       "id": "radio-canada-d7774cd1",
       "name": "Radio-Canada Info",
       "publisher": "Radio-Canada",
-      "url": "https://ici.radio-canada.ca/rss/4159",
+      "url": "https://ici.radio-canada.ca/info/rss/info",
       "language": "fr",
       "countries": [
         "CA"
@@ -7340,7 +7340,7 @@
       "id": "daily-news-egypt-98182a83",
       "name": "Daily News Egypt",
       "publisher": "Daily News Egypt",
-      "url": "https://www.dailynewsegypt.com/feed",
+      "url": "https://dailynewsegypt.com/feed/",
       "language": "en",
       "countries": [
         "EG"
@@ -12492,7 +12492,7 @@
       "id": "tabnak-b30db155",
       "name": "Tabnak",
       "publisher": "Tabnak",
-      "url": "https://www.tabnak.ir/fa/rss/allnews",
+      "url": "https://tabnak.ir/fa/rss/allnews",
       "language": "fa",
       "countries": [
         "IR"
@@ -27424,7 +27424,7 @@
       "id": "hyperallergic-9f2a3d5b",
       "name": "Hyperallergic",
       "publisher": "Hyperallergic",
-      "url": "https://hyperallergic.com/rss/",
+      "url": "https://hyperallergic.com/latest/rss/",
       "language": "en",
       "countries": [
         "US"
@@ -28893,7 +28893,7 @@
       "id": "zeri-info-81b3c094",
       "name": "ZERI.info",
       "publisher": "ZERI.info",
-      "url": "https://zeri.info/rss/zerat",
+      "url": "https://zeri.info/zerat/rss/",
       "language": "en",
       "countries": [
         "XK"

@@ -2,7 +2,7 @@
 <opml version="2.0">
   <head>
     <title>Giti RSS Registry — Country: US</title>
-    <dateCreated>Mon, 02 Nov 2026 05:38:09 GMT</dateCreated>
+    <dateCreated>Fri, 27 Nov 2026 04:56:29 GMT</dateCreated>
   </head>
   <body>
     <outline type="rss" text="9to5Mac" title="9to5Mac" xmlUrl="https://9to5mac.com/feed/" />
@@ -33,7 +33,7 @@
     <outline type="rss" text="Grist" title="Grist" xmlUrl="https://grist.org/feed/" />
     <outline type="rss" text="Hacker News" title="Hacker News" xmlUrl="https://feeds.hnrss.org/frontpage" />
     <outline type="rss" text="Hugging Face Blog" title="Hugging Face Blog" xmlUrl="https://huggingface.co/blog/feed.xml" />
-    <outline type="rss" text="Hyperallergic" title="Hyperallergic" xmlUrl="https://hyperallergic.com/rss/" />
+    <outline type="rss" text="Hyperallergic" title="Hyperallergic" xmlUrl="https://hyperallergic.com/latest/rss/" />
     <outline type="rss" text="ICIJ" title="ICIJ" xmlUrl="https://www.icij.org/feed/" />
     <outline type="rss" text="IndieWire" title="IndieWire" xmlUrl="https://www.indiewire.com/feed/" />
     <outline type="rss" text="Inside Climate News" title="Inside Climate News" xmlUrl="https://insideclimatenews.org/feed/" />
