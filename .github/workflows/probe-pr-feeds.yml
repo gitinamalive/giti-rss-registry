@@ -3,8 +3,6 @@ name: Probe PR Feeds
 on:
   pull_request:
     branches: [main]
-    paths:
-      - 'data/feeds.json'
 
 permissions:
   contents: read
