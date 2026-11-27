@@ -12,6 +12,7 @@ concurrency:
 permissions:
   contents: write
   issues: write
+  pull-requests: write
 
 jobs:
   health-check:
@@ -22,7 +23,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '22'
           cache: npm
 
       - name: Install dependencies
@@ -30,6 +31,14 @@ jobs:
 
       - name: Run health check
         run: npx tsx scripts/health-check.ts 2>&1 | tee health-report.txt
+
+      - name: Upload health check report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: health-report
+          path: health-report.txt
+          if-no-files-found: ignore
 
       - name: Refresh build artifacts and manifest
         run: npm run build
@@ -48,12 +57,43 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dist/feeds-health.json dist/manifest.json dist/coverage-matrix.json
-          git diff --staged --quiet || git commit -m "chore(rss-registry): weekly health check update"
-          git push
+          git add dist/feeds-health.json dist/manifest.json dist/coverage-matrix.json dist/duplicate-report.json
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(rss-registry): weekly health check update"
+            git pull --rebase
+            git push
+          fi
 
       - name: Reconcile feed health issues
         run: npx tsx scripts/reconcile-health-issues.ts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+
+      - name: Apply validated permanent redirects on a PR branch
+        id: apply-redirects
+        run: |
+          npx tsx scripts/propose-redirect-updates.ts --apply
+          if ! git diff --quiet data/feeds.json; then
+            npm run validate
+            npm run build
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open PR for validated permanent redirects
+        if: steps.apply-redirects.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: chore/apply-permanent-redirects
+          commit-message: "chore(feeds): apply validated permanent redirects"
+          title: "chore(feeds): apply validated permanent redirects"
+          body: |
+            Automated weekly PR applying validated HTTP 301/308 permanent redirects from `scripts/propose-redirect-updates.ts --apply`.
+
+            Every proposed target URL passed SSRF checks, HTTP 200 reachability, structural feed parsing, and duplicate URL checks.
+          labels: |
+            automated
+            health-review

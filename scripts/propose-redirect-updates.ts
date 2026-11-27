@@ -18,6 +18,8 @@ import { normalizeUrl } from '../src/id.ts';
 import {
     assertPublicHttpUrl,
     decodeFeedBytes,
+    defaultHostResolver,
+    followRedirects,
     parseFeedContent,
     readBoundedBytes,
     type Fetcher,
@@ -79,19 +81,29 @@ export async function validateRedirectTarget(
     }
 
     const fetcher = options.fetcher ?? fetch;
+    const resolveHost = options.resolveHost ?? defaultHostResolver;
     const timeoutMs = options.timeoutMs ?? 15_000;
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(new Error(`Timeout after ${timeoutMs}ms`)), timeoutMs);
 
     try {
-        const response = await fetcher(targetUrl, {
-            signal: controller.signal,
-            headers: {
-                'User-Agent': 'giti-rss-registry-redirect-checker/1.0 (+https://github.com/gitinamalive/giti)',
-                Accept: 'application/rss+xml, application/atom+xml, application/rdf+xml, application/feed+json, application/json, text/xml;q=0.9, */*;q=0.8',
+        const redirected = await followRedirects(
+            targetUrl,
+            {
+                method: 'GET',
+                headers: {
+                    'User-Agent': 'giti-rss-registry-redirect-checker/1.0 (+https://github.com/gitinamalive/giti)',
+                    Accept: 'application/rss+xml, application/atom+xml, application/rdf+xml, application/feed+json, application/json, text/xml;q=0.9, */*;q=0.8',
+                },
             },
-            redirect: 'follow',
-        });
+            {
+                fetcher,
+                resolveHost,
+                timeoutMs,
+                signal: controller.signal,
+            },
+        );
+        const response = redirected.response;
 
         if (!response.ok) {
             await response.body?.cancel();
@@ -122,10 +134,12 @@ export async function validateRedirectTarget(
             lastItemDate: content.lastItemDate,
         };
     } catch (error) {
+        const message = (error as Error).message;
+        const isSsrf = message.includes('non-public') || message.includes('not a public HTTP(S) host');
         return {
             valid: false,
-            status: 'unreachable',
-            reason: `Target probe error: ${(error as Error).message}`,
+            status: isSsrf ? 'ssrf_blocked' : 'unreachable',
+            reason: isSsrf ? `Target URL failed SSRF check: ${message}` : `Target probe error: ${message}`,
         };
     } finally {
         clearTimeout(timer);

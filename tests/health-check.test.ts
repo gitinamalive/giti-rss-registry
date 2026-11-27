@@ -1,12 +1,15 @@
 import { describe, expect, it, vi } from 'vitest';
 import {
+    assertPublicHttpUrl,
     checkFeed,
     decodeFeedBytes,
     isPublicHttpUrl,
+    isPublicIp,
     mergeHealthEntry,
     parseFeedContent,
     readBoundedBytes,
     readExistingOverlay,
+    shouldTripCircuitBreaker,
     type Fetcher,
 } from '../scripts/health-check.ts';
 import { deriveDiagnosticCategory, deriveQuarantineStatus } from '../src/health.ts';
@@ -43,16 +46,14 @@ describe('feed content validation', () => {
         expect(result).toMatchObject({ reachable: false, contentValid: false, failureStatus: 'invalid-content', status: 200 });
     });
 
-    it('uses GET validation even when HEAD is rejected', async () => {
+    it('fetches feeds with a single GET request without wasting a HEAD probe', async () => {
         const methods: string[] = [];
         const fetcher: Fetcher = async (_input, init) => {
             methods.push(init?.method ?? 'GET');
-            return init?.method === 'HEAD'
-                ? new Response(null, { status: 405 })
-                : new Response('<rss><channel><item><pubDate>2026-08-26T00:00:00Z</pubDate></item></channel></rss>', { status: 200 });
+            return new Response('<rss><channel><item><pubDate>2026-08-26T00:00:00Z</pubDate></item></channel></rss>', { status: 200 });
         };
         const result = await checkFeed(feed, { fetcher, resolveHost: publicResolver });
-        expect(methods).toEqual(['HEAD', 'GET']);
+        expect(methods).toEqual(['GET']);
         expect(result).toMatchObject({ reachable: true, contentValid: true, format: 'rss' });
     });
 
@@ -147,6 +148,21 @@ describe('bounded stream reader', () => {
         const bytes = await readBoundedBytes(response, 1024 * 1024);
         expect(new TextDecoder().decode(bytes)).toBe('feed data chunk 1 feed data chunk 2');
     });
+
+    it('throws on mid-body abort instead of returning truncated bytes', async () => {
+        const controller = new AbortController();
+        const stream = new ReadableStream<Uint8Array>({
+            start(c) {
+                c.enqueue(new TextEncoder().encode('<rss><channel>'));
+            },
+            pull() {
+                controller.abort(new Error('Timeout'));
+                return new Promise(() => {});
+            },
+        });
+        const response = new Response(stream);
+        await expect(readBoundedBytes(response, 1024 * 1024, controller.signal)).rejects.toThrow('aborted');
+    });
 });
 
 describe('public redirect safety', () => {
@@ -162,7 +178,50 @@ describe('public redirect safety', () => {
         };
         const result = await checkFeed(feed, { fetcher, resolveHost: publicResolver });
         expect(result.failureStatus).toBe('unreachable');
-        expect(requestedUrls).toEqual([feed.url, feed.url]);
+        expect(requestedUrls).toEqual([feed.url]);
+    });
+
+    it('accepts bracketed public IPv6 literals without DNS lookup', async () => {
+        const resolveHost = vi.fn(async () => {
+            throw new Error('resolveHost should not be called for IP literals');
+        });
+        const parsed = await assertPublicHttpUrl('https://[2606:4700::1111]/feed.xml', resolveHost);
+        expect(parsed.hostname).toBe('[2606:4700::1111]');
+        expect(resolveHost).not.toHaveBeenCalled();
+    });
+
+    it.each([
+        '::1',
+        '::',
+        '::ffff:127.0.0.1',
+        '::ffff:7f00:1',
+        '0:0:0:0:0:ffff:7f00:1',
+        '::ffff:a9fe:a9fe',
+        '::ffff:10.0.0.1',
+        '::ffff:0a00:0001',
+        '64:ff9b::127.0.0.1',
+        '2002:7f00:0001::1',
+        'fc00::1',
+        'fe80::1',
+        'fe80::1%eth0',
+        'ff02::1',
+    ])('rejects non-public IPv6 address %s', (addr) => {
+        expect(isPublicIp(addr, 6)).toBe(false);
+    });
+
+    it.each([
+        '2606:4700::1111',
+        '2001:4860:4860::8888',
+        '::ffff:93.184.216.34',
+        '::ffff:5db8:d822',
+    ])('accepts public IPv6 address %s', (addr) => {
+        expect(isPublicIp(addr, 6)).toBe(true);
+    });
+
+    it('rejects DNS answers returning hex IPv4-mapped loopback (::ffff:7f00:1)', async () => {
+        await expect(
+            assertPublicHttpUrl('https://rebind.example/feed', async () => ['::ffff:7f00:1'])
+        ).rejects.toThrow('non-public host');
     });
 });
 
@@ -247,6 +306,38 @@ describe('quarantine policy and capability telemetry', () => {
         const res503 = await checkFeed(feed, { fetcher: fetch503, resolveHost: publicResolver });
         expect(res503.reachable).toBe(false);
         expect(res503.failureReason).toBe('http_5xx');
+    });
+
+    it('retries once on transient 5xx when retries is enabled, but does not retry 4xx', async () => {
+        let attempts503 = 0;
+        const flaky503: Fetcher = async () => {
+            attempts503 += 1;
+            return attempts503 === 1
+                ? new Response('Unavailable', { status: 503 })
+                : new Response('<rss><channel><item><pubDate>2026-08-26T00:00:00Z</pubDate></item></channel></rss>', { status: 200 });
+        };
+        const recovered = await checkFeed(feed, {
+            fetcher: flaky503,
+            resolveHost: publicResolver,
+            retries: 1,
+            retryDelayMs: 0,
+        });
+        expect(attempts503).toBe(2);
+        expect(recovered.reachable).toBe(true);
+
+        let attempts404 = 0;
+        const steady404: Fetcher = async () => {
+            attempts404 += 1;
+            return new Response('Not Found', { status: 404 });
+        };
+        const failed = await checkFeed(feed, {
+            fetcher: steady404,
+            resolveHost: publicResolver,
+            retries: 1,
+            retryDelayMs: 0,
+        });
+        expect(attempts404).toBe(1);
+        expect(failed.reachable).toBe(false);
     });
 
     it('categorizes timeout failure reasons', async () => {
@@ -415,5 +506,69 @@ describe('quarantine policy and capability telemetry', () => {
             status: 'timeout',
             now,
         })).toBe('UNREACHABLE');
+
+        // 8. Precedence: 301->404 and 301->HTML must NOT be masked as REDIRECT_PERMANENT
+        expect(deriveDiagnosticCategory({
+            reachable: false,
+            contentValid: false,
+            status: 404,
+            permanentRedirectUrl: 'https://example.com/gone',
+            now,
+        })).toBe('DEAD_ENDPOINT');
+        expect(deriveDiagnosticCategory({
+            reachable: false,
+            contentValid: false,
+            status: 200,
+            failureStatus: 'invalid-content',
+            permanentRedirectUrl: 'https://example.com/html-page',
+            now,
+        })).toBe('MALFORMED_XML');
+    });
+
+    it('exempts BLOCKED_SCRAPER (403/429) from quarantine and keeps defaultSuggestion true', () => {
+        let prior: ReturnType<typeof mergeHealthEntry> | undefined;
+        for (let week = 1; week <= 6; week += 1) {
+            prior = mergeHealthEntry(feed.id, {
+                status: 403,
+                reachable: false,
+                contentValid: false,
+                failureStatus: 'unreachable',
+                failureReason: 'http_4xx',
+            }, `2026-11-0${week}T00:00:00.000Z`, prior);
+        }
+        expect(prior?.diagnosticCategory).toBe('BLOCKED_SCRAPER');
+        expect(prior?.consecutiveFailures).toBe(3);
+        expect(prior?.quarantineStatus).toBe('degraded');
+        expect(prior?.defaultSuggestion).toBe(true);
+    });
+
+    it('trips the outage circuit breaker on >25pp reachability drops, not on small runs or minor dips', () => {
+        const priorMap = new Map(
+            Array.from({ length: 40 }, (_, i) => [
+                `feed-${i}`,
+                mergeHealthEntry(`feed-${i}`, {
+                    status: 200,
+                    reachable: i < 32, // 80% reachable
+                    contentValid: i < 32,
+                }, '2026-11-01T00:00:00.000Z'),
+            ]),
+        );
+
+        const outageResults = Array.from({ length: 40 }, (_, i) => ({
+            status: i < 10 ? 200 : 'timeout',
+            reachable: i < 10, // 25% reachable (-55pp)
+            contentValid: i < 10,
+        }));
+        expect(shouldTripCircuitBreaker(priorMap, outageResults)).toBe(true);
+
+        const normalResults = Array.from({ length: 40 }, (_, i) => ({
+            status: i < 30 ? 200 : 503,
+            reachable: i < 30, // 75% reachable (-5pp)
+            contentValid: i < 30,
+        }));
+        expect(shouldTripCircuitBreaker(priorMap, normalResults)).toBe(false);
+
+        // Partial --max-feeds run (<20) must not trip
+        expect(shouldTripCircuitBreaker(priorMap, outageResults.slice(0, 5))).toBe(false);
     });
 });

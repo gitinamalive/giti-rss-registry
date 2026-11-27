@@ -7,8 +7,8 @@ export default defineConfig({
         include: ['tests/**/*.test.ts'],
         coverage: {
             provider: 'v8',
-            include: ['scripts/**/*.ts'],
-            exclude: ['scripts/add-feeds-batch.ts', 'scripts/enrich-categories.ts'],
+            include: ['src/**/*.ts', 'scripts/**/*.ts'],
+            exclude: ['scripts/add-feeds-batch.ts', 'scripts/one-off/**'],
         },
     },
 });

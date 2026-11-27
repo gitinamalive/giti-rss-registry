@@ -6,13 +6,18 @@
  * script.
  */
 
-import { lookup } from 'node:dns/promises';
-import { isIP } from 'node:net';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { XMLParser } from 'fast-xml-parser';
 import type { BootstrapPayload, FeedEntry, FeedFormat } from '../src/types.ts';
+import {
+    assertPublicHttpUrl,
+    defaultHostResolver,
+    isPublicHttpUrl,
+    isPublicIp,
+    type HostResolver,
+} from '../src/net.ts';
 import {
     computeHealthScore,
     deriveDiagnosticCategory,
@@ -46,7 +51,13 @@ const xmlParser = new XMLParser({
 });
 
 export type Fetcher = typeof fetch;
-export type HostResolver = (hostname: string) => Promise<string[]>;
+export {
+    assertPublicHttpUrl,
+    defaultHostResolver,
+    isPublicHttpUrl,
+    isPublicIp,
+    type HostResolver,
+};
 
 export interface HealthResult {
     status: number | string;
@@ -65,6 +76,10 @@ export interface CheckFeedOptions {
     resolveHost?: HostResolver;
     timeoutMs?: number;
     maxBodyBytes?: number;
+    /** Number of retries on transient timeout / HTTP 5xx failures (default 0). */
+    retries?: number;
+    /** Base delay in ms before a retry (default 500ms with jitter). */
+    retryDelayMs?: number;
 }
 
 export interface FeedContent {
@@ -84,81 +99,6 @@ export interface FollowRedirectsOptions {
     resolveHost: HostResolver;
     timeoutMs?: number;
     signal?: AbortSignal;
-}
-
-/** Reject non-HTTP(S), credential-bearing, local, and reserved IP URLs. */
-export function isPublicHttpUrl(value: string): boolean {
-    let parsed: URL;
-    try {
-        parsed = new URL(value);
-    } catch {
-        return false;
-    }
-
-    if (!['http:', 'https:'].includes(parsed.protocol) || parsed.username || parsed.password) {
-        return false;
-    }
-
-    const hostname = parsed.hostname.replace(/^\[|\]$/g, '').toLowerCase();
-    if (!hostname || hostname === 'localhost' || hostname.endsWith('.localhost') || hostname.endsWith('.local')) {
-        return false;
-    }
-
-    const addressType = isIP(hostname);
-    return addressType === 0 || isPublicIp(hostname, addressType);
-}
-
-function isPublicIp(hostname: string, addressType: number): boolean {
-    if (addressType === 4) {
-        const octets = hostname.split('.').map(Number);
-        const [a, b] = octets;
-        if (octets.length !== 4 || octets.some((part) => !Number.isInteger(part) || part < 0 || part > 255)) {
-            return false;
-        }
-        return !(
-            a === 0 ||
-            a === 10 ||
-            a === 127 ||
-            (a === 100 && b >= 64 && b <= 127) ||
-            (a === 169 && b === 254) ||
-            (a === 172 && b >= 16 && b <= 31) ||
-            (a === 192 && (b === 0 || b === 168)) ||
-            (a === 198 && b >= 18 && b <= 19) ||
-            a >= 224
-        );
-    }
-
-    const normalized = hostname.toLowerCase();
-    if (normalized === '::' || normalized === '::1' || normalized.startsWith('fc') || normalized.startsWith('fd') || normalized.startsWith('fe8') || normalized.startsWith('fe9') || normalized.startsWith('fea') || normalized.startsWith('feb') || normalized.startsWith('ff')) {
-        return false;
-    }
-
-    const mappedIpv4 = normalized.match(/^::ffff:(\d+\.\d+\.\d+\.\d+)$/);
-    return !mappedIpv4 || isPublicIp(mappedIpv4[1], 4);
-}
-
-const defaultHostResolver: HostResolver = async (hostname) => {
-    const addresses = await lookup(hostname, { all: true, verbatim: true });
-    return addresses.map(({ address }) => address);
-};
-
-/** Validate the URL and every DNS address it resolves to before fetching. */
-export async function assertPublicHttpUrl(
-    value: string,
-    resolveHost: HostResolver = defaultHostResolver,
-): Promise<URL> {
-    if (!isPublicHttpUrl(value)) throw new Error(`URL is not a public HTTP(S) host: ${value}`);
-    const parsed = new URL(value);
-    if (isIP(parsed.hostname) === 0) {
-        const addresses = await resolveHost(parsed.hostname);
-        if (!addresses.length || addresses.some((address) => {
-            const addressType = isIP(address);
-            return addressType === 0 || !isPublicIp(address, addressType);
-        })) {
-            throw new Error(`URL resolves to a non-public host: ${value}`);
-        }
-    }
-    return parsed;
 }
 
 function requestHeaders(): HeadersInit {
@@ -255,6 +195,9 @@ export async function readBoundedBytes(
                 throw new Error(`Feed response exceeds maximum size of ${maxBytes} bytes`);
             }
             chunks.push(value);
+        }
+        if (signal?.aborted) {
+            throw new Error('Request timed out or aborted');
         }
     } finally {
         if (signal) {
@@ -418,7 +361,7 @@ export function parseFeedContent(body: string): FeedContent | null {
     }
 }
 
-export async function checkFeed(feed: FeedEntry, options: CheckFeedOptions = {}): Promise<HealthResult> {
+async function checkFeedOnce(feed: FeedEntry, options: CheckFeedOptions = {}): Promise<HealthResult> {
     const fetcher = options.fetcher ?? fetch;
     const resolveHost = options.resolveHost ?? defaultHostResolver;
     const timeoutMs = options.timeoutMs ?? HTTP_TIMEOUT_MS;
@@ -434,14 +377,6 @@ export async function checkFeed(feed: FeedEntry, options: CheckFeedOptions = {})
     };
 
     try {
-        // HEAD is advisory. If it fails or is rejected, a bounded GET decides health.
-        try {
-            const head = await followRedirects(feed.url, { method: 'HEAD' }, requestOptions);
-            await head.response.body?.cancel();
-        } catch {
-            // Continue to GET; HEAD failures are expected for some publishers.
-        }
-
         const get = await followRedirects(feed.url, { method: 'GET' }, requestOptions);
         const capabilities: FeedCapabilities = {
             supportsHttps: Boolean(get.finalUrl?.startsWith('https://') || feed.url.startsWith('https://')),
@@ -520,6 +455,25 @@ export async function checkFeed(feed: FeedEntry, options: CheckFeedOptions = {})
     }
 }
 
+export async function checkFeed(feed: FeedEntry, options: CheckFeedOptions = {}): Promise<HealthResult> {
+    const maxRetries = Math.max(0, options.retries ?? 0);
+    const baseDelayMs = options.retryDelayMs ?? 500;
+    let attempt = 0;
+
+    while (true) {
+        const result = await checkFeedOnce(feed, options);
+        const isTransient = !result.reachable && (result.failureReason === 'timeout' || result.failureReason === 'http_5xx');
+        if (!isTransient || attempt >= maxRetries) {
+            return result;
+        }
+        attempt += 1;
+        const jitterMs = baseDelayMs > 0 ? Math.round(baseDelayMs * (0.5 + Math.random())) : 0;
+        if (jitterMs > 0) {
+            await new Promise((resolveDelay) => setTimeout(resolveDelay, jitterMs));
+        }
+    }
+}
+
 async function runConcurrently<T>(items: T[], limit: number, worker: (item: T, index: number) => Promise<void>): Promise<void> {
     let cursor = 0;
     const runners = Array.from({ length: Math.min(limit, items.length) }, async () => {
@@ -535,6 +489,22 @@ interface ExistingOverlay {
     feeds?: Array<FeedHealthEntry & { generatedAt?: string }>;
 }
 
+export function shouldTripCircuitBreaker(
+    previous: Map<string, FeedHealthEntry>,
+    results: Array<HealthResult | null>,
+    dropThreshold = 0.25,
+): boolean {
+    const checked = results.filter((r): r is HealthResult => r !== null);
+    if (checked.length < 20 || previous.size < 20) return false;
+
+    const priorReachable = [...previous.values()].filter((e) => e.active).length;
+    if (priorReachable < 20) return false;
+
+    const priorRate = priorReachable / previous.size;
+    const currentRate = checked.filter((r) => r.reachable).length / checked.length;
+    return priorRate - currentRate > dropThreshold;
+}
+
 export function mergeHealthEntry(
     id: string,
     result: HealthResult,
@@ -542,13 +512,6 @@ export function mergeHealthEntry(
     prior?: FeedHealthEntry,
 ): FeedHealthEntry {
     const active = result.reachable;
-    const consecutiveFailures = active ? 0 : (prior?.consecutiveFailures ?? 0) + 1;
-    const lastSuccessAt = active ? checkedAt : (prior?.lastSuccessAt ?? null);
-    const lastFailureAt = active ? (prior?.lastFailureAt ?? null) : checkedAt;
-    const quarantineStatus = deriveQuarantineStatus(consecutiveFailures);
-    const failureReason: FailureReason | null = active
-        ? (result.lastItemDate ? null : 'stale_content')
-        : (result.failureReason ?? (result.failureStatus === 'invalid-content' ? 'invalid_content' : 'http_5xx'));
     const capabilities: FeedCapabilities = result.capabilities ?? {
         supportsHttps: Boolean(result.finalUrl?.startsWith('https://')),
         permanentRedirectUrl: null,
@@ -561,6 +524,21 @@ export function mergeHealthEntry(
         permanentRedirectUrl: capabilities.permanentRedirectUrl,
         failureStatus: result.failureStatus,
     });
+
+    // Exempt bot-challenge blocks (403/429) from reaching quarantine: cap at degraded (3)
+    // and keep defaultSuggestion true, since these feeds typically work for real readers.
+    const isScraperBlocked = !active && diagnosticCategory === 'BLOCKED_SCRAPER';
+    const consecutiveFailures = active
+        ? 0
+        : isScraperBlocked
+            ? Math.min((prior?.consecutiveFailures ?? 0) + 1, 3)
+            : (prior?.consecutiveFailures ?? 0) + 1;
+    const lastSuccessAt = active ? checkedAt : (prior?.lastSuccessAt ?? null);
+    const lastFailureAt = active ? (prior?.lastFailureAt ?? null) : checkedAt;
+    const quarantineStatus = deriveQuarantineStatus(consecutiveFailures);
+    const failureReason: FailureReason | null = active
+        ? (result.lastItemDate ? null : 'stale_content')
+        : (result.failureReason ?? (result.failureStatus === 'invalid-content' ? 'invalid_content' : 'http_5xx'));
 
     return {
         id,
@@ -577,7 +555,7 @@ export function mergeHealthEntry(
         consecutiveFailures,
         lastSuccessAt,
         lastFailureAt,
-        defaultSuggestion: consecutiveFailures < 4,
+        defaultSuggestion: isScraperBlocked ? true : consecutiveFailures < 4,
         quarantineStatus,
         failureReason,
         capabilities,
@@ -633,7 +611,7 @@ async function main(): Promise<void> {
 
     process.stdout.write(`Health-checking ${feedsToCheck.length} feeds (concurrency ${Math.min(CONCURRENCY, Math.max(1, feedsToCheck.length))})...\n`);
     await runConcurrently(feedsToCheck, Math.min(CONCURRENCY, Math.max(1, feedsToCheck.length)), async (feed, index) => {
-        const result = await checkFeed(feed);
+        const result = await checkFeed(feed, { retries: 1 });
         results[index] = result;
         checkedCount += 1;
         process.stdout.write(result.reachable
@@ -641,9 +619,19 @@ async function main(): Promise<void> {
             : `[${checkedCount}/${feedsToCheck.length}] ${feed.name}: ${result.failureStatus?.toUpperCase() ?? 'FAIL'} (${result.status})\n`);
     });
 
+    const circuitBreakerTripped = shouldTripCircuitBreaker(previous, results);
+    if (circuitBreakerTripped) {
+        process.stderr.write(
+            `[circuit-breaker] Reachability dropped >25pp vs prior overlay; preserving prior failure counters and quarantine state.\n`
+        );
+    }
+
     const feeds = payload.feeds.map((feed, index): FeedHealthEntry => {
         const prior = previous.get(feed.id);
         const result = index < results.length ? results[index] : null;
+        if (circuitBreakerTripped && prior && result && !result.reachable) {
+            return prior;
+        }
         if (!result) {
             return prior ? {
                 ...prior,

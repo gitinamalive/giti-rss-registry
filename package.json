@@ -7,11 +7,15 @@
     "type": "git",
     "url": "https://github.com/gitinamalive/giti-rss-registry.git"
   },
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
-    "validate": "npx tsx scripts/validate.ts && npx tsx scripts/validate-schema.ts",
-    "validate:schema": "npx tsx scripts/validate-schema.ts",
-    "build": "npx tsx scripts/build-artifacts.ts",
-    "build:artifacts": "npx tsx scripts/build-artifacts.ts",
+    "validate": "tsx scripts/validate.ts && tsx scripts/validate-schema.ts",
+    "validate:fix": "tsx scripts/validate.ts --fix && npm run validate",
+    "validate:schema": "tsx scripts/validate-schema.ts",
+    "build": "tsx scripts/build-artifacts.ts",
+    "build:artifacts": "tsx scripts/build-artifacts.ts",
     "type-check": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",

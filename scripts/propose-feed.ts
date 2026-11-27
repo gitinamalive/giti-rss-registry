@@ -17,6 +17,7 @@ import { XMLParser } from 'fast-xml-parser';
 import {
     assertPublicHttpUrl,
     decodeFeedBytes,
+    defaultHostResolver,
     followRedirects,
     readBoundedBytes,
     HTTP_TIMEOUT_MS,
@@ -25,7 +26,17 @@ import {
     type Fetcher,
 } from './health-check.ts';
 import { generateFeedId, normalizeUrl } from '../src/id.ts';
-import type { BootstrapPayload, FeedCategory, FeedEntry, FeedFormat, MediaType, Perspective } from '../src/types.ts';
+import {
+    allowedCategories,
+    allowedMediaTypes,
+    allowedPerspectives,
+    type BootstrapPayload,
+    type FeedCategory,
+    type FeedEntry,
+    type FeedFormat,
+    type MediaType,
+    type Perspective,
+} from '../src/types.ts';
 
 export interface ProposedFeedInput {
     url: string;
@@ -64,6 +75,18 @@ function escapeRegExp(str: string): string {
     return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+export function decodeBasicEntities(value: string | undefined): string | undefined {
+    if (!value) return value;
+    return value
+        .replace(/&#x([0-9a-f]+);/gi, (_, hex: string) => String.fromCodePoint(Number.parseInt(hex, 16)))
+        .replace(/&#(\d+);/g, (_, dec: string) => String.fromCodePoint(Number.parseInt(dec, 10)))
+        .replace(/&quot;/g, '"')
+        .replace(/&apos;/g, "'")
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&amp;/g, '&');
+}
+
 export function parseIssueFormBody(body: string): ProposedFeedInput {
     const input: ProposedFeedInput = { url: '' };
 
@@ -71,17 +94,27 @@ export function parseIssueFormBody(body: string): ProposedFeedInput {
         const escaped = escapeRegExp(label);
         const regex = new RegExp(`###\\s+${escaped}\\s*\\r?\\n\\r?\\n([^\\r\\n#]+)`, 'i');
         const match = body.match(regex);
-        return match ? match[1].trim() : undefined;
+        const value = match ? match[1].trim() : undefined;
+        return value && value !== '_No response_' ? value : undefined;
     };
 
     input.url = getField('Feed URL') || '';
     const country = getField('Target Country Code (ISO-3166-1 alpha-2)');
     if (country) input.countries = [country.toUpperCase()];
     input.publisher = getField('Publisher Name');
-    input.category = getField('Category') as FeedCategory;
+    const rawCategory = getField('Category');
+    if (rawCategory && allowedCategories.has(rawCategory as FeedCategory)) {
+        input.category = rawCategory as FeedCategory;
+    }
     input.language = getField('Primary Language Code (ISO-639-1)');
-    input.mediaType = getField('Media Type') as MediaType;
-    input.perspective = getField('Editorial Perspective') as Perspective;
+    const rawMediaType = getField('Media Type');
+    if (rawMediaType && allowedMediaTypes.has(rawMediaType as MediaType)) {
+        input.mediaType = rawMediaType as MediaType;
+    }
+    const rawPerspective = getField('Editorial Perspective');
+    if (rawPerspective && allowedPerspectives.has(rawPerspective as Perspective)) {
+        input.perspective = rawPerspective as Perspective;
+    }
     input.description = getField('Additional Context');
 
     return input;
@@ -142,7 +175,7 @@ export async function validateProposedFeed(
     try {
         const redirected = await followRedirects(input.url, { method: 'GET' }, {
             fetcher,
-            resolveHost: options.resolveHost ?? (async () => ['93.184.216.34']),
+            resolveHost: options.resolveHost ?? defaultHostResolver,
             timeoutMs,
             signal: controller.signal,
         });
@@ -288,8 +321,10 @@ export async function validateProposedFeed(
     }
 
     // 7. Metadata completeness
-    const publisher = input.publisher || detectedTitle || 'Unknown Publisher';
-    const name = input.name || detectedTitle || publisher;
+    const cleanTitle = decodeBasicEntities(detectedTitle);
+    const cleanDescription = decodeBasicEntities(detectedDescription);
+    const publisher = input.publisher || cleanTitle || 'Unknown Publisher';
+    const name = input.name || cleanTitle || publisher;
     const countries = input.countries && input.countries.length > 0 ? input.countries : ['XX'];
     const category = input.category || 'world';
     const language = input.language || detectedLanguage || 'en';
@@ -311,7 +346,7 @@ export async function validateProposedFeed(
         format,
         mediaType: input.mediaType || 'digital',
         perspective: input.perspective || 'independent',
-        description: input.description || detectedDescription,
+        description: input.description || cleanDescription,
     };
 
     return {

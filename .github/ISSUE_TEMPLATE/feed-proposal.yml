@@ -73,6 +73,9 @@ body:
         - print
         - broadcast
         - wire
+        - tv
+        - radio
+        - aggregator
     validations:
       required: false
   - type: dropdown
@@ -82,9 +85,11 @@ body:
       description: General operational/editorial structure.
       options:
         - independent
-        - public-service
-        - corporate
         - state-affiliated
+        - independent-exile
+        - regional
+        - state-monitor
+        - aggregator
     validations:
       required: false
   - type: textarea

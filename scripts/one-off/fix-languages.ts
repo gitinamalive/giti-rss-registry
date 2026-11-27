@@ -10,7 +10,7 @@
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import type { BootstrapPayload } from '../src/types.ts';
+import type { BootstrapPayload } from '../../src/types.ts';
 
 const FEEDS_PATH = resolve('data/feeds.json');
 const FIXES_PATH = resolve('data/language-fixes.json');

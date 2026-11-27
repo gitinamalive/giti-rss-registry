@@ -17,6 +17,77 @@ import { deriveQuarantineStatus, type FeedHealthEntry } from '../src/health.ts';
 
 export const HEALTH_LABEL = 'health-review';
 export const AUTOMATED_LABEL = 'automated';
+export const DASHBOARD_MARKER = '<!-- feed-health-dashboard -->';
+export const DASHBOARD_TITLE = '[Health Dashboard] Weekly Feed Health Summary';
+
+export function buildHealthDashboardBody(
+    overlayFeeds: FeedHealthEntry[],
+    canonicalFeeds: Map<string, FeedEntry>,
+    checkedAt: string = new Date().toISOString(),
+): string {
+    const counts: Record<string, number> = {
+        HEALTHY: 0,
+        STALE: 0,
+        REDIRECT_PERMANENT: 0,
+        BLOCKED_SCRAPER: 0,
+        DEAD_ENDPOINT: 0,
+        MALFORMED_XML: 0,
+        UNREACHABLE: 0,
+    };
+
+    for (const entry of overlayFeeds) {
+        const cat = entry.diagnosticCategory ?? (entry.active ? 'HEALTHY' : 'UNREACHABLE');
+        counts[cat] = (counts[cat] ?? 0) + 1;
+    }
+
+    const total = overlayFeeds.length;
+    const reachable = overlayFeeds.filter((e) => e.active).length;
+    const quarantined = overlayFeeds.filter((e) => e.consecutiveFailures >= 4).length;
+
+    const actionable = overlayFeeds
+        .filter((e) => e.consecutiveFailures >= 4 && (e.diagnosticCategory === 'DEAD_ENDPOINT' || e.diagnosticCategory === 'MALFORMED_XML'))
+        .sort((a, b) => b.consecutiveFailures - a.consecutiveFailures)
+        .slice(0, 50);
+
+    const lines: string[] = [
+        DASHBOARD_MARKER,
+        '## Weekly Feed Health Dashboard',
+        '',
+        `- **Last updated:** ${checkedAt}`,
+        `- **Reachable:** ${reachable} / ${total} (${total > 0 ? Math.round((reachable / total) * 100) : 0}%)`,
+        `- **Quarantined (4+ failures):** ${quarantined}`,
+        '',
+        '### Diagnostic Breakdown',
+        '',
+        '| Category | Count | Action |',
+        '|---|---:|---|',
+        `| HEALTHY | ${counts.HEALTHY} | None |`,
+        `| STALE | ${counts.STALE} | Monitor |`,
+        `| REDIRECT_PERMANENT | ${counts.REDIRECT_PERMANENT} | Auto-PR via \`propose-redirect-updates.ts\` |`,
+        `| BLOCKED_SCRAPER | ${counts.BLOCKED_SCRAPER} | Bot challenge (403/429) — exempt from quarantine |`,
+        `| DEAD_ENDPOINT | ${counts.DEAD_ENDPOINT} | Replace or remove URL |`,
+        `| MALFORMED_XML | ${counts.MALFORMED_XML} | Verify feed endpoint |`,
+        `| UNREACHABLE | ${counts.UNREACHABLE} | Monitor timeouts / DNS / 5xx |`,
+    ];
+
+    if (actionable.length > 0) {
+        lines.push(
+            '',
+            '### Actionable Quarantined Feeds (Dead / Malformed)',
+            '',
+            '| Feed | ID | Category | Failures | URL |',
+            '|---|---|---|---:|---|',
+        );
+        for (const entry of actionable) {
+            const feed = canonicalFeeds.get(entry.id);
+            const name = feed?.name ?? entry.id;
+            const url = feed?.url ?? '';
+            lines.push(`| ${name} | \`${entry.id}\` | \`${entry.diagnosticCategory}\` | ${entry.consecutiveFailures} | ${url} |`);
+        }
+    }
+
+    return lines.join('\n');
+}
 
 export interface GitHubIssueRecord {
     number: number;
@@ -108,6 +179,20 @@ export function buildIssueBody(feed: FeedEntry, health: FeedHealthEntry): string
     return lines.join('\n');
 }
 
+function parseStructuredField(body: string | null | undefined, label: string): string | null {
+    if (!body) return null;
+    const match = body.match(new RegExp(`-\\s+\\*\\*${label}:\\*\\*\\s+\`([^\`]+)\``));
+    return match ? match[1].trim() : null;
+}
+
+function normalizeBodyForDiff(body: string | null | undefined): string {
+    if (!body) return '';
+    return body
+        .replace(/\r\n/g, '\n')
+        .replace(/^- \*\*Last Checked:\*\*.*$/gm, '')
+        .trim();
+}
+
 export function reconcileHealthState(
     openIssues: GitHubIssueRecord[],
     overlayFeeds: FeedHealthEntry[],
@@ -132,8 +217,10 @@ export function reconcileHealthState(
 
     const healthById = new Map(overlayFeeds.map((entry) => [entry.id, entry]));
 
-    // 1. Process candidate failing feeds (consecutiveFailures >= 4)
-    const failingCandidates = overlayFeeds.filter((entry) => entry.consecutiveFailures >= 4);
+    // 1. Process candidate failing feeds (consecutiveFailures >= 4, excluding bot-challenge blocks)
+    const failingCandidates = overlayFeeds.filter(
+        (entry) => entry.consecutiveFailures >= 4 && entry.diagnosticCategory !== 'BLOCKED_SCRAPER',
+    );
 
     for (const health of failingCandidates) {
         const feed = canonicalFeeds.get(health.id);
@@ -151,22 +238,32 @@ export function reconcileHealthState(
 
             const updatedBody = buildIssueBody(feed, health);
 
-            // Check if status, quarantine, or error transition warrants a comment
+            // Parse exact structured fields instead of substring matching (e.g. 'stale' vs 'very-stale')
             let transitionComment: string | undefined;
             const currentQuarantine = health.quarantineStatus ?? deriveQuarantineStatus(health.consecutiveFailures);
-            if (retained.body && !retained.body.includes(health.healthStatus)) {
-                transitionComment = `Health status transition: Feed status changed to **${health.healthStatus}** (consecutive failures: ${health.consecutiveFailures}, quarantine: ${currentQuarantine}).`;
-            } else if (retained.body && currentQuarantine === 'quarantined' && !retained.body.includes('`quarantined`')) {
+            const prevStatus = parseStructuredField(retained.body, 'Health Status');
+            const prevQuarantine = parseStructuredField(retained.body, 'Quarantine Status');
+
+            if (prevStatus && prevStatus !== health.healthStatus) {
+                transitionComment = `Health status transition: Feed status changed from **${prevStatus}** to **${health.healthStatus}** (consecutive failures: ${health.consecutiveFailures}, quarantine: ${currentQuarantine}).`;
+            } else if (prevQuarantine && prevQuarantine !== 'quarantined' && currentQuarantine === 'quarantined') {
                 transitionComment = `Quarantine threshold reached: Feed has failed ${health.consecutiveFailures} consecutive checks and is now **quarantined**.`;
             }
 
-            plan.toUpdate.push({
-                issueNumber: retained.number,
-                feed,
-                health,
-                updatedBody,
-                transitionComment,
-            });
+            const expectedTitle = getStableTitle(feed.name, feed.id);
+            const bodyChanged = normalizeBodyForDiff(retained.body) !== normalizeBodyForDiff(updatedBody);
+            const titleChanged = retained.title !== expectedTitle;
+
+            // Skip no-op weekly PATCHes when only Last Checked changed
+            if (bodyChanged || titleChanged || transitionComment) {
+                plan.toUpdate.push({
+                    issueNumber: retained.number,
+                    feed,
+                    health,
+                    updatedBody,
+                    transitionComment,
+                });
+            }
 
             // Mark any additional duplicate open issues for closure
             for (let i = 1; i < sorted.length; i += 1) {
@@ -227,24 +324,41 @@ async function createGitHubClient(token: string): Promise<OctokitLike> {
             }
 
             const url = `https://api.github.com${path}${queryParams.length ? `?${queryParams.join('&')}` : ''}`;
-            const res = await fetch(url, {
-                method,
-                headers: {
-                    Authorization: `Bearer ${token}`,
-                    Accept: 'application/vnd.github+json',
-                    'User-Agent': 'giti-rss-registry-reconciler/1.0',
-                    ...(method !== 'GET' ? { 'Content-Type': 'application/json' } : {}),
-                },
-                body: method !== 'GET' ? JSON.stringify(bodyPayload) : undefined,
-            });
+            const maxAttempts = 4;
 
-            if (!res.ok) {
+            for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+                const res = await fetch(url, {
+                    method,
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                        Accept: 'application/vnd.github+json',
+                        'User-Agent': 'giti-rss-registry-reconciler/1.0',
+                        ...(method !== 'GET' ? { 'Content-Type': 'application/json' } : {}),
+                    },
+                    body: method !== 'GET' ? JSON.stringify(bodyPayload) : undefined,
+                });
+
+                if (res.ok) {
+                    const data = (await res.json()) as unknown;
+                    return { data, headers: res.headers };
+                }
+
+                const retryable = res.status === 429 || res.status >= 500;
+                if (retryable && attempt < maxAttempts) {
+                    const retryAfter = Number.parseInt(res.headers.get('retry-after') ?? '', 10);
+                    const delayMs = Number.isFinite(retryAfter) && retryAfter > 0
+                        ? retryAfter * 1000
+                        : 1000 * 2 ** (attempt - 1);
+                    await res.body?.cancel();
+                    await sleep(delayMs);
+                    continue;
+                }
+
                 const text = await res.text();
                 throw new Error(`GitHub API ${res.status} ${res.statusText} on ${route}: ${text}`);
             }
 
-            const data = (await res.json()) as unknown;
-            return { data, headers: res.headers };
+            throw new Error(`GitHub API failed after ${maxAttempts} attempts on ${route}`);
         },
     };
 }
@@ -294,9 +408,11 @@ async function main(): Promise<void> {
     const canonicalMap = new Map(canonical.feeds.map((feed) => [feed.id, feed]));
 
     if (!token || !repoSlug) {
-        process.stdout.write('[reconcile-health-issues] Running in dry-run mode (GITHUB_TOKEN or GITHUB_REPOSITORY not set).\n');
-        const plan = reconcileHealthState([], overlay.feeds, canonicalMap);
-        process.stdout.write(`Planned creations: ${plan.toCreate.length}\n`);
+        const failingCount = overlay.feeds.filter((entry) => entry.consecutiveFailures >= 4 && canonicalMap.has(entry.id)).length;
+        process.stdout.write(
+            `[reconcile-health-issues] Dry-run (GITHUB_TOKEN or GITHUB_REPOSITORY not set): ` +
+            `${failingCount} feed(s) currently meet the 4+ failure threshold (live GitHub issues were not queried).\n`
+        );
         return;
     }
 
@@ -388,6 +504,29 @@ async function main(): Promise<void> {
             state_reason: 'completed',
         });
         await sleep(350);
+    }
+
+    // 5. Create or update the rolling Health Dashboard issue
+    const dashboardBody = buildHealthDashboardBody(overlay.feeds, canonicalMap);
+    const existingDashboard = openIssues.find((issue) => issue.body?.includes(DASHBOARD_MARKER));
+    if (existingDashboard) {
+        process.stdout.write(`Updating rolling Health Dashboard issue #${existingDashboard.number}...\n`);
+        await client.request('PATCH /repos/{owner}/{repo}/issues/{issue_number}', {
+            owner,
+            repo,
+            issue_number: existingDashboard.number,
+            title: DASHBOARD_TITLE,
+            body: dashboardBody,
+        });
+    } else {
+        process.stdout.write(`Creating rolling Health Dashboard issue...\n`);
+        await client.request('POST /repos/{owner}/{repo}/issues', {
+            owner,
+            repo,
+            title: DASHBOARD_TITLE,
+            labels: [HEALTH_LABEL, AUTOMATED_LABEL],
+            body: dashboardBody,
+        });
     }
 
     process.stdout.write('Reconciliation complete.\n');

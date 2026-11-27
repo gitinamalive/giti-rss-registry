@@ -1,5 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import {
+    DASHBOARD_MARKER,
+    buildHealthDashboardBody,
+    buildIssueBody,
     extractFeedIdFromIssue,
     getIssueMarker,
     getStableTitle,
@@ -116,6 +119,44 @@ describe('single-pass issue reconciliation', () => {
         expect(plan.toClose).toHaveLength(1);
         expect(plan.toClose[0].issueNumber).toBe(111);
         expect(plan.toClose[0].reason).toBe('recovered');
+    });
+
+    it('skips no-op PATCH when only lastCheckedAt changed', () => {
+        const existingBody = buildIssueBody(dummyFeed, dummyHealth);
+        const openIssues: GitHubIssueRecord[] = [
+            { number: 111, title: getStableTitle(dummyFeed.name, dummyFeed.id), body: existingBody },
+        ];
+        const nextWeekHealth: FeedHealthEntry = {
+            ...dummyHealth,
+            lastCheckedAt: '2026-10-26T12:00:00Z',
+        };
+        const plan = reconcileHealthState(openIssues, [nextWeekHealth], canonicalMap);
+        expect(plan.toUpdate).toHaveLength(0);
+    });
+
+    it('detects very-stale -> stale transitions via structured field parsing', () => {
+        const prevHealth: FeedHealthEntry = { ...dummyHealth, healthStatus: 'very-stale' };
+        const openIssues: GitHubIssueRecord[] = [
+            { number: 111, title: getStableTitle(dummyFeed.name, dummyFeed.id), body: buildIssueBody(dummyFeed, prevHealth) },
+        ];
+        const nextHealth: FeedHealthEntry = { ...dummyHealth, healthStatus: 'stale' };
+        const plan = reconcileHealthState(openIssues, [nextHealth], canonicalMap);
+        expect(plan.toUpdate).toHaveLength(1);
+        expect(plan.toUpdate[0].transitionComment).toContain('very-stale');
+        expect(plan.toUpdate[0].transitionComment).toContain('stale');
+    });
+
+    it('renders the rolling Health Dashboard body with diagnostic breakdown and actionable dead feeds', () => {
+        const deadHealth: FeedHealthEntry = {
+            ...dummyHealth,
+            diagnosticCategory: 'DEAD_ENDPOINT',
+            consecutiveFailures: 5,
+        };
+        const body = buildHealthDashboardBody([deadHealth], canonicalMap, '2026-11-26T00:00:00.000Z');
+        expect(body).toContain(DASHBOARD_MARKER);
+        expect(body).toContain('| DEAD_ENDPOINT | 1 |');
+        expect(body).toContain('Antigua Newsroom');
+        expect(body).toContain('antigua-newsroom-90c61b09');
     });
 });
 

@@ -101,6 +101,10 @@ export async function evaluateCandidate(
     if (candidate.perspective) feed.perspective = candidate.perspective;
     if (candidate.notes) feed.notes = candidate.notes;
     if (candidate.publisherCountries) feed.publisherCountries = candidate.publisherCountries;
+    if (candidate.governance) feed.governance = candidate.governance;
+    if (candidate.operatingCircumstance) feed.operatingCircumstance = candidate.operatingCircumstance;
+    if (candidate.sourceRole) feed.sourceRole = candidate.sourceRole;
+    if (candidate.publisherDomain) feed.publisherDomain = candidate.publisherDomain;
 
     // 4. Schema validation
     const validation = validateFeedEntry(feed, 0);
@@ -161,10 +165,7 @@ export async function evaluateCandidate(
         };
     }
 
-    feed.lastCheckedAt = now.toISOString();
-    feed.lastItemPublishedAt = probe.lastItemDate;
-    feed.active = true;
-
+    // Canonical data/feeds.json stays purely editorial; live health state lives in dist/feeds-health.json.
     return { candidate, feed, accepted: true, probeResult: probe };
 }
 

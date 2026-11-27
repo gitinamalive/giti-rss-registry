@@ -12,8 +12,8 @@
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import type { BootstrapPayload, FeedCategory } from '../src/types.ts';
-import { allowedCategories } from '../src/types.ts';
+import type { BootstrapPayload, FeedCategory } from '../../src/types.ts';
+import { allowedCategories } from '../../src/types.ts';
 
 // ── Heuristic Rules ──────────────────────────────────────────────
 

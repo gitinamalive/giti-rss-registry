@@ -103,9 +103,11 @@ describe('evaluateCandidate', () => {
             countries: ['TV'],
             sourceAttribution: 'Curated by Tuvalu Media Project',
             license: 'CC-BY-4.0',
-            active: true,
             format: 'rss',
         });
+        expect(result.feed?.active).toBeUndefined();
+        expect(result.feed?.lastCheckedAt).toBeUndefined();
+        expect(result.feed?.lastItemPublishedAt).toBeUndefined();
     });
 });
 

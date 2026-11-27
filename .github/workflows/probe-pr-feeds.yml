@@ -1,0 +1,35 @@
+name: Probe PR Feeds
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'data/feeds.json'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: probe-pr-feeds-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Probe added or modified feeds
+        run: npx tsx scripts/probe-pr-feeds.ts --base=origin/${{ github.base_ref }}

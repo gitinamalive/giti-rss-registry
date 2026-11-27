@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.0.0",
-  "generatorVersion": "1.1.0",
-  "sourceCommit": "unknown",
+  "schemaVersion": "1.1.0",
+  "generatorVersion": "1.2.0",
+  "sourceCommit": "994fd9b17afe2ef7b07474b462370079a5964027",
   "sourceChecksum": "7fbf24e2f9c06280a78050ec765202261a7aef158ed7f52c54cffa06ffba1057",
-  "generatedAt": "2026-11-10T20:50:53.938Z",
+  "generatedAt": "2026-11-02T05:38:09.787Z",
   "registryRevision": "7fbf24e2f9c06280a78050ec765202261a7aef158ed7f52c54cffa06ffba1057",
   "healthRevision": "840e1c9299f12095df70f20c79781024ced4a210c5bd1d1536ae7beec1001f1e",
   "artifactCounts": {
@@ -21,8 +21,12 @@
       "bytes": 195319
     },
     "feeds.csv": {
-      "sha256": "fefd2b845e526b45937ddd621cbebc1070afec7c7ab9a1b5e9da78e707321f53",
-      "bytes": 92209
+      "sha256": "980d1c033212699c1b4d360697f83ed8d97b8c034667af2bc0652c730325845d",
+      "bytes": 101068
+    },
+    "countries.json": {
+      "sha256": "f4168dbed68375d788aa8eb5f9f5fd64afad156c49a139b04acc2e2702bb0a5a",
+      "bytes": 4261
     },
     "by-country.json": {
       "sha256": "d204d44ac9becc7173b8e7b0d2c1a2e937998c41cde0a8fef9d1c2fcc5212b73",
@@ -47,6 +51,26 @@
     "feeds-health.json": {
       "sha256": "840e1c9299f12095df70f20c79781024ced4a210c5bd1d1536ae7beec1001f1e",
       "bytes": 280834
+    },
+    "duplicate-report.json": {
+      "sha256": "ffd01d7de6236e270452f5159888f4ee1b7a314c990ac06b71ba532572b39295",
+      "bytes": 164
+    },
+    "opml/all.opml": {
+      "sha256": "b993f6953cb32fcd4655f5d49f77748c5ac9025ba96f8e8656ab2544843f83ec",
+      "bytes": 54022
+    },
+    "index.html": {
+      "sha256": "c43e3434faa67009e9d60b9f22f8541b0c511d62bfe42caf815a8a1b6552a009",
+      "bytes": 18365
+    },
+    "styles.css": {
+      "sha256": "9be496bb1a7ae06e832ff2e8257791bc3c00ab119c77b0f450226b8e9260b3d0",
+      "bytes": 8568
+    },
+    "app.js": {
+      "sha256": "9fafef158a6d18c745159d3d69b3ce23287844e9be938696d9d81cc13defe282",
+      "bytes": 24273
     }
   }
 }

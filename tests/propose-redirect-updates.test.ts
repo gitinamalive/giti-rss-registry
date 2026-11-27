@@ -96,6 +96,27 @@ describe('validateRedirectTarget', () => {
         expect(result.valid).toBe(false);
         expect(result.status).toBe('invalid_content');
     });
+
+    it('blocks onward redirects to private/loopback targets via per-hop SSRF validation', async () => {
+        let fetchedPrivate = false;
+        const fetcher: Fetcher = async (input) => {
+            const url = String(input);
+            if (url === 'https://example.com/hop1') {
+                return new Response(null, { status: 302, headers: { location: 'http://127.0.0.1/secret' } });
+            }
+            fetchedPrivate = true;
+            return new Response('<rss><channel></channel></rss>', { status: 200 });
+        };
+
+        const result = await validateRedirectTarget('https://example.com/hop1', new Set(), {
+            fetcher,
+            resolveHost: publicResolver,
+        });
+
+        expect(fetchedPrivate).toBe(false);
+        expect(result.valid).toBe(false);
+        expect(result.status).toBe('ssrf_blocked');
+    });
 });
 
 describe('findRedirectProposals', () => {

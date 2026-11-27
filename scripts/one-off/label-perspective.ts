@@ -11,8 +11,8 @@
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import type { BootstrapPayload, FeedEntry, Perspective } from '../src/types.ts';
-import { allowedPerspectives } from '../src/types.ts';
+import type { BootstrapPayload, FeedEntry, Perspective } from '../../src/types.ts';
+import { allowedPerspectives } from '../../src/types.ts';
 
 interface PerspectiveProposal {
   id: string;
@@ -67,9 +67,12 @@ async function main() {
 
     feed.perspective = proposal.perspective;
 
-    // Store rationale + sources in notes field (schema-compatible)
+    // Append rationale + sources to notes field without destroying existing editorial notes
     const sourcesList = proposal.sources.map((s, i) => `  [${i + 1}] ${s}`).join('\n');
-    feed.notes = `${proposal.rationale}\n\nSources:\n${sourcesList}`;
+    const rationaleBlock = `${proposal.rationale}\n\nSources:\n${sourcesList}`;
+    feed.notes = feed.notes?.trim()
+      ? `${feed.notes.trim()}\n\n${rationaleBlock}`
+      : rationaleBlock;
 
     applied++;
     appliedFeeds.push(`${feed.name} → ${proposal.perspective}`);

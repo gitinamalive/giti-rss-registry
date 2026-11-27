@@ -1,11 +1,19 @@
+import { readFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import {
+    decodeBasicEntities,
     formatTriageComment,
     parseIssueFormBody,
     validateProposedFeed,
     type ProposedFeedInput,
 } from '../scripts/propose-feed.ts';
-import type { FeedEntry } from '../src/types.ts';
+import {
+    allowedCategories,
+    allowedMediaTypes,
+    allowedPerspectives,
+    type FeedEntry,
+} from '../src/types.ts';
 
 const existingFeed: FeedEntry = {
     id: 'guardian-world-12345678',
@@ -48,6 +56,66 @@ en
         expect(parsed.publisher).toBe('The Punch');
         expect(parsed.category).toBe('world');
         expect(parsed.language).toBe('en');
+    });
+
+    it('ignores invalid enum values and GitHub _No response_ placeholders', () => {
+        const body = `
+### Feed URL
+
+https://example.com/feed.xml
+
+### Category
+
+not-a-category
+
+### Media Type
+
+_No response_
+
+### Editorial Perspective
+
+corporate
+        `;
+        const parsed = parseIssueFormBody(body);
+        expect(parsed.category).toBeUndefined();
+        expect(parsed.mediaType).toBeUndefined();
+        expect(parsed.perspective).toBeUndefined();
+    });
+});
+
+describe('issue template enum parity', () => {
+    it('keeps feed-proposal.yml dropdown options aligned with src/types.ts enums', async () => {
+        const rawYaml = await readFile(resolve('.github/ISSUE_TEMPLATE/feed-proposal.yml'), 'utf8');
+
+        const extractOptions = (fieldId: string): string[] => {
+            const sectionRegex = new RegExp(
+                `id:\\s*${fieldId}\\b[\\s\\S]*?options:\\s*\\r?\\n((?:\\s+-\\s+[^\\r\\n]+\\r?\\n?)+)`
+            );
+            const match = rawYaml.match(sectionRegex);
+            if (!match) return [];
+            return match[1]
+                .split(/\r?\n/)
+                .map((line) => line.replace(/^\s*-\s*/, '').trim())
+                .filter(Boolean);
+        };
+
+        const categoryOptions = extractOptions('category');
+        const mediaTypeOptions = extractOptions('media_type');
+        const perspectiveOptions = extractOptions('perspective');
+
+        expect(categoryOptions.length).toBeGreaterThan(0);
+        expect(mediaTypeOptions.length).toBeGreaterThan(0);
+        expect(perspectiveOptions.length).toBeGreaterThan(0);
+
+        for (const opt of categoryOptions) {
+            expect(allowedCategories.has(opt as never), `Invalid category option: ${opt}`).toBe(true);
+        }
+        for (const opt of mediaTypeOptions) {
+            expect(allowedMediaTypes.has(opt as never), `Invalid media_type option: ${opt}`).toBe(true);
+        }
+        for (const opt of perspectiveOptions) {
+            expect(allowedPerspectives.has(opt as never), `Invalid perspective option: ${opt}`).toBe(true);
+        }
     });
 });
 
@@ -128,6 +196,55 @@ describe('validateProposedFeed', () => {
         const result = await validateProposedFeed(input, { fetcher, resolveHost: publicResolver });
         expect(result.valid).toBe(false);
         expect(result.format).toBeUndefined();
+    });
+
+    it('uses the real defaultHostResolver on redirect hops when resolveHost is omitted', async () => {
+        let fetchedSecondHop = false;
+        const fetcher = async (input: string | URL | Request) => {
+            const url = String(input);
+            if (url === 'https://93.184.216.34/feed.xml') {
+                return new Response(null, {
+                    status: 302,
+                    headers: { location: 'https://nonexistent.invalid/private-feed.xml' },
+                });
+            }
+            fetchedSecondHop = true;
+            return new Response('<rss><channel><item><title>x</title></item></channel></rss>', { status: 200 });
+        };
+
+        // Omit resolveHost intentionally: real DNS must run on the redirect target
+        // (RFC 2606 .invalid never resolves), proving no hardcoded stub IP is used.
+        const result = await validateProposedFeed({ url: 'https://93.184.216.34/feed.xml' }, { fetcher });
+        expect(result.valid).toBe(false);
+        expect(fetchedSecondHop).toBe(false);
+        expect(result.reasons[0]).toContain('Fetch failure');
+    });
+
+    it('rejects redirects to domains resolving to private or IPv4-mapped loopback addresses', async () => {
+        let fetchedSecondHop = false;
+        const fetcher = async (input: string | URL | Request) => {
+            const url = String(input);
+            if (url === 'https://public.example/feed') {
+                return new Response(null, {
+                    status: 302,
+                    headers: { location: 'https://internal.example/feed' },
+                });
+            }
+            fetchedSecondHop = true;
+            return new Response('<rss><channel></channel></rss>', { status: 200 });
+        };
+
+        const resolveHost = async (hostname: string) =>
+            hostname === 'public.example' ? ['93.184.216.34'] : ['::ffff:7f00:1'];
+
+        const result = await validateProposedFeed({ url: 'https://public.example/feed' }, { fetcher, resolveHost });
+        expect(result.valid).toBe(false);
+        expect(fetchedSecondHop).toBe(false);
+        expect(result.reasons[0]).toContain('non-public host');
+    });
+
+    it('decodes basic XML/HTML entities in detected titles without enabling XML entity expansion', () => {
+        expect(decodeBasicEntities('News &amp; Views &#8217;26')).toBe("News & Views \u201926");
     });
 });
 

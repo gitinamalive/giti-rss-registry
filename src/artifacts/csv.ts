@@ -1,0 +1,71 @@
+import { escapeCsv } from '../escape.ts';
+import type { FeedEntry } from '../types.ts';
+
+export const CSV_COLUMNS = [
+    'id',
+    'name',
+    'publisher',
+    'url',
+    'homepage',
+    'language',
+    'countries',
+    'region',
+    'category',
+    'tags',
+    'perspective',
+    'mediaType',
+    'format',
+    'official',
+    'active',
+    'lastCheckedAt',
+    'lastItemPublishedAt',
+    'healthScore',
+    'notes',
+    'description',
+    'coverageType',
+    'publisherCountries',
+    'governance',
+    'operatingCircumstance',
+    'sourceRole',
+    'publisherDomain',
+    'alwaysSchedule',
+    'sourceAttribution',
+    'license',
+] as const;
+
+export function generateCsv(feeds: FeedEntry[]): string {
+    const csvHeader = CSV_COLUMNS.join(',');
+    const csvRows = feeds.map((feed) => [
+        feed.id,
+        feed.name,
+        feed.publisher,
+        feed.url,
+        feed.homepage ?? '',
+        feed.language,
+        (feed.countries || []).join('|'),
+        feed.region ?? '',
+        feed.category,
+        (feed.tags || []).join('|'),
+        feed.perspective ?? '',
+        feed.mediaType ?? '',
+        feed.format ?? '',
+        feed.official ?? '',
+        feed.active ?? '',
+        feed.lastCheckedAt ?? '',
+        feed.lastItemPublishedAt ?? '',
+        feed.healthScore ?? '',
+        feed.notes ?? '',
+        feed.description ?? '',
+        feed.coverageType ?? '',
+        (feed.publisherCountries || []).join('|'),
+        feed.governance ?? '',
+        feed.operatingCircumstance ?? '',
+        feed.sourceRole ?? '',
+        feed.publisherDomain ?? '',
+        feed.alwaysSchedule ?? '',
+        feed.sourceAttribution ?? '',
+        feed.license ?? '',
+    ].map((v) => escapeCsv(v, { formulaSafe: true })).join(','));
+
+    return `${csvHeader}\n${csvRows.join('\n')}\n`;
+}

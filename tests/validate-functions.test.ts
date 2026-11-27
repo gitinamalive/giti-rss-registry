@@ -99,6 +99,14 @@ describe('isPublicHostname', () => {
         expect(isPublicHostname('http://[fe80::1]/feed')).toBe(false);
     });
 
+    it('rejects CGNAT, benchmark, multicast, and IPv6 unspecified addresses', () => {
+        expect(isPublicHostname('http://100.64.0.1/feed')).toBe(false);
+        expect(isPublicHostname('http://198.18.0.1/feed')).toBe(false);
+        expect(isPublicHostname('http://224.0.0.1/feed')).toBe(false);
+        expect(isPublicHostname('http://[::]/feed')).toBe(false);
+        expect(isPublicHostname('http://[::ffff:7f00:1]/feed')).toBe(false);
+    });
+
     it('rejects invalid URLs gracefully', () => {
         expect(isPublicHostname('not a url')).toBe(false);
     });
@@ -289,5 +297,17 @@ describe('validateFeedEntry coverage metadata', () => {
             publisherCountries: ['XX'],
         }, 0);
         expect(result.errors).toContain('feeds[0].publisherCountries has unrecognized ISO-3166 alpha-2 code: XX');
+    });
+
+    it('rejects invalid governance, operatingCircumstance, and sourceRole enums', () => {
+        const result = validateFeedEntry({
+            ...feed,
+            governance: 'corporate' as never,
+            operatingCircumstance: 'orbital' as never,
+            sourceRole: 'bot' as never,
+        }, 0);
+        expect(result.errors).toContain('feeds[0].governance not allowed: corporate');
+        expect(result.errors).toContain('feeds[0].operatingCircumstance not allowed: orbital');
+        expect(result.errors).toContain('feeds[0].sourceRole not allowed: bot');
     });
 });

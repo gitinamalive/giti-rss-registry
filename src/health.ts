@@ -156,24 +156,26 @@ export interface DeriveDiagnosticCategoryInput {
  * - UNREACHABLE: network timeout, DNS failure, 5xx server error, or connection abort.
  */
 export function deriveDiagnosticCategory(input: DeriveDiagnosticCategoryInput): DiagnosticHealthCategory {
-    if (input.permanentRedirectUrl) {
-        return 'REDIRECT_PERMANENT';
-    }
-    if (input.reachable && input.contentValid) {
-        if (!input.lastItemDate) return 'STALE';
-        const now = input.now ?? new Date();
-        const ageDays = (now.getTime() - new Date(input.lastItemDate).getTime()) / (1000 * 60 * 60 * 24);
-        return ageDays > STALE_THRESHOLD_DAYS ? 'STALE' : 'HEALTHY';
-    }
     if (input.status === 403 || input.status === 429) {
         return 'BLOCKED_SCRAPER';
     }
     if (input.status === 404 || input.status === 410) {
         return 'DEAD_ENDPOINT';
     }
-    if (input.failureStatus === 'invalid-content') {
+    if (input.failureStatus === 'invalid-content' || (!input.contentValid && input.status === 200)) {
         return 'MALFORMED_XML';
     }
-    return 'UNREACHABLE';
+    if (!input.reachable || !input.contentValid) {
+        return 'UNREACHABLE';
+    }
+    if (input.permanentRedirectUrl) {
+        return 'REDIRECT_PERMANENT';
+    }
+    if (!input.lastItemDate) {
+        return 'STALE';
+    }
+    const now = input.now ?? new Date();
+    const ageDays = (now.getTime() - new Date(input.lastItemDate).getTime()) / (1000 * 60 * 60 * 24);
+    return ageDays > STALE_THRESHOLD_DAYS ? 'STALE' : 'HEALTHY';
 }
 

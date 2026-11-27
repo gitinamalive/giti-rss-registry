@@ -1,46 +1,26 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-import { isIP } from 'node:net';
 import { pathToFileURL } from 'node:url';
 import {
     type BootstrapPayload,
     type FeedEntry,
     allowedCategories,
     allowedCoverageTypes,
+    allowedEditorialGovernances,
     allowedFormats,
     allowedMediaTypes,
+    allowedOperatingCircumstances,
     allowedPerspectives,
+    allowedSourceRoles,
 } from '../src/types.ts';
+import {
+    ISO_3166_ALPHA2,
+    isIsoCountryCode,
+    isValidIsoCountryCode,
+} from '../src/countries.ts';
 import { ISO_639_1 } from '../src/languages.ts';
+import { isPublicHttpUrl } from '../src/net.ts';
 import { findPossibleDuplicateUrls } from '../src/urlFingerprint.ts';
-
-// ── ISO 3166-1 alpha-2 country codes ──────────────────────────────────────
-const ISO_3166_ALPHA2: ReadonlySet<string> = new Set([
-    'AD', 'AE', 'AF', 'AG', 'AI', 'AL', 'AM', 'AO', 'AQ', 'AR', 'AS', 'AT', 'AU',
-    'AW', 'AX', 'AZ', 'BA', 'BB', 'BD', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BL',
-    'BM', 'BN', 'BO', 'BQ', 'BR', 'BS', 'BT', 'BV', 'BW', 'BY', 'BZ', 'CA', 'CC',
-    'CD', 'CF', 'CG', 'CH', 'CI', 'CK', 'CL', 'CM', 'CN', 'CO', 'CR', 'CU', 'CV',
-    'CW', 'CX', 'CY', 'CZ', 'DE', 'DJ', 'DK', 'DM', 'DO', 'DZ', 'EC', 'EE', 'EG',
-    'EH', 'ER', 'ES', 'ET', 'FI', 'FJ', 'FK', 'FM', 'FO', 'FR', 'GA', 'GB', 'GD',
-    'GE', 'GF', 'GG', 'GH', 'GI', 'GL', 'GM', 'GN', 'GP', 'GQ', 'GR', 'GS', 'GT',
-    'GU', 'GW', 'GY', 'HK', 'HM', 'HN', 'HR', 'HT', 'HU', 'ID', 'IE', 'IL', 'IM',
-    'IN', 'IO', 'IQ', 'IR', 'IS', 'IT', 'JE', 'JM', 'JO', 'JP', 'KE', 'KG', 'KH',
-    'KI', 'KM', 'KN', 'KP', 'KR', 'KW', 'KY', 'KZ', 'LA', 'LB', 'LC', 'LI', 'LK',
-    'LR', 'LS', 'LT', 'LU', 'LV', 'LY', 'MA', 'MC', 'MD', 'ME', 'MF', 'MG', 'MH',
-    'MK', 'ML', 'MM', 'MN', 'MO', 'MP', 'MQ', 'MR', 'MS', 'MT', 'MU', 'MV', 'MW',
-    'MX', 'MY', 'MZ', 'NA', 'NC', 'NE', 'NF', 'NG', 'NI', 'NL', 'NO', 'NP', 'NR',
-    'NU', 'NZ', 'OM', 'PA', 'PE', 'PF', 'PG', 'PH', 'PK', 'PL', 'PM', 'PN', 'PR',
-    'PS', 'PT', 'PW', 'PY', 'QA', 'RE', 'RO', 'RS', 'RU', 'RW', 'SA', 'SB', 'SC',
-    'SD', 'SE', 'SG', 'SH', 'SI', 'SJ', 'SK', 'SL', 'SM', 'SN', 'SO', 'SR', 'SS',
-    'ST', 'SV', 'SX', 'SY', 'SZ', 'TC', 'TD', 'TF', 'TG', 'TH', 'TJ', 'TK', 'TL',
-    'TM', 'TN', 'TO', 'TR', 'TT', 'TV', 'TW', 'TZ', 'UA', 'UG', 'UM', 'US', 'UY',
-    'UZ', 'VA', 'VC', 'VE', 'VG', 'VI', 'VN', 'VU', 'WF', 'WS', 'YE', 'YT', 'ZA',
-    'ZM', 'ZW',
-]);
-
-// Widely recognized user-assigned ISO 3166-1 alpha-2 codes not in the official
-// standard but used in practice (e.g., XK for Kosovo by UNMIK, SWIFT, Deutsche Bundesbank).
-const WELL_KNOWN_NON_ISO_CODES: ReadonlySet<string> = new Set(['XK']);
 
 function findDuplicates(values: string[]): string[] {
     const seen = new Set<string>();
@@ -62,56 +42,11 @@ function isValidUrl(value: string): boolean {
 }
 
 function isPublicHostname(value: string): boolean {
-    try {
-        const parsed = new URL(value);
-
-        // Credentialed URLs should never appear in the registry
-        if (parsed.username || parsed.password) return false;
-
-        const host = parsed.hostname.toLowerCase();
-
-        // IPv4 private / loopback / link-local / unspecified
-        if (
-            host === 'localhost' ||
-            host === '0.0.0.0' ||
-            host.startsWith('127.') ||
-            host.startsWith('10.') ||
-            host.startsWith('192.168.') ||
-            host.match(/^172\.(1[6-9]|2[0-9]|3[0-1])\./) ||
-            host.startsWith('169.254.')
-        )
-            return false;
-
-        // Apply IPv6 range checks only to literal IPv6 addresses. The URL
-        // hostname includes brackets for IPv6 literals in Node.
-        const ipv6Address = host.startsWith('[') && host.endsWith(']') ? host.slice(1, -1) : host;
-        if (isIP(ipv6Address) === 6) {
-            const firstHextet = ipv6Address.split(':', 1)[0].padEnd(4, '0');
-            if (
-                ipv6Address === '::1' ||
-                firstHextet.startsWith('fc') || // fc00::/7 unique-local
-                firstHextet.startsWith('fd') ||
-                /^fe[89ab]/.test(firstHextet) // fe80::/10 link-local
-            )
-                return false;
-        }
-
-        return true;
-    } catch {
-        return false;
-    }
+    return isPublicHttpUrl(value);
 }
 
 function isLanguageCode(value: string): boolean {
     return ISO_639_1.has(value);
-}
-
-function isIsoCountryCode(value: string): boolean {
-    return /^[A-Z]{2}$/.test(value);
-}
-
-function isValidIsoCountryCode(value: string): boolean {
-    return ISO_3166_ALPHA2.has(value) || WELL_KNOWN_NON_ISO_CODES.has(value);
 }
 
 function isValidIsoTimestamp(value: string): boolean {
@@ -227,6 +162,18 @@ export function validateFeedEntry(feed: FeedEntry, index: number): FeedValidatio
 
     if (feed.coverageType && !allowedCoverageTypes.has(feed.coverageType)) {
         errors.push(`${prefix}.coverageType not allowed: ${feed.coverageType}`);
+    }
+
+    if (feed.governance && !allowedEditorialGovernances.has(feed.governance)) {
+        errors.push(`${prefix}.governance not allowed: ${feed.governance}`);
+    }
+
+    if (feed.operatingCircumstance && !allowedOperatingCircumstances.has(feed.operatingCircumstance)) {
+        errors.push(`${prefix}.operatingCircumstance not allowed: ${feed.operatingCircumstance}`);
+    }
+
+    if (feed.sourceRole && !allowedSourceRoles.has(feed.sourceRole)) {
+        errors.push(`${prefix}.sourceRole not allowed: ${feed.sourceRole}`);
     }
 
     if (feed.publisherCountries !== undefined) {
